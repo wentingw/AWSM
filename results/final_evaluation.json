@@ -1,0 +1,985 @@
+{
+  "schema": "world_model_blog.final_evaluation.v1",
+  "views": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "systems": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "B1",
+    "B2"
+  ],
+  "supplementary": [
+    "B2p"
+  ],
+  "definitions": {
+    "pose": "native SE(3) alignment; M1 has no native trajectory and uses GT-assisted Sim3 for shape/display only; M4 GT input",
+    "depth": "all180 and common175 fixed valid GT optical-Z masks; native frontend and rendered model separate; missing penalties retained",
+    "geometry": "single supplied global transform; no ICP; observed coverage separate",
+    "frontend_sharing": {
+      "B1": "M2 (ViPE frontend)",
+      "B2p": "M3 (OpenVINS+MapAnything frontend)"
+    },
+    "rgb": "same input views; pixel metrics after resize only; no color fitting"
+  },
+  "rows": [
+    {
+      "system": "M1",
+      "shared_frontend": null,
+      "pose": {
+        "pose_label": "no native pose (RGB-only Astra model)"
+      },
+      "native_depth": {},
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9970648148148148,
+          "invalid_rate": 0.002935185185185185,
+          "absrel": 0.2168408310078043,
+          "rmse_m": 2.4256455971546043,
+          "delta1": 0.6875359852530112,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3445856,
+          "missing_penalty_mae_m": 1.523299155695654
+        },
+        "common175": {
+          "valid_coverage": 0.9970077380952381,
+          "invalid_rate": 0.0029922619047619047,
+          "absrel": 0.2184538310591537,
+          "rmse_m": 2.437780224897259,
+          "delta1": 0.6855871706588703,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3349946,
+          "missing_penalty_mae_m": 1.532107907703332
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/render_manifest.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9970648148148148,
+        "invalid_rate": 0.002935185185185185,
+        "absrel": 0.2168408310078043,
+        "rmse_m": 2.4256455971546043,
+        "delta1": 0.6875359852530112,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3445856,
+        "missing_penalty_mae_m": 1.523299155695654
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 469734,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.3058951146957697,
+        "model_to_gt_median_m": 0.16201402992010117,
+        "model_to_gt_p90_m": 0.7078030169010163,
+        "model_to_gt_coverage_10cm": 0.39886,
+        "gt_to_model_mean_m": 7.490269748218314,
+        "gt_to_model_median_m": 5.962890148162842,
+        "gt_to_model_p90_m": 18.865960121154785,
+        "gt_to_model_coverage_10cm": 0.0846,
+        "symmetric_chamfer_mean_m": 3.8980824314570417,
+        "observed_gt_to_model_mean_m": 0.33745536589755587,
+        "observed_gt_to_model_median_m": 0.18203582614660263,
+        "observed_gt_to_model_p90_m": 0.6989036142826082,
+        "observed_gt_to_model_coverage_10cm": 0.36202
+      },
+      "rgb": {
+        "mean": {
+          "system": "M1",
+          "psnr_db_mean": 9.479090378764525,
+          "ssim_mean": 0.2634574569761753
+        },
+        "per_frame": [
+          {
+            "system": "M1",
+            "keyframe_index": 0,
+            "psnr_db": 10.6640011910476,
+            "ssim": 0.3045773208141327,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "M1",
+            "keyframe_index": 36,
+            "psnr_db": 10.832524453847954,
+            "ssim": 0.2899821102619171,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "M1",
+            "keyframe_index": 72,
+            "psnr_db": 12.430766099748094,
+            "ssim": 0.37797531485557556,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "M1",
+            "keyframe_index": 108,
+            "psnr_db": 2.858704722940729,
+            "ssim": 0.050831545144319534,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "M1",
+            "keyframe_index": 144,
+            "psnr_db": 10.609455426238245,
+            "ssim": 0.29392099380493164,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    },
+    {
+      "system": "M2",
+      "shared_frontend": null,
+      "pose": {
+        "pose_count": 180,
+        "frame_coverage": 1.0,
+        "translation_rmse_m": 0.11759686116853764,
+        "translation_mean_m": 0.10442622143639958,
+        "rotation_rmse_deg": 0.31229522982234525,
+        "rotation_mean_deg": 0.2818228916251127,
+        "rpe10_translation_rmse_m": 0.04361878388129485,
+        "rpe10_rotation_rmse_deg": 0.1739656372497033,
+        "pose_alignment": "se3",
+        "pose_label": "ViPE estimated"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 1.0,
+          "invalid_rate": 0.0,
+          "absrel": 0.07380383297851562,
+          "rmse_m": 0.9331203343142584,
+          "delta1": 0.9428148148148148,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3456000,
+          "missing_penalty_mae_m": 0.5233563462354369
+        },
+        "common175": {
+          "valid_coverage": 1.0,
+          "invalid_rate": 0.0,
+          "absrel": 0.07360884581027005,
+          "rmse_m": 0.9078084656817261,
+          "delta1": 0.9449717261904762,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3360000,
+          "missing_penalty_mae_m": 0.5145968545794927
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 1.0,
+        "invalid_rate": 0.0,
+        "absrel": 0.07380383297851562,
+        "rmse_m": 0.9331203343142584,
+        "delta1": 0.9428148148148148,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3456000,
+        "missing_penalty_mae_m": 0.5233563462354369
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9940101273148149,
+          "invalid_rate": 0.005989872685185185,
+          "absrel": 0.10584998140058734,
+          "rmse_m": 1.2027882749672123,
+          "delta1": 0.8895732220106605,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3435299,
+          "missing_penalty_mae_m": 0.7982388051545476
+        },
+        "common175": {
+          "valid_coverage": 0.993885119047619,
+          "invalid_rate": 0.006114880952380952,
+          "absrel": 0.1056932986059517,
+          "rmse_m": 1.1995400601073158,
+          "delta1": 0.8896858588260237,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3339454,
+          "missing_penalty_mae_m": 0.7997874349562007
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/model_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9940101273148149,
+        "invalid_rate": 0.005989872685185185,
+        "absrel": 0.10584998140058734,
+        "rmse_m": 1.2027882749672123,
+        "delta1": 0.8895732220106605,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3435299,
+        "missing_penalty_mae_m": 0.7982388051545476
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 44859,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.1819950564815801,
+        "model_to_gt_median_m": 0.08472807705402374,
+        "model_to_gt_p90_m": 0.4010853022336961,
+        "model_to_gt_coverage_10cm": 0.54905,
+        "gt_to_model_mean_m": 5.8122200432356195,
+        "gt_to_model_median_m": 3.5193744897842407,
+        "gt_to_model_p90_m": 16.428886032104494,
+        "gt_to_model_coverage_10cm": 0.12094,
+        "symmetric_chamfer_mean_m": 2.9971075498585997,
+        "observed_gt_to_model_mean_m": 0.19456751741682546,
+        "observed_gt_to_model_median_m": 0.12030554190278053,
+        "observed_gt_to_model_p90_m": 0.3891867548227311,
+        "observed_gt_to_model_coverage_10cm": 0.45862
+      },
+      "rgb": {
+        "mean": {
+          "system": "M2",
+          "psnr_db_mean": 12.199653443831906,
+          "ssim_mean": 0.3421064972877502
+        },
+        "per_frame": [
+          {
+            "system": "M2",
+            "keyframe_index": 0,
+            "psnr_db": 12.523615750945105,
+            "ssim": 0.3413923978805542,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "M2",
+            "keyframe_index": 36,
+            "psnr_db": 12.587748433552894,
+            "ssim": 0.3253108263015747,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "M2",
+            "keyframe_index": 72,
+            "psnr_db": 12.855242071312393,
+            "ssim": 0.4568246603012085,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "M2",
+            "keyframe_index": 108,
+            "psnr_db": 10.530864526758702,
+            "ssim": 0.25337132811546326,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "M2",
+            "keyframe_index": 144,
+            "psnr_db": 12.500796436590436,
+            "ssim": 0.33363327383995056,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M2/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    },
+    {
+      "system": "M3",
+      "shared_frontend": null,
+      "pose": {
+        "pose_count": 175,
+        "frame_coverage": 0.9722222222222222,
+        "translation_rmse_m": 2.594523587374209,
+        "translation_mean_m": 2.284661449970486,
+        "rotation_rmse_deg": 1.116379720440062,
+        "rotation_mean_deg": 1.1007957110609752,
+        "rpe10_translation_rmse_m": 0.7957987532266734,
+        "rpe10_rotation_rmse_deg": 0.20356732154714835,
+        "pose_alignment": "se3",
+        "pose_label": "OpenVINS estimated"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 0.9590818865740741,
+          "invalid_rate": 0.040918113425925925,
+          "absrel": 0.2611965576847372,
+          "rmse_m": 1.9808307510748746,
+          "delta1": 0.49424558776100913,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3314587,
+          "missing_penalty_mae_m": 2.773810267973906
+        },
+        "common175": {
+          "valid_coverage": 0.9864842261904762,
+          "invalid_rate": 0.013515773809523809,
+          "absrel": 0.2611965576847372,
+          "rmse_m": 1.9808307510748746,
+          "delta1": 0.49424558776100913,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3314587,
+          "missing_penalty_mae_m": 1.9959191327731607
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 0.9590818865740741,
+        "invalid_rate": 0.040918113425925925,
+        "absrel": 0.2611965576847372,
+        "rmse_m": 1.9808307510748746,
+        "delta1": 0.49424558776100913,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3314587,
+        "missing_penalty_mae_m": 2.773810267973906
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9918880208333334,
+          "invalid_rate": 0.008111979166666667,
+          "absrel": 0.3199886788056821,
+          "rmse_m": 2.5411557673918503,
+          "delta1": 0.40910831936732145,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3427965,
+          "missing_penalty_mae_m": 2.127233487529525
+        },
+        "common175": {
+          "valid_coverage": 0.9919910714285715,
+          "invalid_rate": 0.008008928571428571,
+          "absrel": 0.32003800882160965,
+          "rmse_m": 2.53750536131658,
+          "delta1": 0.41155204329916084,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3333090,
+          "missing_penalty_mae_m": 2.119908803799604
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/model_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9918880208333334,
+        "invalid_rate": 0.008111979166666667,
+        "absrel": 0.3199886788056821,
+        "rmse_m": 2.5411557673918503,
+        "delta1": 0.40910831936732145,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3427965,
+        "missing_penalty_mae_m": 2.127233487529525
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 559883,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.45902022779259666,
+        "model_to_gt_median_m": 0.3620183765888214,
+        "model_to_gt_p90_m": 0.8644687056541445,
+        "model_to_gt_coverage_10cm": 0.09168,
+        "gt_to_model_mean_m": 5.1928701513828015,
+        "gt_to_model_median_m": 2.8087809085845947,
+        "gt_to_model_p90_m": 14.876820850372319,
+        "gt_to_model_coverage_10cm": 0.03016,
+        "symmetric_chamfer_mean_m": 2.8259451895876992,
+        "observed_gt_to_model_mean_m": 0.7361196270245768,
+        "observed_gt_to_model_median_m": 0.6799854040145874,
+        "observed_gt_to_model_p90_m": 1.2799205183982854,
+        "observed_gt_to_model_coverage_10cm": 0.04696
+      },
+      "rgb": {
+        "mean": {
+          "system": "M3",
+          "psnr_db_mean": 10.064124431677707,
+          "ssim_mean": 0.2645517558790743
+        },
+        "per_frame": [
+          {
+            "system": "M3",
+            "keyframe_index": 0,
+            "psnr_db": 11.709038745978928,
+            "ssim": 0.3082225024700165,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "M3",
+            "keyframe_index": 36,
+            "psnr_db": 11.760150898023106,
+            "ssim": 0.2999717593193054,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "M3",
+            "keyframe_index": 72,
+            "psnr_db": 12.446716192597213,
+            "ssim": 0.3953312933444977,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "M3",
+            "keyframe_index": 108,
+            "psnr_db": 2.599885509504194,
+            "ssim": 0.0067430888302624226,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "M3",
+            "keyframe_index": 144,
+            "psnr_db": 11.804830812285092,
+            "ssim": 0.3124901354312897,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    },
+    {
+      "system": "M4",
+      "shared_frontend": null,
+      "pose": {
+        "pose_label": "GT pose input (oracle)"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 0.9857175925925926,
+          "invalid_rate": 0.014282407407407407,
+          "absrel": 0.10684864991692612,
+          "rmse_m": 1.1805155403807495,
+          "delta1": 0.8956314726534063,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3406640,
+          "missing_penalty_mae_m": 1.200982810687681
+        },
+        "common175": {
+          "valid_coverage": 0.9856770833333334,
+          "invalid_rate": 0.014322916666666666,
+          "absrel": 0.10465829525962521,
+          "rmse_m": 1.1633640123255382,
+          "delta1": 0.8996227212681638,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3311875,
+          "missing_penalty_mae_m": 1.1859245205904003
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 0.9857175925925926,
+        "invalid_rate": 0.014282407407407407,
+        "absrel": 0.10684864991692612,
+        "rmse_m": 1.1805155403807495,
+        "delta1": 0.8956314726534063,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3406640,
+        "missing_penalty_mae_m": 1.200982810687681
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.998730613425926,
+          "invalid_rate": 0.001269386574074074,
+          "absrel": 0.07543509205016187,
+          "rmse_m": 1.1666274340957297,
+          "delta1": 0.9011856195929265,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3451613,
+          "missing_penalty_mae_m": 0.47441807852867773
+        },
+        "common175": {
+          "valid_coverage": 0.9987181547619047,
+          "invalid_rate": 0.0012818452380952382,
+          "absrel": 0.07579431410739668,
+          "rmse_m": 1.1639924008645108,
+          "delta1": 0.9006589696971684,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3355693,
+          "missing_penalty_mae_m": 0.47475996554570055
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/model_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.998730613425926,
+        "invalid_rate": 0.001269386574074074,
+        "absrel": 0.07543509205016187,
+        "rmse_m": 1.1666274340957297,
+        "delta1": 0.9011856195929265,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3451613,
+        "missing_penalty_mae_m": 0.47441807852867773
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 134650,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.06866006729939131,
+        "model_to_gt_median_m": 0.039447784423828125,
+        "model_to_gt_p90_m": 0.13004302978515625,
+        "model_to_gt_coverage_10cm": 0.83877,
+        "gt_to_model_mean_m": 6.0529623617260295,
+        "gt_to_model_median_m": 4.298160076141357,
+        "gt_to_model_p90_m": 16.23922538757325,
+        "gt_to_model_coverage_10cm": 0.22072,
+        "symmetric_chamfer_mean_m": 3.0608112145127104,
+        "observed_gt_to_model_mean_m": 0.07373767452717289,
+        "observed_gt_to_model_median_m": 0.03703117370605469,
+        "observed_gt_to_model_p90_m": 0.21889231950044638,
+        "observed_gt_to_model_coverage_10cm": 0.86436
+      },
+      "rgb": {
+        "mean": {
+          "system": "M4",
+          "psnr_db_mean": 12.58519904286817,
+          "ssim_mean": 0.34350048899650576
+        },
+        "per_frame": [
+          {
+            "system": "M4",
+            "keyframe_index": 0,
+            "psnr_db": 12.718250946765625,
+            "ssim": 0.36840716004371643,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "M4",
+            "keyframe_index": 36,
+            "psnr_db": 12.554574641337052,
+            "ssim": 0.34792032837867737,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "M4",
+            "keyframe_index": 72,
+            "psnr_db": 13.36870707979681,
+            "ssim": 0.3805658519268036,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "M4",
+            "keyframe_index": 108,
+            "psnr_db": 10.836826237578943,
+            "ssim": 0.2601805627346039,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "M4",
+            "keyframe_index": 144,
+            "psnr_db": 13.447636308862423,
+            "ssim": 0.3604285418987274,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    },
+    {
+      "system": "B1",
+      "shared_frontend": "M2",
+      "pose": {
+        "pose_count": 180,
+        "frame_coverage": 1.0,
+        "translation_rmse_m": 0.11759686116853764,
+        "translation_mean_m": 0.10442622143639958,
+        "rotation_rmse_deg": 0.31229522982234525,
+        "rotation_mean_deg": 0.2818228916251127,
+        "rpe10_translation_rmse_m": 0.04361878388129485,
+        "rpe10_rotation_rmse_deg": 0.1739656372497033,
+        "pose_alignment": "se3",
+        "pose_label": "ViPE estimated"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 1.0,
+          "invalid_rate": 0.0,
+          "absrel": 0.07380383297851562,
+          "rmse_m": 0.9331203343142584,
+          "delta1": 0.9428148148148148,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3456000,
+          "missing_penalty_mae_m": 0.5233563462354369
+        },
+        "common175": {
+          "valid_coverage": 1.0,
+          "invalid_rate": 0.0,
+          "absrel": 0.07360884581027005,
+          "rmse_m": 0.9078084656817261,
+          "delta1": 0.9449717261904762,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3360000,
+          "missing_penalty_mae_m": 0.5145968545794927
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 1.0,
+        "invalid_rate": 0.0,
+        "absrel": 0.07380383297851562,
+        "rmse_m": 0.9331203343142584,
+        "delta1": 0.9428148148148148,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3456000,
+        "missing_penalty_mae_m": 0.5233563462354369
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9474988425925925,
+          "invalid_rate": 0.052501157407407406,
+          "absrel": 0.1302734776937874,
+          "rmse_m": 1.5727897686884569,
+          "delta1": 0.8533834816078882,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3274556,
+          "missing_penalty_mae_m": 2.333225270583041
+        },
+        "common175": {
+          "valid_coverage": 0.9470985119047619,
+          "invalid_rate": 0.0529014880952381,
+          "absrel": 0.13097709150538353,
+          "rmse_m": 1.5797704376827149,
+          "delta1": 0.8524082481237338,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3182251,
+          "missing_penalty_mae_m": 2.347264668276028
+        },
+        "scale_fit": null,
+        "alignment": "results/evaluation/pose/current/M2_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9474988425925925,
+        "invalid_rate": 0.052501157407407406,
+        "absrel": 0.1302734776937874,
+        "rmse_m": 1.5727897686884569,
+        "delta1": 0.8533834816078882,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3274556,
+        "missing_penalty_mae_m": 2.333225270583041
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 1566251,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.4531511799779971,
+        "model_to_gt_median_m": 0.20667865872383118,
+        "model_to_gt_p90_m": 1.159975802898407,
+        "model_to_gt_coverage_10cm": 0.35107,
+        "gt_to_model_mean_m": 5.96210973678933,
+        "gt_to_model_median_m": 4.240554332733154,
+        "gt_to_model_p90_m": 15.62193050384522,
+        "gt_to_model_coverage_10cm": 0.08207,
+        "symmetric_chamfer_mean_m": 3.2076304583836635,
+        "observed_gt_to_model_mean_m": 0.21092180997260976,
+        "observed_gt_to_model_median_m": 0.12662149965763092,
+        "observed_gt_to_model_p90_m": 0.5158916532993318,
+        "observed_gt_to_model_coverage_10cm": 0.43074
+      },
+      "rgb": {
+        "mean": {
+          "system": "B1",
+          "psnr_db_mean": 15.57495093097653,
+          "ssim_mean": 0.4565481781959534
+        },
+        "per_frame": [
+          {
+            "system": "B1",
+            "keyframe_index": 0,
+            "psnr_db": 17.3541594256531,
+            "ssim": 0.5213358402252197,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B1/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "B1",
+            "keyframe_index": 36,
+            "psnr_db": 17.351877068453096,
+            "ssim": 0.49489378929138184,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B1/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "B1",
+            "keyframe_index": 72,
+            "psnr_db": 16.325772253298084,
+            "ssim": 0.5388934016227722,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B1/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "B1",
+            "keyframe_index": 108,
+            "psnr_db": 11.03723226937387,
+            "ssim": 0.2602923810482025,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B1/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "B1",
+            "keyframe_index": 144,
+            "psnr_db": 15.805713638104496,
+            "ssim": 0.46732547879219055,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B1/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    },
+    {
+      "system": "B2",
+      "shared_frontend": null,
+      "pose": {
+        "pose_count": 180,
+        "frame_coverage": 1.0,
+        "translation_rmse_m": 0.7909437377181429,
+        "translation_mean_m": 0.6795922588100586,
+        "rotation_rmse_deg": 0.7354027244247339,
+        "rotation_mean_deg": 0.6500726084355757,
+        "rpe10_translation_rmse_m": 0.25640769092062254,
+        "rpe10_rotation_rmse_deg": 0.274171678110269,
+        "pose_alignment": "se3",
+        "pose_label": "calibrated RGB-only (known intrinsics)"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 0.9836984953703704,
+          "invalid_rate": 0.01630150462962963,
+          "absrel": 0.18410531504967548,
+          "rmse_m": 1.5950257240315535,
+          "delta1": 0.6397203604358316,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3399662,
+          "missing_penalty_mae_m": 1.7485139181820097
+        },
+        "common175": {
+          "valid_coverage": 0.983657738095238,
+          "invalid_rate": 0.016342261904761905,
+          "absrel": 0.18357018020769175,
+          "rmse_m": 1.5881685674650279,
+          "delta1": 0.641174673004366,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3305090,
+          "missing_penalty_mae_m": 1.7436675712645686
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 0.9836984953703704,
+        "invalid_rate": 0.01630150462962963,
+        "absrel": 0.18410531504967548,
+        "rmse_m": 1.5950257240315535,
+        "delta1": 0.6397203604358316,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3399662,
+        "missing_penalty_mae_m": 1.7485139181820097
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9706082175925926,
+          "invalid_rate": 0.029391782407407408,
+          "absrel": 0.1681262583238052,
+          "rmse_m": 1.8842705658758945,
+          "delta1": 0.8137476441544922,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3354422,
+          "missing_penalty_mae_m": 1.986897665331726
+        },
+        "common175": {
+          "valid_coverage": 0.9705988095238095,
+          "invalid_rate": 0.029401190476190477,
+          "absrel": 0.1686721134474551,
+          "rmse_m": 1.8947374836786919,
+          "delta1": 0.8121682981664485,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3261212,
+          "missing_penalty_mae_m": 1.9886228435074607
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/evaluation/pose/current/B2_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9706082175925926,
+        "invalid_rate": 0.029391782407407408,
+        "absrel": 0.1681262583238052,
+        "rmse_m": 1.8842705658758945,
+        "delta1": 0.8137476441544922,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3354422,
+        "missing_penalty_mae_m": 1.986897665331726
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 847753,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 0.46994411964132277,
+        "model_to_gt_median_m": 0.4024767130613327,
+        "model_to_gt_p90_m": 0.9795351564884186,
+        "model_to_gt_coverage_10cm": 0.16422,
+        "gt_to_model_mean_m": 6.6364300083293415,
+        "gt_to_model_median_m": 5.185489654541016,
+        "gt_to_model_p90_m": 16.361663436889653,
+        "gt_to_model_coverage_10cm": 0.024,
+        "symmetric_chamfer_mean_m": 3.553187063985332,
+        "observed_gt_to_model_mean_m": 0.3954683426917023,
+        "observed_gt_to_model_median_m": 0.2706005871295929,
+        "observed_gt_to_model_p90_m": 0.7427765488624576,
+        "observed_gt_to_model_coverage_10cm": 0.30827
+      },
+      "rgb": {
+        "mean": {
+          "system": "B2",
+          "psnr_db_mean": 13.716926465208783,
+          "ssim_mean": 0.37048943638801574
+        },
+        "per_frame": [
+          {
+            "system": "B2",
+            "keyframe_index": 0,
+            "psnr_db": 14.638888985368137,
+            "ssim": 0.39222458004951477,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders/000.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+          },
+          {
+            "system": "B2",
+            "keyframe_index": 36,
+            "psnr_db": 14.600590501652873,
+            "ssim": 0.3745090961456299,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders/036.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+          },
+          {
+            "system": "B2",
+            "keyframe_index": 72,
+            "psnr_db": 14.655745100831215,
+            "ssim": 0.46319326758384705,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders/072.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+          },
+          {
+            "system": "B2",
+            "keyframe_index": 108,
+            "psnr_db": 10.62308557398481,
+            "ssim": 0.2370457649230957,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders/108.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+          },
+          {
+            "system": "B2",
+            "keyframe_index": 144,
+            "psnr_db": 14.06632216420688,
+            "ssim": 0.38547447323799133,
+            "pred_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders/144.png",
+            "gt_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+          }
+        ]
+      }
+    }
+  ],
+  "supplementary_rows": {
+    "B2p": {
+      "shared_frontend": "M3",
+      "pose": {
+        "pose_count": 175,
+        "frame_coverage": 0.9722222222222222,
+        "translation_rmse_m": 2.594523587374209,
+        "translation_mean_m": 2.284661449970486,
+        "rotation_rmse_deg": 1.116379720440062,
+        "rotation_mean_deg": 1.1007957110609752,
+        "rpe10_translation_rmse_m": 0.7957987532266734,
+        "rpe10_rotation_rmse_deg": 0.20356732154714835,
+        "pose_alignment": "se3",
+        "pose_label": "OpenVINS estimated"
+      },
+      "native_depth": {
+        "all180": {
+          "valid_coverage": 0.9590818865740741,
+          "invalid_rate": 0.040918113425925925,
+          "absrel": 0.2611965576847372,
+          "rmse_m": 1.9808307510748746,
+          "delta1": 0.49424558776100913,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3314587,
+          "missing_penalty_mae_m": 2.773810267973906
+        },
+        "common175": {
+          "valid_coverage": 0.9864842261904762,
+          "invalid_rate": 0.013515773809523809,
+          "absrel": 0.2611965576847372,
+          "rmse_m": 1.9808307510748746,
+          "delta1": 0.49424558776100913,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3314587,
+          "missing_penalty_mae_m": 1.9959191327731607
+        },
+        "scale_fit": false,
+        "alignment": null,
+        "kind": "native_frontend_depth_not_rendered_model",
+        "valid_coverage": 0.9590818865740741,
+        "invalid_rate": 0.040918113425925925,
+        "absrel": 0.2611965576847372,
+        "rmse_m": 1.9808307510748746,
+        "delta1": 0.49424558776100913,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3314587,
+        "missing_penalty_mae_m": 2.773810267973906
+      },
+      "model_depth": {
+        "all180": {
+          "valid_coverage": 0.9360789930555555,
+          "invalid_rate": 0.06392100694444444,
+          "absrel": 0.6478834261266547,
+          "rmse_m": 5.687509115615093,
+          "delta1": 0.09953080116188458,
+          "pixels_domain": 3456000,
+          "pixels_valid": 3235089,
+          "missing_penalty_mae_m": 6.050733981260694
+        },
+        "common175": {
+          "valid_coverage": 0.9362586309523809,
+          "invalid_rate": 0.06374136904761905,
+          "absrel": 0.6457478595553113,
+          "rmse_m": 5.65427186784919,
+          "delta1": 0.10209741216067371,
+          "pixels_domain": 3360000,
+          "pixels_valid": 3145829,
+          "missing_penalty_mae_m": 6.017337626067626
+        },
+        "scale_fit": null,
+        "alignment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/evaluation/pose/current/M3_registration.json",
+        "kind": "frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth",
+        "valid_coverage": 0.9360789930555555,
+        "invalid_rate": 0.06392100694444444,
+        "absrel": 0.6478834261266547,
+        "rmse_m": 5.687509115615093,
+        "delta1": 0.09953080116188458,
+        "pixels_domain": 3456000,
+        "pixels_valid": 3235089,
+        "missing_penalty_mae_m": 6.050733981260694
+      },
+      "geometry": {
+        "samples_each": 100000,
+        "alignment": "single supplied global transform; no ICP",
+        "model_triangles": 2833401,
+        "gt_triangles": 9984967,
+        "model_to_gt_mean_m": 1.0322355082867256,
+        "model_to_gt_median_m": 0.793973445892334,
+        "model_to_gt_p90_m": 2.021857929229737,
+        "model_to_gt_coverage_10cm": 0.11256,
+        "gt_to_model_mean_m": 4.234310124125762,
+        "gt_to_model_median_m": 1.5157437324523926,
+        "gt_to_model_p90_m": 12.833386135101321,
+        "gt_to_model_coverage_10cm": 0.04742,
+        "symmetric_chamfer_mean_m": 2.6332728162062438,
+        "observed_gt_to_model_mean_m": 0.6757842305928871,
+        "observed_gt_to_model_median_m": 0.6623610258102417,
+        "observed_gt_to_model_p90_m": 1.1322618007659913,
+        "observed_gt_to_model_coverage_10cm": 0.01963
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "reviewer": "Clean independent GPT-6 Astra verifier",
+  "method_id": "M2",
+  "reviewed_revision": 3,
+  "status": "changes_requested",
+  "scope": "Only modelling contract, M2 packet and its legal RGB/ViPE geometry, and current M2 astra_model artifacts. No GT, evaluation outputs, other methods or legacy scene models were read.",
+  "model_modified": false,
+  "review_files": [
+    "independent_review/review.json",
+    "independent_review/review.md"
+  ],
+  "counts": {
+    "semantic_objects": 81,
+    "colliders": 60,
+    "input_cameras": 180
+  },
+  "budget": {
+    "model_revisions_used_at_review": 3,
+    "model_check_views_used_at_review": 15,
+    "review_extra_cpu_renders": 0,
+    "remaining_revisions": 2,
+    "remaining_check_views": 45
+  },
+  "visual_evidence": {
+    "personally_inspected_original_rgb_frames": [
+      0,
+      65,
+      85,
+      110,
+      130
+    ],
+    "personally_inspected_render_paths": [
+      "checks_v3/frame_000.png",
+      "checks_v3/frame_065.png",
+      "checks_v3/frame_085.png",
+      "checks_v3/frame_110.png",
+      "checks_v3/frame_130.png"
+    ],
+    "method": "Side-by-side original RGB and existing v3 render, with read-only Blender inspection and packet geometry/projection calculations. In-memory image composites only."
+  },
+  "artifact_hashes": {
+    "scene.blend": "6795c2f500e09de65e631fd79f9fdc493e51d8d3211e83de0dfe5ab0e4d02bd4",
+    "scene.glb": "5ed83d1e9a19e8d20ff5872d28a4893aa31826f83ff2f0219d26aa6198f62064",
+    "build_scene.py": "6f23564ed589ba47b3a38b705f229d12bd58466e45ba3b7063eda3e3cd9426e0",
+    "objects.json": "f3476bec450612dae1936c45dca6bfda74c72cdd8b2cad8546b015a3ebf27da2",
+    "colliders.json": "b1f8d54864886c3e6865635b18e398ae033fa95acb2ba0391435b46123afdea5",
+    "cameras.json": "c0e5c6a33947286fd6c5b855d7c250a0cbc131b1c370e8d432d6ee7f34f38490"
+  },
+  "findings": [
+    {
+      "id": "M2-R1",
+      "priority": "P1",
+      "title": "Tabletops still intersect five upholstered seats",
+      "objects": [
+        "lounge_A_table",
+        "lounge_A_ottoman",
+        "lounge_A_ottoman_mid",
+        "lounge_B_table",
+        "lounge_B_chair_back",
+        "lounge_B_ottoman_left",
+        "lounge_B_ottoman_rear"
+      ],
+      "frames": [
+        0,
+        65,
+        130
+      ],
+      "evidence": "Read-only inspection of actual scene.blend seat cylinders and tabletop cylinders. The revision-3 separation loop only constrains seat-seat distances and excludes tables.",
+      "measured_intersections": [
+        {
+          "table": "lounge_A_table",
+          "seat": "lounge_A_ottoman",
+          "horizontal_penetration_m": 0.12351236,
+          "vertical_overlap_m": 0.05
+        },
+        {
+          "table": "lounge_A_table",
+          "seat": "lounge_A_ottoman_mid",
+          "horizontal_penetration_m": 0.38596927,
+          "vertical_overlap_m": 0.05
+        },
+        {
+          "table": "lounge_B_table",
+          "seat": "lounge_B_chair_back",
+          "horizontal_penetration_m": 0.09525881,
+          "vertical_overlap_m": 0.05
+        },
+        {
+          "table": "lounge_B_table",
+          "seat": "lounge_B_ottoman_left",
+          "horizontal_penetration_m": 0.1761894,
+          "vertical_overlap_m": 0.05
+        },
+        {
+          "table": "lounge_B_table",
+          "seat": "lounge_B_ottoman_rear",
+          "horizontal_penetration_m": 0.35960257,
+          "vertical_overlap_m": 0.05
+        }
+      ],
+      "impact": "Real solids interpenetrate; correcting seat-seat black crescents did not resolve the whole seating assembly. Some mid ottomans visually merge into tables.",
+      "requested_change": "Include table disks in seating nonintersection constraints. Preserve measured lounge_A_table center, adjust the uncertain seat layout/radii using RGB, and record any further displacement. Recheck both seat-seat and seat-table clearance."
+    },
+    {
+      "id": "M2-R2",
+      "priority": "P1",
+      "title": "Reception desk has inward side normals and upward bottom normal",
+      "objects": [
+        "reception_desk.faceted_counter"
+      ],
+      "frames": [
+        0,
+        110,
+        130
+      ],
+      "evidence": {
+        "signed_volume_m3": -0.14512244984507572,
+        "front_face_normal_y_range": [
+          0.9309,
+          0.986
+        ],
+        "back_face_normal": [
+          0,
+          -1,
+          0
+        ],
+        "bottom_face_normal": [
+          0,
+          0,
+          1
+        ],
+        "top_face_normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "impact": "Mesh winding is inconsistent. Double-sided shading can conceal the defect in current checks, but exported lighting, backface culling and solid interpretation are unreliable.",
+      "requested_change": "Recalculate the closed counter mesh normals outward and verify positive signed volume / consistent edge winding. This is a local mesh fix; no dimensions or cameras need change."
+    },
+    {
+      "id": "M2-R3",
+      "priority": "P1",
+      "title": "A permanent window collider remains behind the glass entry door",
+      "objects": [
+        "window_wall",
+        "glass_entry_double_door"
+      ],
+      "frames": [
+        110,
+        130
+      ],
+      "evidence": {
+        "window_wall_bounds": {
+          "min": [
+            -4.577499866,
+            -3.699999809,
+            0
+          ],
+          "max": [
+            -4.359999657,
+            15.699999809,
+            5
+          ]
+        },
+        "door_bounds": {
+          "min": [
+            -4.400000095,
+            11.612499237,
+            0
+          ],
+          "max": [
+            -4.215000153,
+            13.24750042,
+            2.495000124
+          ]
+        },
+        "portal_center_samples": [
+          {
+            "point": [
+              -4.34,
+              12.04,
+              1
+            ],
+            "blocker": "glass_entry_double_door"
+          },
+          {
+            "point": [
+              -4.45,
+              12.04,
+              1
+            ],
+            "blocker": "window_wall"
+          }
+        ]
+      },
+      "impact": "The observed closed door can legitimately block movement, but opening/removing its own collider would still leave the independent window-wall slab sealing the portal. Four wood-wall opening centers are clear; that fix did not include this entry.",
+      "requested_change": "Split the fixed window-wall collider around the door aperture. Keep closed-door blocking in a separate explicitly closed leaf collider, or document that the model only supports a static closed entry. If claiming traversability, add/verify threshold floor support through the opening."
+    },
+    {
+      "id": "M2-R4",
+      "priority": "P2",
+      "title": "Circular mirror cluster is visibly displaced on the feature wall",
+      "objects": [
+        "mirror_00",
+        "mirror_01",
+        "mirror_02",
+        "mirror_03",
+        "mirror_04",
+        "mirror_05",
+        "mirror_06",
+        "mirror_07",
+        "mirror_08",
+        "mirror_09",
+        "mirror_10"
+      ],
+      "frames": [
+        0,
+        65,
+        85
+      ],
+      "evidence": {
+        "frame_65_at_640x480": {
+          "largest_model_mirror_00_center_px": [
+            500.6,
+            166.8
+          ],
+          "approximate_largest_original_mirror_center_px": [
+            365,
+            193
+          ],
+          "approximate_offset_px": [
+            136,
+            -26
+          ]
+        },
+        "frame_0": "Original RGB shows several large mirror disks at the right edge, whereas the v3 render omits that visible cluster.",
+        "frame_85": "Original circular mirror cluster is legible; the model group is displaced and difficult to identify against the wall."
+      },
+      "impact": "A salient semantic landmark is misplaced despite otherwise recognizable reception/window/planter topology.",
+      "requested_change": "Refit mirror wall-plane y/z centers and radii from frames 65 and 85, using frame 0 as a cross-check. Retain supplied cameras and rigid T. Treat mirror contents as reflection, not extra scene geometry."
+    },
+    {
+      "id": "M2-R5",
+      "priority": "P3",
+      "title": "Saved blend/GLB intrinsics have a very small vertical focal discrepancy",
+      "objects": [
+        "input cameras"
+      ],
+      "evidence": {
+        "packet_fx_px": 765.5328979492188,
+        "packet_fy_px": 765.6721801757812,
+        "glb_fy_minus_packet_fy_px": -0.13928035125411498,
+        "relative_error_percent": 0.0182,
+        "saved_blend_pixel_aspect": [
+          1,
+          1
+        ],
+        "check_render_pixel_aspect_y_expression": "fx/fy"
+      },
+      "impact": "Extrinsics agree. The exported camera vertical field of view uses fx because save/export precedes the render-loop pixel-aspect assignment. The discrepancy is below 0.1 pixel at the vertical image edge.",
+      "requested_change": "Low priority: save/export with the intended pixel aspect or explicitly document this tiny glTF intrinsic approximation. Do not change the supplied camera poses."
+    }
+  ],
+  "passed_checks": {
+    "transform_direction": "For column-vector homogeneous points, p_model = T_input_model @ p_input; c2w_model = T_input_model @ c2w_input. This operational direction is verified even though the matrix name alone is ambiguous.",
+    "rigid_transform": {
+      "singular_values": [
+        1,
+        1,
+        1
+      ],
+      "determinant": 1.0000000000000002,
+      "uniform_scale": 1,
+      "max_all_180_camera_composition_error": 1.7763568394002505e-15,
+      "max_packet_vs_exported_input_pose_error": 0
+    },
+    "blender_camera_convention": "matrix_world = c2w_model @ diag(1,-1,-1,1); OpenCV RDF to Blender camera -Z forward/+Y up.",
+    "max_blend_camera_matrix_error": 3.427267074584961e-07,
+    "glb_camera_convention": "glTF world (x,y,z) = model (x,z,-y); camera local convention unchanged from Blender.",
+    "max_glb_camera_matrix_error": 4.7201811170793917e-07,
+    "floor": "Two physical floor slab colliders preserve the L-shaped footprint; the rug is also correctly role=floor. The union does not create a full-room AABB across the unmodelled side region.",
+    "wood_wall_doorways": "Sampled aperture centers for mirror_front, mirror_rear, right_return and rear_right are free of obstacle colliders below the 2.25 m lintels.",
+    "seat_normals_and_black_crescents": "The former prominent seat-seat black crescent artifacts are not apparent in the five v3 checks. Seat caps are flat-shaded in source. This does not excuse the independently measured table-seat intersections.",
+    "provenance": "362 access-log entries are within the contract/packet/RGB/geometry allowlist. Derivation code uses packet depth and pose-conditioned RGB triangulation; no rescale operation or external geometry read was found in inspected source.",
+    "semantic_construction": "81 named semantic groups use parametric solids and curves. Measurement clouds remain auxiliary evidence and are not substituted for the semantic scene."
+  },
+  "geometry_evidence": {
+    "near_table_consistency": {
+      "frame_0_native_depth_backprojection_model": [
+        -0.567,
+        5.293,
+        0.53
+      ],
+      "frame_130_native_depth_backprojection_model": [
+        -0.569,
+        5.261,
+        0.514
+      ],
+      "manual_triangulated_table_center": [
+        -0.560789,
+        5.246578,
+        0.533482
+      ]
+    },
+    "far_wall_conflict_is_real": {
+      "frame_0_shield_tip_native_depth_backprojection_model": [
+        -0.028,
+        11.722,
+        1.704
+      ],
+      "frame_130_shield_tip_native_depth_backprojection_model": [
+        0.063,
+        14.988,
+        1.474
+      ],
+      "manual_triangulated_shield_tip": [
+        -0.035896,
+        15.560342,
+        1.434892
+      ],
+      "recomputed_reprojection_errors_px": [
+        0.6134,
+        0.7747
+      ]
+    },
+    "floor_normalization": "The additional floor correction composes a rotation and translation only. It cannot secretly change scale. The original frame-0 candidate support rectangle has final z median 0.133 m and broad tails including non-floor/uncertain pixels, so z=0 remains a documented approximation.",
+    "scale_conclusion": "Native ViPE scale preservation is credible from source and numerical export checks. This verifies absence of a similarity rescale, not absolute ground-truth metric accuracy."
+  },
+  "visual_residuals_not_requiring_new_budget": [
+    "Planter foliage is denser/taller than the sparse golden branches visible in RGB, particularly frames 85 and 130, and hides more seating.",
+    "The black inlay is rendered as strong linear ridges/reflections rather than the observed finer woven reflective pattern; reflective materials and lighting remain approximate.",
+    "Foreground chairs/ottomans look bulky in frames 0 and 65. Use the collision fix to improve RGB seating layout before spending a separate revision on fine appearance.",
+    "A strong dark wall-floor seam/strip is visible in model frames 0/65/85/130 and is less apparent in corresponding RGB. Its cause was not independently isolated; do not label it solved by the seat-normal fix.",
+    "Several lathed pots/bowls have open/nonmanifold boundary loops; no associated black-hole artifact is evident in current checks. Hidden underside/thickness is already marked inferred."
+  ],
+  "recommended_remaining_work": "Use one revision for R1/R2 and entry collider semantics, plus the mirror landmark if feasible; render the same five legal input views to confirm. Reserve the final revision for failures revealed by those checks. Do not spend remaining budget trying to fit reflective depth or changing global scale/cameras.",
+  "limits": "Independent review used legal evidence only, no GT grading. Claimed historical input access is supported by the available access log/source, not by an external process audit. No extra renders were performed and no model artifacts were modified."
+}

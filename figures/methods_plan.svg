@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#64748b"/></marker></defs>
+<rect width="1440" height="720" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#172554}.title{font-size:30px;font-weight:bold}.label{font-size:19px;font-weight:bold}.small{font-size:15px;fill:#475569}.tiny{font-size:13px;fill:#64748b}</style>
+<text x="48" y="54" class="title">From video to executable scenes</text>
+<text x="48" y="85" class="small">Four reconstruction paths | Design proposal, not experimental results</text>
+<rect x="48" y="124" width="650" height="90" rx="12" fill="#eff6ff" stroke="#cbd5e1"/>
+<text x="68" y="158" class="label">M1</text>
+<text x="122" y="158" class="label">Sampled RGB</text>
+<text x="122" y="186" class="small">Visual inference only</text>
+<path d="M698 169L752 169" stroke="#64748b" fill="none" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="234" width="650" height="90" rx="12" fill="#f0fdf4" stroke="#cbd5e1"/>
+<text x="68" y="268" class="label">M2</text>
+<text x="122" y="268" class="label">Video → ViPE</text>
+<text x="122" y="296" class="small">Sampled RGB + pose + depth</text>
+<path d="M698 279L752 279" stroke="#64748b" fill="none" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="344" width="650" height="90" rx="12" fill="#f0fdfa" stroke="#cbd5e1"/>
+<text x="68" y="378" class="label">M3</text>
+<text x="122" y="378" class="label">Video + IMU → OpenVINS → MapAnything</text>
+<text x="122" y="406" class="small">Sampled RGB + metric pose + metric depth</text>
+<path d="M698 389L752 389" stroke="#64748b" fill="none" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="454" width="650" height="90" rx="12" fill="#fff7ed" stroke="#cbd5e1"/>
+<text x="68" y="488" class="label">M4</text>
+<text x="122" y="488" class="label">Video + GT pose → MapAnything</text>
+<text x="122" y="516" class="small">GT-pose diagnostic; no GT mesh or depth</text>
+<path d="M698 499L752 499" stroke="#64748b" fill="none" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="760" y="124" width="260" height="420" rx="12" fill="#eef2ff" stroke="#a5b4fc"/>
+<text x="785" y="169" class="label">Shared Astra loop</text>
+<text x="785" y="214" class="small">Objects &amp; evidence</text>
+<text x="785" y="262" class="small">Geometry constraints</text>
+<text x="785" y="310" class="small">Blender programs</text>
+<text x="785" y="358" class="small">Render &amp; compare</text>
+<text x="785" y="406" class="small">Independent verifier</text>
+<text x="785" y="454" class="small">Revise → freeze</text>
+<path d="M1020 336L1074 336" stroke="#64748b" fill="none" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1084" y="124" width="308" height="200" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<text x="1106" y="164" class="label">Scene artifacts</text>
+<text x="1106" y="199" class="small">Editable .blend / scene program</text>
+<text x="1106" y="229" class="small">Object IDs + semantic relations</text>
+<text x="1106" y="259" class="small">Measured vs inferred geometry</text>
+<text x="1106" y="289" class="small">Colliders + explicit priors</text>
+<rect x="1084" y="350" width="308" height="194" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<text x="1106" y="389" class="label">Evaluate independently</text>
+<text x="1106" y="423" class="small">Pose · depth · geometry · RGB</text>
+<text x="1106" y="452" class="small">5 × 4 view comparison + GT</text>
+<text x="1106" y="481" class="small">Drone image-goal navigation</text>
+<text x="1106" y="510" class="small">G1 language-goal navigation</text>
+<rect x="48" y="578" width="1344" height="94" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="68" y="612" class="label">Geometry baselines: ViPE fusion · MapAnything fusion · pose-conditioned ablation</text>
+<text x="68" y="643" class="small">Separate metric / scale-aligned results. Test reconstructed-world execution and transfer to the GT simulation.</text>
+<text x="48" y="702" class="tiny">World Lobby | Independent workspace | 2026-09-22</text>
+</svg>

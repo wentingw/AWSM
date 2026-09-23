@@ -1,0 +1,1313 @@
+{
+  "colliders": [
+    {
+      "object_id": "floor",
+      "collider_id": "floor.main_slab",
+      "role": "floor",
+      "bounds": {
+        "min": [
+          -4.349999904632568,
+          -3.6000003814697266,
+          -0.1599999964237213
+        ],
+        "max": [
+          3.6500000953674316,
+          16.0,
+          0.0
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "floor",
+      "collider_id": "floor.rear_extension",
+      "role": "floor",
+      "bounds": {
+        "min": [
+          3.4499998092651367,
+          7.0,
+          -0.1599999964237213
+        ],
+        "max": [
+          5.949999809265137,
+          15.600000381469727,
+          0.0
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "dark_floor_inlay",
+      "role": "floor",
+      "bounds": {
+        "min": [
+          -2.6499998569488525,
+          -2.4000000953674316,
+          0.0
+        ],
+        "max": [
+          1.9499999284744263,
+          13.299999237060547,
+          0.01575000025331974
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "collider_id": "mirror_feature_wall.panelblock",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.570000171661377,
+          -3.5999999046325684,
+          0.0
+        ],
+        "max": [
+          3.7300000190734863,
+          -2.5999999046325684,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "collider_id": "mirror_feature_wall.panelblock.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.570000171661377,
+          -1.5,
+          0.0
+        ],
+        "max": [
+          3.7300000190734863,
+          5.699999809265137,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "collider_id": "mirror_feature_wall.panelblock.002",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.570000171661377,
+          6.75,
+          0.0
+        ],
+        "max": [
+          3.7300000190734863,
+          7.149999618530273,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "collider_id": "mirror_feature_wall.lintel",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.570000171661377,
+          -2.5999999046325684,
+          2.25
+        ],
+        "max": [
+          3.7300000190734863,
+          -1.5,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "collider_id": "mirror_feature_wall.lintel.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.570000171661377,
+          5.699999809265137,
+          2.25
+        ],
+        "max": [
+          3.7300000190734863,
+          6.75,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "rear_right_wall",
+      "collider_id": "rear_right_wall.panelblock",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          5.869999885559082,
+          7.15000057220459,
+          0.0
+        ],
+        "max": [
+          6.029999732971191,
+          10.800000190734863,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "rear_right_wall",
+      "collider_id": "rear_right_wall.panelblock.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          5.869999885559082,
+          12.0,
+          0.0
+        ],
+        "max": [
+          6.029999732971191,
+          15.600000381469727,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "rear_right_wall",
+      "collider_id": "rear_right_wall.lintel",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          5.869999885559082,
+          10.799999237060547,
+          2.25
+        ],
+        "max": [
+          6.029999732971191,
+          12.0,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "right_return_wall",
+      "collider_id": "right_return_wall.panelblock",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.6500000953674316,
+          7.119999885559082,
+          0.0
+        ],
+        "max": [
+          4.0,
+          7.279999732971191,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "right_return_wall",
+      "collider_id": "right_return_wall.panelblock.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          5.050000190734863,
+          7.119999885559082,
+          0.0
+        ],
+        "max": [
+          5.949999809265137,
+          7.279999732971191,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "right_return_wall",
+      "collider_id": "right_return_wall.lintel",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          4.0,
+          7.119999885559082,
+          2.25
+        ],
+        "max": [
+          5.050000190734863,
+          7.279999732971191,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "reception_back_wall",
+      "collider_id": "reception_back_wall.panelblock",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          15.569999694824219,
+          0.0
+        ],
+        "max": [
+          5.950000286102295,
+          15.729999542236328,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "front_end_wall",
+      "collider_id": "front_end_wall.panelblock",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          -3.7300000190734863,
+          0.0
+        ],
+        "max": [
+          3.6500000953674316,
+          -3.570000171661377,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Per-solid bound; architectural openings and L-shaped floor retained."
+    },
+    {
+      "object_id": "ceiling",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -4.625,
+          -3.75,
+          4.950000286102295
+        ],
+        "max": [
+          6.024999618530273,
+          15.75,
+          5.150000095367432
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "window_wall",
+      "collider_id": "window_wall.before_portal",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.577499866485596,
+          -3.6999998092651367,
+          0.0
+        ],
+        "max": [
+          -4.359999656677246,
+          11.6125,
+          5.0
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed",
+      "provenance": "Fixed window assembly segmented around observed door aperture."
+    },
+    {
+      "object_id": "window_wall",
+      "collider_id": "window_wall.after_portal",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.577499866485596,
+          13.2475,
+          0.0
+        ],
+        "max": [
+          -4.359999656677246,
+          15.699999809265137,
+          5.0
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed",
+      "provenance": "Fixed window assembly segmented around observed door aperture."
+    },
+    {
+      "object_id": "window_wall",
+      "collider_id": "window_wall.portal_header",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.577499866485596,
+          11.6125,
+          2.495
+        ],
+        "max": [
+          -4.359999656677246,
+          13.2475,
+          5.0
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed",
+      "provenance": "Fixed window assembly segmented around observed door aperture."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_stile",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          11.612499237060547,
+          0.0
+        ],
+        "max": [
+          -4.28000020980835,
+          11.6875,
+          2.4800000190734863
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_stile.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          12.392499923706055,
+          0.0
+        ],
+        "max": [
+          -4.28000020980835,
+          12.467500686645508,
+          2.4800000190734863
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_stile.002",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          13.172499656677246,
+          0.0
+        ],
+        "max": [
+          -4.28000020980835,
+          13.2475004196167,
+          2.4800000190734863
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.closed_leaf",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.357500076293945,
+          11.692500114440918,
+          0.13249993324279785
+        ],
+        "max": [
+          -4.322500228881836,
+          12.387499809265137,
+          2.3975000381469727
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "closed_leaf",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_rail",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          11.640000343322754,
+          0.054999999701976776
+        ],
+        "max": [
+          -4.28000020980835,
+          12.4399995803833,
+          0.14500001072883606
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_rail.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          11.640000343322754,
+          2.4049999713897705
+        ],
+        "max": [
+          -4.28000020980835,
+          12.4399995803833,
+          2.495000123977661
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.closed_leaf.001",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.357500076293945,
+          12.47249984741211,
+          0.13249993324279785
+        ],
+        "max": [
+          -4.322500228881836,
+          13.167499542236328,
+          2.3975000381469727
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "closed_leaf",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_rail.002",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          12.420000076293945,
+          0.054999999701976776
+        ],
+        "max": [
+          -4.28000020980835,
+          13.219999313354492,
+          0.14500001072883606
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.door_rail.003",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          12.420000076293945,
+          2.4049999713897705
+        ],
+        "max": [
+          -4.28000020980835,
+          13.219999313354492,
+          2.495000123977661
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "fixed_frame",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    },
+    {
+      "object_id": "window_column",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.005000114440918,
+          6.654999732971191,
+          0.0
+        ],
+        "max": [
+          -3.115000009536743,
+          7.545000076293945,
+          4.940000057220459
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_ottoman",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -2.050992250442505,
+          4.4698076248168945,
+          0.0
+        ],
+        "max": [
+          -1.1909921169281006,
+          5.329807281494141,
+          0.5180000066757202
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_chair_left",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -1.96073579788208,
+          5.374699115753174,
+          0.0
+        ],
+        "max": [
+          -1.1448392868041992,
+          6.185214042663574,
+          0.9423006772994995
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_chair_rear",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -1.6109130382537842,
+          6.140596866607666,
+          0.0
+        ],
+        "max": [
+          -0.7831631898880005,
+          6.956440448760986,
+          0.9423008561134338
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_oval_seat",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -0.7365119457244873,
+          6.114851951599121,
+          0.0
+        ],
+        "max": [
+          0.3234879970550537,
+          7.174851417541504,
+          0.5180000066757202
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_ottoman_mid",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -0.06814455986022949,
+          5.439239978790283,
+          0.0
+        ],
+        "max": [
+          0.711855411529541,
+          6.219239711761475,
+          0.5180000066757202
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_chair_right",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          0.726463794708252,
+          5.651236057281494,
+          0.0
+        ],
+        "max": [
+          1.5628559589385986,
+          6.496631145477295,
+          0.9428582191467285
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_chair_back",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          0.7851643562316895,
+          2.4474151134490967,
+          0.0
+        ],
+        "max": [
+          1.6172935962677002,
+          3.2911159992218018,
+          0.943058967590332
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_chair_mid",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          1.1778998374938965,
+          1.66518235206604,
+          0.0
+        ],
+        "max": [
+          2.0216283798217773,
+          2.508890390396118,
+          0.9430589079856873
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_chair_front",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          1.2951747179031372,
+          0.7977864742279053,
+          0.0
+        ],
+        "max": [
+          2.1389107704162598,
+          1.6506049633026123,
+          0.9430590271949768
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_ottoman_left",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -0.5651307702064514,
+          0.8353071808815002,
+          0.0
+        ],
+        "max": [
+          0.24446922540664673,
+          1.6449072360992432,
+          0.5180000066757202
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_chair_left",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -0.9404631853103638,
+          0.018484652042388916,
+          0.0
+        ],
+        "max": [
+          -0.11471140384674072,
+          0.8668256998062134,
+          0.9425683617591858
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_ottoman_rear",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          0.11309105157852173,
+          3.023681402206421,
+          0.0
+        ],
+        "max": [
+          0.957891047000885,
+          3.868481397628784,
+          0.5180000066757202
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_A_table",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -1.190000057220459,
+          4.609999656677246,
+          0.03419807553291321
+        ],
+        "max": [
+          0.06999999284744263,
+          5.869999885559082,
+          0.4950000047683716
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "lounge_B_table",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -0.5299999713897705,
+          1.6399998664855957,
+          0.034198079258203506
+        ],
+        "max": [
+          0.8500000238418579,
+          3.0199999809265137,
+          0.4950000047683716
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "divider_planter_left",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -1.9249999523162842,
+          7.480000019073486,
+          0.025000005960464478
+        ],
+        "max": [
+          -0.35499995946884155,
+          8.020000457763672,
+          0.8694999814033508
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "divider_planter_right",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          0.11499994993209839,
+          7.480000019073486,
+          0.025000005960464478
+        ],
+        "max": [
+          1.684999942779541,
+          8.020000457763672,
+          0.8694999814033508
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "window_shrub_pot",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -3.759999990463257,
+          4.78000020980835,
+          0.0
+        ],
+        "max": [
+          -2.4800000190734863,
+          6.059999942779541,
+          0.4300000071525574
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "mirror_wall_shrub_pot",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          2.680000066757202,
+          3.75,
+          0.0
+        ],
+        "max": [
+          3.380000114440918,
+          4.449999809265137,
+          0.6200000047683716
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "reception_tree_left_pot",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -2.690000057220459,
+          14.15999984741211,
+          0.0
+        ],
+        "max": [
+          -2.1500000953674316,
+          14.699999809265137,
+          0.5600000023841858
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "reception_tree_right_pot",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          1.9299999475479126,
+          14.220000267028809,
+          0.0
+        ],
+        "max": [
+          2.490000009536743,
+          14.779999732971191,
+          0.5699999928474426
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "rear_corner_plant_pot",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          4.460000038146973,
+          14.25,
+          0.0
+        ],
+        "max": [
+          5.360000133514404,
+          15.149999618530273,
+          0.4099999964237213
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "reception_desk",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -1.600000023841858,
+          13.819999694824219,
+          0.07999999821186066
+        ],
+        "max": [
+          1.399999976158142,
+          14.600000381469727,
+          0.9700000286102295
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "floor_lamp_0",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.830000162124634,
+          14.579999923706055,
+          0.0291949100792408
+        ],
+        "max": [
+          4.269999980926514,
+          15.020000457763672,
+          1.9350000619888306
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "floor_lamp_1",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          3.950000047683716,
+          8.15999984741211,
+          0.029194911941885948
+        ],
+        "max": [
+          4.389999866485596,
+          8.600000381469727,
+          1.9350000619888306
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "floor_lamp_2",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          2.6600000858306885,
+          -2.319999933242798,
+          0.029194913804531097
+        ],
+        "max": [
+          3.1000001430511475,
+          -1.8799998760223389,
+          1.9350000619888306
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_00",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -2.4648020267486572,
+          3.926117420196533,
+          4.341000080108643
+        ],
+        "max": [
+          -0.9452535510063171,
+          5.4456706047058105,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_01",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -2.21287202835083,
+          6.474795818328857,
+          4.396000385284424
+        ],
+        "max": [
+          -0.9571988582611084,
+          7.730473041534424,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_02",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          0.4753683805465698,
+          6.678358554840088,
+          4.451000213623047
+        ],
+        "max": [
+          2.3933637142181396,
+          8.596358299255371,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_03",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          3.0913844108581543,
+          5.2533721923828125,
+          4.341000080108643
+        ],
+        "max": [
+          5.0093793869018555,
+          7.1713714599609375,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_04",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          0.6521000862121582,
+          8.322654724121094,
+          4.396000385284424
+        ],
+        "max": [
+          2.1044704914093018,
+          9.775030136108398,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_05",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -2.862199306488037,
+          9.503571510314941,
+          4.451000213623047
+        ],
+        "max": [
+          -1.5250307321548462,
+          10.840744972229004,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_06",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -1.7406643629074097,
+          10.075872421264648,
+          4.341000080108643
+        ],
+        "max": [
+          -0.6166259050369263,
+          11.199914932250977,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_07",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -1.0256024599075317,
+          11.282364845275879,
+          4.396000385284424
+        ],
+        "max": [
+          0.7738755941390991,
+          13.081847190856934,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_08",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          0.5435824394226074,
+          11.019206047058105,
+          4.451000213623047
+        ],
+        "max": [
+          2.215303421020508,
+          12.690932273864746,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_09",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          2.0362625122070312,
+          11.991239547729492,
+          4.341000080108643
+        ],
+        "max": [
+          3.5900206565856934,
+          13.545001983642578,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_10",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -1.4391392469406128,
+          15.248247146606445,
+          4.396000385284424
+        ],
+        "max": [
+          0.14712601900100708,
+          16.834518432617188,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_11",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          0.3775422275066376,
+          17.143457412719727,
+          4.451000213623047
+        ],
+        "max": [
+          2.0352087020874023,
+          18.801130294799805,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_12",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -3.266434907913208,
+          18.690933227539062,
+          4.341000080108643
+        ],
+        "max": [
+          -1.5230411291122437,
+          20.43433380126953,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_13",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          -1.3423043489456177,
+          22.363601684570312,
+          4.396000385284424
+        ],
+        "max": [
+          0.5756908059120178,
+          24.281604766845703,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    },
+    {
+      "object_id": "pendant_14",
+      "role": "overhead",
+      "bounds": {
+        "min": [
+          2.2151236534118652,
+          21.93314552307129,
+          4.451000213623047
+        ],
+        "max": [
+          4.133118629455566,
+          23.85114860534668,
+          4.949999809265137
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "provenance": "Conservative parametric envelope; physical thickness and friction inferred."
+    }
+  ],
+  "coordinate_frame": "same as scene.blend"
+}

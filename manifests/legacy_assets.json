@@ -1,0 +1,80 @@
+{
+  "audit_date": "2026-09-22T16:40:00+08:00",
+  "project_root": "/home/hchen/Documents/astraBlenderTest",
+  "scope": "read-only inventory; paths and claims are evidence-backed; no files copied",
+  "primary_world_lobby": {
+    "capture": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401",
+    "video": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/simulation_vio.mp4",
+    "rgb_frames": 8999,
+    "imu_samples": 89999,
+    "duration_s": 359.92,
+    "keyframes": 180,
+    "ground_truth": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/ground_truth/camera_tum.txt",
+    "ground_truth_usage": "evaluation only; must not enter reconstruction"
+  },
+  "methods": {
+    "method1_rgb_astra": {
+      "status": "exists",
+      "root": "/home/hchen/Documents/astraBlenderTest/visual-recon",
+      "inputs": "180 RGB PNGs; see reference/ and freeze_manifest.json",
+      "outputs": ["scene.blend", "scene.glb", "renders/"],
+      "pose_status": "no pose/depth/IMU used for model; four manual cameras only; an independent post-freeze RGB-only COLMAP trajectory exists",
+      "post_freeze_rgb_trajectory": "camera_rgb180/solve_v1/camera_rgb180_native.tum",
+      "post_freeze_rgb_trajectory_metrics": {"registered_frames": 180, "sim3_ate_rmse_m": 1.160309, "orientation_rmse_deg": 12.649238},
+      "post_freeze_rgb_warning": "This trajectory is an evaluation artifact produced after the Astra model was frozen; it is not Astra camera output and is not a reconstruction input.",
+      "metric_status": "visual-only approximate dimensions; no metric claim",
+      "evidence": ["README.md", "freeze_manifest.json", "DELIVERY.json"]
+    },
+    "method2_vipe_astra": {
+      "status": "exists, native ViPE metrics; model provenance needs explicit separation",
+      "root": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401",
+      "pose": "vipe_rgb_180_20260922/camera.npz",
+      "depth": "vipe_rgb_180_20260922/depth/",
+      "model": "modelling/reproduction_20260922/final/scene.blend",
+      "reported_metrics": {"pose_ate_rmse_m": 0.1923, "pose_rotation_rmse_deg": 0.3379, "depth_mae_m": 0.5600, "depth_rmse_m": 1.0111, "depth_absrel": 0.0778},
+      "coverage": "180 sampled RGB images (about 2 s spacing), not every video frame; no_vda with UniDepth-small near-metric learned prior",
+      "warning": "The reproduction report says geometry measurements reuse SfM+IMU and MapAnything; do not label that model as pure ViPE until rebuilt with native ViPE pose/depth."
+    },
+    "method3_openvins_mapanything_astra": {
+      "status": "requested chain partially exists; accepted model is not OpenVINS",
+      "openvins": "runs/stable_orbit_20260921T044401/openvins/pose_cam.tum",
+      "openvins_evaluation": "evaluation/openvins_rejected.json",
+      "mapanything": "runs/stable_orbit_20260921T044401/depth_windows8/",
+      "accepted_model": "modelling/draft_v5/scene.blend",
+      "accepted_pose": "accepted_estimate/metric_camera.tum",
+      "warning": "OpenVINS full 360 s diverged (ATE 2153.165 m, rotation 179.193 deg); draft_v5 used accepted SfM+IMU metric pose plus MapAnything depth.",
+      "openvins_62s_revision": {"root": "evaluation/openvins_diagnosis_20260922/window31_first62s", "change": "max_clones 11 to 31", "position_error_at_60s_m": 0.010511, "orientation_error_at_60s_deg": 0.290891, "scope": "first 62 s only; full 360 s not replayed"}
+    },
+    "method4_ground_truth_pose_mapanything_astra": {
+      "status": "not found as a completed experiment",
+      "available_inputs": "ground_truth/camera_tum.txt plus same RGB/video and MapAnything checkout",
+      "required_work": "run MapAnything with GT camera poses, rebuild Astra model, freeze provenance and evaluate"
+    },
+    "traditional_baselines": {
+      "vipe_native": "native ViPE outputs and metrics documented in VIPE_EVALUATION_20260922.md; sparse 180 RGB input coverage",
+      "mapanything": "depth_windows8 exists; no standalone GT-depth table found",
+      "comparison_count": 6,
+      "comparison_entries": ["M1 RGB+Astra", "M2 ViPE+Astra", "M3 OpenVINS+MapAnything+Astra (pending valid rebuild)", "M4 GT-pose+MapAnything+Astra", "ViPE native", "MapAnything native"],
+      "openvins": "rejected diagnostic only; not a valid baseline result"
+    }
+  },
+  "metric_pose_experiment": {
+    "status": "exists but depth/model not rerun",
+    "root": "runs/stable_orbit_20260921T044401/batch_vio_20260922",
+    "reported": {"keyframe_position_ate_rmse_m": 0.342311, "keyframe_orientation_rmse_deg": 0.052007},
+    "warning": "MapAnything only dry-run input synchronization was checked; no new depth or Blender model was produced from this pose."
+  },
+  "simulation_and_downstream_assets": {
+    "world_lobby_usd": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/Collected_World_Lobby/World_Lobby.usd",
+    "isaac_deploy": "/home/hchen/Documents/drone-downloads/home_drone_deploy_20260914",
+    "drone_control_web": "/home/hchen/Documents/astraBlenderTest/drone-web",
+    "mujoco_model": "vio-reconstruction/runs/stable_orbit_20260921T044401/modelling/reproduction_20260922/final/scene.xml",
+    "robot_g1": "no Unitree G1 asset or completed language-navigation run found in audited roots",
+    "drone_reference_task": "drone simulator, camera views and reference images exist; target-image search/rephotography result not evidenced as completed"
+  },
+  "excluded_legacy": {
+    "office_cafe": "/home/hchen/Documents/astraBlenderTest/reconstruction and .publish/office-cafe-*",
+    "reason": "different IMG_0755 office-cafe capture; not World Lobby trajectory; exclude from quantitative comparison"
+  },
+  "security": "No tokens, credentials, SSH output, or raw session text copied into this manifest."
+}

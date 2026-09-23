@@ -1,0 +1,59 @@
+{
+  "model": "/home/hchen/Documents/astraBlenderTest/visual-recon/scene.blend",
+  "gt_usd": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/lobby.usda",
+  "model_vertices": 351706,
+  "model_triangles": 469734,
+  "gt_vertices": 5911877,
+  "gt_triangles": 9984967,
+  "model_bounds_m": [
+    [
+      7.557274395072849,
+      17.54262165739616,
+      -1.758330184589271
+    ],
+    [
+      28.375530357232094,
+      26.603575374177726,
+      6.259298407720331
+    ]
+  ],
+  "gt_bounds_m": [
+    [
+      -0.23679990555501718,
+      -1.8155378604409123,
+      -0.3100000023841858
+    ],
+    [
+      35.79372663284994,
+      25.925798831117163,
+      6.001999218016863
+    ]
+  ],
+  "samples_each": 20000,
+  "alignment": "single supplied global transform; no ICP",
+  "model_to_gt": {
+    "count": 20000,
+    "mean_m": 0.3061535725658645,
+    "rmse_m": 0.46898607702871536,
+    "median_m": 0.16636838763952255,
+    "p90_m": 0.6971477508544922,
+    "threshold_coverage": {
+      "0.05": 0.24685,
+      "0.1": 0.3947,
+      "0.2": 0.53635
+    }
+  },
+  "gt_to_model": {
+    "count": 20000,
+    "mean_m": 7.473738788727694,
+    "rmse_m": 10.117811223289069,
+    "median_m": 5.900103807449341,
+    "p90_m": 18.88265495300293,
+    "threshold_coverage": {
+      "0.05": 0.0531,
+      "0.1": 0.0872,
+      "0.2": 0.1257
+    }
+  },
+  "symmetric_chamfer_mean_m": 3.889946180646779
+}

@@ -1,0 +1,821 @@
+{
+  "units": "m",
+  "T_input_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "model_world_up": [
+    0,
+    0,
+    1
+  ],
+  "gravity": [
+    0,
+    0,
+    -9.81
+  ],
+  "colliders": [
+    {
+      "object_id": "floor_stone",
+      "type": "AABB",
+      "bounds": [
+        [
+          8.824999809265137,
+          15.450000762939453,
+          -0.1850000023841858
+        ],
+        [
+          26.974998474121094,
+          25.950000762939453,
+          0.02499999850988388
+        ]
+      ],
+      "role": "floor",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "wall_south_near",
+      "type": "AABB",
+      "bounds": [
+        [
+          9.006999969482422,
+          17.96500015258789,
+          0.007499992847442627
+        ],
+        [
+          18.542999267578125,
+          18.095001220703125,
+          4.992499828338623
+        ]
+      ],
+      "role": "wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "wall_south_recess",
+      "type": "AABB",
+      "bounds": [
+        [
+          18.55699920654297,
+          15.414999961853027,
+          0.007499992847442627
+        ],
+        [
+          26.792999267578125,
+          15.544999122619629,
+          4.992499828338623
+        ]
+      ],
+      "role": "wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "wall_return",
+      "type": "AABB",
+      "bounds": [
+        [
+          18.41499900817871,
+          15.557000160217285,
+          0.007499992847442627
+        ],
+        [
+          18.545000076293945,
+          18.092998504638672,
+          4.992499828338623
+        ]
+      ],
+      "role": "wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "wall_reception",
+      "type": "AABB",
+      "bounds": [
+        [
+          26.80500030517578,
+          15.556999206542969,
+          0.007499992847442627
+        ],
+        [
+          26.935001373291016,
+          25.793001174926758,
+          4.992499828338623
+        ]
+      ],
+      "role": "wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "wall_front",
+      "type": "AABB",
+      "bounds": [
+        [
+          8.86500072479248,
+          18.10700035095215,
+          0.007499992847442627
+        ],
+        [
+          8.994999885559082,
+          25.792999267578125,
+          4.992499828338623
+        ]
+      ],
+      "role": "wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "ceiling_plaster",
+      "type": "AABB",
+      "bounds": [
+        [
+          8.824999809265137,
+          15.450000762939453,
+          5.0
+        ],
+        [
+          26.974998474121094,
+          25.950000762939453,
+          5.239999771118164
+        ]
+      ],
+      "role": "ceiling",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "floor_dark_inset",
+      "type": "AABB",
+      "bounds": [
+        [
+          9.999999046325684,
+          19.299999237060547,
+          0.02499999850988388
+        ],
+        [
+          25.099998474121094,
+          24.700000762939453,
+          0.04100000113248825
+        ]
+      ],
+      "role": "floor",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured",
+      "contact_surface_z": 0.04100000113248825,
+      "note": "Visible raised floor finish; use highest supporting floor top for contact."
+    },
+    {
+      "object_id": "curtain_wall",
+      "type": "AABB",
+      "bounds": [
+        [
+          8.97499942779541,
+          25.684999465942383,
+          0.0
+        ],
+        [
+          26.825000762939453,
+          25.897499084472656,
+          5.019999980926514
+        ]
+      ],
+      "role": "window_wall",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "glazed_double_door_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          11.98449993133545,
+          25.517501831054688,
+          0.009999990463256836
+        ],
+        [
+          14.057499885559082,
+          25.71500015258789,
+          2.859999895095825
+        ]
+      ],
+      "role": "door",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "glazed_double_door_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          21.870498657226562,
+          25.517501831054688,
+          0.009999990463256836
+        ],
+        [
+          23.82550048828125,
+          25.71500015258789,
+          2.859999895095825
+        ]
+      ],
+      "role": "door",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "round_column",
+      "type": "AABB",
+      "bounds": [
+        [
+          17.689998626708984,
+          24.69999885559082,
+          0.02500009536743164
+        ],
+        [
+          18.40999984741211,
+          25.420000076293945,
+          4.994999885559082
+        ]
+      ],
+      "role": "column",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          15.380000114440918,
+          22.65999984741211,
+          0.034999996423721313
+        ],
+        [
+          16.260000228881836,
+          23.540000915527344,
+          0.5199999809265137
+        ]
+      ],
+      "role": "ottoman",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          16.239999771118164,
+          22.6299991607666,
+          0.034999996423721313
+        ],
+        [
+          17.1200008392334,
+          23.514955520629883,
+          0.7900000214576721
+        ]
+      ],
+      "role": "chair",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_2",
+      "type": "AABB",
+      "bounds": [
+        [
+          16.639999389648438,
+          21.729999542236328,
+          0.034999996423721313
+        ],
+        [
+          17.65999984741211,
+          22.75,
+          0.5199999809265137
+        ]
+      ],
+      "role": "ottoman",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_3",
+      "type": "AABB",
+      "bounds": [
+        [
+          16.229999542236328,
+          20.86504554748535,
+          0.034999996423721313
+        ],
+        [
+          17.130001068115234,
+          21.770000457763672,
+          0.7900000214576721
+        ]
+      ],
+      "role": "chair",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_4",
+      "type": "AABB",
+      "bounds": [
+        [
+          15.4399995803833,
+          21.049999237060547,
+          0.034999996423721313
+        ],
+        [
+          16.299999237060547,
+          21.90999984741211,
+          0.5199999809265137
+        ]
+      ],
+      "role": "ottoman",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_5",
+      "type": "AABB",
+      "bounds": [
+        [
+          12.432000160217285,
+          20.130998611450195,
+          0.034999996423721313
+        ],
+        [
+          13.15496826171875,
+          20.855998992919922,
+          0.6899999976158142
+        ]
+      ],
+      "role": "chair",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_6",
+      "type": "AABB",
+      "bounds": [
+        [
+          13.043999671936035,
+          20.093000411987305,
+          0.034999996423721313
+        ],
+        [
+          13.748000144958496,
+          20.796998977661133,
+          0.42000001668930054
+        ]
+      ],
+      "role": "ottoman",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_7",
+      "type": "AABB",
+      "bounds": [
+        [
+          11.906051635742188,
+          20.388105392456055,
+          0.034999996423721313
+        ],
+        [
+          12.690999984741211,
+          21.17300033569336,
+          0.6899999976158142
+        ]
+      ],
+      "role": "chair",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "lounge_seat_8",
+      "type": "AABB",
+      "bounds": [
+        [
+          11.756000518798828,
+          21.225000381469727,
+          0.034999996423721313
+        ],
+        [
+          12.576000213623047,
+          22.045000076293945,
+          0.42000001668930054
+        ]
+      ],
+      "role": "ottoman",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "coffee_table_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          15.660000801086426,
+          21.719999313354492,
+          0.017499998211860657
+        ],
+        [
+          16.579999923706055,
+          22.780000686645508,
+          0.4325000047683716
+        ]
+      ],
+      "role": "table",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "coffee_table_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          12.430560111999512,
+          21.00957489013672,
+          0.017499998211860657
+        ],
+        [
+          13.621060371398926,
+          22.16180419921875,
+          0.4000000059604645
+        ]
+      ],
+      "role": "table",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "flower_planter_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          18.153793334960938,
+          22.19499969482422,
+          0.02499997615814209
+        ],
+        [
+          19.422801971435547,
+          23.930397033691406,
+          1.604861855506897
+        ]
+      ],
+      "role": "planter",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "flower_planter_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          18.193574905395508,
+          19.86207389831543,
+          0.02499997615814209
+        ],
+        [
+          19.54548454284668,
+          21.604764938354492,
+          1.5727629661560059
+        ]
+      ],
+      "role": "planter",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "grass_bowl_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          16.199005126953125,
+          24.10523796081543,
+          0.02500000037252903
+        ],
+        [
+          18.07548713684082,
+          25.986051559448242,
+          1.0890986919403076
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "grass_bowl_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          9.178935050964355,
+          23.727811813354492,
+          0.02500000037252903
+        ],
+        [
+          10.924612998962402,
+          25.501684188842773,
+          1.0870320796966553
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "grass_bowl_2",
+      "type": "AABB",
+      "bounds": [
+        [
+          24.65737533569336,
+          15.937715530395508,
+          0.02500000037252903
+        ],
+        [
+          26.458812713623047,
+          17.68678855895996,
+          1.088239073753357
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "ceramic_plant_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          15.247246742248535,
+          18.180639266967773,
+          0.02500000037252903
+        ],
+        [
+          16.478055953979492,
+          19.37978172302246,
+          1.275611400604248
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "ceramic_plant_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          25.696020126342773,
+          23.836862564086914,
+          0.02500000037252903
+        ],
+        [
+          26.60805320739746,
+          24.773454666137695,
+          1.9327936172485352
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "ceramic_plant_2",
+      "type": "AABB",
+      "bounds": [
+        [
+          25.68225860595703,
+          18.741207122802734,
+          0.02500000037252903
+        ],
+        [
+          26.611202239990234,
+          19.669767379760742,
+          1.9331274032592773
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "tropical_front_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          10.698091506958008,
+          19.76040267944336,
+          0.025000005960464478
+        ],
+        [
+          11.501791954040527,
+          20.539724349975586,
+          2.1136810779571533
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "tropical_front_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          9.578794479370117,
+          22.906089782714844,
+          0.025000005960464478
+        ],
+        [
+          10.301896095275879,
+          23.69971466064453,
+          2.1136810779571533
+        ]
+      ],
+      "role": "potted_plant",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "reception_desk",
+      "type": "AABB",
+      "bounds": [
+        [
+          24.950000762939453,
+          20.0,
+          0.03999999910593033
+        ],
+        [
+          26.030000686645508,
+          23.600000381469727,
+          0.8799999952316284
+        ]
+      ],
+      "role": "reception_desk",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "standing_lamp_0",
+      "type": "AABB",
+      "bounds": [
+        [
+          24.90999984741211,
+          17.889999389648438,
+          0.02500000037252903
+        ],
+        [
+          25.389999389648438,
+          18.369998931884766,
+          1.9500000476837158
+        ]
+      ],
+      "role": "floor_lamp",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "standing_lamp_1",
+      "type": "AABB",
+      "bounds": [
+        [
+          18.559999465942383,
+          17.559999465942383,
+          0.02500000037252903
+        ],
+        [
+          19.03999900817871,
+          18.03999900817871,
+          1.9500000476837158
+        ]
+      ],
+      "role": "floor_lamp",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    },
+    {
+      "object_id": "standing_lamp_2",
+      "type": "AABB",
+      "bounds": [
+        [
+          9.5600004196167,
+          19.760000228881836,
+          0.02500000037252903
+        ],
+        [
+          10.039999961853027,
+          20.239999771118164,
+          1.9500000476837158
+        ]
+      ],
+      "role": "floor_lamp",
+      "static": true,
+      "friction": 0.55,
+      "restitution": 0.05,
+      "physics_provenance": "assumed generic material parameters; not measured"
+    }
+  ],
+  "contact_model": "static semantic AABBs; foliage included conservatively in planter bounds; door state closed"
+}

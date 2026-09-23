@@ -1,0 +1,210 @@
+[
+  {
+    "object_id": "pendant_13",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        694,
+        57
+      ],
+      [
+        60,
+        376,
+        110
+      ]
+    ],
+    "point_world": [
+      14.837483822950484,
+      19.092251020085506,
+      3.6188875392173427
+    ],
+    "reprojection_errors_px": [
+      0.7985320967114281,
+      0.5919688344159131
+    ],
+    "accepted": true,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_12",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        477,
+        77
+      ],
+      [
+        60,
+        202,
+        78
+      ]
+    ],
+    "point_world": [
+      15.784653657418234,
+      20.778338226015304,
+      3.7000533350422384
+    ],
+    "reprojection_errors_px": [
+      1.3912314603880487,
+      1.568313573311332
+    ],
+    "accepted": true,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_10",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        442,
+        124
+      ],
+      [
+        60,
+        43,
+        112
+      ]
+    ],
+    "point_world": [
+      18.410963312238255,
+      20.856437485851355,
+      3.65364727365542
+    ],
+    "reprojection_errors_px": [
+      2.6795135390550597,
+      3.6701234718255193
+    ],
+    "accepted": false,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_11",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        429,
+        100
+      ],
+      [
+        60,
+        6,
+        61
+      ]
+    ],
+    "point_world": [
+      18.71238947782682,
+      21.052183842075554,
+      4.154143150305896
+    ],
+    "reprojection_errors_px": [
+      1.594409994992886,
+      2.2622909584891824
+    ],
+    "accepted": true,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_07",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        412,
+        149
+      ],
+      [
+        108,
+        447,
+        57
+      ]
+    ],
+    "point_world": [
+      21.15731341014884,
+      21.160405878179617,
+      3.795571757667457
+    ],
+    "reprojection_errors_px": [
+      7.368928122767222,
+      17.18432085113412
+    ],
+    "accepted": false,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_04",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        331,
+        157
+      ],
+      [
+        108,
+        646,
+        133
+      ]
+    ],
+    "point_world": [
+      24.523201545929282,
+      23.389085684110256,
+      3.8345660861451956
+    ],
+    "reprojection_errors_px": [
+      0.31758735859501197,
+      0.6383301555122113
+    ],
+    "accepted": true,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_06",
+    "measurements_frame_u_v_780": [
+      [
+        0,
+        388,
+        164
+      ],
+      [
+        108,
+        755,
+        119
+      ]
+    ],
+    "point_world": [
+      24.67144026108109,
+      21.747655590914373,
+      3.647770952257714
+    ],
+    "reprojection_errors_px": [
+      0.4452177731209923,
+      1.1872335580244113
+    ],
+    "accepted": true,
+    "threshold_px": 2.5
+  },
+  {
+    "object_id": "pendant_reverse_6",
+    "measurements_frame_u_v_780": [
+      [
+        90,
+        480,
+        19
+      ],
+      [
+        108,
+        239,
+        78
+      ]
+    ],
+    "point_world": [
+      18.922960122764252,
+      23.118501249569245,
+      4.173523406282261
+    ],
+    "reprojection_errors_px": [
+      13.704475304067921,
+      11.95893478350417
+    ],
+    "accepted": false,
+    "threshold_px": 2.5
+  }
+]

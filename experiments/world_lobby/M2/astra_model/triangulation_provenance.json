@@ -1,0 +1,25 @@
+{
+  "method": "SIFT descriptor ratio 0.68 and calibrated two-view triangulation in supplied native ViPE pose scale",
+  "frames": [
+    0,
+    45,
+    55,
+    65,
+    75,
+    85,
+    90,
+    95,
+    100,
+    105,
+    110,
+    115,
+    120,
+    125,
+    130,
+    140
+  ],
+  "max_reprojection_error_px": 1.8,
+  "minimum_ray_angle_deg": 1.146,
+  "scale_adjustments": [],
+  "count": 806
+}

@@ -1,0 +1,776 @@
+{
+  "started_utc": "2026-09-23T06:01:37.239748+00:00",
+  "last_updated_utc": "2026-09-23T06:44:43.647539+00:00",
+  "access_policy": "Only contract, M3 packet and packet-authorized RGB/geometry plus explicitly authorized sensor calibration; own generated derivatives and code. No other method/model/GT/evaluation input.",
+  "configuration_reads": [
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/configs/astra_modelling_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/calibration/camera_imu.json"
+  ],
+  "packet_reads": [
+    {
+      "path": "data/packets/M3/packet.json",
+      "sha256": "b308a3bfd5da5a053f7d0e95bd38d668c336e40ff49ff5090a507eb0fa0b4933",
+      "status": "partial"
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/packet.json",
+      "sha256": "da46a512c4345ec558a91d1fd89d72d18bee9e00743da960f0bf717545ab1ae2",
+      "status": "complete",
+      "geometry_frames": 175
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/packet.json",
+      "sha256": "da46a512c4345ec558a91d1fd89d72d18bee9e00743da960f0bf717545ab1ae2",
+      "status": "complete",
+      "geometry_frames": 175
+    }
+  ],
+  "rgb_reads": [
+    {
+      "frame": 0,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png",
+      "sha256": "8ed8fa79aec7540f956696970a3dc2f6d64cec7a44223d22da5f53733c8ce5d1",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 3,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000003_752532035743.png",
+      "sha256": "f94feb75e6656f58ef03c9e49f2d492a7f8d1594468e7dfe6da0d07181c56701",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 5,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000005_756532035933.png",
+      "sha256": "ef49614286f4d5c0761e64dfe2921f273d4fde48e37c70066d93410989ba167b",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 6,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000006_758532036028.png",
+      "sha256": "e30e14cfebcb530970e55c484a3b3250e4f98991c39b808a809926dc2fe5321f",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 8,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000008_762532036218.png",
+      "sha256": "e564e38ebfd99e61cfb9c64a3275e67fe82bdd365bd5ab3430f68766c5815909",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 9,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000009_764532036313.png",
+      "sha256": "f2881f6fe372da7c755e47173018090643bbcd9661bf11417fc9a8c7c21ccdd9",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 11,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000011_768532036503.png",
+      "sha256": "3d9422e7b812e06d60973e098e49f841a1ddf9ff31f5314841bddb271f9d2560",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 12,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000012_770532036598.png",
+      "sha256": "732cc2422501bd5cf6526b73edb0d4f4ffc4331aeada7d71ad9979130576fba6",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 14,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000014_774532036788.png",
+      "sha256": "10d697a3c301d35899665de8a5d6db9ef37231131a6b4c36a08093f084da4ed6",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 15,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000015_776532036883.png",
+      "sha256": "a2e8949ce82820073d3c96393c603b4bedd30982b6e55a81a4aca0e757fb9e25",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 17,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000017_780532037073.png",
+      "sha256": "a9365fb004ef404e607c128b99b0b513aa8ab8c40830c1d7091feff6d20fdaaa",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 18,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000018_782532037168.png",
+      "sha256": "b2cb85a04b361f2b263ecd59134428851dca982969f49d8f81bed0e5f2ee32c5",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 20,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000020_786532037358.png",
+      "sha256": "9ae5601f4d4ef965718b6b2f05279f683adcaa47f2d0e911f54a112652dde281",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 21,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000021_788532037453.png",
+      "sha256": "f8fbd0e3451414b65369fa89c6b33a9d7f44b3b944c82018641a93223cfbb1e0",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 23,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000023_792532037643.png",
+      "sha256": "328cf301372a26f7bcacb4a2001b59079a89f4ef3869f7da5925fa58ddbaf709",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 24,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000024_794532037738.png",
+      "sha256": "a6f106fc2bb32eb901d16aa2ec638de5ebae91f64edb7711aaf06c0b82cf3e00",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 26,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000026_798532037928.png",
+      "sha256": "bd393cd171cfec333daf79475b4730828057566db0eaf5c78f70d86802ffd1ab",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 27,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000027_800532038023.png",
+      "sha256": "14ba28ffabe1d8087b82e62429a64ee99b633c36f8ef5c5166277957bc09b326",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 29,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000029_804532038213.png",
+      "sha256": "b5e8e5b6219d0a5b5f49c29a1c09d7c0209f083128dfe5d24386c3153ffb9d5a",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 30,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000030_806532038308.png",
+      "sha256": "8bdffff4b714ccd2a7cc8ee65d41cc91b22b169102a482fc693fae007505f6b6",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 32,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000032_810532038498.png",
+      "sha256": "809c5ae467f60bfa0ca497c0edbf7aee0fc834e9666e4776b42115ede01460a8",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 33,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000033_812532038593.png",
+      "sha256": "79a360a02ae7ee04c95ef36e46159622062d6ebd3ebf2d3a4799cf1543078cbe",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 35,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000035_816532038783.png",
+      "sha256": "7cdda3dfbd3fae194dc71bacf7c99f67c5a4476066f0961c8733d0714874f915",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 36,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png",
+      "sha256": "5cad7e61114ca4ed3706285f487b3c63d50a44aa7763158987f6b6e806d743b6",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 38,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000038_822532039068.png",
+      "sha256": "87ebb10b419f67721cdc345afa556cbfa69b5a0781ed0873d18c98f5ba6b94f1",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 39,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000039_824532039163.png",
+      "sha256": "c6bdda5947bbeba2b1eb2ba48030f4a4acefa7a5037edd247279e275a411dc08",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 41,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000041_828532039353.png",
+      "sha256": "f034096b028f71a63b71b6b3ec06c043cd8443f997a59986f61ec31017b9daeb",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 42,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000042_830532039448.png",
+      "sha256": "699eaea2a642c0952f5bda28b0b8cc07b036efe2f1c144d5c1cbc93887ccde2c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 44,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000044_834532039638.png",
+      "sha256": "e75367ec43c30ef0e820e5b4b89b496145f6cea9935860d355dbc2eecd551d07",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 45,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000045_836532039733.png",
+      "sha256": "42b9f557315972738d542d8a8c7c55717960bfc494542547bcd3bdc8a390c993",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 47,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000047_840532039923.png",
+      "sha256": "373b855c7ee13de75832dd15e343adcbc3cdd12420f3623588f567c2d6b988f0",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 48,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000048_842532040018.png",
+      "sha256": "9834b892723c6aa2240f436b4b2be29eec82c911da041f0bb14b833b75a88df0",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 50,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000050_846532040208.png",
+      "sha256": "79d63ca059e1163b96bc80c183b4d2a78c88938c12a2c38ff71db3b1cc959f3a",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 51,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000051_848532040303.png",
+      "sha256": "434244db27fc8d753558967c6c4a38cc1ca59d7bc4e70726684bb42805be738c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 53,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000053_852532040493.png",
+      "sha256": "82d15b716574b08457306e2d6554123d0c7426c4aac945d674c081b5488544ea",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 54,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000054_854532040588.png",
+      "sha256": "5c3451014324e95a9f1b557dfec4021d87482f61b3b695e2aed8711f9d3cea6f",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 56,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000056_858532040778.png",
+      "sha256": "c86f4eeb811c788ebd4f29eaee67bc29e2e301fca184aabd732c856030565b22",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 57,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000057_860532040873.png",
+      "sha256": "1f6f207683380c1c9ab710dee074c0d030bdf5395b6acea3aa83d3c2ecc5dd81",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 59,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000059_864532041063.png",
+      "sha256": "5e568408fd197f0a5521fc73728cecc9c81c5eb62f2522db40cb517df9976ff4",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 60,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000060_866532041158.png",
+      "sha256": "d0ca34935e003813a8ae52ebd6e96c7fdb047438dea07b370ecc8524466fec8d",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 62,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000062_870532041348.png",
+      "sha256": "5537a77c3a7767715091dd3d8ddd8cb24c7dbd589620c6e21e6605714e76e6d9",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 63,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000063_872532041443.png",
+      "sha256": "47a1e006f4fcae4c89ee92b47d98178ab7da8a43e743b56c551ad2f8c5f125b7",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 65,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000065_876532041633.png",
+      "sha256": "04c12470703024567080924c9fe8898e5a582020df667b8f868fe1df254608e5",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 66,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000066_878532041728.png",
+      "sha256": "80991c447aff4ecfbb0b76b404a0e3cb3e6da1330c0726d2c48f6f94b98e9c5b",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 68,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000068_882532041918.png",
+      "sha256": "9e40177a71f4399b25708d092e9a8e2770eb36d7ecf333aee5a28c83c39a98e2",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 69,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000069_884532042013.png",
+      "sha256": "6eae19de4c05f762178fcce1fe7b0b3794d2ac3fe74dcf811a25f098ed2e2c79",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 71,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000071_888532042203.png",
+      "sha256": "6779836eb542026920df519a692d62e539b4b6376e9cb3b18f80e4fe9df942cd",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 72,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png",
+      "sha256": "f52ce945a0ed0a81ba0ce4e13ab3e4ea7b811394e1addea75a37daa0a675ff27",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 74,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000074_894532042488.png",
+      "sha256": "ed4df08dd919e6c32f6e8e96aa490cab569c84702256b29e0aef12c07ad54234",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 75,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000075_896532042583.png",
+      "sha256": "b3ac1a3e9e201aa5e6c3c0658c33533a8aa38c3364f14a587c6927de8689f7d0",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 77,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000077_900532042773.png",
+      "sha256": "1063c5c81e44875b575feebec583001942b3666b3fa8cdacfa69617e5f05989c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 78,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000078_902532042868.png",
+      "sha256": "8d8ec87f33c1478140125dab7381dd4d73148ec13d92e7ada4f0b8232a364a17",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 80,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000080_906532043058.png",
+      "sha256": "3bf8e770435cfc2ea33df9ed597515bfcab6b0287c12ccad5cd02755c9ec29a4",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 81,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000081_908532043153.png",
+      "sha256": "781c92e0d62604a39cc5e8c2f4c4a9ba46547218041f1387cf7a17de8a6c6841",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 83,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000083_912532043343.png",
+      "sha256": "ec2e814c1bac08b374ed9c92a6f01b5a790b34e9ecdf42a019db9d4b1e69f04e",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 84,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000084_914532043438.png",
+      "sha256": "f6648c415d1ebcf6aff8ed2c640fb674e04b3d590ff1882b4adf4a13c755b577",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 86,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000086_918532043628.png",
+      "sha256": "67beaf91ebeaeab0d1aef72cba66c15ffc17c085bde3440718c87574b2cc78e9",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 87,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000087_920532043723.png",
+      "sha256": "f28709dcb4daddb5366382acd0af755db0a5d6581a3731c72cd1e452e3bff9c2",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 89,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000089_924532043913.png",
+      "sha256": "fc0c38dc993482976d950723852ed1985f76d71c0bd6bb0332cf05a2df26a267",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 90,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000090_926532044008.png",
+      "sha256": "4725928fc0123be2563a804be7a832e21d0597aef6ece7e6c9bea4fc307a0034",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 92,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000092_930532044198.png",
+      "sha256": "b99c4ed06d6fc5ec4b17cf4c648702e3f255379f0bf8d50424ae523f061458c2",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 93,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000093_932532044293.png",
+      "sha256": "965ce4c9a5baca1db93956b85eb167152eb65cc52f3d0aba237e897bc5223400",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 95,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000095_936532044483.png",
+      "sha256": "2b5158c4d469b132eb100add44481f5a67e6c5af41907ea9ef6bfd0b79a3f15c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 96,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000096_938532044578.png",
+      "sha256": "fe1e4d0e064022d1d0893be37508e2ca720722f103a586faa74c988672742b93",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 98,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000098_942532044768.png",
+      "sha256": "7cea0fc89e36edafda272f4acf56425c546e71f90bf1d2f2bee682ce9de445a7",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 99,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000099_944532044863.png",
+      "sha256": "56eee19a0ef25332286709f6e804103b876c8e3925240cc4403349181cd49e2c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 101,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000101_948532045053.png",
+      "sha256": "07b665d8111835787dcb9aaa677eec65aba8268487ea9a433b92d2edf4bb8d08",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 102,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000102_950532045148.png",
+      "sha256": "3970a8ed69db8337d92baf76bec81e80d8276ba17294b130c85123ed4ae7baaf",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 104,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000104_954532045338.png",
+      "sha256": "cbecdc1c54c041f4f1547a970881f906fef8cdbd235a33d773c8fb5331cc1b19",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 105,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000105_956532045433.png",
+      "sha256": "2412f4f1f5e1cf26ffd69f7150472d00be8deb1764643c520675619f01428441",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 107,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000107_960532045623.png",
+      "sha256": "60b69db33ba563d7e6fe3ba726c3a001bee61971fdb4f03eb1dc33e303013eb7",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 108,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png",
+      "sha256": "9275348b14f3baf710a83a9b67ab1600938324f32b634d19c30261b2769b1545",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 110,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000110_966532045908.png",
+      "sha256": "833707476ce8ff88a033626a32911c5f14cd2c7c30efbaecefefe7f3c58eeaaa",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 111,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000111_968532046003.png",
+      "sha256": "5695beef3a9b82264f2969118e5d6258a18467a3dc22eb3eb2588dd7c3b10483",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 113,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000113_972532046193.png",
+      "sha256": "a2ddd76fe8e239a8624f9deacae44f1604df926471cfb39e5fe2f04c7ab8a054",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 114,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000114_974532046288.png",
+      "sha256": "45e53898ebd583502348f83e99443bf4e8dacfff94ae958bc12d4df0e9e12d34",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 116,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000116_978532046478.png",
+      "sha256": "d9e0df26487dd868e9bef12c6de0ed9948a13d50ff715dce8ef8bca37b82bf35",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 117,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000117_980532046573.png",
+      "sha256": "ffcd4a289f8ccd7052e79ad1b67939d4ab4955c907034d374d9afdc2fbee6e60",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 119,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000119_984532046763.png",
+      "sha256": "92500c6e36985b4cff2c4ce33b5fa3402efe33eb6998237b564dff1c008174a7",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 120,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000120_986532046858.png",
+      "sha256": "71ec7c05ab859e5754db92cfabd667d2b2233fcf5e26dde32bd0cb9ea7e50b72",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 122,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000122_990532047048.png",
+      "sha256": "b136e822d0a3ca92fe39cb04ca125fd789fd8564d9b6267078eaaaac13a5525c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 123,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000123_992532047143.png",
+      "sha256": "9c86656384c0c6808d7d938ddeff786ed55d48f1fda82f040bc5e3796eaa6bf6",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 125,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000125_996532047333.png",
+      "sha256": "f9f0675e52e6e63a6ddc02f093d61ef51979dba2f918800a0443364c648aaccf",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 126,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000126_998532047428.png",
+      "sha256": "6ddff5e8e95932b9e1bf8457b0c838b63677eaf855f16567bd292f822645cc3e",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 128,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000128_1002532047618.png",
+      "sha256": "3a275a6b14d8b42302195f0141d711730637aadd990c42fe2815e26a7be329cd",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 129,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000129_1004532047713.png",
+      "sha256": "6a798f3ef9cc07eca8189c6599c869499ae2e222bf71834ea2626b6fdf05253d",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 131,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000131_1008532047903.png",
+      "sha256": "6f2978c853c7876246361ab861e9a20239bec3da52d3b90050be03eebcef7069",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 132,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000132_1010532047998.png",
+      "sha256": "806b78773da028f6e88ea6befd08dc4e655a294161716609015b4086490c581b",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 134,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000134_1014532048188.png",
+      "sha256": "698a51734c5491f03ce3c13e5f8fea6adbe3eb86071eb2139ee72841bfafab84",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 135,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000135_1016532048283.png",
+      "sha256": "1f56a240172142c128cfe8869cab3b59a809d3bf99745012237cb1e933a31b95",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 137,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000137_1020532048473.png",
+      "sha256": "3eca76b89e176138d8c21bf5c63edaa420193d703c05ea60ae10bc16d87dffdb",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 138,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000138_1022532048568.png",
+      "sha256": "9058ff6862c58a3cc57caf950da94899e627096d1918b262a938e1b9fe8d4e9d",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 140,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000140_1026532048758.png",
+      "sha256": "47c7257955fccd15a4aa39d1e5f17376c901e35ed641875642dcedee918f08de",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 141,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000141_1028532048853.png",
+      "sha256": "984bcc2a739711cff17b9e989dfcba477c1be99fda6f3a6a21f663f9fae5aeee",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 143,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000143_1032532049043.png",
+      "sha256": "858bf3f8269557f6acfb53cd5fcd2ae21f5bf516d597fbbc52e86dab73f5d453",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 144,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png",
+      "sha256": "94c587671cd441c34174571bcdcb32182c84aa7c399cc4041bbe74638301ee18",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 146,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000146_1038532049328.png",
+      "sha256": "875ee4865a6e69ab2ddefa06ab2e44183e6d9330b5b355f6d2527c5f2e151d8c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 147,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000147_1040532049423.png",
+      "sha256": "8cecca585910cc6f423490e8da5da280a226b123266feb961284652963d50ce1",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 149,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000149_1044532049613.png",
+      "sha256": "204a097a4dfcaec518d750c9800a43780d8d4b742b5f92af8d620d00ffdb96f2",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 150,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000150_1046532049708.png",
+      "sha256": "ef533d154d3f9d225ef4dcb2725e08e556b451e1ad34c3f9e0de945f56ef1778",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 152,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000152_1050532049898.png",
+      "sha256": "573276f74cda8f3dfa614328b2638e20d9b0c6d6b059b43671c64ce89a853afa",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 153,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000153_1052532049993.png",
+      "sha256": "52c099309e37668e1693e988d5ea4a673a391e6ca0ffa310f9a479502bbc4409",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 155,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000155_1056532050183.png",
+      "sha256": "bb3648bc8b81a4e1af3844671125c274132c77a78653891a26f74090c11a9efd",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 156,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000156_1058532050278.png",
+      "sha256": "97fb2667773c359bbe2ca93d03944d0bc0d6052850113b9a781f39887863ca2c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 159,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000159_1064532050563.png",
+      "sha256": "5b3047713e0945c64bb56fe905d0d9fa344dbde8dbccd003b4e87723e2e75329",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 162,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000162_1070532050848.png",
+      "sha256": "214e4cc43357512fd5c0516a117f70e84ac2e95b9e833432f0119a6d29079d2c",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 165,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000165_1076532051133.png",
+      "sha256": "1340f40f296427c92ff5f3e5b20a2259c3b1d66b4ec234f7abdb38a86b798692",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 168,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000168_1082532051418.png",
+      "sha256": "27ef7f133c80e331768473d2c4e5ee7c65c338901f50018cf3921c9aeccec5f2",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 171,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000171_1088532051702.png",
+      "sha256": "f9828abafcc78923bad7cd44a4a249960e85c6d6804cd739185f92c3c2f18b12",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 174,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000174_1094532051987.png",
+      "sha256": "03e5666e611b18424ea4de613c916ac9d85a009b9c0722ecc6343472d8c89740",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    },
+    {
+      "frame": 177,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000177_1100532052272.png",
+      "sha256": "954df44f72a09b2c1e44519fe3fe080096c9a32059fcbf6dcf4324974a89b8b7",
+      "purpose": "RGB contact sheet/direct semantic inspection and/or fixed-pose SIFT triangulation"
+    }
+  ],
+  "depth_reads": [
+    {
+      "frame": 5,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/005_geometry.npz",
+      "sha256": "9eb05d432e8222603907d62e82268e687d4e94499590e614d1f8bd320687028a",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 45,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/045_geometry.npz",
+      "sha256": "9d4874ee0eaa1a7188f6cc7e70827d72b42a306534402dc17e8e21344dcd79e0",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 60,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/060_geometry.npz",
+      "sha256": "f236a0a90427c6babf2604fe862fa30ec5f73e9a7ab6fdddb88b22153283bdbf",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 75,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/075_geometry.npz",
+      "sha256": "f29c9bb8726cdd444decf8219f1dc2fb684aabc1b0bbc307045122464e2bbd34",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 90,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/090_geometry.npz",
+      "sha256": "5499dc7afe4d48225d272b2c5745513ee6a5247ab6485e5294e27b8a21f63f57",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 105,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/105_geometry.npz",
+      "sha256": "c4fda95126d82e321e228c71bb0dd2f72563ddcfb604d13a58aa130c657f6a5e",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 120,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/120_geometry.npz",
+      "sha256": "8c54b3485281f2bd015978e260538cfa2ccc1e9f62108cf74ecb06b95346de5a",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 126,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/126_geometry.npz",
+      "sha256": "db9b5805f08a050dda50626c6a2199a58a705a1cfcf18bfc70318279c4c300e6",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 135,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/135_geometry.npz",
+      "sha256": "0b3aabb2fbcf91c3913f1666a2f98883988b0d1abb0f6df5bd2d26c8fad969a7",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    },
+    {
+      "frame": 150,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/150_geometry.npz",
+      "sha256": "286397b208b360be5e23d3281d785e750dd31f907b50014664bb86a600cf581f",
+      "purpose": "direct native metric backprojection and normal/semantic-region measurements"
+    }
+  ],
+  "modeler_authored_inputs": [
+    "annotations.json",
+    "geometry_plan.json"
+  ],
+  "prohibited_inputs_accessed": [],
+  "writes_confined_to": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "review_reads": [
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model/independent_review/review.json",
+      "sha256": "63ec9142a30d6e62aed7acb9b37fff002000a826ac55d58ff6d675ff9fab90eb",
+      "authorization": "Root explicitly authorized clean review; review uses allowed inputs and no GT"
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model/independent_review/review.md",
+      "sha256": "f68aeccaae3682d720390ff835ffd29edf88c929e21a683a5e3a86e3024626d0",
+      "authorization": "Root explicitly authorized clean review; review uses allowed inputs and no GT"
+    }
+  ]
+}

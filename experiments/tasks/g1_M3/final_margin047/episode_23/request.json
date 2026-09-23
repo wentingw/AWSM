@@ -1,0 +1,10 @@
+{
+  "episode_id": 23,
+  "instruction": "Go to and stop in front of the reception desk",
+  "start_xy": [
+    -0.432377798,
+    0.183393755
+  ],
+  "start_yaw": 0.0,
+  "spawn_source": "model camera trace frame 12 first free supported"
+}

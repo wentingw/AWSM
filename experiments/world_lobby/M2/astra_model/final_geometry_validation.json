@@ -1,0 +1,118 @@
+{
+  "revision": 5,
+  "read_only_scene_check": true,
+  "seat_table_clearances": [
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_chair_left",
+      "horizontal_clearance_m": 0.09063010740565125
+    },
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_chair_rear",
+      "horizontal_clearance_m": 0.4121807550851755
+    },
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_chair_right",
+      "horizontal_clearance_m": 0.8447860151817013
+    },
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_ottoman",
+      "horizontal_clearance_m": 0.05419717116141198
+    },
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_ottoman_mid",
+      "horizontal_clearance_m": 0.04060025634137143
+    },
+    {
+      "table": "lounge_A_table",
+      "seat": "lounge_A_oval_seat",
+      "horizontal_clearance_m": 0.28864168523090017
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_chair_back",
+      "horizontal_clearance_m": 0.0630226666235123
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_chair_front",
+      "horizontal_clearance_m": 0.8068971286489095
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_chair_left",
+      "horizontal_clearance_m": 0.8929282789073381
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_chair_mid",
+      "horizontal_clearance_m": 0.34977607359040586
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_ottoman_left",
+      "horizontal_clearance_m": 0.04119208793731732
+    },
+    {
+      "table": "lounge_B_table",
+      "seat": "lounge_B_ottoman_rear",
+      "horizontal_clearance_m": 0.06515315812103606
+    }
+  ],
+  "min_seat_table_clearance_m": 0.04060025634137143,
+  "min_seat_seat_clearance_m": 0.046999961572103954,
+  "reception_desk": {
+    "signed_volume_m3": 1.500699636745079,
+    "all_edges_manifold": true,
+    "top_normals": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "bottom_normals": [
+      [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    ]
+  },
+  "fixed_window_portal_blockers": [],
+  "closed_door_sample_blockers": [
+    {
+      "object_id": "glass_entry_double_door",
+      "collider_id": "glass_entry_double_door.closed_leaf",
+      "role": "obstacle",
+      "bounds": {
+        "min": [
+          -4.357500076293945,
+          11.692500114440918,
+          0.13249993324279785
+        ],
+        "max": [
+          -4.322500228881836,
+          12.387499809265137,
+          2.3975000381469727
+        ]
+      },
+      "shape": "axis_aligned_box",
+      "state": "closed_leaf",
+      "supports_opening": false,
+      "provenance": "Observed static closed door; no open-door traversability claimed."
+    }
+  ],
+  "max_camera_matrix_error": 3.427267074584961e-07,
+  "saved_blend_pixel_aspect": [
+    1.0001819133758545,
+    1.0
+  ],
+  "max_glb_intrinsic_error_px": 0.0,
+  "camera_json_sha256": "c0e5c6a33947286fd6c5b855d7c250a0cbc131b1c370e8d432d6ee7f34f38490",
+  "camera_json_unchanged_from_review": true
+}

@@ -1,0 +1,13 @@
+{
+  "revision": 5,
+  "status": "frozen_for_independent_GT_evaluation",
+  "semantic_objects": 80,
+  "colliders": 70,
+  "input_cameras": 180,
+  "required_files_present": true,
+  "uniform_scale": 1.0,
+  "camera_metadata_unchanged_from_review": true,
+  "rendered_check_views": 25,
+  "actual_scene_revisions": 5,
+  "structural_validation": "final_geometry_validation.json"
+}

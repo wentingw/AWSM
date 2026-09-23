@@ -1,0 +1,185 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "instruction": "Go to and stop in front of the table near a plant",
+  "query": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "table_middle",
+        "score": 1.0180151935739838
+      },
+      {
+        "object_id": "table_front",
+        "score": 1.0127295027181473
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained English category/attribute/near queries",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "success",
+  "target_id": "table_middle",
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        -0.432377798,
+        0.183393755,
+        -1.7382169319971152
+      ],
+      [
+        -2.599999999999998,
+        -0.8499999999999996,
+        -1.7382169319971152
+      ],
+      [
+        -5.799999999999997,
+        -0.6499999999999995,
+        -1.7382169319971152
+      ],
+      [
+        -7.850000190734863,
+        -0.10000002384185791,
+        -1.7382169319971152
+      ]
+    ],
+    "expanded": 178
+  },
+  "planning_seconds": 0.09215720184147358,
+  "arrived_at_s": 24.142,
+  "simulated_seconds": 24.142,
+  "final_position": [
+    -7.6593590187914575,
+    -0.12059616921131067,
+    -1.758488275517136
+  ],
+  "final_goal_distance_m": 0.19175050884948064,
+  "path_length_m": 8.179297740270844,
+  "obstacle_contact_steps": 0,
+  "obstacle_contacts": 0,
+  "fallen": false,
+  "planned_goal": [
+    -7.850000190734863,
+    -0.10000002384185791,
+    -1.7382169319971152
+  ],
+  "target": {
+    "object_id": "table_middle",
+    "category": "coffee_table",
+    "center": [
+      -9.350000381469727,
+      -0.10000002384185791,
+      -2.258216977119446
+    ],
+    "size": [
+      1.6,
+      1.6,
+      0.56
+    ],
+    "attributes": {
+      "color": "charcoal",
+      "shape": "round low table with radial legs"
+    },
+    "evidence": {
+      "frame_ids": [
+        5
+      ],
+      "modeller_observation": "personally inspected original RGB; manually marked regions in annotations.json"
+    },
+    "geometry_provenance": {
+      "source": "direct supplied depth in hand-marked RGB box",
+      "measurement_log": "depth_semantic_measurements.json",
+      "object_measurements": [
+        {
+          "frame": 5,
+          "box": [
+            0.417,
+            0.601,
+            0.515,
+            0.668
+          ],
+          "n": 1377,
+          "xyz_quantiles": [
+            [
+              -6.3549224766470225,
+              -0.947150399019554,
+              -1.7749490259742478
+            ],
+            [
+              -5.956182515959997,
+              -0.7190151115308256,
+              -1.7147230724114266
+            ],
+            [
+              -5.803693895468159,
+              -0.4853070519793163,
+              -1.4907283874600812
+            ],
+            [
+              -5.697259631316719,
+              -0.26784532495804725,
+              -1.4303430427053114
+            ],
+            [
+              -5.495255551894995,
+              -0.08998937350938267,
+              -1.3779751248164984
+            ]
+          ],
+          "depth_quantiles": [
+            5.219187259674072,
+            5.441859245300293,
+            5.547799110412598,
+            5.690674781799316,
+            6.0846634864807125
+          ]
+        }
+      ],
+      "selection_rule": "RGB relation between seats and near-view planter row; frame5 visible depth conflicts with near-view row; x weakly regularized using RGB+pose triangulation",
+      "conflict_present": true,
+      "native_measurements_retained": true,
+      "conflict_reason": "Native per-view depth/localization disagreements remain in the measurement logs; selected semantic parameters are an explicit compromise."
+    },
+    "observed_geometry": "visible surface dimensions approximated by parametric primitive",
+    "inferred_geometry": "unseen backside, closed base, thickness, joints; rigid static physics assumed",
+    "confidence": "low",
+    "spatial_relations": [
+      {
+        "relation": "inside",
+        "object_id": "lobby"
+      },
+      {
+        "relation": "member_of",
+        "object_id": "seating_group_middle"
+      },
+      {
+        "relation": "supported_by",
+        "object_id": "floor"
+      }
+    ],
+    "bounds": [
+      [
+        -10.15000057220459,
+        -0.9000000357627869,
+        -2.5326170921325684
+      ],
+      [
+        -8.550000190734863,
+        0.699999988079071,
+        -1.9838168621063232
+      ]
+    ]
+  },
+  "limitations": [
+    "constrained language matching",
+    "simulator-state-oracle localization",
+    "conservative AABB world, not original triangle mesh",
+    "collision materials assumed, not measured",
+    "no GT-world transfer in this result"
+  ]
+}

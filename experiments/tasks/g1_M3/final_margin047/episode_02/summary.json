@@ -1,0 +1,247 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "instruction": "Find a plant",
+  "query": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "planter_back_left",
+        "score": 1.0
+      },
+      {
+        "object_id": "planter_back_right",
+        "score": 1.0
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained English category/attribute/near queries",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "success",
+  "target_id": "planter_back_left",
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        -0.432377798,
+        0.183393755,
+        -1.7382169319971152
+      ],
+      [
+        -2.599999999999998,
+        -0.8499999999999996,
+        -1.7382169319971152
+      ],
+      [
+        -5.599999999999998,
+        -0.6499999999999995,
+        -1.7382169319971152
+      ],
+      [
+        -9.399999999999999,
+        2.95,
+        -1.7382169319971152
+      ],
+      [
+        -12.2,
+        3.750000000000001,
+        -1.7382169319971152
+      ],
+      [
+        -13.599999999999998,
+        3.750000000000001,
+        -1.7382169319971152
+      ],
+      [
+        -19.4,
+        -2.05,
+        -1.7382169319971152
+      ],
+      [
+        -20.7943776631748,
+        -2.2947250458803987,
+        -1.7382169319971152
+      ]
+    ],
+    "expanded": 1661
+  },
+  "planning_seconds": 0.7808275271672755,
+  "arrived_at_s": 65.042,
+  "simulated_seconds": 65.042,
+  "final_position": [
+    -20.609314569269355,
+    -2.252559925000844,
+    -1.7571917120373002
+  ],
+  "final_goal_distance_m": 0.1898058116724641,
+  "path_length_m": 25.247976512131928,
+  "obstacle_contact_steps": 0,
+  "obstacle_contacts": 0,
+  "fallen": false,
+  "planned_goal": [
+    -20.7943776631748,
+    -2.2947250458803987,
+    -1.7382169319971152
+  ],
+  "target": {
+    "object_id": "planter_back_left",
+    "category": "round_planter",
+    "center": [
+      -22.05510139465332,
+      -1.9569151401519775,
+      -1.2815290954895318
+    ],
+    "size": [
+      0.68,
+      0.68,
+      0.96
+    ],
+    "attributes": {
+      "foliage": "small round canopy tree",
+      "container": "gray urn"
+    },
+    "evidence": {
+      "frame_ids": [
+        5,
+        126
+      ],
+      "modeller_observation": "personally inspected original RGB; manually marked regions in annotations.json"
+    },
+    "geometry_provenance": {
+      "source": "direct supplied depth in hand-marked RGB box",
+      "measurement_log": "depth_semantic_measurements.json",
+      "object_measurements": [
+        {
+          "frame": 5,
+          "box": [
+            0.419,
+            0.421,
+            0.441,
+            0.46
+          ],
+          "n": 192,
+          "xyz_quantiles": [
+            [
+              -14.95454127992774,
+              -2.387256056640093,
+              -1.4204420567915725
+            ],
+            [
+              -14.669621566008919,
+              -2.2216377087277754,
+              -1.2973295954571515
+            ],
+            [
+              -14.281239046208999,
+              -2.052335597593851,
+              -1.171569851050625
+            ],
+            [
+              -13.957434493704657,
+              -1.9314005240907766,
+              -1.0295954761457204
+            ],
+            [
+              -10.39438823795868,
+              -1.4663446422841602,
+              -0.9403746935132199
+            ]
+          ],
+          "depth_quantiles": [
+            9.957989120483399,
+            13.55409049987793,
+            13.841724872589111,
+            14.213588953018188,
+            14.461697816848755
+          ]
+        },
+        {
+          "frame": 126,
+          "box": [
+            0.737,
+            0.622,
+            0.773,
+            0.682
+          ],
+          "n": 500,
+          "xyz_quantiles": [
+            [
+              -22.328245671248506,
+              -2.5772922429067,
+              -2.234217560350346
+            ],
+            [
+              -22.233304629305294,
+              -2.226066102574282,
+              -1.997640424458065
+            ],
+            [
+              -22.05748103779056,
+              -1.9471835558977455,
+              -1.679262160306852
+            ],
+            [
+              -21.68082886169907,
+              -1.7636595966525015,
+              -1.4517632018938236
+            ],
+            [
+              -21.612652335050463,
+              -1.669914302569053,
+              -1.2307791680282532
+            ]
+          ],
+          "depth_quantiles": [
+            14.304832124710083,
+            14.372116327285767,
+            14.594711780548096,
+            14.997475385665894,
+            15.301086568832398
+          ]
+        }
+      ],
+      "selection_rule": "near frame126 centroid; frame5 measurement retained as conflict",
+      "conflict_present": true,
+      "native_measurements_retained": true,
+      "conflict_reason": "Native per-view depth/localization disagreements remain in the measurement logs; selected semantic parameters are an explicit compromise."
+    },
+    "observed_geometry": "visible surface dimensions approximated by parametric primitive",
+    "inferred_geometry": "unseen backside, closed base, thickness, joints; rigid static physics assumed",
+    "confidence": "low",
+    "foliage_height": 1.2,
+    "spatial_relations": [
+      {
+        "relation": "inside",
+        "object_id": "lobby"
+      },
+      {
+        "relation": "supported_by",
+        "object_id": "floor"
+      }
+    ],
+    "bounds": [
+      [
+        -22.639677047729492,
+        -2.529937505722046,
+        -2.567016839981079
+      ],
+      [
+        -21.47052574157715,
+        -1.3838927745819092,
+        0.003958649002015591
+      ]
+    ]
+  },
+  "limitations": [
+    "constrained language matching",
+    "simulator-state-oracle localization",
+    "conservative AABB world, not original triangle mesh",
+    "collision materials assumed, not measured",
+    "no GT-world transfer in this result"
+  ]
+}

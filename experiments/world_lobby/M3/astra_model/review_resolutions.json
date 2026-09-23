@@ -1,0 +1,94 @@
+{
+  "review_input": "independent_review/review.json",
+  "reviewed_revision": 2,
+  "modeller_revision": 3,
+  "post_fix_independent_review_performed": false,
+  "no_GT_used": true,
+  "findings": [
+    {
+      "id": "R01",
+      "status": "fixed_and_analytically_checked",
+      "evidence": "artifact_checks.json: zero seat-cylinder intersections, minimum radial gap 0.029999990m, maximum translation0.111446107m; five supplied camera renders reviewed"
+    },
+    {
+      "id": "R02",
+      "status": "explicitly_unresolved",
+      "evidence": "Door/column/reception localization remains uncertain in frames105/126; original selected native metric locations retained. Per-object unresolved_localization and depth logs preserve evidence; no GT correction."
+    },
+    {
+      "id": "R03",
+      "status": "shape_revised_position_uncertain",
+      "evidence": "Named folded front panels, recessed counter and side/rear parts form one reception object; dimensions/position remain low-confidence."
+    },
+    {
+      "id": "R04",
+      "status": "fixed",
+      "evidence": {
+        "named_model_elements": 259,
+        "trim_elements": 195,
+        "non_trim_entries": 64,
+        "architectural_entities": 10,
+        "other_non_trim_entries": 54,
+        "scene_roots_and_groups_not_counted": 3,
+        "category_counts": {
+          "floor": 1,
+          "ceiling": 1,
+          "window": 1,
+          "wall": 3,
+          "surface_inlay": 1,
+          "trim": 195,
+          "door": 2,
+          "column": 2,
+          "reception_desk": 1,
+          "rectangular_planter": 3,
+          "coffee_table": 2,
+          "lounge_chair": 5,
+          "ottoman": 3,
+          "round_planter": 5,
+          "mirror": 10,
+          "pendant_light": 20,
+          "floor_lamp": 2,
+          "wall_installation": 1,
+          "decorative_bowl": 1
+        },
+        "verified_real_instance_count": null,
+        "interpretation": "Named model inventory only; not independent object detection or coverage performance."
+      }
+    },
+    {
+      "id": "R05",
+      "status": "fixed_machine_readable_planning_exclusion",
+      "evidence": "navigation_constraints.json: unknown_regions bounds/reason, known_navigation_bounds and outside-domain unknown-blocked policy. No physical wall added."
+    },
+    {
+      "id": "R06",
+      "status": "added_from_allowed_RGB",
+      "evidence": "table_middle_bowl plus one reception_wall_emblem installation containing shield and U feature; parts not credited as separate instances."
+    },
+    {
+      "id": "R07",
+      "status": "improved_still_approximate",
+      "evidence": "fine blade meshes for window/mirror plants, upright broad blades and orange flower for tall planter, branching yellow shrubs; botanical detail unmeasured."
+    },
+    {
+      "id": "R08",
+      "status": "partly_improved_remaining_approximation",
+      "evidence": "surface_inlay category avoids carpet assertion; brighter rectangular glossy pattern and open ring/spoke pendant geometry. Exact weave, frame appearance and material response remain approximate."
+    },
+    {
+      "id": "R09",
+      "status": "fixed",
+      "evidence": "Explicit conflict_present/native_measurements_retained semantics; low uncertain-object confidence; distinct ceiling-mode provenance; all raw logs retained."
+    },
+    {
+      "id": "R10",
+      "status": "fixed_and_checked",
+      "evidence": "Declared lobby root and furniture groups; part_of/supported_by/mounted_on/suspended_from relations; every target resolves without inventory inflation."
+    },
+    {
+      "id": "R11",
+      "status": "fixed_and_checked",
+      "evidence": "Full floor-lamp shade bounds covered by physical AABBs; 20 overhead pendant shade colliders also supplied."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "model": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/B2/tsdf_20260923/scene.blend",
+  "gt_usd": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/lobby.usda",
+  "model_vertices": 460091,
+  "model_triangles": 847753,
+  "gt_vertices": 5911877,
+  "gt_triangles": 9984967,
+  "model_bounds_m": [
+    [
+      8.307332827458147,
+      14.603634505281564,
+      -2.624583834295074
+    ],
+    [
+      31.408357381514016,
+      39.48761097888678,
+      4.724691992356567
+    ]
+  ],
+  "gt_bounds_m": [
+    [
+      -0.23679990555501718,
+      -1.8155378604409123,
+      -0.3100000023841858
+    ],
+    [
+      35.79372663284994,
+      25.925798831117163,
+      6.001999218016863
+    ]
+  ],
+  "samples_each": 100000,
+  "alignment": "single supplied global transform; no ICP",
+  "model_to_gt": {
+    "count": 100000,
+    "mean_m": 0.46994411964132277,
+    "rmse_m": 0.6141682734996892,
+    "median_m": 0.4024767130613327,
+    "p90_m": 0.9795351564884186,
+    "threshold_coverage": {
+      "0.05": 0.07162,
+      "0.1": 0.16422,
+      "0.2": 0.26598
+    }
+  },
+  "gt_to_model": {
+    "count": 100000,
+    "mean_m": 6.6364300083293415,
+    "rmse_m": 8.88207989367209,
+    "median_m": 5.185489654541016,
+    "p90_m": 16.361663436889653,
+    "threshold_coverage": {
+      "0.05": 0.00977,
+      "0.1": 0.024,
+      "0.2": 0.04896
+    }
+  },
+  "symmetric_chamfer_mean_m": 3.553187063985332,
+  "observed_gt_to_model": {
+    "count": 100000,
+    "mean_m": 0.3954683426917023,
+    "rmse_m": 0.5989834457206529,
+    "median_m": 0.2706005871295929,
+    "p90_m": 0.7427765488624576,
+    "threshold_coverage": {
+      "0.05": 0.10114,
+      "0.1": 0.30827,
+      "0.2": 0.44177
+    }
+  },
+  "observed_sampling": "uniform over fixed valid GT image-ray hits across180frames; observation-weighted, not surface-area weighted"
+}

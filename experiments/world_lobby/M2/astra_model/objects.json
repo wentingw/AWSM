@@ -1,0 +1,5465 @@
+{
+  "objects": [
+    {
+      "object_id": "floor",
+      "category": "floor",
+      "attributes": {
+        "friction": 0.55,
+        "observed_surface": "top",
+        "inferred": "slab underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Near ViPE floor depth and far window-floor RGB triangulation; floor z=0. Thickness inferred.",
+      "spatial_relations": [],
+      "parts": [
+        "floor.main_slab",
+        "floor.rear_extension"
+      ],
+      "bounds": {
+        "min": [
+          -4.349999904632568,
+          -3.6000003814697266,
+          -0.1599999964237213
+        ],
+        "max": [
+          5.949999809265137,
+          16.0,
+          0.0
+        ]
+      },
+      "center": [
+        0.7999999523162842,
+        6.199999809265137,
+        -0.07999999821186066
+      ]
+    },
+    {
+      "object_id": "dark_floor_inlay",
+      "category": "rug",
+      "attributes": {
+        "material": "glossy black woven inlay",
+        "thickness_inferred": true
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "dark_floor_inlay.long_inlay",
+        "dark_floor_inlay.weave_000",
+        "dark_floor_inlay.weave_001",
+        "dark_floor_inlay.weave_002",
+        "dark_floor_inlay.weave_003",
+        "dark_floor_inlay.weave_004",
+        "dark_floor_inlay.weave_005",
+        "dark_floor_inlay.weave_006",
+        "dark_floor_inlay.weave_007",
+        "dark_floor_inlay.weave_008",
+        "dark_floor_inlay.weave_009",
+        "dark_floor_inlay.weave_010",
+        "dark_floor_inlay.weave_011",
+        "dark_floor_inlay.weave_012",
+        "dark_floor_inlay.weave_013",
+        "dark_floor_inlay.weave_014",
+        "dark_floor_inlay.weave_015",
+        "dark_floor_inlay.weave_016",
+        "dark_floor_inlay.weave_017",
+        "dark_floor_inlay.weave_018",
+        "dark_floor_inlay.weave_019",
+        "dark_floor_inlay.weave_020",
+        "dark_floor_inlay.weave_021",
+        "dark_floor_inlay.weave_022",
+        "dark_floor_inlay.weave_023",
+        "dark_floor_inlay.weave_024",
+        "dark_floor_inlay.weave_025",
+        "dark_floor_inlay.weave_026",
+        "dark_floor_inlay.weave_027",
+        "dark_floor_inlay.weave_028",
+        "dark_floor_inlay.weave_029",
+        "dark_floor_inlay.weave_030",
+        "dark_floor_inlay.weave_031",
+        "dark_floor_inlay.weave_032",
+        "dark_floor_inlay.weave_033",
+        "dark_floor_inlay.weave_034",
+        "dark_floor_inlay.weave_035",
+        "dark_floor_inlay.weave_036",
+        "dark_floor_inlay.weave_037",
+        "dark_floor_inlay.weave_038",
+        "dark_floor_inlay.weave_039",
+        "dark_floor_inlay.weave_040",
+        "dark_floor_inlay.weave_041",
+        "dark_floor_inlay.weave_042",
+        "dark_floor_inlay.weave_043",
+        "dark_floor_inlay.weave_044",
+        "dark_floor_inlay.weave_045",
+        "dark_floor_inlay.weave_046",
+        "dark_floor_inlay.weave_047",
+        "dark_floor_inlay.weave_048",
+        "dark_floor_inlay.weave_049",
+        "dark_floor_inlay.weave_050",
+        "dark_floor_inlay.weave_051",
+        "dark_floor_inlay.weave_052",
+        "dark_floor_inlay.weave_053",
+        "dark_floor_inlay.weave_054",
+        "dark_floor_inlay.weave_055",
+        "dark_floor_inlay.weave_056",
+        "dark_floor_inlay.weave_057",
+        "dark_floor_inlay.weave_058",
+        "dark_floor_inlay.weave_059",
+        "dark_floor_inlay.weave_060",
+        "dark_floor_inlay.weave_061",
+        "dark_floor_inlay.weave_062",
+        "dark_floor_inlay.weave_063",
+        "dark_floor_inlay.weave_064",
+        "dark_floor_inlay.weave_065",
+        "dark_floor_inlay.weave_066",
+        "dark_floor_inlay.weave_067",
+        "dark_floor_inlay.weave_068",
+        "dark_floor_inlay.weave_069",
+        "dark_floor_inlay.weave_070",
+        "dark_floor_inlay.weave_071",
+        "dark_floor_inlay.weave_072",
+        "dark_floor_inlay.weave_073",
+        "dark_floor_inlay.weave_074",
+        "dark_floor_inlay.weave_075",
+        "dark_floor_inlay.weave_076",
+        "dark_floor_inlay.weave_077",
+        "dark_floor_inlay.weave_078",
+        "dark_floor_inlay.weave_079",
+        "dark_floor_inlay.weave_080",
+        "dark_floor_inlay.weave_081",
+        "dark_floor_inlay.weave_082",
+        "dark_floor_inlay.weave_083",
+        "dark_floor_inlay.weave_084",
+        "dark_floor_inlay.weave_085",
+        "dark_floor_inlay.weave_086",
+        "dark_floor_inlay.weave_087"
+      ],
+      "bounds": {
+        "min": [
+          -2.6499998569488525,
+          -2.4000000953674316,
+          0.0
+        ],
+        "max": [
+          1.9499999284744263,
+          13.299999237060547,
+          0.01575000025331974
+        ]
+      },
+      "center": [
+        -0.34999996423721313,
+        5.449999570846558,
+        0.00787500012665987
+      ]
+    },
+    {
+      "object_id": "mirror_feature_wall",
+      "category": "wall",
+      "attributes": {
+        "observed": "panelled front face",
+        "inferred": "wall thickness and backing"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_feature_wall.panelblock",
+        "mirror_feature_wall.panelblock.001",
+        "mirror_feature_wall.panelblock.002",
+        "mirror_feature_wall.lintel",
+        "mirror_feature_wall.lintel.001",
+        "mirror_feature_wall.vertical_joint",
+        "mirror_feature_wall.vertical_joint.001",
+        "mirror_feature_wall.vertical_joint.002",
+        "mirror_feature_wall.vertical_joint.003",
+        "mirror_feature_wall.vertical_joint.004",
+        "mirror_feature_wall.vertical_joint.005",
+        "mirror_feature_wall.vertical_joint.006",
+        "mirror_feature_wall.vertical_joint.007",
+        "mirror_feature_wall.vertical_joint.008",
+        "mirror_feature_wall.vertical_joint.009",
+        "mirror_feature_wall.vertical_joint.010",
+        "mirror_feature_wall.vertical_joint.011",
+        "mirror_feature_wall.vertical_joint.012",
+        "mirror_feature_wall.vertical_joint.013",
+        "mirror_feature_wall.vertical_joint.014",
+        "mirror_feature_wall.horizontal_joint",
+        "mirror_feature_wall.horizontal_joint.001"
+      ],
+      "bounds": {
+        "min": [
+          3.556999921798706,
+          -3.6064999103546143,
+          0.0
+        ],
+        "max": [
+          3.7300000190734863,
+          7.150000095367432,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        3.643499970436096,
+        1.7717500925064087,
+        2.4749999046325684
+      ]
+    },
+    {
+      "object_id": "rear_right_wall",
+      "category": "wall",
+      "attributes": {
+        "observed": "panelled front face",
+        "inferred": "wall thickness and backing"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "rear_right_wall.panelblock",
+        "rear_right_wall.panelblock.001",
+        "rear_right_wall.lintel",
+        "rear_right_wall.vertical_joint",
+        "rear_right_wall.vertical_joint.001",
+        "rear_right_wall.vertical_joint.002",
+        "rear_right_wall.vertical_joint.003",
+        "rear_right_wall.vertical_joint.004",
+        "rear_right_wall.vertical_joint.005",
+        "rear_right_wall.vertical_joint.006",
+        "rear_right_wall.vertical_joint.007",
+        "rear_right_wall.vertical_joint.008",
+        "rear_right_wall.vertical_joint.009",
+        "rear_right_wall.vertical_joint.010",
+        "rear_right_wall.vertical_joint.011",
+        "rear_right_wall.horizontal_joint",
+        "rear_right_wall.horizontal_joint.001"
+      ],
+      "bounds": {
+        "min": [
+          5.85699987411499,
+          7.143500328063965,
+          0.0
+        ],
+        "max": [
+          6.029999732971191,
+          15.600000381469727,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        5.943499803543091,
+        11.371750354766846,
+        2.4749999046325684
+      ]
+    },
+    {
+      "object_id": "right_return_wall",
+      "category": "wall",
+      "attributes": {
+        "observed": "panelled front face",
+        "inferred": "wall thickness and backing"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "right_return_wall.panelblock",
+        "right_return_wall.panelblock.001",
+        "right_return_wall.lintel",
+        "right_return_wall.vertical_joint",
+        "right_return_wall.vertical_joint.001",
+        "right_return_wall.vertical_joint.002",
+        "right_return_wall.vertical_joint.003",
+        "right_return_wall.horizontal_joint",
+        "right_return_wall.horizontal_joint.001"
+      ],
+      "bounds": {
+        "min": [
+          3.6435000896453857,
+          7.10699987411499,
+          0.0
+        ],
+        "max": [
+          5.950000286102295,
+          7.279999732971191,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        4.79675018787384,
+        7.193499803543091,
+        2.4749999046325684
+      ]
+    },
+    {
+      "object_id": "reception_back_wall",
+      "category": "wall",
+      "attributes": {
+        "observed": "panelled front face",
+        "inferred": "wall thickness and backing"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_back_wall.panelblock",
+        "reception_back_wall.vertical_joint",
+        "reception_back_wall.vertical_joint.001",
+        "reception_back_wall.vertical_joint.002",
+        "reception_back_wall.vertical_joint.003",
+        "reception_back_wall.vertical_joint.004",
+        "reception_back_wall.vertical_joint.005",
+        "reception_back_wall.vertical_joint.006",
+        "reception_back_wall.vertical_joint.007",
+        "reception_back_wall.vertical_joint.008",
+        "reception_back_wall.vertical_joint.009",
+        "reception_back_wall.vertical_joint.010",
+        "reception_back_wall.vertical_joint.011",
+        "reception_back_wall.vertical_joint.012",
+        "reception_back_wall.vertical_joint.013",
+        "reception_back_wall.horizontal_joint",
+        "reception_back_wall.horizontal_joint.001"
+      ],
+      "bounds": {
+        "min": [
+          -4.406499862670898,
+          15.557000160217285,
+          0.0
+        ],
+        "max": [
+          5.950000286102295,
+          15.729999542236328,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        0.7717502117156982,
+        15.643499851226807,
+        2.4749999046325684
+      ]
+    },
+    {
+      "object_id": "front_end_wall",
+      "category": "wall",
+      "attributes": {
+        "observed": "panelled front face",
+        "inferred": "wall thickness and backing"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "front_end_wall.panelblock",
+        "front_end_wall.vertical_joint",
+        "front_end_wall.vertical_joint.001",
+        "front_end_wall.vertical_joint.002",
+        "front_end_wall.vertical_joint.003",
+        "front_end_wall.vertical_joint.004",
+        "front_end_wall.vertical_joint.005",
+        "front_end_wall.vertical_joint.006",
+        "front_end_wall.vertical_joint.007",
+        "front_end_wall.vertical_joint.008",
+        "front_end_wall.vertical_joint.009",
+        "front_end_wall.vertical_joint.010",
+        "front_end_wall.horizontal_joint",
+        "front_end_wall.horizontal_joint.001"
+      ],
+      "bounds": {
+        "min": [
+          -4.406499862670898,
+          -3.743000030517578,
+          0.0
+        ],
+        "max": [
+          3.6500000953674316,
+          -3.570000171661377,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -0.3782498836517334,
+        -3.6565001010894775,
+        2.4749999046325684
+      ]
+    },
+    {
+      "object_id": "ceiling",
+      "category": "ceiling",
+      "attributes": {
+        "inferred": "hidden structural thickness"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "ceiling.ceiling"
+      ],
+      "bounds": {
+        "min": [
+          -4.625,
+          -3.75,
+          4.950000286102295
+        ],
+        "max": [
+          6.024999618530273,
+          15.75,
+          5.150000095367432
+        ]
+      },
+      "center": [
+        0.6999998092651367,
+        6.0,
+        5.050000190734863
+      ]
+    },
+    {
+      "object_id": "ceiling_slats",
+      "category": "ceiling_detail",
+      "attributes": {
+        "spacing": 0.18
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "ceiling_slats.left_louver",
+        "ceiling_slats.right_louver",
+        "ceiling_slats.left_louver.001",
+        "ceiling_slats.right_louver.001",
+        "ceiling_slats.left_louver.002",
+        "ceiling_slats.right_louver.002",
+        "ceiling_slats.left_louver.003",
+        "ceiling_slats.right_louver.003",
+        "ceiling_slats.left_louver.004",
+        "ceiling_slats.right_louver.004",
+        "ceiling_slats.left_louver.005",
+        "ceiling_slats.right_louver.005",
+        "ceiling_slats.left_louver.006",
+        "ceiling_slats.right_louver.006",
+        "ceiling_slats.left_louver.007",
+        "ceiling_slats.right_louver.007",
+        "ceiling_slats.left_louver.008",
+        "ceiling_slats.right_louver.008",
+        "ceiling_slats.left_louver.009",
+        "ceiling_slats.right_louver.009",
+        "ceiling_slats.left_louver.010",
+        "ceiling_slats.right_louver.010",
+        "ceiling_slats.left_louver.011",
+        "ceiling_slats.right_louver.011",
+        "ceiling_slats.left_louver.012",
+        "ceiling_slats.right_louver.012",
+        "ceiling_slats.left_louver.013",
+        "ceiling_slats.right_louver.013",
+        "ceiling_slats.left_louver.014",
+        "ceiling_slats.right_louver.014",
+        "ceiling_slats.left_louver.015",
+        "ceiling_slats.right_louver.015",
+        "ceiling_slats.left_louver.016",
+        "ceiling_slats.right_louver.016",
+        "ceiling_slats.left_louver.017",
+        "ceiling_slats.right_louver.017",
+        "ceiling_slats.left_louver.018",
+        "ceiling_slats.right_louver.018",
+        "ceiling_slats.left_louver.019",
+        "ceiling_slats.right_louver.019",
+        "ceiling_slats.left_louver.020",
+        "ceiling_slats.right_louver.020",
+        "ceiling_slats.left_louver.021",
+        "ceiling_slats.right_louver.021",
+        "ceiling_slats.left_louver.022",
+        "ceiling_slats.right_louver.022",
+        "ceiling_slats.left_louver.023",
+        "ceiling_slats.right_louver.023",
+        "ceiling_slats.left_louver.024",
+        "ceiling_slats.right_louver.024",
+        "ceiling_slats.left_louver.025",
+        "ceiling_slats.right_louver.025",
+        "ceiling_slats.left_louver.026",
+        "ceiling_slats.right_louver.026",
+        "ceiling_slats.left_louver.027",
+        "ceiling_slats.right_louver.027",
+        "ceiling_slats.left_louver.028",
+        "ceiling_slats.right_louver.028",
+        "ceiling_slats.left_louver.029",
+        "ceiling_slats.right_louver.029",
+        "ceiling_slats.left_louver.030",
+        "ceiling_slats.right_louver.030",
+        "ceiling_slats.left_louver.031",
+        "ceiling_slats.right_louver.031",
+        "ceiling_slats.left_louver.032",
+        "ceiling_slats.right_louver.032",
+        "ceiling_slats.left_louver.033",
+        "ceiling_slats.right_louver.033",
+        "ceiling_slats.left_louver.034",
+        "ceiling_slats.right_louver.034",
+        "ceiling_slats.left_louver.035",
+        "ceiling_slats.right_louver.035",
+        "ceiling_slats.left_louver.036",
+        "ceiling_slats.right_louver.036",
+        "ceiling_slats.left_louver.037",
+        "ceiling_slats.right_louver.037",
+        "ceiling_slats.left_louver.038",
+        "ceiling_slats.right_louver.038",
+        "ceiling_slats.left_louver.039",
+        "ceiling_slats.right_louver.039",
+        "ceiling_slats.left_louver.040",
+        "ceiling_slats.right_louver.040",
+        "ceiling_slats.left_louver.041",
+        "ceiling_slats.right_louver.041",
+        "ceiling_slats.left_louver.042",
+        "ceiling_slats.right_louver.042",
+        "ceiling_slats.left_louver.043",
+        "ceiling_slats.right_louver.043",
+        "ceiling_slats.left_louver.044",
+        "ceiling_slats.right_louver.044",
+        "ceiling_slats.left_louver.045",
+        "ceiling_slats.right_louver.045",
+        "ceiling_slats.left_louver.046",
+        "ceiling_slats.right_louver.046",
+        "ceiling_slats.left_louver.047",
+        "ceiling_slats.right_louver.047",
+        "ceiling_slats.left_louver.048",
+        "ceiling_slats.right_louver.048",
+        "ceiling_slats.left_louver.049",
+        "ceiling_slats.right_louver.049",
+        "ceiling_slats.left_louver.050",
+        "ceiling_slats.right_louver.050",
+        "ceiling_slats.left_louver.051",
+        "ceiling_slats.right_louver.051",
+        "ceiling_slats.left_louver.052",
+        "ceiling_slats.right_louver.052",
+        "ceiling_slats.left_louver.053",
+        "ceiling_slats.right_louver.053",
+        "ceiling_slats.left_louver.054",
+        "ceiling_slats.right_louver.054",
+        "ceiling_slats.left_louver.055",
+        "ceiling_slats.right_louver.055",
+        "ceiling_slats.left_louver.056",
+        "ceiling_slats.right_louver.056",
+        "ceiling_slats.left_louver.057",
+        "ceiling_slats.right_louver.057",
+        "ceiling_slats.left_louver.058",
+        "ceiling_slats.right_louver.058",
+        "ceiling_slats.left_louver.059",
+        "ceiling_slats.right_louver.059",
+        "ceiling_slats.left_louver.060",
+        "ceiling_slats.right_louver.060",
+        "ceiling_slats.left_louver.061",
+        "ceiling_slats.right_louver.061",
+        "ceiling_slats.left_louver.062",
+        "ceiling_slats.right_louver.062",
+        "ceiling_slats.left_louver.063",
+        "ceiling_slats.right_louver.063",
+        "ceiling_slats.left_louver.064",
+        "ceiling_slats.right_louver.064",
+        "ceiling_slats.left_louver.065",
+        "ceiling_slats.right_louver.065",
+        "ceiling_slats.left_louver.066",
+        "ceiling_slats.right_louver.066",
+        "ceiling_slats.left_louver.067",
+        "ceiling_slats.right_louver.067",
+        "ceiling_slats.left_louver.068",
+        "ceiling_slats.right_louver.068",
+        "ceiling_slats.left_louver.069",
+        "ceiling_slats.right_louver.069",
+        "ceiling_slats.left_louver.070",
+        "ceiling_slats.right_louver.070",
+        "ceiling_slats.left_louver.071",
+        "ceiling_slats.right_louver.071",
+        "ceiling_slats.left_louver.072",
+        "ceiling_slats.right_louver.072",
+        "ceiling_slats.left_louver.073",
+        "ceiling_slats.right_louver.073",
+        "ceiling_slats.left_louver.074",
+        "ceiling_slats.right_louver.074",
+        "ceiling_slats.left_louver.075",
+        "ceiling_slats.right_louver.075",
+        "ceiling_slats.left_louver.076",
+        "ceiling_slats.right_louver.076",
+        "ceiling_slats.left_louver.077",
+        "ceiling_slats.right_louver.077",
+        "ceiling_slats.left_louver.078",
+        "ceiling_slats.right_louver.078",
+        "ceiling_slats.left_louver.079",
+        "ceiling_slats.right_louver.079",
+        "ceiling_slats.left_louver.080",
+        "ceiling_slats.right_louver.080",
+        "ceiling_slats.left_louver.081",
+        "ceiling_slats.right_louver.081",
+        "ceiling_slats.left_louver.082",
+        "ceiling_slats.right_louver.082",
+        "ceiling_slats.left_louver.083",
+        "ceiling_slats.right_louver.083",
+        "ceiling_slats.left_louver.084",
+        "ceiling_slats.right_louver.084",
+        "ceiling_slats.left_louver.085",
+        "ceiling_slats.right_louver.085",
+        "ceiling_slats.left_louver.086",
+        "ceiling_slats.right_louver.086",
+        "ceiling_slats.left_louver.087",
+        "ceiling_slats.right_louver.087",
+        "ceiling_slats.left_louver.088",
+        "ceiling_slats.right_louver.088",
+        "ceiling_slats.left_louver.089",
+        "ceiling_slats.right_louver.089",
+        "ceiling_slats.left_louver.090",
+        "ceiling_slats.right_louver.090",
+        "ceiling_slats.left_louver.091",
+        "ceiling_slats.right_louver.091",
+        "ceiling_slats.left_louver.092",
+        "ceiling_slats.right_louver.092",
+        "ceiling_slats.left_louver.093",
+        "ceiling_slats.right_louver.093",
+        "ceiling_slats.left_louver.094",
+        "ceiling_slats.right_louver.094",
+        "ceiling_slats.left_louver.095",
+        "ceiling_slats.right_louver.095",
+        "ceiling_slats.left_louver.096",
+        "ceiling_slats.right_louver.096",
+        "ceiling_slats.left_louver.097",
+        "ceiling_slats.right_louver.097",
+        "ceiling_slats.left_louver.098",
+        "ceiling_slats.right_louver.098",
+        "ceiling_slats.left_louver.099",
+        "ceiling_slats.right_louver.099",
+        "ceiling_slats.left_louver.100",
+        "ceiling_slats.right_louver.100",
+        "ceiling_slats.left_louver.101",
+        "ceiling_slats.right_louver.101",
+        "ceiling_slats.left_louver.102",
+        "ceiling_slats.right_louver.102",
+        "ceiling_slats.left_louver.103",
+        "ceiling_slats.right_louver.103",
+        "ceiling_slats.left_louver.104",
+        "ceiling_slats.right_louver.104",
+        "ceiling_slats.left_louver.105",
+        "ceiling_slats.right_louver.105"
+      ],
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          -3.5274999141693115,
+          4.840000152587891
+        ],
+        "max": [
+          4.099999904632568,
+          15.427499771118164,
+          4.960000038146973
+        ]
+      },
+      "center": [
+        -0.15000009536743164,
+        5.949999928474426,
+        4.900000095367432
+      ]
+    },
+    {
+      "object_id": "window_wall",
+      "category": "window",
+      "attributes": {
+        "inferred": "glazing optical constants",
+        "transmission": "bright overexposed exterior in input"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          100,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "window_wall.bright_exterior",
+        "window_wall.mullion",
+        "window_wall.mullion.001",
+        "window_wall.mullion.002",
+        "window_wall.mullion.003",
+        "window_wall.mullion.004",
+        "window_wall.mullion.005",
+        "window_wall.mullion.006",
+        "window_wall.mullion.007",
+        "window_wall.mullion.008",
+        "window_wall.mullion.009",
+        "window_wall.mullion.010",
+        "window_wall.mullion.011",
+        "window_wall.mullion.012",
+        "window_wall.mullion.013",
+        "window_wall.mullion.014",
+        "window_wall.mullion.015",
+        "window_wall.mullion.016",
+        "window_wall.mullion.017",
+        "window_wall.mullion.018",
+        "window_wall.mullion.019",
+        "window_wall.mullion.020",
+        "window_wall.mullion.021",
+        "window_wall.mullion.022",
+        "window_wall.transom",
+        "window_wall.transom.001",
+        "window_wall.transom.002"
+      ],
+      "bounds": {
+        "min": [
+          -4.577499866485596,
+          -3.6999998092651367,
+          0.0
+        ],
+        "max": [
+          -4.359999656677246,
+          15.699999809265137,
+          5.0
+        ]
+      },
+      "center": [
+        -4.468749761581421,
+        6.0,
+        2.5
+      ]
+    },
+    {
+      "object_id": "glass_entry_double_door",
+      "category": "door",
+      "attributes": {
+        "hinge_inferred": true,
+        "state": "closed",
+        "supports_opening": false,
+        "collision_semantics": "Static closed door leaves block passage; fixed window wall excludes portal aperture."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          105,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "glass_entry_double_door.door_stile",
+        "glass_entry_double_door.door_stile.001",
+        "glass_entry_double_door.door_stile.002",
+        "glass_entry_double_door.closed_leaf",
+        "glass_entry_double_door.door_rail",
+        "glass_entry_double_door.door_rail.001",
+        "glass_entry_double_door.vertical_handle",
+        "glass_entry_double_door.closed_leaf.001",
+        "glass_entry_double_door.door_rail.002",
+        "glass_entry_double_door.door_rail.003",
+        "glass_entry_double_door.vertical_handle.001"
+      ],
+      "bounds": {
+        "min": [
+          -4.400000095367432,
+          11.612499237060547,
+          0.0
+        ],
+        "max": [
+          -4.215000152587891,
+          13.2475004196167,
+          2.495000123977661
+        ]
+      },
+      "center": [
+        -4.307500123977661,
+        12.429999828338623,
+        1.2475000619888306
+      ]
+    },
+    {
+      "object_id": "window_column",
+      "category": "column",
+      "attributes": {
+        "radius": 0.43
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB cylinder fitted near x=-3.6,y=7.1; conflicting native depth versus triangulation retained.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "window_column.shaft",
+        "window_column.base"
+      ],
+      "bounds": {
+        "min": [
+          -4.005000114440918,
+          6.654999732971191,
+          0.0
+        ],
+        "max": [
+          -3.115000009536743,
+          7.545000076293945,
+          4.940000057220459
+        ]
+      },
+      "center": [
+        -3.5600000619888306,
+        7.099999904632568,
+        2.4700000286102295
+      ]
+    },
+    {
+      "object_id": "lounge_A_ottoman",
+      "category": "ottoman",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          -0.17099213600158691,
+          -0.08019256591796875,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_ottoman.seat",
+        "lounge_A_ottoman.seat_top",
+        "lounge_A_ottoman.foot",
+        "lounge_A_ottoman.foot.001",
+        "lounge_A_ottoman.foot.002",
+        "lounge_A_ottoman.foot.003"
+      ],
+      "bounds": {
+        "min": [
+          -2.050992250442505,
+          4.4698076248168945,
+          0.0
+        ],
+        "max": [
+          -1.1909921169281006,
+          5.329807281494141,
+          0.5180000066757202
+        ]
+      },
+      "center": [
+        -1.6209921836853027,
+        4.899807453155518,
+        0.2590000033378601
+      ]
+    },
+    {
+      "object_id": "lounge_A_chair_left",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          -0.06483924388885498,
+          -0.07530069351196289,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_chair_left.seat",
+        "lounge_A_chair_left.seat_top",
+        "lounge_A_chair_left.foot",
+        "lounge_A_chair_left.foot.001",
+        "lounge_A_chair_left.foot.002",
+        "lounge_A_chair_left.foot.003",
+        "lounge_A_chair_left.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          -1.96073579788208,
+          5.374699115753174,
+          0.0
+        ],
+        "max": [
+          -1.1448392868041992,
+          6.185214042663574,
+          0.9423006772994995
+        ]
+      },
+      "center": [
+        -1.5527875423431396,
+        5.779956579208374,
+        0.47115033864974976
+      ]
+    },
+    {
+      "object_id": "lounge_A_chair_rear",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          -0.20316314697265625,
+          0.11059713363647461,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_chair_rear.seat",
+        "lounge_A_chair_rear.seat_top",
+        "lounge_A_chair_rear.foot",
+        "lounge_A_chair_rear.foot.001",
+        "lounge_A_chair_rear.foot.002",
+        "lounge_A_chair_rear.foot.003",
+        "lounge_A_chair_rear.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          -1.6109130382537842,
+          6.140596866607666,
+          0.0
+        ],
+        "max": [
+          -0.7831631898880005,
+          6.956440448760986,
+          0.9423008561134338
+        ]
+      },
+      "center": [
+        -1.1970381140708923,
+        6.548518657684326,
+        0.4711504280567169
+      ]
+    },
+    {
+      "object_id": "lounge_A_oval_seat",
+      "category": "ottoman",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.1334880143404007,
+          0.3948516845703125,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_oval_seat.seat",
+        "lounge_A_oval_seat.seat_top",
+        "lounge_A_oval_seat.foot",
+        "lounge_A_oval_seat.foot.001",
+        "lounge_A_oval_seat.foot.002",
+        "lounge_A_oval_seat.foot.003"
+      ],
+      "bounds": {
+        "min": [
+          -0.7365119457244873,
+          6.114851951599121,
+          0.0
+        ],
+        "max": [
+          0.3234879970550537,
+          7.174851417541504,
+          0.5180000066757202
+        ]
+      },
+      "center": [
+        -0.2065119743347168,
+        6.6448516845703125,
+        0.2590000033378601
+      ]
+    },
+    {
+      "object_id": "lounge_A_ottoman_mid",
+      "category": "ottoman",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.28185543417930603,
+          0.06923961639404297,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_ottoman_mid.seat",
+        "lounge_A_ottoman_mid.seat_top",
+        "lounge_A_ottoman_mid.foot",
+        "lounge_A_ottoman_mid.foot.001",
+        "lounge_A_ottoman_mid.foot.002",
+        "lounge_A_ottoman_mid.foot.003"
+      ],
+      "bounds": {
+        "min": [
+          -0.06814455986022949,
+          5.439239978790283,
+          0.0
+        ],
+        "max": [
+          0.711855411529541,
+          6.219239711761475,
+          0.5180000066757202
+        ]
+      },
+      "center": [
+        0.32185542583465576,
+        5.829239845275879,
+        0.2590000033378601
+      ]
+    },
+    {
+      "object_id": "lounge_A_chair_right",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.536463737487793,
+          0.18123579025268555,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_chair_right.seat",
+        "lounge_A_chair_right.seat_top",
+        "lounge_A_chair_right.foot",
+        "lounge_A_chair_right.foot.001",
+        "lounge_A_chair_right.foot.002",
+        "lounge_A_chair_right.foot.003",
+        "lounge_A_chair_right.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          0.726463794708252,
+          5.651236057281494,
+          0.0
+        ],
+        "max": [
+          1.5628559589385986,
+          6.496631145477295,
+          0.9428582191467285
+        ]
+      },
+      "center": [
+        1.1446598768234253,
+        6.0739336013793945,
+        0.47142910957336426
+      ]
+    },
+    {
+      "object_id": "lounge_B_chair_back",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.19876432418823242,
+          0.13101506233215332,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_chair_back.seat",
+        "lounge_B_chair_back.seat_top",
+        "lounge_B_chair_back.foot",
+        "lounge_B_chair_back.foot.001",
+        "lounge_B_chair_back.foot.002",
+        "lounge_B_chair_back.foot.003",
+        "lounge_B_chair_back.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          0.7851643562316895,
+          2.4474151134490967,
+          0.0
+        ],
+        "max": [
+          1.6172935962677002,
+          3.2911159992218018,
+          0.943058967590332
+        ]
+      },
+      "center": [
+        1.2012289762496948,
+        2.869265556335449,
+        0.471529483795166
+      ]
+    },
+    {
+      "object_id": "lounge_B_chair_mid",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.03149986267089844,
+          -0.02121758460998535,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_chair_mid.seat",
+        "lounge_B_chair_mid.seat_top",
+        "lounge_B_chair_mid.foot",
+        "lounge_B_chair_mid.foot.001",
+        "lounge_B_chair_mid.foot.002",
+        "lounge_B_chair_mid.foot.003",
+        "lounge_B_chair_mid.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          1.1778998374938965,
+          1.66518235206604,
+          0.0
+        ],
+        "max": [
+          2.0216283798217773,
+          2.508890390396118,
+          0.9430589079856873
+        ]
+      },
+      "center": [
+        1.599764108657837,
+        2.087036371231079,
+        0.47152945399284363
+      ]
+    },
+    {
+      "object_id": "lounge_B_chair_front",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.008774638175964355,
+          -0.05861353874206543,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_chair_front.seat",
+        "lounge_B_chair_front.seat_top",
+        "lounge_B_chair_front.foot",
+        "lounge_B_chair_front.foot.001",
+        "lounge_B_chair_front.foot.002",
+        "lounge_B_chair_front.foot.003",
+        "lounge_B_chair_front.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          1.2951747179031372,
+          0.7977864742279053,
+          0.0
+        ],
+        "max": [
+          2.1389107704162598,
+          1.6506049633026123,
+          0.9430590271949768
+        ]
+      },
+      "center": [
+        1.7170427441596985,
+        1.2241957187652588,
+        0.4715295135974884
+      ]
+    },
+    {
+      "object_id": "lounge_B_ottoman_left",
+      "category": "ottoman",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          -0.020330771803855896,
+          -0.1098928451538086,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_ottoman_left.seat",
+        "lounge_B_ottoman_left.seat_top",
+        "lounge_B_ottoman_left.foot",
+        "lounge_B_ottoman_left.foot.001",
+        "lounge_B_ottoman_left.foot.002",
+        "lounge_B_ottoman_left.foot.003"
+      ],
+      "bounds": {
+        "min": [
+          -0.5651307702064514,
+          0.8353071808815002,
+          0.0
+        ],
+        "max": [
+          0.24446922540664673,
+          1.6449072360992432,
+          0.5180000066757202
+        ]
+      },
+      "center": [
+        -0.16033077239990234,
+        1.2401072084903717,
+        0.2590000033378601
+      ]
+    },
+    {
+      "object_id": "lounge_B_chair_left",
+      "category": "chair",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          -0.039511412382125854,
+          -0.08797433972358704,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_chair_left.seat",
+        "lounge_B_chair_left.seat_top",
+        "lounge_B_chair_left.foot",
+        "lounge_B_chair_left.foot.001",
+        "lounge_B_chair_left.foot.002",
+        "lounge_B_chair_left.foot.003",
+        "lounge_B_chair_left.curved_back"
+      ],
+      "bounds": {
+        "min": [
+          -0.9404631853103638,
+          0.018484652042388916,
+          0.0
+        ],
+        "max": [
+          -0.11471140384674072,
+          0.8668256998062134,
+          0.9425683617591858
+        ]
+      },
+      "center": [
+        -0.5275872945785522,
+        0.44265517592430115,
+        0.4712841808795929
+      ]
+    },
+    {
+      "object_id": "lounge_B_ottoman_rear",
+      "category": "ottoman",
+      "attributes": {
+        "seat_height": 0.47,
+        "observed": "sage round upholstered seat",
+        "inferred": "underside, foam, foot attachment",
+        "nonintersection_layout_adjustment_m": [
+          0.105491042137146,
+          0.42608141899108887,
+          0.0
+        ],
+        "layout_constraint": "Seat-seat and seat-table disks separated; measured table center fixed. Foreground radii reduced 12% based on RGB bulk discrepancy."
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_ottoman_rear.seat",
+        "lounge_B_ottoman_rear.seat_top",
+        "lounge_B_ottoman_rear.foot",
+        "lounge_B_ottoman_rear.foot.001",
+        "lounge_B_ottoman_rear.foot.002",
+        "lounge_B_ottoman_rear.foot.003"
+      ],
+      "bounds": {
+        "min": [
+          0.11309105157852173,
+          3.023681402206421,
+          0.0
+        ],
+        "max": [
+          0.957891047000885,
+          3.868481397628784,
+          0.5180000066757202
+        ]
+      },
+      "center": [
+        0.5354910492897034,
+        3.4460813999176025,
+        0.2590000033378601
+      ]
+    },
+    {
+      "object_id": "lounge_A_table",
+      "category": "table",
+      "attributes": {
+        "top_height": 0.48,
+        "observed": "black round top and open ribbed base",
+        "inferred": "base joins"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_A_table.top",
+        "lounge_A_table.rib",
+        "lounge_A_table.rib.001",
+        "lounge_A_table.rib.002",
+        "lounge_A_table.rib.003",
+        "lounge_A_table.rib.004",
+        "lounge_A_table.rib.005",
+        "lounge_A_table.rib.006",
+        "lounge_A_table.rib.007",
+        "lounge_A_table.rib.008",
+        "lounge_A_table.rib.009",
+        "lounge_A_table.rib.010",
+        "lounge_A_table.rib.011",
+        "lounge_A_table.rib.012",
+        "lounge_A_table.rib.013",
+        "lounge_A_table.rib.014",
+        "lounge_A_table.rib.015",
+        "lounge_A_table.rib.016",
+        "lounge_A_table.rib.017",
+        "lounge_A_table.rib.018",
+        "lounge_A_table.rib.019",
+        "lounge_A_table.rib.020",
+        "lounge_A_table.rib.021",
+        "lounge_A_table.rib.022",
+        "lounge_A_table.rib.023",
+        "lounge_A_table.rib.024",
+        "lounge_A_table.rib.025",
+        "lounge_A_table.rib.026",
+        "lounge_A_table.rib.027"
+      ],
+      "bounds": {
+        "min": [
+          -1.190000057220459,
+          4.609999656677246,
+          0.03419807553291321
+        ],
+        "max": [
+          0.06999999284744263,
+          5.869999885559082,
+          0.4950000047683716
+        ]
+      },
+      "center": [
+        -0.5600000321865082,
+        5.239999771118164,
+        0.2645990401506424
+      ]
+    },
+    {
+      "object_id": "lounge_A_table_bowl",
+      "category": "decor",
+      "attributes": {
+        "inferred": "unseen bowl thickness"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "lounge_A_table_bowl.bowl"
+      ],
+      "bounds": {
+        "min": [
+          -0.7200000286102295,
+          5.079999923706055,
+          0.5
+        ],
+        "max": [
+          -0.4000000059604645,
+          5.400000095367432,
+          0.6650000214576721
+        ]
+      },
+      "center": [
+        -0.560000017285347,
+        5.240000009536743,
+        0.5825000107288361
+      ]
+    },
+    {
+      "object_id": "lounge_B_table",
+      "category": "table",
+      "attributes": {
+        "top_height": 0.48,
+        "observed": "black round top and open ribbed base",
+        "inferred": "base joins"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "lounge_B_table.top",
+        "lounge_B_table.rib",
+        "lounge_B_table.rib.001",
+        "lounge_B_table.rib.002",
+        "lounge_B_table.rib.003",
+        "lounge_B_table.rib.004",
+        "lounge_B_table.rib.005",
+        "lounge_B_table.rib.006",
+        "lounge_B_table.rib.007",
+        "lounge_B_table.rib.008",
+        "lounge_B_table.rib.009",
+        "lounge_B_table.rib.010",
+        "lounge_B_table.rib.011",
+        "lounge_B_table.rib.012",
+        "lounge_B_table.rib.013",
+        "lounge_B_table.rib.014",
+        "lounge_B_table.rib.015",
+        "lounge_B_table.rib.016",
+        "lounge_B_table.rib.017",
+        "lounge_B_table.rib.018",
+        "lounge_B_table.rib.019",
+        "lounge_B_table.rib.020",
+        "lounge_B_table.rib.021",
+        "lounge_B_table.rib.022",
+        "lounge_B_table.rib.023",
+        "lounge_B_table.rib.024",
+        "lounge_B_table.rib.025",
+        "lounge_B_table.rib.026",
+        "lounge_B_table.rib.027"
+      ],
+      "bounds": {
+        "min": [
+          -0.5299999713897705,
+          1.6399998664855957,
+          0.034198079258203506
+        ],
+        "max": [
+          0.8500000238418579,
+          3.0199999809265137,
+          0.4950000047683716
+        ]
+      },
+      "center": [
+        0.1600000262260437,
+        2.3299999237060547,
+        0.26459904201328754
+      ]
+    },
+    {
+      "object_id": "lounge_B_table_bowl",
+      "category": "decor",
+      "attributes": {
+        "inferred": "unseen bowl thickness"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "lounge_B_table_bowl.bowl"
+      ],
+      "bounds": {
+        "min": [
+          0.0,
+          2.1700000762939453,
+          0.5
+        ],
+        "max": [
+          0.3199999928474426,
+          2.490000009536743,
+          0.6650000214576721
+        ]
+      },
+      "center": [
+        0.1599999964237213,
+        2.3300000429153442,
+        0.5825000107288361
+      ]
+    },
+    {
+      "object_id": "divider_planter_left",
+      "category": "planter",
+      "attributes": {
+        "observed": "grey rectangular box and golden shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Frames 0/130 manually triangulated box corners, near ViPE depth; back and wall thickness inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "divider_planter_left.container",
+        "divider_planter_left.soil"
+      ],
+      "bounds": {
+        "min": [
+          -1.9249999523162842,
+          7.480000019073486,
+          0.025000005960464478
+        ],
+        "max": [
+          -0.35499995946884155,
+          8.020000457763672,
+          0.8694999814033508
+        ]
+      },
+      "center": [
+        -1.1399999558925629,
+        7.750000238418579,
+        0.44724999368190765
+      ]
+    },
+    {
+      "object_id": "divider_left_shrub_0",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_left_shrub_0.stem",
+        "divider_left_shrub_0.stem.001",
+        "divider_left_shrub_0.stem.002",
+        "divider_left_shrub_0.stem.003",
+        "divider_left_shrub_0.stem.004",
+        "divider_left_shrub_0.stem.005",
+        "divider_left_shrub_0.stem.006",
+        "divider_left_shrub_0.stem.007",
+        "divider_left_shrub_0.stem.008",
+        "divider_left_shrub_0.stem.009",
+        "divider_left_shrub_0.stem.010",
+        "divider_left_shrub_0.stem.011",
+        "divider_left_shrub_0.stem.012",
+        "divider_left_shrub_0.stem.013",
+        "divider_left_shrub_0.stem.014",
+        "divider_left_shrub_0.stem.015",
+        "divider_left_shrub_0.stem.016",
+        "divider_left_shrub_0.stem.017",
+        "divider_left_shrub_0.stem.018",
+        "divider_left_shrub_0.stem.019",
+        "divider_left_shrub_0.stem.020",
+        "divider_left_shrub_0.stem.021",
+        "divider_left_shrub_0.stem.022",
+        "divider_left_shrub_0.stem.023",
+        "divider_left_shrub_0.stem.024",
+        "divider_left_shrub_0.stem.025",
+        "divider_left_shrub_0.stem.026",
+        "divider_left_shrub_0.stem.027",
+        "divider_left_shrub_0.stem.028",
+        "divider_left_shrub_0.stem.029",
+        "divider_left_shrub_0.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -2.082834005355835,
+          7.378342151641846,
+          0.8562654852867126
+        ],
+        "max": [
+          -1.4062310457229614,
+          8.049368858337402,
+          1.6985234022140503
+        ]
+      },
+      "center": [
+        -1.7445325255393982,
+        7.713855504989624,
+        1.2773944437503815
+      ]
+    },
+    {
+      "object_id": "divider_left_shrub_1",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_left_shrub_1.stem",
+        "divider_left_shrub_1.stem.001",
+        "divider_left_shrub_1.stem.002",
+        "divider_left_shrub_1.stem.003",
+        "divider_left_shrub_1.stem.004",
+        "divider_left_shrub_1.stem.005",
+        "divider_left_shrub_1.stem.006",
+        "divider_left_shrub_1.stem.007",
+        "divider_left_shrub_1.stem.008",
+        "divider_left_shrub_1.stem.009",
+        "divider_left_shrub_1.stem.010",
+        "divider_left_shrub_1.stem.011",
+        "divider_left_shrub_1.stem.012",
+        "divider_left_shrub_1.stem.013",
+        "divider_left_shrub_1.stem.014",
+        "divider_left_shrub_1.stem.015",
+        "divider_left_shrub_1.stem.016",
+        "divider_left_shrub_1.stem.017",
+        "divider_left_shrub_1.stem.018",
+        "divider_left_shrub_1.stem.019",
+        "divider_left_shrub_1.stem.020",
+        "divider_left_shrub_1.stem.021",
+        "divider_left_shrub_1.stem.022",
+        "divider_left_shrub_1.stem.023",
+        "divider_left_shrub_1.stem.024",
+        "divider_left_shrub_1.stem.025",
+        "divider_left_shrub_1.stem.026",
+        "divider_left_shrub_1.stem.027",
+        "divider_left_shrub_1.stem.028",
+        "divider_left_shrub_1.stem.029",
+        "divider_left_shrub_1.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -1.7803176641464233,
+          7.377469062805176,
+          0.8568112254142761
+        ],
+        "max": [
+          -0.9079833626747131,
+          8.085559844970703,
+          1.7092851400375366
+        ]
+      },
+      "center": [
+        -1.3441505134105682,
+        7.7315144538879395,
+        1.2830481827259064
+      ]
+    },
+    {
+      "object_id": "divider_left_shrub_2",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_left_shrub_2.stem",
+        "divider_left_shrub_2.stem.001",
+        "divider_left_shrub_2.stem.002",
+        "divider_left_shrub_2.stem.003",
+        "divider_left_shrub_2.stem.004",
+        "divider_left_shrub_2.stem.005",
+        "divider_left_shrub_2.stem.006",
+        "divider_left_shrub_2.stem.007",
+        "divider_left_shrub_2.stem.008",
+        "divider_left_shrub_2.stem.009",
+        "divider_left_shrub_2.stem.010",
+        "divider_left_shrub_2.stem.011",
+        "divider_left_shrub_2.stem.012",
+        "divider_left_shrub_2.stem.013",
+        "divider_left_shrub_2.stem.014",
+        "divider_left_shrub_2.stem.015",
+        "divider_left_shrub_2.stem.016",
+        "divider_left_shrub_2.stem.017",
+        "divider_left_shrub_2.stem.018",
+        "divider_left_shrub_2.stem.019",
+        "divider_left_shrub_2.stem.020",
+        "divider_left_shrub_2.stem.021",
+        "divider_left_shrub_2.stem.022",
+        "divider_left_shrub_2.stem.023",
+        "divider_left_shrub_2.stem.024",
+        "divider_left_shrub_2.stem.025",
+        "divider_left_shrub_2.stem.026",
+        "divider_left_shrub_2.stem.027",
+        "divider_left_shrub_2.stem.028",
+        "divider_left_shrub_2.stem.029",
+        "divider_left_shrub_2.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -1.3548026084899902,
+          7.339502334594727,
+          0.856880247592926
+        ],
+        "max": [
+          -0.49405625462532043,
+          8.11396312713623,
+          1.7126185894012451
+        ]
+      },
+      "center": [
+        -0.9244294315576553,
+        7.7267327308654785,
+        1.2847494184970856
+      ]
+    },
+    {
+      "object_id": "divider_left_shrub_3",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_left_shrub_3.stem",
+        "divider_left_shrub_3.stem.001",
+        "divider_left_shrub_3.stem.002",
+        "divider_left_shrub_3.stem.003",
+        "divider_left_shrub_3.stem.004",
+        "divider_left_shrub_3.stem.005",
+        "divider_left_shrub_3.stem.006",
+        "divider_left_shrub_3.stem.007",
+        "divider_left_shrub_3.stem.008",
+        "divider_left_shrub_3.stem.009",
+        "divider_left_shrub_3.stem.010",
+        "divider_left_shrub_3.stem.011",
+        "divider_left_shrub_3.stem.012",
+        "divider_left_shrub_3.stem.013",
+        "divider_left_shrub_3.stem.014",
+        "divider_left_shrub_3.stem.015",
+        "divider_left_shrub_3.stem.016",
+        "divider_left_shrub_3.stem.017",
+        "divider_left_shrub_3.stem.018",
+        "divider_left_shrub_3.stem.019",
+        "divider_left_shrub_3.stem.020",
+        "divider_left_shrub_3.stem.021",
+        "divider_left_shrub_3.stem.022",
+        "divider_left_shrub_3.stem.023",
+        "divider_left_shrub_3.stem.024",
+        "divider_left_shrub_3.stem.025",
+        "divider_left_shrub_3.stem.026",
+        "divider_left_shrub_3.stem.027",
+        "divider_left_shrub_3.stem.028",
+        "divider_left_shrub_3.stem.029",
+        "divider_left_shrub_3.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -0.9901096820831299,
+          7.391188621520996,
+          0.8566423058509827
+        ],
+        "max": [
+          -0.18871977925300598,
+          8.050799369812012,
+          1.7118512392044067
+        ]
+      },
+      "center": [
+        -0.5894147306680679,
+        7.720993995666504,
+        1.2842467725276947
+      ]
+    },
+    {
+      "object_id": "divider_planter_right",
+      "category": "planter",
+      "attributes": {
+        "observed": "grey rectangular box and golden shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Frames 0/130 manually triangulated box corners, near ViPE depth; back and wall thickness inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "divider_planter_right.container",
+        "divider_planter_right.soil"
+      ],
+      "bounds": {
+        "min": [
+          0.11499994993209839,
+          7.480000019073486,
+          0.025000005960464478
+        ],
+        "max": [
+          1.684999942779541,
+          8.020000457763672,
+          0.8694999814033508
+        ]
+      },
+      "center": [
+        0.8999999463558197,
+        7.750000238418579,
+        0.44724999368190765
+      ]
+    },
+    {
+      "object_id": "divider_right_shrub_0",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_right_shrub_0.stem",
+        "divider_right_shrub_0.stem.001",
+        "divider_right_shrub_0.stem.002",
+        "divider_right_shrub_0.stem.003",
+        "divider_right_shrub_0.stem.004",
+        "divider_right_shrub_0.stem.005",
+        "divider_right_shrub_0.stem.006",
+        "divider_right_shrub_0.stem.007",
+        "divider_right_shrub_0.stem.008",
+        "divider_right_shrub_0.stem.009",
+        "divider_right_shrub_0.stem.010",
+        "divider_right_shrub_0.stem.011",
+        "divider_right_shrub_0.stem.012",
+        "divider_right_shrub_0.stem.013",
+        "divider_right_shrub_0.stem.014",
+        "divider_right_shrub_0.stem.015",
+        "divider_right_shrub_0.stem.016",
+        "divider_right_shrub_0.stem.017",
+        "divider_right_shrub_0.stem.018",
+        "divider_right_shrub_0.stem.019",
+        "divider_right_shrub_0.stem.020",
+        "divider_right_shrub_0.stem.021",
+        "divider_right_shrub_0.stem.022",
+        "divider_right_shrub_0.stem.023",
+        "divider_right_shrub_0.stem.024",
+        "divider_right_shrub_0.stem.025",
+        "divider_right_shrub_0.stem.026",
+        "divider_right_shrub_0.stem.027",
+        "divider_right_shrub_0.stem.028",
+        "divider_right_shrub_0.stem.029",
+        "divider_right_shrub_0.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -0.07088811695575714,
+          7.445992469787598,
+          0.8561492562294006
+        ],
+        "max": [
+          0.6880132555961609,
+          8.10299015045166,
+          1.7099756002426147
+        ]
+      },
+      "center": [
+        0.3085625693202019,
+        7.774491310119629,
+        1.2830624282360077
+      ]
+    },
+    {
+      "object_id": "divider_right_shrub_1",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_right_shrub_1.stem",
+        "divider_right_shrub_1.stem.001",
+        "divider_right_shrub_1.stem.002",
+        "divider_right_shrub_1.stem.003",
+        "divider_right_shrub_1.stem.004",
+        "divider_right_shrub_1.stem.005",
+        "divider_right_shrub_1.stem.006",
+        "divider_right_shrub_1.stem.007",
+        "divider_right_shrub_1.stem.008",
+        "divider_right_shrub_1.stem.009",
+        "divider_right_shrub_1.stem.010",
+        "divider_right_shrub_1.stem.011",
+        "divider_right_shrub_1.stem.012",
+        "divider_right_shrub_1.stem.013",
+        "divider_right_shrub_1.stem.014",
+        "divider_right_shrub_1.stem.015",
+        "divider_right_shrub_1.stem.016",
+        "divider_right_shrub_1.stem.017",
+        "divider_right_shrub_1.stem.018",
+        "divider_right_shrub_1.stem.019",
+        "divider_right_shrub_1.stem.020",
+        "divider_right_shrub_1.stem.021",
+        "divider_right_shrub_1.stem.022",
+        "divider_right_shrub_1.stem.023",
+        "divider_right_shrub_1.stem.024",
+        "divider_right_shrub_1.stem.025",
+        "divider_right_shrub_1.stem.026",
+        "divider_right_shrub_1.stem.027",
+        "divider_right_shrub_1.stem.028",
+        "divider_right_shrub_1.stem.029",
+        "divider_right_shrub_1.leaves"
+      ],
+      "bounds": {
+        "min": [
+          0.316117525100708,
+          7.37831974029541,
+          0.8566572666168213
+        ],
+        "max": [
+          1.0801293849945068,
+          8.144726753234863,
+          1.6944981813430786
+        ]
+      },
+      "center": [
+        0.6981234550476074,
+        7.761523246765137,
+        1.27557772397995
+      ]
+    },
+    {
+      "object_id": "divider_right_shrub_2",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_right_shrub_2.stem",
+        "divider_right_shrub_2.stem.001",
+        "divider_right_shrub_2.stem.002",
+        "divider_right_shrub_2.stem.003",
+        "divider_right_shrub_2.stem.004",
+        "divider_right_shrub_2.stem.005",
+        "divider_right_shrub_2.stem.006",
+        "divider_right_shrub_2.stem.007",
+        "divider_right_shrub_2.stem.008",
+        "divider_right_shrub_2.stem.009",
+        "divider_right_shrub_2.stem.010",
+        "divider_right_shrub_2.stem.011",
+        "divider_right_shrub_2.stem.012",
+        "divider_right_shrub_2.stem.013",
+        "divider_right_shrub_2.stem.014",
+        "divider_right_shrub_2.stem.015",
+        "divider_right_shrub_2.stem.016",
+        "divider_right_shrub_2.stem.017",
+        "divider_right_shrub_2.stem.018",
+        "divider_right_shrub_2.stem.019",
+        "divider_right_shrub_2.stem.020",
+        "divider_right_shrub_2.stem.021",
+        "divider_right_shrub_2.stem.022",
+        "divider_right_shrub_2.stem.023",
+        "divider_right_shrub_2.stem.024",
+        "divider_right_shrub_2.stem.025",
+        "divider_right_shrub_2.stem.026",
+        "divider_right_shrub_2.stem.027",
+        "divider_right_shrub_2.stem.028",
+        "divider_right_shrub_2.stem.029",
+        "divider_right_shrub_2.leaves"
+      ],
+      "bounds": {
+        "min": [
+          0.7281092405319214,
+          7.368293285369873,
+          0.8570297956466675
+        ],
+        "max": [
+          1.4917031526565552,
+          8.126215934753418,
+          1.7053016424179077
+        ]
+      },
+      "center": [
+        1.1099061965942383,
+        7.7472546100616455,
+        1.2811657190322876
+      ]
+    },
+    {
+      "object_id": "divider_right_shrub_3",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "divider_right_shrub_3.stem",
+        "divider_right_shrub_3.stem.001",
+        "divider_right_shrub_3.stem.002",
+        "divider_right_shrub_3.stem.003",
+        "divider_right_shrub_3.stem.004",
+        "divider_right_shrub_3.stem.005",
+        "divider_right_shrub_3.stem.006",
+        "divider_right_shrub_3.stem.007",
+        "divider_right_shrub_3.stem.008",
+        "divider_right_shrub_3.stem.009",
+        "divider_right_shrub_3.stem.010",
+        "divider_right_shrub_3.stem.011",
+        "divider_right_shrub_3.stem.012",
+        "divider_right_shrub_3.stem.013",
+        "divider_right_shrub_3.stem.014",
+        "divider_right_shrub_3.stem.015",
+        "divider_right_shrub_3.stem.016",
+        "divider_right_shrub_3.stem.017",
+        "divider_right_shrub_3.stem.018",
+        "divider_right_shrub_3.stem.019",
+        "divider_right_shrub_3.stem.020",
+        "divider_right_shrub_3.stem.021",
+        "divider_right_shrub_3.stem.022",
+        "divider_right_shrub_3.stem.023",
+        "divider_right_shrub_3.stem.024",
+        "divider_right_shrub_3.stem.025",
+        "divider_right_shrub_3.stem.026",
+        "divider_right_shrub_3.stem.027",
+        "divider_right_shrub_3.stem.028",
+        "divider_right_shrub_3.stem.029",
+        "divider_right_shrub_3.leaves"
+      ],
+      "bounds": {
+        "min": [
+          1.082547903060913,
+          7.361667156219482,
+          0.8566489219665527
+        ],
+        "max": [
+          1.8557592630386353,
+          8.07916259765625,
+          1.7058546543121338
+        ]
+      },
+      "center": [
+        1.4691535830497742,
+        7.720414876937866,
+        1.2812517881393433
+      ]
+    },
+    {
+      "object_id": "window_shrub_pot",
+      "category": "planter",
+      "attributes": {
+        "inferred": "hollow pot underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "window_shrub_pot.pot",
+        "window_shrub_pot.soil"
+      ],
+      "bounds": {
+        "min": [
+          -3.759999990463257,
+          4.78000020980835,
+          0.0
+        ],
+        "max": [
+          -2.4800000190734863,
+          6.059999942779541,
+          0.4300000071525574
+        ]
+      },
+      "center": [
+        -3.1200000047683716,
+        5.420000076293945,
+        0.2150000035762787
+      ]
+    },
+    {
+      "object_id": "window_shrub_foliage",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "window_shrub_foliage.stem",
+        "window_shrub_foliage.stem.001",
+        "window_shrub_foliage.stem.002",
+        "window_shrub_foliage.stem.003",
+        "window_shrub_foliage.stem.004",
+        "window_shrub_foliage.stem.005",
+        "window_shrub_foliage.stem.006",
+        "window_shrub_foliage.stem.007",
+        "window_shrub_foliage.stem.008",
+        "window_shrub_foliage.stem.009",
+        "window_shrub_foliage.stem.010",
+        "window_shrub_foliage.stem.011",
+        "window_shrub_foliage.stem.012",
+        "window_shrub_foliage.stem.013",
+        "window_shrub_foliage.stem.014",
+        "window_shrub_foliage.stem.015",
+        "window_shrub_foliage.stem.016",
+        "window_shrub_foliage.stem.017",
+        "window_shrub_foliage.stem.018",
+        "window_shrub_foliage.stem.019",
+        "window_shrub_foliage.stem.020",
+        "window_shrub_foliage.stem.021",
+        "window_shrub_foliage.stem.022",
+        "window_shrub_foliage.stem.023",
+        "window_shrub_foliage.stem.024",
+        "window_shrub_foliage.stem.025",
+        "window_shrub_foliage.stem.026",
+        "window_shrub_foliage.stem.027",
+        "window_shrub_foliage.stem.028",
+        "window_shrub_foliage.stem.029",
+        "window_shrub_foliage.stem.030",
+        "window_shrub_foliage.stem.031",
+        "window_shrub_foliage.stem.032",
+        "window_shrub_foliage.stem.033",
+        "window_shrub_foliage.stem.034",
+        "window_shrub_foliage.stem.035",
+        "window_shrub_foliage.stem.036",
+        "window_shrub_foliage.stem.037",
+        "window_shrub_foliage.stem.038",
+        "window_shrub_foliage.stem.039",
+        "window_shrub_foliage.stem.040",
+        "window_shrub_foliage.stem.041",
+        "window_shrub_foliage.stem.042",
+        "window_shrub_foliage.stem.043",
+        "window_shrub_foliage.stem.044",
+        "window_shrub_foliage.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -3.7133195400238037,
+          4.753587245941162,
+          0.3618418276309967
+        ],
+        "max": [
+          -2.371730327606201,
+          6.086101055145264,
+          1.051690936088562
+        ]
+      },
+      "center": [
+        -3.0425249338150024,
+        5.419844150543213,
+        0.7067663818597794
+      ]
+    },
+    {
+      "object_id": "mirror_wall_shrub_pot",
+      "category": "planter",
+      "attributes": {
+        "inferred": "hollow pot underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "mirror_wall_shrub_pot.pot",
+        "mirror_wall_shrub_pot.soil"
+      ],
+      "bounds": {
+        "min": [
+          2.680000066757202,
+          3.75,
+          0.0
+        ],
+        "max": [
+          3.380000114440918,
+          4.449999809265137,
+          0.6200000047683716
+        ]
+      },
+      "center": [
+        3.03000009059906,
+        4.099999904632568,
+        0.3100000023841858
+      ]
+    },
+    {
+      "object_id": "mirror_wall_shrub_foliage",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_wall_shrub_foliage.stem",
+        "mirror_wall_shrub_foliage.stem.001",
+        "mirror_wall_shrub_foliage.stem.002",
+        "mirror_wall_shrub_foliage.stem.003",
+        "mirror_wall_shrub_foliage.stem.004",
+        "mirror_wall_shrub_foliage.stem.005",
+        "mirror_wall_shrub_foliage.stem.006",
+        "mirror_wall_shrub_foliage.stem.007",
+        "mirror_wall_shrub_foliage.stem.008",
+        "mirror_wall_shrub_foliage.stem.009",
+        "mirror_wall_shrub_foliage.stem.010",
+        "mirror_wall_shrub_foliage.stem.011",
+        "mirror_wall_shrub_foliage.stem.012",
+        "mirror_wall_shrub_foliage.stem.013",
+        "mirror_wall_shrub_foliage.stem.014",
+        "mirror_wall_shrub_foliage.stem.015",
+        "mirror_wall_shrub_foliage.stem.016",
+        "mirror_wall_shrub_foliage.stem.017",
+        "mirror_wall_shrub_foliage.stem.018",
+        "mirror_wall_shrub_foliage.stem.019",
+        "mirror_wall_shrub_foliage.stem.020",
+        "mirror_wall_shrub_foliage.stem.021",
+        "mirror_wall_shrub_foliage.stem.022",
+        "mirror_wall_shrub_foliage.stem.023",
+        "mirror_wall_shrub_foliage.stem.024",
+        "mirror_wall_shrub_foliage.stem.025",
+        "mirror_wall_shrub_foliage.stem.026",
+        "mirror_wall_shrub_foliage.stem.027",
+        "mirror_wall_shrub_foliage.stem.028",
+        "mirror_wall_shrub_foliage.stem.029",
+        "mirror_wall_shrub_foliage.stem.030",
+        "mirror_wall_shrub_foliage.stem.031",
+        "mirror_wall_shrub_foliage.stem.032",
+        "mirror_wall_shrub_foliage.stem.033",
+        "mirror_wall_shrub_foliage.stem.034",
+        "mirror_wall_shrub_foliage.stem.035",
+        "mirror_wall_shrub_foliage.stem.036",
+        "mirror_wall_shrub_foliage.stem.037",
+        "mirror_wall_shrub_foliage.stem.038",
+        "mirror_wall_shrub_foliage.stem.039",
+        "mirror_wall_shrub_foliage.stem.040",
+        "mirror_wall_shrub_foliage.stem.041",
+        "mirror_wall_shrub_foliage.stem.042",
+        "mirror_wall_shrub_foliage.stem.043",
+        "mirror_wall_shrub_foliage.stem.044",
+        "mirror_wall_shrub_foliage.leaves"
+      ],
+      "bounds": {
+        "min": [
+          2.546560049057007,
+          3.6307520866394043,
+          0.5239769220352173
+        ],
+        "max": [
+          3.518711566925049,
+          4.525164604187012,
+          1.1737021207809448
+        ]
+      },
+      "center": [
+        3.032635807991028,
+        4.077958345413208,
+        0.848839521408081
+      ]
+    },
+    {
+      "object_id": "reception_tree_left_pot",
+      "category": "planter",
+      "attributes": {
+        "inferred": "hollow pot underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "reception_tree_left_pot.pot",
+        "reception_tree_left_pot.soil"
+      ],
+      "bounds": {
+        "min": [
+          -2.690000057220459,
+          14.15999984741211,
+          0.0
+        ],
+        "max": [
+          -2.1500000953674316,
+          14.699999809265137,
+          0.5600000023841858
+        ]
+      },
+      "center": [
+        -2.4200000762939453,
+        14.429999828338623,
+        0.2800000011920929
+      ]
+    },
+    {
+      "object_id": "reception_tree_left_tree",
+      "category": "plant",
+      "attributes": {
+        "inferred": "unobserved branches and individual leaf topology"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_tree_left_tree.trunk"
+      ],
+      "bounds": {
+        "min": [
+          -2.4520246982574463,
+          14.393000602722168,
+          0.47491809725761414
+        ],
+        "max": [
+          -2.347975492477417,
+          14.467000007629395,
+          1.6610819101333618
+        ]
+      },
+      "center": [
+        -2.4000000953674316,
+        14.430000305175781,
+        1.068000003695488
+      ]
+    },
+    {
+      "object_id": "reception_tree_left_canopy",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_tree_left_canopy.stem",
+        "reception_tree_left_canopy.stem.001",
+        "reception_tree_left_canopy.stem.002",
+        "reception_tree_left_canopy.stem.003",
+        "reception_tree_left_canopy.stem.004",
+        "reception_tree_left_canopy.stem.005",
+        "reception_tree_left_canopy.stem.006",
+        "reception_tree_left_canopy.stem.007",
+        "reception_tree_left_canopy.stem.008",
+        "reception_tree_left_canopy.stem.009",
+        "reception_tree_left_canopy.stem.010",
+        "reception_tree_left_canopy.stem.011",
+        "reception_tree_left_canopy.stem.012",
+        "reception_tree_left_canopy.stem.013",
+        "reception_tree_left_canopy.stem.014",
+        "reception_tree_left_canopy.stem.015",
+        "reception_tree_left_canopy.stem.016",
+        "reception_tree_left_canopy.stem.017",
+        "reception_tree_left_canopy.stem.018",
+        "reception_tree_left_canopy.stem.019",
+        "reception_tree_left_canopy.stem.020",
+        "reception_tree_left_canopy.stem.021",
+        "reception_tree_left_canopy.stem.022",
+        "reception_tree_left_canopy.stem.023",
+        "reception_tree_left_canopy.stem.024",
+        "reception_tree_left_canopy.stem.025",
+        "reception_tree_left_canopy.stem.026",
+        "reception_tree_left_canopy.stem.027",
+        "reception_tree_left_canopy.stem.028",
+        "reception_tree_left_canopy.stem.029",
+        "reception_tree_left_canopy.stem.030",
+        "reception_tree_left_canopy.stem.031",
+        "reception_tree_left_canopy.stem.032",
+        "reception_tree_left_canopy.stem.033",
+        "reception_tree_left_canopy.stem.034",
+        "reception_tree_left_canopy.stem.035",
+        "reception_tree_left_canopy.stem.036",
+        "reception_tree_left_canopy.stem.037",
+        "reception_tree_left_canopy.stem.038",
+        "reception_tree_left_canopy.stem.039",
+        "reception_tree_left_canopy.stem.040",
+        "reception_tree_left_canopy.stem.041",
+        "reception_tree_left_canopy.stem.042",
+        "reception_tree_left_canopy.stem.043",
+        "reception_tree_left_canopy.stem.044",
+        "reception_tree_left_canopy.leaves"
+      ],
+      "bounds": {
+        "min": [
+          -3.104498863220215,
+          13.77922248840332,
+          1.406213641166687
+        ],
+        "max": [
+          -1.7529228925704956,
+          15.008667945861816,
+          1.9356247186660767
+        ]
+      },
+      "center": [
+        -2.4287108778953552,
+        14.393945217132568,
+        1.6709191799163818
+      ]
+    },
+    {
+      "object_id": "reception_tree_right_pot",
+      "category": "planter",
+      "attributes": {
+        "inferred": "hollow pot underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "reception_tree_right_pot.pot",
+        "reception_tree_right_pot.soil"
+      ],
+      "bounds": {
+        "min": [
+          1.9299999475479126,
+          14.220000267028809,
+          0.0
+        ],
+        "max": [
+          2.490000009536743,
+          14.779999732971191,
+          0.5699999928474426
+        ]
+      },
+      "center": [
+        2.209999978542328,
+        14.5,
+        0.2849999964237213
+      ]
+    },
+    {
+      "object_id": "reception_tree_right_tree",
+      "category": "plant",
+      "attributes": {
+        "inferred": "unobserved branches and individual leaf topology"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_tree_right_tree.trunk"
+      ],
+      "bounds": {
+        "min": [
+          2.1779754161834717,
+          14.463000297546387,
+          0.48341941833496094
+        ],
+        "max": [
+          2.282024621963501,
+          14.536999702453613,
+          1.6710805892944336
+        ]
+      },
+      "center": [
+        2.2300000190734863,
+        14.5,
+        1.0772500038146973
+      ]
+    },
+    {
+      "object_id": "reception_tree_right_canopy",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_tree_right_canopy.stem",
+        "reception_tree_right_canopy.stem.001",
+        "reception_tree_right_canopy.stem.002",
+        "reception_tree_right_canopy.stem.003",
+        "reception_tree_right_canopy.stem.004",
+        "reception_tree_right_canopy.stem.005",
+        "reception_tree_right_canopy.stem.006",
+        "reception_tree_right_canopy.stem.007",
+        "reception_tree_right_canopy.stem.008",
+        "reception_tree_right_canopy.stem.009",
+        "reception_tree_right_canopy.stem.010",
+        "reception_tree_right_canopy.stem.011",
+        "reception_tree_right_canopy.stem.012",
+        "reception_tree_right_canopy.stem.013",
+        "reception_tree_right_canopy.stem.014",
+        "reception_tree_right_canopy.stem.015",
+        "reception_tree_right_canopy.stem.016",
+        "reception_tree_right_canopy.stem.017",
+        "reception_tree_right_canopy.stem.018",
+        "reception_tree_right_canopy.stem.019",
+        "reception_tree_right_canopy.stem.020",
+        "reception_tree_right_canopy.stem.021",
+        "reception_tree_right_canopy.stem.022",
+        "reception_tree_right_canopy.stem.023",
+        "reception_tree_right_canopy.stem.024",
+        "reception_tree_right_canopy.stem.025",
+        "reception_tree_right_canopy.stem.026",
+        "reception_tree_right_canopy.stem.027",
+        "reception_tree_right_canopy.stem.028",
+        "reception_tree_right_canopy.stem.029",
+        "reception_tree_right_canopy.stem.030",
+        "reception_tree_right_canopy.stem.031",
+        "reception_tree_right_canopy.stem.032",
+        "reception_tree_right_canopy.stem.033",
+        "reception_tree_right_canopy.stem.034",
+        "reception_tree_right_canopy.stem.035",
+        "reception_tree_right_canopy.stem.036",
+        "reception_tree_right_canopy.stem.037",
+        "reception_tree_right_canopy.stem.038",
+        "reception_tree_right_canopy.stem.039",
+        "reception_tree_right_canopy.stem.040",
+        "reception_tree_right_canopy.stem.041",
+        "reception_tree_right_canopy.stem.042",
+        "reception_tree_right_canopy.stem.043",
+        "reception_tree_right_canopy.stem.044",
+        "reception_tree_right_canopy.leaves"
+      ],
+      "bounds": {
+        "min": [
+          1.5255012512207031,
+          13.849221229553223,
+          1.4162136316299438
+        ],
+        "max": [
+          2.8770768642425537,
+          15.078668594360352,
+          1.9456247091293335
+        ]
+      },
+      "center": [
+        2.2012890577316284,
+        14.463944911956787,
+        1.6809191703796387
+      ]
+    },
+    {
+      "object_id": "rear_corner_plant_pot",
+      "category": "planter",
+      "attributes": {
+        "inferred": "hollow pot underside"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "rear_corner_plant_pot.pot",
+        "rear_corner_plant_pot.soil"
+      ],
+      "bounds": {
+        "min": [
+          4.460000038146973,
+          14.25,
+          0.0
+        ],
+        "max": [
+          5.360000133514404,
+          15.149999618530273,
+          0.4099999964237213
+        ]
+      },
+      "center": [
+        4.9100000858306885,
+        14.699999809265137,
+        0.20499999821186066
+      ]
+    },
+    {
+      "object_id": "rear_corner_plant_foliage",
+      "category": "plant",
+      "attributes": {
+        "inferred": "individual foliage topology",
+        "species": "unidentified ornamental shrub"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "rear_corner_plant_foliage.stem",
+        "rear_corner_plant_foliage.stem.001",
+        "rear_corner_plant_foliage.stem.002",
+        "rear_corner_plant_foliage.stem.003",
+        "rear_corner_plant_foliage.stem.004",
+        "rear_corner_plant_foliage.stem.005",
+        "rear_corner_plant_foliage.stem.006",
+        "rear_corner_plant_foliage.stem.007",
+        "rear_corner_plant_foliage.stem.008",
+        "rear_corner_plant_foliage.stem.009",
+        "rear_corner_plant_foliage.stem.010",
+        "rear_corner_plant_foliage.stem.011",
+        "rear_corner_plant_foliage.stem.012",
+        "rear_corner_plant_foliage.stem.013",
+        "rear_corner_plant_foliage.stem.014",
+        "rear_corner_plant_foliage.stem.015",
+        "rear_corner_plant_foliage.stem.016",
+        "rear_corner_plant_foliage.stem.017",
+        "rear_corner_plant_foliage.stem.018",
+        "rear_corner_plant_foliage.stem.019",
+        "rear_corner_plant_foliage.stem.020",
+        "rear_corner_plant_foliage.stem.021",
+        "rear_corner_plant_foliage.stem.022",
+        "rear_corner_plant_foliage.stem.023",
+        "rear_corner_plant_foliage.stem.024",
+        "rear_corner_plant_foliage.stem.025",
+        "rear_corner_plant_foliage.stem.026",
+        "rear_corner_plant_foliage.stem.027",
+        "rear_corner_plant_foliage.stem.028",
+        "rear_corner_plant_foliage.stem.029",
+        "rear_corner_plant_foliage.stem.030",
+        "rear_corner_plant_foliage.stem.031",
+        "rear_corner_plant_foliage.stem.032",
+        "rear_corner_plant_foliage.stem.033",
+        "rear_corner_plant_foliage.stem.034",
+        "rear_corner_plant_foliage.stem.035",
+        "rear_corner_plant_foliage.stem.036",
+        "rear_corner_plant_foliage.stem.037",
+        "rear_corner_plant_foliage.stem.038",
+        "rear_corner_plant_foliage.stem.039",
+        "rear_corner_plant_foliage.stem.040",
+        "rear_corner_plant_foliage.stem.041",
+        "rear_corner_plant_foliage.stem.042",
+        "rear_corner_plant_foliage.stem.043",
+        "rear_corner_plant_foliage.stem.044",
+        "rear_corner_plant_foliage.leaves"
+      ],
+      "bounds": {
+        "min": [
+          4.403397560119629,
+          14.226603507995605,
+          0.3450542390346527
+        ],
+        "max": [
+          5.455928325653076,
+          15.21084976196289,
+          0.9965683221817017
+        ]
+      },
+      "center": [
+        4.9296629428863525,
+        14.718726634979248,
+        0.6708112806081772
+      ]
+    },
+    {
+      "object_id": "reception_desk",
+      "category": "reception_desk",
+      "attributes": {
+        "inferred": "backside storage and solidity",
+        "signed_volume_m3": 1.500699636745079,
+        "normals": "Consistent outward; manifold checked"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "Manual RGB triangulation frames0/130 top corners near x[-1.57,1.21],y14; native scale.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "reception_desk.faceted_counter"
+      ],
+      "bounds": {
+        "min": [
+          -1.600000023841858,
+          13.819999694824219,
+          0.07999999821186066
+        ],
+        "max": [
+          1.399999976158142,
+          14.600000381469727,
+          0.9700000286102295
+        ]
+      },
+      "center": [
+        -0.10000002384185791,
+        14.210000038146973,
+        0.5250000134110451
+      ]
+    },
+    {
+      "object_id": "reception_emblem",
+      "category": "wall_decor",
+      "attributes": {
+        "inferred": "abstract plaque and thin outline from RGB, not text"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [],
+      "parts": [
+        "reception_emblem.shield",
+        "reception_emblem.outline"
+      ],
+      "bounds": {
+        "min": [
+          -1.3540000915527344,
+          15.487875938415527,
+          1.440000057220459
+        ],
+        "max": [
+          1.4140000343322754,
+          15.539999961853027,
+          3.359999895095825
+        ]
+      },
+      "center": [
+        0.029999971389770508,
+        15.513937950134277,
+        2.399999976158142
+      ]
+    },
+    {
+      "object_id": "mirror_00",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          368,
+          196,
+          47
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_00.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          2.3771815299987793,
+          0.8540488481521606
+        ],
+        "max": [
+          3.561500072479248,
+          3.754676342010498,
+          2.23154354095459
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        3.0659289360046387,
+        1.5427961945533752
+      ]
+    },
+    {
+      "object_id": "mirror_01",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          456,
+          225,
+          39
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_01.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          1.2249245643615723,
+          0.6152828931808472
+        ],
+        "max": [
+          3.561500072479248,
+          2.3459668159484863,
+          1.7363251447677612
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        1.7854456901550293,
+        1.1758040189743042
+      ]
+    },
+    {
+      "object_id": "mirror_02",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          307,
+          236,
+          22
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_02.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          3.619377613067627,
+          0.5264434218406677
+        ],
+        "max": [
+          3.561500072479248,
+          4.3217453956604,
+          1.228811264038086
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        3.9705615043640137,
+        0.8776273429393768
+      ]
+    },
+    {
+      "object_id": "mirror_03",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          303,
+          165,
+          23
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_03.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          3.6965620517730713,
+          1.621699333190918
+        ],
+        "max": [
+          3.561500072479248,
+          4.3734660148620605,
+          2.2986032962799072
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        4.035014033317566,
+        1.9601513147354126
+      ]
+    },
+    {
+      "object_id": "mirror_04",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          289,
+          201,
+          13
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_04.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          4.049457550048828,
+          1.2132728099822998
+        ],
+        "max": [
+          3.561500072479248,
+          4.452038764953613,
+          1.6158535480499268
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        4.250748157501221,
+        1.4145631790161133
+      ]
+    },
+    {
+      "object_id": "mirror_05",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          522,
+          178,
+          31
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_05.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          0.5954853296279907,
+          1.4714152812957764
+        ],
+        "max": [
+          3.561500072479248,
+          1.4119802713394165,
+          2.287910223007202
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        1.0037328004837036,
+        1.8796627521514893
+      ]
+    },
+    {
+      "object_id": "mirror_06",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          477,
+          138,
+          23
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_06.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          1.3563863039016724,
+          2.0942726135253906
+        ],
+        "max": [
+          3.561500072479248,
+          1.9512423276901245,
+          2.689128875732422
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        1.6538143157958984,
+        2.3917007446289062
+      ]
+    },
+    {
+      "object_id": "mirror_07",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          439,
+          170,
+          19
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_07.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          1.8433083295822144,
+          1.691738247871399
+        ],
+        "max": [
+          3.561500072479248,
+          2.362076997756958,
+          2.2105069160461426
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        2.102692663669586,
+        1.9511225819587708
+      ]
+    },
+    {
+      "object_id": "mirror_08",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          402,
+          249,
+          13
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_08.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          2.3200488090515137,
+          0.5638090968132019
+        ],
+        "max": [
+          3.561500072479248,
+          2.7166028022766113,
+          0.9603630900382996
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        2.5183258056640625,
+        0.7620860934257507
+      ]
+    },
+    {
+      "object_id": "mirror_09",
+      "category": "mirror",
+      "attributes": {
+        "inferred": "thin backing",
+        "observed": "round reflective wall disc",
+        "frame65_circle": [
+          517,
+          230,
+          13
+        ]
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85
+        ]
+      },
+      "geometry_provenance": "Manually inspected frame65 mirror circles intersect supplied-pose rays with observed mirror plane x=3.549. Cross-checked in frames0/85. Reflections not reconstructed as objects.",
+      "spatial_relations": [],
+      "parts": [
+        "mirror_09.reflective_disc"
+      ],
+      "bounds": {
+        "min": [
+          3.5364999771118164,
+          0.7716089487075806,
+          0.967790961265564
+        ],
+        "max": [
+          3.561500072479248,
+          1.134548306465149,
+          1.3307303190231323
+        ]
+      },
+      "center": [
+        3.5490000247955322,
+        0.9530786275863647,
+        1.1492606401443481
+      ]
+    },
+    {
+      "object_id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "attributes": {
+        "inferred": "hidden cable and tripod join"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "floor_lamp_0.shade",
+        "floor_lamp_0.leg",
+        "floor_lamp_0.leg.001",
+        "floor_lamp_0.leg.002"
+      ],
+      "bounds": {
+        "min": [
+          3.830000162124634,
+          14.579999923706055,
+          0.0291949100792408
+        ],
+        "max": [
+          4.269999980926514,
+          15.020000457763672,
+          1.9350000619888306
+        ]
+      },
+      "center": [
+        4.050000071525574,
+        14.800000190734863,
+        0.9820974860340357
+      ]
+    },
+    {
+      "object_id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "attributes": {
+        "inferred": "hidden cable and tripod join"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "floor_lamp_1.shade",
+        "floor_lamp_1.leg",
+        "floor_lamp_1.leg.001",
+        "floor_lamp_1.leg.002"
+      ],
+      "bounds": {
+        "min": [
+          3.950000047683716,
+          8.15999984741211,
+          0.029194911941885948
+        ],
+        "max": [
+          4.389999866485596,
+          8.600000381469727,
+          1.9350000619888306
+        ]
+      },
+      "center": [
+        4.169999957084656,
+        8.380000114440918,
+        0.9820974869653583
+      ]
+    },
+    {
+      "object_id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "attributes": {
+        "inferred": "hidden cable and tripod join"
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          65,
+          85,
+          130
+        ]
+      },
+      "geometry_provenance": "Visible RGB shape with supplied ViPE depth; rigidly normalized without scale change.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "object_id": "floor"
+        }
+      ],
+      "parts": [
+        "floor_lamp_2.shade",
+        "floor_lamp_2.leg",
+        "floor_lamp_2.leg.001",
+        "floor_lamp_2.leg.002"
+      ],
+      "bounds": {
+        "min": [
+          2.6600000858306885,
+          -2.319999933242798,
+          0.029194913804531097
+        ],
+        "max": [
+          3.1000001430511475,
+          -1.8799998760223389,
+          1.9350000619888306
+        ]
+      },
+      "center": [
+        2.880000114440918,
+        -2.0999999046325684,
+        0.9820974878966808
+      ]
+    },
+    {
+      "object_id": "pendant_00",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.750776567263509
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_00.cord",
+        "pendant_00.radial_reed",
+        "pendant_00.radial_reed.001",
+        "pendant_00.radial_reed.002",
+        "pendant_00.radial_reed.003",
+        "pendant_00.radial_reed.004",
+        "pendant_00.radial_reed.005",
+        "pendant_00.radial_reed.006",
+        "pendant_00.radial_reed.007",
+        "pendant_00.radial_reed.008",
+        "pendant_00.radial_reed.009",
+        "pendant_00.radial_reed.010",
+        "pendant_00.radial_reed.011",
+        "pendant_00.radial_reed.012",
+        "pendant_00.radial_reed.013",
+        "pendant_00.radial_reed.014",
+        "pendant_00.radial_reed.015",
+        "pendant_00.radial_reed.016",
+        "pendant_00.radial_reed.017",
+        "pendant_00.radial_reed.018",
+        "pendant_00.radial_reed.019",
+        "pendant_00.radial_reed.020",
+        "pendant_00.radial_reed.021",
+        "pendant_00.radial_reed.022",
+        "pendant_00.radial_reed.023",
+        "pendant_00.radial_reed.024",
+        "pendant_00.radial_reed.025",
+        "pendant_00.radial_reed.026",
+        "pendant_00.radial_reed.027",
+        "pendant_00.radial_reed.028",
+        "pendant_00.radial_reed.029",
+        "pendant_00.radial_reed.030",
+        "pendant_00.radial_reed.031",
+        "pendant_00.radial_reed.032",
+        "pendant_00.radial_reed.033",
+        "pendant_00.radial_reed.034",
+        "pendant_00.radial_reed.035",
+        "pendant_00.radial_reed.036",
+        "pendant_00.radial_reed.037",
+        "pendant_00.radial_reed.038",
+        "pendant_00.radial_reed.039",
+        "pendant_00.radial_reed.040",
+        "pendant_00.radial_reed.041",
+        "pendant_00.radial_reed.042",
+        "pendant_00.radial_reed.043",
+        "pendant_00.radial_reed.044",
+        "pendant_00.radial_reed.045",
+        "pendant_00.radial_reed.046",
+        "pendant_00.radial_reed.047",
+        "pendant_00.radial_reed.048",
+        "pendant_00.radial_reed.049",
+        "pendant_00.radial_reed.050",
+        "pendant_00.radial_reed.051",
+        "pendant_00.radial_reed.052",
+        "pendant_00.radial_reed.053",
+        "pendant_00.radial_reed.054",
+        "pendant_00.radial_reed.055",
+        "pendant_00.radial_reed.056",
+        "pendant_00.radial_reed.057",
+        "pendant_00.radial_reed.058",
+        "pendant_00.radial_reed.059",
+        "pendant_00.radial_reed.060",
+        "pendant_00.radial_reed.061",
+        "pendant_00.radial_reed.062",
+        "pendant_00.radial_reed.063",
+        "pendant_00.woven_ring",
+        "pendant_00.woven_ring.001",
+        "pendant_00.woven_ring.002",
+        "pendant_00.woven_ring.003",
+        "pendant_00.woven_ring.004",
+        "pendant_00.woven_ring.005",
+        "pendant_00.woven_ring.006",
+        "pendant_00.woven_ring.007",
+        "pendant_00.woven_ring.008",
+        "pendant_00.woven_ring.009",
+        "pendant_00.woven_ring.010",
+        "pendant_00.woven_ring.011",
+        "pendant_00.woven_ring.012",
+        "pendant_00.woven_ring.013",
+        "pendant_00.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -2.4648020267486572,
+          3.926117420196533,
+          4.341000080108643
+        ],
+        "max": [
+          -0.9452535510063171,
+          5.4456706047058105,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -1.7050277888774872,
+        4.685894012451172,
+        4.64549994468689
+      ]
+    },
+    {
+      "object_id": "pendant_01",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.6188390016619587
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_01.cord",
+        "pendant_01.radial_reed",
+        "pendant_01.radial_reed.001",
+        "pendant_01.radial_reed.002",
+        "pendant_01.radial_reed.003",
+        "pendant_01.radial_reed.004",
+        "pendant_01.radial_reed.005",
+        "pendant_01.radial_reed.006",
+        "pendant_01.radial_reed.007",
+        "pendant_01.radial_reed.008",
+        "pendant_01.radial_reed.009",
+        "pendant_01.radial_reed.010",
+        "pendant_01.radial_reed.011",
+        "pendant_01.radial_reed.012",
+        "pendant_01.radial_reed.013",
+        "pendant_01.radial_reed.014",
+        "pendant_01.radial_reed.015",
+        "pendant_01.radial_reed.016",
+        "pendant_01.radial_reed.017",
+        "pendant_01.radial_reed.018",
+        "pendant_01.radial_reed.019",
+        "pendant_01.radial_reed.020",
+        "pendant_01.radial_reed.021",
+        "pendant_01.radial_reed.022",
+        "pendant_01.radial_reed.023",
+        "pendant_01.radial_reed.024",
+        "pendant_01.radial_reed.025",
+        "pendant_01.radial_reed.026",
+        "pendant_01.radial_reed.027",
+        "pendant_01.radial_reed.028",
+        "pendant_01.radial_reed.029",
+        "pendant_01.radial_reed.030",
+        "pendant_01.radial_reed.031",
+        "pendant_01.radial_reed.032",
+        "pendant_01.radial_reed.033",
+        "pendant_01.radial_reed.034",
+        "pendant_01.radial_reed.035",
+        "pendant_01.radial_reed.036",
+        "pendant_01.radial_reed.037",
+        "pendant_01.radial_reed.038",
+        "pendant_01.radial_reed.039",
+        "pendant_01.radial_reed.040",
+        "pendant_01.radial_reed.041",
+        "pendant_01.radial_reed.042",
+        "pendant_01.radial_reed.043",
+        "pendant_01.radial_reed.044",
+        "pendant_01.radial_reed.045",
+        "pendant_01.radial_reed.046",
+        "pendant_01.radial_reed.047",
+        "pendant_01.radial_reed.048",
+        "pendant_01.radial_reed.049",
+        "pendant_01.radial_reed.050",
+        "pendant_01.radial_reed.051",
+        "pendant_01.radial_reed.052",
+        "pendant_01.radial_reed.053",
+        "pendant_01.radial_reed.054",
+        "pendant_01.radial_reed.055",
+        "pendant_01.radial_reed.056",
+        "pendant_01.radial_reed.057",
+        "pendant_01.radial_reed.058",
+        "pendant_01.radial_reed.059",
+        "pendant_01.radial_reed.060",
+        "pendant_01.radial_reed.061",
+        "pendant_01.radial_reed.062",
+        "pendant_01.radial_reed.063",
+        "pendant_01.woven_ring",
+        "pendant_01.woven_ring.001",
+        "pendant_01.woven_ring.002",
+        "pendant_01.woven_ring.003",
+        "pendant_01.woven_ring.004",
+        "pendant_01.woven_ring.005",
+        "pendant_01.woven_ring.006",
+        "pendant_01.woven_ring.007",
+        "pendant_01.woven_ring.008",
+        "pendant_01.woven_ring.009",
+        "pendant_01.woven_ring.010",
+        "pendant_01.woven_ring.011",
+        "pendant_01.woven_ring.012",
+        "pendant_01.woven_ring.013",
+        "pendant_01.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -2.21287202835083,
+          6.474795818328857,
+          4.396000385284424
+        ],
+        "max": [
+          -0.9571988582611084,
+          7.730473041534424,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -1.5850354433059692,
+        7.102634429931641,
+        4.67300009727478
+      ]
+    },
+    {
+      "object_id": "pendant_02",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.95
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_02.cord",
+        "pendant_02.radial_reed",
+        "pendant_02.radial_reed.001",
+        "pendant_02.radial_reed.002",
+        "pendant_02.radial_reed.003",
+        "pendant_02.radial_reed.004",
+        "pendant_02.radial_reed.005",
+        "pendant_02.radial_reed.006",
+        "pendant_02.radial_reed.007",
+        "pendant_02.radial_reed.008",
+        "pendant_02.radial_reed.009",
+        "pendant_02.radial_reed.010",
+        "pendant_02.radial_reed.011",
+        "pendant_02.radial_reed.012",
+        "pendant_02.radial_reed.013",
+        "pendant_02.radial_reed.014",
+        "pendant_02.radial_reed.015",
+        "pendant_02.radial_reed.016",
+        "pendant_02.radial_reed.017",
+        "pendant_02.radial_reed.018",
+        "pendant_02.radial_reed.019",
+        "pendant_02.radial_reed.020",
+        "pendant_02.radial_reed.021",
+        "pendant_02.radial_reed.022",
+        "pendant_02.radial_reed.023",
+        "pendant_02.radial_reed.024",
+        "pendant_02.radial_reed.025",
+        "pendant_02.radial_reed.026",
+        "pendant_02.radial_reed.027",
+        "pendant_02.radial_reed.028",
+        "pendant_02.radial_reed.029",
+        "pendant_02.radial_reed.030",
+        "pendant_02.radial_reed.031",
+        "pendant_02.radial_reed.032",
+        "pendant_02.radial_reed.033",
+        "pendant_02.radial_reed.034",
+        "pendant_02.radial_reed.035",
+        "pendant_02.radial_reed.036",
+        "pendant_02.radial_reed.037",
+        "pendant_02.radial_reed.038",
+        "pendant_02.radial_reed.039",
+        "pendant_02.radial_reed.040",
+        "pendant_02.radial_reed.041",
+        "pendant_02.radial_reed.042",
+        "pendant_02.radial_reed.043",
+        "pendant_02.radial_reed.044",
+        "pendant_02.radial_reed.045",
+        "pendant_02.radial_reed.046",
+        "pendant_02.radial_reed.047",
+        "pendant_02.radial_reed.048",
+        "pendant_02.radial_reed.049",
+        "pendant_02.radial_reed.050",
+        "pendant_02.radial_reed.051",
+        "pendant_02.radial_reed.052",
+        "pendant_02.radial_reed.053",
+        "pendant_02.radial_reed.054",
+        "pendant_02.radial_reed.055",
+        "pendant_02.radial_reed.056",
+        "pendant_02.radial_reed.057",
+        "pendant_02.radial_reed.058",
+        "pendant_02.radial_reed.059",
+        "pendant_02.radial_reed.060",
+        "pendant_02.radial_reed.061",
+        "pendant_02.radial_reed.062",
+        "pendant_02.radial_reed.063",
+        "pendant_02.woven_ring",
+        "pendant_02.woven_ring.001",
+        "pendant_02.woven_ring.002",
+        "pendant_02.woven_ring.003",
+        "pendant_02.woven_ring.004",
+        "pendant_02.woven_ring.005",
+        "pendant_02.woven_ring.006",
+        "pendant_02.woven_ring.007",
+        "pendant_02.woven_ring.008",
+        "pendant_02.woven_ring.009",
+        "pendant_02.woven_ring.010",
+        "pendant_02.woven_ring.011",
+        "pendant_02.woven_ring.012",
+        "pendant_02.woven_ring.013",
+        "pendant_02.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          0.4753683805465698,
+          6.678358554840088,
+          4.451000213623047
+        ],
+        "max": [
+          2.3933637142181396,
+          8.596358299255371,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        1.4343660473823547,
+        7.6373584270477295,
+        4.700500011444092
+      ]
+    },
+    {
+      "object_id": "pendant_03",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.95
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_03.cord",
+        "pendant_03.radial_reed",
+        "pendant_03.radial_reed.001",
+        "pendant_03.radial_reed.002",
+        "pendant_03.radial_reed.003",
+        "pendant_03.radial_reed.004",
+        "pendant_03.radial_reed.005",
+        "pendant_03.radial_reed.006",
+        "pendant_03.radial_reed.007",
+        "pendant_03.radial_reed.008",
+        "pendant_03.radial_reed.009",
+        "pendant_03.radial_reed.010",
+        "pendant_03.radial_reed.011",
+        "pendant_03.radial_reed.012",
+        "pendant_03.radial_reed.013",
+        "pendant_03.radial_reed.014",
+        "pendant_03.radial_reed.015",
+        "pendant_03.radial_reed.016",
+        "pendant_03.radial_reed.017",
+        "pendant_03.radial_reed.018",
+        "pendant_03.radial_reed.019",
+        "pendant_03.radial_reed.020",
+        "pendant_03.radial_reed.021",
+        "pendant_03.radial_reed.022",
+        "pendant_03.radial_reed.023",
+        "pendant_03.radial_reed.024",
+        "pendant_03.radial_reed.025",
+        "pendant_03.radial_reed.026",
+        "pendant_03.radial_reed.027",
+        "pendant_03.radial_reed.028",
+        "pendant_03.radial_reed.029",
+        "pendant_03.radial_reed.030",
+        "pendant_03.radial_reed.031",
+        "pendant_03.radial_reed.032",
+        "pendant_03.radial_reed.033",
+        "pendant_03.radial_reed.034",
+        "pendant_03.radial_reed.035",
+        "pendant_03.radial_reed.036",
+        "pendant_03.radial_reed.037",
+        "pendant_03.radial_reed.038",
+        "pendant_03.radial_reed.039",
+        "pendant_03.radial_reed.040",
+        "pendant_03.radial_reed.041",
+        "pendant_03.radial_reed.042",
+        "pendant_03.radial_reed.043",
+        "pendant_03.radial_reed.044",
+        "pendant_03.radial_reed.045",
+        "pendant_03.radial_reed.046",
+        "pendant_03.radial_reed.047",
+        "pendant_03.radial_reed.048",
+        "pendant_03.radial_reed.049",
+        "pendant_03.radial_reed.050",
+        "pendant_03.radial_reed.051",
+        "pendant_03.radial_reed.052",
+        "pendant_03.radial_reed.053",
+        "pendant_03.radial_reed.054",
+        "pendant_03.radial_reed.055",
+        "pendant_03.radial_reed.056",
+        "pendant_03.radial_reed.057",
+        "pendant_03.radial_reed.058",
+        "pendant_03.radial_reed.059",
+        "pendant_03.radial_reed.060",
+        "pendant_03.radial_reed.061",
+        "pendant_03.radial_reed.062",
+        "pendant_03.radial_reed.063",
+        "pendant_03.woven_ring",
+        "pendant_03.woven_ring.001",
+        "pendant_03.woven_ring.002",
+        "pendant_03.woven_ring.003",
+        "pendant_03.woven_ring.004",
+        "pendant_03.woven_ring.005",
+        "pendant_03.woven_ring.006",
+        "pendant_03.woven_ring.007",
+        "pendant_03.woven_ring.008",
+        "pendant_03.woven_ring.009",
+        "pendant_03.woven_ring.010",
+        "pendant_03.woven_ring.011",
+        "pendant_03.woven_ring.012",
+        "pendant_03.woven_ring.013",
+        "pendant_03.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          3.0913844108581543,
+          5.2533721923828125,
+          4.341000080108643
+        ],
+        "max": [
+          5.0093793869018555,
+          7.1713714599609375,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        4.050381898880005,
+        6.212371826171875,
+        4.64549994468689
+      ]
+    },
+    {
+      "object_id": "pendant_04",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.71718757601415
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_04.cord",
+        "pendant_04.radial_reed",
+        "pendant_04.radial_reed.001",
+        "pendant_04.radial_reed.002",
+        "pendant_04.radial_reed.003",
+        "pendant_04.radial_reed.004",
+        "pendant_04.radial_reed.005",
+        "pendant_04.radial_reed.006",
+        "pendant_04.radial_reed.007",
+        "pendant_04.radial_reed.008",
+        "pendant_04.radial_reed.009",
+        "pendant_04.radial_reed.010",
+        "pendant_04.radial_reed.011",
+        "pendant_04.radial_reed.012",
+        "pendant_04.radial_reed.013",
+        "pendant_04.radial_reed.014",
+        "pendant_04.radial_reed.015",
+        "pendant_04.radial_reed.016",
+        "pendant_04.radial_reed.017",
+        "pendant_04.radial_reed.018",
+        "pendant_04.radial_reed.019",
+        "pendant_04.radial_reed.020",
+        "pendant_04.radial_reed.021",
+        "pendant_04.radial_reed.022",
+        "pendant_04.radial_reed.023",
+        "pendant_04.radial_reed.024",
+        "pendant_04.radial_reed.025",
+        "pendant_04.radial_reed.026",
+        "pendant_04.radial_reed.027",
+        "pendant_04.radial_reed.028",
+        "pendant_04.radial_reed.029",
+        "pendant_04.radial_reed.030",
+        "pendant_04.radial_reed.031",
+        "pendant_04.radial_reed.032",
+        "pendant_04.radial_reed.033",
+        "pendant_04.radial_reed.034",
+        "pendant_04.radial_reed.035",
+        "pendant_04.radial_reed.036",
+        "pendant_04.radial_reed.037",
+        "pendant_04.radial_reed.038",
+        "pendant_04.radial_reed.039",
+        "pendant_04.radial_reed.040",
+        "pendant_04.radial_reed.041",
+        "pendant_04.radial_reed.042",
+        "pendant_04.radial_reed.043",
+        "pendant_04.radial_reed.044",
+        "pendant_04.radial_reed.045",
+        "pendant_04.radial_reed.046",
+        "pendant_04.radial_reed.047",
+        "pendant_04.radial_reed.048",
+        "pendant_04.radial_reed.049",
+        "pendant_04.radial_reed.050",
+        "pendant_04.radial_reed.051",
+        "pendant_04.radial_reed.052",
+        "pendant_04.radial_reed.053",
+        "pendant_04.radial_reed.054",
+        "pendant_04.radial_reed.055",
+        "pendant_04.radial_reed.056",
+        "pendant_04.radial_reed.057",
+        "pendant_04.radial_reed.058",
+        "pendant_04.radial_reed.059",
+        "pendant_04.radial_reed.060",
+        "pendant_04.radial_reed.061",
+        "pendant_04.radial_reed.062",
+        "pendant_04.radial_reed.063",
+        "pendant_04.woven_ring",
+        "pendant_04.woven_ring.001",
+        "pendant_04.woven_ring.002",
+        "pendant_04.woven_ring.003",
+        "pendant_04.woven_ring.004",
+        "pendant_04.woven_ring.005",
+        "pendant_04.woven_ring.006",
+        "pendant_04.woven_ring.007",
+        "pendant_04.woven_ring.008",
+        "pendant_04.woven_ring.009",
+        "pendant_04.woven_ring.010",
+        "pendant_04.woven_ring.011",
+        "pendant_04.woven_ring.012",
+        "pendant_04.woven_ring.013",
+        "pendant_04.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          0.6521000862121582,
+          8.322654724121094,
+          4.396000385284424
+        ],
+        "max": [
+          2.1044704914093018,
+          9.775030136108398,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        1.37828528881073,
+        9.048842430114746,
+        4.67300009727478
+      ]
+    },
+    {
+      "object_id": "pendant_05",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.6595866520992063
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_05.cord",
+        "pendant_05.radial_reed",
+        "pendant_05.radial_reed.001",
+        "pendant_05.radial_reed.002",
+        "pendant_05.radial_reed.003",
+        "pendant_05.radial_reed.004",
+        "pendant_05.radial_reed.005",
+        "pendant_05.radial_reed.006",
+        "pendant_05.radial_reed.007",
+        "pendant_05.radial_reed.008",
+        "pendant_05.radial_reed.009",
+        "pendant_05.radial_reed.010",
+        "pendant_05.radial_reed.011",
+        "pendant_05.radial_reed.012",
+        "pendant_05.radial_reed.013",
+        "pendant_05.radial_reed.014",
+        "pendant_05.radial_reed.015",
+        "pendant_05.radial_reed.016",
+        "pendant_05.radial_reed.017",
+        "pendant_05.radial_reed.018",
+        "pendant_05.radial_reed.019",
+        "pendant_05.radial_reed.020",
+        "pendant_05.radial_reed.021",
+        "pendant_05.radial_reed.022",
+        "pendant_05.radial_reed.023",
+        "pendant_05.radial_reed.024",
+        "pendant_05.radial_reed.025",
+        "pendant_05.radial_reed.026",
+        "pendant_05.radial_reed.027",
+        "pendant_05.radial_reed.028",
+        "pendant_05.radial_reed.029",
+        "pendant_05.radial_reed.030",
+        "pendant_05.radial_reed.031",
+        "pendant_05.radial_reed.032",
+        "pendant_05.radial_reed.033",
+        "pendant_05.radial_reed.034",
+        "pendant_05.radial_reed.035",
+        "pendant_05.radial_reed.036",
+        "pendant_05.radial_reed.037",
+        "pendant_05.radial_reed.038",
+        "pendant_05.radial_reed.039",
+        "pendant_05.radial_reed.040",
+        "pendant_05.radial_reed.041",
+        "pendant_05.radial_reed.042",
+        "pendant_05.radial_reed.043",
+        "pendant_05.radial_reed.044",
+        "pendant_05.radial_reed.045",
+        "pendant_05.radial_reed.046",
+        "pendant_05.radial_reed.047",
+        "pendant_05.radial_reed.048",
+        "pendant_05.radial_reed.049",
+        "pendant_05.radial_reed.050",
+        "pendant_05.radial_reed.051",
+        "pendant_05.radial_reed.052",
+        "pendant_05.radial_reed.053",
+        "pendant_05.radial_reed.054",
+        "pendant_05.radial_reed.055",
+        "pendant_05.radial_reed.056",
+        "pendant_05.radial_reed.057",
+        "pendant_05.radial_reed.058",
+        "pendant_05.radial_reed.059",
+        "pendant_05.radial_reed.060",
+        "pendant_05.radial_reed.061",
+        "pendant_05.radial_reed.062",
+        "pendant_05.radial_reed.063",
+        "pendant_05.woven_ring",
+        "pendant_05.woven_ring.001",
+        "pendant_05.woven_ring.002",
+        "pendant_05.woven_ring.003",
+        "pendant_05.woven_ring.004",
+        "pendant_05.woven_ring.005",
+        "pendant_05.woven_ring.006",
+        "pendant_05.woven_ring.007",
+        "pendant_05.woven_ring.008",
+        "pendant_05.woven_ring.009",
+        "pendant_05.woven_ring.010",
+        "pendant_05.woven_ring.011",
+        "pendant_05.woven_ring.012",
+        "pendant_05.woven_ring.013",
+        "pendant_05.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -2.862199306488037,
+          9.503571510314941,
+          4.451000213623047
+        ],
+        "max": [
+          -1.5250307321548462,
+          10.840744972229004,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -2.1936150193214417,
+        10.172158241271973,
+        4.700500011444092
+      ]
+    },
+    {
+      "object_id": "pendant_06",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.5530216507132668
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_06.cord",
+        "pendant_06.radial_reed",
+        "pendant_06.radial_reed.001",
+        "pendant_06.radial_reed.002",
+        "pendant_06.radial_reed.003",
+        "pendant_06.radial_reed.004",
+        "pendant_06.radial_reed.005",
+        "pendant_06.radial_reed.006",
+        "pendant_06.radial_reed.007",
+        "pendant_06.radial_reed.008",
+        "pendant_06.radial_reed.009",
+        "pendant_06.radial_reed.010",
+        "pendant_06.radial_reed.011",
+        "pendant_06.radial_reed.012",
+        "pendant_06.radial_reed.013",
+        "pendant_06.radial_reed.014",
+        "pendant_06.radial_reed.015",
+        "pendant_06.radial_reed.016",
+        "pendant_06.radial_reed.017",
+        "pendant_06.radial_reed.018",
+        "pendant_06.radial_reed.019",
+        "pendant_06.radial_reed.020",
+        "pendant_06.radial_reed.021",
+        "pendant_06.radial_reed.022",
+        "pendant_06.radial_reed.023",
+        "pendant_06.radial_reed.024",
+        "pendant_06.radial_reed.025",
+        "pendant_06.radial_reed.026",
+        "pendant_06.radial_reed.027",
+        "pendant_06.radial_reed.028",
+        "pendant_06.radial_reed.029",
+        "pendant_06.radial_reed.030",
+        "pendant_06.radial_reed.031",
+        "pendant_06.radial_reed.032",
+        "pendant_06.radial_reed.033",
+        "pendant_06.radial_reed.034",
+        "pendant_06.radial_reed.035",
+        "pendant_06.radial_reed.036",
+        "pendant_06.radial_reed.037",
+        "pendant_06.radial_reed.038",
+        "pendant_06.radial_reed.039",
+        "pendant_06.radial_reed.040",
+        "pendant_06.radial_reed.041",
+        "pendant_06.radial_reed.042",
+        "pendant_06.radial_reed.043",
+        "pendant_06.radial_reed.044",
+        "pendant_06.radial_reed.045",
+        "pendant_06.radial_reed.046",
+        "pendant_06.radial_reed.047",
+        "pendant_06.radial_reed.048",
+        "pendant_06.radial_reed.049",
+        "pendant_06.radial_reed.050",
+        "pendant_06.radial_reed.051",
+        "pendant_06.radial_reed.052",
+        "pendant_06.radial_reed.053",
+        "pendant_06.radial_reed.054",
+        "pendant_06.radial_reed.055",
+        "pendant_06.radial_reed.056",
+        "pendant_06.radial_reed.057",
+        "pendant_06.radial_reed.058",
+        "pendant_06.radial_reed.059",
+        "pendant_06.radial_reed.060",
+        "pendant_06.radial_reed.061",
+        "pendant_06.radial_reed.062",
+        "pendant_06.radial_reed.063",
+        "pendant_06.woven_ring",
+        "pendant_06.woven_ring.001",
+        "pendant_06.woven_ring.002",
+        "pendant_06.woven_ring.003",
+        "pendant_06.woven_ring.004",
+        "pendant_06.woven_ring.005",
+        "pendant_06.woven_ring.006",
+        "pendant_06.woven_ring.007",
+        "pendant_06.woven_ring.008",
+        "pendant_06.woven_ring.009",
+        "pendant_06.woven_ring.010",
+        "pendant_06.woven_ring.011",
+        "pendant_06.woven_ring.012",
+        "pendant_06.woven_ring.013",
+        "pendant_06.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -1.7406643629074097,
+          10.075872421264648,
+          4.341000080108643
+        ],
+        "max": [
+          -0.6166259050369263,
+          11.199914932250977,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -1.178645133972168,
+        10.637893676757812,
+        4.64549994468689
+      ]
+    },
+    {
+      "object_id": "pendant_07",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.8907414786011907
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_07.cord",
+        "pendant_07.radial_reed",
+        "pendant_07.radial_reed.001",
+        "pendant_07.radial_reed.002",
+        "pendant_07.radial_reed.003",
+        "pendant_07.radial_reed.004",
+        "pendant_07.radial_reed.005",
+        "pendant_07.radial_reed.006",
+        "pendant_07.radial_reed.007",
+        "pendant_07.radial_reed.008",
+        "pendant_07.radial_reed.009",
+        "pendant_07.radial_reed.010",
+        "pendant_07.radial_reed.011",
+        "pendant_07.radial_reed.012",
+        "pendant_07.radial_reed.013",
+        "pendant_07.radial_reed.014",
+        "pendant_07.radial_reed.015",
+        "pendant_07.radial_reed.016",
+        "pendant_07.radial_reed.017",
+        "pendant_07.radial_reed.018",
+        "pendant_07.radial_reed.019",
+        "pendant_07.radial_reed.020",
+        "pendant_07.radial_reed.021",
+        "pendant_07.radial_reed.022",
+        "pendant_07.radial_reed.023",
+        "pendant_07.radial_reed.024",
+        "pendant_07.radial_reed.025",
+        "pendant_07.radial_reed.026",
+        "pendant_07.radial_reed.027",
+        "pendant_07.radial_reed.028",
+        "pendant_07.radial_reed.029",
+        "pendant_07.radial_reed.030",
+        "pendant_07.radial_reed.031",
+        "pendant_07.radial_reed.032",
+        "pendant_07.radial_reed.033",
+        "pendant_07.radial_reed.034",
+        "pendant_07.radial_reed.035",
+        "pendant_07.radial_reed.036",
+        "pendant_07.radial_reed.037",
+        "pendant_07.radial_reed.038",
+        "pendant_07.radial_reed.039",
+        "pendant_07.radial_reed.040",
+        "pendant_07.radial_reed.041",
+        "pendant_07.radial_reed.042",
+        "pendant_07.radial_reed.043",
+        "pendant_07.radial_reed.044",
+        "pendant_07.radial_reed.045",
+        "pendant_07.radial_reed.046",
+        "pendant_07.radial_reed.047",
+        "pendant_07.radial_reed.048",
+        "pendant_07.radial_reed.049",
+        "pendant_07.radial_reed.050",
+        "pendant_07.radial_reed.051",
+        "pendant_07.radial_reed.052",
+        "pendant_07.radial_reed.053",
+        "pendant_07.radial_reed.054",
+        "pendant_07.radial_reed.055",
+        "pendant_07.radial_reed.056",
+        "pendant_07.radial_reed.057",
+        "pendant_07.radial_reed.058",
+        "pendant_07.radial_reed.059",
+        "pendant_07.radial_reed.060",
+        "pendant_07.radial_reed.061",
+        "pendant_07.radial_reed.062",
+        "pendant_07.radial_reed.063",
+        "pendant_07.woven_ring",
+        "pendant_07.woven_ring.001",
+        "pendant_07.woven_ring.002",
+        "pendant_07.woven_ring.003",
+        "pendant_07.woven_ring.004",
+        "pendant_07.woven_ring.005",
+        "pendant_07.woven_ring.006",
+        "pendant_07.woven_ring.007",
+        "pendant_07.woven_ring.008",
+        "pendant_07.woven_ring.009",
+        "pendant_07.woven_ring.010",
+        "pendant_07.woven_ring.011",
+        "pendant_07.woven_ring.012",
+        "pendant_07.woven_ring.013",
+        "pendant_07.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -1.0256024599075317,
+          11.282364845275879,
+          4.396000385284424
+        ],
+        "max": [
+          0.7738755941390991,
+          13.081847190856934,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -0.1258634328842163,
+        12.182106018066406,
+        4.67300009727478
+      ]
+    },
+    {
+      "object_id": "pendant_08",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.8268628927147398
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_08.cord",
+        "pendant_08.radial_reed",
+        "pendant_08.radial_reed.001",
+        "pendant_08.radial_reed.002",
+        "pendant_08.radial_reed.003",
+        "pendant_08.radial_reed.004",
+        "pendant_08.radial_reed.005",
+        "pendant_08.radial_reed.006",
+        "pendant_08.radial_reed.007",
+        "pendant_08.radial_reed.008",
+        "pendant_08.radial_reed.009",
+        "pendant_08.radial_reed.010",
+        "pendant_08.radial_reed.011",
+        "pendant_08.radial_reed.012",
+        "pendant_08.radial_reed.013",
+        "pendant_08.radial_reed.014",
+        "pendant_08.radial_reed.015",
+        "pendant_08.radial_reed.016",
+        "pendant_08.radial_reed.017",
+        "pendant_08.radial_reed.018",
+        "pendant_08.radial_reed.019",
+        "pendant_08.radial_reed.020",
+        "pendant_08.radial_reed.021",
+        "pendant_08.radial_reed.022",
+        "pendant_08.radial_reed.023",
+        "pendant_08.radial_reed.024",
+        "pendant_08.radial_reed.025",
+        "pendant_08.radial_reed.026",
+        "pendant_08.radial_reed.027",
+        "pendant_08.radial_reed.028",
+        "pendant_08.radial_reed.029",
+        "pendant_08.radial_reed.030",
+        "pendant_08.radial_reed.031",
+        "pendant_08.radial_reed.032",
+        "pendant_08.radial_reed.033",
+        "pendant_08.radial_reed.034",
+        "pendant_08.radial_reed.035",
+        "pendant_08.radial_reed.036",
+        "pendant_08.radial_reed.037",
+        "pendant_08.radial_reed.038",
+        "pendant_08.radial_reed.039",
+        "pendant_08.radial_reed.040",
+        "pendant_08.radial_reed.041",
+        "pendant_08.radial_reed.042",
+        "pendant_08.radial_reed.043",
+        "pendant_08.radial_reed.044",
+        "pendant_08.radial_reed.045",
+        "pendant_08.radial_reed.046",
+        "pendant_08.radial_reed.047",
+        "pendant_08.radial_reed.048",
+        "pendant_08.radial_reed.049",
+        "pendant_08.radial_reed.050",
+        "pendant_08.radial_reed.051",
+        "pendant_08.radial_reed.052",
+        "pendant_08.radial_reed.053",
+        "pendant_08.radial_reed.054",
+        "pendant_08.radial_reed.055",
+        "pendant_08.radial_reed.056",
+        "pendant_08.radial_reed.057",
+        "pendant_08.radial_reed.058",
+        "pendant_08.radial_reed.059",
+        "pendant_08.radial_reed.060",
+        "pendant_08.radial_reed.061",
+        "pendant_08.radial_reed.062",
+        "pendant_08.radial_reed.063",
+        "pendant_08.woven_ring",
+        "pendant_08.woven_ring.001",
+        "pendant_08.woven_ring.002",
+        "pendant_08.woven_ring.003",
+        "pendant_08.woven_ring.004",
+        "pendant_08.woven_ring.005",
+        "pendant_08.woven_ring.006",
+        "pendant_08.woven_ring.007",
+        "pendant_08.woven_ring.008",
+        "pendant_08.woven_ring.009",
+        "pendant_08.woven_ring.010",
+        "pendant_08.woven_ring.011",
+        "pendant_08.woven_ring.012",
+        "pendant_08.woven_ring.013",
+        "pendant_08.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          0.5435824394226074,
+          11.019206047058105,
+          4.451000213623047
+        ],
+        "max": [
+          2.215303421020508,
+          12.690932273864746,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        1.3794429302215576,
+        11.855069160461426,
+        4.700500011444092
+      ]
+    },
+    {
+      "object_id": "pendant_09",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.7678812988890783
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_09.cord",
+        "pendant_09.radial_reed",
+        "pendant_09.radial_reed.001",
+        "pendant_09.radial_reed.002",
+        "pendant_09.radial_reed.003",
+        "pendant_09.radial_reed.004",
+        "pendant_09.radial_reed.005",
+        "pendant_09.radial_reed.006",
+        "pendant_09.radial_reed.007",
+        "pendant_09.radial_reed.008",
+        "pendant_09.radial_reed.009",
+        "pendant_09.radial_reed.010",
+        "pendant_09.radial_reed.011",
+        "pendant_09.radial_reed.012",
+        "pendant_09.radial_reed.013",
+        "pendant_09.radial_reed.014",
+        "pendant_09.radial_reed.015",
+        "pendant_09.radial_reed.016",
+        "pendant_09.radial_reed.017",
+        "pendant_09.radial_reed.018",
+        "pendant_09.radial_reed.019",
+        "pendant_09.radial_reed.020",
+        "pendant_09.radial_reed.021",
+        "pendant_09.radial_reed.022",
+        "pendant_09.radial_reed.023",
+        "pendant_09.radial_reed.024",
+        "pendant_09.radial_reed.025",
+        "pendant_09.radial_reed.026",
+        "pendant_09.radial_reed.027",
+        "pendant_09.radial_reed.028",
+        "pendant_09.radial_reed.029",
+        "pendant_09.radial_reed.030",
+        "pendant_09.radial_reed.031",
+        "pendant_09.radial_reed.032",
+        "pendant_09.radial_reed.033",
+        "pendant_09.radial_reed.034",
+        "pendant_09.radial_reed.035",
+        "pendant_09.radial_reed.036",
+        "pendant_09.radial_reed.037",
+        "pendant_09.radial_reed.038",
+        "pendant_09.radial_reed.039",
+        "pendant_09.radial_reed.040",
+        "pendant_09.radial_reed.041",
+        "pendant_09.radial_reed.042",
+        "pendant_09.radial_reed.043",
+        "pendant_09.radial_reed.044",
+        "pendant_09.radial_reed.045",
+        "pendant_09.radial_reed.046",
+        "pendant_09.radial_reed.047",
+        "pendant_09.radial_reed.048",
+        "pendant_09.radial_reed.049",
+        "pendant_09.radial_reed.050",
+        "pendant_09.radial_reed.051",
+        "pendant_09.radial_reed.052",
+        "pendant_09.radial_reed.053",
+        "pendant_09.radial_reed.054",
+        "pendant_09.radial_reed.055",
+        "pendant_09.radial_reed.056",
+        "pendant_09.radial_reed.057",
+        "pendant_09.radial_reed.058",
+        "pendant_09.radial_reed.059",
+        "pendant_09.radial_reed.060",
+        "pendant_09.radial_reed.061",
+        "pendant_09.radial_reed.062",
+        "pendant_09.radial_reed.063",
+        "pendant_09.woven_ring",
+        "pendant_09.woven_ring.001",
+        "pendant_09.woven_ring.002",
+        "pendant_09.woven_ring.003",
+        "pendant_09.woven_ring.004",
+        "pendant_09.woven_ring.005",
+        "pendant_09.woven_ring.006",
+        "pendant_09.woven_ring.007",
+        "pendant_09.woven_ring.008",
+        "pendant_09.woven_ring.009",
+        "pendant_09.woven_ring.010",
+        "pendant_09.woven_ring.011",
+        "pendant_09.woven_ring.012",
+        "pendant_09.woven_ring.013",
+        "pendant_09.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          2.0362625122070312,
+          11.991239547729492,
+          4.341000080108643
+        ],
+        "max": [
+          3.5900206565856934,
+          13.545001983642578,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        2.8131415843963623,
+        12.768120765686035,
+        4.64549994468689
+      ]
+    },
+    {
+      "object_id": "pendant_10",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.7841351021655619
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_10.cord",
+        "pendant_10.radial_reed",
+        "pendant_10.radial_reed.001",
+        "pendant_10.radial_reed.002",
+        "pendant_10.radial_reed.003",
+        "pendant_10.radial_reed.004",
+        "pendant_10.radial_reed.005",
+        "pendant_10.radial_reed.006",
+        "pendant_10.radial_reed.007",
+        "pendant_10.radial_reed.008",
+        "pendant_10.radial_reed.009",
+        "pendant_10.radial_reed.010",
+        "pendant_10.radial_reed.011",
+        "pendant_10.radial_reed.012",
+        "pendant_10.radial_reed.013",
+        "pendant_10.radial_reed.014",
+        "pendant_10.radial_reed.015",
+        "pendant_10.radial_reed.016",
+        "pendant_10.radial_reed.017",
+        "pendant_10.radial_reed.018",
+        "pendant_10.radial_reed.019",
+        "pendant_10.radial_reed.020",
+        "pendant_10.radial_reed.021",
+        "pendant_10.radial_reed.022",
+        "pendant_10.radial_reed.023",
+        "pendant_10.radial_reed.024",
+        "pendant_10.radial_reed.025",
+        "pendant_10.radial_reed.026",
+        "pendant_10.radial_reed.027",
+        "pendant_10.radial_reed.028",
+        "pendant_10.radial_reed.029",
+        "pendant_10.radial_reed.030",
+        "pendant_10.radial_reed.031",
+        "pendant_10.radial_reed.032",
+        "pendant_10.radial_reed.033",
+        "pendant_10.radial_reed.034",
+        "pendant_10.radial_reed.035",
+        "pendant_10.radial_reed.036",
+        "pendant_10.radial_reed.037",
+        "pendant_10.radial_reed.038",
+        "pendant_10.radial_reed.039",
+        "pendant_10.radial_reed.040",
+        "pendant_10.radial_reed.041",
+        "pendant_10.radial_reed.042",
+        "pendant_10.radial_reed.043",
+        "pendant_10.radial_reed.044",
+        "pendant_10.radial_reed.045",
+        "pendant_10.radial_reed.046",
+        "pendant_10.radial_reed.047",
+        "pendant_10.radial_reed.048",
+        "pendant_10.radial_reed.049",
+        "pendant_10.radial_reed.050",
+        "pendant_10.radial_reed.051",
+        "pendant_10.radial_reed.052",
+        "pendant_10.radial_reed.053",
+        "pendant_10.radial_reed.054",
+        "pendant_10.radial_reed.055",
+        "pendant_10.radial_reed.056",
+        "pendant_10.radial_reed.057",
+        "pendant_10.radial_reed.058",
+        "pendant_10.radial_reed.059",
+        "pendant_10.radial_reed.060",
+        "pendant_10.radial_reed.061",
+        "pendant_10.radial_reed.062",
+        "pendant_10.radial_reed.063",
+        "pendant_10.woven_ring",
+        "pendant_10.woven_ring.001",
+        "pendant_10.woven_ring.002",
+        "pendant_10.woven_ring.003",
+        "pendant_10.woven_ring.004",
+        "pendant_10.woven_ring.005",
+        "pendant_10.woven_ring.006",
+        "pendant_10.woven_ring.007",
+        "pendant_10.woven_ring.008",
+        "pendant_10.woven_ring.009",
+        "pendant_10.woven_ring.010",
+        "pendant_10.woven_ring.011",
+        "pendant_10.woven_ring.012",
+        "pendant_10.woven_ring.013",
+        "pendant_10.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -1.4391392469406128,
+          15.248247146606445,
+          4.396000385284424
+        ],
+        "max": [
+          0.14712601900100708,
+          16.834518432617188,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -0.6460066139698029,
+        16.041382789611816,
+        4.67300009727478
+      ]
+    },
+    {
+      "object_id": "pendant_11",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.8198356375601755
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_11.cord",
+        "pendant_11.radial_reed",
+        "pendant_11.radial_reed.001",
+        "pendant_11.radial_reed.002",
+        "pendant_11.radial_reed.003",
+        "pendant_11.radial_reed.004",
+        "pendant_11.radial_reed.005",
+        "pendant_11.radial_reed.006",
+        "pendant_11.radial_reed.007",
+        "pendant_11.radial_reed.008",
+        "pendant_11.radial_reed.009",
+        "pendant_11.radial_reed.010",
+        "pendant_11.radial_reed.011",
+        "pendant_11.radial_reed.012",
+        "pendant_11.radial_reed.013",
+        "pendant_11.radial_reed.014",
+        "pendant_11.radial_reed.015",
+        "pendant_11.radial_reed.016",
+        "pendant_11.radial_reed.017",
+        "pendant_11.radial_reed.018",
+        "pendant_11.radial_reed.019",
+        "pendant_11.radial_reed.020",
+        "pendant_11.radial_reed.021",
+        "pendant_11.radial_reed.022",
+        "pendant_11.radial_reed.023",
+        "pendant_11.radial_reed.024",
+        "pendant_11.radial_reed.025",
+        "pendant_11.radial_reed.026",
+        "pendant_11.radial_reed.027",
+        "pendant_11.radial_reed.028",
+        "pendant_11.radial_reed.029",
+        "pendant_11.radial_reed.030",
+        "pendant_11.radial_reed.031",
+        "pendant_11.radial_reed.032",
+        "pendant_11.radial_reed.033",
+        "pendant_11.radial_reed.034",
+        "pendant_11.radial_reed.035",
+        "pendant_11.radial_reed.036",
+        "pendant_11.radial_reed.037",
+        "pendant_11.radial_reed.038",
+        "pendant_11.radial_reed.039",
+        "pendant_11.radial_reed.040",
+        "pendant_11.radial_reed.041",
+        "pendant_11.radial_reed.042",
+        "pendant_11.radial_reed.043",
+        "pendant_11.radial_reed.044",
+        "pendant_11.radial_reed.045",
+        "pendant_11.radial_reed.046",
+        "pendant_11.radial_reed.047",
+        "pendant_11.radial_reed.048",
+        "pendant_11.radial_reed.049",
+        "pendant_11.radial_reed.050",
+        "pendant_11.radial_reed.051",
+        "pendant_11.radial_reed.052",
+        "pendant_11.radial_reed.053",
+        "pendant_11.radial_reed.054",
+        "pendant_11.radial_reed.055",
+        "pendant_11.radial_reed.056",
+        "pendant_11.radial_reed.057",
+        "pendant_11.radial_reed.058",
+        "pendant_11.radial_reed.059",
+        "pendant_11.radial_reed.060",
+        "pendant_11.radial_reed.061",
+        "pendant_11.radial_reed.062",
+        "pendant_11.radial_reed.063",
+        "pendant_11.woven_ring",
+        "pendant_11.woven_ring.001",
+        "pendant_11.woven_ring.002",
+        "pendant_11.woven_ring.003",
+        "pendant_11.woven_ring.004",
+        "pendant_11.woven_ring.005",
+        "pendant_11.woven_ring.006",
+        "pendant_11.woven_ring.007",
+        "pendant_11.woven_ring.008",
+        "pendant_11.woven_ring.009",
+        "pendant_11.woven_ring.010",
+        "pendant_11.woven_ring.011",
+        "pendant_11.woven_ring.012",
+        "pendant_11.woven_ring.013",
+        "pendant_11.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          0.3775422275066376,
+          17.143457412719727,
+          4.451000213623047
+        ],
+        "max": [
+          2.0352087020874023,
+          18.801130294799805,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        1.20637546479702,
+        17.972293853759766,
+        4.700500011444092
+      ]
+    },
+    {
+      "object_id": "pendant_12",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.8626992655619425
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_12.cord",
+        "pendant_12.radial_reed",
+        "pendant_12.radial_reed.001",
+        "pendant_12.radial_reed.002",
+        "pendant_12.radial_reed.003",
+        "pendant_12.radial_reed.004",
+        "pendant_12.radial_reed.005",
+        "pendant_12.radial_reed.006",
+        "pendant_12.radial_reed.007",
+        "pendant_12.radial_reed.008",
+        "pendant_12.radial_reed.009",
+        "pendant_12.radial_reed.010",
+        "pendant_12.radial_reed.011",
+        "pendant_12.radial_reed.012",
+        "pendant_12.radial_reed.013",
+        "pendant_12.radial_reed.014",
+        "pendant_12.radial_reed.015",
+        "pendant_12.radial_reed.016",
+        "pendant_12.radial_reed.017",
+        "pendant_12.radial_reed.018",
+        "pendant_12.radial_reed.019",
+        "pendant_12.radial_reed.020",
+        "pendant_12.radial_reed.021",
+        "pendant_12.radial_reed.022",
+        "pendant_12.radial_reed.023",
+        "pendant_12.radial_reed.024",
+        "pendant_12.radial_reed.025",
+        "pendant_12.radial_reed.026",
+        "pendant_12.radial_reed.027",
+        "pendant_12.radial_reed.028",
+        "pendant_12.radial_reed.029",
+        "pendant_12.radial_reed.030",
+        "pendant_12.radial_reed.031",
+        "pendant_12.radial_reed.032",
+        "pendant_12.radial_reed.033",
+        "pendant_12.radial_reed.034",
+        "pendant_12.radial_reed.035",
+        "pendant_12.radial_reed.036",
+        "pendant_12.radial_reed.037",
+        "pendant_12.radial_reed.038",
+        "pendant_12.radial_reed.039",
+        "pendant_12.radial_reed.040",
+        "pendant_12.radial_reed.041",
+        "pendant_12.radial_reed.042",
+        "pendant_12.radial_reed.043",
+        "pendant_12.radial_reed.044",
+        "pendant_12.radial_reed.045",
+        "pendant_12.radial_reed.046",
+        "pendant_12.radial_reed.047",
+        "pendant_12.radial_reed.048",
+        "pendant_12.radial_reed.049",
+        "pendant_12.radial_reed.050",
+        "pendant_12.radial_reed.051",
+        "pendant_12.radial_reed.052",
+        "pendant_12.radial_reed.053",
+        "pendant_12.radial_reed.054",
+        "pendant_12.radial_reed.055",
+        "pendant_12.radial_reed.056",
+        "pendant_12.radial_reed.057",
+        "pendant_12.radial_reed.058",
+        "pendant_12.radial_reed.059",
+        "pendant_12.radial_reed.060",
+        "pendant_12.radial_reed.061",
+        "pendant_12.radial_reed.062",
+        "pendant_12.radial_reed.063",
+        "pendant_12.woven_ring",
+        "pendant_12.woven_ring.001",
+        "pendant_12.woven_ring.002",
+        "pendant_12.woven_ring.003",
+        "pendant_12.woven_ring.004",
+        "pendant_12.woven_ring.005",
+        "pendant_12.woven_ring.006",
+        "pendant_12.woven_ring.007",
+        "pendant_12.woven_ring.008",
+        "pendant_12.woven_ring.009",
+        "pendant_12.woven_ring.010",
+        "pendant_12.woven_ring.011",
+        "pendant_12.woven_ring.012",
+        "pendant_12.woven_ring.013",
+        "pendant_12.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -3.266434907913208,
+          18.690933227539062,
+          4.341000080108643
+        ],
+        "max": [
+          -1.5230411291122437,
+          20.43433380126953,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -2.394738018512726,
+        19.562633514404297,
+        4.64549994468689
+      ]
+    },
+    {
+      "object_id": "pendant_13",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.95
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_13.cord",
+        "pendant_13.radial_reed",
+        "pendant_13.radial_reed.001",
+        "pendant_13.radial_reed.002",
+        "pendant_13.radial_reed.003",
+        "pendant_13.radial_reed.004",
+        "pendant_13.radial_reed.005",
+        "pendant_13.radial_reed.006",
+        "pendant_13.radial_reed.007",
+        "pendant_13.radial_reed.008",
+        "pendant_13.radial_reed.009",
+        "pendant_13.radial_reed.010",
+        "pendant_13.radial_reed.011",
+        "pendant_13.radial_reed.012",
+        "pendant_13.radial_reed.013",
+        "pendant_13.radial_reed.014",
+        "pendant_13.radial_reed.015",
+        "pendant_13.radial_reed.016",
+        "pendant_13.radial_reed.017",
+        "pendant_13.radial_reed.018",
+        "pendant_13.radial_reed.019",
+        "pendant_13.radial_reed.020",
+        "pendant_13.radial_reed.021",
+        "pendant_13.radial_reed.022",
+        "pendant_13.radial_reed.023",
+        "pendant_13.radial_reed.024",
+        "pendant_13.radial_reed.025",
+        "pendant_13.radial_reed.026",
+        "pendant_13.radial_reed.027",
+        "pendant_13.radial_reed.028",
+        "pendant_13.radial_reed.029",
+        "pendant_13.radial_reed.030",
+        "pendant_13.radial_reed.031",
+        "pendant_13.radial_reed.032",
+        "pendant_13.radial_reed.033",
+        "pendant_13.radial_reed.034",
+        "pendant_13.radial_reed.035",
+        "pendant_13.radial_reed.036",
+        "pendant_13.radial_reed.037",
+        "pendant_13.radial_reed.038",
+        "pendant_13.radial_reed.039",
+        "pendant_13.radial_reed.040",
+        "pendant_13.radial_reed.041",
+        "pendant_13.radial_reed.042",
+        "pendant_13.radial_reed.043",
+        "pendant_13.radial_reed.044",
+        "pendant_13.radial_reed.045",
+        "pendant_13.radial_reed.046",
+        "pendant_13.radial_reed.047",
+        "pendant_13.radial_reed.048",
+        "pendant_13.radial_reed.049",
+        "pendant_13.radial_reed.050",
+        "pendant_13.radial_reed.051",
+        "pendant_13.radial_reed.052",
+        "pendant_13.radial_reed.053",
+        "pendant_13.radial_reed.054",
+        "pendant_13.radial_reed.055",
+        "pendant_13.radial_reed.056",
+        "pendant_13.radial_reed.057",
+        "pendant_13.radial_reed.058",
+        "pendant_13.radial_reed.059",
+        "pendant_13.radial_reed.060",
+        "pendant_13.radial_reed.061",
+        "pendant_13.radial_reed.062",
+        "pendant_13.radial_reed.063",
+        "pendant_13.woven_ring",
+        "pendant_13.woven_ring.001",
+        "pendant_13.woven_ring.002",
+        "pendant_13.woven_ring.003",
+        "pendant_13.woven_ring.004",
+        "pendant_13.woven_ring.005",
+        "pendant_13.woven_ring.006",
+        "pendant_13.woven_ring.007",
+        "pendant_13.woven_ring.008",
+        "pendant_13.woven_ring.009",
+        "pendant_13.woven_ring.010",
+        "pendant_13.woven_ring.011",
+        "pendant_13.woven_ring.012",
+        "pendant_13.woven_ring.013",
+        "pendant_13.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          -1.3423043489456177,
+          22.363601684570312,
+          4.396000385284424
+        ],
+        "max": [
+          0.5756908059120178,
+          24.281604766845703,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        -0.3833067715167999,
+        23.322603225708008,
+        4.67300009727478
+      ]
+    },
+    {
+      "object_id": "pendant_14",
+      "category": "ceiling_light",
+      "attributes": {
+        "inferred": "woven topology, cord, lighting watts",
+        "radius": 0.95
+      },
+      "evidence": {
+        "frame_ids": [
+          0,
+          85,
+          110,
+          130
+        ]
+      },
+      "geometry_provenance": "RGB frame0 center rays intersect z=4.36..4.47 ceiling-relative support plane; depth conflicts on thin woven shades.",
+      "spatial_relations": [],
+      "parts": [
+        "pendant_14.cord",
+        "pendant_14.radial_reed",
+        "pendant_14.radial_reed.001",
+        "pendant_14.radial_reed.002",
+        "pendant_14.radial_reed.003",
+        "pendant_14.radial_reed.004",
+        "pendant_14.radial_reed.005",
+        "pendant_14.radial_reed.006",
+        "pendant_14.radial_reed.007",
+        "pendant_14.radial_reed.008",
+        "pendant_14.radial_reed.009",
+        "pendant_14.radial_reed.010",
+        "pendant_14.radial_reed.011",
+        "pendant_14.radial_reed.012",
+        "pendant_14.radial_reed.013",
+        "pendant_14.radial_reed.014",
+        "pendant_14.radial_reed.015",
+        "pendant_14.radial_reed.016",
+        "pendant_14.radial_reed.017",
+        "pendant_14.radial_reed.018",
+        "pendant_14.radial_reed.019",
+        "pendant_14.radial_reed.020",
+        "pendant_14.radial_reed.021",
+        "pendant_14.radial_reed.022",
+        "pendant_14.radial_reed.023",
+        "pendant_14.radial_reed.024",
+        "pendant_14.radial_reed.025",
+        "pendant_14.radial_reed.026",
+        "pendant_14.radial_reed.027",
+        "pendant_14.radial_reed.028",
+        "pendant_14.radial_reed.029",
+        "pendant_14.radial_reed.030",
+        "pendant_14.radial_reed.031",
+        "pendant_14.radial_reed.032",
+        "pendant_14.radial_reed.033",
+        "pendant_14.radial_reed.034",
+        "pendant_14.radial_reed.035",
+        "pendant_14.radial_reed.036",
+        "pendant_14.radial_reed.037",
+        "pendant_14.radial_reed.038",
+        "pendant_14.radial_reed.039",
+        "pendant_14.radial_reed.040",
+        "pendant_14.radial_reed.041",
+        "pendant_14.radial_reed.042",
+        "pendant_14.radial_reed.043",
+        "pendant_14.radial_reed.044",
+        "pendant_14.radial_reed.045",
+        "pendant_14.radial_reed.046",
+        "pendant_14.radial_reed.047",
+        "pendant_14.radial_reed.048",
+        "pendant_14.radial_reed.049",
+        "pendant_14.radial_reed.050",
+        "pendant_14.radial_reed.051",
+        "pendant_14.radial_reed.052",
+        "pendant_14.radial_reed.053",
+        "pendant_14.radial_reed.054",
+        "pendant_14.radial_reed.055",
+        "pendant_14.radial_reed.056",
+        "pendant_14.radial_reed.057",
+        "pendant_14.radial_reed.058",
+        "pendant_14.radial_reed.059",
+        "pendant_14.radial_reed.060",
+        "pendant_14.radial_reed.061",
+        "pendant_14.radial_reed.062",
+        "pendant_14.radial_reed.063",
+        "pendant_14.woven_ring",
+        "pendant_14.woven_ring.001",
+        "pendant_14.woven_ring.002",
+        "pendant_14.woven_ring.003",
+        "pendant_14.woven_ring.004",
+        "pendant_14.woven_ring.005",
+        "pendant_14.woven_ring.006",
+        "pendant_14.woven_ring.007",
+        "pendant_14.woven_ring.008",
+        "pendant_14.woven_ring.009",
+        "pendant_14.woven_ring.010",
+        "pendant_14.woven_ring.011",
+        "pendant_14.woven_ring.012",
+        "pendant_14.woven_ring.013",
+        "pendant_14.diffuser"
+      ],
+      "bounds": {
+        "min": [
+          2.2151236534118652,
+          21.93314552307129,
+          4.451000213623047
+        ],
+        "max": [
+          4.133118629455566,
+          23.85114860534668,
+          4.949999809265137
+        ]
+      },
+      "center": [
+        3.174121141433716,
+        22.892147064208984,
+        4.700500011444092
+      ]
+    }
+  ],
+  "units": "native ViPE near-metric metres"
+}

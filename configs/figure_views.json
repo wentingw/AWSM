@@ -1,0 +1,75 @@
+{
+  "selection_rule": "five fixed input indices at 20-percent temporal intervals, before any new result",
+  "selected_keyframe_indices": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "timestamp_ns": 746532035458,
+      "elapsed_s": 0.0,
+      "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/cam0/data/746532035458.png",
+      "rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_all/000000_746532035458.png",
+      "sha256": "8ed8fa79aec7540f956696970a3dc2f6d64cec7a44223d22da5f53733c8ce5d1",
+      "size_bytes": 3688630,
+      "keyframe_index": 0,
+      "sampled_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000000_746532035458.png"
+    },
+    {
+      "index": 1800,
+      "timestamp_ns": 818532038878,
+      "elapsed_s": 72.00000342,
+      "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/cam0/data/818532038878.png",
+      "rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_all/001800_818532038878.png",
+      "sha256": "5cad7e61114ca4ed3706285f487b3c63d50a44aa7763158987f6b6e806d743b6",
+      "size_bytes": 3688630,
+      "keyframe_index": 36,
+      "sampled_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000036_818532038878.png"
+    },
+    {
+      "index": 3600,
+      "timestamp_ns": 890532042298,
+      "elapsed_s": 144.00000684,
+      "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/cam0/data/890532042298.png",
+      "rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_all/003600_890532042298.png",
+      "sha256": "f52ce945a0ed0a81ba0ce4e13ab3e4ea7b811394e1addea75a37daa0a675ff27",
+      "size_bytes": 3688630,
+      "keyframe_index": 72,
+      "sampled_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000072_890532042298.png"
+    },
+    {
+      "index": 5400,
+      "timestamp_ns": 962532045718,
+      "elapsed_s": 216.00001026,
+      "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/cam0/data/962532045718.png",
+      "rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_all/005400_962532045718.png",
+      "sha256": "9275348b14f3baf710a83a9b67ab1600938324f32b634d19c30261b2769b1545",
+      "size_bytes": 3688630,
+      "keyframe_index": 108,
+      "sampled_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000108_962532045718.png"
+    },
+    {
+      "index": 7200,
+      "timestamp_ns": 1034532049138,
+      "elapsed_s": 288.00001368,
+      "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/cam0/data/1034532049138.png",
+      "rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_all/007200_1034532049138.png",
+      "sha256": "94c587671cd441c34174571bcdcb32182c84aa7c399cc4041bbe74638301ee18",
+      "size_bytes": 3688630,
+      "keyframe_index": 144,
+      "sampled_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/world_lobby/rgb_180/000144_1034532049138.png"
+    }
+  ],
+  "columns": [
+    "M1",
+    "M2",
+    "M3",
+    "GT"
+  ],
+  "rows": 5,
+  "held_out": false
+}

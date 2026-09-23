@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "coordinate_frame": "native OpenVINS, Z up, metres",
+  "T_input_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "floor_top_z": -2.5382169319971153,
+  "model_based_planning_domain": {
+    "bounds": [
+      [
+        -23.2,
+        -4.05,
+        -2.5382169319971153
+      ],
+      [
+        0.1,
+        4.65,
+        3.4397291394767393
+      ]
+    ],
+    "meaning": "Conservative domain of this uncertain reconstruction, not independently validated free space. Must subtract inflated obstacle/vegetation/unknown volumes.",
+    "outside_policy": "unknown_blocked"
+  },
+  "unknown_regions": [
+    {
+      "region_id": "unknown_mirror_side_continuation",
+      "bounds": [
+        [
+          -24.3,
+          4.65,
+          -2.5382169319971153
+        ],
+        [
+          -13.5,
+          8.15,
+          3.7897291394767394
+        ]
+      ],
+      "classification": "unknown",
+      "reason": "Unsupported mirror-wall continuation; visible floor does not establish enclosure or safe egress.",
+      "planning_policy": "blocked",
+      "physical_obstacle": false,
+      "evidence_frame_ids": [
+        60,
+        90,
+        105,
+        126
+      ]
+    }
+  ],
+  "ground_policy": {
+    "support_object_id": "floor",
+    "body_bottom_z": -2.5382169319971153,
+    "required_obstacle_margin_m": 0.15,
+    "inflate_by_agent_radius": true
+  },
+  "drone_policy": {
+    "minimum_above_floor_m": 0.3,
+    "maximum_center_z_before_radius_inflation": 3.4397291394767393,
+    "required_obstacle_margin_m": 0.15,
+    "include_overhead_obstacles": true,
+    "include_vegetation_keepouts": true,
+    "inflate_by_vehicle_radius": true
+  },
+  "all_consumers": {
+    "unknown_is_free": false,
+    "physical_collision_layer_alone_is_sufficient": false,
+    "require_navigation_domain": true,
+    "input_metric_accuracy": "unresolved source conflicts; useful for model-space simulation only, not a validated real-world navigation map"
+  }
+}

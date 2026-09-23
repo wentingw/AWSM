@@ -1,0 +1,52 @@
+{
+  "detour": {
+    "status": "success",
+    "path": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.2000000000000002,
+        -0.3999999999999999,
+        0.9
+      ],
+      [
+        1.6,
+        -0.3999999999999999,
+        0.9
+      ],
+      [
+        2.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "expanded": 32
+  },
+  "sealed_wall": {
+    "status": "no_path",
+    "path": [],
+    "expanded": 210
+  },
+  "semantic_relation": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "chair_near",
+        "score": 1.1666666666666667
+      },
+      {
+        "object_id": "chair_far",
+        "score": 1.05
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "missing_object": {
+    "status": "no_semantic_match",
+    "candidates": [],
+    "scope": "constrained English category/attribute/near queries"
+  }
+}

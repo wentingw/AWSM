@@ -1,0 +1,92 @@
+{
+  "budget": {
+    "max_complete_revisions": 5,
+    "max_tool_rendered_checking_views": 60
+  },
+  "complete_revisions": 3,
+  "render_count": 15,
+  "renders": [
+    "check_r1_005.png",
+    "check_r1_060.png",
+    "check_r1_090.png",
+    "check_r1_105.png",
+    "check_r1_126.png",
+    "check_r2_005.png",
+    "check_r2_060.png",
+    "check_r2_090.png",
+    "check_r2_105.png",
+    "check_r2_126.png",
+    "check_r3_005.png",
+    "check_r3_060.png",
+    "check_r3_090.png",
+    "check_r3_105.png",
+    "check_r3_126.png"
+  ],
+  "iterations": [
+    {
+      "revision": 1,
+      "status": "complete",
+      "purpose": "first metric semantic reconstruction; no depth/pose rescaling; explicit near-view selection and consensus floor",
+      "observed_issues": [
+        "Strong inter-window depth scale conflict; initial frame5 mismatch is unavoidable under one metric solid model.",
+        "Materials too pale, ceiling slats and far-wall panel joints absent.",
+        "Far-side wall continuation intentionally unknown; does not enclose the room completely."
+      ],
+      "render_frames": [
+        5,
+        60,
+        90,
+        105,
+        126
+      ],
+      "renders_reviewed_by_modeller": true
+    },
+    {
+      "revision": 2,
+      "status": "complete_awaiting_independent_review",
+      "purpose": "RGB-supported ceiling slats, end-wall joints, darker table/floor materials, flat mirror/table normals, thinner branched foliage; no input pose/depth scale changes",
+      "render_frames": [
+        5,
+        60,
+        90,
+        105,
+        126
+      ],
+      "renders_reviewed_by_modeller": true,
+      "observed_issues": [
+        "Coherent geometry still cannot match conflicting depths at early and late cameras.",
+        "Far mirror-side enclosure remains incomplete by design because evidence conflicts; treat as unknown.",
+        "Fine pendant weave, accurate foliage and emblem silhouette remain simplified.",
+        "Frame105 observed door location and reconstructed door location differ; individual door localization remains approximate."
+      ],
+      "artifact_checks": "artifact_checks.json passed",
+      "metadata_corrections": "Frame90 reverse-view planter left/right correspondence corrected; native measured values retained."
+    },
+    {
+      "revision": 3,
+      "status": "frozen_for_independent_GT_evaluation",
+      "purpose": "Clean-review seat solid corrections, planner-only unknown constraints, physical overhead/lamp coverage, evidence/relations/count fixes, RGB-supported grouped shape and appearance details",
+      "render_frames": [
+        5,
+        60,
+        90,
+        105,
+        126
+      ],
+      "renders_reviewed_by_modeller": true,
+      "geometry_scale_or_input_pose_changed": false,
+      "checks": "artifact_checks.json",
+      "review_resolution_log": "review_resolutions.json",
+      "observed_issues": [
+        "Door/column/reception multi-view localization remains unresolved.",
+        "Far mirror-side physical enclosure remains unknown.",
+        "Native depth conflicts prevent simultaneous metric agreement across cameras.",
+        "Detailed foliage, weave, surface material and relief remain approximate."
+      ]
+    }
+  ],
+  "model_tokens": null,
+  "tool_call_count": null,
+  "accounting_note": "Three complete scene revisions and 15 actual tool-rendered checking images. Wall interval measured from initial access-log timestamp, including time awaiting clean review. Exact active model-token and tool-call counters unavailable.",
+  "elapsed_wall_seconds_since_initial_log_including_review_wait": 2586.407791
+}

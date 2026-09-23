@@ -1,0 +1,150 @@
+{
+  "condition": "Original capture RGB at20fixed uniformly spaced mapping views; target pose hidden, appearance observed during mapping. This tests known-scene image-goal navigation, not held-out-image generalization.",
+  "episodes": [
+    {
+      "query_id": 0,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.0001309690997004509,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 1,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.0001483219675719738,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 2,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00018078298307955265,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 3,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00014051585458219051,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 4,
+      "status": "success",
+      "selected_view_id": 162,
+      "planning_seconds": 0.00022507598623633385,
+      "goal_error_m": 0.015912444652160653
+    },
+    {
+      "query_id": 5,
+      "status": "success",
+      "selected_view_id": 48,
+      "planning_seconds": 0.0005637488793581724,
+      "goal_error_m": 0.015278025158832377
+    },
+    {
+      "query_id": 6,
+      "status": "collision",
+      "selected_view_id": 60,
+      "planning_seconds": 0.0009366860613226891,
+      "goal_error_m": 0.011809039116034311
+    },
+    {
+      "query_id": 7,
+      "status": "collision",
+      "selected_view_id": 60,
+      "planning_seconds": 0.0009381489362567663,
+      "goal_error_m": 0.011809039116034311
+    },
+    {
+      "query_id": 8,
+      "status": "success",
+      "selected_view_id": 72,
+      "planning_seconds": 0.0019194299820810556,
+      "goal_error_m": 0.007692294392703323
+    },
+    {
+      "query_id": 9,
+      "status": "success",
+      "selected_view_id": 84,
+      "planning_seconds": 0.0037343211006373167,
+      "goal_error_m": 0.005980966708229724
+    },
+    {
+      "query_id": 10,
+      "status": "success",
+      "selected_view_id": 96,
+      "planning_seconds": 0.004685634048655629,
+      "goal_error_m": 0.0059061430302654065
+    },
+    {
+      "query_id": 11,
+      "status": "collision",
+      "selected_view_id": 60,
+      "planning_seconds": 0.0009632869623601437,
+      "goal_error_m": 0.011809039116034311
+    },
+    {
+      "query_id": 12,
+      "status": "success",
+      "selected_view_id": 72,
+      "planning_seconds": 0.001791125861927867,
+      "goal_error_m": 0.007692294392703323
+    },
+    {
+      "query_id": 13,
+      "status": "collision",
+      "selected_view_id": 126,
+      "planning_seconds": 0.0017311018891632557,
+      "goal_error_m": 7.5227823253619155
+    },
+    {
+      "query_id": 14,
+      "status": "collision",
+      "selected_view_id": 132,
+      "planning_seconds": 0.36380085395649076,
+      "goal_error_m": 0.00645285044749637
+    },
+    {
+      "query_id": 15,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00014364183880388737,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 16,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00015354109928011894,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 17,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00015250896103680134,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 18,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00018232478760182858,
+      "goal_error_m": 0.01597204745541625
+    },
+    {
+      "query_id": 19,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00019092182628810406,
+      "goal_error_m": 0.01597204745541625
+    }
+  ],
+  "counts": {
+    "collision": 5,
+    "success": 15
+  },
+  "note": "success is flight arrival to retrieved candidate, not target photo pose success; separate evaluator required"
+}

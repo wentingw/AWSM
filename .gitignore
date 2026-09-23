@@ -1,0 +1,37 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*credentials*
+*.pem
+*.key
+.netrc
+.git-credentials
+# Environments, downloaded assets and generated output
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runtime/
+/vendor/
+assets/
+raw_data/
+logs/
+dist/
+build/
+.cache/
+*.blend
+*.blend1
+*.glb
+*.gltf
+*.mp4
+*.mov
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+*.zip
+*.tar*
+.DS_Store

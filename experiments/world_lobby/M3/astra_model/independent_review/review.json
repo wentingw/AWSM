@@ -1,0 +1,338 @@
+{
+  "reviewer": "independent clean M3 verifier",
+  "reviewed_utc": "2026-09-23T06:31:32.616579+00:00",
+  "revision": 2,
+  "verdict": "changes_requested_for_semantics_layout_and_metadata; input_geometry_conflicts_honestly_reported",
+  "no_GT_geometry_feedback": true,
+  "scope": {
+    "allowed": "contract, M3 packet and its RGB/depth/poses, current M3 astra_model artifacts",
+    "prohibited_inputs_read": [],
+    "other_methods_or_old_models_read": false,
+    "personally_viewed": [
+      "render_contact_r2.jpg",
+      "packet RGB frame 5 and check_r2_005.png side-by-side",
+      "packet RGB frame 60 and check_r2_060.png side-by-side",
+      "packet RGB frame 90 and check_r2_090.png side-by-side",
+      "packet RGB frame 105 and check_r2_105.png side-by-side",
+      "packet RGB frame 126 and check_r2_126.png side-by-side"
+    ],
+    "extra_CPU_renders": 0,
+    "model_mutations": false,
+    "writes": [
+      "independent_review/review.json",
+      "independent_review/review.md"
+    ],
+    "limitations": [
+      "Reviewed five current same-camera renders; did not claim all 180 RGB frames were visually inspected.",
+      "Input-access log declarations are not an independent filesystem-access audit.",
+      "The log lists camera_imu.json as explicitly authorized calibration outside the packet. This reviewer did not open it and cannot establish session authorization from the permitted files alone.",
+      "No GT evaluation, metric accuracy grade, camera optimization or scale fitting performed."
+    ]
+  },
+  "checks": {
+    "required_outputs_present": true,
+    "current_artifact_hashes_match_manifest": true,
+    "input_to_model_identity_in_manifest_plan_objects_cameras": true,
+    "exported_cameras": 175,
+    "camera_input_and_model_pose_max_abs_error": 0.0,
+    "floor_top_manifest_plan_collider_m": -2.5382169319971153,
+    "floor_top_objects_m": -2.538217067718506,
+    "floor_top_abs_difference_m": 1.357213905261112e-07,
+    "independently_reproduced_floor_modes_m": {
+      "5": -1.758441538371852,
+      "90": -2.718948091985757,
+      "105": -2.6571613706407007,
+      "126": -2.460996745048398
+    },
+    "floor_mode_reproduction_error": 0.0,
+    "depth_pose_rescaling_seen_in_reviewed_code": false,
+    "collision_bodies": 31,
+    "camera_centers_inside_hard_AABBs": 0,
+    "seat_solid_intersections": 5,
+    "scene_is_named_parametric_objects_not_fused_scan": true,
+    "budget_model_complete_revisions": 2,
+    "budget_model_checking_views": 10,
+    "five_unique_input_view_requirement_met": true
+  },
+  "accounting": {
+    "named_elements": 258,
+    "trim_elements": 195,
+    "non_trim_entries": 63,
+    "architectural_entities": 10,
+    "other_non_trim_entries": 53,
+    "category_counts": {
+      "floor": 1,
+      "ceiling": 1,
+      "window": 1,
+      "wall": 3,
+      "carpet": 1,
+      "trim": 195,
+      "door": 2,
+      "column": 2,
+      "reception_desk": 1,
+      "rectangular_planter": 3,
+      "coffee_table": 2,
+      "lounge_chair": 5,
+      "ottoman": 3,
+      "round_planter": 5,
+      "mirror": 10,
+      "pendant_light": 20,
+      "floor_lamp": 2,
+      "wall_panel": 1
+    },
+    "meaning": "Inventory only, not verified independent real-object instance count or object-coverage score. The 10 architectural entities are floor, ceiling, window wall, 3 walls, 2 doors and 2 columns."
+  },
+  "geometry_conflict_assessment": {
+    "status": "substantially_honest_and_reproducible",
+    "details": "Native floor modes, opposite-view planter disagreement and back-wall conflict are retained. The selected single floor and near-view compromises are disclosed rather than hidden by changing T, units or supplied poses. The depth inconsistency itself is not evidence that every render discrepancy is unavoidable: local semantic omissions and seat intersections remain separately repairable.",
+    "remaining": "No single coherent geometry is validated against all supplied depth windows. Keep unresolved alternatives, do not claim corrected metric reconstruction."
+  },
+  "findings": [
+    {
+      "id": "R01",
+      "priority": "P1",
+      "kind": "physical_layout",
+      "frames": [
+        5,
+        60,
+        90,
+        126
+      ],
+      "object_ids": [
+        "seat_middle_left_back",
+        "seat_middle_center",
+        "seat_middle_right_front",
+        "seat_middle_right_back",
+        "seat_front_left",
+        "seat_front_center",
+        "seat_front_right"
+      ],
+      "complaint": "Five pairs of generated seat cylinders physically intersect. This is established from the cylinder radii and overlapping height intervals in build_scene.py, not merely from conservative AABB overlap.",
+      "evidence": [
+        {
+          "pair": [
+            "seat_middle_left_back",
+            "seat_middle_center"
+          ],
+          "radial_penetration_m": 0.095464,
+          "vertical_overlap_m": 0.26875
+        },
+        {
+          "pair": [
+            "seat_middle_center",
+            "seat_middle_right_front"
+          ],
+          "radial_penetration_m": 0.020841,
+          "vertical_overlap_m": 0.2915
+        },
+        {
+          "pair": [
+            "seat_middle_right_front",
+            "seat_middle_right_back"
+          ],
+          "radial_penetration_m": 0.088846,
+          "vertical_overlap_m": 0.26875
+        },
+        {
+          "pair": [
+            "seat_front_left",
+            "seat_front_center"
+          ],
+          "radial_penetration_m": 0.106191,
+          "vertical_overlap_m": 0.27975
+        },
+        {
+          "pair": [
+            "seat_front_center",
+            "seat_front_right"
+          ],
+          "radial_penetration_m": 0.066428,
+          "vertical_overlap_m": 0.495
+        }
+      ],
+      "repair_level": "local_layout_revision",
+      "recommendation": "Resolve seat contacts by small, explicitly logged shape/placement changes within the uncertain furniture group; check the same RGB views. Re-export object bounds and colliders. Do not change packet poses or scale to hide the issue."
+    },
+    {
+      "id": "R02",
+      "priority": "P1",
+      "kind": "same_view_layout",
+      "frames": [
+        105,
+        126
+      ],
+      "object_ids": [
+        "glazed_door_-20.3",
+        "window_column_-18.8",
+        "reception"
+      ],
+      "complaint": "Frame105 original double door is near horizontal image center; model door is much farther right, beside a column that is also displaced. Frame126 shows the same mismatch in the near column/door/reception relationship. The reception fills more of the right render and lacks the observed angled front.",
+      "repair_level": "multi_view_localization_or_explicit_unresolved",
+      "recommendation": "Prioritize door/column/reception correspondences in 105 and 126 using only permitted RGB and supplied measurements. Preserve conflicting alternatives when a consistent localization cannot be established. This review supplies no target world coordinates.",
+      "already_logged": "Door mismatch in frame105 and general geometry conflict are acknowledged; the magnitude and linked column/reception relationship should be explicit."
+    },
+    {
+      "id": "R03",
+      "priority": "P1",
+      "kind": "semantic_shape",
+      "frames": [
+        105,
+        126
+      ],
+      "object_ids": [
+        "reception"
+      ],
+      "complaint": "The observed reception has a strongly folded, angular front and visible counter opening/top structure; the rendered model is nearly a plain tall rectangular prism. Parametric code introduces only small corner offsets and does not recover the visually identifying faceted silhouette.",
+      "repair_level": "local_geometry_revision",
+      "recommendation": "Model the visible front facets and counter top/opening from RGB as named parts of one reception object; retain inferred backsides separately. Distinguish this shape error from uncertain metric position."
+    },
+    {
+      "id": "R04",
+      "priority": "P1",
+      "kind": "semantic_accounting",
+      "frames": [],
+      "object_ids": [],
+      "complaint": "modelling_manifest.json and artifact_checks.json call all 258 entries semantic_objects. Of these, 195 are category trim (mullions, panel joints, door frames and ceiling slats). Only 63 entries remain after excluding trim; these still include architecture and individually enumerated fixtures. They are not 258 independently observed scene-object instances.",
+      "repair_level": "metadata_only",
+      "recommendation": "Report 258 named model elements, 195 trim/structural-detail elements, 10 architectural entities and 53 other non-trim entries. These are model inventory counts, not verified object detection/coverage scores. Group parts with explicit parent or part_of relations; any count of real instances requires separate evidence-based correspondence."
+    },
+    {
+      "id": "R05",
+      "priority": "P1",
+      "kind": "navigation_unknown_extent",
+      "frames": [
+        5,
+        60,
+        90,
+        105
+      ],
+      "object_ids": [
+        "mirror_wall",
+        "floor"
+      ],
+      "complaint": "The mirror-side wall is intentionally absent beyond x=-13.5 while the floor and some objects continue there. README correctly calls this unknown environment, but colliders.json exposes only floor/obstacle AABBs and has no machine-readable unknown-region boundary. A consumer using only colliders could interpret the open missing side as free space.",
+      "repair_level": "metadata_or_layout_layer",
+      "recommendation": "Represent unsupported enclosure/unknown space explicitly, or mark this collision layer as unsuitable for navigation beyond observed support. Do not invent a closure that contradicts the camera path.",
+      "already_logged": "The omission and its reason are clearly disclosed in README, manifest and wall provenance."
+    },
+    {
+      "id": "R06",
+      "priority": "P2",
+      "kind": "visible_semantic_omission",
+      "frames": [
+        5,
+        60,
+        126
+      ],
+      "object_ids": [
+        "table_middle",
+        "reception_wall_emblem"
+      ],
+      "complaint": "The small bowl on the middle coffee table is visible in original frames5 and60 and absent in the model. The reception wall has a white shield-like emblem plus a large dark U-shaped surrounding feature in frames5/126; the model retains only a small low-contrast rectangle and omits the surrounding feature.",
+      "repair_level": "local_semantic_addition",
+      "recommendation": "Add a table-bowl instance and the visibly supported emblem components, or explicitly list them as omitted. Keep the emblem parts grouped as one wall installation, not independent scene-object credit."
+    },
+    {
+      "id": "R07",
+      "priority": "P2",
+      "kind": "vegetation_semantics",
+      "frames": [
+        5,
+        60,
+        90,
+        126
+      ],
+      "object_ids": [
+        "planter_window_mid",
+        "planter_mirror",
+        "planter_front_tall",
+        "planter_center_left",
+        "planter_center_right"
+      ],
+      "complaint": "Several distinct vegetation forms become generic broad-leaf clumps or sparse round yellow leaves: window-side plant is fine grass-like foliage, mirror-side pot has fine bushy foliage, and frame60 tall planter has long upright leaves with an orange flower. This loses visible semantic distinctions even though containers are present.",
+      "repair_level": "local_geometry_revision",
+      "recommendation": "Use a small number of appropriate leaf/blade/branch primitives per planter. The tall planter should retain its visible flower/leaf silhouette. Do not count foliage primitives as object instances."
+    },
+    {
+      "id": "R08",
+      "priority": "P2",
+      "kind": "appearance_and_fixture_shape",
+      "frames": [
+        5,
+        60,
+        90,
+        105,
+        126
+      ],
+      "object_ids": [
+        "carpet_main",
+        "window_wall",
+        "pendant_light"
+      ],
+      "complaint": "Original dark floor inset has bright rectangular pattern and strong reflections; render looks like a matte dark carpet. The original pendant shades have open woven geometry, while the model has smooth closed gold dishes. Thin pale window mullions also understate the dark original frame. These are conspicuous in all reviewed views.",
+      "repair_level": "local_material_and_shape_revision",
+      "recommendation": "Keep floor material interpretation uncertain (category carpet is not established by RGB alone); improve visible pattern/specularity and pendant open-weave silhouette within budget. Record remaining simplifications.",
+      "already_logged": "Pendant weave and foliage simplification are acknowledged."
+    },
+    {
+      "id": "R09",
+      "priority": "P2",
+      "kind": "provenance_consistency",
+      "frames": [
+        5,
+        60,
+        90,
+        105,
+        126
+      ],
+      "object_ids": [
+        "ceiling",
+        "table_middle",
+        "seat_middle_left_front",
+        "seat_middle_left_back",
+        "seat_middle_center",
+        "seat_middle_right_front",
+        "seat_middle_right_back",
+        "planter_back_corner"
+      ],
+      "complaint": "Conflict handling is honest in prose and retains measurements, but several machine fields contradict that prose: table_middle has conflicting_input_preserved=false while its selection_rule explicitly says frame5 depth conflicts; central-seat rules state low confidence but confidence remains medium. Ceiling provenance repeats the floor-median regularization text.",
+      "repair_level": "metadata_only",
+      "recommendation": "Define conflict-flag semantics, use an explicit conflict_present field, align confidence with the stated uncertainty, and describe the actual ceiling selection rule. Keep all retained native measurements."
+    },
+    {
+      "id": "R10",
+      "priority": "P2",
+      "kind": "scene_relations",
+      "frames": [],
+      "object_ids": [],
+      "complaint": "All 258 objects have only inside -> lobby, but lobby is not an exported semantic entity. There are no part_of, supported_by or furniture-group relations despite the substantial component inventory.",
+      "repair_level": "metadata_only",
+      "recommendation": "Declare a lobby scene root and meaningful part_of/support/group relations without inflating object counts. Ensure every relation target resolves."
+    },
+    {
+      "id": "R11",
+      "priority": "P2",
+      "kind": "collision_coverage",
+      "frames": [
+        5,
+        60
+      ],
+      "object_ids": [
+        "floor_lamp_0",
+        "floor_lamp_1"
+      ],
+      "complaint": "Each floor lamp has a 0.55 m diameter shade but only a 0.25 by 0.25 m collider over the whole height. Thus the global claim of conservative AABB hard bodies does not cover the complete visible lamp.",
+      "repair_level": "collider_or_metadata_only",
+      "recommendation": "Use separate base/stand/shade colliders or declare shade exclusion explicitly; do not call the current full lamp collider conservative."
+    }
+  ],
+  "freeze_guidance": "Fix R01 and simple metadata inconsistencies before calling the model physically coherent. If no revision budget remains, freeze with these failures explicitly unresolved; do not report a completed accurate world model or 258 verified semantic instances.",
+  "reviewed_artifact_sha256": {
+    "scene.blend": "10ff45269c4ad855e0a5a1dff68a5b140914d9ca02b1469f5b54a03b14a036d1",
+    "scene.glb": "43bfa5d580e8c5152cca0852f895e7676001edfd37fdda8160d1b31965bec04a",
+    "objects.json": "f040111310787da02d6829d1eb178f5c1cc1cebdd384c3127e82625ec8840765",
+    "colliders.json": "819e1e5c028ee531f10919db5823e05865b51a6c03982821c3e54455f1840f24",
+    "geometry_plan.json": "7383f547116217bad3f7c43118d394b9b9cc176bfe4ae26152364405fa221077",
+    "render_contact_r2.jpg": "ac8b85e6b23836ab95901f542e62f1518ad3168cadc3416169bbdfd7a1986647"
+  }
+}

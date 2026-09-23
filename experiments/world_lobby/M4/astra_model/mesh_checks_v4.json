@@ -1,0 +1,25 @@
+{
+  "backrest_meshes": [
+    {
+      "mesh": "Curved padded backrest",
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.048998690864193006
+    },
+    {
+      "mesh": "Curved padded backrest.001",
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0502549704535204
+    },
+    {
+      "mesh": "Curved padded backrest.002",
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.038947658467088364
+    },
+    {
+      "mesh": "Curved padded backrest.003",
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.042716801505519986
+    }
+  ],
+  "all_manifold_positive_volume": true
+}

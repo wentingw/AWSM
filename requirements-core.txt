@@ -1,0 +1,4 @@
+# Versions observed in the evaluated reconstruction environment.
+# Only portable pose/depth/geometry helpers; not the entire experiment stack.
+numpy==2.2.5
+scipy==1.15.3

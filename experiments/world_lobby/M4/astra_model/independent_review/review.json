@@ -1,0 +1,293 @@
+{
+  "review_role": "independent clean visual/contract verifier, not a GT evaluator",
+  "method_id": "M4",
+  "reviewed_revision": 2,
+  "status": "changes_requested",
+  "reviewed_utc": "2026-09-23T06:26:29.286679+00:00",
+  "evidence_boundary": {
+    "read": [
+      "configs/astra_modelling_contract.md",
+      "data/packets/M4/packet.json",
+      "packet-listed RGB and geometry files",
+      "current files inside experiments/world_lobby/M4/astra_model/"
+    ],
+    "forbidden_sources_opened": false,
+    "old_models_or_other_methods_opened": false,
+    "ground_truth_geometry_known": false,
+    "note": "GT camera poses are permitted packet input; they were used only as the supplied cameras. Directory listing exposed revision1 filenames, but no revision1 model/source/image was opened. The current iteration log mentions previous revisions."
+  },
+  "personally_viewed": [
+    "comparison_v2.jpg",
+    "packet RGB frames0,60,90,108,138",
+    "renders_v2/frame_000.png",
+    "renders_v2/frame_060.png",
+    "renders_v2/frame_090.png",
+    "renders_v2/frame_108.png",
+    "renders_v2/frame_138.png"
+  ],
+  "new_cpu_renders": 0,
+  "model_modified": false,
+  "overall": "Recognizable semantic lobby with correct broad zoning, major wall/mirror/column/seating categories and a sound camera/export metadata interface. Needs another targeted revision for near furniture completeness/placement, chair end caps, right-edge plant visibility and cross-view ceiling/opening layout. This does not establish metric reconstruction accuracy.",
+  "audit": {
+    "required_artifacts_all_present_nonempty": true,
+    "semantic_object_count": 74,
+    "unique_semantic_object_ids": 74,
+    "all_required_object_fields_present": true,
+    "finite_ordered_2x3_object_bounds": true,
+    "collider_count": 35,
+    "all_collider_ids_resolve_to_objects": true,
+    "all_collider_bounds_equal_object_bounds": true,
+    "floor_role_present": true,
+    "floor_role_object_id": "floor_stone",
+    "collision_model": "static AABB proxies; not an exact mesh or demonstrated dynamic simulation",
+    "foliage_and_curved_empty_space_enclosed": "explicitly disclosed",
+    "camera_count": 180,
+    "camera_intrinsics_and_c2w_equal_packet_geometry_all180": true,
+    "camera_image_sizes_equal_packet_depth_sizes_all180": true,
+    "input_hashes_independently_verified": {
+      "rgb": 180,
+      "geometry": 180,
+      "mismatches": 0
+    },
+    "coordinate_interface": {
+      "units": "m",
+      "T_input_model": "identity4x4",
+      "world_up": [
+        0,
+        0,
+        1
+      ],
+      "glb_yup_export": false,
+      "camera_conversion": "T_cv @ diag(1,-1,-1,1)"
+    },
+    "glb_header_length_valid": true,
+    "glb_semantic_roots": 74,
+    "glb_missing_semantic_ids": [],
+    "glb_nodes": 4457,
+    "glb_meshes": 4203,
+    "input_access_log_entries_checked": 1051,
+    "declared_access_entries_outside_allowed_inputs_or_run_dir": 0,
+    "access_log_caveat": "Checks declared records, not an independent system trace.",
+    "unsubstantiated_physics_or_accuracy_claims": "No calibrated friction/restitution or quantitative fidelity claim found. Collider parameters explicitly say assumed generic/not measured. Gravity is a conventional configured value, not a measured quantity. Heuristic uncertainty labels should be clarified.",
+    "budget_record": {
+      "revisions_used": 2,
+      "revision_limit": 5,
+      "checking_views_used_before_review": 10,
+      "checking_view_limit": 60,
+      "review_additional_views": 0,
+      "model_token_usage": "not exposed, honestly declared"
+    },
+    "checks_not_performed": [
+      "No GT or external reference evaluation",
+      "No dynamic collision simulation",
+      "No new Blender render",
+      "No direct BLEND geometry reevaluation; inspected current build source, exported metadata, GLB structure and existing rendered output"
+    ]
+  },
+  "findings": [
+    {
+      "id": "M4-R01",
+      "priority": "P1",
+      "kind": "semantic_completeness",
+      "frames": [
+        60
+      ],
+      "object_ids": [
+        "lounge_seat_5",
+        "lounge_seat_6",
+        "lounge_seat_7",
+        "missing_foreground_ottoman"
+      ],
+      "observation": "Allowed RGB frame60 shows four separate near-group seating pieces: a left ottoman, two backed chairs, and another round ottoman cut by the bottom edge. The current group has only three semantic objects and the bottom-edge ottoman is absent.",
+      "confidence": "high",
+      "requested_action": "Inspect adjacent permitted views to locate and add the missing foreground ottoman; record its evidence and inferred underside. Preserve the existing supplied camera frame."
+    },
+    {
+      "id": "M4-R02",
+      "priority": "P1",
+      "kind": "mesh_visibility",
+      "frames": [
+        0,
+        60,
+        138
+      ],
+      "object_ids": [
+        "lounge_seat_5",
+        "lounge_seat_7"
+      ],
+      "observation": "Near chairs have solid black wedge/crescent patches at the backrest ends and seat junctions. The RGB has continuous upholstered surfaces there. In build_scene.py the two backrest end caps use the same radial/bottom-to-top winding; the final end cap therefore opposes the expected outward orientation. Bevel interaction may contribute.",
+      "confidence": "high for visible defect; high for inconsistent end-cap winding; exact rendered causal contribution untested",
+      "requested_action": "Reverse the final backrest end-cap winding, check manifold orientation and bevel intersections, then inspect frames60/138. Treat this as a geometry/normal defect before changing the material."
+    },
+    {
+      "id": "M4-R03",
+      "priority": "P1",
+      "kind": "layout_and_projected_size",
+      "frames": [
+        0,
+        60,
+        138
+      ],
+      "object_ids": [
+        "lounge_seat_5",
+        "lounge_seat_6",
+        "lounge_seat_7",
+        "coffee_table_1"
+      ],
+      "observation": "The near furniture occupies too much of the foreground and has different overlaps. In frame0 the rendered near chair/ottoman extend farther upward and dominate the lower-right corner; in frame138 the table and chair are much more strongly cropped than their RGB counterparts. In frame60 the near tabletop and seats appear wider and bulkier. The far seating group is a closer match.",
+      "confidence": "high for projected mismatch; medium for whether placement or dimensions dominate",
+      "requested_action": "Refit near-group centers and radii jointly against silhouettes in frames0/60/138 using the existing calibrated rays. Check actual silhouettes and inter-object occlusion, not just one center point. Keep metric uncertainties explicit and do not apply a global scale correction."
+    },
+    {
+      "id": "M4-R04",
+      "priority": "P1",
+      "kind": "object_visibility_and_layout",
+      "frames": [
+        60,
+        90
+      ],
+      "object_ids": [
+        "tropical_front_0"
+      ],
+      "observation": "The tall bird-of-paradise planter is a prominent right-edge object in RGB frame60 but is entirely absent from the render. Projecting its exported AABB with the verified frame60 camera gives x=551.6..736.9 at width518, wholly beyond the right edge. It exists in the reverse-view model, so this is a placement/extent issue rather than a missing category.",
+      "confidence": "high",
+      "requested_action": "Reconcile tropical_front_0 placement and plant/container silhouette using frame60 plus adjacent/reverse permitted RGB views. Restore its right-edge visibility without moving the input camera."
+    },
+    {
+      "id": "M4-R05",
+      "priority": "P2",
+      "kind": "ceiling_layout_and_size",
+      "frames": [
+        0,
+        60,
+        90,
+        108,
+        138
+      ],
+      "object_ids": [
+        "pendant_00..pendant_13",
+        "pendant_front_00",
+        "pendant_front_02",
+        "pendant_front_04",
+        "pendant_reverse_0",
+        "pendant_reverse_2",
+        "pendant_reverse_6"
+      ],
+      "observation": "Pendant projected centers, overlap and apparent diameters remain visibly inconsistent across the five views. Frame108 RGB contains several broad overlapping foreground bowls, whereas the model has a different set of smaller/lower-looking bowls and greater empty gaps. Frame60 has extra clustered fixtures toward the upper left and different isolated bowl positions. This is apparent before evaluating wicker detail or brightness.",
+      "confidence": "high for screen-space mismatch; individual correspondence and true 3D position remain uncertain",
+      "requested_action": "Prioritize a few unambiguous multi-view pendant correspondences, with explicit accepted/rejected matches. Verify the same fixtures in both forward and reverse views and retain unresolved identity/height uncertainty rather than adding fixtures from a single view alone."
+    },
+    {
+      "id": "M4-R06",
+      "priority": "P2",
+      "kind": "opening_layout_and_silhouette",
+      "frames": [
+        108
+      ],
+      "object_ids": [
+        "glazed_double_door_0",
+        "glazed_double_door_1",
+        "curtain_wall"
+      ],
+      "observation": "The main door has noticeably narrower projected frame/stiles than RGB. The model also shows part of another brass door on the extreme left of frame108, where the RGB shows plain glazing. Current door0 AABB projects to x=-56.8..31.3, explaining that additional visible edge.",
+      "confidence": "high for visible mismatch; medium for exact dimensional correction",
+      "requested_action": "Recheck both door centers and widths against permitted views, including the main door silhouette at108 and the second door in other views. Increase stile/rail silhouette only as supported by RGB; verify door0 should lie outside this view or change its position accordingly."
+    },
+    {
+      "id": "M4-R07",
+      "priority": "P3",
+      "kind": "collision_contact_surface",
+      "frames": [],
+      "object_ids": [
+        "floor_stone",
+        "floor_dark_inset"
+      ],
+      "observation": "The role=floor collider is present and valid, but its top is z=0.025m, while visible floor_dark_inset reaches about z=0.041m and has no collider. Therefore a generic contact consumer will place objects about16mm below that visible finish unless it handles this offset.",
+      "confidence": "high; numerical metadata check",
+      "requested_action": "Either include the visible finish in the collision floor surface or document the 16mm render-versus-contact offset explicitly. This is a contact-interface limitation, not a failed dynamic-physics test."
+    },
+    {
+      "id": "M4-R08",
+      "priority": "P3",
+      "kind": "semantic_metadata_and_uncertainty",
+      "frames": [],
+      "object_ids": [
+        "coffee_table_0",
+        "coffee_table_1",
+        "round_wall_mirror_0..9",
+        "pendant lights",
+        "potted plants"
+      ],
+      "observation": "All74 records contain required fields, but only10 have nonempty spatial_relations and most geometry_provenance text is generic. Important obvious support/mounting relations are absent. Numeric uncertainty values0.12/0.2/0.6m have no calibration or estimation method attached. The manifest correctly avoids a quantitative fidelity claim.",
+      "confidence": "high",
+      "requested_action": "Add supported_by/mounted_on/suspended_from relations where observed, and label uncertainty numbers as heuristic author estimates unless an estimation method is supplied. Where feasible link measured objects to the specific source measurement record, not only a frame list."
+    },
+    {
+      "id": "M4-R09",
+      "priority": "P3",
+      "kind": "appearance_after_geometry",
+      "frames": [
+        0,
+        60,
+        90,
+        108,
+        138
+      ],
+      "object_ids": [
+        "floor_dark_inset",
+        "coffee_table_1",
+        "pendant lights",
+        "lounge seats"
+      ],
+      "observation": "The model floor and tabletop have blurred broad reflections, the RGB floor has crisp gold pattern and concentrated light reflections, and the chair fabric is flatter/brighter. Pendant central white discs are much more prominent in the render. These are secondary to the layout, completeness and chair mesh problems above.",
+      "confidence": "high",
+      "requested_action": "After geometry fixes, tune roughness, light/diffuser appearance and upholstery microstructure from permitted RGB; keep all inferred material/light properties identified as such."
+    }
+  ],
+  "recommended_next_revision_order": [
+    "M4-R01",
+    "M4-R02",
+    "M4-R04",
+    "M4-R03",
+    "M4-R06",
+    "M4-R05"
+  ],
+  "reviewed_artifact_snapshot": {
+    "scene.blend": {
+      "bytes": 2245189,
+      "sha256": "dca0529f999ab78a77350f9fcc1d20393e701e53a92b4ee4db02ffe7da9fa1b7"
+    },
+    "scene.glb": {
+      "bytes": 17642980,
+      "sha256": "c9d165e14a6a5cbe30ededa5852858c0b256a601f19f5947d08e34b48c8e5ec4"
+    },
+    "build_scene.py": {
+      "bytes": 25579,
+      "sha256": "fbde7c9b778bc8e985efd80900d755af0ae784fea81139670ebbe41051a8f07b"
+    },
+    "objects.json": {
+      "bytes": 81383,
+      "sha256": "40b84591b100c00ef3eaf3e6f683118044d9ba6ab857d9aa08f3bf3d1ac13f97"
+    },
+    "colliders.json": {
+      "bytes": 17812,
+      "sha256": "c6dc8ef87dab81fd22c42c1f5c2abdc910a3cd8062179a52cf6e18713984eb61"
+    },
+    "cameras.json": {
+      "bytes": 169518,
+      "sha256": "9e0495ed2a48db96da4d06518b3a6e891aa707e39953457856971aa4162a5868"
+    },
+    "input_access_log.json": {
+      "bytes": 313321,
+      "sha256": "316034ccefaa0c3fbd0af721b4b84d63c36016bddbd9e9b961ee02b2981f50aa"
+    },
+    "iteration_log.json": {
+      "bytes": 3108,
+      "sha256": "cb1c8f726cb27f5f16bcbe73b106614f118f15c76bb6f41de9645ce38fee240d"
+    },
+    "modelling_manifest.json": {
+      "bytes": 6268,
+      "sha256": "d5ebd25b6eaf863265a406b42a276941c2fb22246a6c27209bda6349703cf948"
+    }
+  }
+}

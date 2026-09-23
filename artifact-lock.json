@@ -1,0 +1,66 @@
+{
+  "schema": "sceneweft.artifact-lock.v1",
+  "blog": "https://wentingw.github.io/astra-world-model-blog/",
+  "dataset": "Ooliva/astra-world-model-blog",
+  "repo_type": "dataset",
+  "revision": "241d313a264a3353bcb87f9fde30f7ef8a6f5bce",
+  "manifest_sha256": "eaf8594a8792d641e9b56df73156481fbfd6d5b1db750a21fea2ea17985dbe87",
+  "models": [
+    {
+      "method": "M1",
+      "source": "/home/hchen/Documents/astraBlenderTest/visual-recon/scene.blend",
+      "destination": "M1/scene.blend",
+      "bytes": 5131817,
+      "sha256": "fd2ff0bc5cbc1efd47457410cd6474c9718422cccd0b60a8fb7c36e2f01c641b"
+    },
+    {
+      "method": "M1",
+      "source": "/home/hchen/Documents/astraBlenderTest/visual-recon/scene.glb",
+      "destination": "M1/scene.glb",
+      "bytes": 25820752,
+      "sha256": "79b88cbb656c7b60b4106fa220297632f1c7bad2a5d0e13088133114d6b79d33"
+    },
+    {
+      "method": "M2",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M2/astra_model/scene.blend",
+      "destination": "M2/scene.blend",
+      "bytes": 1120578,
+      "sha256": "f84b9e3f8c42b72c3b593a2edd31cc41ecc20a2643350c99868db09dd6ef88a9"
+    },
+    {
+      "method": "M2",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M2/astra_model/scene.glb",
+      "destination": "M2/scene.glb",
+      "bytes": 9484540,
+      "sha256": "054fdce263a6274050d2f834cbc701b11ce3d93b16318b1ac1cb6593491b7d1e"
+    },
+    {
+      "method": "M3",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model/scene.blend",
+      "destination": "M3/scene.blend",
+      "bytes": 2613568,
+      "sha256": "b7e77eb87584f2590279f8cf7a0ce63429b930e6a37f096033889dcb489cd998"
+    },
+    {
+      "method": "M3",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model/scene.glb",
+      "destination": "M3/scene.glb",
+      "bytes": 20452740,
+      "sha256": "fa8e22f36f7f4aecf9f152b87e003816fac7d3f25080e9a3ddf51f24432b63d9"
+    },
+    {
+      "method": "M4",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model/scene.blend",
+      "destination": "M4/scene.blend",
+      "bytes": 2268620,
+      "sha256": "cc6cb605246a255d94e36b9dc3f8b91d5a292b047470bc0ff75b8a5c404b0cfe"
+    },
+    {
+      "method": "M4",
+      "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model/scene.glb",
+      "destination": "M4/scene.glb",
+      "bytes": 17202608,
+      "sha256": "716e4b89b7b11ad8a0cb0e238b366b4f5dc80e3a2c3cddb5eedc469ef4e63774"
+    }
+  ]
+}

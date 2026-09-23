@@ -1,0 +1,396 @@
+{
+  "lamps": [
+    {
+      "id": "pendant_00",
+      "center": [
+        14.399358654495698,
+        22.885308624466525,
+        3.8132945314125286
+      ],
+      "radius": 0.47698639123668585,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_01",
+      "center": [
+        15.878898605420305,
+        22.871184710626498,
+        3.779297991940916
+      ],
+      "radius": 0.4596879317911444,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_02",
+      "center": [
+        17.054324109288174,
+        23.227153923477978,
+        3.6243100147302925
+      ],
+      "radius": 0.45,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_03",
+      "center": [
+        17.394204528532118,
+        22.250961549227352,
+        3.6253403452653785
+      ],
+      "radius": 0.45,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_04",
+      "center": [
+        21.653479534592435,
+        23.041318378509096,
+        3.531540864534413
+      ],
+      "radius": 0.45814282726587763,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_05",
+      "center": [
+        20.18264706295526,
+        21.98765522694373,
+        3.6799231807861617
+      ],
+      "radius": 0.4545690170940375,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_06",
+      "center": [
+        22.654114434483596,
+        21.73891324572228,
+        3.4694949923570872
+      ],
+      "radius": 0.45056096712894345,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_07",
+      "center": [
+        21.13763994082442,
+        21.21109655729052,
+        3.6453260340977076
+      ],
+      "radius": 0.4792017085674054,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_08",
+      "center": [
+        21.783629517635944,
+        20.110898018513385,
+        3.4325413560294398
+      ],
+      "radius": 0.4643414600141895,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_09",
+      "center": [
+        18.87070035868797,
+        20.022415850216383,
+        3.5945538817965863
+      ],
+      "radius": 0.5282635034859631,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_10",
+      "center": [
+        17.467563103577675,
+        20.9595669085321,
+        3.530784340624621
+      ],
+      "radius": 0.6776723765435406,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_11",
+      "center": [
+        18.05359148846043,
+        21.101180939484696,
+        3.98374884498375
+      ],
+      "radius": 0.6376005307817181,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_12",
+      "center": [
+        16.002004579918363,
+        20.742312638932887,
+        3.7713805960750797
+      ],
+      "radius": 0.646158338550638,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_13",
+      "center": [
+        13.95572227459082,
+        19.627326952915798,
+        3.3586413148811136
+      ],
+      "radius": 0.6808030429323644,
+      "evidence": [
+        0,
+        126,
+        138
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius; weak multiview suspension height"
+    },
+    {
+      "id": "pendant_front_00",
+      "center": [
+        15.540061155692735,
+        19.408923572331467,
+        3.5019401546320243
+      ],
+      "radius": 0.6098876476229356,
+      "evidence": [
+        90
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius"
+    },
+    {
+      "id": "pendant_front_02",
+      "center": [
+        13.503453726942084,
+        21.4111474207432,
+        3.7753544602405933
+      ],
+      "radius": 0.6098668059013223,
+      "evidence": [
+        90
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius"
+    },
+    {
+      "id": "pendant_front_04",
+      "center": [
+        12.495273434448254,
+        23.00529336956663,
+        4.2245196583907765
+      ],
+      "radius": 0.6098644960285662,
+      "evidence": [
+        90
+      ],
+      "provenance": "input depth anchor with RGB silhouette radius"
+    }
+  ],
+  "room": {
+    "xmin": 9.0,
+    "xmax": 26.8,
+    "ymin": 15.55,
+    "ymax": 25.8,
+    "wall_south_near_y": 18.1,
+    "wall_return_x": 18.55,
+    "floor_z": 0.025,
+    "ceiling_z": 5.0
+  },
+  "measurement_rule": "No depth rescaling. Local close depth and RGB triangulation reconciliation; geometric uncertainty explicitly retained.",
+  "mirrors": [
+    {
+      "center": [
+        13.974696589914776,
+        18.1299991607666,
+        1.5131753652772713
+      ],
+      "radius": 0.6881317201480737,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        12.607409501776859,
+        18.1299991607666,
+        1.064023332233066
+      ],
+      "radius": 0.7219266197484749,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        11.895025890213102,
+        18.1299991607666,
+        1.7708110642673123
+      ],
+      "radius": 0.5202115985444997,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        12.450939130824388,
+        18.1299991607666,
+        2.279111465746748
+      ],
+      "radius": 0.37722243152825774,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        14.938250042911413,
+        18.1299991607666,
+        1.9020334124375085
+      ],
+      "radius": 0.34851656548588283,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        15.132915383162118,
+        18.1299991607666,
+        1.3198855792024557
+      ],
+      "radius": 0.22719265350059387,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        14.89518261055423,
+        18.1299991607666,
+        0.8217864772674686
+      ],
+      "radius": 0.36303061578359136,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        13.42517747777345,
+        18.1299991607666,
+        0.6621178444226068
+      ],
+      "radius": 0.21410153737676033,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        11.855490561884167,
+        18.1299991607666,
+        1.0294559005408588
+      ],
+      "radius": 0.22268296680078187,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "center": [
+        13.011647844037952,
+        18.1299991607666,
+        1.8449227403633668
+      ],
+      "radius": 0.3285757085627111,
+      "evidence": [
+        60,
+        70,
+        80
+      ]
+    }
+  ]
+}

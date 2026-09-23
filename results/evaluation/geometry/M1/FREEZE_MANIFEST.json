@@ -1,0 +1,30 @@
+{
+  "protocol": "triangle_surface_bvh_v1",
+  "inputs": {
+    "/home/hchen/Documents/astraBlenderTest/visual-recon/scene.blend": "fd2ff0bc5cbc1efd47457410cd6474c9718422cccd0b60a8fb7c36e2f01c641b",
+    "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/lobby.usda": "3ed27cf61d84b6b61036a9079631624060186af1d57f23b790005f1f33c7bf20",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/render_manifest.json": "b4c99abc1761623f3448832a7a2b75d3f2cf1f767b4ca33b7d50b4ea51b482ec"
+  },
+  "outputs": {
+    "surface_metrics.json": "086f1c538d0a1bef6fd9ad7ae96c2801b6c5f8c6d23360b580d72905a6607d84",
+    "surface_distances.npz": "65c7ff4ec4b9e119ef2cf30048fc0b629f55e2aa79cb4fb78dfe994f8853635e"
+  },
+  "checks": {
+    "gt_triangle_count": 9984967,
+    "gt_bounds_m": [
+      [
+        -0.23679990555501718,
+        -1.8155378604409123,
+        -0.3100000023841858
+      ],
+      [
+        35.79372663284994,
+        25.925798831117163,
+        6.001999218016863
+      ]
+    ],
+    "model_to_gt_chamfer_m": 3.889946180646779,
+    "no_gt_model_object_contamination": true,
+    "distance_unit": "metres"
+  }
+}

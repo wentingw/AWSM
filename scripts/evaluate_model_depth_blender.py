@@ -1,0 +1,17 @@
+"""Render optical-Z geometry at fixed GT cameras via exact triangle raycasts."""
+import argparse,json,sys,time
+from pathlib import Path
+import bpy,numpy as np
+from mathutils import Quaternion,Vector
+from mathutils.bvhtree import BVHTree
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'scripts'));from evaluate_blend_surface_blender import collect
+sys.path.insert(0,str(ROOT/'src/evaluation'));from depth import depth_metrics
+args=sys.argv[sys.argv.index('--')+1:];p=argparse.ArgumentParser();p.add_argument('--model',required=True);p.add_argument('--transform',required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args(args);d=json.load(open(a.transform));T=np.asarray(d.get('transform',d.get('T_gt_model')));a.out.mkdir(parents=True,exist_ok=True);bpy.ops.wm.open_mainfile(filepath=a.model);v,f=collect([o for o in bpy.context.scene.objects if o.type=='MESH'],T);bvh=BVHTree.FromPolygons(v,f,all_triangles=True);z=np.load(ROOT/'results/ground_truth/gt_depth_mapping_180.npz');truth=z['truth_z_m'];uv=z['pixel_uv'];poses=np.loadtxt(ROOT/'results/ground_truth/mapping_gt_tum.txt');rays=np.column_stack([(uv[:,0]-640)/762.8,(uv[:,1]-480)/762.8,np.ones(len(uv))]);norm=np.linalg.norm(rays,axis=1);unit=rays/norm[:,None];pred=np.full(truth.shape,np.nan,np.float32);domain=np.isfinite(truth)&(truth>=.1)&(truth<=30);frames=[];start=time.monotonic()
+for i,row in enumerate(poses):
+ R=np.asarray(Quaternion(tuple(row[[7,4,5,6]])).to_matrix());directions=unit@R.T;origin=Vector(row[1:4])
+ for j,ray in enumerate(directions):
+  hit=bvh.ray_cast(origin,Vector(ray),50)
+  if hit[0] is not None:pred[i,j]=hit[3]/norm[j]
+ frames.append({'keyframe_index':i,**depth_metrics(pred[i],truth[i],domain[i],30)})
+ if i%30==0:print('MODEL_DEPTH',i,time.monotonic()-start,flush=True)
+np.savez_compressed(a.out/'model_depth_samples.npz',predicted_z_m=pred,pixel_uv=uv);report={'scope':'frozen reconstructed model optical-Z at GT mapping poses; distinct from native frontend depth','alignment':str(a.transform),'rays':int(pred.size),'all180':depth_metrics(pred,truth,domain,30),'common175':depth_metrics(pred[5:],truth[5:],domain[5:],30),'per_frame':frames,'seconds':time.monotonic()-start};(a.out/'model_depth_metrics.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='per_frame'}))

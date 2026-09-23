@@ -1,0 +1,51 @@
+{
+  "method_id": "M4",
+  "model_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model/scene.blend",
+  "model_sha256": "cc6cb605246a255d94e36b9dc3f8b91d5a292b047470bc0ff75b8a5c404b0cfe",
+  "T_gt_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment": "GT_from_input @ inverse(model_from_input); single native SE3 mapping registration; M4 identity gauge",
+  "truth_pose_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/mapping_gt_tum.txt",
+  "render_indices": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "output": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M4/renders",
+  "K": [
+    762.8,
+    762.8,
+    640,
+    480
+  ],
+  "source_resolution": [
+    1280,
+    960
+  ]
+}

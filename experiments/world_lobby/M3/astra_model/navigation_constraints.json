@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "coordinate_frame": "native OpenVINS, Z up",
+  "T_input_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "known_navigation_bounds": [
+    [
+      -23.2,
+      -4.05,
+      -2.5382169319971153
+    ],
+    [
+      0.1,
+      4.65,
+      3.4397291394767393
+    ]
+  ],
+  "unknown_regions": [
+    {
+      "region_id": "unknown_mirror_side_continuation",
+      "bounds": [
+        [
+          -24.3,
+          4.65,
+          -2.5382169319971153
+        ],
+        [
+          -13.5,
+          8.15,
+          3.7897291394767394
+        ]
+      ],
+      "classification": "unknown",
+      "reason": "Unsupported mirror-wall continuation; visible floor does not establish enclosure or safe egress.",
+      "planning_policy": "blocked",
+      "physical_obstacle": false,
+      "evidence_frame_ids": [
+        60,
+        90,
+        105,
+        126
+      ]
+    }
+  ],
+  "vegetation_keepouts": [
+    {
+      "object_id": "planter_center_left",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -13.227224349975586,
+          -2.6841485500335693,
+          -2.538217067718506
+        ],
+        [
+          -12.030671119689941,
+          -0.1743742674589157,
+          -0.4085254967212677
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_center_right",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -13.239754676818848,
+          0.02940792590379715,
+          -2.538217067718506
+        ],
+        [
+          -12.149999618530273,
+          3.1090071201324463,
+          -0.4160715639591217
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_window_mid",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -10.955132484436035,
+          -3.7572853565216064,
+          -2.5622169971466064
+        ],
+        [
+          -9.010711669921875,
+          -1.8578035831451416,
+          -0.9334290027618408
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_mirror",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -7.533853530883789,
+          3.514634609222412,
+          -2.5694169998168945
+        ],
+        [
+          -6.250656604766846,
+          4.752728462219238,
+          -0.9950536489486694
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_front_tall",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -1.7574342489242554,
+          1.7985947132110596,
+          -2.538217067718506
+        ],
+        [
+          -0.7020851373672485,
+          2.831585645675659,
+          0.5035409331321716
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_back_left",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -22.639677047729492,
+          -2.529937505722046,
+          -2.567016839981079
+        ],
+        [
+          -21.47052574157715,
+          -1.3838927745819092,
+          0.003958649002015591
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_back_right",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -22.62348175048828,
+          2.4566006660461426,
+          -2.567016839981079
+        ],
+        [
+          -21.46536636352539,
+          3.5653154850006104,
+          0.0025081103667616844
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    },
+    {
+      "object_id": "planter_back_corner",
+      "role": "vegetation_keepout",
+      "bounds": [
+        [
+          -22.687068939208984,
+          5.664378643035889,
+          -2.5574169158935547
+        ],
+        [
+          -21.335920333862305,
+          6.949098110198975,
+          -1.115443468093872
+        ]
+      ],
+      "physical_obstacle": false,
+      "planning_policy": "blocked",
+      "reason": "Plant silhouette is a conservative planning exclusion; foliage is not a rigid collider."
+    }
+  ],
+  "outside_known_bounds_policy": "unknown_blocked",
+  "unknown_regions_are_physical_colliders": false,
+  "required_margin_m": 0.15,
+  "inflate_by_agent_extent": true,
+  "physical_collision_layer_alone_is_sufficient": false,
+  "limitations": "Model-space simulation domain only. Metric input conflicts remain; this is not a validated real-world navigation map."
+}

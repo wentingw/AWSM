@@ -1,0 +1,96 @@
+{
+  "status": "frozen_for_independent_GT_evaluation",
+  "frozen_utc": "2026-09-23T06:54:43.523701+00:00",
+  "revision": 5,
+  "freeze_scope": "Final scene and supporting contract/validation artifacts; no GT seen before freeze",
+  "files": {
+    "scene.blend": {
+      "sha256": "f84b9e3f8c42b72c3b593a2edd31cc41ecc20a2643350c99868db09dd6ef88a9",
+      "bytes": 1120578
+    },
+    "scene.glb": {
+      "sha256": "054fdce263a6274050d2f834cbc701b11ce3d93b16318b1ac1cb6593491b7d1e",
+      "bytes": 9484540
+    },
+    "build_scene.py": {
+      "sha256": "cfe7aa2bc90cf7f85eea63833a22572dfe9966a65153492f5c638ddf57a82ce6",
+      "bytes": 25968
+    },
+    "objects.json": {
+      "sha256": "8282ce5ab73f7d5e8bf040f2be5dcdf1e7e4b7643ec6341da347bc6907c11967",
+      "bytes": 166120
+    },
+    "colliders.json": {
+      "sha256": "7bbbdac783c04f68cd70aa6a2c0e9aa16b3a8ff7d5810a1b17e657b40405d648",
+      "bytes": 33923
+    },
+    "cameras.json": {
+      "sha256": "c0e5c6a33947286fd6c5b855d7c250a0cbc131b1c370e8d432d6ee7f34f38490",
+      "bytes": 298311
+    },
+    "input_access_log.json": {
+      "sha256": "c44b57680aa05802dcefc467b582851b6092f36e73d3926f7ada0fd545daaf95",
+      "bytes": 102275
+    },
+    "iteration_log.json": {
+      "sha256": "80d789d3cc747c2add0c8d5421746bce687344cbb02735877075036c6f735f18",
+      "bytes": 4192
+    },
+    "modelling_manifest.json": {
+      "sha256": "35075c16063769765e7036f8a5dc1f125614d90a6caa5731029fd02bda836967",
+      "bytes": 5145
+    },
+    "mirror_refit.json": {
+      "sha256": "2349c6bef881780e9280cd2eec6de611cf05abf5631081c77b4b8521837ca78e",
+      "bytes": 5661
+    },
+    "geometry_analysis.json": {
+      "sha256": "d54e6e1bfd7f0e5523be54e3196871b9e20bce9029b21830d0bd084cf97714ee",
+      "bytes": 2007
+    },
+    "review_response.json": {
+      "sha256": "b83042d8973e6558f58fc6b86c70b36cf959ea345534c1fc6de84122970cd6fa",
+      "bytes": 3943
+    },
+    "review_response.md": {
+      "sha256": "50ea0bd948c6fce393c3441d34c7c9e366df5e202e258cb7bc29e54b679264cd",
+      "bytes": 2688
+    },
+    "final_geometry_validation.json": {
+      "sha256": "c129f2a76075746794baf9cf5407b20895f70c1cd88ec85660a7b75fa7e6c64d",
+      "bytes": 3042
+    },
+    "validate_final.py": {
+      "sha256": "5de0bd61c026db6257ec24afcfd6d5da77b12021c33816eb133a454e9e3dcb41",
+      "bytes": 4091
+    },
+    "README.md": {
+      "sha256": "dce8eefaa0a3c125103660db38e18af6bba9bc79ba79bcd02be10ef6b2a8b45b",
+      "bytes": 1547
+    },
+    "checks_v5/frame_000.png": {
+      "sha256": "318ed5489ae86bed128d37a359359ecc5e3dd2bd73df6a8f7c89e6a5b84a152f",
+      "bytes": 501768
+    },
+    "checks_v5/frame_065.png": {
+      "sha256": "87a1b022e0f79fef3252cc700710129f505ed346a273c6ce3557a70f31e87f41",
+      "bytes": 410849
+    },
+    "checks_v5/frame_085.png": {
+      "sha256": "b73f7e01cdb4a348e6d670ae24888c7b2a3f0a1d2237de188f6d827ca7513f4e",
+      "bytes": 478220
+    },
+    "checks_v5/frame_110.png": {
+      "sha256": "c046b81bab65d029996d99346bdae2bc361385b91ffa19a1298d7d6b026e2c9d",
+      "bytes": 500765
+    },
+    "checks_v5/frame_130.png": {
+      "sha256": "f2148352c2dda91f6ac5f0e7da0f3b595abb502aedff98c6699d2e2f9340f215",
+      "bytes": 509375
+    },
+    "artifact_validation.json": {
+      "sha256": "cc1fc23a972f9d2ef7baa331cf9681ff72f91e0d08505d36b16926df0e853346",
+      "bytes": 369
+    }
+  }
+}

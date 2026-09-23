@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-09-22T08:41:04.956758+00:00",
+  "purpose": "Read-only evidence-file fingerprints at planning handoff; not a full immutable dataset snapshot.",
+  "files": [
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/visual-recon/README.md",
+      "bytes": 2446,
+      "sha256": "6db0e735306b3f45b1fd102292a31a54a8b7b3c393baea2a46b764468c0c788f",
+      "mtime_ns": 1790059791328357024
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/visual-recon/freeze_manifest.json",
+      "bytes": 762,
+      "sha256": "8e4ae9c02d35d604f7b1de14433f3bd73d951783fd7c1dfe89067cb28429ae3b",
+      "mtime_ns": 1790049828282497916
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/visual-recon/camera_rgb180/solve_v1/provenance.json",
+      "bytes": 61900,
+      "sha256": "e9ca627edadaeb2115c196ddc7569ccd8181c48002620c5063bb85473c4a2c59",
+      "mtime_ns": 1790059106157700230
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/results_sfm_imuscale.md",
+      "bytes": 20529,
+      "sha256": "1c217bb235628c890976407e26a89e1b36370a1a1f93a41b933243eea9507c4d",
+      "mtime_ns": 1790046070894615110
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/MODEL_REPRODUCTION_20260922.md",
+      "bytes": 1140,
+      "sha256": "f488822f5ac37562f36fecf229e165deaea1fab7c8f1d8906da948638dd5b73a",
+      "mtime_ns": 1790053565963213097
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/VIPE_EVALUATION_20260922.md",
+      "bytes": 959,
+      "sha256": "54b39467c303273675b80c17aff32410e011fa7dfcd1bdb359358137a99bd85f",
+      "mtime_ns": 1790057914377190681
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/batch_vio_20260922/README.md",
+      "bytes": 9044,
+      "sha256": "b893cdf6736570b0c86c80541f07638c94f8c2a20f1202fbb626000cdbe13d36",
+      "mtime_ns": 1790058027614672127
+    },
+    {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/evaluation/truth_audit_20260922/README.md",
+      "bytes": 7285,
+      "sha256": "cf9173f72d7ec3c15714602b84811dba8b63f03ac083277c428169a9fc4d3d7f",
+      "mtime_ns": 1790044085752491817
+    }
+  ]
+}

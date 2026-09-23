@@ -1,0 +1,14 @@
+{
+  "status": "outputs_fingerprinted_after_run",
+  "experiment": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923",
+  "files": {
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/pose_cam.tum": "cf97712d6a5d30d5bb31b0e073dda09d9da38db83656237cb25d95eba60a1d69",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/pose_imu.tum": "80493c314c0b90544f5d309b37fd3b41a4a6a34237151206081ab9313c753d9f",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/openvins.log": "4c3ba07ff733e4b5e0869b6981d0c0a31994116e35185835a2f68a76cc9f8656",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/config_window31.yaml": "c3ef7cb0e853a0410d60721ee5c1aa75510b6ea6da82dce9f30700c9dd37eb07",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/kalibr_imu_smooth.yaml": "827a7a4aec118c6327d30ed7d32ed09b31004c71279096f6998aa0c9d79c64a7",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/kalibr_imucam_smooth.yaml": "00d61f5d83cab42838de11570546eb8e2d9f20ec7b94dda0c3ce14f5654e117f",
+    "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/ground_truth/camera_tum.txt": "10e687d2b2e15fe3bc075916c985bd327a439a7b3d9cfa2f7c32f093737a43f3"
+  },
+  "gt_evaluation_already_completed": true
+}

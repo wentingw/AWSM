@@ -1,0 +1,104 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "instruction": "Please look for a round mirror",
+  "query": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "planter_back_corner",
+        "score": 0.5
+      },
+      {
+        "object_id": "planter_back_left",
+        "score": 0.5
+      },
+      {
+        "object_id": "planter_back_right",
+        "score": 0.5
+      },
+      {
+        "object_id": "planter_mirror",
+        "score": 0.5
+      },
+      {
+        "object_id": "planter_window_mid",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_00",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_01",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_02",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_03",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_04",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_05",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_06",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_07",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_08",
+        "score": 0.5
+      },
+      {
+        "object_id": "round_mirror_09",
+        "score": 0.5
+      },
+      {
+        "object_id": "seat_front_left",
+        "score": 0.5
+      },
+      {
+        "object_id": "seat_middle_center",
+        "score": 0.5
+      },
+      {
+        "object_id": "seat_middle_right_front",
+        "score": 0.5
+      },
+      {
+        "object_id": "table_front",
+        "score": 0.5
+      },
+      {
+        "object_id": "table_middle",
+        "score": 0.5
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained English category/attribute/near queries",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "planning_failed",
+  "target_id": "planter_back_corner",
+  "plan": {
+    "status": "no_reachable_approach",
+    "path": []
+  },
+  "planning_seconds": 0.0006333088967949152
+}

@@ -1,0 +1,63 @@
+{
+  "status": "frozen_for_independent_GT_evaluation",
+  "revision": 3,
+  "frozen_utc": "2026-09-23T06:44:43.647539+00:00",
+  "packet_sha256": "da46a512c4345ec558a91d1fd89d72d18bee9e00743da960f0bf717545ab1ae2",
+  "T_input_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "files": {
+    "scene.blend": "b7e77eb87584f2590279f8cf7a0ce63429b930e6a37f096033889dcb489cd998",
+    "scene.glb": "fa8e22f36f7f4aecf9f152b87e003816fac7d3f25080e9a3ddf51f24432b63d9",
+    "build_scene.py": "1f0c8f82556bae5f099689633edea1db25ef8fbb80127fac0c75036c811bdd11",
+    "objects.json": "c7e642f7fe7c1433d6ead97b20ac41a14f3edfd7a1dadc947bc26ec934b089ac",
+    "colliders.json": "780b019f301ea22e917b9490538cd969977bdbc44c742d66f64087278acf7f46",
+    "cameras.json": "7e43c028954651c8e4aed1e495a2997de04e02fe16660682d2781aaac6ca5e55",
+    "geometry_plan.json": "0b6ed4fabf94dc0973176d6f16e7bf5f449e8ffdb6e1174dfb024a9465ff990f",
+    "navigation_constraints.json": "54d3878a668852ec31892c3ced7664b33e552a988522c59ccd044c5786aa647a",
+    "known_space.json": "660a6a7361f55db029c8b976aeb5526cba61644937b7606dea02adc79696d949",
+    "input_access_log.json": "39d6876e061647e3828f16c7f55134caa39670b3569e88ecc1e3ec27976688aa",
+    "iteration_log.json": "388f3886cd1a8266024259b39297c7144c3bd477e995401b7c3bc678149cfee4",
+    "review_resolutions.json": "6abdb4fbd222c6031336ba67783dd0fea3c80fc95d5393052c5f719a789735d2",
+    "artifact_checks.json": "8999f25c5b3666bc708f6e06c3fe490348a682cf7832b5c3fbfc4a130cfd97fe",
+    "README.md": "400d482662585462bdeb486e0b9e67900574a8278d3f334987960bb8c190d5ca",
+    "render_contact_r3.jpg": "139f53301b56c1182572cac690f9afa1afdfe9a97ee4a6d28a75ad835d00f4e1",
+    "annotations.json": "b798e843a26f53be2276f2d81c1db138171337e5b73999ce7eb6fbbe6d98224c",
+    "depth_semantic_measurements.json": "d97d3f2a89171481ec82972b8fb64c05d7b76ef1d7c43fed76ecd7fd017084b0",
+    "plane_consensus.json": "b96a2e9e5f0aa85109bb94c3635e040b036a3c9a13aad7730f82c86c55bab3e3",
+    "triangulation_report.json": "15928d7dd44c478a87e98f609b49e5ba76433deee8d6465352fe930af307f563",
+    "rgb_pose_triangulation.npz": "873b49966ea1bcb3c80c4fcdf2446d9bc97476716e4ce10cf1ac2ce2358ea6bb",
+    "generate_plan.py": "a64ff196a0867f6e9a30373c46c72579e18b4e7a3efbd66479e1ad55d752bcbd",
+    "review_fixes.py": "611559da924f5f5dc5c689af70b6dd042a0df48d82cb758e5b3b79e824ab1cee",
+    "measure_geometry.py": "15b5f42d97371f7dd45ae37a2ef0bc7884a98c4df5ea55a901d0cc3a2db60f16",
+    "plane_consensus.py": "e733b5f28d116f6f0537e8f4cc4c27d03977e2ce7ff6c8fbf59acf958ef12b9a",
+    "triangulate_rgb.py": "aeec3ab551db39f8078861fc06fa70bde2cc0cea00ccdbbf9217e2fbdebd9fbd",
+    "validate_model.py": "3a13da50d0a700ce677ba817069bf64435c0a385f7e099939c8485f1d3fe21bb",
+    "freeze_model.py": "37bf046ea0cb5eb96acfff3f437080ec014cf325977bb4fc7ef0caa91b9c11ce",
+    "modelling_manifest.json": "9d98333fc66c78341643b923fa85a2205a480f32f79256bb063cfd63b6a2002e"
+  },
+  "self_hash_note": "This file does not hash itself; all deliverables and the modelling manifest are included."
+}

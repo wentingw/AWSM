@@ -1,0 +1,5 @@
+{
+  "url": "https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js",
+  "sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf",
+  "license": "Apache-2.0; model-viewer includes third-party notices in bundled source"
+}

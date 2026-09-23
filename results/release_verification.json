@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": [
+    "six methods and shared frontend identity",
+    "original/frozen model hashes unchanged",
+    "8999 ViPE outputs and completion marker",
+    "novel GT triangle count and pooled penalty/RMSE identities",
+    "seven novel-view model hashes",
+    "no article placeholders",
+    "drone complete batch and separate true goal success",
+    "required figures present",
+    "release script syntax"
+  ],
+  "external_publication": false
+}

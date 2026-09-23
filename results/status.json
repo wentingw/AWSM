@@ -1,0 +1,47 @@
+{
+  "updated": "2026-09-23",
+  "status": "published_and_verified",
+  "inputs": "8999RGB89999IMU180sample",
+  "M1": "frozen_historical_visual_model_GT_assisted_Sim3_diagnostic",
+  "M2": "8999ViPEposes_and_depths_complete_frozen_Astra_evaluated",
+  "M3": "8784OpenVINSposes_175sample_depths_frozen_Astra_evaluated",
+  "M4": "180GTpose_conditioned_depths_frozen_Astra_evaluated",
+  "baselines": "B1_B2_B2p_complete",
+  "downstream": {
+    "drone": {
+      "episodes": 20,
+      "collision_free_candidate_arrival": 15,
+      "collisions": 5,
+      "strict_rephotography": 0,
+      "relaxed_rephotography": 0
+    },
+    "g1": {
+      "instructions": 30,
+      "correlated_target_families": 5,
+      "approach_success": 18,
+      "planning_failed": 12
+    }
+  },
+  "novel_views": "independent_GT_BVH_depth_complete_RGB_unscored",
+  "site": "local_release_passed_desktop_mobile_bilingual_model_video_link_QA",
+  "publication": {
+    "status": "published_and_verified",
+    "github_blog": "https://wentingw.github.io/astra-world-model-blog/",
+    "english_blog": "https://wentingw.github.io/astra-world-model-blog/en.html",
+    "github_repository": "https://github.com/wentingw/astra-world-model-blog",
+    "github_commit": "9df608e603b0bd1720669890fc5e27ff3799a403",
+    "hf_assets": "https://huggingface.co/datasets/Ooliva/astra-world-model-blog",
+    "hf_revision": "241d313a264a3353bcb87f9fde30f7ef8a6f5bce",
+    "verification": [
+      "all public HTTP endpoints pass",
+      "both HTML pages match local SHA256",
+      "desktop/mobile bilingual browser checks pass",
+      "M3/M4 model load and switch pass",
+      "both videos actually play and decode",
+      "HF original models SHA256 and complete manifest verified"
+    ],
+    "original_github_account_not_used": "wtishere",
+    "github_publishing_account": "wentingw",
+    "credentials_in_public_artifacts": false
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "protocol": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/protocol.json",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "episodes": [
+    {
+      "episode_id": 0,
+      "instruction": "Find the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_00",
+      "returncode": 0
+    },
+    {
+      "episode_id": 1,
+      "instruction": "Find the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_01",
+      "returncode": 0
+    },
+    {
+      "episode_id": 2,
+      "instruction": "Find a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_02",
+      "returncode": 0
+    },
+    {
+      "episode_id": 3,
+      "instruction": "Find the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_03",
+      "returncode": 0
+    },
+    {
+      "episode_id": 4,
+      "instruction": "Find a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_04",
+      "returncode": 0
+    },
+    {
+      "episode_id": 5,
+      "instruction": "Go to the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_05",
+      "returncode": 0
+    },
+    {
+      "episode_id": 6,
+      "instruction": "Go to the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_06",
+      "returncode": 0
+    },
+    {
+      "episode_id": 7,
+      "instruction": "Go to a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_07",
+      "returncode": 0
+    },
+    {
+      "episode_id": 8,
+      "instruction": "Go to the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_08",
+      "returncode": 0
+    },
+    {
+      "episode_id": 9,
+      "instruction": "Go to a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_09",
+      "returncode": 0
+    },
+    {
+      "episode_id": 10,
+      "instruction": "Please find the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_10",
+      "returncode": 0
+    },
+    {
+      "episode_id": 11,
+      "instruction": "Please find the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_11",
+      "returncode": 0
+    },
+    {
+      "episode_id": 12,
+      "instruction": "Please find a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_12",
+      "returncode": 0
+    },
+    {
+      "episode_id": 13,
+      "instruction": "Please find the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_13",
+      "returncode": 0
+    },
+    {
+      "episode_id": 14,
+      "instruction": "Please find a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_14",
+      "returncode": 0
+    },
+    {
+      "episode_id": 15,
+      "instruction": "Look for the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_15",
+      "returncode": 0
+    },
+    {
+      "episode_id": 16,
+      "instruction": "Look for the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_16",
+      "returncode": 0
+    },
+    {
+      "episode_id": 17,
+      "instruction": "Look for a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_17",
+      "returncode": 0
+    },
+    {
+      "episode_id": 18,
+      "instruction": "Look for the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_18",
+      "returncode": 0
+    },
+    {
+      "episode_id": 19,
+      "instruction": "Look for a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_19",
+      "returncode": 0
+    },
+    {
+      "episode_id": 20,
+      "instruction": "Go to and stop in front of the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_20",
+      "returncode": 0
+    },
+    {
+      "episode_id": 21,
+      "instruction": "Go to and stop in front of the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_21",
+      "returncode": 0
+    },
+    {
+      "episode_id": 22,
+      "instruction": "Go to and stop in front of a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_22",
+      "returncode": 0
+    },
+    {
+      "episode_id": 23,
+      "instruction": "Go to and stop in front of the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_23",
+      "returncode": 0
+    },
+    {
+      "episode_id": 24,
+      "instruction": "Go to and stop in front of a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_24",
+      "returncode": 0
+    },
+    {
+      "episode_id": 25,
+      "instruction": "Please look for the green chair near a window",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_25",
+      "returncode": 0
+    },
+    {
+      "episode_id": 26,
+      "instruction": "Please look for the table near a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_26",
+      "returncode": 0
+    },
+    {
+      "episode_id": 27,
+      "instruction": "Please look for a plant",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_27",
+      "returncode": 0
+    },
+    {
+      "episode_id": 28,
+      "instruction": "Please look for the reception desk",
+      "status": "success",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_28",
+      "returncode": 0
+    },
+    {
+      "episode_id": 29,
+      "instruction": "Please look for a round mirror",
+      "status": "planning_failed",
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M3_final_margin047/episode_29",
+      "returncode": 0
+    }
+  ],
+  "counts": {
+    "planning_failed": 12,
+    "success": 18
+  },
+  "total": 30,
+  "spawn": {
+    "start_xy": [
+      -0.432377798,
+      0.183393755
+    ],
+    "start_yaw": 0.0,
+    "source": "camera frame 12 first free and floor-supported"
+  },
+  "language_scope": "30 constrained English paraphrases over 5 unique semantic goals; correlated",
+  "limitations": [
+    "frozen conservative AABB collision world",
+    "simulator-state-oracle localization",
+    "constrained category/attribute/near grounding",
+    "no GT-world transfer claim"
+  ]
+}

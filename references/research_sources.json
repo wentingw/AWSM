@@ -1,0 +1,102 @@
+[
+  {
+    "id": "vipe",
+    "url": "https://arxiv.org/abs/2508.10934",
+    "fetched_url": "https://arxiv.org/abs/2508.10934",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "ViPE: Video Pose Engine for 3D Geometric Perception",
+    "evidence": "Abstract says ViPE estimates intrinsics, camera motion and dense near-metric depth from unconstrained raw videos; supports pinhole, wide-angle and 360-degree panoramas.",
+    "supports": ["M2 uses ViPE as near-metric pose/depth source", "do not call ViPE depth unconditionally metric", "no evidence here for external-pose-conditioned ViPE inference"]
+  },
+  {
+    "id": "mapanything",
+    "url": "https://github.com/facebookresearch/map-anything",
+    "fetched_url": "https://raw.githubusercontent.com/facebookresearch/map-anything/main/README.md",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "MapAnything: Universal Feed-Forward Metric 3D Reconstruction",
+    "evidence": "Official README multi-modal example accepts img, intrinsics, camera_poses and is_metric_scale=True; it specifies OpenCV cam2world convention and exposes depth_z/pts3d outputs.",
+    "supports": ["M3/M4 interface-level pose-conditioned MapAnything design", "required coordinate convention and metric-scale bookkeeping"]
+  },
+  {
+    "id": "openvins",
+    "url": "https://docs.openvins.com/",
+    "fetched_url": "https://docs.openvins.com/",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "OpenVINS documentation",
+    "evidence": "Official documentation describes an open-source visual-inertial estimator/research platform; metric scale depends on calibrated camera-IMU data, timing, initialization and excitation, so it is not a guarantee of zero drift.",
+    "supports": ["M3 metric-pose rationale", "report calibration, initialization, tracking loss and drift"]
+  },
+  {
+    "id": "gpt6_astra",
+    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "fetched_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "GPT-6 Astra Model | OpenAI API",
+    "evidence": "Official model page lists text and image input, text output, Responses API, function calling, hosted shell, computer use, MCP and image generation support. It does not establish an industry-impact claim.",
+    "supports": ["public capability statement for Astra", "separate official capability from this project's measured Blender results"]
+  },
+  {
+    "id": "hydra",
+    "url": "https://github.com/MIT-SPARK/Hydra",
+    "fetched_url": "https://raw.githubusercontent.com/MIT-SPARK/Hydra/master/README.md",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "Hydra: A Real-time Spatial Perception System for 3D Scene Graph Construction and Optimization",
+    "evidence": "Official README cites Nathan Hughes, Yun Chang and Luca Carlone, RSS 2022, and says the code incrementally builds 3D scene graphs in real time.",
+    "supports": ["semantic/hierarchical scene-graph precedent", "avoid claiming traditional SLAM only produces trajectories or point clouds"]
+  },
+  {
+    "id": "holodeck",
+    "url": "https://github.com/allenai/Holodeck",
+    "fetched_url": "https://raw.githubusercontent.com/allenai/Holodeck/main/README.md",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+    "evidence": "Official README links arXiv:2312.09067 and describes language-guided generation of AI2-THOR environments, including queries such as a living room; this is generation, not real-video reconstruction.",
+    "supports": ["language-to-executable-environment adjacent work", "do not present as metric reconstruction"]
+  },
+  {
+    "id": "scenescript",
+    "url": "https://arxiv.org/abs/2403.13064",
+    "fetched_url": "https://arxiv.org/abs/2403.13064",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model",
+    "evidence": "ArXiv title and abstract identify an autoregressive structured-language-model approach to scene reconstruction.",
+    "supports": ["structured scene-program representation precedent", "do not attribute Blender or metric guarantees without evidence"]
+  },
+  {
+    "id": "real2code",
+    "url": "https://arxiv.org/abs/2406.08474",
+    "fetched_url": "https://arxiv.org/abs/2406.08474",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "Real2Code: Reconstruct Articulated Objects via Code Generation",
+    "evidence": "ArXiv title identifies reconstruction of articulated objects via code generation; scope is articulated objects rather than complete rooms.",
+    "supports": ["editable articulated-object/code representation as adjacent work"]
+  },
+  {
+    "id": "kitchen_twin",
+    "url": "https://frank-zy-dou.github.io/kitchen-twin/",
+    "fetched_url": "https://frank-zy-dou.github.io/kitchen-twin/",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "Lab kitchen twin",
+    "evidence": "Project page says a 21-second phone walkthrough yields a metric scan and modelled 3D kitchen; it reports 210 frames, 37 assets and GPT-6 Astra-authored assets from the ViPE scan.",
+    "supports": ["closest public demonstration of the proposed scan-to-Blender direction", "demonstration evidence rather than independent peer-reviewed baseline"]
+  },
+  {
+    "id": "litereality_agent",
+    "url": "https://github.com/LiteReality/LiteReality-Agent",
+    "fetched_url": "https://raw.githubusercontent.com/LiteReality/LiteReality-Agent/main/README.md",
+    "accessed": "2026-09-22",
+    "http_status": 200,
+    "title": "LiteReality-Agent",
+    "evidence": "Official README describes turning real-world scans into simulation-ready 3D environments with articulated assets, colliders and robotics simulation export; it labels the technical report coming soon.",
+    "supports": ["engineering-adjacent real-scan-to-simulation reference", "do not treat as a published technical paper"]
+  }
+]

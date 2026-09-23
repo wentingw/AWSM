@@ -1,0 +1,222 @@
+{
+  "method": "M3",
+  "status": "frozen_for_independent_GT_evaluation",
+  "modeler": "Astra clean input sub-agent",
+  "packet_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/packet.json",
+  "packet_sha256": "da46a512c4345ec558a91d1fd89d72d18bee9e00743da960f0bf717545ab1ae2",
+  "allowed_inputs": "M3 RGB + supplied OpenVINS metric poses + MapAnything optical-Z depths/intrinsics + sensor calibration",
+  "coordinate_frame": "native OpenVINS supplied camera world",
+  "units": "m",
+  "T_input_model": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "complete_scene_revisions": 3,
+  "tool_rendered_checking_views": 15,
+  "geometry_strategy": "named semantic parametric solids; direct depth ROI measurements and normal-mode consensus, with explicitly logged conflicting views; optional RGB fixed-pose triangulation diagnostic",
+  "scan_used_as_scene": false,
+  "floor_top_z": -2.5382169319971153,
+  "ceiling_z": 3.7897291394767394,
+  "unresolved": [
+    "Supplied native depth has substantial time-dependent scale inconsistency relative to fixed metric poses. No rescaling applied.",
+    "One coherent support floor cannot follow all supplied measurements: measured modes span -3.056 to -1.708 m.",
+    "Far continuation of mirror wall omitted because extrapolation crosses supplied camera path; unobserved closure is not fabricated.",
+    "Central furniture dimensions and correspondence remain uncertain across conflicting views; low-confidence semantic regularization is explicit.",
+    "Reflective mirrors/glazing do not provide trustworthy physical depth.",
+    "Door/column/reception relative localization in frames105/126 remains unresolved; chosen metric locations unchanged.",
+    "Model-space navigation requires known-domain bounds and unknown/vegetation exclusions; no real-world safety or metric accuracy claim.",
+    "Fine weave, botanical structure and relief are parametric approximations; object inventory is not a verified coverage metric."
+  ],
+  "physics": "52 selected-model static physical AABBs including floor support, full floor-lamp shades and 20 pendant shades. Vegetation/unknown extents are separate planner exclusions; not physical walls.",
+  "input_conflicts": {
+    "floor_mode_range_m": [
+      -3.056,
+      -1.708
+    ],
+    "first_vs_mid_floor_difference_m": 0.946,
+    "central_planter_x_initial_vs_reverse_m": [
+      -7.9,
+      -13.3
+    ],
+    "back_wall_initial_vs_near_m": [
+      -15.004,
+      -23.56
+    ]
+  },
+  "model_tokens": null,
+  "budget_accounting_note": "Three complete scene revisions and 15 actual tool-rendered checking images. Wall interval measured from initial access-log timestamp, including time awaiting clean review. Exact active model-token and tool-call counters unavailable.",
+  "outputs": {
+    "scene.blend": {
+      "size_bytes": 2613568,
+      "sha256": "b7e77eb87584f2590279f8cf7a0ce63429b930e6a37f096033889dcb489cd998"
+    },
+    "scene.glb": {
+      "size_bytes": 20452740,
+      "sha256": "fa8e22f36f7f4aecf9f152b87e003816fac7d3f25080e9a3ddf51f24432b63d9"
+    },
+    "build_scene.py": {
+      "size_bytes": 19104,
+      "sha256": "1f0c8f82556bae5f099689633edea1db25ef8fbb80127fac0c75036c811bdd11"
+    },
+    "objects.json": {
+      "size_bytes": 427020,
+      "sha256": "c7e642f7fe7c1433d6ead97b20ac41a14f3edfd7a1dadc947bc26ec934b089ac"
+    },
+    "colliders.json": {
+      "size_bytes": 84060,
+      "sha256": "780b019f301ea22e917b9490538cd969977bdbc44c742d66f64087278acf7f46"
+    },
+    "cameras.json": {
+      "size_bytes": 247384,
+      "sha256": "7e43c028954651c8e4aed1e495a2997de04e02fe16660682d2781aaac6ca5e55"
+    },
+    "geometry_plan.json": {
+      "size_bytes": 368285,
+      "sha256": "0b6ed4fabf94dc0973176d6f16e7bf5f449e8ffdb6e1174dfb024a9465ff990f"
+    },
+    "navigation_constraints.json": {
+      "size_bytes": 5605,
+      "sha256": "54d3878a668852ec31892c3ced7664b33e552a988522c59ccd044c5786aa647a"
+    },
+    "known_space.json": {
+      "size_bytes": 2143,
+      "sha256": "660a6a7361f55db029c8b976aeb5526cba61644937b7606dea02adc79696d949"
+    },
+    "input_access_log.json": {
+      "size_bytes": 43125,
+      "sha256": "39d6876e061647e3828f16c7f55134caa39670b3569e88ecc1e3ec27976688aa"
+    },
+    "iteration_log.json": {
+      "size_bytes": 3593,
+      "sha256": "388f3886cd1a8266024259b39297c7144c3bd477e995401b7c3bc678149cfee4"
+    },
+    "review_resolutions.json": {
+      "size_bytes": 3745,
+      "sha256": "6abdb4fbd222c6031336ba67783dd0fea3c80fc95d5393052c5f719a789735d2"
+    },
+    "artifact_checks.json": {
+      "size_bytes": 7132,
+      "sha256": "8999f25c5b3666bc708f6e06c3fe490348a682cf7832b5c3fbfc4a130cfd97fe"
+    },
+    "README.md": {
+      "size_bytes": 6327,
+      "sha256": "400d482662585462bdeb486e0b9e67900574a8278d3f334987960bb8c190d5ca"
+    },
+    "render_contact_r3.jpg": {
+      "size_bytes": 185148,
+      "sha256": "139f53301b56c1182572cac690f9afa1afdfe9a97ee4a6d28a75ad835d00f4e1"
+    },
+    "annotations.json": {
+      "size_bytes": 12006,
+      "sha256": "b798e843a26f53be2276f2d81c1db138171337e5b73999ce7eb6fbbe6d98224c"
+    },
+    "depth_semantic_measurements.json": {
+      "size_bytes": 51595,
+      "sha256": "d97d3f2a89171481ec82972b8fb64c05d7b76ef1d7c43fed76ecd7fd017084b0"
+    },
+    "plane_consensus.json": {
+      "size_bytes": 13570,
+      "sha256": "b96a2e9e5f0aa85109bb94c3635e040b036a3c9a13aad7730f82c86c55bab3e3"
+    },
+    "triangulation_report.json": {
+      "size_bytes": 18468,
+      "sha256": "15928d7dd44c478a87e98f609b49e5ba76433deee8d6465352fe930af307f563"
+    },
+    "rgb_pose_triangulation.npz": {
+      "size_bytes": 468977,
+      "sha256": "873b49966ea1bcb3c80c4fcdf2446d9bc97476716e4ce10cf1ac2ce2358ea6bb"
+    },
+    "generate_plan.py": {
+      "size_bytes": 11642,
+      "sha256": "a64ff196a0867f6e9a30373c46c72579e18b4e7a3efbd66479e1ad55d752bcbd"
+    },
+    "review_fixes.py": {
+      "size_bytes": 9828,
+      "sha256": "611559da924f5f5dc5c689af70b6dd042a0df48d82cb758e5b3b79e824ab1cee"
+    },
+    "measure_geometry.py": {
+      "size_bytes": 3451,
+      "sha256": "15b5f42d97371f7dd45ae37a2ef0bc7884a98c4df5ea55a901d0cc3a2db60f16"
+    },
+    "plane_consensus.py": {
+      "size_bytes": 1758,
+      "sha256": "e733b5f28d116f6f0537e8f4cc4c27d03977e2ce7ff6c8fbf59acf958ef12b9a"
+    },
+    "triangulate_rgb.py": {
+      "size_bytes": 2644,
+      "sha256": "aeec3ab551db39f8078861fc06fa70bde2cc0cea00ccdbbf9217e2fbdebd9fbd"
+    },
+    "validate_model.py": {
+      "size_bytes": 5976,
+      "sha256": "3a13da50d0a700ce677ba817069bf64435c0a385f7e099939c8485f1d3fe21bb"
+    },
+    "freeze_model.py": {
+      "size_bytes": 8072,
+      "sha256": "37bf046ea0cb5eb96acfff3f437080ec014cf325977bb4fc7ef0caa91b9c11ce"
+    }
+  },
+  "validation": "artifact_checks.json",
+  "latest_render_contact_sheet": "render_contact_r3.jpg",
+  "hard_colliders": 52,
+  "supplied_cameras": 175,
+  "frozen_utc": "2026-09-23T06:44:43.647539+00:00",
+  "inventory": {
+    "named_model_elements": 259,
+    "trim_elements": 195,
+    "non_trim_entries": 64,
+    "architectural_entities": 10,
+    "other_non_trim_entries": 54,
+    "scene_roots_and_groups_not_counted": 3,
+    "category_counts": {
+      "floor": 1,
+      "ceiling": 1,
+      "window": 1,
+      "wall": 3,
+      "surface_inlay": 1,
+      "trim": 195,
+      "door": 2,
+      "column": 2,
+      "reception_desk": 1,
+      "rectangular_planter": 3,
+      "coffee_table": 2,
+      "lounge_chair": 5,
+      "ottoman": 3,
+      "round_planter": 5,
+      "mirror": 10,
+      "pendant_light": 20,
+      "floor_lamp": 2,
+      "wall_installation": 1,
+      "decorative_bowl": 1
+    },
+    "verified_real_instance_count": null,
+    "interpretation": "Named model inventory only; not independent object detection or coverage performance."
+  },
+  "planning_unknown_region_count": 1,
+  "unknown_regions_counted_as_physical_colliders": false,
+  "review_resolution_log": "review_resolutions.json",
+  "navigation_contract": "Read navigation_constraints.json, known_space.json and physical colliders together; outside-known-bounds and unknown regions blocked; inflate by agent extent plus margin. Only model-space simulation is supported, not validated real-world navigation.",
+  "elapsed_wall_seconds_since_initial_log_including_review_wait": 2586.407791,
+  "post_revision3_independent_review_performed": false
+}

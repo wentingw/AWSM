@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "revision": 3,
+  "inventory": {
+    "named_model_elements": 259,
+    "trim_elements": 195,
+    "non_trim_entries": 64,
+    "architectural_entities": 10,
+    "other_non_trim_entries": 54,
+    "scene_roots_and_groups_not_counted": 3,
+    "category_counts": {
+      "floor": 1,
+      "ceiling": 1,
+      "window": 1,
+      "wall": 3,
+      "surface_inlay": 1,
+      "trim": 195,
+      "door": 2,
+      "column": 2,
+      "reception_desk": 1,
+      "rectangular_planter": 3,
+      "coffee_table": 2,
+      "lounge_chair": 5,
+      "ottoman": 3,
+      "round_planter": 5,
+      "mirror": 10,
+      "pendant_light": 20,
+      "floor_lamp": 2,
+      "wall_installation": 1,
+      "decorative_bowl": 1
+    },
+    "verified_real_instance_count": null,
+    "interpretation": "Named model inventory only; not independent object detection or coverage performance."
+  },
+  "seat_cylinder_intersections": [],
+  "minimum_seat_radial_clearance_m": 0.029999990049149106,
+  "maximum_seat_translation_m": 0.11144610695920486,
+  "seat_pair_measurements": [
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_middle_left_back"
+      ],
+      "radial_clearance_m": 0.6462327622741328,
+      "vertical_overlap_m": 0.484
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_middle_center"
+      ],
+      "radial_clearance_m": 1.0830343849003394,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_middle_right_front"
+      ],
+      "radial_clearance_m": 1.3804277856525036,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_middle_right_back"
+      ],
+      "radial_clearance_m": 2.4444650950405107,
+      "vertical_overlap_m": 0.484
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_front_left"
+      ],
+      "radial_clearance_m": 4.460997190161384,
+      "vertical_overlap_m": 0.28105
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 5.409938387510867,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_middle_left_front",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 6.221042633951581,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_middle_center"
+      ],
+      "radial_clearance_m": 0.02999999711995005,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_middle_right_front"
+      ],
+      "radial_clearance_m": 1.1804588423192057,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_middle_right_back"
+      ],
+      "radial_clearance_m": 1.9402400353928682,
+      "vertical_overlap_m": 0.484
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_front_left"
+      ],
+      "radial_clearance_m": 5.900598080102057,
+      "vertical_overlap_m": 0.28105
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 6.890738553783662,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_middle_left_back",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 7.786441925817571,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_middle_center",
+        "seat_middle_right_front"
+      ],
+      "radial_clearance_m": 0.030000000000001026,
+      "vertical_overlap_m": 0.2915000000000001
+    },
+    {
+      "pair": [
+        "seat_middle_center",
+        "seat_middle_right_back"
+      ],
+      "radial_clearance_m": 0.5436979786722027,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_center",
+        "seat_front_left"
+      ],
+      "radial_clearance_m": 5.44767388758353,
+      "vertical_overlap_m": 0.2902
+    },
+    {
+      "pair": [
+        "seat_middle_center",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 6.4572835887983056,
+      "vertical_overlap_m": 0.2674500000000002
+    },
+    {
+      "pair": [
+        "seat_middle_center",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 7.443846829439222,
+      "vertical_overlap_m": 0.2674500000000002
+    },
+    {
+      "pair": [
+        "seat_middle_right_front",
+        "seat_middle_right_back"
+      ],
+      "radial_clearance_m": 0.029999990049149106,
+      "vertical_overlap_m": 0.26875000000000027
+    },
+    {
+      "pair": [
+        "seat_middle_right_front",
+        "seat_front_left"
+      ],
+      "radial_clearance_m": 4.550911708116066,
+      "vertical_overlap_m": 0.2902
+    },
+    {
+      "pair": [
+        "seat_middle_right_front",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 5.558156409032073,
+      "vertical_overlap_m": 0.2674500000000002
+    },
+    {
+      "pair": [
+        "seat_middle_right_front",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 6.5898877553176956,
+      "vertical_overlap_m": 0.2674500000000002
+    },
+    {
+      "pair": [
+        "seat_middle_right_back",
+        "seat_front_left"
+      ],
+      "radial_clearance_m": 5.088586706144996,
+      "vertical_overlap_m": 0.28105
+    },
+    {
+      "pair": [
+        "seat_middle_right_back",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 6.07212805812879,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_middle_right_back",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 7.154202772943696,
+      "vertical_overlap_m": 0.4826999999999999
+    },
+    {
+      "pair": [
+        "seat_front_left",
+        "seat_front_center"
+      ],
+      "radial_clearance_m": 0.030000000000000027,
+      "vertical_overlap_m": 0.27974999999999994
+    },
+    {
+      "pair": [
+        "seat_front_left",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 1.0861180462282054,
+      "vertical_overlap_m": 0.27974999999999994
+    },
+    {
+      "pair": [
+        "seat_front_center",
+        "seat_front_right"
+      ],
+      "radial_clearance_m": 0.02999999087089744,
+      "vertical_overlap_m": 0.4950000000000001
+    }
+  ],
+  "all_relation_targets_resolve": true,
+  "floor_top_z": -2.5382169319971153,
+  "camera_count": 175,
+  "camera_pose_max_abs_error": 0.0,
+  "physical_colliders": 52,
+  "unknown_regions_counted_as_physical_colliders": false,
+  "floor_lamp_full_shade_coverage": true,
+  "overhead_shade_colliders": 20,
+  "glb_v2_bytes": 20452740,
+  "model_space_ground_sanity": {
+    "grid_m": 0.2,
+    "footprint_radius_plus_margin_m": 0.45,
+    "body_height_m": 1.65,
+    "free_area_estimate_m2": 105.92000000000002,
+    "connected_free_component_areas_m2": [
+      102.32000000000002,
+      3.6000000000000005
+    ],
+    "caveat": "Coarse check of this uncertain static model only; no GT and no real-world safety validation."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "gt_usd": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/lobby.usda",
+  "gt_triangles": 9984967,
+  "transform_json": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/model_registration.json",
+  "trajectory_count": 20,
+  "trajectories": [
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_00/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_01/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_02/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_03/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_04/drone_trajectory.csv",
+      "samples": 153,
+      "min_m": 0.001678466796875,
+      "mean_m": 0.06324183395485473,
+      "median_m": 0.0696268081665039,
+      "p90_m": 0.07714710235595704,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_05/drone_trajectory.csv",
+      "samples": 155,
+      "min_m": 0.07165050506591797,
+      "mean_m": 0.09011120113634294,
+      "median_m": 0.0919857993721962,
+      "p90_m": 0.10180797576904296,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_06/drone_trajectory.csv",
+      "samples": 212,
+      "min_m": 0.0003719329833984375,
+      "mean_m": 0.5415959773620345,
+      "median_m": 0.5924534499645233,
+      "p90_m": 1.0872723579406738,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_07/drone_trajectory.csv",
+      "samples": 212,
+      "min_m": 0.0003719329833984375,
+      "mean_m": 0.5415959773620345,
+      "median_m": 0.5924534499645233,
+      "p90_m": 1.0872723579406738,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_08/drone_trajectory.csv",
+      "samples": 307,
+      "min_m": 0.000755700864829123,
+      "mean_m": 0.7705170555068301,
+      "median_m": 0.6837668418884277,
+      "p90_m": 1.5184972763061524,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_09/drone_trajectory.csv",
+      "samples": 584,
+      "min_m": 0.00023555755615234375,
+      "mean_m": 0.9714495633562951,
+      "median_m": 1.0948872566223145,
+      "p90_m": 1.5123408794403077,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_10/drone_trajectory.csv",
+      "samples": 713,
+      "min_m": 0.0009565353393554688,
+      "mean_m": 1.185933291140766,
+      "median_m": 1.2309669256210327,
+      "p90_m": 1.6598258733749391,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_11/drone_trajectory.csv",
+      "samples": 212,
+      "min_m": 0.0003719329833984375,
+      "mean_m": 0.5415959773620345,
+      "median_m": 0.5924534499645233,
+      "p90_m": 1.0872723579406738,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_12/drone_trajectory.csv",
+      "samples": 307,
+      "min_m": 0.000755700864829123,
+      "mean_m": 0.7705170555068301,
+      "median_m": 0.6837668418884277,
+      "p90_m": 1.5184972763061524,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_13/drone_trajectory.csv",
+      "samples": 1875,
+      "min_m": 0.009389877319335938,
+      "mean_m": 0.12926858545939127,
+      "median_m": 0.13187503814697266,
+      "p90_m": 0.14719133377075194,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_14/drone_trajectory.csv",
+      "samples": 265,
+      "min_m": 0.0069427490234375,
+      "mean_m": 0.6456685786539653,
+      "median_m": 0.6768760681152344,
+      "p90_m": 1.1595481872558593,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_15/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_16/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_17/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_18/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    },
+    {
+      "trajectory": "experiments/tasks/drone_M3/photographic_20/episode_19/drone_trajectory.csv",
+      "samples": 148,
+      "min_m": 0.0753927230834961,
+      "mean_m": 0.07575915955208443,
+      "median_m": 0.07557487487792969,
+      "p90_m": 0.07637901306152343,
+      "potential_overlap_lt_0p30m": true
+    }
+  ],
+  "semantics": [
+    "center point to nearest GT triangle surface only",
+    "sphere-radius interpretation is approximate; no inside/outside test",
+    "static geometry audit, no MuJoCo dynamics replay",
+    "potential_overlap_lt_0p30m is descriptive, not collision truth"
+  ]
+}

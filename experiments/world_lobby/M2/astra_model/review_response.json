@@ -1,0 +1,103 @@
+{
+  "reviewed_revision": 3,
+  "final_revision": 5,
+  "status": "frozen_for_independent_GT_evaluation",
+  "review_source": "independent_review/review.json",
+  "responses": [
+    {
+      "id": "M2-R1",
+      "status": "addressed",
+      "action": "Included each fixed table disk in iterative seat clearance constraints; preserved table centers. Reduced uncertain foreground seat radii 12% from RGB evidence. Per-seat displacements recorded in object attributes.",
+      "evidence": {
+        "min_seat_table_clearance_m": 0.04060025634137143,
+        "min_seat_seat_clearance_m": 0.046999961572103954
+      }
+    },
+    {
+      "id": "M2-R2",
+      "status": "addressed",
+      "action": "Recalculated the existing closed reception mesh winding outward; no vertex position or dimensions changed.",
+      "evidence": {
+        "signed_volume_m3": 1.500699636745079,
+        "all_edges_manifold": true,
+        "top_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bottom_normals": [
+          [
+            -0.0,
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M2-R3",
+      "status": "addressed_static_closed_door",
+      "action": "Split fixed window colliders around the portal. Added two explicit static closed glass leaves and separate fixed frame colliders. Opening motion and threshold traversability are not claimed.",
+      "evidence": {
+        "fixed_window_portal_blockers": [],
+        "closed_leaf_blocks_entry": true
+      }
+    },
+    {
+      "id": "M2-R4",
+      "status": "addressed_geometry_with_reflection_residual",
+      "action": "Refit ten circles personally identified in legal frame65 RGB to the same wall plane through supplied camera rays; crossed against frames0 and85. Removed unsupported extra circle.",
+      "evidence": {
+        "largest_mirror_center_frame65_640x480": [
+          368,
+          196
+        ],
+        "independent_review_approximate_RGB_center": [
+          365,
+          193
+        ],
+        "largest_mirror_center_frame85_640x480": [
+          352,
+          253
+        ],
+        "derivation": "mirror_refit.json"
+      },
+      "residual": "Reflected contents and mirror contrast, especially frame85, still differ because surrounding materials/geometry remain approximate."
+    },
+    {
+      "id": "M2-R5",
+      "status": "addressed",
+      "action": "Stored legal Blender pixel aspect (fy/fx,1), avoiding Blender clamp on values below1. Exact GLB perspective fields encode supplied fx/fy without extrinsic or world transform changes.",
+      "evidence": {
+        "saved_blend_pixel_aspect": [
+          1.0001819133758545,
+          1.0
+        ],
+        "max_glb_intrinsic_error_px": 0.0,
+        "camera_metadata_unchanged": true
+      }
+    }
+  ],
+  "unresolved": [
+    "Native ViPE depth and pose disagreement remains; reflective surfaces and distant geometry are not exact metric truth.",
+    "Planter vegetation remains denser/taller than source RGB and botanical species are inferred.",
+    "Dark floor inlay has overly strong linear reflections compared with source fine weave and light-dot pattern.",
+    "Strong wall-floor dark seam remains visible; cause was not isolated in remaining engineering budget.",
+    "Mirror reflected content/contrast, particularly frame85, remains approximate despite corrected landmark geometry.",
+    "Several inferred lathed pots/bowls have open boundary loops; hidden thickness and undersides remain approximate.",
+    "Entry is modelled as a static closed door; no opening animation or demonstrated traversable threshold is provided.",
+    "Unobserved wall backs, joins, foreground closure and physical coefficients remain inferred."
+  ],
+  "final_checks": [
+    0,
+    65,
+    85,
+    110,
+    130
+  ],
+  "final_validation": "final_geometry_validation.json",
+  "independent_followup_review_after_fixes": false,
+  "GT_accessed": false
+}

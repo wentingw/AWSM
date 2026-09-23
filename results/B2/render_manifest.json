@@ -1,0 +1,52 @@
+{
+  "method_id": "B2",
+  "model_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/B2/tsdf_20260923/scene.blend",
+  "T_gt_model": [
+    [
+      -0.02408928276594985,
+      -0.1703059630344121,
+      0.9850967391128364,
+      10.935635235813809
+    ],
+    [
+      -0.9996887171409811,
+      0.01050483135920496,
+      -0.02263000970247031,
+      21.894246766184622
+    ],
+    [
+      -0.006494249521025772,
+      -0.9853352360861944,
+      -0.17050600356035084,
+      2.301235861003055
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment": "global SE3 from native frontend pose on fixed mapping frames; no extra mesh fitting",
+  "truth_pose_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/mapping_gt_tum.txt",
+  "render_indices": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "output": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/B2/renders",
+  "K": [
+    762.8,
+    762.8,
+    640,
+    480
+  ],
+  "source_resolution": [
+    1280,
+    960
+  ],
+  "view_transform": "Standard",
+  "color_note": "unlit fused RGB vertex colors rendered through standard sRGB output"
+}

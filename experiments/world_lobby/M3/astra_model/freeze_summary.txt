@@ -1,0 +1,41 @@
+{
+  "status": "frozen_for_independent_GT_evaluation",
+  "inventory": {
+    "named_model_elements": 259,
+    "trim_elements": 195,
+    "non_trim_entries": 64,
+    "architectural_entities": 10,
+    "other_non_trim_entries": 54,
+    "scene_roots_and_groups_not_counted": 3,
+    "category_counts": {
+      "floor": 1,
+      "ceiling": 1,
+      "window": 1,
+      "wall": 3,
+      "surface_inlay": 1,
+      "trim": 195,
+      "door": 2,
+      "column": 2,
+      "reception_desk": 1,
+      "rectangular_planter": 3,
+      "coffee_table": 2,
+      "lounge_chair": 5,
+      "ottoman": 3,
+      "round_planter": 5,
+      "mirror": 10,
+      "pendant_light": 20,
+      "floor_lamp": 2,
+      "wall_installation": 1,
+      "decorative_bowl": 1
+    },
+    "verified_real_instance_count": null,
+    "interpretation": "Named model inventory only; not independent object detection or coverage performance."
+  },
+  "scene_blend_sha256": "b7e77eb87584f2590279f8cf7a0ce63429b930e6a37f096033889dcb489cd998",
+  "scene_glb_sha256": "fa8e22f36f7f4aecf9f152b87e003816fac7d3f25080e9a3ddf51f24432b63d9",
+  "packet_sha256": "da46a512c4345ec558a91d1fd89d72d18bee9e00743da960f0bf717545ab1ae2",
+  "revisions": 3,
+  "renders": 15,
+  "physical_colliders": 52,
+  "elapsed_wall_seconds_including_review_wait": 2586.407791
+}

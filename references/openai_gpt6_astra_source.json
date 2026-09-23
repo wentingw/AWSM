@@ -1,0 +1,6 @@
+{
+  "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "accessed": "2026-09-22",
+  "http_status": 200,
+  "note": "Fetched official model page; verify actual returned text, local runtime aliases alone are not publication evidence."
+}

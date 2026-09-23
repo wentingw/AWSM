@@ -1,0 +1,39 @@
+# SUPERSEDED DIAGNOSTIC. Do not use for final metrics.
+# Authoritative replacement: evaluate_novel_depth_blender.py (GT masks, saved rays, exact missing-penalty MAE).
+import bpy,sys,json,time
+from pathlib import Path
+import numpy as np
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+
+ROOT=Path(__file__).resolve().parents[1]
+def mesh(T):
+ vs=[];fs=[];off=0; dg=bpy.context.evaluated_depsgraph_get()
+ for o in bpy.context.scene.objects:
+  if o.type!='MESH': continue
+  e=o.evaluated_get(dg);m=e.to_mesh(); M=np.asarray(T); vv=np.array([(o.matrix_world@v.co)[:] for v in m.vertices]); vv=(np.c_[vv,np.ones(len(vv))]@M.T)[:,:3]; vs.extend(vv);fs.extend([tuple(off+p.vertices[0:1]+p.vertices[k:k+2]) for k in range(1,len(p.vertices)-1) for _ in [0]] for p in []); fs.extend([((off+int(p.vertices[0]),off+int(p.vertices[k]),off+int(p.vertices[k+1]))) for p in m.polygons for k in range(1,len(p.vertices)-1)]);off+=len(vv);e.to_mesh_clear()
+ return BVHTree.FromPolygons(vs,fs,all_triangles=True)
+def rays(q,uv):
+ r=np.c_[(uv[:,0]-320)/381.4,(uv[:,1]-240)/381.4,np.ones(len(uv))]; n=np.linalg.norm(r,axis=1); return r/n[:,None],n
+def cast(b,p,R,uv):
+ r,n=rays(None,uv); d=r@np.asarray(R).T; out=np.full(len(r),np.nan)
+ for i,x in enumerate(d):
+  h=b.ray_cast(Vector(p),Vector(x),50)
+  if h[0] is not None: out[i]=h[3]/n[i]
+ return out
+def main():
+ root=ROOT; man=json.load(open(root/'results/ground_truth/independent_holdout_20/manifest.json')); rng=np.random.default_rng(23); uv=np.c_[rng.integers(0,640,5000),rng.integers(0,480,5000)]
+ specs=json.load(open(root/'results/ground_truth/cycles_novel_20/model_specs.json')); out=root/'results/ground_truth/cycles_novel_20';out.mkdir(parents=True,exist_ok=True)
+ bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.wm.usd_import(filepath=specs['__GT__']['path'],import_materials=False,import_cameras=False,import_lights=False); gt=mesh(np.eye(4)); rows=[]
+ for q in man['views']:
+  p=q['camera_position_world_m'];R=q['camera_rotation_world_from_optical']; z=np.load(q['zdepth_path']); truth=z[uv[:,1],uv[:,0]]; g=cast(gt,p,R,uv); rows.append({'view_id':q['view_id'],'gt_bvh_vs_old_z':{'mae_m':float(np.nanmean(np.abs(g-truth))),'rmse_m':float(np.sqrt(np.nanmean((g-truth)**2))),'coverage':float(np.isfinite(g).mean())}}); q['_uv']=uv.tolist();q['_gt']=g.tolist();
+ for name,s in specs.items():
+  if name=='__GT__':continue
+  bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.wm.open_mainfile(filepath=s['path']); b=mesh(np.asarray(s['transform'])); vals=[]
+  for q in man['views']:
+   z=np.array(q['_gt']); p=q['camera_position_world_m'];R=q['camera_rotation_world_from_optical']; m=cast(b,p,R,uv); ok=np.isfinite(z)&(z>.1)&np.isfinite(m);e=np.abs(m[ok]-z[ok]); vals.append({'view_id':q['view_id'],'absrel':float(np.mean(e/z[ok])) if ok.any() else None,'rmse_m':float(np.sqrt(np.mean(e*e))) if ok.any() else None,'coverage':float(ok.mean())})
+  rows[-1].setdefault('models',{})
+  for i,v in enumerate(vals): rows[i].setdefault('models',{})[name]=v
+ report={'scope':'same-scene GT-pose perturbation; 5000 random rays/view; BVH optical-Z','rgb':'excluded; renderer-domain diagnostic only','views':rows}
+ (out/'bvh_5000ray_metrics.json').write_text(json.dumps(report,indent=2)+'\n')
+main()

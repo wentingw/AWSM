@@ -1,0 +1,32 @@
+{
+  "schema": "sceneweft.observed-environments.v1",
+  "scope": "Observed runtime components; not a complete dependency lock or cross-platform compatibility claim",
+  "reconstruction": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.3",
+    "Pillow": "12.0.0",
+    "matplotlib": "3.10.8",
+    "scikit-image": "0.25.2",
+    "open3d": "0.19.0",
+    "torch": "2.4.0",
+    "transformers": "4.57.3",
+    "huggingface-hub": "0.36.0",
+    "imageio": "2.37.2",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "tasks": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "mujoco": "3.3.7",
+    "torch": "2.11.0+cu128",
+    "trimesh": "5.1.0"
+  },
+  "blender": "5.2.0",
+  "separate_frontends": [
+    "MapAnything conda environment",
+    "OpenVINS/ROS environment",
+    "ViPE source and model checkpoints"
+  ],
+  "host_specific_torch_workaround": "LD_PRELOAD=/home/hchen/Documents/astraBlenderTest/reconstruction/runtime/lib/libjitprofiling.so",
+  "unitree_dependency_commit": "276801e46c5d433564f24658bac64f254b7d2d4b"
+}

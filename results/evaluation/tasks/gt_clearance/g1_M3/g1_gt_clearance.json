@@ -1,0 +1,683 @@
+{
+  "gt_usd": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/lobby.usda",
+  "gt_triangles": 9984967,
+  "transform_json": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M3/model_registration.json",
+  "floor_estimate_z_m": 0.00963275506455175,
+  "trajectory_count": 18,
+  "trajectories": [
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_01/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_02/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_03/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_06/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_07/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_08/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_11/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_12/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_13/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_16/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_17/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_18/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_21/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_22/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_23/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_26/trajectory.csv",
+      "samples": 483,
+      "torso_surface_distance_m": {
+        "count": 483,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.2910309969400723,
+        "median_m": 0.2348686009645462,
+        "p90_m": 0.533379054069519,
+        "max_m": 0.5380828380584717
+      },
+      "head_surface_distance_m": {
+        "count": 483,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.5271998499177867,
+        "median_m": 0.4791050851345062,
+        "p90_m": 1.1792359590530395,
+        "max_m": 1.1877344846725464
+      },
+      "foot_surface_distance_m": {
+        "count": 966,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.359845239861905,
+        "median_m": 0.36012786626815796,
+        "p90_m": 0.36657676100730896,
+        "max_m": 0.3749210834503174
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 966,
+        "min_m": -0.6945538483836683,
+        "mean_m": -0.6794779967583956,
+        "median_m": -0.6797606181111185,
+        "p90_m": -0.672341101843498,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_27/trajectory.csv",
+      "samples": 1301,
+      "torso_surface_distance_m": {
+        "count": 1301,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.3983365675917688,
+        "median_m": 0.5164583325386047,
+        "p90_m": 0.5341090559959412,
+        "max_m": 0.5681947469711304
+      },
+      "head_surface_distance_m": {
+        "count": 1301,
+        "min_m": 0.0010881423950195312,
+        "mean_m": 0.7792047875338118,
+        "median_m": 1.020100712776184,
+        "p90_m": 1.1773337125778198,
+        "max_m": 1.2171630859375
+      },
+      "foot_surface_distance_m": {
+        "count": 2602,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.3690717730679758,
+        "median_m": 0.37050414085388184,
+        "p90_m": 0.3792164266109467,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2602,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.6887045307514964,
+        "median_m": -0.6901368860185823,
+        "p90_m": -0.6769650560785323,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    },
+    {
+      "trajectory": "experiments/tasks/g1_M3/final_margin047/episode_28/trajectory.csv",
+      "samples": 1155,
+      "torso_surface_distance_m": {
+        "count": 1155,
+        "min_m": 6.045979716873262e-06,
+        "mean_m": 0.4025454112833126,
+        "median_m": 0.5151612162590027,
+        "p90_m": 0.5292295575141907,
+        "max_m": 0.5387107729911804
+      },
+      "head_surface_distance_m": {
+        "count": 1155,
+        "min_m": 0.0005950927734375,
+        "mean_m": 0.7745798975865263,
+        "median_m": 1.0318238735198975,
+        "p90_m": 1.171606993675232,
+        "max_m": 1.188275694847107
+      },
+      "foot_surface_distance_m": {
+        "count": 2310,
+        "min_m": 0.332732617855072,
+        "mean_m": 0.36948717254580876,
+        "median_m": 0.3717200756072998,
+        "p90_m": 0.3805782735347748,
+        "max_m": 0.38751333951950073
+      },
+      "foot_bottom_minus_gt_floor_m": {
+        "count": 2310,
+        "min_m": -0.7071460812626978,
+        "mean_m": -0.689119930466174,
+        "median_m": -0.6913528354194848,
+        "p90_m": -0.6765459847498566,
+        "max_m": -0.6523653654329343
+      },
+      "potential_surface_overlap_lt_0p05m": true
+    }
+  ],
+  "semantics": [
+    "nearest triangle-surface distances only",
+    "foot height is proxy based on base pose and fixed offsets",
+    "no inside/outside test",
+    "static geometry audit, no dynamics replay",
+    "planning failures without trajectory are omitted and not fabricated"
+  ],
+  "threshold_note": "G1 has no collision-transfer threshold; reported distances are descriptive."
+}

@@ -1,0 +1,124 @@
+{
+  "budget": {
+    "max_revisions": 5,
+    "max_rendered_checks": 60
+  },
+  "iterations": [
+    {
+      "revision": 1,
+      "type": "complete scene from empty Blender",
+      "rendered_checks": [
+        0,
+        65,
+        85,
+        110,
+        130
+      ],
+      "findings": [
+        "Foreground table too near camera",
+        "Smooth cylinder cap normals cause black seating artifacts",
+        "Material exposure too bright",
+        "Main ceiling, rear wall and entry projections broadly correspond to legal evidence"
+      ],
+      "corrections_planned": [
+        "move foreground table/seat group to measured near depth locations",
+        "flat normals for cylinder caps",
+        "reduce exposure and wall reflectance",
+        "adjust primary seating envelope"
+      ]
+    },
+    {
+      "revision": 2,
+      "type": "evidence-based geometry and shading corrections",
+      "rendered_checks": [
+        0,
+        65,
+        85,
+        110,
+        130
+      ],
+      "status": "completed",
+      "findings": [
+        "Overexposure improved and foreground table now visible at measured depth.",
+        "Remaining black seat crescents traced to intersecting coplanar seat solids."
+      ]
+    },
+    {
+      "revision": 3,
+      "type": "seat solids nonintersection regularization and collider opening preservation",
+      "rendered_checks": [
+        0,
+        65,
+        85,
+        110,
+        130
+      ],
+      "status": "completed",
+      "changes": [
+        "Pairwise separate chair seat disks; retain per-object displacement in attributes",
+        "Split floor collider into actual L-shaped component slabs",
+        "Split wall colliders into solids so observed door openings remain traversable"
+      ],
+      "findings": [
+        "Black seat crescents eliminated in all five v3 checks",
+        "Foreground seating and table now visible in supplied frame0",
+        "Residual plant species, fine weaving, floor reflectance, mirror layout and geometry drift left explicit for independent review"
+      ]
+    },
+    {
+      "revision": 4,
+      "type": "independent clean review corrections",
+      "rendered_checks": [
+        0,
+        65,
+        85,
+        110,
+        130
+      ],
+      "status": "completed",
+      "changes": [
+        "Add fixed measured tables to upholstery disk nonintersection constraints",
+        "Reduce uncertain foreground seat radii by 12% based on RGB",
+        "Recalculate desk closed-mesh normals outward",
+        "Refit 10 observed mirror circles to frame65 RGB rays on fixed wall plane; cross-check frames0/85",
+        "Split fixed window colliders around portal and add explicit static closed door leaves",
+        "Write exact glTF fx/fy using perspective yfov and aspectRatio"
+      ],
+      "findings": [
+        "Minimum seat-table clearance 0.0406m; seat-seat 0.0470m",
+        "Desk manifold positive signed volume 1.5007m3",
+        "No permanent fixed window collider at portal; closed leaf remains obstacle",
+        "Camera metadata SHA unchanged from reviewed revision3",
+        "Saved Blender pixel aspect below1 is clamped by Blender; needs equivalent aspect setting"
+      ]
+    },
+    {
+      "revision": 5,
+      "type": "final intrinsic projection persistence correction",
+      "rendered_checks": [
+        0,
+        65,
+        85,
+        110,
+        130
+      ],
+      "status": "completed",
+      "changes": [
+        "Store Blender pixel aspect as fy/fx,1 to avoid sub-unit clamp; retain exact glTF intrinsics",
+        "No object geometry, camera pose, global T or scale change from revision4"
+      ],
+      "findings": [
+        "All five final input-camera views inspected",
+        "Geometry checks retain positive seat/table clearance and outward manifold reception desk",
+        "Saved Blender pixel aspect now 1.0001819134:1; GLB fx/fy exact",
+        "Camera JSON SHA unchanged from reviewed revision3"
+      ]
+    }
+  ],
+  "total_rendered_check_views": 25,
+  "actual_scene_revisions": 5,
+  "remaining_scene_revisions": 0,
+  "remaining_rendered_check_views": 35,
+  "status": "frozen_for_independent_GT_evaluation",
+  "freeze_time_utc": "2026-09-23T06:54:43.523701+00:00"
+}

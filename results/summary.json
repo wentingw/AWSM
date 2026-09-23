@@ -1,0 +1,55 @@
+{
+  "status": "complete_local",
+  "authoritative": "final_evaluation.json",
+  "figure": "../figures/five_view_comparison.jpg",
+  "methods": [
+    {
+      "label": "M1",
+      "pose_ate_m": null,
+      "rotation_deg": null,
+      "depth_absrel": null,
+      "surface_mean_m": 0.3058951146957697,
+      "status": "GT-assisted Sim3 diagnostic"
+    },
+    {
+      "label": "M2",
+      "pose_ate_m": 0.11759686116853764,
+      "rotation_deg": 0.31229522982234525,
+      "depth_absrel": 0.07380383297851562,
+      "surface_mean_m": 0.1819950564815801,
+      "status": "frozen and evaluated"
+    },
+    {
+      "label": "M3",
+      "pose_ate_m": 2.594523587374209,
+      "rotation_deg": 1.116379720440062,
+      "depth_absrel": 0.2611965576847372,
+      "surface_mean_m": 0.45902022779259666,
+      "status": "frozen and evaluated"
+    },
+    {
+      "label": "M4",
+      "pose_ate_m": null,
+      "rotation_deg": null,
+      "depth_absrel": 0.10684864991692612,
+      "surface_mean_m": 0.06866006729939131,
+      "status": "GT pose input"
+    },
+    {
+      "label": "B1",
+      "pose_ate_m": 0.11759686116853764,
+      "rotation_deg": 0.31229522982234525,
+      "depth_absrel": 0.07380383297851562,
+      "surface_mean_m": 0.4531511799779971,
+      "status": "frozen and evaluated"
+    },
+    {
+      "label": "B2",
+      "pose_ate_m": 0.7909437377181429,
+      "rotation_deg": 0.7354027244247339,
+      "depth_absrel": 0.18410531504967548,
+      "surface_mean_m": 0.46994411964132277,
+      "status": "frozen and evaluated"
+    }
+  ]
+}

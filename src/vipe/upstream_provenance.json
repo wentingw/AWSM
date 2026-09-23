@@ -1,0 +1,9 @@
+{
+  "source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/vipe/run_stable_vipe.py",
+  "adaptations": [
+    "accept full RGB sequence",
+    "restrict output to new workspace",
+    "report actual frame count"
+  ],
+  "truth_inputs": false
+}

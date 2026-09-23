@@ -1,0 +1,16 @@
+{
+  "status": "frozen_for_independent_GT_evaluation",
+  "all_required_present": true,
+  "semantic_objects": 74,
+  "colliders": 37,
+  "cameras": 180,
+  "final_hashes": "final_freeze.json",
+  "review_response": "review_response.json",
+  "render_ids": [
+    0,
+    60,
+    90,
+    108,
+    138
+  ]
+}

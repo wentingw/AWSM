@@ -1,0 +1,157 @@
+{
+  "status": "frozen_before_episodes",
+  "drone": {
+    "references": [
+      {
+        "query_id": 0,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_00.png",
+        "sha256": "7f12d545a24df84baf6cdf458ed19704f4e414a74140cd5488431d04338a9920"
+      },
+      {
+        "query_id": 1,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_01.png",
+        "sha256": "4241c444811bbba27c3e65f05d21200e91374c8158a2b437dea266286302854d"
+      },
+      {
+        "query_id": 2,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_02.png",
+        "sha256": "fb68d1df5ca17603d8d8b82d1b50d4979e2c53a1bc89ad51fa56483af257eb4a"
+      },
+      {
+        "query_id": 3,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_03.png",
+        "sha256": "63c7345d337d977ef854c875d6fddb41f556bf11b87f70ffd4b24451d9b875ad"
+      },
+      {
+        "query_id": 4,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_04.png",
+        "sha256": "e909a013526796c419eadabb04ff9fa3badf7cc8754264433a12d87f43235ac0"
+      },
+      {
+        "query_id": 5,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_05.png",
+        "sha256": "f02be272b81d4d8470c453ceef797fb899d7ca709714e710f3398978bf1391d7"
+      },
+      {
+        "query_id": 6,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_06.png",
+        "sha256": "1d458a32325ca876cd9e93a142dd75908fd0fba0f0ff486f62dd1a37fcca9487"
+      },
+      {
+        "query_id": 7,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_07.png",
+        "sha256": "243d87cff0a12d5f8b19cfb352df862ca3358a49908c7ccab08ffe2522ce5675"
+      },
+      {
+        "query_id": 8,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_08.png",
+        "sha256": "6325c9f3d2676035e2a056be7ba007ea96d0e64df275407519ef993f09a7cb69"
+      },
+      {
+        "query_id": 9,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_09.png",
+        "sha256": "7a017d8f6bf375c6697142db3d13a29ba246e18791781391e1aca14ec9d8ce55"
+      },
+      {
+        "query_id": 10,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_10.png",
+        "sha256": "f089d4f3358bff361e9345aa8808522f3934c6ecd55f2b6346b6a15cf668bcd5"
+      },
+      {
+        "query_id": 11,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_11.png",
+        "sha256": "4c7eab2f42d00576e3fc2cbe4155b8f2f82e8d87032e5106b21f9aada78c6012"
+      },
+      {
+        "query_id": 12,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_12.png",
+        "sha256": "912981ab8a3e16a80ee59804abfcf499e9c660bf88eaba4bc618d10c3fcb63a2"
+      },
+      {
+        "query_id": 13,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_13.png",
+        "sha256": "d5be4f553cf158101eb4dbde851d410f0b1fa35c0c4e2a4540cc2fb7d644322f"
+      },
+      {
+        "query_id": 14,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_14.png",
+        "sha256": "b1353cacdca84b4d4aa4d151e70e309de2dd7e9525c7b81b091d5ddd53abbc55"
+      },
+      {
+        "query_id": 15,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_15.png",
+        "sha256": "a95de66d840d38a13d60f7a654e5cc331223afc59377416605eca586ab68fafb"
+      },
+      {
+        "query_id": 16,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_16.png",
+        "sha256": "68fa04868a03f30f12077f1362d8ebd09116e9ac94d6c3d053b35d6673e13b46"
+      },
+      {
+        "query_id": 17,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_17.png",
+        "sha256": "2b81d1cb02a893015c8ab47d5921932e6bca897435befa92c05b2b58d2a2f147"
+      },
+      {
+        "query_id": 18,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_18.png",
+        "sha256": "f41bbbc73d8bcfd710153af3e3044c9036b0c651ecfa2ec7a9b3d4fcd5e858d8"
+      },
+      {
+        "query_id": 19,
+        "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/reference_19.png",
+        "sha256": "f54ab3a58c188b999ff72d740172088a4c3951447821b49a107da08d1824e93a"
+      }
+    ],
+    "target_positions_available_to_planner": false,
+    "retrieval": "DINOv2 ViT-S/14 global CLS cosine, top5 candidates checked for reachable collision route",
+    "candidate_views": "model renders at every6th fixed input camera",
+    "thresholds": {
+      "strict_translation_m": 0.1,
+      "strict_rotation_deg": 5,
+      "relaxed_translation_m": 0.25,
+      "relaxed_rotation_deg": 10
+    }
+  },
+  "g1": {
+    "instructions": [
+      "Find the green chair near a window",
+      "Find the table near a plant",
+      "Find a plant",
+      "Find the reception desk",
+      "Find a round mirror",
+      "Go to the green chair near a window",
+      "Go to the table near a plant",
+      "Go to a plant",
+      "Go to the reception desk",
+      "Go to a round mirror",
+      "Please find the green chair near a window",
+      "Please find the table near a plant",
+      "Please find a plant",
+      "Please find the reception desk",
+      "Please find a round mirror",
+      "Look for the green chair near a window",
+      "Look for the table near a plant",
+      "Look for a plant",
+      "Look for the reception desk",
+      "Look for a round mirror",
+      "Go to and stop in front of the green chair near a window",
+      "Go to and stop in front of the table near a plant",
+      "Go to and stop in front of a plant",
+      "Go to and stop in front of the reception desk",
+      "Go to and stop in front of a round mirror",
+      "Please look for the green chair near a window",
+      "Please look for the table near a plant",
+      "Please look for a plant",
+      "Please look for the reception desk",
+      "Please look for a round mirror"
+    ],
+    "language_scope": "constrained English category/attribute/near baseline",
+    "scope_note": "30 constrained-language paraphrases over5 scene queries; correlated within target, not30 independent object classes"
+  },
+  "spawn_rule": "first free floor-supported location among estimated camera XY positions at keyframes 12,30,60,90,120,150; identical spawn across queries",
+  "world": "frozen M3 conservative colliders; metric positions; simulator-state-oracle localization",
+  "seed": 20260923,
+  "GT_transfer": "separate evaluator, not model-world success",
+  "amendment": "Expanded pilot5 to20 image queries and30 constrained-language paraphrases before any M3 episode or retrieval result; retained pilot protocol for audit"
+}

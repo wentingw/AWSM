@@ -1,0 +1,14 @@
+# SUPERSEDED DIAGNOSTIC. Do not use for final metrics.
+# Authoritative replacement: evaluate_novel_depth_blender.py (GT masks, saved rays, exact missing-penalty MAE).
+"""Summarize existing 20-view depth arrays and verify finite/coverage ranges."""
+import json,sys
+from pathlib import Path
+import numpy as np
+root=Path(__file__).resolve().parents[1]; out=root/'results/ground_truth/cycles_novel_20'; out.mkdir(parents=True,exist_ok=True)
+man=json.load(open(root/'results/ground_truth/independent_holdout_20/manifest.json'))
+rows=[]
+for v in man['views']:
+ z=np.load(v['zdepth_path']); valid=np.isfinite(z)&(z>.1)&(z<30)
+ rows.append({'view_id':v['view_id'],'shape':list(z.shape),'valid_pixels':int(valid.sum()),'coverage':float(valid.mean()),'min_z_m':float(np.nanmin(np.where(valid,z,np.nan))),'max_z_m':float(np.nanmax(np.where(valid,z,np.nan)))})
+report={'scope':'same-scene GT-pose perturbations; geometry/depth only','rgb_evaluation':'excluded: Cycles renderer-domain diagnostic only','depth_source':'existing GT mesh optical-Z arrays; finite range [0.1,30] m','views':rows,'aggregate_valid_pixels':int(sum(x['valid_pixels'] for x in rows)),'aggregate_mean_coverage':float(np.mean([x['coverage'] for x in rows]))}
+(out/'novel_depth_validation.json').write_text(json.dumps(report,indent=2)+'\n'); print(json.dumps(report,indent=2))

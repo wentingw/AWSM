@@ -1,0 +1,86 @@
+{
+  "method_id": "M1",
+  "model_path": "/home/hchen/Documents/astraBlenderTest/visual-recon/scene.blend",
+  "model_sha256": "fd2ff0bc5cbc1efd47457410cd6474c9718422cccd0b60a8fb7c36e2f01c641b",
+  "pose_status": "NA; authored presentation cameras are not trajectory estimates",
+  "T_gt_model": [
+    [
+      -0.02706764634495188,
+      0.6891019649215635,
+      -0.013150514690685393,
+      9.718768055731358
+    ],
+    [
+      -0.6877047666058407,
+      -0.02612860480890269,
+      0.04633100012293195,
+      25.404362542292624
+    ],
+    [
+      0.04578873314468905,
+      0.01492948512258577,
+      0.6880752967263276,
+      -0.4287596074582094
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment": "diagnostic Sim3 from four frozen manual-view associations; GT-assisted; not metric recovery",
+  "registration_views": [
+    0,
+    78,
+    105,
+    90
+  ],
+  "registration_overlaps_display_frame0": true,
+  "scale": 0.6897587343224042,
+  "native_se3_T_gt_model": [
+    [
+      -0.03924219440623271,
+      0.9990478273515175,
+      -0.01906538335297593,
+      5.556701451453403
+    ],
+    [
+      -0.9970221939724823,
+      -0.03788078861411654,
+      0.06716986363148371,
+      27.31978198169393
+    ],
+    [
+      0.0663836945678905,
+      0.021644503186377315,
+      0.9975593819805088,
+      -1.6946793878880402
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "truth_pose_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/mapping_gt_tum.txt",
+  "render_indices": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "output": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/renders",
+  "K": [
+    762.8,
+    762.8,
+    640,
+    480
+  ],
+  "source_resolution": [
+    1280,
+    960
+  ]
+}

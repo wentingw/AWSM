@@ -1,0 +1,20 @@
+{
+  "workspace_root": "/home/hchen/Documents/astraBlenderTest/world_model_blog",
+  "mode": "cpu_evaluation_only",
+  "gpu_jobs_allowed": false,
+  "gt_is_evaluation_only": true,
+  "ground_truth_manifest": "results/ground_truth/manifest.json",
+  "methods_manifest_schema": {
+    "method_id": "M1|M2|M3|M4|B1|B2|B2p",
+    "pose_path": "optional TUM pose; omit for M1 if no estimator output",
+    "gt_pose_path": "results/ground_truth/mapping_gt_tum.txt",
+    "pred_depth_path": "optional .npy/.npz; observed-frame or rendered-model split required",
+    "gt_depth_path": "GT z-depth with identical shape and camera convention",
+    "pred_points_path": "optional Nx3 npy/npz after method-standard fusion",
+    "gt_points_path": "optional Nx3 npy/npz from GT mesh cache"
+  },
+  "alignment": {"pose": "global_se3_fit_on_mapping_only", "sim3": "supplementary", "same_transform_for_model": true},
+  "holdout": {"main_5x4": "five_mapping_sample_views", "same_video_diagnostic": 20, "independent": 20, "independent_status": "missing_until_new_trajectory"},
+  "gt_geometry": {"source": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/Collected_World_Lobby/World_Lobby.usd", "reuse_read_only": true, "copy_large_mesh": false},
+  "outputs": {"pose": "results/evaluation/pose", "depth": "results/evaluation/depth", "geometry": "results/evaluation/geometry", "render": "results/evaluation/render"}
+}

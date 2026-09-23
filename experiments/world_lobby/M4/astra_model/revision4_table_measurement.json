@@ -1,0 +1,25 @@
+{
+  "source": "allowed RGB frame60",
+  "method": "color-continuity mask near manually selected table interior, 2px opening, boundary-to-horizontal-plane ellipse fit",
+  "source_size": [
+    780,
+    585
+  ],
+  "assumed_top_z": 0.4,
+  "mask_bounds": [
+    365,
+    509,
+    482,
+    577
+  ],
+  "fit_center_xy": [
+    13.025810813729272,
+    21.585690216959602
+  ],
+  "fit_radii_xy": [
+    0.4640924953704024,
+    0.42753773459102984
+  ],
+  "fit_theta_z": -0.4061705950055434,
+  "normalized_radial_rms": 0.03797132851535475
+}

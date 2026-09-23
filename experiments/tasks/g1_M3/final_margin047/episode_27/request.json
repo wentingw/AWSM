@@ -1,0 +1,10 @@
+{
+  "episode_id": 27,
+  "instruction": "Please look for a plant",
+  "start_xy": [
+    -0.432377798,
+    0.183393755
+  ],
+  "start_yaw": 0.0,
+  "spawn_source": "model camera trace frame 12 first free supported"
+}

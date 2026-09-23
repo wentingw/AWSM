@@ -1,0 +1,64 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "instruction": "Find the green chair near a window",
+  "query": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "seat_middle_left_back",
+        "score": 1.0456969188070906
+      },
+      {
+        "object_id": "seat_middle_left_front",
+        "score": 1.042004249297407
+      },
+      {
+        "object_id": "seat_middle_right_back",
+        "score": 1.0311334418147338
+      },
+      {
+        "object_id": "seat_front_center",
+        "score": 1.0211408147934904
+      },
+      {
+        "object_id": "seat_front_right",
+        "score": 1.0200625556877085
+      },
+      {
+        "object_id": "seat_middle_center",
+        "score": 0.5380168411202577
+      },
+      {
+        "object_id": "seat_middle_right_front",
+        "score": 0.5334477741955687
+      },
+      {
+        "object_id": "seat_front_left",
+        "score": 0.5227555742705277
+      },
+      {
+        "object_id": "planter_mirror",
+        "score": 0.5225714532509395
+      },
+      {
+        "object_id": "planter_back_corner",
+        "score": 0.5152628012317325
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained English category/attribute/near queries",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "planning_failed",
+  "target_id": "seat_middle_left_back",
+  "plan": {
+    "status": "no_reachable_approach",
+    "path": []
+  },
+  "planning_seconds": 0.0012114178389310837
+}

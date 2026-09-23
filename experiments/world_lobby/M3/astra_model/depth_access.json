@@ -1,0 +1,132 @@
+[
+  {
+    "frame": 5,
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/005_geometry.npz",
+    "sha256": "9eb05d432e8222603907d62e82268e687d4e94499590e614d1f8bd320687028a",
+    "shape": [
+      392,
+      518
+    ],
+    "K_used": [
+      [
+        311.4766540527344,
+        0.0,
+        258.70416259765625
+      ],
+      [
+        0.0,
+        311.4766540527344,
+        195.7041778564453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "frame": 90,
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/090_geometry.npz",
+    "sha256": "5499dc7afe4d48225d272b2c5745513ee6a5247ab6485e5294e27b8a21f63f57",
+    "shape": [
+      392,
+      518
+    ],
+    "K_used": [
+      [
+        311.4766540527344,
+        0.0,
+        258.70416259765625
+      ],
+      [
+        0.0,
+        311.4766540527344,
+        195.7041778564453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "frame": 105,
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/105_geometry.npz",
+    "sha256": "c4fda95126d82e321e228c71bb0dd2f72563ddcfb604d13a58aa130c657f6a5e",
+    "shape": [
+      392,
+      518
+    ],
+    "K_used": [
+      [
+        311.4766540527344,
+        0.0,
+        258.70416259765625
+      ],
+      [
+        0.0,
+        311.4766540527344,
+        195.7041778564453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "frame": 60,
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/060_geometry.npz",
+    "sha256": "f236a0a90427c6babf2604fe862fa30ec5f73e9a7ab6fdddb88b22153283bdbf",
+    "shape": [
+      392,
+      518
+    ],
+    "K_used": [
+      [
+        311.4766540527344,
+        0.0,
+        258.70416259765625
+      ],
+      [
+        0.0,
+        311.4766540527344,
+        195.7041778564453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "frame": 126,
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/data/packets/M3/126_geometry.npz",
+    "sha256": "db9b5805f08a050dda50626c6a2199a58a705a1cfcf18bfc70318279c4c300e6",
+    "shape": [
+      392,
+      518
+    ],
+    "K_used": [
+      [
+        311.4766540527344,
+        0.0,
+        258.70416259765625
+      ],
+      [
+        0.0,
+        311.4766540527344,
+        195.7041778564453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  }
+]

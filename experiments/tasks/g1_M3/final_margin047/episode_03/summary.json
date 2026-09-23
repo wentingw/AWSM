@@ -1,0 +1,247 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/astra_model",
+  "instruction": "Find the reception desk",
+  "query": {
+    "status": "matched",
+    "candidates": [
+      {
+        "object_id": "reception",
+        "score": 1.0
+      }
+    ],
+    "scope": "constrained English category/attribute/near queries"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained English category/attribute/near queries",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "success",
+  "target_id": "reception",
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        -0.432377798,
+        0.183393755,
+        -1.7382169319971152
+      ],
+      [
+        -2.599999999999998,
+        -0.8499999999999996,
+        -1.7382169319971152
+      ],
+      [
+        -5.599999999999998,
+        -0.6499999999999995,
+        -1.7382169319971152
+      ],
+      [
+        -9.399999999999999,
+        2.95,
+        -1.7382169319971152
+      ],
+      [
+        -12.2,
+        3.750000000000001,
+        -1.7382169319971152
+      ],
+      [
+        -13.599999999999998,
+        3.750000000000001,
+        -1.7382169319971152
+      ],
+      [
+        -19.26299934387207,
+        0.7000000476837158,
+        -1.7382169319971152
+      ]
+    ],
+    "expanded": 1470
+  },
+  "planning_seconds": 0.6724985709879547,
+  "arrived_at_s": 57.702,
+  "simulated_seconds": 57.702,
+  "final_position": [
+    -19.15751601891943,
+    0.8229411637692718,
+    -1.758937665772111
+  ],
+  "final_goal_distance_m": 0.16199151171412185,
+  "path_length_m": 22.086922860470665,
+  "obstacle_contact_steps": 0,
+  "obstacle_contacts": 0,
+  "fallen": false,
+  "planned_goal": [
+    -19.26299934387207,
+    0.7000000476837158,
+    -1.7382169319971152
+  ],
+  "target": {
+    "object_id": "reception",
+    "category": "reception_desk",
+    "center": [
+      -20.602499961853027,
+      0.7000000476837158,
+      -1.818216860294342
+    ],
+    "size": [
+      1.3,
+      4.5,
+      1.44
+    ],
+    "attributes": {
+      "shape": "folded angular front panels with recessed counter and raised perimeter",
+      "observed": true,
+      "unseen_backside": "inferred plain rear closure"
+    },
+    "evidence": {
+      "frame_ids": [
+        5,
+        126
+      ],
+      "modeller_observation": "personally inspected original RGB; manually marked regions in annotations.json"
+    },
+    "geometry_provenance": {
+      "source": "direct supplied depth in hand-marked RGB box",
+      "measurement_log": "depth_semantic_measurements.json",
+      "object_measurements": [
+        {
+          "frame": 5,
+          "box": [
+            0.456,
+            0.426,
+            0.577,
+            0.474
+          ],
+          "n": 1197,
+          "xyz_quantiles": [
+            [
+              -14.851965739253433,
+              -1.235341482233765,
+              -1.4193646630912162
+            ],
+            [
+              -14.015419834109862,
+              -0.6590912879302897,
+              -1.220757139436106
+            ],
+            [
+              -13.542809533917803,
+              -0.10236261752938618,
+              -1.0888131002767005
+            ],
+            [
+              -10.068009685798465,
+              0.46680628067838337,
+              -0.9474470018829724
+            ],
+            [
+              -8.86651052634585,
+              1.0239914522807303,
+              -0.8292290494114319
+            ]
+          ],
+          "depth_quantiles": [
+            8.369075584411622,
+            9.582953453063965,
+            13.067301750183105,
+            13.490242958068848,
+            14.297590446472167
+          ]
+        },
+        {
+          "frame": 126,
+          "box": [
+            0.788,
+            0.661,
+            0.99,
+            0.827
+          ],
+          "n": 6996,
+          "xyz_quantiles": [
+            [
+              -21.900244367606394,
+              -0.17600062392722415,
+              -2.4355281055653664
+            ],
+            [
+              -19.96206720829233,
+              0.7431676875651385,
+              -2.3991799163053393
+            ],
+            [
+              -19.723450565160114,
+              1.5703628898114608,
+              -2.021111491347558
+            ],
+            [
+              -18.109986873944663,
+              2.119198757533943,
+              -1.5664439377424262
+            ],
+            [
+              -13.37917910583295,
+              2.493882846761794,
+              -1.3256668689542672
+            ]
+          ],
+          "depth_quantiles": [
+            5.7534379959106445,
+            9.308459997177124,
+            10.452434539794922,
+            11.275161504745483,
+            11.999619483947754
+          ]
+        }
+      ],
+      "selection_rule": "near frame126 primary; initial frame5 measurement retained as conflict",
+      "revision3_shape": "Strong front facets and visible recessed countertop authored from personally inspected frame105/126 RGB; native metric placement retained as uncertain.",
+      "conflict_present": true,
+      "native_measurements_retained": true,
+      "conflict_reason": "Native per-view depth/localization disagreements remain in the measurement logs; selected semantic parameters are an explicit compromise."
+    },
+    "observed_geometry": "visible surface dimensions approximated by parametric primitive",
+    "inferred_geometry": "unseen backside, closed base, thickness, joints; rigid static physics assumed",
+    "confidence": "low",
+    "spatial_relations": [
+      {
+        "relation": "inside",
+        "object_id": "lobby"
+      },
+      {
+        "relation": "supported_by",
+        "object_id": "floor"
+      }
+    ],
+    "unresolved_localization": {
+      "frames": [
+        105,
+        126
+      ],
+      "issue": "Door/column/reception relative image positions remain inconsistent with selected native metric parameters. No reliable joint localization has been established from conflicting supplied depths. Kept unchanged rather than introducing unsupported correction.",
+      "alternatives_log": "depth_semantic_measurements.json and plane_consensus.json"
+    },
+    "bounds": [
+      [
+        -21.242000579833984,
+        -1.5499999523162842,
+        -2.5382168292999268
+      ],
+      [
+        -19.96299934387207,
+        2.950000047683716,
+        -1.0982168912887573
+      ]
+    ]
+  },
+  "limitations": [
+    "constrained language matching",
+    "simulator-state-oracle localization",
+    "conservative AABB world, not original triangle mesh",
+    "collision materials assumed, not measured",
+    "no GT-world transfer in this result"
+  ]
+}

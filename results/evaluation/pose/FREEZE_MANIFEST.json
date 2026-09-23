@@ -1,0 +1,15 @@
+{
+  "protocol": "unified_pose_report_v2",
+  "inputs": {
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/openvins_camera_pose_images.tum": "141806146837107798c7963b5dc6753bc643bb095f4d7e97520872196f2b3146",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/openvins_camera_pose_180.tum": "1227903a2eaeff4de13087b2e6f2b5efbec4f3f80efeb124b13d77e139c5e75e",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/M1/render_manifest.json": "b4c99abc1761623f3448832a7a2b75d3f2cf1f767b4ca33b7d50b4ea51b482ec"
+  },
+  "outputs": {
+    "unified_pose_report.json": "d8a83ba4be3b0b763ee8a03f34e5cd04c93417ceb81c61c0d8dff12c7d13626a",
+    "M3_OpenVINS_common175.tum": "9c7d4537e5c969df4c93d3c2642e0b43d9ae36d830e1cadd91f903e458865c89"
+  },
+  "M3_source": "world_model_blog/experiments/world_lobby/M3/openvins_20260923",
+  "M3_old_failure_excluded": true,
+  "common175_source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/openvins_camera_pose_180.tum"
+}

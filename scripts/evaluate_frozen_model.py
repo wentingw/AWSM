@@ -1,0 +1,13 @@
+"""Evaluate a frozen Astra scene once, without feedback to the modeller."""
+import argparse,hashlib,json,subprocess
+from pathlib import Path
+import numpy as np
+ROOT=Path(__file__).resolve().parents[1];B='/home/hchen/Documents/blender/blender-5.2.0-linux-x64/blender'
+def main():
+ p=argparse.ArgumentParser();p.add_argument('--method',choices=['M2','M3','M4'],required=True);a=p.parse_args();m=a.method;folder=ROOT/'experiments/world_lobby'/m/'astra_model';manifest=json.loads((folder/'modelling_manifest.json').read_text());assert manifest['status']=='frozen_for_independent_GT_evaluation',manifest['status'];model=folder/'scene.blend';checksum=hashlib.sha256(model.read_bytes()).hexdigest();input_to_model=np.asarray(manifest.get('T_input_model',np.eye(4)));input_to_gt=np.eye(4) if m=='M4' else np.asarray(json.loads((ROOT/'results/evaluation/pose/current'/f'{m}_registration.json').read_text())['transform']);T=input_to_gt@np.linalg.inv(input_to_model);out=ROOT/'results'/m;out.mkdir(exist_ok=True);transform={'transform':T.tolist(),'scope':'GT_from_input @ inverse(model_from_input); single native SE3 mapping registration; M4 identity gauge'};(out/'model_registration.json').write_text(json.dumps(transform,indent=2)+'\n');r=dict(method_id=m,model_path=str(model),model_sha256=checksum,T_gt_model=T.tolist(),alignment=transform['scope'],truth_pose_path=str(ROOT/'results/ground_truth/mapping_gt_tum.txt'),render_indices=[0,36,72,108,144],output=str(out/'renders'),K=[762.8,762.8,640,480],source_resolution=[1280,960]);(out/'render_manifest.json').write_text(json.dumps(r,indent=2)+'\n')
+ commands=[('render','render_model_views.py',[str(out/'render_manifest.json')]),('model_depth','evaluate_model_depth_blender.py',['--model',str(model),'--transform',str(out/'model_registration.json'),'--out',str(ROOT/'results/evaluation/depth'/f'{m}_model')]),('geometry','evaluate_blend_surface_blender.py',['--model',str(model),'--transform-json',str(out/'model_registration.json'),'--out',str(ROOT/'results/evaluation/geometry'/m),'--samples','100000'])]
+ for tag,script,args in commands:
+  with (ROOT/'logs'/f'{m}_{tag}_evaluation.log').open('w') as f:subprocess.run([B,'-b','--threads','4','--python-exit-code','1','--python',str(ROOT/'scripts'/script),'--',*args],stdout=f,stderr=subprocess.STDOUT,check=True)
+  assert hashlib.sha256(model.read_bytes()).hexdigest()==checksum;print(m,tag,'complete',flush=True)
+ (out/'evaluation_complete.json').write_text(json.dumps({'status':'complete','model_sha256':checksum,'source_model_unchanged':True,'evaluation_feedback_to_modeller':False},indent=2)+'\n')
+if __name__=='__main__':main()

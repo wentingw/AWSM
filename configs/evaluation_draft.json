@@ -1,0 +1,299 @@
+{
+  "protocol_version": "2026-09-22-draft",
+  "status": "design_only",
+  "methods": [
+    {
+      "id": "M1",
+      "name": "rgb_astra",
+      "inputs": [
+        "sampled_rgb"
+      ],
+      "pose_mode": "na",
+      "scale_mode": "na"
+    },
+    {
+      "id": "M2",
+      "name": "vipe_astra",
+      "inputs": [
+        "video",
+        "sampled_rgb"
+      ],
+      "pose_mode": "learned_near_metric",
+      "scale_modes_report": [
+        "native_se3",
+        "sim3_diagnostic"
+      ],
+      "scale_mode": "native_scale",
+      "frontend_input": "full_video",
+      "legacy_variant": "180_sparse_rgb"
+    },
+    {
+      "id": "M3",
+      "name": "openvins_mapanything_astra",
+      "inputs": [
+        "video",
+        "imu",
+        "sampled_rgb"
+      ],
+      "pose_mode": "metric",
+      "scale_mode": "metric"
+    },
+    {
+      "id": "M4",
+      "name": "gtpose_mapanything_astra",
+      "inputs": [
+        "video",
+        "sampled_rgb",
+        "gt_camera_pose"
+      ],
+      "pose_mode": "metric_diagnostic",
+      "scale_mode": "metric",
+      "oracle": true,
+      "guaranteed_upper_bound": false,
+      "gt_access": [
+        "camera_pose_only"
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "vipe_standalone",
+      "inputs": [
+        "video",
+        "sampled_rgb"
+      ],
+      "pose_mode": "learned_near_metric",
+      "scale_modes_report": [
+        "native_se3",
+        "sim3_diagnostic"
+      ],
+      "scale_mode": "native_scale",
+      "frontend_input": "full_video",
+      "legacy_variant": "180_sparse_rgb"
+    },
+    {
+      "id": "B2",
+      "name": "mapanything_joint_pose_depth",
+      "inputs": [
+        "video",
+        "rgb"
+      ],
+      "pose_mode": "native_joint",
+      "scale_mode": "native_joint",
+      "geometry_fusion": "standard_pose_depth_to_mesh"
+    },
+    {
+      "id": "B2p",
+      "name": "mapanything_openvins_pose_ablation",
+      "role": "supplementary",
+      "inputs": [
+        "video",
+        "openvins_pose"
+      ],
+      "pose_mode": "inherited_openvins",
+      "scale_mode": "inherited_openvins",
+      "geometry_fusion": "standard_pose_depth_to_mesh"
+    },
+    {
+      "id": "M3b",
+      "name": "existing_sfm_imu_mapanything_astra",
+      "role": "supplementary",
+      "inputs": [
+        "video",
+        "imu",
+        "sampled_rgb"
+      ],
+      "pose_mode": "metric",
+      "reported_provenance": {
+        "ate_m": 0.36644696
+      }
+    },
+    {
+      "id": "M3c",
+      "name": "batch_vio_mapanything_astra",
+      "role": "supplementary",
+      "inputs": [
+        "video",
+        "imu",
+        "sampled_rgb"
+      ],
+      "pose_mode": "metric",
+      "reported_provenance": {
+        "ate_m": 0.3423,
+        "depth_status": "not_rerun"
+      }
+    }
+  ],
+  "dataset_constants": {
+    "dataset_name": "WorldLobby360s",
+    "raw_frames": 8999,
+    "fps": 25,
+    "resolution": [
+      1280,
+      960
+    ],
+    "mapping_sample_indices": {
+      "start": 0,
+      "stop_inclusive": 8950,
+      "step": 50,
+      "count": 180
+    }
+  },
+  "splits": {
+    "mapping": {
+      "input_frames": 180,
+      "input_frame_indices": "dataset_constants.mapping_sample_indices"
+    },
+    "same_video_withheld_from_modeller": true,
+    "independent_holdout": {
+      "new_trajectory": true,
+      "hidden_from_all_frontends": true,
+      "n_poses": 20
+    },
+    "geometry_holdout": true,
+    "task_holdout": true
+  },
+  "main_figure": {
+    "rows": 5,
+    "columns": [
+      "M1_render_at_input_pose",
+      "M2_render_at_input_pose",
+      "M3_render_at_input_pose",
+      "input_sample_rgb_gt"
+    ],
+    "row_source": "five_of_180_mapping_samples",
+    "same_intrinsics": true,
+    "is_not_holdout": true
+  },
+  "coordinate_convention": {
+    "stored_pose": "T_world_camera",
+    "handedness": "right",
+    "depth_metric": "z_depth",
+    "ray_depth_conversion_required": true
+  },
+  "alignment": {
+    "global_gauge": "one_se3_for_metric_and_near_metric_systems",
+    "fit_on": "mapping_only",
+    "apply_same_transform_to": [
+      "pose",
+      "model"
+    ],
+    "raw_only_if_same_world_frame": true,
+    "up_to_scale_supplement": [
+      "native_se3",
+      "sim3"
+    ],
+    "evaluate_on": [
+      "mapping",
+      "independent_holdout"
+    ],
+    "m1_without_native_camera": "single_sim3_on_reserved_registration_set_diagnostic_only",
+    "depth_note": "rerender transformed model; raw camera z_depth unchanged under world SE3"
+  },
+  "primary_metrics": [
+    "pose_ate_trans_m",
+    "depth_absrel",
+    "geom_chamfer_m",
+    "task_success_rate"
+  ],
+  "metrics": {
+    "pose": [
+      "ate_translation",
+      "rpe_translation_1s",
+      "rpe_translation_10s",
+      "rotation_deg",
+      "valid_temporal_coverage"
+    ],
+    "render": [
+      "psnr",
+      "ssim",
+      "lpips",
+      "render_depth_absrel"
+    ],
+    "depth": [
+      "absrel",
+      "rmse_m",
+      "delta1",
+      "valid_coverage",
+      "invalid_rate",
+      "missing_penalty"
+    ],
+    "geometry": [
+      "chamfer_m",
+      "accuracy_m",
+      "completeness_m",
+      "accuracy_5cm",
+      "completeness_5cm",
+      "normal_deg",
+      "valid_area_ratio",
+      "fscore_5cm",
+      "fscore_10cm",
+      "fscore_20cm"
+    ],
+    "downstream": [
+      "retrieval_top1",
+      "drone_retake_success",
+      "g1_arrival_rate",
+      "collision_rate",
+      "path_ratio",
+      "time_s"
+    ]
+  },
+  "aggregation": {
+    "summary": [
+      "mean",
+      "median",
+      "p90"
+    ],
+    "multi_scene_ci": "bootstrap_95_scene_resample",
+    "single_scene_ci": [
+      "contiguous_block",
+      "repeat_run"
+    ],
+    "single_scene_ci_is_not_generalization": true,
+    "paired_comparison": "paired_block_or_scene_bootstrap"
+  },
+  "thresholds": {
+    "performance_gates": false,
+    "quality_gates": [
+      "data_complete",
+      "versions_locked",
+      "hashes_present",
+      "coordinate_depth_declared",
+      "holdout_isolation",
+      "failure_logs",
+      "recomputable"
+    ],
+    "task_thresholds": "freeze_on_validation_and_report",
+    "pose_depth_geometry": "report_measurements_and_threshold_curves"
+  },
+  "reproducibility": {
+    "seed": 20260922,
+    "save_raw_outputs": true,
+    "save_alignment_transforms": true,
+    "require_model_hash": true,
+    "require_config_hash": true,
+    "controlled_runs_per_astra_method": 3,
+    "engineering_pilot_runs": 1
+  },
+  "notes": [
+    "B1/B2/B2p geometry uses standard pose+depth fusion with identical parameters and no Astra",
+    "M1 pose metrics are NA unless it outputs sampled camera pose; registration is diagnostic only",
+    "M4 uses no IMU and is a diagnostic reference condition, not a guaranteed upper bound",
+    "M3 must remain OpenVINS; M3b and M3c are supplementary and cannot replace it",
+    "OpenVINS must run on the full sequence before depth and Astra",
+    "Observed-frame frontend depth and independent-holdout rendered-model depth are separate protocols",
+    "Do not claim semantic or physical validity from geometry metrics alone",
+    "PSNR differences are not converted linearly into pose error"
+  ],
+  "downstream_design": {
+    "drone": {
+      "target_images": 20,
+      "starts_per_target": 3
+    },
+    "g1": {
+      "instructions": 30,
+      "starts_per_instruction": 3
+    },
+    "scope": "simulation_only"
+  }
+}

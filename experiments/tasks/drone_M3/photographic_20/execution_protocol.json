@@ -1,0 +1,16 @@
+{
+  "source_protocol_sha256": "c7f7b4923ee58951caba10b27f0ce71505196ad9aa9671727036db7ec91907ce",
+  "spawn": {
+    "keyframe_index": 12,
+    "start_xyz": [
+      -0.43237778544425964,
+      0.18339376151561737,
+      0.49143102765083313
+    ],
+    "floor_z": -2.5382169319971153
+  },
+  "drone_inflation_m": 0.45,
+  "candidate_topk": 5,
+  "no_query_pose_or_GT_access": true,
+  "refinement": "none; coarse retrieval and ideal stabilized gimbal"
+}

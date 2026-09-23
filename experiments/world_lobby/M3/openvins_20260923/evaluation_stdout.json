@@ -1,0 +1,103 @@
+{
+  "status": "evaluated_after_estimation",
+  "estimator_truth_read": false,
+  "evaluator_truth_read": true,
+  "method": "OpenVINS MSCKF, max_clones=31, original calibration, full 360 s RGB+IMU",
+  "input": {
+    "root": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs",
+    "rgb_rows": 8999,
+    "imu_rows": 89999
+  },
+  "raw_estimator_output": {
+    "file": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/pose_cam.tum",
+    "samples": 87585,
+    "first_timestamp": 755.132035867,
+    "last_timestamp": 1106.488052555,
+    "coverage_s": 351.35601668799995,
+    "truth_overlap_samples": 87576
+  },
+  "image_pose_interpolation": {
+    "file": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/openvins_camera_pose_images.tum",
+    "input_images": 8999,
+    "interpolated_rows": 8784,
+    "covered_fraction": 0.9761084564951661
+  },
+  "sampled_180": {
+    "file": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/openvins_camera_pose_180.tum",
+    "requested": 180,
+    "written": 175,
+    "sampling": "input camera rows 0,50,...,8950; pose linearly interpolated + quaternion SLERP from raw OpenVINS odometry"
+  },
+  "metrics_first_pose_se3_alignment": {
+    "matched_samples": 8784,
+    "first_elapsed_s": 8.600000409000017,
+    "last_elapsed_s": 359.9200170959999,
+    "position_rmse_m": 3.1965831364502364,
+    "position_median_m": 0.8209237248447914,
+    "position_max_m": 7.512754529740075,
+    "orientation_rmse_deg": 0.3342197796763765,
+    "orientation_median_deg": 0.2905998131369455,
+    "orientation_max_deg": 0.7288607645884616,
+    "timeline": {
+      "10": {
+        "position_error_m": 0.026472181403868117,
+        "orientation_error_deg": 0.02396161398293137
+      },
+      "20": {
+        "position_error_m": 0.019495830564927152,
+        "orientation_error_deg": 0.2706523111497069
+      },
+      "30": {
+        "position_error_m": 0.011784685445598256,
+        "orientation_error_deg": 0.2721741903803998
+      },
+      "40": {
+        "position_error_m": 0.011392992254815335,
+        "orientation_error_deg": 0.28563454187803294
+      },
+      "60": {
+        "position_error_m": 0.010236088611637469,
+        "orientation_error_deg": 0.2899314782939524
+      },
+      "120": {
+        "position_error_m": 0.6293695866790273,
+        "orientation_error_deg": 0.34353223397856203
+      },
+      "180": {
+        "position_error_m": 6.791027194778935,
+        "orientation_error_deg": 0.13717187449409293
+      },
+      "240": {
+        "position_error_m": 4.071669632468989,
+        "orientation_error_deg": 0.3988061548850441
+      },
+      "300": {
+        "position_error_m": 0.7861845177838758,
+        "orientation_error_deg": 0.16663291425256263
+      },
+      "359": {
+        "position_error_m": 0.3489197579999033,
+        "orientation_error_deg": 0.4120647841595734
+      }
+    }
+  },
+  "diagnostic_log_counts": {
+    "msckf_update": 0,
+    "slam_update": 0,
+    "slam_delayed_init": 0
+  },
+  "hashes": {
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/pose_cam.tum": "cf97712d6a5d30d5bb31b0e073dda09d9da38db83656237cb25d95eba60a1d69",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/pose_imu.tum": "80493c314c0b90544f5d309b37fd3b41a4a6a34237151206081ab9313c753d9f",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/output/openvins.log": "4c3ba07ff733e4b5e0869b6981d0c0a31994116e35185835a2f68a76cc9f8656",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/config_window31.yaml": "c3ef7cb0e853a0410d60721ee5c1aa75510b6ea6da82dce9f30700c9dd37eb07",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/kalibr_imu_smooth.yaml": "827a7a4aec118c6327d30ed7d32ed09b31004c71279096f6998aa0c9d79c64a7",
+    "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M3/openvins_20260923/kalibr_imucam_smooth.yaml": "00d61f5d83cab42838de11570546eb8e2d9f20ec7b94dda0c3ce14f5654e117f",
+    "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/ground_truth/camera_tum.txt": "10e687d2b2e15fe3bc075916c985bd327a439a7b3d9cfa2f7c32f093737a43f3"
+  },
+  "limitations": [
+    "The ROS launcher needed SIGTERM during shutdown after replay completion; all 8999 images reported image_errors=0.",
+    "Metrics use the established first-pose rigid alignment and are not a full-trajectory optimized SE(3) ATE.",
+    "Raw estimator output is ~250 Hz odometry; image and 180-frame files are interpolated products and are labeled separately."
+  ]
+}

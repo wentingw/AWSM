@@ -1,0 +1,108 @@
+{
+  "method_id": "M2",
+  "modeller": "GPT-6 Astra",
+  "run_type": "first engineering run; not three-run statistical trial",
+  "input_packet": "data/packets/M2/packet.json",
+  "input_frame_count": 180,
+  "pose_source": "ViPE full8999 RGB-video pose estimation",
+  "depth_source": "ViPE adaptive_unidepth-s native sampled depths",
+  "coordinate_frame": "exactly rigid-normalized native ViPE coordinates",
+  "units": "native ViPE near-metric metres",
+  "T_input_model": [
+    [
+      0.9998807132661862,
+      -0.01488972923293456,
+      -0.00410550869841593,
+      0.0
+    ],
+    [
+      0.0012573996852057387,
+      -0.1864546803922874,
+      0.9824627581266588,
+      -0.22606407780634868
+    ],
+    [
+      -0.015394095762158923,
+      -0.9823507256184931,
+      -0.1864137164816088,
+      2.516243085057792
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 1.0,
+  "scale_corrections": [],
+  "input_model_determinant": 1.0,
+  "geometry_basis": [
+    "native ViPE depth backprojection",
+    "SIFT two-view triangulation in supplied native camera pose scale",
+    "manual semantic RGB triangulation for frames 0 and 130",
+    "explicit parametric semantic solids"
+  ],
+  "geometry_conflicts": [
+    "Native far-wall depth in frame0 underestimates depth compared with supplied-pose RGB triangulation and later views. Structural rear plane follows multi-view RGB triangulation around y=15.6.",
+    "Reflective floors and circular mirrors generate inconsistent ViPE depths. Mirrors are semantic planar surfaces, not reflected-scene geometry.",
+    "Initial local floor normal was biased relative to long-baseline triangulated floor; exact additional rigid rotation is retained in geometry_analysis.json. Residual floor support uncertainty about 0.22 native metres."
+  ],
+  "observed_and_inferred_policy": "Visible front surfaces follow RGB and available geometry; hidden backs, wall/pot thicknesses, joints, exact foliage, upholstery fill, light wattage and physical coefficients are inferred and labelled.",
+  "forbidden_inputs_accessed": [],
+  "gt_evaluation_accessed": false,
+  "other_method_scene_accessed": false,
+  "scene_initialized_empty": true,
+  "single_scan_substitute": false,
+  "render_engine": "Cycles CPU",
+  "render_threads": 4,
+  "engineering_budget": {
+    "max_scene_revisions": 5,
+    "max_check_views": 60,
+    "actual_scene_revisions": 5,
+    "completed_check_views": 25,
+    "remaining_scene_revisions": 0,
+    "remaining_check_views": 35
+  },
+  "verification_status": "Independent clean review completed on revision3; requested corrections locally validated in revisions4/5; frozen before any GT evaluation.",
+  "artifact_files": [
+    "scene.blend",
+    "scene.glb",
+    "build_scene.py",
+    "objects.json",
+    "colliders.json",
+    "cameras.json",
+    "input_access_log.json",
+    "iteration_log.json",
+    "modelling_manifest.json"
+  ],
+  "reproduction": "Exact semantic scene regeneration: Blender -b -t 4 --python build_scene.py using packaged cameras.json. Derivation reproduction: analyze_inputs.py; triangulate_rgb.py; manual_triangulation.py; refine_frame.py. All external reads are allowlisted packet RGB and native geometry.",
+  "unresolved": [
+    "Native ViPE depth and pose disagreement remains; reflective surfaces and distant geometry are not exact metric truth.",
+    "Planter vegetation remains denser/taller than source RGB and botanical species are inferred.",
+    "Dark floor inlay has overly strong linear reflections compared with source fine weave and light-dot pattern.",
+    "Strong wall-floor dark seam remains visible; cause was not isolated in remaining engineering budget.",
+    "Mirror reflected content/contrast, particularly frame85, remains approximate despite corrected landmark geometry.",
+    "Several inferred lathed pots/bowls have open boundary loops; hidden thickness and undersides remain approximate.",
+    "Entry is modelled as a static closed door; no opening animation or demonstrated traversable threshold is provided.",
+    "Unobserved wall backs, joins, foreground closure and physical coefficients remain inferred."
+  ],
+  "token_usage": "not exposed by current API/tool environment",
+  "started_utc_epoch": 1790143727.6122112,
+  "updated_utc_epoch": 1790145156.7049901,
+  "glb_axis_convention": "Standard glTF Y-up exported by Blender: x_glTF=x_model, y_glTF=z_model, z_glTF=-y_model; Blender import restores scene coordinates.",
+  "elapsed_seconds_to_handoff": 1429.0927782058716,
+  "status": "frozen_for_independent_GT_evaluation",
+  "semantic_object_count": 80,
+  "collider_count": 70,
+  "rendered_check_views": 25,
+  "actual_scene_revisions": 5,
+  "freeze_time_utc": "2026-09-23T06:54:43.523701+00:00",
+  "review_response": "review_response.json",
+  "final_geometry_validation": "final_geometry_validation.json",
+  "frozen_hash_inventory": "frozen_artifacts.json",
+  "camera_metadata_unchanged_from_review": true,
+  "camera_intrinsics_export": "Blender aspect (fy/fx,1), glTF yfov=2atan(H/2fy), aspectRatio=W*fy/(H*fx)",
+  "final_check_directory": "checks_v5",
+  "total_wall_clock_seconds_including_review_wait": 2755.914628982544
+}
