@@ -1,0 +1,38 @@
+{
+  "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/gt_depth_mapping_180.npz",
+  "source_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/delivery/vipe-recon/evaluation/vipe_depth_samples.npz",
+  "source_sha256": "ef29de541b23a2bb8e12210f56470ecdddd65088815731bbf71fff9c384c6beb",
+  "copied_sha256": "ef29de541b23a2bb8e12210f56470ecdddd65088815731bbf71fff9c384c6beb",
+  "arrays": {
+    "vipe_z_m": [
+      180,
+      19200
+    ],
+    "truth_z_m": [
+      180,
+      19200
+    ],
+    "valid": [
+      180,
+      19200
+    ],
+    "pixel_uv": [
+      19200,
+      2
+    ],
+    "sampled_grid_shape": [
+      2
+    ],
+    "timestamps_ns": [
+      180
+    ],
+    "vipe_points_to_truth_m": [
+      3456000
+    ]
+  },
+  "depth_field": "truth_z_m",
+  "depth_axis": "camera optical z-depth in metres",
+  "pixel_uv_convention": "(u,v), source image resolution 1280x960",
+  "evaluation_only": true,
+  "modeler_access": "forbidden"
+}

@@ -1,0 +1,22 @@
+{
+  "resolution": [
+    1280,
+    960
+  ],
+  "intrinsics": [
+    762.8,
+    762.8,
+    640,
+    480
+  ],
+  "frames": [
+    {
+      "source_frame_index": 0,
+      "timestamp_s": 746.532035458,
+      "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/gt_depth_smoke/frame_000000.exr",
+      "axis": "optical_z",
+      "renderer": "BLENDER_WORKBENCH_CPU"
+    }
+  ],
+  "gt_only": true
+}

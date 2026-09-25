@@ -35,3 +35,10 @@ build/
 *.zip
 *.tar*
 .DS_Store
+
+# Explicitly version this article's small evidence media and viewer metadata.
+!/blog/assets/
+!/blog/assets/**/*.json
+!/blog/assets/**/*.jpg
+!/blog/assets/**/*.png
+!/blog/assets/m4_tasks/*.mp4

@@ -1,6 +1,8 @@
 {
-  "copied_files": 417,
-  "copied_bytes": 16852291,
+  "copied_files": 1122,
+  "copied_bytes": 228809950,
   "python_syntax_errors": [],
-  "original_files_modified": false
+  "python_files_parsed": 137,
+  "original_files_modified": false,
+  "public_blog_commit": "cd63134103e1f14660d00fd4d20988f25cbf50ea"
 }

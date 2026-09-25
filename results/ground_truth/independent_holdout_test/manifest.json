@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scene_id": "WorldLobby360s",
+  "protocol": "new trajectory derived from GT pose; evaluation-only",
+  "resolution": [
+    640,
+    480
+  ],
+  "depth_axis": "Blender compositor Depth pass: camera optical range; convert to optical z before pixel metrics",
+  "views": [
+    {
+      "view_id": "holdout_00",
+      "source_frame_index": 0,
+      "timestamp_s": 746.532035458,
+      "camera_position_world_m": [
+        10.537693117145027,
+        21.58,
+        2.33233691555982
+      ],
+      "camera_rotation_world_from_optical": [
+        [
+          -0.052335956242943835,
+          -0.17341019887450618,
+          0.9834581082132786
+        ],
+        [
+          -0.9986295347545738,
+          0.009088043428043402,
+          -0.051540855469358764
+        ],
+        [
+          0.0,
+          -0.9848077530122081,
+          -0.1736481776669303
+        ]
+      ],
+      "rgb_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/independent_holdout_test/holdout_00_rgb.png",
+      "zdepth_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/independent_holdout_test/holdout_00_z.exr",
+      "resolution": [
+        640,
+        480
+      ],
+      "intrinsics": [
+        381.4,
+        381.4,
+        320.0,
+        240.0
+      ],
+      "is_independent_holdout": true,
+      "frontend_access": "forbidden"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "scope": "same-scene GT-pose perturbations; geometry/depth only",
+  "rgb_evaluation": "excluded: Cycles renderer-domain diagnostic only",
+  "depth_source": "existing GT mesh optical-Z arrays; finite range [0.1,30] m",
+  "views": [
+    {
+      "view_id": "holdout_00",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.5827745199203491,
+      "max_z_m": 16.40757942199707
+    },
+    {
+      "view_id": "holdout_01",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.6726975440979004,
+      "max_z_m": 16.80919075012207
+    },
+    {
+      "view_id": "holdout_02",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.637189507484436,
+      "max_z_m": 16.321094512939453
+    },
+    {
+      "view_id": "holdout_03",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.5485997200012207,
+      "max_z_m": 16.33827781677246
+    },
+    {
+      "view_id": "holdout_04",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.5989559888839722,
+      "max_z_m": 16.356372833251953
+    },
+    {
+      "view_id": "holdout_05",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.7471630573272705,
+      "max_z_m": 18.01405143737793
+    },
+    {
+      "view_id": "holdout_06",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 2.009097099304199,
+      "max_z_m": 16.576515197753906
+    },
+    {
+      "view_id": "holdout_07",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.5347172021865845,
+      "max_z_m": 8.84555721282959
+    },
+    {
+      "view_id": "holdout_08",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.3510494232177734,
+      "max_z_m": 14.917323112487793
+    },
+    {
+      "view_id": "holdout_09",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.7720069885253906,
+      "max_z_m": 13.260330200195312
+    },
+    {
+      "view_id": "holdout_10",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.7536511421203613,
+      "max_z_m": 15.698101043701172
+    },
+    {
+      "view_id": "holdout_11",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.7209149599075317,
+      "max_z_m": 9.734572410583496
+    },
+    {
+      "view_id": "holdout_12",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.1164079904556274,
+      "max_z_m": 9.0745267868042
+    },
+    {
+      "view_id": "holdout_13",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.2865387201309204,
+      "max_z_m": 10.455867767333984
+    },
+    {
+      "view_id": "holdout_14",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.4890211820602417,
+      "max_z_m": 15.35434341430664
+    },
+    {
+      "view_id": "holdout_15",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 0.38804396986961365,
+      "max_z_m": 16.042987823486328
+    },
+    {
+      "view_id": "holdout_16",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 0.5785581469535828,
+      "max_z_m": 16.286970138549805
+    },
+    {
+      "view_id": "holdout_17",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.6328011751174927,
+      "max_z_m": 16.304258346557617
+    },
+    {
+      "view_id": "holdout_18",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.5493727922439575,
+      "max_z_m": 16.35428237915039
+    },
+    {
+      "view_id": "holdout_19",
+      "shape": [
+        480,
+        640
+      ],
+      "valid_pixels": 307200,
+      "coverage": 1.0,
+      "min_z_m": 1.6113168001174927,
+      "max_z_m": 16.41744613647461
+    }
+  ],
+  "aggregate_valid_pixels": 6144000,
+  "aggregate_mean_coverage": 1.0
+}

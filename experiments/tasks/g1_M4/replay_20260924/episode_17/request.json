@@ -1,0 +1,14 @@
+{
+  "episode_id": 17,
+  "goal_family": 4,
+  "instruction": "找到南侧种着鹤望兰的花盆，走过去面对它。",
+  "start_xy": [
+    11.991413116455078,
+    24.14495849609375
+  ],
+  "floor_z": 0.04100000113248825,
+  "start_yaw": 0.0,
+  "source_mapping_frame": 60,
+  "north_convention": "map +Y",
+  "goal_pose_supplied": false
+}

@@ -1,0 +1,150 @@
+{
+  "condition": "M4 frozen reconstruction",
+  "episodes": [
+    {
+      "query_id": 0,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.00033781607635319233,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 1,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003697460051625967,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 2,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.00035454798489809036,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 3,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003458422143012285,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 4,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003564318176358938,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 5,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0005636420100927353,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 6,
+      "status": "success",
+      "selected_view_id": 60,
+      "planning_seconds": 0.0008228409569710493,
+      "goal_error_m": 0.009389067329362268
+    },
+    {
+      "query_id": 7,
+      "status": "success",
+      "selected_view_id": 66,
+      "planning_seconds": 0.0009979910682886839,
+      "goal_error_m": 0.011360274204144741
+    },
+    {
+      "query_id": 8,
+      "status": "collision",
+      "selected_view_id": 78,
+      "planning_seconds": 0.0023348398972302675,
+      "goal_error_m": 0.007274388245966142
+    },
+    {
+      "query_id": 9,
+      "status": "collision",
+      "selected_view_id": 84,
+      "planning_seconds": 0.0026774259749799967,
+      "goal_error_m": 0.00675949426291819
+    },
+    {
+      "query_id": 10,
+      "status": "success",
+      "selected_view_id": 90,
+      "planning_seconds": 0.0029979199171066284,
+      "goal_error_m": 0.006275372658575639
+    },
+    {
+      "query_id": 11,
+      "status": "collision",
+      "selected_view_id": 102,
+      "planning_seconds": 8.750536195002496,
+      "goal_error_m": 0.005903478921725048
+    },
+    {
+      "query_id": 12,
+      "status": "success",
+      "selected_view_id": 114,
+      "planning_seconds": 0.0019198181107640266,
+      "goal_error_m": 0.00646407237363244
+    },
+    {
+      "query_id": 13,
+      "status": "success",
+      "selected_view_id": 120,
+      "planning_seconds": 0.001425266033038497,
+      "goal_error_m": 0.0063674993257808715
+    },
+    {
+      "query_id": 14,
+      "status": "success",
+      "selected_view_id": 126,
+      "planning_seconds": 0.40400935080833733,
+      "goal_error_m": 0.005987658662877214
+    },
+    {
+      "query_id": 15,
+      "status": "success",
+      "selected_view_id": 12,
+      "planning_seconds": 0.00013724900782108307,
+      "goal_error_m": 0.0
+    },
+    {
+      "query_id": 16,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003204341046512127,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 17,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003255640622228384,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 18,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.0003285289276391268,
+      "goal_error_m": 0.006551327484024018
+    },
+    {
+      "query_id": 19,
+      "status": "success",
+      "selected_view_id": 42,
+      "planning_seconds": 0.00032298918813467026,
+      "goal_error_m": 0.006551327484024018
+    }
+  ],
+  "counts": {
+    "collision": 3,
+    "success": 17
+  },
+  "note": "candidate arrival only; photographic success evaluated after endpoint rendering"
+}

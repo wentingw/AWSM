@@ -1,0 +1,18 @@
+{
+  "condition": "M4 frozen scene",
+  "source_protocol_sha256": "c7f7b4923ee58951caba10b27f0ce71505196ad9aa9671727036db7ec91907ce",
+  "spawn": {
+    "keyframe_index": 12,
+    "start_xyz": [
+      10.475356101989746,
+      21.508216857910156,
+      2.38932466506958
+    ],
+    "floor_z": 0.04100000113248825
+  },
+  "drone_inflation_m": 0.45,
+  "candidate_topk": 5,
+  "no_query_pose_or_GT_access": true,
+  "retrieval": "DINOv2-small CLS cosine",
+  "refinement": "none; coarse retrieval and ideal stabilized gimbal"
+}

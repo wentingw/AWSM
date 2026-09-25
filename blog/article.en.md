@@ -6,7 +6,7 @@ Could a map also be a design file, a geometric measurement, and a robot's workin
 
 We gave GPT‑6 Astra images and different amounts of geometric evidence, then used Blender as its construction and rendering tool. The resulting scenes contain editable geometry, materials, named elements, spatial relations, cameras, and collision proxies. A shared artifact connects visual interpretation, measured constraints, scene editing, and simulated action.
 
-Two findings coexist. **A general visual coding model can turn observations into structured, executable assets. It also inherits localization errors and can build plausible structures in the wrong places.** With ground-truth camera poses, mean model-to-GT surface distance was 6.9 cm. With this capture's OpenVINS poses, it was 45.9 cm. The latter scene supported some G1 navigation, but no accurate drone rephotography.
+Two findings coexist. **A general visual coding model can turn observations into structured, executable assets. It also inherits localization errors and can build plausible structures in the wrong places.** With ground-truth camera poses, mean model-to-GT surface distance was 6.9 cm. With this capture's OpenVINS poses, it was 45.9 cm. The downstream experiments now both use M4 to test language-goal navigation and reference-image rephotography; reaching a candidate region and reproducing a photograph are different requirements.
 
 This is one static simulated lobby, with one engineering run per method and an unequal historical budget for the RGB-only model. It exposes useful mechanisms and failures; it does not establish cross-scene superiority or industry replacement.
 
@@ -18,18 +18,22 @@ Fresh Astra sessions independently constructed M2, M3, and M4 using method-speci
 
 ![Four input routes and the independent verification loop](../figures/methods_plan.svg)
 
+<p class="table-heading" id="table-1-title"><span class="table-number">Table 1.</span> Four reconstruction routes and their inputs</p>
+
 | Method | Available observations | Geometric evidence | Scene construction |
 |---|---|---|---|
-| M1 / visual | 180 sampled RGB images | Visually inferred dimensions | Astra calls Blender |
-| M2 / ViPE | Full video; sampled measurements | ViPE poses and near-metric depth | Astra calls Blender |
-| M3 / inertial | Video, IMU, calibration | OpenVINS metric poses → MapAnything depth | Astra calls Blender |
-| M4 / pose oracle | Video and GT camera poses | GT poses → MapAnything depth | Astra calls Blender |
+| M1 · RGB-only + Astra | 180 sampled RGB images | Visually inferred dimensions | Astra calls Blender |
+| M2 · ViPE + Astra | Full video; sampled measurements | ViPE poses and near-metric depth | Astra calls Blender |
+| M3 · OpenVINS + MapAnything + Astra | Video, IMU, calibration | OpenVINS metric poses → MapAnything depth | Astra calls Blender |
+| M4 · GT pose + MapAnything + Astra | Video and GT camera poses | GT poses → MapAnything depth | Astra calls Blender |
 
 **M1 asks how far visual interpretation goes.** Without measured depth or camera motion, its dimensions have no recovered metric scale. Display and shape evaluation use one disclosed GT-assisted Sim(3) registration, with scale approximately 0.690, derived from four frozen presentation-camera associations.
 
-**M2 adds measured video geometry.** ViPE produced cameras and depth for all 8,999 frames; Astra used the corresponding sampled outputs. Near-metric depth is an empirical prediction, not a scale guarantee.
+**M2 adds measured video geometry.** This ViPE run is RGB-only. GeoCalib initializes intrinsics; DROID-style learned monocular SLAM, frontend/backend bundle adjustment, and non-keyframe pose infill estimate the trajectory while optimizing intrinsics. UniDepth V2 small (`lpiccinelli/unidepth-v2-vits14`) supplies the keyframe depth prior and learned near-metric scale. No IMU, external poses, or GT scale are supplied.
 
-**M3 adds inertial constraints.** OpenVINS consumes calibrated, synchronized camera and IMU observations. MapAnything receives RGB, intrinsics, and its metric cam2world poses. Initialization began around 8.6 seconds, leaving 175 of the 180 sampled poses. Those missing inputs remain missing.
+Final depth uses `adaptive_unidepth-s`: the implementation selects direct UniDepth depth when the minimum projected-map coverage score across the trajectory is below 0.3, or PriorDA prompted by sparse SLAM depth otherwise. An independent reproduction from the frozen map and camera files gives a minimum coverage score of 0.79, above the 0.3 threshold: the 180 sampled depths therefore use **PriorDA prompted by SLAM depth**, with UniDepth V2 small supplying the upstream keyframe prior. This is a `no_vda` run without Video Depth Anything. ViPE processes all 8,999 frames; Astra and B1 consume the same 180 sampled outputs. Near-metric scale remains an empirical prediction, not a guarantee.
+
+**M3 adds inertial constraints.** OpenVINS consumes calibrated, synchronized camera and IMU observations. MapAnything receives RGB, intrinsics, and its metric cam2world poses. Initialization began around 8.6 seconds, leaving 175 of the 180 sampled poses. Those missing inputs remain missing. The implemented chain is **RGB + calibrated intrinsics + OpenVINS metric camera-to-world poses → MapAnything optical-Z depth → Astra / Blender**. All 175 packet poses match OpenVINS outputs, and depth arrays pass unchanged into the modelling packet. MapAnything pose and scale conditioning are enabled without GT scale correction. The evaluated trajectory remains the OpenVINS output; MapAnything does not write poses back to it.
 
 **M4 removes estimated-pose error.** It receives camera answers, but no GT depth, mesh, or object inventory. This is a diagnostic condition, not a deployable method or a theoretical upper bound on scene quality.
 
@@ -37,7 +41,13 @@ MapAnything used joint four-view windows with overlap two; an eight-view attempt
 
 ## A scene program, with explicit limits
 
-The common loop is inspect, inventory, constrain, code, execute, render, review, and revise. New runs allow at most five revisions and 60 inspection renders; M2, M3, and M4 used 25, 15, and 20 renders respectively. Independent reviews led to repairs of furniture intersections, surface orientation, missing objects, and collider coverage. Remaining position and detail errors stayed in the frozen artifacts.
+M2–M4 share a modelling contract: inspect permitted inputs, organize objects and constraints, write and execute Blender code from an empty scene, render input views, obtain independent review, make bounded repairs, and freeze. Reviewers see only the method's permitted inputs and model, never GT geometry. The common cap is **five complete scene versions and 60 checking renders**; version counts include the initial build.
+
+Actual use differs: M2 produced **five versions (initial + four revisions), with 25 checking renders**; M3 **three versions (initial + two revisions), with 15 renders**; M4 **four versions (initial + three revisions), with 20 renders**. Each version checks five views, selected separately by each modeller: 0/65/85/110/130 for M2, 5/60/90/105/126 for M3, and 0/60/90/108/138 for M4. These internal checking views also differ from the five common final-evaluation views.
+
+All four methods have **180 available RGB reference images**; they are not necessarily submitted to Astra in a single request. File access is distinct from visual inspection. M2's analysis program reads 180 RGB files. M3 records 111 RGB frame IDs under mixed contact-sheet, visual-inspection and SIFT-triangulation purposes. M4 reads 180 RGB files programmatically and separately records 34 personally inspected RGB frames. File-read counts do not establish how many images Astra individually viewed. Historical M1 has no verifiable visual-access or revision count.
+
+Thus **M2–M4 share the workflow contract and budget cap, but not identical evidence use, checking views, or iteration counts; M1 lacks the same budget constraint.** This is a single-run comparison of engineering routes, not an otherwise identical input-only ablation. Independent reviews repaired furniture intersections, surface orientation, missing objects, and collider coverage; remaining errors stayed in the frozen artifacts.
 
 Named elements can be selected, edited, or queried. Their names are generated interpretations, not semantic accuracy measurements. M3's 259 elements include 195 trim or structural-detail elements; they are not 259 verified physical object instances. We have not independently annotated object correspondence.
 
@@ -45,56 +55,88 @@ M3 supplies 52 hard collision proxies. Unknown regions and vegetation exclusions
 
 ## Five fixed views
 
-Rows are keyframes 0, 36, 72, 108, and 144; columns are M1, M2, M3, and original simulator RGB. Each row uses the same target camera and intrinsics after one global registration, without per-image fitting.
+Rows are keyframes 0, 36, 72, 108, and 144; the five columns are RGB-only + Astra, ViPE + Astra, OpenVINS + MapAnything + Astra, GT pose + MapAnything + Astra, and original simulator RGB (input GT). Each row uses the same target camera and intrinsics after one global registration, without per-image fitting.
 
-![Five-by-four comparison: M1, M2, M3, and input GT](../figures/five_view_comparison.jpg)
+![Five-by-five comparison: RGB-only + Astra, ViPE + Astra, OpenVINS + MapAnything + Astra, GT pose + MapAnything + Astra, and input GT](../figures/five_view_comparison.jpg)
 
 M1's black frame 108 remains visible. It is a camera/model coverage failure, not an image to replace with a flattering viewpoint. These images reproduce modelling views; they do not establish held-out-image generalization.
 
-![M4 pose-oracle supplementary views](../figures/m4_pose_oracle_supplement.jpg)
+Direct fusion retains observed colors as well as holes and ghost geometry. Columns show ViPE + TSDF, MapAnything + TSDF, OpenVINS + MapAnything + TSDF, and input GT:
 
-Direct fusion retains observed colors as well as holes and ghost geometry:
-
-![Direct fusion baselines at the same views](../figures/direct_baseline_comparison.jpg)
+![Direct fusion at the same views: ViPE + TSDF, MapAnything + TSDF, OpenVINS + MapAnything + TSDF, and input GT](../figures/direct_baseline_comparison.jpg)
 
 ## Four measurements, not one score
 
 Camera translation uses ATE RMSE; rotation uses angular RMSE. Metric and near-metric methods receive a single global SE(3) alignment, inherited by their models without ICP. M1's GT-assisted Sim(3) is explicitly separate. Depth is optical-axis Z; AbsRel averages absolute relative error over valid predictions inside an independently defined GT domain.
 
+**Bold** marks the best displayed value in each metric column; ties at the shown precision are all bold. ↓ Lower is better; ↑ higher is better. GT inputs and missing values are excluded.
+
+<p class="table-heading" id="table-2-title"><span class="table-number">Table 2.</span> Camera-pose and depth errors for four reconstruction methods and three fusion baselines</p>
+
 | System | ATE (m) ↓ | Rotation (°) ↓ | Native depth AbsRel ↓ | Model depth AbsRel ↓ |
 |---|---|---|---|---|
-| M1 · RGB / Sim(3)† | — | — | — | 21.68% |
-| M2 · ViPE + Astra | 0.118 | 0.312 | 7.38% | 10.58% |
-| M3 · VIO + MapAnything + Astra | 2.595 | 1.116 | 26.12% | 32.00% |
-| M4 · GT pose + MapAnything + Astra | GT input | GT input | 10.68% | 7.54% |
-| B1 · ViPE + TSDF | 0.118 | 0.312 | 7.38% | 13.03% |
+| M1 · RGB-only + Astra / Sim(3)† | — | — | — | 21.68% |
+| M2 · ViPE + Astra | **0.118** | **0.312** | **7.38%** | 10.58% |
+| M3 · OpenVINS + MapAnything + Astra | 2.595 | 1.116 | 26.12% | 32.00% |
+| M4 · GT pose + MapAnything + Astra | GT input | GT input | 10.68% | **7.54%** |
+| B1 · ViPE + TSDF | **0.118** | **0.312** | **7.38%** | 13.03% |
 | B2 · MapAnything + TSDF | 0.791 | 0.735 | 18.41% | 16.81% |
+| B2p · OpenVINS + MapAnything + TSDF | 2.595 | 1.116 | 26.12% | 64.79% |
+
+**Evaluation frame counts for Table 2.** Pose errors use 180 sampled poses for M2/B1 and B2, and 175 available poses for M3/B2p. M1 has no native trajectory; M4 receives GT poses, so neither is assigned an estimated-pose error. Both depth metrics use a domain of 180 fixed views with 19,200 sampled pixels per frame. M3/B2p provide native depth for 175 frames, while the other frontends provide 180; every final model is raycast at all 180 GT cameras. AbsRel averages valid predictions only; Table 3 coverage and the separate missing-prediction penalty account for missing output. The five-view figures are for visualization. B2p shares M3's poses and native depth but uses direct TSDF fusion in place of Astra modelling.
 
 Model depth is evaluated at all 180 GT cameras. Native M3 depth retains its initialization gap. AbsRel must be read together with coverage:
 
-| System | Sampled pose coverage | Native depth coverage | Model depth coverage |
+<p class="table-heading" id="table-3-title"><span class="table-number">Table 3.</span> Coverage of sampled camera poses and depth</p>
+
+| System | Sampled pose coverage ↑ | Native depth coverage ↑ | Model depth coverage ↑ |
 |---|---|---|---|
-| M1 | — | — | 99.71% |
-| M2 | 100.00% | 100.00% | 99.40% |
-| M3 | 97.22% | 95.91% | 99.19% |
-| M4 | — | 98.57% | 99.87% |
-| B1 | 100.00% | 100.00% | 94.75% |
-| B2 | 100.00% | 98.37% | 97.06% |
+| M1 · RGB-only + Astra | — | — | 99.71% |
+| M2 · ViPE + Astra | **100.00%** | **100.00%** | 99.40% |
+| M3 · OpenVINS + MapAnything + Astra | 97.22% | 95.91% | 99.19% |
+| M4 · GT pose + MapAnything + Astra | — | 98.57% | **99.87%** |
+| B1 · ViPE + TSDF | **100.00%** | **100.00%** | 94.75% |
+| B2 · MapAnything + TSDF | **100.00%** | 98.37% | 97.06% |
+| B2p · OpenVINS + MapAnything + TSDF | 97.22% | 95.91% | 93.61% |
+
+**How is coverage computed?** Sampled pose coverage is the number of sampled frames with an estimated pose divided by 180. Native depth coverage measures usable depth produced directly by ViPE or MapAnything; model depth coverage measures usable depth obtained by raycasting the final reconstructed geometry at the common GT cameras. Both depth coverages divide usable predictions inside the valid GT domain by the number of valid GT samples. We sample 19,200 fixed pixel positions per frame: 3,456,000 valid GT positions across 180 frames here. GT optical-axis depth must be finite and within 0.1–30 m; predicted depth must be finite and positive, with native depth also passing its validity mask and sampling checks. Missing frames remain in the denominator.
+
+For OpenVINS + MapAnything + Astra, pose coverage is 175 / 180 = 97.22%, native depth coverage is 95.91%, and model depth coverage is 99.19%. **Coverage measures availability, not accuracy or whole-scene surface completeness.** A misplaced wall can still return depth, so depth and geometry errors must be considered alongside coverage. M1 has no native pose/depth estimate; M4 receives GT poses. Inapplicable entries are shown as “—”.
 
 The downloadable report includes RMSE, δ1, and MAE with a 30 m penalty for each missing prediction. On the common 175-frame subset, native depth AbsRel is 7.36% for M2, 26.12% for M3, 10.47% for M4, and 18.36% for B2.
 
 Geometry uses 100,000 area-sampled model points and exact nearest GT triangles. The reverse observed-GT distance samples fixed GT image-ray hits: it is observation-weighted, not surface-area-weighted. Whole-building reverse distances, including unobserved structures, are separately retained in the raw reports.
 
-| System | Model → GT (m) ↓ | Observed GT → model (m) ↓ | PSNR (dB) ↑ | SSIM ↑ |
-|---|---|---|---|---|
-| M1 | 0.306 | 0.337 | 9.48 | 0.263 |
-| M2 | 0.182 | 0.195 | 12.20 | 0.342 |
-| M3 | 0.459 | 0.736 | 10.06 | 0.265 |
-| M4 | 0.069 | 0.074 | 12.59 | 0.344 |
-| B1 | 0.453 | 0.211 | 15.57 | 0.457 |
-| B2 | 0.470 | 0.395 | 13.72 | 0.370 |
+<p class="table-heading" id="table-4-title"><span class="table-number">Table 4.</span> Geometry errors for four reconstruction methods and three fusion baselines</p>
 
-RGB scores use the five input views at 640×480, with Lanczos downsampling of GT and no color fitting. They mix geometry, materials, exposure, and renderer differences. B1 scores higher on input-view appearance, while M4 has lower geometric distance. Those objectives are distinct.
+| System | Model → GT (m) ↓ | Observed GT → model (m) ↓ |
+|---|---|---|
+| M1 · RGB-only + Astra | 0.306 | 0.337 |
+| M2 · ViPE + Astra | 0.182 | 0.195 |
+| M3 · OpenVINS + MapAnything + Astra | 0.459 | 0.736 |
+| M4 · GT pose + MapAnything + Astra | **0.069** | **0.074** |
+| B1 · ViPE + TSDF | 0.453 | 0.211 |
+| B2 · MapAnything + TSDF | 0.470 | 0.395 |
+| B2p · OpenVINS + MapAnything + TSDF | 1.032 | 0.676 |
+
+**How Table 4 is computed.** Model → GT averages the exact nearest-triangle distance from 100,000 area-weighted model-surface samples to GT. Observed GT → model averages the reverse distance from 100,000 sampled valid GT ray hits across 180 views. The former measures surface displacement; the latter measures omissions in the observed region. Both are in metres, lower is better.
+
+<p class="table-heading" id="table-5-title"><span class="table-number">Table 5.</span> Appearance metrics for four reconstruction methods at five input views</p>
+
+| System | PSNR (dB) ↑ | SSIM ↑ | LPIPS ↓ |
+|---|---|---|---|
+| M1 · RGB-only + Astra | 9.48 | 0.263 | 0.707 |
+| M2 · ViPE + Astra | 12.20 | 0.342 | 0.566 |
+| M3 · OpenVINS + MapAnything + Astra | 10.06 | 0.265 | 0.714 |
+| M4 · GT pose + MapAnything + Astra | **12.59** | **0.344** | **0.530** |
+
+**How Table 5 is computed.** PSNR, SSIM and LPIPS use the same **five input views: 0, 36, 72, 108, and 144**. Predictions are 640×480; GT is downsampled from 1280×960 with Lanczos. Rendering uses fixed GT views after the single global registration, with no per-image pose, color, or exposure fitting. For RGB normalized to [0,1], per-view `MSE = mean((predicted RGB − GT RGB)²)` and `PSNR = −10 log10(MSE)`. SSIM uses scikit-image's 7×7 uniform window, `K1=0.01`, `K2=0.03`, and `data_range=1`, averaged across RGB channels. PSNR and SSIM retain the frozen results, each an arithmetic mean of five per-view scores. PSNR includes every pixel; SSIM uses the library's default border handling, with no additional validity mask. Black frames and holes remain included.
+
+LPIPS uses the official `lpips==0.1.4` implementation with **AlexNet, learned v0.1 calibration weights**, and an ImageNet-pretrained backbone on the same 640×480 RGB pairs. Inputs are converted from [0,1] to [−1,1]; the network runs in evaluation mode, with five per-view scores averaged arithmetically. **Lower is better.** There is no cropping, extra resizing or masking; the black M1 frame is included. LPIPS measures appearance differences in learned features, not geometric or physical accuracy.
+
+[Table 5 per-view results and weight hashes](../results/evaluation/appearance_five_views_20260925/report.json) · [Mean scores CSV](../results/evaluation/appearance_five_views_20260925/means.csv)
+
+Table 5 focuses on generated-scene appearance for M1–M4. Previously measured fusion-baseline PSNR/SSIM remain in the [complete RGB results](../results/rgb_metrics_five_views_mean.json). For example, B1 directly reuses observed colors through unlit emission and Standard color management; its 15.57 dB / 0.457 does not establish better geometry. **These scores do not measure held-out RGB generalization or isolate material, lighting, and renderer effects.**
 
 The paired M3/B2p comparison also resists a single winner. Astra reduces model-to-GT distance from 1.032 m to 0.459 m and rendered-depth AbsRel from 64.79% to 32.00%. But observed-GT-to-model distance increases from 0.676 m to 0.736 m. Object construction can suppress noisy surfaces while omitting observed ones.
 
@@ -114,43 +156,84 @@ Replacing estimated poses with GT poses reduces final-model depth AbsRel from 32
 
 Twenty supplementary views are deterministic perturbations of the same simulated trajectory. Each uses 5,000 fixed random rays (seed 23) cast directly into the independent GT triangle mesh, with the same cameras and rays for every frozen model. This tests same-scene novel-pose depth, not a new scene or independent capture. Legacy rendered Z failed numerical BVH validation and is excluded; novel-view RGB is unscored because of renderer differences.
 
-| System | Novel depth AbsRel ↓ | RMSE (m) ↓ | Coverage | Penalized MAE (m) ↓ |
+<p class="table-heading" id="table-6-title"><span class="table-number">Table 6.</span> Depth errors at novel viewpoints in the same scene</p>
+
+| System | Novel depth AbsRel ↓ | RMSE (m) ↓ | Coverage ↑ | Penalized MAE (m) ↓ |
 |---|---|---|---|---|
-| M1 | 19.45% | 2.195 | 99.66% | 1.399 |
-| M2 | 10.39% | 1.186 | 99.42% | 0.783 |
-| M3 | 30.58% | 2.397 | 99.25% | 2.035 |
-| M4 | 7.47% | 1.146 | 99.88% | 0.465 |
-| B1 | 12.92% | 1.512 | 94.84% | 2.300 |
-| B2 | 16.23% | 1.710 | 96.96% | 1.972 |
-| B2p | 61.97% | 5.548 | 89.13% | 7.067 |
+| M1 · RGB-only + Astra | 19.45% | 2.195 | 99.66% | 1.399 |
+| M2 · ViPE + Astra | 10.39% | 1.186 | 99.42% | 0.783 |
+| M3 · OpenVINS + MapAnything + Astra | 30.58% | 2.397 | 99.25% | 2.035 |
+| M4 · GT pose + MapAnything + Astra | **7.47%** | **1.146** | **99.88%** | **0.465** |
+| B1 · ViPE + TSDF | 12.92% | 1.512 | 94.84% | 2.300 |
+| B2 · MapAnything + TSDF | 16.23% | 1.710 | 96.96% | 1.972 |
+| B2p · OpenVINS + MapAnything + TSDF | 61.97% | 5.548 | 89.13% | 7.067 |
 
 [Independent BVH report](../results/evaluation/novel_depth/report.json)
 
-## Put the scene to work
+### Why can the IMU-based route perform worse?
 
-Both tasks use the frozen M3 scene, even though other methods have better geometry. Planners read reconstructed objects, cameras, and collision geometry. Controllers receive simulator state for self-localization; this isolates some mapping effects and is not end-to-end visual autonomy.
+M2 → M3 is not an IMU on/off ablation of one estimator: the pose frontend changes from ViPE to OpenVINS, and the depth frontend changes to pose-conditioned MapAnything. This experiment compares complete pipelines; it does not establish that IMU measurements reduce accuracy.
 
-### Drone: retrieve a view, fly, and attempt the photograph
+M3 shows substantial scale mismatch and residual trajectory error. Its SE(3)-aligned ATE is 2.595 m. A diagnostic Sim(3) fit applies a scale of approximately 0.667 and reduces ATE to 0.282 m: a global rescaling explains much of the positional discrepancy, but not all of it. M2's corresponding scale is approximately 1.023. On the common 175-frame subset, SE(3) ATE remains 0.119 m for M2 versus 2.595 m for M3, so the five missing frames do not explain the gap.
 
-Twenty uniformly spaced original simulator RGB images serve as references, with target poses withheld from retrieval and planning. DINOv2 ranks 29 M3 render candidates. A planner checks the top five for reachability, then MuJoCo simulates a 1 kg six-degree-of-freedom quadrotor with four bounded thrust actuators. The camera uses an ideal stabilized gimbal. This version has no continuous image-based pose refinement.
+IMU scale constraints depend on motion excitation, initialization, bias, calibration and synchronization; metric units do not guarantee correct scale. Controlled ablations have not isolated which factor caused this run's failure. Biased poses are passed to MapAnything and can affect downstream depth and modelling. Improvement with GT poses supports the importance of pose quality, but does not identify a particular IMU failure mechanism.
 
-**15/20 flights reached a retrieved candidate without collision; 5/20 collided. Accurate rephotography succeeded in 0/20.** Strict success requires collision-free execution, position error ≤0.10 m, and rotation error ≤5°. The relaxed thresholds, ≤0.25 m and ≤10°, also give 0/20. Mean final GT position and orientation errors are 3.38 m and 22.21°.
+### SE(3) versus Sim(3)
 
-![Drone references, achieved endpoint images, and independent pose evaluation](../figures/drone_three_queries.jpg)
+**SE(3)** uses `x′ = R x + t`: three-dimensional rotation and translation, with six degrees of freedom and no resizing. **Sim(3)** uses `x′ = s R x + t`, adding one positive uniform scale for seven degrees of freedom. If a true 10 m distance is estimated as 15 m, SE(3) cannot correct that size error; Sim(3) can multiply it by approximately 0.667. The main table uses SE(3) to retain metric-scale errors. Sim(3) is used only for diagnosis or the explicitly labelled M1 presentation alignment; it does not demonstrate native scale recovery.
 
-Candidate arrival does not establish correct retrieval or agreement with the source world. These are known-scene mapping images, not held-out reference photographs. All 20 outcomes, including collisions, remain available.
+## Let robots test the scene
 
-### Unitree G1: find the described object
+Both downstream experiments use the frozen **M4: GT pose + MapAnything + Astra** scene. They share its objects, geometry and collision representation, and receive a reference photograph or a language instruction respectively. The original scene is unchanged; task code, requests, trajectories and evaluations are stored as a new revision.
 
-We use Unitree's public 12-DOF walking policy in MuJoCo. A transparent constrained-English parser handles category, attribute, and near relations against the generated object inventory. Thirty instructions are six paraphrases of each of five target families, not thirty independent goals.
+M4 received GT camera poses during reconstruction, but no GT mesh or depth. Robots read their own state from the simulator, so these experiments test **target selection, planning and physical execution with known self-pose and a known reconstructed map**. They do not test visual localization or transfer to the original GT dynamics world.
 
-**18/30 episodes reached their declared model-world approach goal; 12/30 failed during planning.** Table, plant, and reception-desk queries succeeded 6/6 each. Window-side green-chair and round-mirror queries succeeded 0/6. Executed episodes recorded no falls, collisions, or timeouts. Conservative colliders, a 0.47 m planning radius, and unknown-space exclusions blocked the other goals.
+![Drone reference-image and G1 language-goal pipelines in M4](../figures/m4_tasks/task_flow.en.svg)
 
-Success concerns navigation to the object selected by this parser, without an independent visual or instance-identity confirmation. Videos replay actual policy trajectories. Planning failures have static diagnostics because no physical episode started.
+### Drone: find the reference view and attempt rephotography
 
-**A static GT audit exposes the transfer gap.** After applying the fixed global registration, all 20 drone trajectories contain a center sample within 0.30 m of the original GT surface. G1 foot proxies lie roughly 0.33–0.71 m below the reference GT floor. These are surface-distance and height diagnostics without inside/outside classification or GT dynamics replay. They are neither confirmed collision counts nor evidence of successful transfer.
+Inputs are the same 20 frozen simulator RGB reference photographs. Retrieval and planning cannot read their target camera poses; a separate evaluator uses them only after execution. These photographs come from the mapping video, making this a seen-input-view task.
 
-The next experiment should separately improve pose estimation, object correspondence, geometric uncertainty, and closed-loop visual control, then test the reconstructed map in the original GT dynamics environment.
+1. **Retrieve candidate locations from images.** Encode the 20 reference photographs and 30 M4 renders using DINOv2-small, then rank CLS cosine similarity. Candidates come from every sixth mapping sample; retrieval uses images only.
+2. **Plan and fly.** Check the top five candidates for reachability and select a map-camera position. MuJoCo simulates a 1 kg, six-degree-of-freedom quadrotor with four bounded thrust actuators, following the planned path using self-state feedback.
+3. **Photograph and score independently.** Render the achieved flight endpoint and compare it with the reference. Only the post-execution evaluator reads the target camera pose to calculate position, orientation and rephotography outcomes.
+
+**17/20 flights reach a retrieved candidate without collision; 3/20 have contacts. Strict and relaxed rephotography both score 0/20.** Strict success requires position error ≤0.10 m, rotation error ≤5° and no collision; relaxed thresholds are ≤0.25 m and ≤10°, also collision-free. Across all 20 queries, mean error is **0.883 m / 8.26°**, with endpoint RGB **PSNR 10.65 dB / SSIM 0.300**. Query 9 ends close to the reference pose but has contacts during flight, so it remains a failure.
+
+![M4 drone reference photographs, achieved endpoint images and rephotography evaluation](../figures/m4_tasks/drone_comparison.jpg)
+
+The video shows Query 13; the panel retains display queries 0, 3 and 13; aggregate results include all 20. Retrieval supplies discrete coarse candidates, with no continuous image-based pose refinement and an ideal stabilized gimbal. Reaching a retrieved view therefore does not imply recovering the precise photographic pose. This experiment does not measure generalization to unseen scenes.
+
+### Unitree G1: find a specified planter from language
+
+An example instruction is **“Find the planter with low green foliage in a pale-grey ceramic pot, walk over, and face it.”** Four further Chinese instructions specify the north/south rectangular golden-flower planters and north/south bird-of-paradise planters. North explicitly means map +Y. Each of five target instances is executed from four fixed starts: **20 navigation executions**, not 20 independent targets.
+
+1. **Parse language and select an instance.** A constrained Chinese parser extracts category, plant/pot attributes and direction, and finds a unique match in M4's generated object inventory. Ambiguous requests are rejected. The controller never reads evaluator-only intended IDs.
+2. **Plan an approach.** Generate approach candidates from the target bounds and run A* with a 0.47 m obstacle-inflation radius. The four starts are deterministic mapping locations at least 2 m apart on supported reconstructed floor.
+3. **Walk, face and dwell.** Unitree's official G1 12DOF CPU locomotion policy drives articulated MuJoCo dynamics. Navigation requires approach error <0.30 m, target bearing <15° for at least 1.5 s, and no obstacle contacts or falls throughout execution.
+4. **Verify finding the target independently.** Compare the selected instance with an independent intended label, then cast rays from a fixed virtual camera attached to the last recorded physical robot state. The correct planter must be the first visible surface in at least 0.1% of the image.
+
+**20/20 executions select the correct instance and complete collision-free navigation; 20/20 pass target visibility, for 20/20 combined successes.** Mean recorded path length is **7.31 m**, with **22.18 s** mean execution time. At the last recorded state, mean approach error is **0.215 m** and target-bearing error **3.60°**. Sampled target coverage ranges from 9.72% to 40.59%. The panel shows each instruction from its first start; the full evaluation includes all four starts.
+
+![Language instructions, planter targets and G1 execution results in M4](../figures/m4_tasks/g1_comparison.jpg)
+
+This is **language-goal selection and navigation over a generated semantic map**. Attributes come from M4, and the parser supports the stated constrained expressions. There is no online visual object recognition; evaluation outlines come from geometry-derived ray labels. Visibility includes scene occlusion but omits robot self-occlusion. The virtual camera has fixed body-relative translation [0.08, 0, 0.35] m and 20° downward pitch; it is never aimed using the target answer. Coverage is estimated with a 160×120 ray grid for a 640×480 image. The camera uses the last complete recorded state, no more than 50 ms before stopping. The video replays recorded joint states with simplified shading.
+
+<p class="table-heading" id="table-7-title"><span class="table-number">Table 7.</span> M4 · GT pose + MapAnything + Astra: downstream task outcomes and success criteria</p>
+
+| Task | Episodes | Criterion | Successful |
+|---|---|---|---|
+| Drone | 20 | Collision-free arrival at retrieved viewpoint | 17 / 20 |
+| Drone | 20 | Strict photo pose: ≤0.10 m and ≤5°, collision-free | 0 / 20 |
+| Drone | 20 | Relaxed photo pose: ≤0.25 m and ≤10°, collision-free | 0 / 20 |
+| Unitree G1 | 20 | Correct target, collision-free arrival, facing and visibility | **20 / 20** |
+
+Different tasks and criteria are not ranked against each other; bold here marks a perfect success count only. Episode counts and thresholds are not ranked.
+
+**Scope.** These tasks test only this reconstructed scene. Conservative bounding boxes represent obstacle collisions, and mass/friction are simulator assumptions. Neither original-GT-world dynamics transfer nor real-robot deployment is tested. Earlier M3 experiments remain in the reproduction archive; their different protocol prevents a controlled performance comparison with this revision.
+
+[Combined episode results](../results/evaluation/tasks/m4_downstream_20260924/report.json) · [Drone metrics](../results/evaluation/tasks/drone_M4_20260924/report.json) · [G1 occlusion and visibility](../results/evaluation/tasks/g1_M4_20260924/visibility.json) · [Execution and reproduction](../docs/M4_DOWNSTREAM_20260924.md) · [Code, instructions and complete trajectories](../downloads/reproduction_sources.zip)
+
 
 ## What could change
 

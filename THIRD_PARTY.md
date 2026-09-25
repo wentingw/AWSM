@@ -11,8 +11,12 @@ This private research repository does not grant a new open-source license for it
 | MuJoCo | Task simulation | https://github.com/google-deepmind/mujoco |
 | Unitree RL Gym assets/control | G1 model and controller dependencies | https://github.com/unitreerobotics/unitree_rl_gym |
 | DINOv2 | Reference-image retrieval features | https://github.com/facebookresearch/dinov2 |
+| LPIPS / AlexNet | Perceptual appearance evaluation | https://github.com/richzhang/PerceptualSimilarity |
+| Three.js r180 | Registered scene comparison viewer | https://github.com/mrdoob/three.js |
 | model-viewer | Browser scene viewer | https://github.com/google/model-viewer |
 
 `blog/vendor/model-viewer.min.js` retains its bundled notices; its exact origin/version is in `blog/vendor/model-viewer-source.json`. `src/vipe/upstream_provenance.json` records the local adapter origin. Original scene assets, checkpoints, external runtimes, and vendor checkouts are not part of this Git source snapshot. Their origins and frozen hashes are recorded by the experiment/HF manifests.
 
 Historical M1 builders and the OpenVINS replay wrappers were copied from the existing local project without modification; `source_snapshot.json` records their source paths and SHA256 digests. Research precedents and citations are in `references/research_sources.json` and the article.
+
+The Three.js source retains `blog/vendor/three/LICENSE` and its pinned provenance. LPIPS and pretrained weights are external dependencies with their own terms; exact evaluated versions and weight hashes are in `results/evaluation/appearance_five_views_20260925/report.json`. Display meshes derived from the frozen scenes do not change the upstream scene asset terms.

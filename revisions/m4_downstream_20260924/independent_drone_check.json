@@ -1,0 +1,287 @@
+{
+  "status": "pass",
+  "scope": "Independent post-execution recalculation; not a controller input",
+  "registration": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "counts": {
+    "episodes": 20,
+    "collision_free_candidate_arrivals": 17,
+    "collisions": 3,
+    "planning_failed": 0,
+    "strict_rephotography_successes": 0,
+    "relaxed_rephotography_successes": 0
+  },
+  "means": {
+    "translation_error_m": 0.8834300601170402,
+    "rotation_error_deg": 8.263307066988443,
+    "psnr_db": 10.648596538824863,
+    "ssim": 0.30042954956214857
+  },
+  "episodes": [
+    {
+      "query_id": 0,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.7467448628344902,
+      "rotation_error_deg": 7.905106426192192,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 11.012944140807846,
+      "ssim": 0.32696143698119945
+    },
+    {
+      "query_id": 1,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.5382049972979749,
+      "rotation_error_deg": 2.6828796242731467,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 11.478383319674757,
+      "ssim": 0.3290048391526201
+    },
+    {
+      "query_id": 2,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.7467033397329635,
+      "rotation_error_deg": 7.904758280098539,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.86996921028485,
+      "ssim": 0.3088045405978783
+    },
+    {
+      "query_id": 3,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.7021985440445707,
+      "rotation_error_deg": 7.5267255524985615,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.820418912758623,
+      "ssim": 0.30945603843115815
+    },
+    {
+      "query_id": 4,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.3901925388782691,
+      "rotation_error_deg": 4.5842445328588415,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.992979767689665,
+      "ssim": 0.3138040207547272
+    },
+    {
+      "query_id": 5,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.5745403371407262,
+      "rotation_error_deg": 8.693872374022028,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 11.040216049935568,
+      "ssim": 0.282238663313102
+    },
+    {
+      "query_id": 6,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.9836319304033615,
+      "rotation_error_deg": 16.83881714657949,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 1.2567415697597416e-05,
+      "psnr_db": 11.684830903974433,
+      "ssim": 0.3238819791345505
+    },
+    {
+      "query_id": 7,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.36802105286354186,
+      "rotation_error_deg": 3.58699039721844,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 2.5011008711521272e-05,
+      "psnr_db": 11.475701588710228,
+      "ssim": 0.37012295178395993
+    },
+    {
+      "query_id": 8,
+      "flight_status": "collision",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 1.4998377962807148,
+      "rotation_error_deg": 7.457298694118545,
+      "contact_steps": 18,
+      "final_camera_vs_last_logged_position_m": 3.6704568558653025e-05,
+      "psnr_db": 10.249904381086905,
+      "ssim": 0.34829532081731
+    },
+    {
+      "query_id": 9,
+      "flight_status": "collision",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.0067600910481392384,
+      "rotation_error_deg": 3.7928791787769053e-07,
+      "contact_steps": 18,
+      "final_camera_vs_last_logged_position_m": 2.0674771127349213e-05,
+      "psnr_db": 11.568822393486924,
+      "ssim": 0.3492343377993123
+    },
+    {
+      "query_id": 10,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 1.9442948717095168,
+      "rotation_error_deg": 19.54240759707449,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 1.6033883419962414e-05,
+      "psnr_db": 10.342353791198558,
+      "ssim": 0.25980114701544726
+    },
+    {
+      "query_id": 11,
+      "flight_status": "collision",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.41277291645052344,
+      "rotation_error_deg": 6.560501040086751,
+      "contact_steps": 18,
+      "final_camera_vs_last_logged_position_m": 8.15684456752616e-06,
+      "psnr_db": 9.21584912402529,
+      "ssim": 0.24332360461961766
+    },
+    {
+      "query_id": 12,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.5025636492271545,
+      "rotation_error_deg": 3.4210625049136776,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 5.330832632344199e-06,
+      "psnr_db": 9.56043827263198,
+      "ssim": 0.26347108590178814
+    },
+    {
+      "query_id": 13,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.9842068701726331,
+      "rotation_error_deg": 5.404828813013093,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 0.0,
+      "psnr_db": 8.171560179691422,
+      "ssim": 0.2217992700018565
+    },
+    {
+      "query_id": 14,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 1.6381874148216722,
+      "rotation_error_deg": 18.255853941485608,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 3.340521928032488e-06,
+      "psnr_db": 10.047739419113794,
+      "ssim": 0.2645972175634237
+    },
+    {
+      "query_id": 15,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 1.737368395679253,
+      "rotation_error_deg": 6.980037840970198,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 0.0,
+      "psnr_db": 11.085694329644868,
+      "ssim": 0.2904004094949906
+    },
+    {
+      "query_id": 16,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 1.515696667057616,
+      "rotation_error_deg": 13.102491638180844,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.9024255357227,
+      "ssim": 0.28761329163575594
+    },
+    {
+      "query_id": 17,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.8776979526231152,
+      "rotation_error_deg": 8.962118526300314,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.867078990587311,
+      "ssim": 0.3039437546518775
+    },
+    {
+      "query_id": 18,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.7522321112400767,
+      "rotation_error_deg": 7.951039604403962,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.782524157565629,
+      "ssim": 0.30738621931844196
+    },
+    {
+      "query_id": 19,
+      "flight_status": "success",
+      "strict_rephotography_success": false,
+      "relaxed_rephotography_success": false,
+      "translation_error_m": 0.7467448628344902,
+      "rotation_error_deg": 7.905106426192192,
+      "contact_steps": 0,
+      "final_camera_vs_last_logged_position_m": 4.387456422736819e-05,
+      "psnr_db": 10.802096307905906,
+      "ssim": 0.3044508622739533
+    }
+  ],
+  "truth_sha256": "4a699480e145b28daa655d434ac03ba01c5a4de873c3ad11047cdedaf9d1b7d7"
+}

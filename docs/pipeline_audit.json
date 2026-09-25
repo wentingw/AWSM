@@ -1,0 +1,83 @@
+{
+  "scope": "Read-only verification of frozen inputs; no experimental output rewritten",
+  "M3": {
+    "status": "pass",
+    "pipeline": "RGB + calibration + OpenVINS estimated metric camera-to-world pose -> MapAnything (pose and scale conditioning enabled) -> optical-Z depth -> Astra packet",
+    "geometry_frames": 175,
+    "total_rgb_frames": 180,
+    "missing_geometry_frames": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_pose_difference_from_openvins": 8.527324233398303e-07,
+    "max_timestamp_difference_s": 0.0,
+    "chosen_window_count": 87,
+    "window_modes": [
+      "M3"
+    ],
+    "mapanything_checkpoint": [
+      "facebook/map-anything"
+    ],
+    "camera_conversion": {
+      "raw_body_and_camera_samples": 87585,
+      "max_position_residual_m": 2.241794877417481e-09,
+      "max_rotation_residual_rad": 2.000000199255048e-09,
+      "T_imu_camera_FLU": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.4
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "depth_passthrough_exact": true,
+    "pose_source": "OpenVINS output; not MapAnything output pose",
+    "global_gt_scale_correction_applied_to_packet": false,
+    "limitation": "This audit verifies file/data conventions and passthrough; it does not prove physical clock accuracy, sensor calibration accuracy, sufficient excitation, or estimator optimality."
+  },
+  "M2_depth_branch": {
+    "status": "complete",
+    "method": "independent_cpu_numpy_reproduction_of_SLAMMap.project_map_non_infill_uv_score",
+    "approximation_note": "Not direct map.project_map call: frozen slam_map.pt stores a dict and project_map requires CUDA. Logic is mirrored for neighborhood selection, world_to_camera transform, pinhole projection, valid-point tests and 10x10 occupancy.",
+    "inputs": {
+      "slam_map": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M2/vipe_full_20260923/slam_map.pt",
+      "slam_map_sha256": "a66e5a5b397ada386fc5c5cc76545e3e9cc80a50a246a81a2ac9e1e9da6aef9d",
+      "camera_npz": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M2/vipe_full_20260923/camera.npz",
+      "camera_npz_sha256": "593fc77eea25605b7677874e8b426b0b05a5deb165801aca9100fb9cfc683694"
+    },
+    "map_points": 28544,
+    "map_keyframes": 37,
+    "trajectory_frames": 8999,
+    "sample_stride": 10,
+    "min_uv_score": 0.79,
+    "mean_uv_score": 0.9521333333333334,
+    "p10_uv_score": 0.9,
+    "threshold": 0.3,
+    "keyframe_branch": "PriorDA (score > threshold)",
+    "rest_branch": "PriorDA because rest invocation skips index 0, so local min_uv_score remains initialized to 1.0; it does not inherit or recompute keyframe score.",
+    "no_model_rerun": true,
+    "frozen_artifacts_modified": false
+  }
+}

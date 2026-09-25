@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "original_psnr_ssim_unchanged": true,
+  "all_input_sha256": "pass",
+  "all_four_means": "pass",
+  "independent_explicit_normalization_check": {
+    "method": "M4",
+    "view": 0,
+    "lpips": 0.5020523071289062,
+    "layer_sum": 0.5020523183047771,
+    "identical_pair": 0.0,
+    "symmetry": "pass"
+  }
+}

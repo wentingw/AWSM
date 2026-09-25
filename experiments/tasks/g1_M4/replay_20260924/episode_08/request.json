@@ -1,0 +1,14 @@
+{
+  "episode_id": 8,
+  "goal_family": 2,
+  "instruction": "找到南侧长着金黄色花枝的长方形花盆，走过去面对它。",
+  "start_xy": [
+    10.530747413635254,
+    21.700000762939453
+  ],
+  "floor_z": 0.04100000113248825,
+  "start_yaw": 0.0,
+  "source_mapping_frame": 0,
+  "north_convention": "map +Y",
+  "goal_pose_supplied": false
+}

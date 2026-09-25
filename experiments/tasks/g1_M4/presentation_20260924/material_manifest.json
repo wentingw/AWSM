@@ -1,0 +1,264 @@
+{
+  "source": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model/scene.blend",
+  "source_sha256": "cc6cb605246a255d94e36b9dc3f8b91d5a292b047470bc0ff75b8a5c404b0cfe",
+  "coordinate_frame": "Original M4 world; Z-up; metres; no recentering or rescaling",
+  "groups": [
+    {
+      "name": "Bird of paradise orange",
+      "obj": "visual_000.obj",
+      "rgba": [
+        0.8500000238418579,
+        0.25,
+        0.014999999664723873,
+        1.0
+      ],
+      "objects": 4,
+      "triangles": 32,
+      "sha256": "6d1cbed77d4c1d2ecc11146e03a0a3bc75d1f04770ae2eb039035486d746dce6"
+    },
+    {
+      "name": "Blackened bronze",
+      "obj": "visual_001.obj",
+      "rgba": [
+        0.03799999877810478,
+        0.03500000014901161,
+        0.028999999165534973,
+        1.0
+      ],
+      "objects": 12,
+      "triangles": 6772,
+      "sha256": "228576b5e4db023738d3ca6aeb410b9c25900b8350fa41791be970239eed1ed5"
+    },
+    {
+      "name": "Brushed stainless steel",
+      "obj": "visual_002.obj",
+      "rgba": [
+        0.49000000953674316,
+        0.5199999809265137,
+        0.5199999809265137,
+        1.0
+      ],
+      "objects": 6,
+      "triangles": 3432,
+      "sha256": "b1617e84a09d1743bc4516f1ac7278443631a15f9e11316f7fd675f8a5233464"
+    },
+    {
+      "name": "Charcoal table finish",
+      "obj": "visual_003.obj",
+      "rgba": [
+        0.02800000086426735,
+        0.029999999329447746,
+        0.026000000536441803,
+        1.0
+      ],
+      "objects": 3,
+      "triangles": 1542,
+      "sha256": "f694643389b1d9851aff9d4cb5fb2bd9bed831547f592af74a3b7d183b4ddb67"
+    },
+    {
+      "name": "Deep olive foliage",
+      "obj": "visual_004.obj",
+      "rgba": [
+        0.10499999672174454,
+        0.1599999964237213,
+        0.04500000178813934,
+        1.0
+      ],
+      "objects": 702,
+      "triangles": 20916,
+      "sha256": "0be9652d489a0c557e887b19ee74e71cbea914d991452570c730452e60722fce"
+    },
+    {
+      "name": "Fresh green leaves",
+      "obj": "visual_005.obj",
+      "rgba": [
+        0.1899999976158142,
+        0.25,
+        0.06700000166893005,
+        1.0
+      ],
+      "objects": 353,
+      "triangles": 4308,
+      "sha256": "8903d323978ef92f89031d782a340bcfc22de970ba78f5b9d634a76c1544f3ec"
+    },
+    {
+      "name": "Glossy black and gold patterned inset",
+      "obj": "visual_006.obj",
+      "rgba": [
+        0.04500000178813934,
+        0.039000000804662704,
+        0.027000000700354576,
+        1.0
+      ],
+      "objects": 1,
+      "triangles": 12,
+      "sha256": "1acd2e7d1aae2e6bfe9b6b881d53bda7071464ac0bebfb1682e261e887912742"
+    },
+    {
+      "name": "Golden flowering shrub",
+      "obj": "visual_007.obj",
+      "rgba": [
+        0.41999998688697815,
+        0.3100000023841858,
+        0.054999999701976776,
+        1.0
+      ],
+      "objects": 2,
+      "triangles": 16128,
+      "sha256": "f52600c10ad99a11412eab7333aae500edcd95a6d6ca9bec641f7838140e48cd"
+    },
+    {
+      "name": "Grey cast-stone planter",
+      "obj": "visual_008.obj",
+      "rgba": [
+        0.2800000011920929,
+        0.28999999165534973,
+        0.27000001072883606,
+        1.0
+      ],
+      "objects": 4,
+      "triangles": 752,
+      "sha256": "3e65ef40bd50420b7ddb7c37324e6ba32e23cc09fe402228a79acd1d1bdc6291"
+    },
+    {
+      "name": "Ivory linen",
+      "obj": "visual_009.obj",
+      "rgba": [
+        0.7699999809265137,
+        0.7699999809265137,
+        0.699999988079071,
+        1.0
+      ],
+      "objects": 3,
+      "triangles": 864,
+      "sha256": "362c51c37575c449733376c9d0009823e699833b4566b8610ca27496da5d9c05"
+    },
+    {
+      "name": "Pale glazed ceramic",
+      "obj": "visual_010.obj",
+      "rgba": [
+        0.38999998569488525,
+        0.4399999976158142,
+        0.44999998807907104,
+        1.0
+      ],
+      "objects": 6,
+      "triangles": 3744,
+      "sha256": "40ff632a8d8edee3134d2330fe2e8b729ba95361e4296af31337fd6257e6f599"
+    },
+    {
+      "name": "Potting soil",
+      "obj": "visual_011.obj",
+      "rgba": [
+        0.026000000536441803,
+        0.019999999552965164,
+        0.012000000104308128,
+        1.0
+      ],
+      "objects": 2,
+      "triangles": 24,
+      "sha256": "5199889923bafff1da257b8818198909d658ec727fb12688c225ce51acb3eb88"
+    },
+    {
+      "name": "Sage boucle upholstery",
+      "obj": "visual_012.obj",
+      "rgba": [
+        0.18000000715255737,
+        0.24500000476837158,
+        0.125,
+        1.0
+      ],
+      "objects": 13,
+      "triangles": 16204,
+      "sha256": "5d965b6153cdb5fcaec88fae779af5071bba3cefd444de1139641894e498e934"
+    },
+    {
+      "name": "Warm pale limestone",
+      "obj": "visual_013.obj",
+      "rgba": [
+        0.38999998569488525,
+        0.375,
+        0.33500000834465027,
+        1.0
+      ],
+      "objects": 2,
+      "triangles": 584,
+      "sha256": "6dfc2c3431c94fce35136292bfa88b5f7e52503f39fdfc0bffa6d73602a869bb"
+    },
+    {
+      "name": "Warm pendant diffuser",
+      "obj": "visual_014.obj",
+      "rgba": [
+        0.8799999952316284,
+        0.5699999928474426,
+        0.23999999463558197,
+        1.0
+      ],
+      "objects": 3,
+      "triangles": 1716,
+      "sha256": "b09433428ff86517bb21d8cb4f5e3d43a1b3d979453bd19616fd61dc260e47c1"
+    }
+  ],
+  "display_only": true,
+  "collision": false,
+  "omitted_objects": [
+    "ceiling_fins",
+    "ceiling_plaster",
+    "curtain_wall",
+    "glazed_double_door_0",
+    "glazed_double_door_1",
+    "pendant_00",
+    "pendant_01",
+    "pendant_02",
+    "pendant_03",
+    "pendant_04",
+    "pendant_05",
+    "pendant_06",
+    "pendant_07",
+    "pendant_08",
+    "pendant_09",
+    "pendant_10",
+    "pendant_11",
+    "pendant_12",
+    "pendant_13",
+    "pendant_front_02",
+    "pendant_front_04",
+    "pendant_reverse_0",
+    "pendant_reverse_2",
+    "pendant_reverse_6",
+    "reception_wall_emblem",
+    "round_wall_mirror_0",
+    "round_wall_mirror_1",
+    "round_wall_mirror_2",
+    "round_wall_mirror_3",
+    "round_wall_mirror_4",
+    "round_wall_mirror_5",
+    "round_wall_mirror_6",
+    "round_wall_mirror_7",
+    "round_wall_mirror_8",
+    "round_wall_mirror_9",
+    "wall_front",
+    "wall_metal_panel_0",
+    "wall_metal_panel_1",
+    "wall_metal_panel_2",
+    "wall_metal_panel_3",
+    "wall_metal_panel_4",
+    "wall_reception",
+    "wall_return",
+    "wall_south_near",
+    "wall_south_recess"
+  ],
+  "omitted_categories": [
+    "ceiling",
+    "ceiling_decoration",
+    "door",
+    "mirror",
+    "pendant_light",
+    "wall",
+    "wall_decoration",
+    "wall_panel",
+    "window_wall"
+  ],
+  "mesh_objects_kept": 1116,
+  "triangles": 77030
+}

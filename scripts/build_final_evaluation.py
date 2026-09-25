@@ -71,33 +71,9 @@ def summary_geometry(method):
     return out
 
 def make_contact():
-    out=ROOT/"figures"; out.mkdir(exist_ok=True)
-    gtroot=ROOT/"data/world_lobby/rgb_180"
-    cols=["M1","M2","M3","GT"]; tiles=[]
-    for idx in VIEWS:
-        row=[]
-        gt=Image.open(next(gtroot.glob(f"{idx:06d}_*.png"))).convert("RGB")
-        for m in cols:
-            if m=="GT": im=gt
-            else: im=Image.open(ROOT/f"results/{m}/renders/{idx:03d}.png").convert("RGB")
-            row.append(im.resize((320,240)))
-        tiles.append(row)
-    canvas=Image.new("RGB",(4*320+90,5*240+60),(245,245,245))
-    d=ImageDraw.Draw(canvas)
-    font=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",24)
-    for x,name in enumerate(cols):
-        d.text((90+x*320+110,8),name,fill="black",font=font)
-    for y,row in enumerate(tiles):
-        d.text((8,60+y*240+108),str(VIEWS[y]),fill="black",font=font)
-        for x,im in enumerate(row):
-            canvas.paste(im,(90+x*320,60+y*240))
-    canvas.save(out/"five_view_comparison.jpg",quality=95)
-    canvas.save(out/"five_view_comparison.png")
-    # M4 supplement
-    sup=Image.new("RGB",(5*320,240))
-    for x,idx in enumerate(VIEWS):
-        sup.paste(Image.open(ROOT/f"results/M4/renders/{idx:03d}.png").convert("RGB").resize((320,240)),(x*320,0))
-    sup.save(out/"m4_pose_oracle_supplement.jpg",quality=95)
+    from build_comparison_figures import build_figures
+    build_figures()
+
 
 def rgb_metrics():
     from skimage.metrics import structural_similarity

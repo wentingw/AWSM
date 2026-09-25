@@ -1,0 +1,158 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model",
+  "instruction": "找到南侧种着鹤望兰的花盆，走过去面对它。",
+  "query": {
+    "status": "matched",
+    "category": "potted_plant or planter",
+    "attribute_filters": [
+      [
+        "species",
+        "bird of paradise"
+      ]
+    ],
+    "direction": "south",
+    "direction_convention": "north = +Y in the M4 map",
+    "candidates": [
+      {
+        "object_id": "tropical_front_0",
+        "score": 1.0,
+        "center_y_m": 20.150063514709473
+      },
+      {
+        "object_id": "tropical_front_1",
+        "score": 1.0,
+        "center_y_m": 23.302902221679688
+      }
+    ],
+    "scope": "constrained Chinese categories, attributes and cardinal directions over reconstructed semantics; no visual object recognition"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained Chinese attributes and north/south instance selection; north is map +Y",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "success",
+  "target_id": "tropical_front_0",
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        20.33673095703125,
+        24.04825210571289,
+        0.8410000011324883
+      ],
+      [
+        20.144999809265137,
+        19.370000762939455,
+        0.8410000011324883
+      ],
+      [
+        17.74499980926514,
+        19.370000762939455,
+        0.8410000011324883
+      ],
+      [
+        16.74499980926514,
+        19.970000762939453,
+        0.8410000011324883
+      ],
+      [
+        14.744999809265137,
+        19.970000762939453,
+        0.8410000011324883
+      ],
+      [
+        14.144999809265137,
+        19.570000762939454,
+        0.8410000011324883
+      ],
+      [
+        12.108009736689635,
+        19.568055179974014,
+        0.8410000011324883
+      ]
+    ],
+    "expanded": 418
+  },
+  "planning_seconds": 0.17567051807418466,
+  "arrived_at_s": 36.542,
+  "simulated_seconds": 36.542,
+  "final_position": [
+    12.29205782829649,
+    19.6237511588616,
+    0.8179883104821614
+  ],
+  "final_goal_distance_m": 0.19229077483949233,
+  "path_length_m": 13.402818420444241,
+  "obstacle_contact_steps": 0,
+  "obstacle_contacts": 0,
+  "fallen": false,
+  "planned_goal": [
+    12.108009736689635,
+    19.568055179974014,
+    0.8410000011324883
+  ],
+  "target": {
+    "object_id": "tropical_front_0",
+    "category": "potted_plant",
+    "attributes": {
+      "species": "bird of paradise interpreted from RGB"
+    },
+    "center": [
+      11.099941730499268,
+      20.150063514709473,
+      1.069340541958809
+    ],
+    "bounds": [
+      [
+        10.698091506958008,
+        19.76040267944336,
+        0.025000005960464478
+      ],
+      [
+        11.501791954040527,
+        20.539724349975586,
+        2.1136810779571533
+      ]
+    ],
+    "spatial_relations": [
+      {
+        "relation": "supported_by",
+        "object_id": "floor_stone"
+      }
+    ],
+    "evidence_frame_ids": [
+      60,
+      66,
+      90,
+      100
+    ],
+    "evidence": {
+      "frame_ids": [
+        60,
+        66,
+        90,
+        100
+      ]
+    },
+    "geometry_provenance": {
+      "observed": "RGB semantic interpretation + local metric depth; RGB multiview cross-check",
+      "inferred": "solid thickness, hidden backs, fastening, exact textile/weave/leaf microgeometry",
+      "measurement_reference": "revision3_measurements.json and review M4-R04; frame60 top/base rays; reverse90 semantic cross-check"
+    },
+    "blender_root": "tropical_front_0",
+    "part_count": 16
+  },
+  "limitations": [
+    "constrained Chinese attribute/direction matching over generated semantics",
+    "simulator-state-oracle localization",
+    "conservative AABB world, not original triangle mesh",
+    "collision materials assumed, not measured",
+    "no GT-world transfer in this result"
+  ],
+  "scene_method": "M4",
+  "floor_representation": "original stone floor slab top 0.025 m and raised inset top 0.041 m; finite floor bounds",
+  "recognition_scope": "generated semantic map lookup; target visibility verified separately after execution"
+}

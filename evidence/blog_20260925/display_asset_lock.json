@@ -1,0 +1,68 @@
+{
+  "scope": "Published display models and sanitized source ZIP; original full scenes remain in artifact-lock.json",
+  "files": [
+    {
+      "path": "assets/M2_cutaway.glb",
+      "bytes": 1216164,
+      "sha256": "df99f900cf921d139b31b3339cfd6c536a17475b7d8072b715190b995a07ea48",
+      "local_path": "blog/assets/M2_cutaway.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/M2_cutaway.glb"
+    },
+    {
+      "path": "assets/M3_cutaway.glb",
+      "bytes": 20089736,
+      "sha256": "306f9e156976eca7286b5d190e5dbcd06b1eda6d7540190e8574ea7b73b9af00",
+      "local_path": "blog/assets/M3_cutaway.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/M3_cutaway.glb"
+    },
+    {
+      "path": "assets/M4_cutaway.glb",
+      "bytes": 4342224,
+      "sha256": "fa9ebd536fff932994051cd113339851939f4726394e1d0fac8d84c29e1bd88c",
+      "local_path": "blog/assets/M4_cutaway.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/M4_cutaway.glb"
+    },
+    {
+      "path": "assets/comparison/GT.glb",
+      "bytes": 24816108,
+      "sha256": "6c28ab067c63c5b1fce19c6a972f3d66c7ac4d9bd9ce3b5a57e2e18f5641fe8f",
+      "local_path": "blog/assets/comparison/GT.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/comparison/GT.glb"
+    },
+    {
+      "path": "assets/comparison/M1.glb",
+      "bytes": 15879252,
+      "sha256": "a136b7e72d80e55f47bb4b9199ef908c6062d57f70e9a548c0c7f7d5215c92e6",
+      "local_path": "blog/assets/comparison/M1.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/comparison/M1.glb"
+    },
+    {
+      "path": "assets/comparison/M2.glb",
+      "bytes": 908520,
+      "sha256": "15a646c6baa40dc19e2f26b68887eaadf0af3530a981ae39994e23373b202620",
+      "local_path": "blog/assets/comparison/M2.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/comparison/M2.glb"
+    },
+    {
+      "path": "assets/comparison/M3.glb",
+      "bytes": 10937264,
+      "sha256": "07bf62c649dd9297a91d680667998eae8072a796f811e8c354af7b68fc88aa4b",
+      "local_path": "blog/assets/comparison/M3.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/comparison/M3.glb"
+    },
+    {
+      "path": "assets/comparison/M4.glb",
+      "bytes": 2710316,
+      "sha256": "447c47dd6b429f7d33f218604be76b5199adc34b022e5b3e81dbcd491c7234ae",
+      "local_path": "blog/assets/comparison/M4.glb",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/assets/comparison/M4.glb"
+    },
+    {
+      "path": "downloads/reproduction_sources.zip",
+      "bytes": 9536762,
+      "sha256": "c2817ccbbe60f6e18614b6e844ded694117eadbfc5458b707c7593c68465e543",
+      "local_path": "downloads/reproduction_sources.zip",
+      "url": "https://raw.githubusercontent.com/wentingw/astra-world-model-blog/cd63134103e1f14660d00fd4d20988f25cbf50ea/downloads/reproduction_sources.zip"
+    }
+  ]
+}

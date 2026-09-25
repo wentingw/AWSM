@@ -1,0 +1,191 @@
+{
+  "scene_method": "M4",
+  "counts": {
+    "success": 20
+  },
+  "episodes": [
+    {
+      "episode_id": 0,
+      "status": "success",
+      "target_id": "ceramic_plant_0",
+      "path_length_m": 7.09904228924467,
+      "simulated_seconds": 21.442,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 1,
+      "status": "success",
+      "target_id": "ceramic_plant_0",
+      "path_length_m": 5.538967029247728,
+      "simulated_seconds": 16.562,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 2,
+      "status": "success",
+      "target_id": "ceramic_plant_0",
+      "path_length_m": 3.9542835993375114,
+      "simulated_seconds": 12.222,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 3,
+      "status": "success",
+      "target_id": "ceramic_plant_0",
+      "path_length_m": 8.532808454484236,
+      "simulated_seconds": 26.382,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 4,
+      "status": "success",
+      "target_id": "flower_planter_0",
+      "path_length_m": 18.295338558381566,
+      "simulated_seconds": 51.642,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 5,
+      "status": "success",
+      "target_id": "flower_planter_0",
+      "path_length_m": 16.783906296189922,
+      "simulated_seconds": 46.942,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 6,
+      "status": "success",
+      "target_id": "flower_planter_0",
+      "path_length_m": 15.282899326038947,
+      "simulated_seconds": 43.642,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 7,
+      "status": "success",
+      "target_id": "flower_planter_0",
+      "path_length_m": 0.7231175389858266,
+      "simulated_seconds": 7.202,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 8,
+      "status": "success",
+      "target_id": "flower_planter_1",
+      "path_length_m": 9.0794317063594,
+      "simulated_seconds": 26.022000000000002,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 9,
+      "status": "success",
+      "target_id": "flower_planter_1",
+      "path_length_m": 7.582839219710755,
+      "simulated_seconds": 21.442,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 10,
+      "status": "success",
+      "target_id": "flower_planter_1",
+      "path_length_m": 6.004225039541086,
+      "simulated_seconds": 17.882,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 11,
+      "status": "success",
+      "target_id": "flower_planter_1",
+      "path_length_m": 2.357169413283165,
+      "simulated_seconds": 9.082,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 12,
+      "status": "success",
+      "target_id": "tropical_front_1",
+      "path_length_m": 1.0107997882768895,
+      "simulated_seconds": 6.622,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 13,
+      "status": "success",
+      "target_id": "tropical_front_1",
+      "path_length_m": 1.9254689085278611,
+      "simulated_seconds": 9.342,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 14,
+      "status": "success",
+      "target_id": "tropical_front_1",
+      "path_length_m": 3.623348889011419,
+      "simulated_seconds": 13.422,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 15,
+      "status": "success",
+      "target_id": "tropical_front_1",
+      "path_length_m": 16.04726947517667,
+      "simulated_seconds": 43.062,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 16,
+      "status": "success",
+      "target_id": "tropical_front_0",
+      "path_length_m": 0.6751553816920947,
+      "simulated_seconds": 5.2620000000000005,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 17,
+      "status": "success",
+      "target_id": "tropical_front_0",
+      "path_length_m": 3.310266481777897,
+      "simulated_seconds": 11.842,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 18,
+      "status": "success",
+      "target_id": "tropical_front_0",
+      "path_length_m": 4.8764022192338174,
+      "simulated_seconds": 17.042,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    },
+    {
+      "episode_id": 19,
+      "status": "success",
+      "target_id": "tropical_front_0",
+      "path_length_m": 13.402818420444241,
+      "simulated_seconds": 36.542,
+      "obstacle_contact_steps": 0,
+      "fallen": false
+    }
+  ],
+  "total": 20,
+  "protocol_sha256": "c976204b5a9218d7842445045e666a1daeb680ae357f0e115d29647193c73840",
+  "scope": "Navigation outcomes; task identity and visibility require independent post-execution evaluation"
+}

@@ -1,0 +1,11 @@
+{
+  "query_id": 16,
+  "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/photographic_mapping_queries/reference_16.png",
+  "keyframe_index": 12,
+  "start_xyz": [
+    10.475356101989746,
+    21.508216857910156,
+    2.38932466506958
+  ],
+  "floor_z": 0.04100000113248825
+}

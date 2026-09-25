@@ -26,7 +26,19 @@ Article and assets:
 
 This is one static synthetic World Lobby capture and one engineering run per primary method. M2 reports 0.118 m pose translation RMSE, 0.0738 native-depth AbsRel, and 0.182 m model-to-GT mean surface distance. M3 reports 2.595 m, 0.2612, and 0.459 m. M4 receives GT pose and is not an estimator result.
 
-The drone task reports 15/20 collision-free candidate arrivals, 5/20 collisions, and 0/20 strict or relaxed precise rephotography successes. G1 reports 18/30 model-world approach successes and 12 planning failures across five target families with six paraphrases each; the task uses simulator-state localization and has no independent visual identity check. Named elements and colliders are not independent semantic precision/recall or real physical-property measurements.
+The current downstream tasks both use the frozen **M4** scene. The drone records **17/20** collision-free candidate arrivals, three collisions and **0/20** strict or relaxed precise rephotography successes. G1 executes five constrained Chinese target descriptions from four starts each: **20/20** correct target identities, collision-free navigation outcomes and evaluator-verified target visibility. Both controllers use simulator-state localization; the G1 parser uses a known semantic map, and its visibility check is geometry-based, not learned visual recognition. The earlier M3 trials remain historical evidence and are not a controlled M3–M4 comparison.
+
+The five-view appearance evaluation includes PSNR, SSIM and **LPIPS (AlexNet, v0.1)** for M1–M4. Geometry also includes B2p, the matched OpenVINS + MapAnything direct-fusion baseline. All eight current article tables and their bilingual captions are preserved.
+
+## Current blog snapshot · 25 September 2026
+
+This update corresponds to public blog commit [`cd63134103e1f14660d00fd4d20988f25cbf50ea`](https://github.com/wentingw/astra-world-model-blog/commit/cd63134103e1f14660d00fd4d20988f25cbf50ea). See [the evidence index](evidence/blog_20260925/README.md) for each table's source, M4 episode records, image inputs, audit commands and asset manifests. Original code/results are preserved byte for byte; historical absolute paths require relocation before re-running a pipeline.
+
+- Reconstruction: M1–M4 builders, frontend adapters, direct fusion and evaluations.
+- M4 tasks: all 40 episode requests, summaries and trajectories, candidate/reference images, endpoint renders, G1 visibility masks and two display replay videos.
+- Presentation: bilingual article/templates, comparison figures and viewer source, with fixed-version links for display GLBs and full Blender scenes.
+
+Historical M3 results and earlier commits remain available. Source files, hashes and immutable asset references make this an auditable experiment snapshot; it is not a one-command simulator distribution.
 
 SceneWeft complements SLAM/VIO: those systems provide registration and geometric constraints; SceneWeft turns evidence into an editable scene program. There is no evidence here of surpassing, replacing, or being first in SLAM or agentic reconstruction.
 

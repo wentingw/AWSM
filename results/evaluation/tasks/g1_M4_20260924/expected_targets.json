@@ -1,0 +1,102 @@
+[
+  {
+    "episode_id": 0,
+    "expected_target_id": "ceramic_plant_0",
+    "goal_family": 0
+  },
+  {
+    "episode_id": 1,
+    "expected_target_id": "ceramic_plant_0",
+    "goal_family": 0
+  },
+  {
+    "episode_id": 2,
+    "expected_target_id": "ceramic_plant_0",
+    "goal_family": 0
+  },
+  {
+    "episode_id": 3,
+    "expected_target_id": "ceramic_plant_0",
+    "goal_family": 0
+  },
+  {
+    "episode_id": 4,
+    "expected_target_id": "flower_planter_0",
+    "goal_family": 1
+  },
+  {
+    "episode_id": 5,
+    "expected_target_id": "flower_planter_0",
+    "goal_family": 1
+  },
+  {
+    "episode_id": 6,
+    "expected_target_id": "flower_planter_0",
+    "goal_family": 1
+  },
+  {
+    "episode_id": 7,
+    "expected_target_id": "flower_planter_0",
+    "goal_family": 1
+  },
+  {
+    "episode_id": 8,
+    "expected_target_id": "flower_planter_1",
+    "goal_family": 2
+  },
+  {
+    "episode_id": 9,
+    "expected_target_id": "flower_planter_1",
+    "goal_family": 2
+  },
+  {
+    "episode_id": 10,
+    "expected_target_id": "flower_planter_1",
+    "goal_family": 2
+  },
+  {
+    "episode_id": 11,
+    "expected_target_id": "flower_planter_1",
+    "goal_family": 2
+  },
+  {
+    "episode_id": 12,
+    "expected_target_id": "tropical_front_1",
+    "goal_family": 3
+  },
+  {
+    "episode_id": 13,
+    "expected_target_id": "tropical_front_1",
+    "goal_family": 3
+  },
+  {
+    "episode_id": 14,
+    "expected_target_id": "tropical_front_1",
+    "goal_family": 3
+  },
+  {
+    "episode_id": 15,
+    "expected_target_id": "tropical_front_1",
+    "goal_family": 3
+  },
+  {
+    "episode_id": 16,
+    "expected_target_id": "tropical_front_0",
+    "goal_family": 4
+  },
+  {
+    "episode_id": 17,
+    "expected_target_id": "tropical_front_0",
+    "goal_family": 4
+  },
+  {
+    "episode_id": 18,
+    "expected_target_id": "tropical_front_0",
+    "goal_family": 4
+  },
+  {
+    "episode_id": 19,
+    "expected_target_id": "tropical_front_0",
+    "goal_family": 4
+  }
+]

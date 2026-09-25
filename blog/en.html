@@ -1,14 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>When the map becomes a program — Astra World Models</title><meta name="description" content="Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution."><meta property="og:title" content="When the map becomes a program"><meta property="og:description" content="Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution."><meta property="og:image" content="assets/hero.jpg"><link rel="stylesheet" href="style.css"><script type="module" src="vendor/model-viewer.min.js"></script></head><body><div class="reading-progress" id="progress"></div><nav><a class="brand" href="en.html">ASTRA <span>/ WORLD MODELS</span></a><div><a href="index.html" >中文</a><a href="en.html" aria-current="page">EN</a><a href="../results/final_evaluation.json">DATA ↗</a></div></nav><header><p class="eyebrow">RESEARCH NOTE · 23 SEPTEMBER 2026</p><h1>When the map becomes a program</h1><p class="subtitle">GPT‑6 Astra × Blender × executable 3D worlds</p><p class="lead">Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution.</p><div class="meta"><span>360 s / synthetic capture</span><span>180 modelling views</span><span>Measured successes & failures</span></div></header><figure class="hero"><img src="assets/hero.jpg" alt="Original simulator image beside the Astra M4 reconstruction"><figcaption>Same input view: simulator RGB and M4 reconstruction. M4 receives GT camera poses, not the GT mesh.</figcaption></figure><div class="layout"><aside class="toc"><p>ON THIS PAGE</p><ul><li><a href="#four-paths-from-one-capture">Four paths from one capture</a></li><li><a href="#a-scene-program-with-explicit-limits">A scene program, with explicit limits</a></li><li><a href="#five-fixed-views">Five fixed views</a></li><li><a href="#four-measurements-not-one-score">Four measurements, not one score</a></li><li><a href="#pose-errors-propagate">Pose errors propagate</a></li><li><a href="#put-the-scene-to-work">Put the scene to work</a></li><li><a href="#what-could-change">What could change</a></li><li><a href="#evidence-and-reproduction">Evidence and reproduction</a></li><li><a href="#assets">Full models and experiment assets</a></li></ul></aside><main><article>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>When the map becomes a program — Astra World Models</title><meta name="description" content="Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution."><meta property="og:title" content="When the map becomes a program"><meta property="og:description" content="Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution."><meta property="og:image" content="assets/hero.jpg"><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script><script type="module" src="scene-compare.js"></script></head><body><div class="reading-progress" id="progress"></div><nav><a class="brand" href="en.html">ASTRA <span>/ WORLD MODELS</span></a><div><a href="index.html" >中文</a><a href="en.html" aria-current="page">EN</a><a href="../results/final_evaluation.json">DATA ↗</a></div></nav><header><p class="eyebrow">RESEARCH NOTE · UPDATED 24 SEPTEMBER 2026</p><h1>When the map becomes a program</h1><p class="subtitle">GPT‑6 Astra × Blender × executable 3D worlds</p><p class="lead">Four reconstruction routes, six main systems, two robot tasks. Testing generated scene programs with geometry and execution.</p><div class="meta"><span>360 s / synthetic capture</span><span>180 modelling views</span><span>Measured successes & failures</span></div></header><figure class="hero" id="figure-1" data-figure-number="1" aria-labelledby="figure-1-title"><img src="assets/hero.jpg" alt="Original simulator image beside the Astra M4 reconstruction"><figcaption id="figure-1-title"><span class="figure-number">Figure 1.</span> <span class="figure-title">Original scene and GT-pose-conditioned reconstruction.</span> Same input view: simulator RGB and M4 reconstruction. M4 receives GT camera poses, not the GT mesh.</figcaption></figure><div class="layout"><aside class="toc"><p>ON THIS PAGE</p><ul><li><a href="#four-paths-from-one-capture">Four paths from one capture</a></li><li><a href="#a-scene-program-with-explicit-limits">A scene program, with explicit limits</a></li><li><a href="#five-fixed-views">Five fixed views</a></li><li><a href="#four-measurements-not-one-score">Four measurements, not one score</a></li><li><a href="#pose-errors-propagate">Pose errors propagate</a></li><li><a href="#let-robots-test-the-scene">Let robots test the scene</a></li><li><a href="#what-could-change">What could change</a></li><li><a href="#evidence-and-reproduction">Evidence and reproduction</a></li><li><a href="#assets">Full models and experiment assets</a></li></ul></aside><main><article>
 
 <p>Could a map also be a design file, a geometric measurement, and a robot's working environment?</p>
 <p>We gave GPT‑6 Astra images and different amounts of geometric evidence, then used Blender as its construction and rendering tool. The resulting scenes contain editable geometry, materials, named elements, spatial relations, cameras, and collision proxies. A shared artifact connects visual interpretation, measured constraints, scene editing, and simulated action.</p>
-<p>Two findings coexist. <strong>A general visual coding model can turn observations into structured, executable assets. It also inherits localization errors and can build plausible structures in the wrong places.</strong> With ground-truth camera poses, mean model-to-GT surface distance was 6.9 cm. With this capture's OpenVINS poses, it was 45.9 cm. The latter scene supported some G1 navigation, but no accurate drone rephotography.</p>
+<p>Two findings coexist. <strong>A general visual coding model can turn observations into structured, executable assets. It also inherits localization errors and can build plausible structures in the wrong places.</strong> With ground-truth camera poses, mean model-to-GT surface distance was 6.9 cm. With this capture's OpenVINS poses, it was 45.9 cm. The downstream experiments now both use M4 to test language-goal navigation and reference-image rephotography; reaching a candidate region and reproducing a photograph are different requirements.</p>
 <p>This is one static simulated lobby, with one engineering run per method and an unequal historical budget for the RGB-only model. It exposes useful mechanisms and failures; it does not establish cross-scene superiority or industry replacement.</p>
 <h2 id="four-paths-from-one-capture">Four paths from one capture</h2>
 <p>World Lobby provides approximately 360 seconds of synthetic observations: 8,999 RGB frames at 25 Hz, 1280×960 pixels, and 89,999 synchronized IMU samples at 250 Hz. Taking every 50th RGB frame gives 180 modelling views.</p>
 <p>Fresh Astra sessions independently constructed M2, M3, and M4 using method-specific packets. Builders and independent verifiers could inspect their permitted inputs and generated scenes, but not GT geometry or evaluation results. M4 alone received GT camera poses. Historical M1 remained frozen.</p>
-<figure><a href="../figures/methods_plan.svg"><img loading="lazy" src="../figures/methods_plan.svg" alt="Four input routes and the independent verification loop"></a><figcaption>Four input routes and the independent verification loop</figcaption></figure>
-<div class="table-scroll"><table>
+<figure id="figure-2" data-figure-number="2" aria-labelledby="figure-2-title"><a href="../figures/methods_plan.svg"><img loading="lazy" src="../figures/methods_plan.svg" alt="Four input routes and the independent verification loop"></a><figcaption id="figure-2-title"><span class="figure-number">Figure 2.</span> <span class="figure-title">Four reconstruction routes and independent evaluation.</span> Four input routes and the independent verification loop</figcaption></figure>
+<figure class="table-figure" id="table-1"><figcaption id="table-1-title"><span class="table-number">Table 1.</span> Four reconstruction routes and their inputs</figcaption><div class="table-scroll"><table aria-labelledby="table-1-title">
 <thead>
 <tr>
 <th>Method</th>
@@ -19,50 +19,54 @@
 </thead>
 <tbody>
 <tr>
-<td>M1 / visual</td>
+<td>M1 · RGB-only + Astra</td>
 <td>180 sampled RGB images</td>
 <td>Visually inferred dimensions</td>
 <td>Astra calls Blender</td>
 </tr>
 <tr>
-<td>M2 / ViPE</td>
+<td>M2 · ViPE + Astra</td>
 <td>Full video; sampled measurements</td>
 <td>ViPE poses and near-metric depth</td>
 <td>Astra calls Blender</td>
 </tr>
 <tr>
-<td>M3 / inertial</td>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
 <td>Video, IMU, calibration</td>
 <td>OpenVINS metric poses → MapAnything depth</td>
 <td>Astra calls Blender</td>
 </tr>
 <tr>
-<td>M4 / pose oracle</td>
+<td>M4 · GT pose + MapAnything + Astra</td>
 <td>Video and GT camera poses</td>
 <td>GT poses → MapAnything depth</td>
 <td>Astra calls Blender</td>
 </tr>
 </tbody>
-</table></div>
+</table></div></figure>
 <p><strong>M1 asks how far visual interpretation goes.</strong> Without measured depth or camera motion, its dimensions have no recovered metric scale. Display and shape evaluation use one disclosed GT-assisted Sim(3) registration, with scale approximately 0.690, derived from four frozen presentation-camera associations.</p>
-<p><strong>M2 adds measured video geometry.</strong> ViPE produced cameras and depth for all 8,999 frames; Astra used the corresponding sampled outputs. Near-metric depth is an empirical prediction, not a scale guarantee.</p>
-<p><strong>M3 adds inertial constraints.</strong> OpenVINS consumes calibrated, synchronized camera and IMU observations. MapAnything receives RGB, intrinsics, and its metric cam2world poses. Initialization began around 8.6 seconds, leaving 175 of the 180 sampled poses. Those missing inputs remain missing.</p>
+<p><strong>M2 adds measured video geometry.</strong> This ViPE run is RGB-only. GeoCalib initializes intrinsics; DROID-style learned monocular SLAM, frontend/backend bundle adjustment, and non-keyframe pose infill estimate the trajectory while optimizing intrinsics. UniDepth V2 small (<code>lpiccinelli/unidepth-v2-vits14</code>) supplies the keyframe depth prior and learned near-metric scale. No IMU, external poses, or GT scale are supplied.</p>
+<p>Final depth uses <code>adaptive_unidepth-s</code>: the implementation selects direct UniDepth depth when the minimum projected-map coverage score across the trajectory is below 0.3, or PriorDA prompted by sparse SLAM depth otherwise. An independent reproduction from the frozen map and camera files gives a minimum coverage score of 0.79, above the 0.3 threshold: the 180 sampled depths therefore use <strong>PriorDA prompted by SLAM depth</strong>, with UniDepth V2 small supplying the upstream keyframe prior. This is a <code>no_vda</code> run without Video Depth Anything. ViPE processes all 8,999 frames; Astra and B1 consume the same 180 sampled outputs. Near-metric scale remains an empirical prediction, not a guarantee.</p>
+<p><strong>M3 adds inertial constraints.</strong> OpenVINS consumes calibrated, synchronized camera and IMU observations. MapAnything receives RGB, intrinsics, and its metric cam2world poses. Initialization began around 8.6 seconds, leaving 175 of the 180 sampled poses. Those missing inputs remain missing. The implemented chain is <strong>RGB + calibrated intrinsics + OpenVINS metric camera-to-world poses → MapAnything optical-Z depth → Astra / Blender</strong>. All 175 packet poses match OpenVINS outputs, and depth arrays pass unchanged into the modelling packet. MapAnything pose and scale conditioning are enabled without GT scale correction. The evaluated trajectory remains the OpenVINS output; MapAnything does not write poses back to it.</p>
 <p><strong>M4 removes estimated-pose error.</strong> It receives camera answers, but no GT depth, mesh, or object inventory. This is a diagnostic condition, not a deployable method or a theoretical upper bound on scene quality.</p>
 <p>MapAnything used joint four-view windows with overlap two; an eight-view attempt exceeded memory and is excluded. A fixed centrality rule resolves repeated outputs, and pose-conditioned fusion uses the supplied camera frame. We also evaluate B1, ViPE+TSDF, and B2, calibrated RGB-only MapAnything+TSDF. Supplementary B2p fuses exactly the OpenVINS+MapAnything measurements supplied to M3. Four scene-building routes plus two primary fusion baselines make <strong>six main systems</strong>.</p>
 <h2 id="a-scene-program-with-explicit-limits">A scene program, with explicit limits</h2>
-<p>The common loop is inspect, inventory, constrain, code, execute, render, review, and revise. New runs allow at most five revisions and 60 inspection renders; M2, M3, and M4 used 25, 15, and 20 renders respectively. Independent reviews led to repairs of furniture intersections, surface orientation, missing objects, and collider coverage. Remaining position and detail errors stayed in the frozen artifacts.</p>
+<p>M2–M4 share a modelling contract: inspect permitted inputs, organize objects and constraints, write and execute Blender code from an empty scene, render input views, obtain independent review, make bounded repairs, and freeze. Reviewers see only the method's permitted inputs and model, never GT geometry. The common cap is <strong>five complete scene versions and 60 checking renders</strong>; version counts include the initial build.</p>
+<p>Actual use differs: M2 produced <strong>five versions (initial + four revisions), with 25 checking renders</strong>; M3 <strong>three versions (initial + two revisions), with 15 renders</strong>; M4 <strong>four versions (initial + three revisions), with 20 renders</strong>. Each version checks five views, selected separately by each modeller: 0/65/85/110/130 for M2, 5/60/90/105/126 for M3, and 0/60/90/108/138 for M4. These internal checking views also differ from the five common final-evaluation views.</p>
+<p>All four methods have <strong>180 available RGB reference images</strong>; they are not necessarily submitted to Astra in a single request. File access is distinct from visual inspection. M2's analysis program reads 180 RGB files. M3 records 111 RGB frame IDs under mixed contact-sheet, visual-inspection and SIFT-triangulation purposes. M4 reads 180 RGB files programmatically and separately records 34 personally inspected RGB frames. File-read counts do not establish how many images Astra individually viewed. Historical M1 has no verifiable visual-access or revision count.</p>
+<p>Thus <strong>M2–M4 share the workflow contract and budget cap, but not identical evidence use, checking views, or iteration counts; M1 lacks the same budget constraint.</strong> This is a single-run comparison of engineering routes, not an otherwise identical input-only ablation. Independent reviews repaired furniture intersections, surface orientation, missing objects, and collider coverage; remaining errors stayed in the frozen artifacts.</p>
 <p>Named elements can be selected, edited, or queried. Their names are generated interpretations, not semantic accuracy measurements. M3's 259 elements include 195 trim or structural-detail elements; they are not 259 verified physical object instances. We have not independently annotated object correspondence.</p>
 <p>M3 supplies 52 hard collision proxies. Unknown regions and vegetation exclusions constrain planning without becoming physical walls. Mass, friction, hidden joints, and material response are not independently recovered from this video. Execution under stated assumptions is a narrower claim than physical fidelity.</p>
-<aside class="model-panel"><div class="controlrow"><h3>Rotate the scene. Inspect its structure.</h3><label>MODEL <select id="model-select"><option>M2</option><option selected>M3</option><option>M4</option></select></label></div><model-viewer id="scene-viewer" src="assets/M3_cutaway.glb" alt="Frozen M3 scene, presentation cutaway" camera-controls touch-action="pan-y" shadow-intensity="0.3" exposure="1" environment-image="neutral" camera-orbit="-30deg 48deg 85%" interaction-prompt="none" loading="lazy"></model-viewer><p class="caption">Display copies remove walls, windows, doors, and ceilings for inspection. Evaluation and physics use complete frozen scenes. Object labels and physical properties remain declared assumptions. <a href="assets/cutaway_provenance.json">Provenance</a></p></aside><h2 id="five-fixed-views">Five fixed views</h2>
-<p>Rows are keyframes 0, 36, 72, 108, and 144; columns are M1, M2, M3, and original simulator RGB. Each row uses the same target camera and intrinsics after one global registration, without per-image fitting.</p>
-<div class="interactive" id="compare"><div class="controlrow"><label>METHOD <select id="compare-method"><option>M1</option><option selected>M2</option><option>M3</option><option>M4</option><option>B1</option><option>B2</option></select></label><label>KEYFRAME <select id="compare-frame"><option>0</option><option selected>36</option><option>72</option><option>108</option><option>144</option></select></label></div><div class="compare-pair"><figure><img id="compare-pred" alt="Selected reconstruction"><figcaption id="compare-label">M2</figcaption></figure><figure><img id="compare-gt" alt="Original simulator RGB"><figcaption>INPUT / SIMULATOR RGB</figcaption></figure></div></div><figure><a href="../figures/five_view_comparison.jpg"><img loading="lazy" src="../figures/five_view_comparison.jpg" alt="Five-by-four comparison: M1, M2, M3, and input GT"></a><figcaption>Five-by-four comparison: M1, M2, M3, and input GT</figcaption></figure>
+<h2 id="five-fixed-views">Five fixed views</h2><figure class="scene-comparison" id="scene-comparison" data-state="idle" data-figure-number="3" aria-labelledby="figure-3-title"><span id="figure-3" class="figure-anchor"></span><h3>Rotate the scene. Inspect its structure.</h3><div class="scene-toolbar"><label class="method-control">Reconstruction / GT<select id="model-select"><option value="M1">M1 · RGB-only + Astra</option><option value="M2">M2 · ViPE + Astra</option><option value="M3" selected>M3 · OpenVINS + MapAnything + Astra</option><option value="M4">M4 · GT pose + MapAnything + Astra</option><option value="GT">GT · Original simulator scene</option></select></label><label>Display<select id="scene-mode"><option value="compare">Split comparison with GT</option><option value="single">View selected scene alone</option></select></label><button id="scene-reset" type="button">Reset view</button></div><div class="scene-stage"><span class="scene-label scene-label-left">M3 · OpenVINS + MapAnything + Astra</span><span class="scene-label scene-label-right">GT · Original simulator scene</span><button class="scene-divider" type="button" role="slider" aria-label="Move divider" aria-valuemin="2" aria-valuemax="98" aria-valuenow="50" aria-orientation="horizontal"><span aria-hidden="true">↔</span></button><div class="scene-status" role="status" aria-live="polite">Scroll here to load the 3D scenes</div></div><label class="scene-split-control" for="scene-split">Move divider<input id="scene-split" type="range" min="2" max="98" value="50"></label><button id="scene-retry" class="scene-retry" type="button">Retry</button><p class="scene-help">Drag the scene to rotate, scroll or pinch to zoom, and drag the divider to compare the same view. Select GT to inspect the original simulator scene alone.</p><figcaption id="figure-3-title"><span class="figure-number">Figure 3.</span> <span class="figure-title">Interactive reconstruction–GT comparison with a shared camera.</span> Both sides share one camera, metric coordinates, and the existing evaluation registration; models are never centered or rescaled independently. M1 retains the disclosed GT-assisted Sim(3); other methods retain their SE(3) registration, with M4 already in GT coordinates. These cutaway, simplified display copies use converted web materials. They are not full evaluation models and do not establish physical or appearance accuracy. <a href="assets/comparison/comparison_provenance.json">Display provenance and transforms</a></figcaption></figure>
+<p>Rows are keyframes 0, 36, 72, 108, and 144; the five columns are RGB-only + Astra, ViPE + Astra, OpenVINS + MapAnything + Astra, GT pose + MapAnything + Astra, and original simulator RGB (input GT). Each row uses the same target camera and intrinsics after one global registration, without per-image fitting.</p>
+<figure class="interactive" id="compare" data-figure-number="4" aria-labelledby="figure-4-title"><span id="figure-4" class="figure-anchor"></span><div class="controlrow"><label>METHOD <select id="compare-method"><option value="M1">M1 · RGB-only + Astra</option><option value="M2" selected>M2 · ViPE + Astra</option><option value="M3">M3 · OpenVINS + MapAnything + Astra</option><option value="M4">M4 · GT pose + MapAnything + Astra</option><option value="B1">B1 · ViPE + TSDF</option><option value="B2">B2 · MapAnything + TSDF</option></select></label><label>KEYFRAME <select id="compare-frame"><option>0</option><option selected>36</option><option>72</option><option>108</option><option>144</option></select></label></div><div class="compare-pair"><div><img id="compare-pred" alt="Selected reconstruction"><p class="compare-subcaption" id="compare-label">M2 · ViPE + Astra</p></div><div><img id="compare-gt" alt="Original simulator RGB"><p class="compare-subcaption">INPUT / SIMULATOR RGB</p></div></div><figcaption id="figure-4-title"><span class="figure-number">Figure 4.</span> <span class="figure-title">Fixed-view render and input-image comparison.</span> Reconstruction render and original RGB at a fixed input view; select the method and keyframe.</figcaption></figure><figure id="figure-5" data-figure-number="5" aria-labelledby="figure-5-title"><a href="../figures/five_view_comparison.jpg"><img loading="lazy" src="../figures/five_view_comparison.jpg" alt="Five-by-five comparison: RGB-only + Astra, ViPE + Astra, OpenVINS + MapAnything + Astra, GT pose + MapAnything + Astra, and input GT"></a><figcaption id="figure-5-title"><span class="figure-number">Figure 5.</span> <span class="figure-title">Five-view comparison of four reconstruction methods and input GT.</span> Five-by-five comparison: RGB-only + Astra, ViPE + Astra, OpenVINS + MapAnything + Astra, GT pose + MapAnything + Astra, and input GT</figcaption></figure>
 <p>M1's black frame 108 remains visible. It is a camera/model coverage failure, not an image to replace with a flattering viewpoint. These images reproduce modelling views; they do not establish held-out-image generalization.</p>
-<figure><a href="../figures/m4_pose_oracle_supplement.jpg"><img loading="lazy" src="../figures/m4_pose_oracle_supplement.jpg" alt="M4 pose-oracle supplementary views"></a><figcaption>M4 pose-oracle supplementary views</figcaption></figure>
-<p>Direct fusion retains observed colors as well as holes and ghost geometry:</p>
-<figure><a href="../figures/direct_baseline_comparison.jpg"><img loading="lazy" src="../figures/direct_baseline_comparison.jpg" alt="Direct fusion baselines at the same views"></a><figcaption>Direct fusion baselines at the same views</figcaption></figure>
+<p>Direct fusion retains observed colors as well as holes and ghost geometry. Columns show ViPE + TSDF, MapAnything + TSDF, OpenVINS + MapAnything + TSDF, and input GT:</p>
+<figure id="figure-6" data-figure-number="6" aria-labelledby="figure-6-title"><a href="../figures/direct_baseline_comparison.jpg"><img loading="lazy" src="../figures/direct_baseline_comparison.jpg" alt="Direct fusion at the same views: ViPE + TSDF, MapAnything + TSDF, OpenVINS + MapAnything + TSDF, and input GT"></a><figcaption id="figure-6-title"><span class="figure-number">Figure 6.</span> <span class="figure-title">Direct geometry-fusion baselines and input GT.</span> Direct fusion at the same views: ViPE + TSDF, MapAnything + TSDF, OpenVINS + MapAnything + TSDF, and input GT</figcaption></figure>
 <h2 id="four-measurements-not-one-score">Four measurements, not one score</h2>
 <p>Camera translation uses ATE RMSE; rotation uses angular RMSE. Metric and near-metric methods receive a single global SE(3) alignment, inherited by their models without ICP. M1's GT-assisted Sim(3) is explicitly separate. Depth is optical-axis Z; AbsRel averages absolute relative error over valid predictions inside an independently defined GT domain.</p>
-<div class="table-scroll"><table>
+<p><strong>Bold</strong> marks the best displayed value in each metric column; ties at the shown precision are all bold. ↓ Lower is better; ↑ higher is better. GT inputs and missing values are excluded.</p>
+<figure class="table-figure" id="table-2"><figcaption id="table-2-title"><span class="table-number">Table 2.</span> Camera-pose and depth errors for four reconstruction methods and three fusion baselines</figcaption><div class="table-scroll"><table aria-labelledby="table-2-title">
 <thead>
 <tr>
 <th>System</th>
@@ -74,7 +78,7 @@
 </thead>
 <tbody>
 <tr>
-<td>M1 · RGB / Sim(3)†</td>
+<td>M1 · RGB-only + Astra / Sim(3)†</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -82,13 +86,13 @@
 </tr>
 <tr>
 <td>M2 · ViPE + Astra</td>
-<td>0.118</td>
-<td>0.312</td>
-<td>7.38%</td>
+<td><strong>0.118</strong></td>
+<td><strong>0.312</strong></td>
+<td><strong>7.38%</strong></td>
 <td>10.58%</td>
 </tr>
 <tr>
-<td>M3 · VIO + MapAnything + Astra</td>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
 <td>2.595</td>
 <td>1.116</td>
 <td>26.12%</td>
@@ -99,13 +103,13 @@
 <td>GT input</td>
 <td>GT input</td>
 <td>10.68%</td>
-<td>7.54%</td>
+<td><strong>7.54%</strong></td>
 </tr>
 <tr>
 <td>B1 · ViPE + TSDF</td>
-<td>0.118</td>
-<td>0.312</td>
-<td>7.38%</td>
+<td><strong>0.118</strong></td>
+<td><strong>0.312</strong></td>
+<td><strong>7.38%</strong></td>
 <td>13.03%</td>
 </tr>
 <tr>
@@ -115,200 +119,304 @@
 <td>18.41%</td>
 <td>16.81%</td>
 </tr>
+<tr>
+<td>B2p · OpenVINS + MapAnything + TSDF</td>
+<td>2.595</td>
+<td>1.116</td>
+<td>26.12%</td>
+<td>64.79%</td>
+</tr>
 </tbody>
-</table></div>
+</table></div></figure>
+<p><strong>Evaluation frame counts for Table 2.</strong> Pose errors use 180 sampled poses for M2/B1 and B2, and 175 available poses for M3/B2p. M1 has no native trajectory; M4 receives GT poses, so neither is assigned an estimated-pose error. Both depth metrics use a domain of 180 fixed views with 19,200 sampled pixels per frame. M3/B2p provide native depth for 175 frames, while the other frontends provide 180; every final model is raycast at all 180 GT cameras. AbsRel averages valid predictions only; Table 3 coverage and the separate missing-prediction penalty account for missing output. The five-view figures are for visualization. B2p shares M3's poses and native depth but uses direct TSDF fusion in place of Astra modelling.</p>
 <p>Model depth is evaluated at all 180 GT cameras. Native M3 depth retains its initialization gap. AbsRel must be read together with coverage:</p>
-<div class="table-scroll"><table>
+<figure class="table-figure" id="table-3"><figcaption id="table-3-title"><span class="table-number">Table 3.</span> Coverage of sampled camera poses and depth</figcaption><div class="table-scroll"><table aria-labelledby="table-3-title">
 <thead>
 <tr>
 <th>System</th>
-<th>Sampled pose coverage</th>
-<th>Native depth coverage</th>
-<th>Model depth coverage</th>
+<th>Sampled pose coverage ↑</th>
+<th>Native depth coverage ↑</th>
+<th>Model depth coverage ↑</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>M1</td>
+<td>M1 · RGB-only + Astra</td>
 <td>—</td>
 <td>—</td>
 <td>99.71%</td>
 </tr>
 <tr>
-<td>M2</td>
-<td>100.00%</td>
-<td>100.00%</td>
+<td>M2 · ViPE + Astra</td>
+<td><strong>100.00%</strong></td>
+<td><strong>100.00%</strong></td>
 <td>99.40%</td>
 </tr>
 <tr>
-<td>M3</td>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
 <td>97.22%</td>
 <td>95.91%</td>
 <td>99.19%</td>
 </tr>
 <tr>
-<td>M4</td>
+<td>M4 · GT pose + MapAnything + Astra</td>
 <td>—</td>
 <td>98.57%</td>
-<td>99.87%</td>
+<td><strong>99.87%</strong></td>
 </tr>
 <tr>
-<td>B1</td>
-<td>100.00%</td>
-<td>100.00%</td>
+<td>B1 · ViPE + TSDF</td>
+<td><strong>100.00%</strong></td>
+<td><strong>100.00%</strong></td>
 <td>94.75%</td>
 </tr>
 <tr>
-<td>B2</td>
-<td>100.00%</td>
+<td>B2 · MapAnything + TSDF</td>
+<td><strong>100.00%</strong></td>
 <td>98.37%</td>
 <td>97.06%</td>
 </tr>
+<tr>
+<td>B2p · OpenVINS + MapAnything + TSDF</td>
+<td>97.22%</td>
+<td>95.91%</td>
+<td>93.61%</td>
+</tr>
 </tbody>
-</table></div>
+</table></div></figure>
+<p><strong>How is coverage computed?</strong> Sampled pose coverage is the number of sampled frames with an estimated pose divided by 180. Native depth coverage measures usable depth produced directly by ViPE or MapAnything; model depth coverage measures usable depth obtained by raycasting the final reconstructed geometry at the common GT cameras. Both depth coverages divide usable predictions inside the valid GT domain by the number of valid GT samples. We sample 19,200 fixed pixel positions per frame: 3,456,000 valid GT positions across 180 frames here. GT optical-axis depth must be finite and within 0.1–30 m; predicted depth must be finite and positive, with native depth also passing its validity mask and sampling checks. Missing frames remain in the denominator.</p>
+<p>For OpenVINS + MapAnything + Astra, pose coverage is 175 / 180 = 97.22%, native depth coverage is 95.91%, and model depth coverage is 99.19%. <strong>Coverage measures availability, not accuracy or whole-scene surface completeness.</strong> A misplaced wall can still return depth, so depth and geometry errors must be considered alongside coverage. M1 has no native pose/depth estimate; M4 receives GT poses. Inapplicable entries are shown as “—”.</p>
 <p>The downloadable report includes RMSE, δ1, and MAE with a 30 m penalty for each missing prediction. On the common 175-frame subset, native depth AbsRel is 7.36% for M2, 26.12% for M3, 10.47% for M4, and 18.36% for B2.</p>
 <p>Geometry uses 100,000 area-sampled model points and exact nearest GT triangles. The reverse observed-GT distance samples fixed GT image-ray hits: it is observation-weighted, not surface-area-weighted. Whole-building reverse distances, including unobserved structures, are separately retained in the raw reports.</p>
-<div class="table-scroll"><table>
+<figure class="table-figure" id="table-4"><figcaption id="table-4-title"><span class="table-number">Table 4.</span> Geometry errors for four reconstruction methods and three fusion baselines</figcaption><div class="table-scroll"><table aria-labelledby="table-4-title">
 <thead>
 <tr>
 <th>System</th>
 <th>Model → GT (m) ↓</th>
 <th>Observed GT → model (m) ↓</th>
-<th>PSNR (dB) ↑</th>
-<th>SSIM ↑</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>M1</td>
+<td>M1 · RGB-only + Astra</td>
 <td>0.306</td>
 <td>0.337</td>
-<td>9.48</td>
-<td>0.263</td>
 </tr>
 <tr>
-<td>M2</td>
+<td>M2 · ViPE + Astra</td>
 <td>0.182</td>
 <td>0.195</td>
-<td>12.20</td>
-<td>0.342</td>
 </tr>
 <tr>
-<td>M3</td>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
 <td>0.459</td>
 <td>0.736</td>
-<td>10.06</td>
-<td>0.265</td>
 </tr>
 <tr>
-<td>M4</td>
-<td>0.069</td>
-<td>0.074</td>
-<td>12.59</td>
-<td>0.344</td>
+<td>M4 · GT pose + MapAnything + Astra</td>
+<td><strong>0.069</strong></td>
+<td><strong>0.074</strong></td>
 </tr>
 <tr>
-<td>B1</td>
+<td>B1 · ViPE + TSDF</td>
 <td>0.453</td>
 <td>0.211</td>
-<td>15.57</td>
-<td>0.457</td>
 </tr>
 <tr>
-<td>B2</td>
+<td>B2 · MapAnything + TSDF</td>
 <td>0.470</td>
 <td>0.395</td>
-<td>13.72</td>
-<td>0.370</td>
+</tr>
+<tr>
+<td>B2p · OpenVINS + MapAnything + TSDF</td>
+<td>1.032</td>
+<td>0.676</td>
 </tr>
 </tbody>
-</table></div>
-<p>RGB scores use the five input views at 640×480, with Lanczos downsampling of GT and no color fitting. They mix geometry, materials, exposure, and renderer differences. B1 scores higher on input-view appearance, while M4 has lower geometric distance. Those objectives are distinct.</p>
+</table></div></figure>
+<p><strong>How Table 4 is computed.</strong> Model → GT averages the exact nearest-triangle distance from 100,000 area-weighted model-surface samples to GT. Observed GT → model averages the reverse distance from 100,000 sampled valid GT ray hits across 180 views. The former measures surface displacement; the latter measures omissions in the observed region. Both are in metres, lower is better.</p>
+<figure class="table-figure" id="table-5"><figcaption id="table-5-title"><span class="table-number">Table 5.</span> Appearance metrics for four reconstruction methods at five input views</figcaption><div class="table-scroll"><table aria-labelledby="table-5-title">
+<thead>
+<tr>
+<th>System</th>
+<th>PSNR (dB) ↑</th>
+<th>SSIM ↑</th>
+<th>LPIPS ↓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1 · RGB-only + Astra</td>
+<td>9.48</td>
+<td>0.263</td>
+<td>0.707</td>
+</tr>
+<tr>
+<td>M2 · ViPE + Astra</td>
+<td>12.20</td>
+<td>0.342</td>
+<td>0.566</td>
+</tr>
+<tr>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
+<td>10.06</td>
+<td>0.265</td>
+<td>0.714</td>
+</tr>
+<tr>
+<td>M4 · GT pose + MapAnything + Astra</td>
+<td><strong>12.59</strong></td>
+<td><strong>0.344</strong></td>
+<td><strong>0.530</strong></td>
+</tr>
+</tbody>
+</table></div></figure>
+<p><strong>How Table 5 is computed.</strong> PSNR, SSIM and LPIPS use the same <strong>five input views: 0, 36, 72, 108, and 144</strong>. Predictions are 640×480; GT is downsampled from 1280×960 with Lanczos. Rendering uses fixed GT views after the single global registration, with no per-image pose, color, or exposure fitting. For RGB normalized to [0,1], per-view <code>MSE = mean((predicted RGB − GT RGB)²)</code> and <code>PSNR = −10 log10(MSE)</code>. SSIM uses scikit-image's 7×7 uniform window, <code>K1=0.01</code>, <code>K2=0.03</code>, and <code>data_range=1</code>, averaged across RGB channels. PSNR and SSIM retain the frozen results, each an arithmetic mean of five per-view scores. PSNR includes every pixel; SSIM uses the library's default border handling, with no additional validity mask. Black frames and holes remain included.</p>
+<p>LPIPS uses the official <code>lpips==0.1.4</code> implementation with <strong>AlexNet, learned v0.1 calibration weights</strong>, and an ImageNet-pretrained backbone on the same 640×480 RGB pairs. Inputs are converted from [0,1] to [−1,1]; the network runs in evaluation mode, with five per-view scores averaged arithmetically. <strong>Lower is better.</strong> There is no cropping, extra resizing or masking; the black M1 frame is included. LPIPS measures appearance differences in learned features, not geometric or physical accuracy.</p>
+<p><a href="../results/evaluation/appearance_five_views_20260925/report.json">Table 5 per-view results and weight hashes</a> · <a href="../results/evaluation/appearance_five_views_20260925/means.csv">Mean scores CSV</a></p>
+<p>Table 5 focuses on generated-scene appearance for M1–M4. Previously measured fusion-baseline PSNR/SSIM remain in the <a href="../results/rgb_metrics_five_views_mean.json">complete RGB results</a>. For example, B1 directly reuses observed colors through unlit emission and Standard color management; its 15.57 dB / 0.457 does not establish better geometry. <strong>These scores do not measure held-out RGB generalization or isolate material, lighting, and renderer effects.</strong></p>
 <p>The paired M3/B2p comparison also resists a single winner. Astra reduces model-to-GT distance from 1.032 m to 0.459 m and rendered-depth AbsRel from 64.79% to 32.00%. But observed-GT-to-model distance increases from 0.676 m to 0.736 m. Object construction can suppress noisy surfaces while omitting observed ones.</p>
-<figure><a href="../figures/model_depth_error_pixel_heatmap.png"><img loading="lazy" src="../figures/model_depth_error_pixel_heatmap.png" alt="Per-pixel model depth error with a shared color scale"></a><figcaption>Per-pixel model depth error with a shared color scale</figcaption></figure>
+<figure id="figure-7" data-figure-number="7" aria-labelledby="figure-7-title"><a href="../figures/model_depth_error_pixel_heatmap.png"><img loading="lazy" src="../figures/model_depth_error_pixel_heatmap.png" alt="Per-pixel model depth error with a shared color scale"></a><figcaption id="figure-7-title"><span class="figure-number">Figure 7.</span> <span class="figure-title">Model-depth errors at fixed GT cameras.</span> Per-pixel model depth error with a shared color scale</figcaption></figure>
 <p>Relative error is clipped at 1.0 for display; teal marks missing or invalid predictions.</p>
 <h2 id="pose-errors-propagate">Pose errors propagate</h2>
-<figure><a href="../figures/current_trajectories.png"><img loading="lazy" src="../figures/current_trajectories.png" alt="Globally aligned camera trajectories and position errors"></a><figcaption>Globally aligned camera trajectories and position errors</figcaption></figure>
+<figure id="figure-8" data-figure-number="8" aria-labelledby="figure-8-title"><a href="../figures/current_trajectories.png"><img loading="lazy" src="../figures/current_trajectories.png" alt="Globally aligned camera trajectories and position errors"></a><figcaption id="figure-8-title"><span class="figure-number">Figure 8.</span> <span class="figure-title">Registered camera trajectories and translation errors.</span> Globally aligned camera trajectories and position errors</figcaption></figure>
 <p>M2 and B1 share ViPE cameras; M3 and B2p share OpenVINS; M4 uses the GT path. M1 has no native estimated trajectory. A later RGB-COLMAP diagnostic is not an Astra output. Drawing six independent estimated curves would misrepresent the pipelines.</p>
 <p>Increasing OpenVINS history from 11 to 31 improved early behavior in this slow orbit without fixing mid-sequence drift. Under first-pose alignment, position error is approximately 1.02 cm at 60 seconds and 6.79 m at 180 seconds. The main table instead reports whole-sequence best rigid alignment, giving 2.595 m ATE. These are different diagnostic definitions.</p>
 <p>Replacing estimated poses with GT poses reduces final-model depth AbsRel from 32.00% to 7.54%. Pose quality is an important bottleneck here. Because M3 and M4 are separate single agent runs, their difference is not a noise-free causal estimate.</p>
 <p>Twenty supplementary views are deterministic perturbations of the same simulated trajectory. Each uses 5,000 fixed random rays (seed 23) cast directly into the independent GT triangle mesh, with the same cameras and rays for every frozen model. This tests same-scene novel-pose depth, not a new scene or independent capture. Legacy rendered Z failed numerical BVH validation and is excluded; novel-view RGB is unscored because of renderer differences.</p>
-<div class="table-scroll"><table>
+<figure class="table-figure" id="table-6"><figcaption id="table-6-title"><span class="table-number">Table 6.</span> Depth errors at novel viewpoints in the same scene</figcaption><div class="table-scroll"><table aria-labelledby="table-6-title">
 <thead>
 <tr>
 <th>System</th>
 <th>Novel depth AbsRel ↓</th>
 <th>RMSE (m) ↓</th>
-<th>Coverage</th>
+<th>Coverage ↑</th>
 <th>Penalized MAE (m) ↓</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>M1</td>
+<td>M1 · RGB-only + Astra</td>
 <td>19.45%</td>
 <td>2.195</td>
 <td>99.66%</td>
 <td>1.399</td>
 </tr>
 <tr>
-<td>M2</td>
+<td>M2 · ViPE + Astra</td>
 <td>10.39%</td>
 <td>1.186</td>
 <td>99.42%</td>
 <td>0.783</td>
 </tr>
 <tr>
-<td>M3</td>
+<td>M3 · OpenVINS + MapAnything + Astra</td>
 <td>30.58%</td>
 <td>2.397</td>
 <td>99.25%</td>
 <td>2.035</td>
 </tr>
 <tr>
-<td>M4</td>
-<td>7.47%</td>
-<td>1.146</td>
-<td>99.88%</td>
-<td>0.465</td>
+<td>M4 · GT pose + MapAnything + Astra</td>
+<td><strong>7.47%</strong></td>
+<td><strong>1.146</strong></td>
+<td><strong>99.88%</strong></td>
+<td><strong>0.465</strong></td>
 </tr>
 <tr>
-<td>B1</td>
+<td>B1 · ViPE + TSDF</td>
 <td>12.92%</td>
 <td>1.512</td>
 <td>94.84%</td>
 <td>2.300</td>
 </tr>
 <tr>
-<td>B2</td>
+<td>B2 · MapAnything + TSDF</td>
 <td>16.23%</td>
 <td>1.710</td>
 <td>96.96%</td>
 <td>1.972</td>
 </tr>
 <tr>
-<td>B2p</td>
+<td>B2p · OpenVINS + MapAnything + TSDF</td>
 <td>61.97%</td>
 <td>5.548</td>
 <td>89.13%</td>
 <td>7.067</td>
 </tr>
 </tbody>
-</table></div>
+</table></div></figure>
 <p><a href="../results/evaluation/novel_depth/report.json">Independent BVH report</a></p>
-<h2 id="put-the-scene-to-work">Put the scene to work</h2>
-<p>Both tasks use the frozen M3 scene, even though other methods have better geometry. Planners read reconstructed objects, cameras, and collision geometry. Controllers receive simulator state for self-localization; this isolates some mapping effects and is not end-to-end visual autonomy.</p>
-<h3 id="drone-retrieve-a-view-fly-and-attempt-the-photograph">Drone: retrieve a view, fly, and attempt the photograph</h3>
-<p>Twenty uniformly spaced original simulator RGB images serve as references, with target poses withheld from retrieval and planning. DINOv2 ranks 29 M3 render candidates. A planner checks the top five for reachability, then MuJoCo simulates a 1 kg six-degree-of-freedom quadrotor with four bounded thrust actuators. The camera uses an ideal stabilized gimbal. This version has no continuous image-based pose refinement.</p>
-<p><strong>15/20 flights reached a retrieved candidate without collision; 5/20 collided. Accurate rephotography succeeded in 0/20.</strong> Strict success requires collision-free execution, position error ≤0.10 m, and rotation error ≤5°. The relaxed thresholds, ≤0.25 m and ≤10°, also give 0/20. Mean final GT position and orientation errors are 3.38 m and 22.21°.</p>
-<figure class="video"><video controls playsinline preload="metadata" poster="assets/drone_poster.jpg"><source src="assets/drone_episode.mp4" type="video/mp4"></video><figcaption>Drone · replay of actual dynamics trajectory; rephotography failure retained</figcaption></figure><figure><a href="../figures/drone_three_queries.jpg"><img loading="lazy" src="../figures/drone_three_queries.jpg" alt="Drone references, achieved endpoint images, and independent pose evaluation"></a><figcaption>Drone references, achieved endpoint images, and independent pose evaluation</figcaption></figure>
-<p>Candidate arrival does not establish correct retrieval or agreement with the source world. These are known-scene mapping images, not held-out reference photographs. All 20 outcomes, including collisions, remain available.</p>
-<h3 id="unitree-g1-find-the-described-object">Unitree G1: find the described object</h3><figure class="video"><video controls playsinline preload="metadata" poster="assets/g1_poster.jpg"><source src="assets/g1_episode.mp4" type="video/mp4"></video><figcaption>G1 · actual policy trajectory / simplified MuJoCo shading</figcaption></figure>
-<p>We use Unitree's public 12-DOF walking policy in MuJoCo. A transparent constrained-English parser handles category, attribute, and near relations against the generated object inventory. Thirty instructions are six paraphrases of each of five target families, not thirty independent goals.</p>
-<p><strong>18/30 episodes reached their declared model-world approach goal; 12/30 failed during planning.</strong> Table, plant, and reception-desk queries succeeded 6/6 each. Window-side green-chair and round-mirror queries succeeded 0/6. Executed episodes recorded no falls, collisions, or timeouts. Conservative colliders, a 0.47 m planning radius, and unknown-space exclusions blocked the other goals.</p>
-<p>Success concerns navigation to the object selected by this parser, without an independent visual or instance-identity confirmation. Videos replay actual policy trajectories. Planning failures have static diagnostics because no physical episode started.</p>
-<p><strong>A static GT audit exposes the transfer gap.</strong> After applying the fixed global registration, all 20 drone trajectories contain a center sample within 0.30 m of the original GT surface. G1 foot proxies lie roughly 0.33–0.71 m below the reference GT floor. These are surface-distance and height diagnostics without inside/outside classification or GT dynamics replay. They are neither confirmed collision counts nor evidence of successful transfer.</p>
-<p>The next experiment should separately improve pose estimation, object correspondence, geometric uncertainty, and closed-loop visual control, then test the reconstructed map in the original GT dynamics environment.</p>
+<h3 id="why-can-the-imu-based-route-perform-worse">Why can the IMU-based route perform worse?</h3>
+<p>M2 → M3 is not an IMU on/off ablation of one estimator: the pose frontend changes from ViPE to OpenVINS, and the depth frontend changes to pose-conditioned MapAnything. This experiment compares complete pipelines; it does not establish that IMU measurements reduce accuracy.</p>
+<p>M3 shows substantial scale mismatch and residual trajectory error. Its SE(3)-aligned ATE is 2.595 m. A diagnostic Sim(3) fit applies a scale of approximately 0.667 and reduces ATE to 0.282 m: a global rescaling explains much of the positional discrepancy, but not all of it. M2's corresponding scale is approximately 1.023. On the common 175-frame subset, SE(3) ATE remains 0.119 m for M2 versus 2.595 m for M3, so the five missing frames do not explain the gap.</p>
+<p>IMU scale constraints depend on motion excitation, initialization, bias, calibration and synchronization; metric units do not guarantee correct scale. Controlled ablations have not isolated which factor caused this run's failure. Biased poses are passed to MapAnything and can affect downstream depth and modelling. Improvement with GT poses supports the importance of pose quality, but does not identify a particular IMU failure mechanism.</p>
+<h3 id="se3-versus-sim3">SE(3) versus Sim(3)</h3>
+<p><strong>SE(3)</strong> uses <code>x′ = R x + t</code>: three-dimensional rotation and translation, with six degrees of freedom and no resizing. <strong>Sim(3)</strong> uses <code>x′ = s R x + t</code>, adding one positive uniform scale for seven degrees of freedom. If a true 10 m distance is estimated as 15 m, SE(3) cannot correct that size error; Sim(3) can multiply it by approximately 0.667. The main table uses SE(3) to retain metric-scale errors. Sim(3) is used only for diagnosis or the explicitly labelled M1 presentation alignment; it does not demonstrate native scale recovery.</p>
+<h2 id="let-robots-test-the-scene">Let robots test the scene</h2>
+<p>Both downstream experiments use the frozen <strong>M4: GT pose + MapAnything + Astra</strong> scene. They share its objects, geometry and collision representation, and receive a reference photograph or a language instruction respectively. The original scene is unchanged; task code, requests, trajectories and evaluations are stored as a new revision.</p>
+<p>M4 received GT camera poses during reconstruction, but no GT mesh or depth. Robots read their own state from the simulator, so these experiments test <strong>target selection, planning and physical execution with known self-pose and a known reconstructed map</strong>. They do not test visual localization or transfer to the original GT dynamics world.</p>
+<figure id="figure-9" data-figure-number="9" aria-labelledby="figure-9-title"><a href="../figures/m4_tasks/task_flow.en.svg"><img loading="lazy" src="../figures/m4_tasks/task_flow.en.svg" alt="Drone reference-image and G1 language-goal pipelines in M4"></a><figcaption id="figure-9-title"><span class="figure-number">Figure 9.</span> <span class="figure-title">Two task pipelines in the frozen M4 scene.</span> Drone reference-image and G1 language-goal pipelines in M4</figcaption></figure>
+<h3 id="drone-find-the-reference-view-and-attempt-rephotography">Drone: find the reference view and attempt rephotography</h3>
+<p>Inputs are the same 20 frozen simulator RGB reference photographs. Retrieval and planning cannot read their target camera poses; a separate evaluator uses them only after execution. These photographs come from the mapping video, making this a seen-input-view task.</p>
+<ol>
+<li><strong>Retrieve candidate locations from images.</strong> Encode the 20 reference photographs and 30 M4 renders using DINOv2-small, then rank CLS cosine similarity. Candidates come from every sixth mapping sample; retrieval uses images only.</li>
+<li><strong>Plan and fly.</strong> Check the top five candidates for reachability and select a map-camera position. MuJoCo simulates a 1 kg, six-degree-of-freedom quadrotor with four bounded thrust actuators, following the planned path using self-state feedback.</li>
+<li><strong>Photograph and score independently.</strong> Render the achieved flight endpoint and compare it with the reference. Only the post-execution evaluator reads the target camera pose to calculate position, orientation and rephotography outcomes.</li>
+</ol>
+<p><strong>17/20 flights reach a retrieved candidate without collision; 3/20 have contacts. Strict and relaxed rephotography both score 0/20.</strong> Strict success requires position error ≤0.10 m, rotation error ≤5° and no collision; relaxed thresholds are ≤0.25 m and ≤10°, also collision-free. Across all 20 queries, mean error is <strong>0.883 m / 8.26°</strong>, with endpoint RGB <strong>PSNR 10.65 dB / SSIM 0.300</strong>. Query 9 ends close to the reference pose but has contacts during flight, so it remains a failure.</p>
+<figure class="video" id="figure-10" data-figure-number="10" aria-labelledby="figure-10-title"><video controls playsinline preload="metadata" poster="assets/m4_tasks/drone_poster.jpg"><source src="assets/m4_tasks/drone_episode.mp4" type="video/mp4"></video><figcaption id="figure-10-title"><span class="figure-number">Figure 10.</span> <span class="figure-title">Replay of the executed drone trajectory.</span> M4 / query 13 · replay of the actual dynamics trajectory; M4 display cutaway, 1×. Candidate arrival succeeds, precise rephotography fails.</figcaption></figure><figure id="figure-11" data-figure-number="11" aria-labelledby="figure-11-title"><a href="../figures/m4_tasks/drone_comparison.jpg"><img loading="lazy" src="../figures/m4_tasks/drone_comparison.jpg" alt="M4 drone reference photographs, achieved endpoint images and rephotography evaluation"></a><figcaption id="figure-11-title"><span class="figure-number">Figure 11.</span> <span class="figure-title">M4 drone reference images and achieved endpoint images.</span> M4 drone reference photographs, achieved endpoint images and rephotography evaluation</figcaption></figure>
+<p>The video shows Query 13; the panel retains display queries 0, 3 and 13; aggregate results include all 20. Retrieval supplies discrete coarse candidates, with no continuous image-based pose refinement and an ideal stabilized gimbal. Reaching a retrieved view therefore does not imply recovering the precise photographic pose. This experiment does not measure generalization to unseen scenes.</p>
+<h3 id="unitree-g1-find-a-specified-planter-from-language">Unitree G1: find a specified planter from language</h3><figure class="video" id="figure-12" data-figure-number="12" aria-labelledby="figure-12-title"><video controls playsinline preload="metadata" poster="assets/m4_tasks/g1_poster.jpg"><source src="assets/m4_tasks/g1_episode.mp4" type="video/mp4"></video><figcaption id="figure-12-title"><span class="figure-number">Figure 12.</span> <span class="figure-title">Unitree G1 policy execution trajectory.</span> M4 / episode 00 · replay of recorded G1 joint states; M4 display cutaway and simplified shading, 1×.</figcaption></figure>
+<p>An example instruction is <strong>“Find the planter with low green foliage in a pale-grey ceramic pot, walk over, and face it.”</strong> Four further Chinese instructions specify the north/south rectangular golden-flower planters and north/south bird-of-paradise planters. North explicitly means map +Y. Each of five target instances is executed from four fixed starts: <strong>20 navigation executions</strong>, not 20 independent targets.</p>
+<ol>
+<li><strong>Parse language and select an instance.</strong> A constrained Chinese parser extracts category, plant/pot attributes and direction, and finds a unique match in M4's generated object inventory. Ambiguous requests are rejected. The controller never reads evaluator-only intended IDs.</li>
+<li><strong>Plan an approach.</strong> Generate approach candidates from the target bounds and run A* with a 0.47 m obstacle-inflation radius. The four starts are deterministic mapping locations at least 2 m apart on supported reconstructed floor.</li>
+<li><strong>Walk, face and dwell.</strong> Unitree's official G1 12DOF CPU locomotion policy drives articulated MuJoCo dynamics. Navigation requires approach error &lt;0.30 m, target bearing &lt;15° for at least 1.5 s, and no obstacle contacts or falls throughout execution.</li>
+<li><strong>Verify finding the target independently.</strong> Compare the selected instance with an independent intended label, then cast rays from a fixed virtual camera attached to the last recorded physical robot state. The correct planter must be the first visible surface in at least 0.1% of the image.</li>
+</ol>
+<p><strong>20/20 executions select the correct instance and complete collision-free navigation; 20/20 pass target visibility, for 20/20 combined successes.</strong> Mean recorded path length is <strong>7.31 m</strong>, with <strong>22.18 s</strong> mean execution time. At the last recorded state, mean approach error is <strong>0.215 m</strong> and target-bearing error <strong>3.60°</strong>. Sampled target coverage ranges from 9.72% to 40.59%. The panel shows each instruction from its first start; the full evaluation includes all four starts.</p>
+<figure id="figure-13" data-figure-number="13" aria-labelledby="figure-13-title"><a href="../figures/m4_tasks/g1_comparison.jpg"><img loading="lazy" src="../figures/m4_tasks/g1_comparison.jpg" alt="Language instructions, planter targets and G1 execution results in M4"></a><figcaption id="figure-13-title"><span class="figure-number">Figure 13.</span> <span class="figure-title">Planter instructions and endpoint visibility in M4.</span> Language instructions, planter targets and G1 execution results in M4</figcaption></figure>
+<p>This is <strong>language-goal selection and navigation over a generated semantic map</strong>. Attributes come from M4, and the parser supports the stated constrained expressions. There is no online visual object recognition; evaluation outlines come from geometry-derived ray labels. Visibility includes scene occlusion but omits robot self-occlusion. The virtual camera has fixed body-relative translation [0.08, 0, 0.35] m and 20° downward pitch; it is never aimed using the target answer. Coverage is estimated with a 160×120 ray grid for a 640×480 image. The camera uses the last complete recorded state, no more than 50 ms before stopping. The video replays recorded joint states with simplified shading.</p>
+<figure class="table-figure" id="table-7"><figcaption id="table-7-title"><span class="table-number">Table 7.</span> M4 · GT pose + MapAnything + Astra: downstream task outcomes and success criteria</figcaption><div class="table-scroll"><table aria-labelledby="table-7-title">
+<thead>
+<tr>
+<th>Task</th>
+<th>Episodes</th>
+<th>Criterion</th>
+<th>Successful</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drone</td>
+<td>20</td>
+<td>Collision-free arrival at retrieved viewpoint</td>
+<td>17 / 20</td>
+</tr>
+<tr>
+<td>Drone</td>
+<td>20</td>
+<td>Strict photo pose: ≤0.10 m and ≤5°, collision-free</td>
+<td>0 / 20</td>
+</tr>
+<tr>
+<td>Drone</td>
+<td>20</td>
+<td>Relaxed photo pose: ≤0.25 m and ≤10°, collision-free</td>
+<td>0 / 20</td>
+</tr>
+<tr>
+<td>Unitree G1</td>
+<td>20</td>
+<td>Correct target, collision-free arrival, facing and visibility</td>
+<td><strong>20 / 20</strong></td>
+</tr>
+</tbody>
+</table></div></figure>
+<p>Different tasks and criteria are not ranked against each other; bold here marks a perfect success count only. Episode counts and thresholds are not ranked.</p>
+<p><strong>Scope.</strong> These tasks test only this reconstructed scene. Conservative bounding boxes represent obstacle collisions, and mass/friction are simulator assumptions. Neither original-GT-world dynamics transfer nor real-robot deployment is tested. Earlier M3 experiments remain in the reproduction archive; their different protocol prevents a controlled performance comparison with this revision.</p>
+<p><a href="../results/evaluation/tasks/m4_downstream_20260924/report.json">Combined episode results</a> · <a href="../results/evaluation/tasks/drone_M4_20260924/report.json">Drone metrics</a> · <a href="../results/evaluation/tasks/g1_M4_20260924/visibility.json">G1 occlusion and visibility</a> · <a href="../docs/M4_DOWNSTREAM_20260924.md">Execution and reproduction</a> · <a href="../downloads/reproduction_sources.zip">Code, instructions and complete trajectories</a></p>
 <h2 id="what-could-change">What could change</h2>
 <p>For <strong>3D tools</strong>, observations and intent become an asset-authoring interface. A model writes a scene program; measurements and rendering constrain it. Object edits, variations, and task-specific environments can share that program. We demonstrate this interface without measuring labor or cost savings.</p>
 <p>For <strong>SLAM</strong>, a map's downstream role expands. Cameras, surfaces, objects, and relations can become editable and executable assets. Localization, loop closure, scale, observability, and uncertainty remain essential. M3 demonstrates that visual code generation does not automatically repair geometric estimation.</p>
@@ -318,4 +426,4 @@
 <h2 id="evidence-and-reproduction">Evidence and reproduction</h2>
 <p><a href="../results/final_evaluation.json">Machine-readable results</a> · <a href="../results/final_evaluation.csv">CSV</a> · <a href="../docs/REPRODUCIBILITY.md">Reproduction guide</a> · <a href="../references/research_sources.json">Source records</a> · <a href="../docs/PROGRESS.md">Progress log</a></p>
 <p>Inputs and frozen artifacts retain hashes. New work lives in an isolated directory; previous code and results remain read-only sources. GT geometry comes from the metric scene wrapper with its 0.01 scale transform, not the unscaled source asset.</p>
-<p><a href="https://developers.openai.com/api/docs/models/gpt-6-astra">GPT-6 Astra</a> · <a href="https://arxiv.org/abs/2508.10934">ViPE</a> · <a href="https://github.com/facebookresearch/map-anything">MapAnything</a> · <a href="https://docs.openvins.com/">OpenVINS</a> · <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">3D Gaussian Splatting</a> · <a href="https://github.com/facebookresearch/vggt">VGGT</a> · <a href="https://github.com/MIT-SPARK/Hydra">Hydra</a> · <a href="https://concept-fusion.github.io/">ConceptFusion</a> · <a href="https://github.com/vlmaps/vlmaps">VLMaps</a> · <a href="https://arxiv.org/abs/2403.13064">SceneScript</a> · <a href="https://arxiv.org/abs/2406.08474">Real2Code</a> · <a href="https://github.com/allenai/Holodeck">Holodeck</a> · <a href="https://frank-zy-dou.github.io/kitchen-twin/">Lab Kitchen Twin</a> · <a href="https://github.com/LiteReality/LiteReality-Agent">LiteReality-Agent</a></p><section class="downloads"><h2 id="assets">Full models and experiment assets</h2><p>Download the complete frozen models, including walls and ceilings. The interactive models above are display cutaways for inspection.</p><div class="table-scroll"><table><thead><tr><th>METHOD</th><th>EDITABLE SCENE</th><th>PORTABLE MODEL</th></tr></thead><tbody><tr><th>M1</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M1/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M1/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M2</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M2/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M2/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M3</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M3/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M3/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M4</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M4/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M4/scene.glb?download=true">GLB .glb</a></td></tr></tbody></table></div><p><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/tree/241d313a264a3353bcb87f9fde30f7ef8a6f5bce">Hugging Face · models, baselines, evaluations &amp; tasks</a><br><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/SHA256SUMS">SHA256SUMS</a> · <a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/payload_manifest.json">Asset manifest</a></p><p class="caption">Frozen asset revision: <code>241d313a264a3353bcb87f9fde30f7ef8a6f5bce</code></p></section></article></main></div><footer><p>WORLD LOBBY · ASTRA / BLENDER</p><p>A reproducible engineering experiment, with failures and limits retained.</p><a href="article.en.md">Markdown</a> · <a href="../docs/REPRODUCIBILITY.md">Reproduction</a> · <a href="../results/final_evaluation.csv">CSV</a> · <a href="../downloads/reproduction_sources.zip">Code &amp; episode records</a></footer><script src="site.js"></script></body></html>
+<p><a href="https://developers.openai.com/api/docs/models/gpt-6-astra">GPT-6 Astra</a> · <a href="https://arxiv.org/abs/2508.10934">ViPE</a> · <a href="https://github.com/facebookresearch/map-anything">MapAnything</a> · <a href="https://docs.openvins.com/">OpenVINS</a> · <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">3D Gaussian Splatting</a> · <a href="https://github.com/facebookresearch/vggt">VGGT</a> · <a href="https://github.com/MIT-SPARK/Hydra">Hydra</a> · <a href="https://concept-fusion.github.io/">ConceptFusion</a> · <a href="https://github.com/vlmaps/vlmaps">VLMaps</a> · <a href="https://arxiv.org/abs/2403.13064">SceneScript</a> · <a href="https://arxiv.org/abs/2406.08474">Real2Code</a> · <a href="https://github.com/allenai/Holodeck">Holodeck</a> · <a href="https://frank-zy-dou.github.io/kitchen-twin/">Lab Kitchen Twin</a> · <a href="https://github.com/LiteReality/LiteReality-Agent">LiteReality-Agent</a></p><section class="downloads"><h2 id="assets">Full models and experiment assets</h2><p>Download the complete frozen models, including walls and ceilings. The interactive models above are display cutaways for inspection.</p><figure class="table-figure" id="table-8"><figcaption id="table-8-title"><span class="table-number">Table 8.</span> Complete frozen models and download formats</figcaption><div class="table-scroll"><table aria-labelledby="table-8-title"><thead><tr><th>METHOD</th><th>EDITABLE SCENE</th><th>PORTABLE MODEL</th></tr></thead><tbody><tr><th>M1 · RGB-only + Astra</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M1/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M1/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M2 · ViPE + Astra</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M2/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M2/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M3 · OpenVINS + MapAnything + Astra</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M3/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M3/scene.glb?download=true">GLB .glb</a></td></tr><tr><th>M4 · GT pose + MapAnything + Astra</th><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M4/scene.blend?download=true">Blender .blend</a></td><td><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/models/M4/scene.glb?download=true">GLB .glb</a></td></tr></tbody></table></div></figure><p><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/tree/241d313a264a3353bcb87f9fde30f7ef8a6f5bce">Hugging Face · models, baselines, evaluations &amp; tasks</a><br><a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/SHA256SUMS">SHA256SUMS</a> · <a href="https://huggingface.co/datasets/Ooliva/astra-world-model-blog/resolve/241d313a264a3353bcb87f9fde30f7ef8a6f5bce/payload_manifest.json">Asset manifest</a></p><p class="caption">Frozen asset revision: <code>241d313a264a3353bcb87f9fde30f7ef8a6f5bce</code></p></section></article></main></div><footer><p>WORLD LOBBY · ASTRA / BLENDER</p><p>A reproducible engineering experiment, with failures and limits retained.</p><a href="article.en.md">Markdown</a> · <a href="../docs/REPRODUCIBILITY.md">Reproduction</a> · <a href="../results/final_evaluation.csv">CSV</a> · <a href="../downloads/reproduction_sources.zip">Code &amp; episode records</a></footer><script src="site.js"></script></body></html>

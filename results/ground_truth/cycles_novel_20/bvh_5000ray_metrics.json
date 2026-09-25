@@ -1,0 +1,1046 @@
+{
+  "scope": "same-scene GT-pose perturbation; 5000 random rays/view; BVH optical-Z",
+  "rgb": "excluded; renderer-domain diagnostic only",
+  "views": [
+    {
+      "view_id": "holdout_00",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8177136014451766,
+        "rmse_m": 1.0069036802946256,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_00",
+          "absrel": 0.16078945217555562,
+          "rmse_m": 1.9843110175982197,
+          "coverage": 0.9984
+        },
+        "M2": {
+          "view_id": "holdout_00",
+          "absrel": 0.10723911033361089,
+          "rmse_m": 1.3286021827234875,
+          "coverage": 0.9986
+        },
+        "M3": {
+          "view_id": "holdout_00",
+          "absrel": 0.31874305082808785,
+          "rmse_m": 2.6657447669265264,
+          "coverage": 0.9876
+        },
+        "M4": {
+          "view_id": "holdout_00",
+          "absrel": 0.06160632424443285,
+          "rmse_m": 1.2581518949110617,
+          "coverage": 0.999
+        },
+        "B1": {
+          "view_id": "holdout_00",
+          "absrel": 0.09341146307288942,
+          "rmse_m": 1.2605488124944597,
+          "coverage": 0.963
+        },
+        "B2": {
+          "view_id": "holdout_00",
+          "absrel": 0.14344238073195445,
+          "rmse_m": 1.468115168933334,
+          "coverage": 0.9762
+        },
+        "B2p": {
+          "view_id": "holdout_00",
+          "absrel": 0.7127145082681666,
+          "rmse_m": 6.689446135851235,
+          "coverage": 0.9428
+        }
+      }
+    },
+    {
+      "view_id": "holdout_01",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8240145184150272,
+        "rmse_m": 1.026746828499756,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_01",
+          "absrel": 0.15690411182632344,
+          "rmse_m": 1.9626539157498026,
+          "coverage": 0.9872
+        },
+        "M2": {
+          "view_id": "holdout_01",
+          "absrel": 0.09975648298243503,
+          "rmse_m": 1.3177845088242375,
+          "coverage": 0.999
+        },
+        "M3": {
+          "view_id": "holdout_01",
+          "absrel": 0.30868390552708813,
+          "rmse_m": 2.6880549986076767,
+          "coverage": 0.9898
+        },
+        "M4": {
+          "view_id": "holdout_01",
+          "absrel": 0.05808616931946448,
+          "rmse_m": 1.2046516074780125,
+          "coverage": 0.9984
+        },
+        "B1": {
+          "view_id": "holdout_01",
+          "absrel": 0.08519449565643047,
+          "rmse_m": 1.2191914819248038,
+          "coverage": 0.9658
+        },
+        "B2": {
+          "view_id": "holdout_01",
+          "absrel": 0.1368250830719725,
+          "rmse_m": 1.4504540772383803,
+          "coverage": 0.9822
+        },
+        "B2p": {
+          "view_id": "holdout_01",
+          "absrel": 0.6802225887787949,
+          "rmse_m": 6.634464345190584,
+          "coverage": 0.9366
+        }
+      }
+    },
+    {
+      "view_id": "holdout_02",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8223032656741529,
+        "rmse_m": 1.0208879504792265,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_02",
+          "absrel": 0.15965674498941276,
+          "rmse_m": 1.9788388168532745,
+          "coverage": 0.9988
+        },
+        "M2": {
+          "view_id": "holdout_02",
+          "absrel": 0.10839169539399131,
+          "rmse_m": 1.339012620109502,
+          "coverage": 0.9986
+        },
+        "M3": {
+          "view_id": "holdout_02",
+          "absrel": 0.3112973669515855,
+          "rmse_m": 2.695239489807411,
+          "coverage": 0.9902
+        },
+        "M4": {
+          "view_id": "holdout_02",
+          "absrel": 0.06427366278621079,
+          "rmse_m": 1.2713967038961862,
+          "coverage": 0.9976
+        },
+        "B1": {
+          "view_id": "holdout_02",
+          "absrel": 0.10355101934421806,
+          "rmse_m": 1.3359988565670982,
+          "coverage": 0.965
+        },
+        "B2": {
+          "view_id": "holdout_02",
+          "absrel": 0.14691966668980477,
+          "rmse_m": 1.4473915923422933,
+          "coverage": 0.9756
+        },
+        "B2p": {
+          "view_id": "holdout_02",
+          "absrel": 0.7127542955675864,
+          "rmse_m": 6.688445968004946,
+          "coverage": 0.938
+        }
+      }
+    },
+    {
+      "view_id": "holdout_03",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8207970392666537,
+        "rmse_m": 1.0113343367939087,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_03",
+          "absrel": 0.16139058719446528,
+          "rmse_m": 1.96734444456473,
+          "coverage": 0.9992
+        },
+        "M2": {
+          "view_id": "holdout_03",
+          "absrel": 0.11040030923239211,
+          "rmse_m": 1.2621096283118702,
+          "coverage": 0.9984
+        },
+        "M3": {
+          "view_id": "holdout_03",
+          "absrel": 0.314820378933511,
+          "rmse_m": 2.665430464807304,
+          "coverage": 0.9878
+        },
+        "M4": {
+          "view_id": "holdout_03",
+          "absrel": 0.06215139408327921,
+          "rmse_m": 1.223539503525757,
+          "coverage": 0.999
+        },
+        "B1": {
+          "view_id": "holdout_03",
+          "absrel": 0.10866863409369179,
+          "rmse_m": 1.3458649263462605,
+          "coverage": 0.9562
+        },
+        "B2": {
+          "view_id": "holdout_03",
+          "absrel": 0.14920548299535397,
+          "rmse_m": 1.4561140679250657,
+          "coverage": 0.9722
+        },
+        "B2p": {
+          "view_id": "holdout_03",
+          "absrel": 0.7282090348413774,
+          "rmse_m": 6.757123160593229,
+          "coverage": 0.9298
+        }
+      }
+    },
+    {
+      "view_id": "holdout_04",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8312250017626335,
+        "rmse_m": 1.032561616432702,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_04",
+          "absrel": 0.15985847828891364,
+          "rmse_m": 1.940598665159829,
+          "coverage": 0.999
+        },
+        "M2": {
+          "view_id": "holdout_04",
+          "absrel": 0.10919533087110263,
+          "rmse_m": 1.303898990996133,
+          "coverage": 0.9988
+        },
+        "M3": {
+          "view_id": "holdout_04",
+          "absrel": 0.3044786985696999,
+          "rmse_m": 2.656317738434108,
+          "coverage": 0.9872
+        },
+        "M4": {
+          "view_id": "holdout_04",
+          "absrel": 0.05904357982283558,
+          "rmse_m": 1.1994497669175415,
+          "coverage": 0.999
+        },
+        "B1": {
+          "view_id": "holdout_04",
+          "absrel": 0.10821324192176636,
+          "rmse_m": 1.3298522124249217,
+          "coverage": 0.9556
+        },
+        "B2": {
+          "view_id": "holdout_04",
+          "absrel": 0.1533820339277124,
+          "rmse_m": 1.5037664508764206,
+          "coverage": 0.9764
+        },
+        "B2p": {
+          "view_id": "holdout_04",
+          "absrel": 0.7224933384975799,
+          "rmse_m": 6.831964117088156,
+          "coverage": 0.9344
+        }
+      }
+    },
+    {
+      "view_id": "holdout_05",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8271713085431135,
+        "rmse_m": 0.9978190358378741,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_05",
+          "absrel": 0.15726175288809002,
+          "rmse_m": 1.930277933760691,
+          "coverage": 0.991
+        },
+        "M2": {
+          "view_id": "holdout_05",
+          "absrel": 0.10314806452256073,
+          "rmse_m": 1.3808142049944878,
+          "coverage": 0.9964
+        },
+        "M3": {
+          "view_id": "holdout_05",
+          "absrel": 0.319454025189237,
+          "rmse_m": 2.8057931554718443,
+          "coverage": 0.9844
+        },
+        "M4": {
+          "view_id": "holdout_05",
+          "absrel": 0.06638692207363572,
+          "rmse_m": 1.2697015362833863,
+          "coverage": 0.9986
+        },
+        "B1": {
+          "view_id": "holdout_05",
+          "absrel": 0.08657018751130875,
+          "rmse_m": 1.2758407604859312,
+          "coverage": 0.9388
+        },
+        "B2": {
+          "view_id": "holdout_05",
+          "absrel": 0.1346187035888617,
+          "rmse_m": 1.5207292104250623,
+          "coverage": 0.9806
+        },
+        "B2p": {
+          "view_id": "holdout_05",
+          "absrel": 0.6699324214511873,
+          "rmse_m": 6.739175450609145,
+          "coverage": 0.9764
+        }
+      }
+    },
+    {
+      "view_id": "holdout_06",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8450629318600604,
+        "rmse_m": 1.0694605991013248,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_06",
+          "absrel": 0.1322547276074631,
+          "rmse_m": 1.6259360039985853,
+          "coverage": 0.9954
+        },
+        "M2": {
+          "view_id": "holdout_06",
+          "absrel": 0.0968073580134016,
+          "rmse_m": 1.1726689144916893,
+          "coverage": 0.9956
+        },
+        "M3": {
+          "view_id": "holdout_06",
+          "absrel": 0.2829471462979032,
+          "rmse_m": 2.2753072134409327,
+          "coverage": 0.9748
+        },
+        "M4": {
+          "view_id": "holdout_06",
+          "absrel": 0.06937185463887406,
+          "rmse_m": 1.1223333342425368,
+          "coverage": 0.9996
+        },
+        "B1": {
+          "view_id": "holdout_06",
+          "absrel": 0.08554467898903327,
+          "rmse_m": 1.1772073716524307,
+          "coverage": 0.9324
+        },
+        "B2": {
+          "view_id": "holdout_06",
+          "absrel": 0.1182760261054249,
+          "rmse_m": 1.2789512594232264,
+          "coverage": 0.9752
+        },
+        "B2p": {
+          "view_id": "holdout_06",
+          "absrel": 0.6465743055316877,
+          "rmse_m": 6.294832009487058,
+          "coverage": 0.9738
+        }
+      }
+    },
+    {
+      "view_id": "holdout_07",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.7011479200003284,
+        "rmse_m": 0.8771048041985305,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_07",
+          "absrel": 0.11857665582477944,
+          "rmse_m": 1.2589114625506195,
+          "coverage": 0.9996
+        },
+        "M2": {
+          "view_id": "holdout_07",
+          "absrel": 0.07818895698633578,
+          "rmse_m": 0.723236512910392,
+          "coverage": 0.9842
+        },
+        "M3": {
+          "view_id": "holdout_07",
+          "absrel": 0.23172509355128718,
+          "rmse_m": 1.2382343632554944,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_07",
+          "absrel": 0.04934174852712553,
+          "rmse_m": 0.760952021119205,
+          "coverage": 0.9998
+        },
+        "B1": {
+          "view_id": "holdout_07",
+          "absrel": 0.06751668124187567,
+          "rmse_m": 0.7421370001964017,
+          "coverage": 0.9498
+        },
+        "B2": {
+          "view_id": "holdout_07",
+          "absrel": 0.06489446786564156,
+          "rmse_m": 0.5560948777346888,
+          "coverage": 0.9744
+        },
+        "B2p": {
+          "view_id": "holdout_07",
+          "absrel": 0.3969912750319842,
+          "rmse_m": 2.2092165162973822,
+          "coverage": 0.97
+        }
+      }
+    },
+    {
+      "view_id": "holdout_08",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.6807807809474549,
+        "rmse_m": 0.8430501832005111,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_08",
+          "absrel": 0.1433350947756039,
+          "rmse_m": 1.2826495165523968,
+          "coverage": 1.0
+        },
+        "M2": {
+          "view_id": "holdout_08",
+          "absrel": 0.07579102114170645,
+          "rmse_m": 0.822361667077549,
+          "coverage": 0.9566
+        },
+        "M3": {
+          "view_id": "holdout_08",
+          "absrel": 0.24793983624946342,
+          "rmse_m": 1.3096691557654048,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_08",
+          "absrel": 0.07198794304841222,
+          "rmse_m": 0.8935806428379286,
+          "coverage": 0.999
+        },
+        "B1": {
+          "view_id": "holdout_08",
+          "absrel": 0.07700927455758529,
+          "rmse_m": 0.7718264618694328,
+          "coverage": 0.9688
+        },
+        "B2": {
+          "view_id": "holdout_08",
+          "absrel": 0.14090029903332635,
+          "rmse_m": 1.585572834056498,
+          "coverage": 0.9872
+        },
+        "B2p": {
+          "view_id": "holdout_08",
+          "absrel": 0.4183441910768354,
+          "rmse_m": 2.101566521692271,
+          "coverage": 0.9742
+        }
+      }
+    },
+    {
+      "view_id": "holdout_09",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.881559821096867,
+        "rmse_m": 1.0608349396573824,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_09",
+          "absrel": 0.22248675540069493,
+          "rmse_m": 1.6642370917618952,
+          "coverage": 0.997
+        },
+        "M2": {
+          "view_id": "holdout_09",
+          "absrel": 0.12836688613285127,
+          "rmse_m": 1.2389830119047007,
+          "coverage": 0.9766
+        },
+        "M3": {
+          "view_id": "holdout_09",
+          "absrel": 0.3144413087528216,
+          "rmse_m": 2.072429398759372,
+          "coverage": 0.9898
+        },
+        "M4": {
+          "view_id": "holdout_09",
+          "absrel": 0.11592652276154898,
+          "rmse_m": 1.1080495273306652,
+          "coverage": 0.9984
+        },
+        "B1": {
+          "view_id": "holdout_09",
+          "absrel": 0.12804961443717439,
+          "rmse_m": 1.0550129711025404,
+          "coverage": 0.9044
+        },
+        "B2": {
+          "view_id": "holdout_09",
+          "absrel": 0.15216406174548835,
+          "rmse_m": 1.2452644385894651,
+          "coverage": 0.9652
+        },
+        "B2p": {
+          "view_id": "holdout_09",
+          "absrel": 0.4972367309541832,
+          "rmse_m": 3.063149817310415,
+          "coverage": 0.9234
+        }
+      }
+    },
+    {
+      "view_id": "holdout_10",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8347855433950521,
+        "rmse_m": 1.068579027954959,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_10",
+          "absrel": 0.15327189767001004,
+          "rmse_m": 1.3704847380796106,
+          "coverage": 0.9996
+        },
+        "M2": {
+          "view_id": "holdout_10",
+          "absrel": 0.05773609544367402,
+          "rmse_m": 1.0275746907824599,
+          "coverage": 0.9944
+        },
+        "M3": {
+          "view_id": "holdout_10",
+          "absrel": 0.2333338749426655,
+          "rmse_m": 1.825718487003886,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_10",
+          "absrel": 0.0327864700869283,
+          "rmse_m": 0.802735574955593,
+          "coverage": 0.9984
+        },
+        "B1": {
+          "view_id": "holdout_10",
+          "absrel": 0.1788842717839568,
+          "rmse_m": 2.0190151031265473,
+          "coverage": 0.934
+        },
+        "B2": {
+          "view_id": "holdout_10",
+          "absrel": 0.3619199425855309,
+          "rmse_m": 3.899044970045799,
+          "coverage": 0.9494
+        },
+        "B2p": {
+          "view_id": "holdout_10",
+          "absrel": 0.9835769792926136,
+          "rmse_m": 7.126526523987111,
+          "coverage": 1.0
+        }
+      }
+    },
+    {
+      "view_id": "holdout_11",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8379388906911025,
+        "rmse_m": 1.0023189754924045,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_11",
+          "absrel": 0.8146057952189014,
+          "rmse_m": 6.166366401400918,
+          "coverage": 1.0
+        },
+        "M2": {
+          "view_id": "holdout_11",
+          "absrel": 0.10065085735839864,
+          "rmse_m": 1.0640677078567318,
+          "coverage": 0.9996
+        },
+        "M3": {
+          "view_id": "holdout_11",
+          "absrel": 0.28082289379209213,
+          "rmse_m": 1.9704277064366036,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_11",
+          "absrel": 0.08130649520059754,
+          "rmse_m": 0.987873965965227,
+          "coverage": 0.9984
+        },
+        "B1": {
+          "view_id": "holdout_11",
+          "absrel": 0.32707205692109936,
+          "rmse_m": 3.57488388175253,
+          "coverage": 0.9518
+        },
+        "B2": {
+          "view_id": "holdout_11",
+          "absrel": 0.40840226784990125,
+          "rmse_m": 3.4420926924667588,
+          "coverage": 0.9574
+        },
+        "B2p": {
+          "view_id": "holdout_11",
+          "absrel": 0.5728807052136291,
+          "rmse_m": 4.661493987718998,
+          "coverage": 0.9578
+        }
+      }
+    },
+    {
+      "view_id": "holdout_12",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.6790775015083795,
+        "rmse_m": 0.7986518775150521,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_12",
+          "absrel": 0.13444232856403424,
+          "rmse_m": 0.9137192568328621,
+          "coverage": 1.0
+        },
+        "M2": {
+          "view_id": "holdout_12",
+          "absrel": 0.05128814315801972,
+          "rmse_m": 0.45462086450536743,
+          "coverage": 0.9992
+        },
+        "M3": {
+          "view_id": "holdout_12",
+          "absrel": 0.260432547206279,
+          "rmse_m": 1.7043954622989534,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_12",
+          "absrel": 0.04297648885119913,
+          "rmse_m": 0.4653666190870166,
+          "coverage": 0.9988
+        },
+        "B1": {
+          "view_id": "holdout_12",
+          "absrel": 0.17217567174422818,
+          "rmse_m": 1.1119709705422072,
+          "coverage": 0.9314
+        },
+        "B2": {
+          "view_id": "holdout_12",
+          "absrel": 0.16177795162564598,
+          "rmse_m": 1.057120306398312,
+          "coverage": 0.9766
+        },
+        "B2p": {
+          "view_id": "holdout_12",
+          "absrel": 0.3999632825978306,
+          "rmse_m": 2.326849347558903,
+          "coverage": 0.9354
+        }
+      }
+    },
+    {
+      "view_id": "holdout_13",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.7482096211831037,
+        "rmse_m": 0.9052909572462083,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_13",
+          "absrel": 0.2211316043591838,
+          "rmse_m": 1.2875743903589019,
+          "coverage": 1.0
+        },
+        "M2": {
+          "view_id": "holdout_13",
+          "absrel": 0.18552801466207763,
+          "rmse_m": 1.1577066225212211,
+          "coverage": 0.9998
+        },
+        "M3": {
+          "view_id": "holdout_13",
+          "absrel": 0.3915344379206759,
+          "rmse_m": 2.2779978307133493,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_13",
+          "absrel": 0.16521896128509905,
+          "rmse_m": 1.1215390667090486,
+          "coverage": 0.9988
+        },
+        "B1": {
+          "view_id": "holdout_13",
+          "absrel": 0.2445754767397358,
+          "rmse_m": 1.4895874181382665,
+          "coverage": 0.9298
+        },
+        "B2": {
+          "view_id": "holdout_13",
+          "absrel": 0.1998889482212266,
+          "rmse_m": 1.1816041944594151,
+          "coverage": 0.9834
+        },
+        "B2p": {
+          "view_id": "holdout_13",
+          "absrel": 0.5329968429341974,
+          "rmse_m": 2.9579993684678185,
+          "coverage": 0.9146
+        }
+      }
+    },
+    {
+      "view_id": "holdout_14",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8852267417727145,
+        "rmse_m": 1.0865166993639022,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_14",
+          "absrel": 0.1775247063979297,
+          "rmse_m": 1.6961773694846969,
+          "coverage": 1.0
+        },
+        "M2": {
+          "view_id": "holdout_14",
+          "absrel": 0.11243511195804896,
+          "rmse_m": 1.2229201052866263,
+          "coverage": 0.999
+        },
+        "M3": {
+          "view_id": "holdout_14",
+          "absrel": 0.31070415048365047,
+          "rmse_m": 2.648464169384834,
+          "coverage": 1.0
+        },
+        "M4": {
+          "view_id": "holdout_14",
+          "absrel": 0.09159569661479312,
+          "rmse_m": 1.173616825351332,
+          "coverage": 0.9982
+        },
+        "B1": {
+          "view_id": "holdout_14",
+          "absrel": 0.1581922394089585,
+          "rmse_m": 1.5937330554501776,
+          "coverage": 0.932
+        },
+        "B2": {
+          "view_id": "holdout_14",
+          "absrel": 0.15340397055009888,
+          "rmse_m": 1.337339378452514,
+          "coverage": 0.9738
+        },
+        "B2p": {
+          "view_id": "holdout_14",
+          "absrel": 0.4310135959812215,
+          "rmse_m": 3.338953817369765,
+          "coverage": 0.8384
+        }
+      }
+    },
+    {
+      "view_id": "holdout_15",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.7558028562139515,
+        "rmse_m": 1.0115046029945451,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_15",
+          "absrel": 0.1709956958664074,
+          "rmse_m": 1.9638923827016863,
+          "coverage": 0.9752
+        },
+        "M2": {
+          "view_id": "holdout_15",
+          "absrel": 0.10583275124151557,
+          "rmse_m": 1.2180977237843884,
+          "coverage": 0.9996
+        },
+        "M3": {
+          "view_id": "holdout_15",
+          "absrel": 0.4049920282001711,
+          "rmse_m": 2.7745992049936654,
+          "coverage": 0.9976
+        },
+        "M4": {
+          "view_id": "holdout_15",
+          "absrel": 0.1214224321324616,
+          "rmse_m": 1.4870078304155092,
+          "coverage": 0.9994
+        },
+        "B1": {
+          "view_id": "holdout_15",
+          "absrel": 0.12860614845444074,
+          "rmse_m": 1.4200161510621203,
+          "coverage": 0.9538
+        },
+        "B2": {
+          "view_id": "holdout_15",
+          "absrel": 0.10946512741625802,
+          "rmse_m": 1.2667858817541509,
+          "coverage": 0.971
+        },
+        "B2p": {
+          "view_id": "holdout_15",
+          "absrel": 0.7314517446925535,
+          "rmse_m": 5.293338676529829,
+          "coverage": 0.8874
+        }
+      }
+    },
+    {
+      "view_id": "holdout_16",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.7971473100208494,
+        "rmse_m": 0.9889366468295607,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_16",
+          "absrel": 0.16289133618080726,
+          "rmse_m": 1.9805076425342416,
+          "coverage": 0.993
+        },
+        "M2": {
+          "view_id": "holdout_16",
+          "absrel": 0.11398294353729792,
+          "rmse_m": 1.3246358271183085,
+          "coverage": 0.996
+        },
+        "M3": {
+          "view_id": "holdout_16",
+          "absrel": 0.33515084371914644,
+          "rmse_m": 2.6848739981176477,
+          "coverage": 0.9938
+        },
+        "M4": {
+          "view_id": "holdout_16",
+          "absrel": 0.09302095383034914,
+          "rmse_m": 1.4255564186532308,
+          "coverage": 0.9986
+        },
+        "B1": {
+          "view_id": "holdout_16",
+          "absrel": 0.10812260583739598,
+          "rmse_m": 1.3275188783631613,
+          "coverage": 0.963
+        },
+        "B2": {
+          "view_id": "holdout_16",
+          "absrel": 0.13455765187917532,
+          "rmse_m": 1.38913348071302,
+          "coverage": 0.9744
+        },
+        "B2p": {
+          "view_id": "holdout_16",
+          "absrel": 0.7132519469523808,
+          "rmse_m": 6.682839050359092,
+          "coverage": 0.9066
+        }
+      }
+    },
+    {
+      "view_id": "holdout_17",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8316921716788657,
+        "rmse_m": 1.0369545158876976,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_17",
+          "absrel": 0.15764250188568188,
+          "rmse_m": 1.954847657182882,
+          "coverage": 0.9994
+        },
+        "M2": {
+          "view_id": "holdout_17",
+          "absrel": 0.10767971186228724,
+          "rmse_m": 1.3105205989384956,
+          "coverage": 0.999
+        },
+        "M3": {
+          "view_id": "holdout_17",
+          "absrel": 0.31127900266368264,
+          "rmse_m": 2.673048324236719,
+          "coverage": 0.99
+        },
+        "M4": {
+          "view_id": "holdout_17",
+          "absrel": 0.06209026091245714,
+          "rmse_m": 1.250283571761359,
+          "coverage": 0.9996
+        },
+        "B1": {
+          "view_id": "holdout_17",
+          "absrel": 0.1029868960292986,
+          "rmse_m": 1.317510516725958,
+          "coverage": 0.963
+        },
+        "B2": {
+          "view_id": "holdout_17",
+          "absrel": 0.14567913145189018,
+          "rmse_m": 1.4290113912729634,
+          "coverage": 0.9744
+        },
+        "B2p": {
+          "view_id": "holdout_17",
+          "absrel": 0.7175252574169986,
+          "rmse_m": 6.730441610248861,
+          "coverage": 0.9322
+        }
+      }
+    },
+    {
+      "view_id": "holdout_18",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8200176012293127,
+        "rmse_m": 1.0048058563812339,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_18",
+          "absrel": 0.15988804257720549,
+          "rmse_m": 1.9459325331170743,
+          "coverage": 0.9992
+        },
+        "M2": {
+          "view_id": "holdout_18",
+          "absrel": 0.11115754910442698,
+          "rmse_m": 1.2591481809787664,
+          "coverage": 0.997
+        },
+        "M3": {
+          "view_id": "holdout_18",
+          "absrel": 0.3152841215404416,
+          "rmse_m": 2.656252718814933,
+          "coverage": 0.9882
+        },
+        "M4": {
+          "view_id": "holdout_18",
+          "absrel": 0.06124144206474433,
+          "rmse_m": 1.1999769370495426,
+          "coverage": 0.9994
+        },
+        "B1": {
+          "view_id": "holdout_18",
+          "absrel": 0.10781426716955832,
+          "rmse_m": 1.305317097459266,
+          "coverage": 0.9546
+        },
+        "B2": {
+          "view_id": "holdout_18",
+          "absrel": 0.1491559125121401,
+          "rmse_m": 1.44085246620563,
+          "coverage": 0.9722
+        },
+        "B2p": {
+          "view_id": "holdout_18",
+          "absrel": 0.7287073052352117,
+          "rmse_m": 6.781206891289601,
+          "coverage": 0.9334
+        }
+      }
+    },
+    {
+      "view_id": "holdout_19",
+      "gt_bvh_vs_old_z": {
+        "mae_m": 0.8310978673458179,
+        "rmse_m": 1.0366028695985792,
+        "coverage": 1.0
+      },
+      "models": {
+        "M1": {
+          "view_id": "holdout_19",
+          "absrel": 0.1625522663533026,
+          "rmse_m": 1.9812938061632397,
+          "coverage": 0.9994
+        },
+        "M2": {
+          "view_id": "holdout_19",
+          "absrel": 0.11314835461134468,
+          "rmse_m": 1.3110435582774007,
+          "coverage": 0.9986
+        },
+        "M3": {
+          "view_id": "holdout_19",
+          "absrel": 0.3182767133695502,
+          "rmse_m": 2.7015162552342447,
+          "coverage": 0.9882
+        },
+        "M4": {
+          "view_id": "holdout_19",
+          "absrel": 0.06357262509705953,
+          "rmse_m": 1.221788601214645,
+          "coverage": 0.9982
+        },
+        "B1": {
+          "view_id": "holdout_19",
+          "absrel": 0.11898333313866105,
+          "rmse_m": 1.3999215370644853,
+          "coverage": 0.9546
+        },
+        "B2": {
+          "view_id": "holdout_19",
+          "absrel": 0.15443113547921222,
+          "rmse_m": 1.5111754400134108,
+          "coverage": 0.9694
+        },
+        "B2p": {
+          "view_id": "holdout_19",
+          "absrel": 0.7283905906118434,
+          "rmse_m": 6.739751129349692,
+          "coverage": 0.9262
+        }
+      }
+    }
+  ]
+}

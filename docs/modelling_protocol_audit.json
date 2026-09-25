@@ -1,0 +1,109 @@
+{
+  "scope": "Post-hoc audit of frozen modelling records; no rerun or model change",
+  "shared_contract": "M2-M4 only; same 180 RGB reference set and max 5 complete versions / 60 checking renders; different geometry inputs",
+  "uniform_actual_budget": false,
+  "uniform_checking_view_ids": false,
+  "token_or_visual_tool_call_budget_verified": false,
+  "rows": [
+    {
+      "method": "M1",
+      "available_rgb": 180,
+      "geometry_frames": 0,
+      "scene_versions_including_initial": null,
+      "post_initial_revisions": null,
+      "checking_renders": null,
+      "visual_inspection_count": null,
+      "scope": "frozen historical run; reference availability verified, exact inspection and iteration counts unavailable"
+    },
+    {
+      "method": "M2",
+      "available_rgb": 180,
+      "geometry_frames": 180,
+      "scene_versions_including_initial": 5,
+      "post_initial_revisions": 4,
+      "checking_renders": 25,
+      "version_cap": 5,
+      "checking_render_cap": 60,
+      "visual_inspection_count": null,
+      "source_hashes": {
+        "input_access_log.json": "c44b57680aa05802dcefc467b582851b6092f36e73d3926f7ada0fd545daaf95",
+        "iteration_log.json": "80d789d3cc747c2add0c8d5421746bce687344cbb02735877075036c6f735f18",
+        "modelling_manifest.json": "35075c16063769765e7036f8a5dc1f125614d90a6caa5731029fd02bda836967"
+      },
+      "programmatically_read_rgb": 180,
+      "access_interpretation": "RGB files opened by the geometric-analysis script; not a count of image content delivered to Astra"
+    },
+    {
+      "method": "M3",
+      "available_rgb": 180,
+      "geometry_frames": 175,
+      "scene_versions_including_initial": 3,
+      "post_initial_revisions": 2,
+      "checking_renders": 15,
+      "version_cap": 5,
+      "checking_render_cap": 60,
+      "visual_inspection_count": null,
+      "source_hashes": {
+        "input_access_log.json": "39d6876e061647e3828f16c7f55134caa39670b3569e88ecc1e3ec27976688aa",
+        "iteration_log.json": "388f3886cd1a8266024259b39297c7144c3bd477e995401b7c3bc678149cfee4",
+        "modelling_manifest.json": "9d98333fc66c78341643b923fa85a2205a480f32f79256bb063cfd63b6a2002e"
+      },
+      "recorded_rgb_frame_ids": 111,
+      "access_interpretation": "Mixed contact-sheet, direct visual and SIFT-triangulation use; visual-only count not separately recorded"
+    },
+    {
+      "method": "M4",
+      "available_rgb": 180,
+      "geometry_frames": 180,
+      "scene_versions_including_initial": 4,
+      "post_initial_revisions": 3,
+      "checking_renders": 20,
+      "version_cap": 5,
+      "checking_render_cap": 60,
+      "visual_inspection_count": 34,
+      "source_hashes": {
+        "input_access_log.json": "27e0aa895ffbd4d5cce17f7ffc04d93b285ed82d6b022c429dc3b8aa88573542",
+        "iteration_log.json": "2e91d68a5a00819f9e64deb20d5d4b5f107831dd3381c2866a66bb09f3735f6f",
+        "modelling_manifest.json": "8ff1430950fc0c31290397ea6ee08787ee9301140146d34f66ae6943b92e29e7"
+      },
+      "programmatically_read_rgb": 180,
+      "visual_inspection_frame_ids": [
+        0,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        70,
+        72,
+        78,
+        80,
+        84,
+        90,
+        96,
+        100,
+        102,
+        108,
+        114,
+        115,
+        120,
+        126,
+        132,
+        138,
+        144,
+        150,
+        156,
+        162,
+        168,
+        174
+      ],
+      "access_interpretation": "34 unique frames explicitly recorded as personally inspected; includes contact-sheet views"
+    }
+  ]
+}

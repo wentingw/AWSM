@@ -1,6 +1,6 @@
 # SceneWeft code map
 
-This describes the files actually included in the private source snapshot. Large models, media and dense arrays are stored in the pinned HF release, not in this Git checkout.
+This describes the files actually included in the private source snapshot. Full models and large dense arrays remain external; current M4 trajectories, still images and the two presentation videos are included directly in Git. The pinned HF release predates the M4 task and LPIPS update.
 
 | Location | Included contents |
 | --- | --- |
@@ -13,11 +13,11 @@ This describes the files actually included in the private source snapshot. Large
 | `experiments/world_lobby/M1/legacy_source/` | Preserved historical M1 Blender builders and README |
 | `experiments/world_lobby/M2, M3, M4/astra_model/` | Saved builders, revisions, measurements, semantic/collision metadata and reviews |
 | `experiments/world_lobby/M3/openvins_20260923/` | Run-specific calibration/configuration and small metadata |
-| `experiments/tasks/` | Frozen protocols, episode requests/summaries and presentation code |
+| `experiments/tasks/` | Frozen protocols, M4 requests/summaries/full trajectories, RGB references/candidates, endpoint images and presentation code |
 | `configs/`, `data/`, `manifests/` | Modelling contract, selected-view/calibration settings, RGB/packet metadata and input inventory |
 | `results/` | Selected final reports, registrations, metrics and evaluator camera metadata |
-| `figures/` | Five-view comparison, trajectories and method diagram |
-| `blog/` | Bilingual article, templates, styles and pinned model-viewer bundle |
+| `figures/` | Current five-by-five and baseline comparisons, trajectories, errors and M4 task panels |
+| `blog/` | Bilingual article, templates, viewer source, Three.js and model-viewer bundles, task media; display GLBs externally pinned |
 | `docs/`, `references/` | Original plan, metric interpretation, independent review and research sources |
 | `archive/superseded_diagnostics/` | Historical diagnostic text; excluded from runnable Python |
 
@@ -28,7 +28,9 @@ This describes the files actually included in the private source snapshot. Large
 - Trajectory evaluation: `scripts/evaluate_pose.py` (portable), `scripts/evaluate_current_poses.py` (historical batch).
 - Fusion baselines: `scripts/fuse_baseline.py --method B1|B2|B2p`.
 - Frozen scene evaluation: `scripts/evaluate_frozen_model.py`; authoritative novel depth: `scripts/evaluate_novel_depth_blender.py`.
-- Task episodes: `src/tasks/drone_episode.py`, `src/tasks/g1_episode.py`; drone batch: `scripts/run_drone_photographic_batch.py`.
+- Current M4 tasks: `src/tasks/m4_g1/`, `scripts/m4_drone_photographic_batch.py`, `scripts/evaluate_m4_drone_photographs.py`, `scripts/m4_g1_visibility_blender.py`. Historical M3 entry points remain preserved.
+- Appearance (Table 5): `scripts/evaluate_appearance_lpips.py`; report and per-view CSVs under `results/evaluation/appearance_five_views_20260925/`.
+- Current evidence audit: `scripts/audit_blog_snapshot.py`; table-to-file map: `evidence/blog_20260925/README.md`.
 - Final aggregation: `scripts/build_final_evaluation.py`; article build/package: `scripts/build_blog.py`, `scripts/package_blog.py`.
 
 These historical entry points require assets/environments/path relocation as described in [REPRODUCING.md](REPRODUCING.md). Do not run them over old result directories. `results/final_evaluation.csv` lists six main systems; B2p is a supplementary matched-frontend baseline recorded separately. No `publish/` directory or deployment credentials are included.

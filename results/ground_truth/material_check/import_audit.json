@@ -1,0 +1,4724 @@
+{
+  "materials": 137,
+  "images": 167,
+  "lights": 29,
+  "materials_detail": [
+    {
+      "name": "Aluminum",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Aluminum.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Aluminum.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Aluminum.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Aluminum_Anodized_Charcoal",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Ash_01",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Ash_02",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Ash_03",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Bamboo_leaf",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Bamboo_leaf.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Bamboo_shoot",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Bamboo_shoot.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "bark3",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "bark3.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "BlkBrassBowl_Lrg",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Bowl",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Bowl.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Bowl.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "bullhead_statue",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Ceramic_Tile_18",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Clear_Glass",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ]
+      ]
+    },
+    {
+      "name": "Concrete_Formed",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Concrete_Polished",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "CraneLily_mat_2",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "CraneLily_mat_2.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "CraneLily_mat_3",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "CraneLily_mat_3.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "dirt",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "dirt.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Earthenware_01",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Earthenware_01.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.008",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Felt_Green.009",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "FountainGrass",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "FountainGrass.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "FountainGrass.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Gold",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Gold_DoorFrame",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Iron",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Iron.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Iron_Brushed_Medium_Brushing",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Light_2900K",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Meadowlark_flowers.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.008",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "MetalFeet.009",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.008",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mirror1.009",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.004",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.005",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.006",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.007",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.008",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "MirrorBack.009",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Mulch_Brown",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Oak",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ]
+      ]
+    },
+    {
+      "name": "OakDark",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Paint_Satin",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Paint_Satin.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Paint_Satin.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Paint_Satin.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "PaintedFern_Leaves",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "PaintedFern_Stalk",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Pampas_flower",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Pampas_flower.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Pampas_flower.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Plaster_Wall",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Plaster_Wall_Cracked",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Plastic",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Plastic.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Plastic.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Plastic.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "pot",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "pot.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "PrimeLarge",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "RustedMetal",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "RustedMetalFrame",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Seahorn",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Shade",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Shade.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Shade.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Shade.003",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Slate",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ]
+      ]
+    },
+    {
+      "name": "SquareGardenPlanterLong",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "SquareGardenPlanterLong.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "SquareGardenPlanterTall",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "SquareGardenPlanterTall.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Steel_Carbon",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Steel_Cast",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Stones",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Stones.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "Stones.002",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ]
+      ]
+    },
+    {
+      "name": "succulent_leaves",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "succulent_leaves.001",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ]
+      ]
+    },
+    {
+      "name": "Terrazzo",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.003"
+        ]
+      ]
+    },
+    {
+      "name": "Tinted_Glass",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ]
+      ]
+    },
+    {
+      "name": "White",
+      "nodes": [
+        [
+          "BSDF_PRINCIPLED",
+          "Principled BSDF"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ],
+        [
+          "UVMAP",
+          "UV Map"
+        ],
+        [
+          "SEPARATE_COLOR",
+          "Separate Color"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.001"
+        ],
+        [
+          "NORMAL_MAP",
+          "Normal Map"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math"
+        ],
+        [
+          "VECT_MATH",
+          "Vector Math.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture.002"
+        ]
+      ]
+    }
+  ]
+}

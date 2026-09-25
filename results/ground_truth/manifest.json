@@ -1,0 +1,1718 @@
+{
+  "schema_version": 1,
+  "scene_id": "WorldLobby360s",
+  "status": "references_only",
+  "gt_is_evaluation_only": true,
+  "coordinate_convention": {
+    "pose_file_format": "TUM timestamp tx ty tz qx qy qz qw",
+    "pose_frame": "world ENU metres; camera optical x-right y-down z-forward",
+    "intrinsics_fx_fy_cx_cy": [
+      762.8,
+      762.8,
+      640.0,
+      480.0
+    ],
+    "distortion": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "T_imu_camera": [
+      [
+        0,
+        0,
+        1,
+        0.4
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -0.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "transform_convention": "p_imu = T_imu_camera @ p_camera"
+  },
+  "sources": {
+    "camera_tum": {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/ground_truth/camera_tum.txt",
+      "sha256": "10e687d2b2e15fe3bc075916c985bd327a439a7b3d9cfa2f7c32f093737a43f3"
+    },
+    "calibration": {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/stable_orbit_20260921T044401/inputs/calibration.json",
+      "sha256": "fba9fce1ae06393b333aeb0ed87a09fa8aa1aea91194b277bbd011a4c09f9904"
+    },
+    "ground_truth_usd": {
+      "path": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/Collected_World_Lobby/World_Lobby.usd",
+      "sha256": "0cba75fd192979daf218436f18e54b40478855534435e3bf0ad417fe5713b69a"
+    },
+    "scene_json": {
+      "path": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/scene.json",
+      "sha256": "eb86212ae77add858ad2021550daf420835264d2e563dcb687f95f9aa7fd4cbb"
+    }
+  },
+  "mapping": {
+    "raw_frames": 8999,
+    "fps": 25,
+    "resolution": [
+      1280,
+      960
+    ],
+    "sample_count": 180,
+    "sample_indices": "0,50,...,8950",
+    "frames": [
+      {
+        "keyframe_index": 0,
+        "source_frame_index": 0,
+        "timestamp_s": 746.532035458,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000000_746532035458.png",
+        "gt_tum_row": 0,
+        "image_sha256": "8ed8fa79aec7540f956696970a3dc2f6d64cec7a44223d22da5f53733c8ce5d1"
+      },
+      {
+        "keyframe_index": 1,
+        "source_frame_index": 50,
+        "timestamp_s": 748.532035553,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000001_748532035553.png",
+        "gt_tum_row": 50,
+        "image_sha256": "bf0440b17285731411c985163ca039132103e250269536db6bdcc5f35e7e772b"
+      },
+      {
+        "keyframe_index": 2,
+        "source_frame_index": 100,
+        "timestamp_s": 750.532035648,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000002_750532035648.png",
+        "gt_tum_row": 100,
+        "image_sha256": "e9974c9134a80dd61ccee9e335a07f41dc69ef3978095ce7e28985bb2c48ad36"
+      },
+      {
+        "keyframe_index": 3,
+        "source_frame_index": 150,
+        "timestamp_s": 752.532035743,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000003_752532035743.png",
+        "gt_tum_row": 150,
+        "image_sha256": "f94feb75e6656f58ef03c9e49f2d492a7f8d1594468e7dfe6da0d07181c56701"
+      },
+      {
+        "keyframe_index": 4,
+        "source_frame_index": 200,
+        "timestamp_s": 754.532035838,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000004_754532035838.png",
+        "gt_tum_row": 200,
+        "image_sha256": "5c63d0deaacb0849cc5cf6692c30493b34707632c36dcf91891cc5c1b275ed76"
+      },
+      {
+        "keyframe_index": 5,
+        "source_frame_index": 250,
+        "timestamp_s": 756.532035933,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000005_756532035933.png",
+        "gt_tum_row": 250,
+        "image_sha256": "ef49614286f4d5c0761e64dfe2921f273d4fde48e37c70066d93410989ba167b"
+      },
+      {
+        "keyframe_index": 6,
+        "source_frame_index": 300,
+        "timestamp_s": 758.532036028,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000006_758532036028.png",
+        "gt_tum_row": 300,
+        "image_sha256": "e30e14cfebcb530970e55c484a3b3250e4f98991c39b808a809926dc2fe5321f"
+      },
+      {
+        "keyframe_index": 7,
+        "source_frame_index": 350,
+        "timestamp_s": 760.532036123,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000007_760532036123.png",
+        "gt_tum_row": 350,
+        "image_sha256": "aef55ef31b00d06d8c0ac14f9efc3428c090382e9aea3e1b333feb38e902d653"
+      },
+      {
+        "keyframe_index": 8,
+        "source_frame_index": 400,
+        "timestamp_s": 762.532036218,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000008_762532036218.png",
+        "gt_tum_row": 400,
+        "image_sha256": "e564e38ebfd99e61cfb9c64a3275e67fe82bdd365bd5ab3430f68766c5815909"
+      },
+      {
+        "keyframe_index": 9,
+        "source_frame_index": 450,
+        "timestamp_s": 764.532036313,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000009_764532036313.png",
+        "gt_tum_row": 450,
+        "image_sha256": "f2881f6fe372da7c755e47173018090643bbcd9661bf11417fc9a8c7c21ccdd9"
+      },
+      {
+        "keyframe_index": 10,
+        "source_frame_index": 500,
+        "timestamp_s": 766.532036408,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000010_766532036408.png",
+        "gt_tum_row": 500,
+        "image_sha256": "8d59bf9a1ded2b1a5de49dad15d0c769035fe9f26ada79954c86e6c580c55c36"
+      },
+      {
+        "keyframe_index": 11,
+        "source_frame_index": 550,
+        "timestamp_s": 768.532036503,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000011_768532036503.png",
+        "gt_tum_row": 550,
+        "image_sha256": "3d9422e7b812e06d60973e098e49f841a1ddf9ff31f5314841bddb271f9d2560"
+      },
+      {
+        "keyframe_index": 12,
+        "source_frame_index": 600,
+        "timestamp_s": 770.532036598,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000012_770532036598.png",
+        "gt_tum_row": 600,
+        "image_sha256": "732cc2422501bd5cf6526b73edb0d4f4ffc4331aeada7d71ad9979130576fba6"
+      },
+      {
+        "keyframe_index": 13,
+        "source_frame_index": 650,
+        "timestamp_s": 772.532036693,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000013_772532036693.png",
+        "gt_tum_row": 650,
+        "image_sha256": "75d2dabe6124e7ec089abfea7690addcf820699aaaa2d023440818a33eec44a0"
+      },
+      {
+        "keyframe_index": 14,
+        "source_frame_index": 700,
+        "timestamp_s": 774.532036788,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000014_774532036788.png",
+        "gt_tum_row": 700,
+        "image_sha256": "10d697a3c301d35899665de8a5d6db9ef37231131a6b4c36a08093f084da4ed6"
+      },
+      {
+        "keyframe_index": 15,
+        "source_frame_index": 750,
+        "timestamp_s": 776.532036883,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000015_776532036883.png",
+        "gt_tum_row": 750,
+        "image_sha256": "a2e8949ce82820073d3c96393c603b4bedd30982b6e55a81a4aca0e757fb9e25"
+      },
+      {
+        "keyframe_index": 16,
+        "source_frame_index": 800,
+        "timestamp_s": 778.532036978,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000016_778532036978.png",
+        "gt_tum_row": 800,
+        "image_sha256": "f4dcb9280a910f28aaab67e7a47f4453538af1943d6997d055ac92416ab698a7"
+      },
+      {
+        "keyframe_index": 17,
+        "source_frame_index": 850,
+        "timestamp_s": 780.532037073,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000017_780532037073.png",
+        "gt_tum_row": 850,
+        "image_sha256": "a9365fb004ef404e607c128b99b0b513aa8ab8c40830c1d7091feff6d20fdaaa"
+      },
+      {
+        "keyframe_index": 18,
+        "source_frame_index": 900,
+        "timestamp_s": 782.532037168,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000018_782532037168.png",
+        "gt_tum_row": 900,
+        "image_sha256": "b2cb85a04b361f2b263ecd59134428851dca982969f49d8f81bed0e5f2ee32c5"
+      },
+      {
+        "keyframe_index": 19,
+        "source_frame_index": 950,
+        "timestamp_s": 784.532037263,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000019_784532037263.png",
+        "gt_tum_row": 950,
+        "image_sha256": "c5e78377164bdd78707efc0bac1693b5ada46ab774f95eb490b30cddb250d712"
+      },
+      {
+        "keyframe_index": 20,
+        "source_frame_index": 1000,
+        "timestamp_s": 786.532037358,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000020_786532037358.png",
+        "gt_tum_row": 1000,
+        "image_sha256": "9ae5601f4d4ef965718b6b2f05279f683adcaa47f2d0e911f54a112652dde281"
+      },
+      {
+        "keyframe_index": 21,
+        "source_frame_index": 1050,
+        "timestamp_s": 788.532037453,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000021_788532037453.png",
+        "gt_tum_row": 1050,
+        "image_sha256": "f8fbd0e3451414b65369fa89c6b33a9d7f44b3b944c82018641a93223cfbb1e0"
+      },
+      {
+        "keyframe_index": 22,
+        "source_frame_index": 1100,
+        "timestamp_s": 790.532037548,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000022_790532037548.png",
+        "gt_tum_row": 1100,
+        "image_sha256": "37a1f12fc480c4bc8a0436feadc0281e1b6fb3bdd2381082811870f2ddf326eb"
+      },
+      {
+        "keyframe_index": 23,
+        "source_frame_index": 1150,
+        "timestamp_s": 792.532037643,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000023_792532037643.png",
+        "gt_tum_row": 1150,
+        "image_sha256": "328cf301372a26f7bcacb4a2001b59079a89f4ef3869f7da5925fa58ddbaf709"
+      },
+      {
+        "keyframe_index": 24,
+        "source_frame_index": 1200,
+        "timestamp_s": 794.532037738,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000024_794532037738.png",
+        "gt_tum_row": 1200,
+        "image_sha256": "a6f106fc2bb32eb901d16aa2ec638de5ebae91f64edb7711aaf06c0b82cf3e00"
+      },
+      {
+        "keyframe_index": 25,
+        "source_frame_index": 1250,
+        "timestamp_s": 796.532037833,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000025_796532037833.png",
+        "gt_tum_row": 1250,
+        "image_sha256": "179e85c2cddbe542b888f50db130a8173470449165e0d0d1fa663011912a8c7f"
+      },
+      {
+        "keyframe_index": 26,
+        "source_frame_index": 1300,
+        "timestamp_s": 798.532037928,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000026_798532037928.png",
+        "gt_tum_row": 1300,
+        "image_sha256": "bd393cd171cfec333daf79475b4730828057566db0eaf5c78f70d86802ffd1ab"
+      },
+      {
+        "keyframe_index": 27,
+        "source_frame_index": 1350,
+        "timestamp_s": 800.532038023,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000027_800532038023.png",
+        "gt_tum_row": 1350,
+        "image_sha256": "14ba28ffabe1d8087b82e62429a64ee99b633c36f8ef5c5166277957bc09b326"
+      },
+      {
+        "keyframe_index": 28,
+        "source_frame_index": 1400,
+        "timestamp_s": 802.532038118,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000028_802532038118.png",
+        "gt_tum_row": 1400,
+        "image_sha256": "720bd6c2a6671fc8b6562eddd719ea1c0163e3f571af541611b8527a78df3fd7"
+      },
+      {
+        "keyframe_index": 29,
+        "source_frame_index": 1450,
+        "timestamp_s": 804.532038213,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000029_804532038213.png",
+        "gt_tum_row": 1450,
+        "image_sha256": "b5e8e5b6219d0a5b5f49c29a1c09d7c0209f083128dfe5d24386c3153ffb9d5a"
+      },
+      {
+        "keyframe_index": 30,
+        "source_frame_index": 1500,
+        "timestamp_s": 806.532038308,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000030_806532038308.png",
+        "gt_tum_row": 1500,
+        "image_sha256": "8bdffff4b714ccd2a7cc8ee65d41cc91b22b169102a482fc693fae007505f6b6"
+      },
+      {
+        "keyframe_index": 31,
+        "source_frame_index": 1550,
+        "timestamp_s": 808.532038403,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000031_808532038403.png",
+        "gt_tum_row": 1550,
+        "image_sha256": "f71b1d903b9760cebebc4618c556620bbf7b4d104dd9b3988f9a130ee6e7ed0e"
+      },
+      {
+        "keyframe_index": 32,
+        "source_frame_index": 1600,
+        "timestamp_s": 810.532038498,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000032_810532038498.png",
+        "gt_tum_row": 1600,
+        "image_sha256": "809c5ae467f60bfa0ca497c0edbf7aee0fc834e9666e4776b42115ede01460a8"
+      },
+      {
+        "keyframe_index": 33,
+        "source_frame_index": 1650,
+        "timestamp_s": 812.532038593,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000033_812532038593.png",
+        "gt_tum_row": 1650,
+        "image_sha256": "79a360a02ae7ee04c95ef36e46159622062d6ebd3ebf2d3a4799cf1543078cbe"
+      },
+      {
+        "keyframe_index": 34,
+        "source_frame_index": 1700,
+        "timestamp_s": 814.532038688,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000034_814532038688.png",
+        "gt_tum_row": 1700,
+        "image_sha256": "197aea966b062843edf4a944ffe7cf8ef7e2aadde4393176cc50a78272c8441f"
+      },
+      {
+        "keyframe_index": 35,
+        "source_frame_index": 1750,
+        "timestamp_s": 816.532038783,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000035_816532038783.png",
+        "gt_tum_row": 1750,
+        "image_sha256": "7cdda3dfbd3fae194dc71bacf7c99f67c5a4476066f0961c8733d0714874f915"
+      },
+      {
+        "keyframe_index": 36,
+        "source_frame_index": 1800,
+        "timestamp_s": 818.532038878,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000036_818532038878.png",
+        "gt_tum_row": 1800,
+        "image_sha256": "5cad7e61114ca4ed3706285f487b3c63d50a44aa7763158987f6b6e806d743b6"
+      },
+      {
+        "keyframe_index": 37,
+        "source_frame_index": 1850,
+        "timestamp_s": 820.532038973,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000037_820532038973.png",
+        "gt_tum_row": 1850,
+        "image_sha256": "a5e08df86282294a215a61e3dcaea34c3a28b548adf76acd5a44c64d0e3cf0b2"
+      },
+      {
+        "keyframe_index": 38,
+        "source_frame_index": 1900,
+        "timestamp_s": 822.532039068,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000038_822532039068.png",
+        "gt_tum_row": 1900,
+        "image_sha256": "87ebb10b419f67721cdc345afa556cbfa69b5a0781ed0873d18c98f5ba6b94f1"
+      },
+      {
+        "keyframe_index": 39,
+        "source_frame_index": 1950,
+        "timestamp_s": 824.532039163,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000039_824532039163.png",
+        "gt_tum_row": 1950,
+        "image_sha256": "c6bdda5947bbeba2b1eb2ba48030f4a4acefa7a5037edd247279e275a411dc08"
+      },
+      {
+        "keyframe_index": 40,
+        "source_frame_index": 2000,
+        "timestamp_s": 826.532039258,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000040_826532039258.png",
+        "gt_tum_row": 2000,
+        "image_sha256": "1734e6764a6491d4cf131cba58ba701e454f59c145e959a598518ee7130e91ff"
+      },
+      {
+        "keyframe_index": 41,
+        "source_frame_index": 2050,
+        "timestamp_s": 828.532039353,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000041_828532039353.png",
+        "gt_tum_row": 2050,
+        "image_sha256": "f034096b028f71a63b71b6b3ec06c043cd8443f997a59986f61ec31017b9daeb"
+      },
+      {
+        "keyframe_index": 42,
+        "source_frame_index": 2100,
+        "timestamp_s": 830.532039448,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000042_830532039448.png",
+        "gt_tum_row": 2100,
+        "image_sha256": "699eaea2a642c0952f5bda28b0b8cc07b036efe2f1c144d5c1cbc93887ccde2c"
+      },
+      {
+        "keyframe_index": 43,
+        "source_frame_index": 2150,
+        "timestamp_s": 832.532039543,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000043_832532039543.png",
+        "gt_tum_row": 2150,
+        "image_sha256": "95c57023893a811cf9882019883e9080188e496d157739e01e7b3e71f1457c10"
+      },
+      {
+        "keyframe_index": 44,
+        "source_frame_index": 2200,
+        "timestamp_s": 834.532039638,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000044_834532039638.png",
+        "gt_tum_row": 2200,
+        "image_sha256": "e75367ec43c30ef0e820e5b4b89b496145f6cea9935860d355dbc2eecd551d07"
+      },
+      {
+        "keyframe_index": 45,
+        "source_frame_index": 2250,
+        "timestamp_s": 836.532039733,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000045_836532039733.png",
+        "gt_tum_row": 2250,
+        "image_sha256": "42b9f557315972738d542d8a8c7c55717960bfc494542547bcd3bdc8a390c993"
+      },
+      {
+        "keyframe_index": 46,
+        "source_frame_index": 2300,
+        "timestamp_s": 838.532039828,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000046_838532039828.png",
+        "gt_tum_row": 2300,
+        "image_sha256": "b11f52f8062c21fe736967f5414ec39ed367d3923bbb0ebb479e4ffb886984aa"
+      },
+      {
+        "keyframe_index": 47,
+        "source_frame_index": 2350,
+        "timestamp_s": 840.532039923,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000047_840532039923.png",
+        "gt_tum_row": 2350,
+        "image_sha256": "373b855c7ee13de75832dd15e343adcbc3cdd12420f3623588f567c2d6b988f0"
+      },
+      {
+        "keyframe_index": 48,
+        "source_frame_index": 2400,
+        "timestamp_s": 842.532040018,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000048_842532040018.png",
+        "gt_tum_row": 2400,
+        "image_sha256": "9834b892723c6aa2240f436b4b2be29eec82c911da041f0bb14b833b75a88df0"
+      },
+      {
+        "keyframe_index": 49,
+        "source_frame_index": 2450,
+        "timestamp_s": 844.532040113,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000049_844532040113.png",
+        "gt_tum_row": 2450,
+        "image_sha256": "67f7bf29fe22b5a6a8335b2bb4bbd94b3029c6e5aee6b4b1decb79a8a97ea7a1"
+      },
+      {
+        "keyframe_index": 50,
+        "source_frame_index": 2500,
+        "timestamp_s": 846.532040208,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000050_846532040208.png",
+        "gt_tum_row": 2500,
+        "image_sha256": "79d63ca059e1163b96bc80c183b4d2a78c88938c12a2c38ff71db3b1cc959f3a"
+      },
+      {
+        "keyframe_index": 51,
+        "source_frame_index": 2550,
+        "timestamp_s": 848.532040303,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000051_848532040303.png",
+        "gt_tum_row": 2550,
+        "image_sha256": "434244db27fc8d753558967c6c4a38cc1ca59d7bc4e70726684bb42805be738c"
+      },
+      {
+        "keyframe_index": 52,
+        "source_frame_index": 2600,
+        "timestamp_s": 850.532040398,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000052_850532040398.png",
+        "gt_tum_row": 2600,
+        "image_sha256": "bc88ea2bdee8844933b5a341dc94cb25c1a591774add48f4c4637cd348d05306"
+      },
+      {
+        "keyframe_index": 53,
+        "source_frame_index": 2650,
+        "timestamp_s": 852.532040493,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000053_852532040493.png",
+        "gt_tum_row": 2650,
+        "image_sha256": "82d15b716574b08457306e2d6554123d0c7426c4aac945d674c081b5488544ea"
+      },
+      {
+        "keyframe_index": 54,
+        "source_frame_index": 2700,
+        "timestamp_s": 854.532040588,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000054_854532040588.png",
+        "gt_tum_row": 2700,
+        "image_sha256": "5c3451014324e95a9f1b557dfec4021d87482f61b3b695e2aed8711f9d3cea6f"
+      },
+      {
+        "keyframe_index": 55,
+        "source_frame_index": 2750,
+        "timestamp_s": 856.532040683,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000055_856532040683.png",
+        "gt_tum_row": 2750,
+        "image_sha256": "9f04539fd700f176a480b62233efe02321eec893ee009a895a937563a7d3d41f"
+      },
+      {
+        "keyframe_index": 56,
+        "source_frame_index": 2800,
+        "timestamp_s": 858.532040778,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000056_858532040778.png",
+        "gt_tum_row": 2800,
+        "image_sha256": "c86f4eeb811c788ebd4f29eaee67bc29e2e301fca184aabd732c856030565b22"
+      },
+      {
+        "keyframe_index": 57,
+        "source_frame_index": 2850,
+        "timestamp_s": 860.532040873,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000057_860532040873.png",
+        "gt_tum_row": 2850,
+        "image_sha256": "1f6f207683380c1c9ab710dee074c0d030bdf5395b6acea3aa83d3c2ecc5dd81"
+      },
+      {
+        "keyframe_index": 58,
+        "source_frame_index": 2900,
+        "timestamp_s": 862.532040968,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000058_862532040968.png",
+        "gt_tum_row": 2900,
+        "image_sha256": "e68c644a8ea9370f2eb6bc3286c6c54c3db39a13ef4672535495e4b012905e14"
+      },
+      {
+        "keyframe_index": 59,
+        "source_frame_index": 2950,
+        "timestamp_s": 864.532041063,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000059_864532041063.png",
+        "gt_tum_row": 2950,
+        "image_sha256": "5e568408fd197f0a5521fc73728cecc9c81c5eb62f2522db40cb517df9976ff4"
+      },
+      {
+        "keyframe_index": 60,
+        "source_frame_index": 3000,
+        "timestamp_s": 866.532041158,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000060_866532041158.png",
+        "gt_tum_row": 3000,
+        "image_sha256": "d0ca34935e003813a8ae52ebd6e96c7fdb047438dea07b370ecc8524466fec8d"
+      },
+      {
+        "keyframe_index": 61,
+        "source_frame_index": 3050,
+        "timestamp_s": 868.532041253,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000061_868532041253.png",
+        "gt_tum_row": 3050,
+        "image_sha256": "4594b0215a108870a302b5f1572ddd05466d2bf7fa868c4afc24cd69a4fca446"
+      },
+      {
+        "keyframe_index": 62,
+        "source_frame_index": 3100,
+        "timestamp_s": 870.532041348,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000062_870532041348.png",
+        "gt_tum_row": 3100,
+        "image_sha256": "5537a77c3a7767715091dd3d8ddd8cb24c7dbd589620c6e21e6605714e76e6d9"
+      },
+      {
+        "keyframe_index": 63,
+        "source_frame_index": 3150,
+        "timestamp_s": 872.532041443,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000063_872532041443.png",
+        "gt_tum_row": 3150,
+        "image_sha256": "47a1e006f4fcae4c89ee92b47d98178ab7da8a43e743b56c551ad2f8c5f125b7"
+      },
+      {
+        "keyframe_index": 64,
+        "source_frame_index": 3200,
+        "timestamp_s": 874.532041538,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000064_874532041538.png",
+        "gt_tum_row": 3200,
+        "image_sha256": "43b4c099f704e9ce4f0e49899cc5e6a25befa9903dc8e294a9d824225e9a89c0"
+      },
+      {
+        "keyframe_index": 65,
+        "source_frame_index": 3250,
+        "timestamp_s": 876.532041633,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000065_876532041633.png",
+        "gt_tum_row": 3250,
+        "image_sha256": "04c12470703024567080924c9fe8898e5a582020df667b8f868fe1df254608e5"
+      },
+      {
+        "keyframe_index": 66,
+        "source_frame_index": 3300,
+        "timestamp_s": 878.532041728,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000066_878532041728.png",
+        "gt_tum_row": 3300,
+        "image_sha256": "80991c447aff4ecfbb0b76b404a0e3cb3e6da1330c0726d2c48f6f94b98e9c5b"
+      },
+      {
+        "keyframe_index": 67,
+        "source_frame_index": 3350,
+        "timestamp_s": 880.532041823,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000067_880532041823.png",
+        "gt_tum_row": 3350,
+        "image_sha256": "10e1748eaf9c09e200abc87554c850bf5f1154dda825fc4531ce3df1c66b90db"
+      },
+      {
+        "keyframe_index": 68,
+        "source_frame_index": 3400,
+        "timestamp_s": 882.532041918,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000068_882532041918.png",
+        "gt_tum_row": 3400,
+        "image_sha256": "9e40177a71f4399b25708d092e9a8e2770eb36d7ecf333aee5a28c83c39a98e2"
+      },
+      {
+        "keyframe_index": 69,
+        "source_frame_index": 3450,
+        "timestamp_s": 884.532042013,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000069_884532042013.png",
+        "gt_tum_row": 3450,
+        "image_sha256": "6eae19de4c05f762178fcce1fe7b0b3794d2ac3fe74dcf811a25f098ed2e2c79"
+      },
+      {
+        "keyframe_index": 70,
+        "source_frame_index": 3500,
+        "timestamp_s": 886.532042108,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000070_886532042108.png",
+        "gt_tum_row": 3500,
+        "image_sha256": "7cd46d528f1cd9401bdbef61bbed203d551cea7c3bfaf8ff2e412b19948b97c2"
+      },
+      {
+        "keyframe_index": 71,
+        "source_frame_index": 3550,
+        "timestamp_s": 888.532042203,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000071_888532042203.png",
+        "gt_tum_row": 3550,
+        "image_sha256": "6779836eb542026920df519a692d62e539b4b6376e9cb3b18f80e4fe9df942cd"
+      },
+      {
+        "keyframe_index": 72,
+        "source_frame_index": 3600,
+        "timestamp_s": 890.532042298,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000072_890532042298.png",
+        "gt_tum_row": 3600,
+        "image_sha256": "f52ce945a0ed0a81ba0ce4e13ab3e4ea7b811394e1addea75a37daa0a675ff27"
+      },
+      {
+        "keyframe_index": 73,
+        "source_frame_index": 3650,
+        "timestamp_s": 892.532042393,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000073_892532042393.png",
+        "gt_tum_row": 3650,
+        "image_sha256": "be9b5a8dca2ef88836fd9d2aed95647a39fefdbdb7fadff36ea656c4038c786b"
+      },
+      {
+        "keyframe_index": 74,
+        "source_frame_index": 3700,
+        "timestamp_s": 894.532042488,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000074_894532042488.png",
+        "gt_tum_row": 3700,
+        "image_sha256": "ed4df08dd919e6c32f6e8e96aa490cab569c84702256b29e0aef12c07ad54234"
+      },
+      {
+        "keyframe_index": 75,
+        "source_frame_index": 3750,
+        "timestamp_s": 896.532042583,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000075_896532042583.png",
+        "gt_tum_row": 3750,
+        "image_sha256": "b3ac1a3e9e201aa5e6c3c0658c33533a8aa38c3364f14a587c6927de8689f7d0"
+      },
+      {
+        "keyframe_index": 76,
+        "source_frame_index": 3800,
+        "timestamp_s": 898.532042678,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000076_898532042678.png",
+        "gt_tum_row": 3800,
+        "image_sha256": "f4bc43173a69a53039386b402910553ac6dc950c6020fea5f61b70487f8a3914"
+      },
+      {
+        "keyframe_index": 77,
+        "source_frame_index": 3850,
+        "timestamp_s": 900.532042773,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000077_900532042773.png",
+        "gt_tum_row": 3850,
+        "image_sha256": "1063c5c81e44875b575feebec583001942b3666b3fa8cdacfa69617e5f05989c"
+      },
+      {
+        "keyframe_index": 78,
+        "source_frame_index": 3900,
+        "timestamp_s": 902.532042868,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000078_902532042868.png",
+        "gt_tum_row": 3900,
+        "image_sha256": "8d8ec87f33c1478140125dab7381dd4d73148ec13d92e7ada4f0b8232a364a17"
+      },
+      {
+        "keyframe_index": 79,
+        "source_frame_index": 3950,
+        "timestamp_s": 904.532042963,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000079_904532042963.png",
+        "gt_tum_row": 3950,
+        "image_sha256": "0c7e57133d37ca225e5112f61770468aaea6f2b38b17f8995e4f9b637d2b455d"
+      },
+      {
+        "keyframe_index": 80,
+        "source_frame_index": 4000,
+        "timestamp_s": 906.532043058,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000080_906532043058.png",
+        "gt_tum_row": 4000,
+        "image_sha256": "3bf8e770435cfc2ea33df9ed597515bfcab6b0287c12ccad5cd02755c9ec29a4"
+      },
+      {
+        "keyframe_index": 81,
+        "source_frame_index": 4050,
+        "timestamp_s": 908.532043153,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000081_908532043153.png",
+        "gt_tum_row": 4050,
+        "image_sha256": "781c92e0d62604a39cc5e8c2f4c4a9ba46547218041f1387cf7a17de8a6c6841"
+      },
+      {
+        "keyframe_index": 82,
+        "source_frame_index": 4100,
+        "timestamp_s": 910.532043248,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000082_910532043248.png",
+        "gt_tum_row": 4100,
+        "image_sha256": "02607578c2ecbb18492bfafcd74e33f80dca7e5f08480b6a7d840eb2b059fb71"
+      },
+      {
+        "keyframe_index": 83,
+        "source_frame_index": 4150,
+        "timestamp_s": 912.532043343,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000083_912532043343.png",
+        "gt_tum_row": 4150,
+        "image_sha256": "ec2e814c1bac08b374ed9c92a6f01b5a790b34e9ecdf42a019db9d4b1e69f04e"
+      },
+      {
+        "keyframe_index": 84,
+        "source_frame_index": 4200,
+        "timestamp_s": 914.532043438,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000084_914532043438.png",
+        "gt_tum_row": 4200,
+        "image_sha256": "f6648c415d1ebcf6aff8ed2c640fb674e04b3d590ff1882b4adf4a13c755b577"
+      },
+      {
+        "keyframe_index": 85,
+        "source_frame_index": 4250,
+        "timestamp_s": 916.532043533,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000085_916532043533.png",
+        "gt_tum_row": 4250,
+        "image_sha256": "6c5c40842c1b4d51082a8ffc64b454d64f6f0029450ae9051f0c6a6f29dcf4af"
+      },
+      {
+        "keyframe_index": 86,
+        "source_frame_index": 4300,
+        "timestamp_s": 918.532043628,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000086_918532043628.png",
+        "gt_tum_row": 4300,
+        "image_sha256": "67beaf91ebeaeab0d1aef72cba66c15ffc17c085bde3440718c87574b2cc78e9"
+      },
+      {
+        "keyframe_index": 87,
+        "source_frame_index": 4350,
+        "timestamp_s": 920.532043723,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000087_920532043723.png",
+        "gt_tum_row": 4350,
+        "image_sha256": "f28709dcb4daddb5366382acd0af755db0a5d6581a3731c72cd1e452e3bff9c2"
+      },
+      {
+        "keyframe_index": 88,
+        "source_frame_index": 4400,
+        "timestamp_s": 922.532043818,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000088_922532043818.png",
+        "gt_tum_row": 4400,
+        "image_sha256": "972eaba075e78e35744f699a707b84c9c3fda211fe252b44845d948b8804ec19"
+      },
+      {
+        "keyframe_index": 89,
+        "source_frame_index": 4450,
+        "timestamp_s": 924.532043913,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000089_924532043913.png",
+        "gt_tum_row": 4450,
+        "image_sha256": "fc0c38dc993482976d950723852ed1985f76d71c0bd6bb0332cf05a2df26a267"
+      },
+      {
+        "keyframe_index": 90,
+        "source_frame_index": 4500,
+        "timestamp_s": 926.532044008,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000090_926532044008.png",
+        "gt_tum_row": 4500,
+        "image_sha256": "4725928fc0123be2563a804be7a832e21d0597aef6ece7e6c9bea4fc307a0034"
+      },
+      {
+        "keyframe_index": 91,
+        "source_frame_index": 4550,
+        "timestamp_s": 928.532044103,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000091_928532044103.png",
+        "gt_tum_row": 4550,
+        "image_sha256": "c9fbdb0a077d7341ecb4c465ef1830b9e0736aa8c0708146b3ba5d87376bcacc"
+      },
+      {
+        "keyframe_index": 92,
+        "source_frame_index": 4600,
+        "timestamp_s": 930.532044198,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000092_930532044198.png",
+        "gt_tum_row": 4600,
+        "image_sha256": "b99c4ed06d6fc5ec4b17cf4c648702e3f255379f0bf8d50424ae523f061458c2"
+      },
+      {
+        "keyframe_index": 93,
+        "source_frame_index": 4650,
+        "timestamp_s": 932.532044293,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000093_932532044293.png",
+        "gt_tum_row": 4650,
+        "image_sha256": "965ce4c9a5baca1db93956b85eb167152eb65cc52f3d0aba237e897bc5223400"
+      },
+      {
+        "keyframe_index": 94,
+        "source_frame_index": 4700,
+        "timestamp_s": 934.532044388,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000094_934532044388.png",
+        "gt_tum_row": 4700,
+        "image_sha256": "0e6507c96c326c9a2f13d0fb0bfba63536affb85afcda80fbccfe747d7351184"
+      },
+      {
+        "keyframe_index": 95,
+        "source_frame_index": 4750,
+        "timestamp_s": 936.532044483,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000095_936532044483.png",
+        "gt_tum_row": 4750,
+        "image_sha256": "2b5158c4d469b132eb100add44481f5a67e6c5af41907ea9ef6bfd0b79a3f15c"
+      },
+      {
+        "keyframe_index": 96,
+        "source_frame_index": 4800,
+        "timestamp_s": 938.532044578,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000096_938532044578.png",
+        "gt_tum_row": 4800,
+        "image_sha256": "fe1e4d0e064022d1d0893be37508e2ca720722f103a586faa74c988672742b93"
+      },
+      {
+        "keyframe_index": 97,
+        "source_frame_index": 4850,
+        "timestamp_s": 940.532044673,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000097_940532044673.png",
+        "gt_tum_row": 4850,
+        "image_sha256": "37113334993b84b837d879bbfa7ed329e7ae125a7a00ed56b0c1c44a7db39e73"
+      },
+      {
+        "keyframe_index": 98,
+        "source_frame_index": 4900,
+        "timestamp_s": 942.532044768,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000098_942532044768.png",
+        "gt_tum_row": 4900,
+        "image_sha256": "7cea0fc89e36edafda272f4acf56425c546e71f90bf1d2f2bee682ce9de445a7"
+      },
+      {
+        "keyframe_index": 99,
+        "source_frame_index": 4950,
+        "timestamp_s": 944.532044863,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000099_944532044863.png",
+        "gt_tum_row": 4950,
+        "image_sha256": "56eee19a0ef25332286709f6e804103b876c8e3925240cc4403349181cd49e2c"
+      },
+      {
+        "keyframe_index": 100,
+        "source_frame_index": 5000,
+        "timestamp_s": 946.532044958,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000100_946532044958.png",
+        "gt_tum_row": 5000,
+        "image_sha256": "93ff15b368a45f1a7f6faf7640e395d99b1a9765052373c92fb7608201740475"
+      },
+      {
+        "keyframe_index": 101,
+        "source_frame_index": 5050,
+        "timestamp_s": 948.532045053,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000101_948532045053.png",
+        "gt_tum_row": 5050,
+        "image_sha256": "07b665d8111835787dcb9aaa677eec65aba8268487ea9a433b92d2edf4bb8d08"
+      },
+      {
+        "keyframe_index": 102,
+        "source_frame_index": 5100,
+        "timestamp_s": 950.532045148,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000102_950532045148.png",
+        "gt_tum_row": 5100,
+        "image_sha256": "3970a8ed69db8337d92baf76bec81e80d8276ba17294b130c85123ed4ae7baaf"
+      },
+      {
+        "keyframe_index": 103,
+        "source_frame_index": 5150,
+        "timestamp_s": 952.532045243,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000103_952532045243.png",
+        "gt_tum_row": 5150,
+        "image_sha256": "dde31fa45f7fd8e81922f3568f32a339403c832796be5cc5d42c4f39a58d52b6"
+      },
+      {
+        "keyframe_index": 104,
+        "source_frame_index": 5200,
+        "timestamp_s": 954.532045338,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000104_954532045338.png",
+        "gt_tum_row": 5200,
+        "image_sha256": "cbecdc1c54c041f4f1547a970881f906fef8cdbd235a33d773c8fb5331cc1b19"
+      },
+      {
+        "keyframe_index": 105,
+        "source_frame_index": 5250,
+        "timestamp_s": 956.532045433,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000105_956532045433.png",
+        "gt_tum_row": 5250,
+        "image_sha256": "2412f4f1f5e1cf26ffd69f7150472d00be8deb1764643c520675619f01428441"
+      },
+      {
+        "keyframe_index": 106,
+        "source_frame_index": 5300,
+        "timestamp_s": 958.532045528,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000106_958532045528.png",
+        "gt_tum_row": 5300,
+        "image_sha256": "3069ad496559d3f3218e216f25fd5bda5f42fcdd834658b19f775edae1fd26cb"
+      },
+      {
+        "keyframe_index": 107,
+        "source_frame_index": 5350,
+        "timestamp_s": 960.532045623,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000107_960532045623.png",
+        "gt_tum_row": 5350,
+        "image_sha256": "60b69db33ba563d7e6fe3ba726c3a001bee61971fdb4f03eb1dc33e303013eb7"
+      },
+      {
+        "keyframe_index": 108,
+        "source_frame_index": 5400,
+        "timestamp_s": 962.532045718,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000108_962532045718.png",
+        "gt_tum_row": 5400,
+        "image_sha256": "9275348b14f3baf710a83a9b67ab1600938324f32b634d19c30261b2769b1545"
+      },
+      {
+        "keyframe_index": 109,
+        "source_frame_index": 5450,
+        "timestamp_s": 964.532045813,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000109_964532045813.png",
+        "gt_tum_row": 5450,
+        "image_sha256": "470ad0230a4eaaed0d0bf61137d02c65268ad7e38e5ee00b921855371c4d35bb"
+      },
+      {
+        "keyframe_index": 110,
+        "source_frame_index": 5500,
+        "timestamp_s": 966.532045908,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000110_966532045908.png",
+        "gt_tum_row": 5500,
+        "image_sha256": "833707476ce8ff88a033626a32911c5f14cd2c7c30efbaecefefe7f3c58eeaaa"
+      },
+      {
+        "keyframe_index": 111,
+        "source_frame_index": 5550,
+        "timestamp_s": 968.532046003,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000111_968532046003.png",
+        "gt_tum_row": 5550,
+        "image_sha256": "5695beef3a9b82264f2969118e5d6258a18467a3dc22eb3eb2588dd7c3b10483"
+      },
+      {
+        "keyframe_index": 112,
+        "source_frame_index": 5600,
+        "timestamp_s": 970.532046098,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000112_970532046098.png",
+        "gt_tum_row": 5600,
+        "image_sha256": "7bfcd571d3c3cfa8dbbee61d3f361f89edfd178b69fb955eba97ec7eee8ee0ae"
+      },
+      {
+        "keyframe_index": 113,
+        "source_frame_index": 5650,
+        "timestamp_s": 972.532046193,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000113_972532046193.png",
+        "gt_tum_row": 5650,
+        "image_sha256": "a2ddd76fe8e239a8624f9deacae44f1604df926471cfb39e5fe2f04c7ab8a054"
+      },
+      {
+        "keyframe_index": 114,
+        "source_frame_index": 5700,
+        "timestamp_s": 974.532046288,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000114_974532046288.png",
+        "gt_tum_row": 5700,
+        "image_sha256": "45e53898ebd583502348f83e99443bf4e8dacfff94ae958bc12d4df0e9e12d34"
+      },
+      {
+        "keyframe_index": 115,
+        "source_frame_index": 5750,
+        "timestamp_s": 976.532046383,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000115_976532046383.png",
+        "gt_tum_row": 5750,
+        "image_sha256": "3c7039dd3d5ca3206791c7bcf06d7f819f24d67f1551cb13e3987567427a25cd"
+      },
+      {
+        "keyframe_index": 116,
+        "source_frame_index": 5800,
+        "timestamp_s": 978.532046478,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000116_978532046478.png",
+        "gt_tum_row": 5800,
+        "image_sha256": "d9e0df26487dd868e9bef12c6de0ed9948a13d50ff715dce8ef8bca37b82bf35"
+      },
+      {
+        "keyframe_index": 117,
+        "source_frame_index": 5850,
+        "timestamp_s": 980.532046573,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000117_980532046573.png",
+        "gt_tum_row": 5850,
+        "image_sha256": "ffcd4a289f8ccd7052e79ad1b67939d4ab4955c907034d374d9afdc2fbee6e60"
+      },
+      {
+        "keyframe_index": 118,
+        "source_frame_index": 5900,
+        "timestamp_s": 982.532046668,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000118_982532046668.png",
+        "gt_tum_row": 5900,
+        "image_sha256": "2eaff8212f29644dff2fb45c04ecc336e8c1741e5b1214ce921f00be661071bb"
+      },
+      {
+        "keyframe_index": 119,
+        "source_frame_index": 5950,
+        "timestamp_s": 984.532046763,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000119_984532046763.png",
+        "gt_tum_row": 5950,
+        "image_sha256": "92500c6e36985b4cff2c4ce33b5fa3402efe33eb6998237b564dff1c008174a7"
+      },
+      {
+        "keyframe_index": 120,
+        "source_frame_index": 6000,
+        "timestamp_s": 986.532046858,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000120_986532046858.png",
+        "gt_tum_row": 6000,
+        "image_sha256": "71ec7c05ab859e5754db92cfabd667d2b2233fcf5e26dde32bd0cb9ea7e50b72"
+      },
+      {
+        "keyframe_index": 121,
+        "source_frame_index": 6050,
+        "timestamp_s": 988.532046953,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000121_988532046953.png",
+        "gt_tum_row": 6050,
+        "image_sha256": "62e7f6d0945afadfc5e81cadba684ded60b38be79775679f3d6d0b2f5bf8203b"
+      },
+      {
+        "keyframe_index": 122,
+        "source_frame_index": 6100,
+        "timestamp_s": 990.532047048,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000122_990532047048.png",
+        "gt_tum_row": 6100,
+        "image_sha256": "b136e822d0a3ca92fe39cb04ca125fd789fd8564d9b6267078eaaaac13a5525c"
+      },
+      {
+        "keyframe_index": 123,
+        "source_frame_index": 6150,
+        "timestamp_s": 992.532047143,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000123_992532047143.png",
+        "gt_tum_row": 6150,
+        "image_sha256": "9c86656384c0c6808d7d938ddeff786ed55d48f1fda82f040bc5e3796eaa6bf6"
+      },
+      {
+        "keyframe_index": 124,
+        "source_frame_index": 6200,
+        "timestamp_s": 994.532047238,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000124_994532047238.png",
+        "gt_tum_row": 6200,
+        "image_sha256": "b514b17e1c03629448dbdb51bb672b170f272a40bd25059729e8224597b835a5"
+      },
+      {
+        "keyframe_index": 125,
+        "source_frame_index": 6250,
+        "timestamp_s": 996.532047333,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000125_996532047333.png",
+        "gt_tum_row": 6250,
+        "image_sha256": "f9f0675e52e6e63a6ddc02f093d61ef51979dba2f918800a0443364c648aaccf"
+      },
+      {
+        "keyframe_index": 126,
+        "source_frame_index": 6300,
+        "timestamp_s": 998.532047428,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000126_998532047428.png",
+        "gt_tum_row": 6300,
+        "image_sha256": "6ddff5e8e95932b9e1bf8457b0c838b63677eaf855f16567bd292f822645cc3e"
+      },
+      {
+        "keyframe_index": 127,
+        "source_frame_index": 6350,
+        "timestamp_s": 1000.532047523,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000127_1000532047523.png",
+        "gt_tum_row": 6350,
+        "image_sha256": "1288b9f0c9a635e2831a1e8ba0d9c5f4c9c1f6f4128ee68975e39bd4b298d3b3"
+      },
+      {
+        "keyframe_index": 128,
+        "source_frame_index": 6400,
+        "timestamp_s": 1002.532047618,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000128_1002532047618.png",
+        "gt_tum_row": 6400,
+        "image_sha256": "3a275a6b14d8b42302195f0141d711730637aadd990c42fe2815e26a7be329cd"
+      },
+      {
+        "keyframe_index": 129,
+        "source_frame_index": 6450,
+        "timestamp_s": 1004.532047713,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000129_1004532047713.png",
+        "gt_tum_row": 6450,
+        "image_sha256": "6a798f3ef9cc07eca8189c6599c869499ae2e222bf71834ea2626b6fdf05253d"
+      },
+      {
+        "keyframe_index": 130,
+        "source_frame_index": 6500,
+        "timestamp_s": 1006.532047808,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000130_1006532047808.png",
+        "gt_tum_row": 6500,
+        "image_sha256": "974d1366ce7c69dfde0aeef30a7e35d7f1f39de804567328d96ecdab8b895e42"
+      },
+      {
+        "keyframe_index": 131,
+        "source_frame_index": 6550,
+        "timestamp_s": 1008.532047903,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000131_1008532047903.png",
+        "gt_tum_row": 6550,
+        "image_sha256": "6f2978c853c7876246361ab861e9a20239bec3da52d3b90050be03eebcef7069"
+      },
+      {
+        "keyframe_index": 132,
+        "source_frame_index": 6600,
+        "timestamp_s": 1010.532047998,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000132_1010532047998.png",
+        "gt_tum_row": 6600,
+        "image_sha256": "806b78773da028f6e88ea6befd08dc4e655a294161716609015b4086490c581b"
+      },
+      {
+        "keyframe_index": 133,
+        "source_frame_index": 6650,
+        "timestamp_s": 1012.532048093,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000133_1012532048093.png",
+        "gt_tum_row": 6650,
+        "image_sha256": "3de248dc21dbd6c899085555be27264a013325373ab6909db5607e806660733d"
+      },
+      {
+        "keyframe_index": 134,
+        "source_frame_index": 6700,
+        "timestamp_s": 1014.532048188,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000134_1014532048188.png",
+        "gt_tum_row": 6700,
+        "image_sha256": "698a51734c5491f03ce3c13e5f8fea6adbe3eb86071eb2139ee72841bfafab84"
+      },
+      {
+        "keyframe_index": 135,
+        "source_frame_index": 6750,
+        "timestamp_s": 1016.532048283,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000135_1016532048283.png",
+        "gt_tum_row": 6750,
+        "image_sha256": "1f56a240172142c128cfe8869cab3b59a809d3bf99745012237cb1e933a31b95"
+      },
+      {
+        "keyframe_index": 136,
+        "source_frame_index": 6800,
+        "timestamp_s": 1018.532048378,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000136_1018532048378.png",
+        "gt_tum_row": 6800,
+        "image_sha256": "4d47ed7b7fc0af58b0565e9cd4f2ebb9f6ccc7319309d3d4f1ae6ff4cd7c832e"
+      },
+      {
+        "keyframe_index": 137,
+        "source_frame_index": 6850,
+        "timestamp_s": 1020.532048473,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000137_1020532048473.png",
+        "gt_tum_row": 6850,
+        "image_sha256": "3eca76b89e176138d8c21bf5c63edaa420193d703c05ea60ae10bc16d87dffdb"
+      },
+      {
+        "keyframe_index": 138,
+        "source_frame_index": 6900,
+        "timestamp_s": 1022.532048568,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000138_1022532048568.png",
+        "gt_tum_row": 6900,
+        "image_sha256": "9058ff6862c58a3cc57caf950da94899e627096d1918b262a938e1b9fe8d4e9d"
+      },
+      {
+        "keyframe_index": 139,
+        "source_frame_index": 6950,
+        "timestamp_s": 1024.532048663,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000139_1024532048663.png",
+        "gt_tum_row": 6950,
+        "image_sha256": "d5baaa24bb1aef30aa1d664806c4373b15ce4d9f31af851f32b952859ae9aabe"
+      },
+      {
+        "keyframe_index": 140,
+        "source_frame_index": 7000,
+        "timestamp_s": 1026.532048758,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000140_1026532048758.png",
+        "gt_tum_row": 7000,
+        "image_sha256": "47c7257955fccd15a4aa39d1e5f17376c901e35ed641875642dcedee918f08de"
+      },
+      {
+        "keyframe_index": 141,
+        "source_frame_index": 7050,
+        "timestamp_s": 1028.532048853,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000141_1028532048853.png",
+        "gt_tum_row": 7050,
+        "image_sha256": "984bcc2a739711cff17b9e989dfcba477c1be99fda6f3a6a21f663f9fae5aeee"
+      },
+      {
+        "keyframe_index": 142,
+        "source_frame_index": 7100,
+        "timestamp_s": 1030.532048948,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000142_1030532048948.png",
+        "gt_tum_row": 7100,
+        "image_sha256": "244d6159b06f1f5ff3b3e65082a460ce842ff5dd6dcdf6a85e3d44cb0fe7d21d"
+      },
+      {
+        "keyframe_index": 143,
+        "source_frame_index": 7150,
+        "timestamp_s": 1032.532049043,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000143_1032532049043.png",
+        "gt_tum_row": 7150,
+        "image_sha256": "858bf3f8269557f6acfb53cd5fcd2ae21f5bf516d597fbbc52e86dab73f5d453"
+      },
+      {
+        "keyframe_index": 144,
+        "source_frame_index": 7200,
+        "timestamp_s": 1034.532049138,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000144_1034532049138.png",
+        "gt_tum_row": 7200,
+        "image_sha256": "94c587671cd441c34174571bcdcb32182c84aa7c399cc4041bbe74638301ee18"
+      },
+      {
+        "keyframe_index": 145,
+        "source_frame_index": 7250,
+        "timestamp_s": 1036.532049233,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000145_1036532049233.png",
+        "gt_tum_row": 7250,
+        "image_sha256": "8f8eb3e2704be0a1abb45e961ec60a069d89bc18ca7a4a53df6409d3cac2c1b0"
+      },
+      {
+        "keyframe_index": 146,
+        "source_frame_index": 7300,
+        "timestamp_s": 1038.532049328,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000146_1038532049328.png",
+        "gt_tum_row": 7300,
+        "image_sha256": "875ee4865a6e69ab2ddefa06ab2e44183e6d9330b5b355f6d2527c5f2e151d8c"
+      },
+      {
+        "keyframe_index": 147,
+        "source_frame_index": 7350,
+        "timestamp_s": 1040.532049423,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000147_1040532049423.png",
+        "gt_tum_row": 7350,
+        "image_sha256": "8cecca585910cc6f423490e8da5da280a226b123266feb961284652963d50ce1"
+      },
+      {
+        "keyframe_index": 148,
+        "source_frame_index": 7400,
+        "timestamp_s": 1042.532049518,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000148_1042532049518.png",
+        "gt_tum_row": 7400,
+        "image_sha256": "b9bc393717a6a6313aaeb1b7ed56c7a16676cc5ca932ccefa69de321848fd867"
+      },
+      {
+        "keyframe_index": 149,
+        "source_frame_index": 7450,
+        "timestamp_s": 1044.532049613,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000149_1044532049613.png",
+        "gt_tum_row": 7450,
+        "image_sha256": "204a097a4dfcaec518d750c9800a43780d8d4b742b5f92af8d620d00ffdb96f2"
+      },
+      {
+        "keyframe_index": 150,
+        "source_frame_index": 7500,
+        "timestamp_s": 1046.532049708,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000150_1046532049708.png",
+        "gt_tum_row": 7500,
+        "image_sha256": "ef533d154d3f9d225ef4dcb2725e08e556b451e1ad34c3f9e0de945f56ef1778"
+      },
+      {
+        "keyframe_index": 151,
+        "source_frame_index": 7550,
+        "timestamp_s": 1048.532049803,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000151_1048532049803.png",
+        "gt_tum_row": 7550,
+        "image_sha256": "c7adc5893c626b46301ca964e172b03073a72ed9ced2c7133c8e0162529a3ad4"
+      },
+      {
+        "keyframe_index": 152,
+        "source_frame_index": 7600,
+        "timestamp_s": 1050.532049898,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000152_1050532049898.png",
+        "gt_tum_row": 7600,
+        "image_sha256": "573276f74cda8f3dfa614328b2638e20d9b0c6d6b059b43671c64ce89a853afa"
+      },
+      {
+        "keyframe_index": 153,
+        "source_frame_index": 7650,
+        "timestamp_s": 1052.532049993,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000153_1052532049993.png",
+        "gt_tum_row": 7650,
+        "image_sha256": "52c099309e37668e1693e988d5ea4a673a391e6ca0ffa310f9a479502bbc4409"
+      },
+      {
+        "keyframe_index": 154,
+        "source_frame_index": 7700,
+        "timestamp_s": 1054.532050088,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000154_1054532050088.png",
+        "gt_tum_row": 7700,
+        "image_sha256": "1340d87d1f2bb75f190c89e61ed55877f02735e28b2e56c0546c584f1c50fb92"
+      },
+      {
+        "keyframe_index": 155,
+        "source_frame_index": 7750,
+        "timestamp_s": 1056.532050183,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000155_1056532050183.png",
+        "gt_tum_row": 7750,
+        "image_sha256": "bb3648bc8b81a4e1af3844671125c274132c77a78653891a26f74090c11a9efd"
+      },
+      {
+        "keyframe_index": 156,
+        "source_frame_index": 7800,
+        "timestamp_s": 1058.532050278,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000156_1058532050278.png",
+        "gt_tum_row": 7800,
+        "image_sha256": "97fb2667773c359bbe2ca93d03944d0bc0d6052850113b9a781f39887863ca2c"
+      },
+      {
+        "keyframe_index": 157,
+        "source_frame_index": 7850,
+        "timestamp_s": 1060.532050373,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000157_1060532050373.png",
+        "gt_tum_row": 7850,
+        "image_sha256": "b20239eafd72de0f9c0bbfe6131e78eba0ed93eca06fb69abbdbc7fc0d1c7680"
+      },
+      {
+        "keyframe_index": 158,
+        "source_frame_index": 7900,
+        "timestamp_s": 1062.532050468,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000158_1062532050468.png",
+        "gt_tum_row": 7900,
+        "image_sha256": "0bee47387411b561ba6dc6b2496d5f026cef0e71f5d0401d6d7c83f8b86601b8"
+      },
+      {
+        "keyframe_index": 159,
+        "source_frame_index": 7950,
+        "timestamp_s": 1064.532050563,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000159_1064532050563.png",
+        "gt_tum_row": 7950,
+        "image_sha256": "5b3047713e0945c64bb56fe905d0d9fa344dbde8dbccd003b4e87723e2e75329"
+      },
+      {
+        "keyframe_index": 160,
+        "source_frame_index": 8000,
+        "timestamp_s": 1066.532050658,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000160_1066532050658.png",
+        "gt_tum_row": 8000,
+        "image_sha256": "1ea6cf46728fce2ad3b46c74fe4200227ae0669e96ff4a72b1711455e2e4f8d3"
+      },
+      {
+        "keyframe_index": 161,
+        "source_frame_index": 8050,
+        "timestamp_s": 1068.532050753,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000161_1068532050753.png",
+        "gt_tum_row": 8050,
+        "image_sha256": "d3a1bc1e8eb8eb88f9f82f1f7f2b7c91c018c28d5f91cd501a5e67d81fb2dcd5"
+      },
+      {
+        "keyframe_index": 162,
+        "source_frame_index": 8100,
+        "timestamp_s": 1070.532050848,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000162_1070532050848.png",
+        "gt_tum_row": 8100,
+        "image_sha256": "214e4cc43357512fd5c0516a117f70e84ac2e95b9e833432f0119a6d29079d2c"
+      },
+      {
+        "keyframe_index": 163,
+        "source_frame_index": 8150,
+        "timestamp_s": 1072.532050943,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000163_1072532050943.png",
+        "gt_tum_row": 8150,
+        "image_sha256": "7e69a3cd944e0fa19798755718ddb93c1c8a05e38b1e71e244800180796ca403"
+      },
+      {
+        "keyframe_index": 164,
+        "source_frame_index": 8200,
+        "timestamp_s": 1074.532051038,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000164_1074532051038.png",
+        "gt_tum_row": 8200,
+        "image_sha256": "6b1dbd4c64a819b598bca89eff56d59eaf62f98c20e9a3f5052fe59f74f80197"
+      },
+      {
+        "keyframe_index": 165,
+        "source_frame_index": 8250,
+        "timestamp_s": 1076.532051133,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000165_1076532051133.png",
+        "gt_tum_row": 8250,
+        "image_sha256": "1340f40f296427c92ff5f3e5b20a2259c3b1d66b4ec234f7abdb38a86b798692"
+      },
+      {
+        "keyframe_index": 166,
+        "source_frame_index": 8300,
+        "timestamp_s": 1078.532051228,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000166_1078532051228.png",
+        "gt_tum_row": 8300,
+        "image_sha256": "4fe2d62f7cf6f33c70d31a39a9ff7df5811ea149896da08ab19bac9366ab0df2"
+      },
+      {
+        "keyframe_index": 167,
+        "source_frame_index": 8350,
+        "timestamp_s": 1080.532051323,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000167_1080532051323.png",
+        "gt_tum_row": 8350,
+        "image_sha256": "fffa476422473fc7568b2b2153ad5f51352cd31e77235ecc9fc8c9df969fe052"
+      },
+      {
+        "keyframe_index": 168,
+        "source_frame_index": 8400,
+        "timestamp_s": 1082.532051418,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000168_1082532051418.png",
+        "gt_tum_row": 8400,
+        "image_sha256": "27ef7f133c80e331768473d2c4e5ee7c65c338901f50018cf3921c9aeccec5f2"
+      },
+      {
+        "keyframe_index": 169,
+        "source_frame_index": 8450,
+        "timestamp_s": 1084.532051513,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000169_1084532051513.png",
+        "gt_tum_row": 8450,
+        "image_sha256": "fe8b0ec7a38d7fbd7aaa8f53389fb11347e33e2ea254553e51031aea43e48da2"
+      },
+      {
+        "keyframe_index": 170,
+        "source_frame_index": 8500,
+        "timestamp_s": 1086.532051608,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000170_1086532051608.png",
+        "gt_tum_row": 8500,
+        "image_sha256": "9a9432fae202398e08f393c603036de4abb994751c33ac27532bd17b8a78974f"
+      },
+      {
+        "keyframe_index": 171,
+        "source_frame_index": 8550,
+        "timestamp_s": 1088.532051702,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000171_1088532051702.png",
+        "gt_tum_row": 8550,
+        "image_sha256": "f9828abafcc78923bad7cd44a4a249960e85c6d6804cd739185f92c3c2f18b12"
+      },
+      {
+        "keyframe_index": 172,
+        "source_frame_index": 8600,
+        "timestamp_s": 1090.532051797,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000172_1090532051797.png",
+        "gt_tum_row": 8600,
+        "image_sha256": "efab76c8c7989a2288a91a130d6cd6b50e317dde78776a33783bfd3da80f0d2a"
+      },
+      {
+        "keyframe_index": 173,
+        "source_frame_index": 8650,
+        "timestamp_s": 1092.532051892,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000173_1092532051892.png",
+        "gt_tum_row": 8650,
+        "image_sha256": "0cd2a87a75b5bfed2cbe4d2a89252753e95b326b31ddbd94811d0cc539f3e54a"
+      },
+      {
+        "keyframe_index": 174,
+        "source_frame_index": 8700,
+        "timestamp_s": 1094.532051987,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000174_1094532051987.png",
+        "gt_tum_row": 8700,
+        "image_sha256": "03e5666e611b18424ea4de613c916ac9d85a009b9c0722ecc6343472d8c89740"
+      },
+      {
+        "keyframe_index": 175,
+        "source_frame_index": 8750,
+        "timestamp_s": 1096.532052082,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000175_1096532052082.png",
+        "gt_tum_row": 8750,
+        "image_sha256": "f9b516260826813ae681eb057584159f4ab479b22523401b3d81240b41cc8930"
+      },
+      {
+        "keyframe_index": 176,
+        "source_frame_index": 8800,
+        "timestamp_s": 1098.532052177,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000176_1098532052177.png",
+        "gt_tum_row": 8800,
+        "image_sha256": "a0ff7ddba871a686572999be1609a8cdd78b77ebb04b902a96afc83457f05688"
+      },
+      {
+        "keyframe_index": 177,
+        "source_frame_index": 8850,
+        "timestamp_s": 1100.532052272,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000177_1100532052272.png",
+        "gt_tum_row": 8850,
+        "image_sha256": "954df44f72a09b2c1e44519fe3fe080096c9a32059fcbf6dcf4324974a89b8b7"
+      },
+      {
+        "keyframe_index": 178,
+        "source_frame_index": 8900,
+        "timestamp_s": 1102.532052367,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000178_1102532052367.png",
+        "gt_tum_row": 8900,
+        "image_sha256": "57b1ee5e99210cb5f0480119e1722e09b718316acdf6490766514f328b43426f"
+      },
+      {
+        "keyframe_index": 179,
+        "source_frame_index": 8950,
+        "timestamp_s": 1104.532052462,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000179_1104532052462.png",
+        "gt_tum_row": 8950,
+        "image_sha256": "7af58ebd5f0c3da7ed9b6223bb76c0c4a76d121dc4d7544e9578e00b8c493b12"
+      }
+    ]
+  },
+  "same_video_withheld_from_modeller": {
+    "count": 20,
+    "frames": [
+      {
+        "keyframe_index": 0,
+        "source_frame_index": 0,
+        "timestamp_s": 746.532035458,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000000_746532035458.png",
+        "gt_tum_row": 0,
+        "image_sha256": "8ed8fa79aec7540f956696970a3dc2f6d64cec7a44223d22da5f53733c8ce5d1"
+      },
+      {
+        "keyframe_index": 9,
+        "source_frame_index": 450,
+        "timestamp_s": 764.532036313,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000009_764532036313.png",
+        "gt_tum_row": 450,
+        "image_sha256": "f2881f6fe372da7c755e47173018090643bbcd9661bf11417fc9a8c7c21ccdd9"
+      },
+      {
+        "keyframe_index": 18,
+        "source_frame_index": 900,
+        "timestamp_s": 782.532037168,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000018_782532037168.png",
+        "gt_tum_row": 900,
+        "image_sha256": "b2cb85a04b361f2b263ecd59134428851dca982969f49d8f81bed0e5f2ee32c5"
+      },
+      {
+        "keyframe_index": 28,
+        "source_frame_index": 1400,
+        "timestamp_s": 802.532038118,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000028_802532038118.png",
+        "gt_tum_row": 1400,
+        "image_sha256": "720bd6c2a6671fc8b6562eddd719ea1c0163e3f571af541611b8527a78df3fd7"
+      },
+      {
+        "keyframe_index": 37,
+        "source_frame_index": 1850,
+        "timestamp_s": 820.532038973,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000037_820532038973.png",
+        "gt_tum_row": 1850,
+        "image_sha256": "a5e08df86282294a215a61e3dcaea34c3a28b548adf76acd5a44c64d0e3cf0b2"
+      },
+      {
+        "keyframe_index": 47,
+        "source_frame_index": 2350,
+        "timestamp_s": 840.532039923,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000047_840532039923.png",
+        "gt_tum_row": 2350,
+        "image_sha256": "373b855c7ee13de75832dd15e343adcbc3cdd12420f3623588f567c2d6b988f0"
+      },
+      {
+        "keyframe_index": 56,
+        "source_frame_index": 2800,
+        "timestamp_s": 858.532040778,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000056_858532040778.png",
+        "gt_tum_row": 2800,
+        "image_sha256": "c86f4eeb811c788ebd4f29eaee67bc29e2e301fca184aabd732c856030565b22"
+      },
+      {
+        "keyframe_index": 65,
+        "source_frame_index": 3250,
+        "timestamp_s": 876.532041633,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000065_876532041633.png",
+        "gt_tum_row": 3250,
+        "image_sha256": "04c12470703024567080924c9fe8898e5a582020df667b8f868fe1df254608e5"
+      },
+      {
+        "keyframe_index": 75,
+        "source_frame_index": 3750,
+        "timestamp_s": 896.532042583,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000075_896532042583.png",
+        "gt_tum_row": 3750,
+        "image_sha256": "b3ac1a3e9e201aa5e6c3c0658c33533a8aa38c3364f14a587c6927de8689f7d0"
+      },
+      {
+        "keyframe_index": 84,
+        "source_frame_index": 4200,
+        "timestamp_s": 914.532043438,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000084_914532043438.png",
+        "gt_tum_row": 4200,
+        "image_sha256": "f6648c415d1ebcf6aff8ed2c640fb674e04b3d590ff1882b4adf4a13c755b577"
+      },
+      {
+        "keyframe_index": 94,
+        "source_frame_index": 4700,
+        "timestamp_s": 934.532044388,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000094_934532044388.png",
+        "gt_tum_row": 4700,
+        "image_sha256": "0e6507c96c326c9a2f13d0fb0bfba63536affb85afcda80fbccfe747d7351184"
+      },
+      {
+        "keyframe_index": 103,
+        "source_frame_index": 5150,
+        "timestamp_s": 952.532045243,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000103_952532045243.png",
+        "gt_tum_row": 5150,
+        "image_sha256": "dde31fa45f7fd8e81922f3568f32a339403c832796be5cc5d42c4f39a58d52b6"
+      },
+      {
+        "keyframe_index": 113,
+        "source_frame_index": 5650,
+        "timestamp_s": 972.532046193,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000113_972532046193.png",
+        "gt_tum_row": 5650,
+        "image_sha256": "a2ddd76fe8e239a8624f9deacae44f1604df926471cfb39e5fe2f04c7ab8a054"
+      },
+      {
+        "keyframe_index": 122,
+        "source_frame_index": 6100,
+        "timestamp_s": 990.532047048,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000122_990532047048.png",
+        "gt_tum_row": 6100,
+        "image_sha256": "b136e822d0a3ca92fe39cb04ca125fd789fd8564d9b6267078eaaaac13a5525c"
+      },
+      {
+        "keyframe_index": 131,
+        "source_frame_index": 6550,
+        "timestamp_s": 1008.532047903,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000131_1008532047903.png",
+        "gt_tum_row": 6550,
+        "image_sha256": "6f2978c853c7876246361ab861e9a20239bec3da52d3b90050be03eebcef7069"
+      },
+      {
+        "keyframe_index": 141,
+        "source_frame_index": 7050,
+        "timestamp_s": 1028.532048853,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000141_1028532048853.png",
+        "gt_tum_row": 7050,
+        "image_sha256": "984bcc2a739711cff17b9e989dfcba477c1be99fda6f3a6a21f663f9fae5aeee"
+      },
+      {
+        "keyframe_index": 150,
+        "source_frame_index": 7500,
+        "timestamp_s": 1046.532049708,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000150_1046532049708.png",
+        "gt_tum_row": 7500,
+        "image_sha256": "ef533d154d3f9d225ef4dcb2725e08e556b451e1ad34c3f9e0de945f56ef1778"
+      },
+      {
+        "keyframe_index": 160,
+        "source_frame_index": 8000,
+        "timestamp_s": 1066.532050658,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000160_1066532050658.png",
+        "gt_tum_row": 8000,
+        "image_sha256": "1ea6cf46728fce2ad3b46c74fe4200227ae0669e96ff4a72b1711455e2e4f8d3"
+      },
+      {
+        "keyframe_index": 169,
+        "source_frame_index": 8450,
+        "timestamp_s": 1084.532051513,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000169_1084532051513.png",
+        "gt_tum_row": 8450,
+        "image_sha256": "fe8b0ec7a38d7fbd7aaa8f53389fb11347e33e2ea254553e51031aea43e48da2"
+      },
+      {
+        "keyframe_index": 179,
+        "source_frame_index": 8950,
+        "timestamp_s": 1104.532052462,
+        "image_path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/runs/stable_orbit_20260921T044401/keyframes_180/images/000179_1104532052462.png",
+        "gt_tum_row": 8950,
+        "image_sha256": "7af58ebd5f0c3da7ed9b6223bb76c0c4a76d121dc4d7544e9578e00b8c493b12"
+      }
+    ],
+    "is_true_holdout": false,
+    "reason": "frontends may have observed the same video"
+  },
+  "independent_holdout": {
+    "status": "missing",
+    "required": "new camera trajectory hidden from every frontend"
+  },
+  "gt_zdepth": {
+    "status": "not_rendered",
+    "renderer_interface": "scripts/render_gt_depth_blender.py",
+    "required_camera_source": "mapping.frames and independent_holdout.frames",
+    "depth_axis": "camera optical z",
+    "resolution": [
+      1280,
+      960
+    ]
+  },
+  "gt_geometry": {
+    "status": "referenced",
+    "mesh_path": "/home/hchen/Documents/astraBlenderTest/drone-web/scenes/world_lobby/Collected_World_Lobby/World_Lobby.usd",
+    "triangles": 9984967,
+    "copy_policy": "do not copy or expose to modeller"
+  },
+  "synthetic_novel_views": {
+    "status": "ready",
+    "path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/results/ground_truth/independent_holdout_20/manifest.json",
+    "count": 20,
+    "is_true_independent_holdout": false,
+    "supports_independent_generalization": false
+  },
+  "legacy_smoke": {
+    "status": "invalid_not_depth",
+    "path": "results/ground_truth/gt_depth_smoke",
+    "reason": "pre-Z-pass Workbench color EXR; excluded from evaluation"
+  }
+}

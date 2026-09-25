@@ -1,0 +1,150 @@
+{
+  "task": "G1 language-goal navigation",
+  "scene": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/world_lobby/M4/astra_model",
+  "instruction": "找到南侧长着金黄色花枝的长方形花盆，走过去面对它。",
+  "query": {
+    "status": "matched",
+    "category": "potted_plant or planter",
+    "attribute_filters": [
+      [
+        "foliage",
+        "golden"
+      ]
+    ],
+    "direction": "south",
+    "direction_convention": "north = +Y in the M4 map",
+    "candidates": [
+      {
+        "object_id": "flower_planter_1",
+        "score": 1.0,
+        "center_y_m": 20.73341941833496
+      },
+      {
+        "object_id": "flower_planter_0",
+        "score": 1.0,
+        "center_y_m": 23.062698364257812
+      }
+    ],
+    "scope": "constrained Chinese categories, attributes and cardinal directions over reconstructed semantics; no visual object recognition"
+  },
+  "localization": "simulator-state-oracle",
+  "geometry": "frozen reconstructed conservative AABB collision layer",
+  "language_scope": "constrained Chinese attributes and north/south instance selection; north is map +Y",
+  "robot": "official Unitree G1 12DOF CPU policy",
+  "goal_pose_supplied": false,
+  "GT_access": false,
+  "status": "success",
+  "target_id": "flower_planter_1",
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        14.096306800842285,
+        23.664939880371094,
+        0.8410000011324883
+      ],
+      [
+        14.944999809265138,
+        20.570000762939454,
+        0.8410000011324883
+      ],
+      [
+        15.744999809265137,
+        20.370000762939455,
+        0.8410000011324883
+      ],
+      [
+        17.51742682699316,
+        20.37112453896575,
+        0.8410000011324883
+      ]
+    ],
+    "expanded": 127
+  },
+  "planning_seconds": 0.05671208701096475,
+  "arrived_at_s": 17.882,
+  "simulated_seconds": 17.882,
+  "final_position": [
+    17.313447767218268,
+    20.31473274440068,
+    0.821088873301735
+  ],
+  "final_goal_distance_m": 0.2116305538454162,
+  "path_length_m": 6.004225039541086,
+  "obstacle_contact_steps": 0,
+  "obstacle_contacts": 0,
+  "fallen": false,
+  "planned_goal": [
+    17.51742682699316,
+    20.37112453896575,
+    0.8410000011324883
+  ],
+  "target": {
+    "object_id": "flower_planter_1",
+    "category": "planter",
+    "attributes": {
+      "foliage": "golden branching flowering shrubs",
+      "body_size_m": [
+        0.72,
+        1.65,
+        0.6
+      ],
+      "plant_microgeometry": "inferred"
+    },
+    "center": [
+      18.869529724121094,
+      20.73341941833496,
+      0.798881471157074
+    ],
+    "bounds": [
+      [
+        18.193574905395508,
+        19.86207389831543,
+        0.02499997615814209
+      ],
+      [
+        19.54548454284668,
+        21.604764938354492,
+        1.5727629661560059
+      ]
+    ],
+    "spatial_relations": [
+      {
+        "relation": "behind",
+        "object_id": "lounge_seat_2"
+      }
+    ],
+    "evidence_frame_ids": [
+      0,
+      80,
+      90,
+      100,
+      138
+    ],
+    "evidence": {
+      "frame_ids": [
+        0,
+        80,
+        90,
+        100,
+        138
+      ]
+    },
+    "geometry_provenance": {
+      "observed": "RGB semantic interpretation + local metric depth; RGB multiview cross-check",
+      "inferred": "solid thickness, hidden backs, fastening, exact textile/weave/leaf microgeometry"
+    },
+    "blender_root": "flower_planter_1",
+    "part_count": 381
+  },
+  "limitations": [
+    "constrained Chinese attribute/direction matching over generated semantics",
+    "simulator-state-oracle localization",
+    "conservative AABB world, not original triangle mesh",
+    "collision materials assumed, not measured",
+    "no GT-world transfer in this result"
+  ],
+  "scene_method": "M4",
+  "floor_representation": "original stone floor slab top 0.025 m and raised inset top 0.041 m; finite floor bounds",
+  "recognition_scope": "generated semantic map lookup; target visibility verified separately after execution"
+}

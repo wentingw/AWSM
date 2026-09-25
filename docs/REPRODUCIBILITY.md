@@ -68,7 +68,13 @@ Pose implementation checks:
 python -m pytest -q tests/test_pose_metrics.py
 ```
 
-## Robot tasks
+## Robot tasks — current M4 revision
+
+Both tasks in the current article use M4. See [M4 downstream protocol and commands](M4_DOWNSTREAM_20260924.md) for the new 20-query drone experiment and 20-execution G1 language/planter experiment, independent target/visibility evaluation, and exact limitations. The reproduction ZIP retains both revisions.
+
+### Historical M3 experiments
+
+The following commands and results describe the earlier M3 tasks, retained unchanged for provenance; they are not the current article results.
 
 The official Unitree asset/policy checkout is pinned at `276801e46c5d433564f24658bac64f254b7d2d4b`. The DINOv2-small weights and hashes are recorded under `runtime/visual_features/dinov2-small/`. Neither task reads GT target poses or the GT map during planning/execution. Both use simulator-state-oracle self-localization.
 
@@ -96,3 +102,17 @@ python -m http.server 8766 --bind 127.0.0.1 --directory dist
 Open `http://127.0.0.1:8766/`. Both languages, tables, videos, figures, local model-viewer library and lightweight GLBs are in the static bundle. The page needs HTTP for the model-viewer assets; opening a `file://` URL may trigger browser CORS restrictions.
 
 `python scripts/qa_blog_browser.py --dist` checks both languages at desktop and mobile widths, the view selector and the interactive model. `results/site_qa/` contains screenshots and a machine-readable report. The bundle intentionally excludes runtime environments, raw full-capture frames, checkpoints, browser profiles and credentials.
+
+## Five-view appearance metrics (Table 5)
+
+`scripts/evaluate_appearance_lpips.py` reads the frozen five-view renders and verifies that recomputed PSNR/SSIM match their original values. It adds LPIPS for M1–M4 in a separate result directory, leaving the original images and reports unchanged. The implementation is `lpips==0.1.4`, AlexNet, learned v0.1 calibration with an ImageNet-pretrained backbone; all results average keyframes 0/36/72/108/144 at 640×480. See `results/evaluation/appearance_five_views_20260925/report.json` for per-image hashes, settings, versions and weight hashes.
+
+Install only the added package into the isolated workspace target and run with the reconstruction Python, which already supplies Torch, torchvision, NumPy, Pillow and scikit-image:
+
+```bash
+python -m pip install --no-deps --target runtime/lpips_python lpips==0.1.4
+python scripts/evaluate_appearance_lpips.py
+python scripts/build_blog.py
+```
+
+On this host retain the earlier `LD_PRELOAD` setting for Torch. The evaluator defaults to a workspace-local `runtime/lpips_torch` model cache and downloads the official PyTorch AlexNet checkpoint when absent. Weight files and runtime environments are not part of the public source archive. Table 4 reads B2p geometry from the frozen `supplementary_rows.B2p` result, with no re-fitting.

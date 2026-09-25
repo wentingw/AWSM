@@ -13,7 +13,7 @@ python -m venv .venv-core
 .venv-core/bin/python tests/test_pose_metrics.py
 ```
 
-The verifier checks the bytes and SHA256 of all 417 copied source/evidence files, parses every runnable Python file, and checks the artifact lock. The pose checks cover alignment and relative-pose invariance, quaternion sign equivalence, timestamp endpoint rounding, and rejection of trajectories without overlap. Passing these checks does not re-execute reconstruction or robot tasks.
+The verifier checks the bytes and SHA256 of all files listed in the current `source_snapshot.json` (1,122 source/evidence files in this update), parses every runnable Python file, and checks the artifact lock. The pose checks cover alignment and relative-pose invariance, quaternion sign equivalence, timestamp endpoint rounding, and rejection of trajectories without overlap. Passing these checks does not re-execute reconstruction or robot tasks.
 
 `source_snapshot.json` maps each preserved file to its historical origin. Root project documentation and new portability helpers are separately tracked by Git. The original experiment workspace and legacy experiments remain unchanged.
 
@@ -29,6 +29,8 @@ python scripts/fetch_artifacts.py --auth --group models --output assets
 # Optional: all published evidence, models, figures and task artifacts (~759 MB).
 python scripts/fetch_artifacts.py --auth --group all --output assets
 ```
+
+This HF revision preserves the original frozen models; it does **not** include the later M4 task or LPIPS update. Those results and sources are included directly in Git. Display-only GLBs are separately pinned in `evidence/blog_20260925/display_asset_lock.json`.
 
 The eight original Blender/GLB artifacts are written under `assets/models/M1/` through `M4/`. Open a `scene.blend` in Blender 5.2.0 to inspect the frozen output. The assets retain the upstream publication layout; the downloader does not rewrite input manifests or unpack source archives.
 
@@ -56,7 +58,7 @@ Do not treat rendering scores as pose errors. M1 has no native pose estimate; it
 
 Saved Blender builders preserve construction actions, measurements and frozen models. Executing a builder is not equivalent to reproducing the model's reasoning. Independent Astra sessions are nondeterministic; M1 also had a different historical budget. See `configs/astra_modelling_contract.md` and the modelling manifests.
 
-The task snapshots preserve episode requests and summaries; larger trajectories/media are in HF. G1 and drone execution rely on simulator-state self-localization. Drone arrival and exact rephotography are distinct outcomes. G1 approach success is not independent visual object recognition or real-robot transfer. Check the frozen task protocol before comparing results.
+The current M4 task snapshots include all 40 episode requests, summaries and trajectories in Git, plus the reference/candidate/endpoint images, G1 visibility masks and two presentation videos. See `docs/M4_DOWNSTREAM_20260924.md`. Both controllers use simulator-state self-localization. Drone arrival and exact rephotography are distinct outcomes. G1 target identity and mesh visibility are checked independently from navigation, but are not learned visual recognition or real-robot transfer. Earlier M3 records are historical evidence. The pinned HF release predates this M4 task revision; current task evidence is in this Git repository.
 
 ## Historical diagnostics
 
@@ -65,3 +67,16 @@ Three superseded novel-depth diagnostics are preserved as `.py.txt` in `archive/
 ## Blog source
 
 `blog/` includes the bilingual article and templates. Rendering/package scripts depend on the full original asset layout; this compact source checkout alone is not a self-contained website bundle. The already-published site is https://wentingw.github.io/astra-world-model-blog/. Do not run historical publishing commands to create or overwrite a release.
+
+## Audit the current article without running Blender or robots
+
+```bash
+python scripts/verify_source_snapshot.py
+python scripts/audit_blog_snapshot.py
+# NumPy needed; recalculates G1 path length, approach and bearing from saved states.
+python revisions/m4_downstream_20260924/verify_g1_results.py
+```
+
+The standard-library audit checks all 20 LPIPS input-pair hashes and score means, drone outcomes/thresholds, G1 identity/visibility records and both pages' table numbering. It verifies saved evidence, not fresh LPIPS inference or physics. The preserved independent check scripts document the deeper evaluations. To re-run LPIPS install the versions recorded in its report, obtain the exact weight hashes, and follow `scripts/evaluate_appearance_lpips.py`; no model checkpoint or Python environment is vendored here.
+
+See [the current evidence index](evidence/blog_20260925/README.md) for the table-to-file map. `published_files.json` records the SHA256 of every deployed file at the fixed public commit. Source article files use the workspace layout and can differ from deployed copies due to link rewriting. `source_snapshot.json` preserves the original workspace bytes; the published ZIP rewrites paths and normalizes text, so its bytes can differ without changing the experimental values.

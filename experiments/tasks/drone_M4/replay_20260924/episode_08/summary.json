@@ -1,0 +1,95 @@
+{
+  "task": "drone reference-image search and rephotography",
+  "request": {
+    "query_id": 8,
+    "reference_rgb": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/frozen_inputs/photographic_mapping_queries/reference_08.png",
+    "keyframe_index": 12,
+    "start_xyz": [
+      10.475356101989746,
+      21.508216857910156,
+      2.38932466506958
+    ],
+    "floor_z": 0.04100000113248825
+  },
+  "retrieval_path": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/drone_M4/replay_20260924/episode_08/retrieval.json",
+  "candidate_attempts": [
+    {
+      "view_id": 78,
+      "retrieval_score": 0.6555130481719971,
+      "plan_status": "success",
+      "expanded": 0
+    }
+  ],
+  "planning_seconds": 0.0023348398972302675,
+  "query_pose_input": false,
+  "GT_access": false,
+  "localization": "simulator-state-oracle",
+  "status": "collision",
+  "selected_view_id": 78,
+  "plan": {
+    "status": "success",
+    "path": [
+      [
+        10.475356101989746,
+        21.508216857910156,
+        2.38932466506958
+      ],
+      [
+        18.787961959838867,
+        23.54338264465332,
+        2.435199499130249
+      ]
+    ],
+    "expanded": 0
+  },
+  "dynamics": {
+    "status": "collision",
+    "final_position": [
+      18.782608060902444,
+      23.54210088567751,
+      2.4304445454543924
+    ],
+    "goal_error_m": 0.007274388245966142,
+    "simulated_seconds": 16.1,
+    "collision_steps": 18,
+    "path_length_m": 11.122580504382395,
+    "physics": "MuJoCo 6DOF, 1kg body, four bounded thrust actuators",
+    "localization": "simulator-state-oracle",
+    "camera_mount": "ideal stabilized gimbal, no gimbal dynamics",
+    "world_collision": "reconstructed conservative AABB layer",
+    "GT_access": false
+  },
+  "final_camera_to_model": [
+    [
+      -0.9203463196754456,
+      0.08084658533334732,
+      -0.38265711069107056,
+      18.782608060902444
+    ],
+    [
+      0.39110440015792847,
+      0.19024807214736938,
+      -0.9004682302474976,
+      23.54210088567751
+    ],
+    [
+      -2.7755575615628914e-17,
+      -0.9784014821052551,
+      -0.20671357214450836,
+      2.4304445454543924
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_refinement_iterations": 0,
+  "limitations": [
+    "coarse DINO retrieval; no continuous image refinement in this first-stage result",
+    "ideal stabilized gimbal",
+    "reconstructed conservative box collision world",
+    "no GT-world physical transfer tested here"
+  ]
+}

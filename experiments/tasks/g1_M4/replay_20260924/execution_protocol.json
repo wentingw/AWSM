@@ -1,0 +1,146 @@
+{
+  "scene_method": "M4",
+  "episodes": 20,
+  "independent_target_instances": 5,
+  "initial_locations": 4,
+  "requests": [
+    {
+      "episode_id": 0,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_00/request.json"
+    },
+    {
+      "episode_id": 1,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_01/request.json"
+    },
+    {
+      "episode_id": 2,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_02/request.json"
+    },
+    {
+      "episode_id": 3,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_03/request.json"
+    },
+    {
+      "episode_id": 4,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_04/request.json"
+    },
+    {
+      "episode_id": 5,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_05/request.json"
+    },
+    {
+      "episode_id": 6,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_06/request.json"
+    },
+    {
+      "episode_id": 7,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_07/request.json"
+    },
+    {
+      "episode_id": 8,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_08/request.json"
+    },
+    {
+      "episode_id": 9,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_09/request.json"
+    },
+    {
+      "episode_id": 10,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_10/request.json"
+    },
+    {
+      "episode_id": 11,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_11/request.json"
+    },
+    {
+      "episode_id": 12,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_12/request.json"
+    },
+    {
+      "episode_id": 13,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_13/request.json"
+    },
+    {
+      "episode_id": 14,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_14/request.json"
+    },
+    {
+      "episode_id": 15,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_15/request.json"
+    },
+    {
+      "episode_id": 16,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_16/request.json"
+    },
+    {
+      "episode_id": 17,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_17/request.json"
+    },
+    {
+      "episode_id": 18,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_18/request.json"
+    },
+    {
+      "episode_id": 19,
+      "request": "experiments/tasks/g1_M4/replay_20260924/episode_19/request.json"
+    }
+  ],
+  "spawns": [
+    {
+      "start_xy": [
+        10.530747413635254,
+        21.700000762939453
+      ],
+      "floor_z": 0.04100000113248825,
+      "start_yaw": 0.0,
+      "source_mapping_frame": 0
+    },
+    {
+      "start_xy": [
+        11.991413116455078,
+        24.14495849609375
+      ],
+      "floor_z": 0.04100000113248825,
+      "start_yaw": 0.0,
+      "source_mapping_frame": 60
+    },
+    {
+      "start_xy": [
+        14.096306800842285,
+        23.664939880371094
+      ],
+      "floor_z": 0.04100000113248825,
+      "start_yaw": 0.0,
+      "source_mapping_frame": 66
+    },
+    {
+      "start_xy": [
+        20.33673095703125,
+        24.04825210571289
+      ],
+      "floor_z": 0.04100000113248825,
+      "start_yaw": 0.0,
+      "source_mapping_frame": 81
+    }
+  ],
+  "language_scope": "five Chinese attribute/direction instructions, each executed from four initial locations; north=map +Y",
+  "localization": "simulator-state-oracle",
+  "version": "fixed original M4 geometry; conservative AABB obstacles and two original floor slabs",
+  "success_criteria": {
+    "navigation": "collision-free, upright, approach error <=0.30 m, target bearing <=15deg, dwell >=1.5s",
+    "visibility": "post-execution M4 mesh first-hit rays; target covers at least 0.1% of a 640x480 camera image",
+    "identity": "selected target matches evaluator-only intended instance"
+  },
+  "controller": {
+    "policy": "official G1 12DOF motion.pt",
+    "physics": "MuJoCo",
+    "timeout_s": 90,
+    "planning_radius_m": 0.47
+  },
+  "frozen_source_hashes": {
+    "scene.blend": "cc6cb605246a255d94e36b9dc3f8b91d5a292b047470bc0ff75b8a5c404b0cfe",
+    "objects.json": "938ac684b9b9a13172b48125c8c10d6b8ab83d85e01ef04be0da19a365f0e2fb",
+    "colliders.json": "ae3cb1b301218bca52ca5e38cd77c55305895173ae2bd8c890679946801fba17"
+  },
+  "expected_target_file_not_read_by_controller": true
+}

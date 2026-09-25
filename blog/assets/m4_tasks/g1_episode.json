@@ -1,0 +1,16 @@
+{
+  "source_episode": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M4/replay_20260924/episode_00",
+  "source_trajectory": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M4/replay_20260924/episode_00/trajectory_full.csv",
+  "source_trajectory_sha256": "6f6e5f2270ba3ee30923cf80a3c2d8540711634e44bdbd17a5d48e9055f9de0f",
+  "world_xml": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M4/presentation_20260924/episode_display.xml",
+  "source_world_xml_sha256": "50426da40b3feeacbe27337b3d1134e68c678b78e4e2ef370215041817a7b9e4",
+  "policy_rerun": false,
+  "teleport": false,
+  "render_mode": "MuJoCo replay of saved qpos; display XML with non-colliding M4 material meshes and hidden collision AABBs",
+  "fps": 20,
+  "speed_label": 1.0,
+  "display_metadata": "/home/hchen/Documents/astraBlenderTest/world_model_blog/experiments/tasks/g1_M4/presentation_20260924/display_metadata.json",
+  "display_manifest_sha256": "6b381fd038317de692213645fa9dd13fbb7da8c9da4b5cbfd8d9825241cf48d4",
+  "source_physics_xml_sha256": "7fdc03a336895659ef6f92a052cab08603736bf3021144024a5b92a36502e88c",
+  "codec": "H.264 yuv420p faststart"
+}

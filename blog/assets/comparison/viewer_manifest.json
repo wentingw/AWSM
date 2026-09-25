@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "coordinate_frame": "shared GT world frame; metres; glTF Y-up",
+  "camera": {
+    "target": [18.0, 1.2, -21.0],
+    "position": [18.0, 10.0, -3.0],
+    "fov": 42.0,
+    "near": 0.05,
+    "far": 500.0
+  },
+  "models": {
+    "M1": {"url": "assets/comparison/M1.glb"},
+    "M2": {"url": "assets/comparison/M2.glb"},
+    "M3": {"url": "assets/comparison/M3.glb"},
+    "M4": {"url": "assets/comparison/M4.glb"},
+    "GT": {"url": "assets/comparison/GT.glb"}
+  },
+  "provenance": "assets/comparison/comparison_provenance.json"
+}

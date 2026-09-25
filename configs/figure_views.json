@@ -68,8 +68,16 @@
     "M1",
     "M2",
     "M3",
+    "M4",
     "GT"
   ],
   "rows": 5,
-  "held_out": false
+  "held_out": false,
+  "column_labels": [
+    "RGB-only + Astra",
+    "ViPE + Astra",
+    "OpenVINS + MapAnything + Astra",
+    "GT pose + MapAnything + Astra",
+    "Input GT"
+  ]
 }
