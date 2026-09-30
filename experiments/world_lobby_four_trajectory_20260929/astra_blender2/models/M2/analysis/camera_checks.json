@@ -1,0 +1,252 @@
+{
+  "version": 3,
+  "all180_input_poses_preserved": true,
+  "max_camera_matrix_error": 0.0,
+  "geometry_scale": 1,
+  "rotation_orthogonality_error": 2.220446049250313e-16,
+  "rotation_determinant": 1.0000000000000002,
+  "public_rgb_calibration": [
+    [
+      762.8,
+      0,
+      640
+    ],
+    [
+      0,
+      762.8,
+      480
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "depth_backprojection_intrinsics": "NPZ intrinsics for each frame at392x294; never RGB K on depth grid",
+  "projection_validation": "generic paired helper verified pixel-center RDF-to-Blender projection at3 probe rays for each of10 actual checks",
+  "paired_checks": [
+    {
+      "sample_index": 33,
+      "comparison_sheet": "checks/v3/0033_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Rod spikes removed; wall seams backed. Pendant foreground closer to source silhouette; far hanging-lamp arrangement and end-wall depth remain inconsistent. Far seat group too boxy; patterned floor subdued.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304962,
+        "valid_coverage": 0.999993441848874,
+        "invalid_rate": 6.5581511260459635e-06,
+        "mae_m": 1.0220276329687108,
+        "rmse_m": 1.523588515819622,
+        "absrel": 0.12369855331504563,
+        "delta1": 0.8937343013227877,
+        "delta2": 0.9661957883277261,
+        "delta3": 0.9911595543051266,
+        "missing_penalty_mae_m": 1.02221767489082
+      }
+    },
+    {
+      "sample_index": 61,
+      "comparison_sheet": "checks/v3/0061_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Flat mirror discs now lower/wider with ten measured circles; source silhouette broadly reproduced. No seam or portal misses. Seat shared solids no longer intersect but backs remain too high/blocky.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304961,
+        "valid_coverage": 0.999990162773311,
+        "invalid_rate": 9.837226689013434e-06,
+        "mae_m": 0.27199637896984363,
+        "rmse_m": 0.5862542192112639,
+        "absrel": 0.0552976884706386,
+        "delta1": 0.9209177566967579,
+        "delta2": 0.9924777266601303,
+        "delta3": 0.9986654031171199,
+        "missing_penalty_mae_m": 0.27228882008047667
+      }
+    },
+    {
+      "sample_index": 74,
+      "comparison_sheet": "checks/v3/0074_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Mirror fit and open service aperture visible; bounded returns give real depth. Recess corner closer to source. Foreground chair shape and lamp rim/profile remain approximate.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304964,
+        "valid_coverage": 1.0,
+        "invalid_rate": 0.0,
+        "mae_m": 0.37350022922956255,
+        "rmse_m": 0.5796168953123997,
+        "absrel": 0.07483308158396626,
+        "delta1": 0.9390977295680801,
+        "delta2": 0.9796139872247216,
+        "delta3": 0.9951895961490537,
+        "missing_penalty_mae_m": 0.37350022922956255
+      }
+    },
+    {
+      "sample_index": 82,
+      "comparison_sheet": "checks/v3/0082_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V3 restores visible recess return panels after v2 backing-side bug. Major pendant correspondence/order errors remain: some source lamps absent at matching locations. Plant shapes coarse despite fixed branching.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304961,
+        "valid_coverage": 0.999990162773311,
+        "invalid_rate": 9.837226689013434e-06,
+        "mae_m": 0.5963474101522545,
+        "rmse_m": 1.0576727539928823,
+        "absrel": 0.12227582690220465,
+        "delta1": 0.8684454733556094,
+        "delta2": 0.92893845442532,
+        "delta3": 0.9742262125320943,
+        "missing_penalty_mae_m": 0.5966366605482669
+      }
+    },
+    {
+      "sample_index": 91,
+      "comparison_sheet": "checks/v3/0091_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V3 restores near-wall panels; no thin depth leaks. Planters same two assemblies; foliage and near-end lamps incomplete. Floor/lighting weaker than source.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304962,
+        "valid_coverage": 0.999993441848874,
+        "invalid_rate": 6.5581511260459635e-06,
+        "mae_m": 0.3365650464937199,
+        "rmse_m": 0.8721971026194926,
+        "absrel": 0.04436268555247491,
+        "delta1": 0.9648120093651013,
+        "delta2": 0.983312675021806,
+        "delta3": 0.992707288121143,
+        "missing_penalty_mae_m": 0.3367595837830623
+      }
+    },
+    {
+      "sample_index": 100,
+      "comparison_sheet": "checks/v3/0100_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk intrusion largely removed while keeping source-camera projection. Window door frames thicker, still too stylized. Lamp ordering remains imperfect.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304964,
+        "valid_coverage": 1.0,
+        "invalid_rate": 0.0,
+        "mae_m": 0.573028953585543,
+        "rmse_m": 0.9950962058197946,
+        "absrel": 0.09499731688478152,
+        "delta1": 0.9244599362547711,
+        "delta2": 0.9635235634369959,
+        "delta3": 0.9928057082147401,
+        "missing_penalty_mae_m": 0.573028953585543
+      }
+    },
+    {
+      "sample_index": 108,
+      "comparison_sheet": "checks/v3/0108_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk front-left silhouette aligns better; source planters/seat positions still differ. Floor reflections overly smooth and lamp shape/order unresolved.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304960,
+        "valid_coverage": 0.9999868836977479,
+        "invalid_rate": 1.3116302252091927e-05,
+        "mae_m": 0.5093026759910517,
+        "rmse_m": 0.9805326304689918,
+        "absrel": 0.10050759906534444,
+        "delta1": 0.8649167103882477,
+        "delta2": 0.9306695960125918,
+        "delta3": 0.9695369884575026,
+        "missing_penalty_mae_m": 0.5096894848907777
+      }
+    },
+    {
+      "sample_index": 118,
+      "comparison_sheet": "checks/v3/0118_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk improved but own DA3 discrepancy persists; column and plants remain approximate. No shell-gap misses.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304962,
+        "valid_coverage": 0.999993441848874,
+        "invalid_rate": 6.5581511260459635e-06,
+        "mae_m": 0.4390894147177576,
+        "rmse_m": 0.7439063964052953,
+        "absrel": 0.08549900988894463,
+        "delta1": 0.8824246955358372,
+        "delta2": 0.9508758468268178,
+        "delta3": 0.9796630399853097,
+        "missing_penalty_mae_m": 0.43928327963679903
+      }
+    },
+    {
+      "sample_index": 129,
+      "comparison_sheet": "checks/v3/0129_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Dominant foreground pendant moved into correct source location. Far lamps remain partly mismatched; seated forms and planters simplified. Desk DA3 residual worsens despite RGB corner agreement.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304962,
+        "valid_coverage": 0.999993441848874,
+        "invalid_rate": 6.5581511260459635e-06,
+        "mae_m": 0.9471339821105982,
+        "rmse_m": 1.2355600365484836,
+        "absrel": 0.1665778037045333,
+        "delta1": 0.9270827185026331,
+        "delta2": 0.9696552357342882,
+        "delta3": 0.9864573291098563,
+        "missing_penalty_mae_m": 0.947324515196588
+      }
+    },
+    {
+      "sample_index": 155,
+      "comparison_sheet": "checks/v3/0155_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Forward view confirms corrected rods and supported shell; source pattern, seating backs and vegetation still approximate. End-wall prediction conflict remains pronounced.",
+      "input_consistency": {
+        "pixels_domain": 304964,
+        "pixels_valid": 304949,
+        "valid_coverage": 0.9999508138665547,
+        "invalid_rate": 4.9186133445289215e-05,
+        "mae_m": 1.4221295422668314,
+        "rmse_m": 1.9628459069602837,
+        "absrel": 0.16658534652619242,
+        "delta1": 0.7724767092202303,
+        "delta2": 0.9571436535289507,
+        "delta3": 0.9861321073359808,
+        "missing_penalty_mae_m": 1.4235351772167468
+      }
+    }
+  ],
+  "aggregate_own_DA3": {
+    "pixels_domain": 3049640,
+    "pixels_valid": 3038811,
+    "valid_coverage": 0.9964490890728086,
+    "invalid_rate": 0.0035509109271913974,
+    "mae_m": 0.7467164041975122,
+    "rmse_m": 1.28324838530742,
+    "absrel": 0.11923887180900303,
+    "delta1": 0.853915890129396,
+    "delta2": 0.9449185882241442,
+    "delta3": 0.9850681730453128,
+    "missing_penalty_mae_m": 0.8505922085740762
+  },
+  "full180_initial_input_check": {
+    "report": "checks/input_v1/report.json",
+    "aggregate": {
+      "pixels_domain": 3440675,
+      "pixels_valid": 3430313,
+      "valid_coverage": 0.9969883816402305,
+      "invalid_rate": 0.0030116183597694857,
+      "mae_m": 1.5012600419531856,
+      "rmse_m": 2.896534239974394,
+      "absrel": 0.6542477779959428,
+      "delta1": 0.7270246184531849,
+      "delta2": 0.8500626619203554,
+      "delta3": 0.8930663178549596,
+      "missing_penalty_mae_m": 1.5870873704411366
+    }
+  },
+  "not_ground_truth": true,
+  "paired_checks_v1_retained": "versions/v1/analysis/camera_checks.json",
+  "native_camera_file_unchanged_from_v1": true,
+  "all_check_domains_unchanged": true
+}

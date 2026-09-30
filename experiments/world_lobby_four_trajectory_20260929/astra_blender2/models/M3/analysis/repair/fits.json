@@ -1,0 +1,235 @@
+{
+  "column": {
+    "observations": [
+      [
+        33,
+        150,
+        119,
+        155
+      ],
+      [
+        100,
+        150,
+        238,
+        258
+      ],
+      [
+        108,
+        150,
+        140,
+        174
+      ],
+      [
+        118,
+        150,
+        22,
+        91
+      ],
+      [
+        129,
+        150,
+        176,
+        212
+      ]
+    ],
+    "observation_convention": "frame, row, left_u, right_u at 640x480; tangent planes",
+    "before": [
+      6.75,
+      3.1,
+      0.36
+    ],
+    "after": [
+      7.774570952941778,
+      2.9121683961337244,
+      0.2983414482395525
+    ],
+    "tangent_distance_residuals_m": [
+      0.05692714567010421,
+      -0.04480816462303955,
+      -0.03021126459842155,
+      -0.04636609884823323,
+      0.0204684568721914,
+      0.00602549773796307,
+      0.031231324511162784,
+      0.001986021714800834,
+      -0.059919250598028995,
+      0.06466633216150025
+    ],
+    "rms_m": 0.041854106766497486,
+    "uncertainty": "manual silhouette pixels \u00b13 px; fixed upright circular section inferred"
+  },
+  "pendant_wall": {
+    "observations": [
+      [
+        61,
+        292,
+        64
+      ],
+      [
+        74,
+        447,
+        37
+      ]
+    ],
+    "point": [
+      4.655132546949051,
+      -2.970655196502806,
+      3.5632419361894927
+    ],
+    "reprojection_errors_px": [
+      1.6239384422042464,
+      1.4228644863956073
+    ]
+  },
+  "pendant_centre": {
+    "observations": [
+      [
+        33,
+        392,
+        89
+      ],
+      [
+        129,
+        335,
+        67
+      ],
+      [
+        155,
+        381,
+        66
+      ]
+    ],
+    "point": [
+      5.549893044661595,
+      -1.3334310898165807,
+      3.6247468946561425
+    ],
+    "reprojection_errors_px": [
+      1.446106384278107,
+      1.1086849108059498,
+      2.4853904260033786
+    ]
+  },
+  "seats": {
+    "lounge_a": {
+      "anchors": [
+        [
+          6.49,
+          1.21
+        ],
+        [
+          7.17,
+          0.99
+        ],
+        [
+          6.83,
+          -1.12
+        ],
+        [
+          5.6,
+          0.86
+        ],
+        [
+          6.82,
+          -0.39
+        ]
+      ],
+      "centres": [
+        [
+          6.398296177256748,
+          1.261682106061355
+        ],
+        [
+          7.294385941815859,
+          0.9462092326580902
+        ],
+        [
+          6.811703471446726,
+          -1.2462979759372579
+        ],
+        [
+          5.474834347471635,
+          1.0387062129022746
+        ],
+        [
+          6.947906384709356,
+          -0.3061124801871933
+        ]
+      ],
+      "clearance_solve_success": true,
+      "provenance": "Ray-plane RGB anchors for A129/B61; previous C anchors; subsequent minimal displacement for .95m centre separation is inferred, NOT DA3 fit."
+    },
+    "lounge_b": {
+      "anchors": [
+        [
+          2.59,
+          -1.39
+        ],
+        [
+          2.12,
+          -1.26
+        ],
+        [
+          3.24,
+          -1.53
+        ],
+        [
+          1.76,
+          -0.47
+        ]
+      ],
+      "centres": [
+        [
+          2.6439215521911907,
+          -1.4499674629952644
+        ],
+        [
+          1.7045660005456384,
+          -1.308153685129055
+        ],
+        [
+          3.5854727302012743,
+          -1.5763849427511245
+        ],
+        [
+          1.7672603376651228,
+          -0.3602246687501115
+        ]
+      ],
+      "clearance_solve_success": true,
+      "provenance": "Ray-plane RGB anchors for A129/B61; previous C anchors; subsequent minimal displacement for .95m centre separation is inferred, NOT DA3 fit."
+    },
+    "lounge_c": {
+      "anchors": [
+        [
+          -0.9,
+          -0.6
+        ],
+        [
+          -0.85,
+          -1.5
+        ],
+        [
+          -0.1,
+          -1.75
+        ]
+      ],
+      "centres": [
+        [
+          -1.1197087542909026,
+          -0.5749635933598385
+        ],
+        [
+          -0.9273934735874304,
+          -1.5052940899082172
+        ],
+        [
+          -0.0164011019136661,
+          -1.7747247836908684
+        ]
+      ],
+      "clearance_solve_success": true,
+      "provenance": "Ray-plane RGB anchors for A129/B61; previous C anchors; subsequent minimal displacement for .95m centre separation is inferred, NOT DA3 fit."
+    }
+  }
+}

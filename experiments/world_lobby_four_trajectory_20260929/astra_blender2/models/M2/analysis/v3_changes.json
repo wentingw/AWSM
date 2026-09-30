@@ -1,0 +1,114 @@
+[
+  {
+    "parameter": "reception_desk counter bevel",
+    "before": 0.025,
+    "after": 0,
+    "frames": [
+      33,
+      100,
+      108,
+      118,
+      129
+    ],
+    "rgb_regions": [
+      [
+        575,
+        443,
+        678,
+        465
+      ],
+      [
+        920,
+        580,
+        1080,
+        780
+      ],
+      [
+        1080,
+        530,
+        1280,
+        700
+      ],
+      [
+        1080,
+        510,
+        1280,
+        650
+      ],
+      [
+        919,
+        568,
+        1014,
+        594
+      ]
+    ],
+    "reason": "V2 author geometry audit finds near-zero triangles from bevel wider than half the 0.045m counter thickness. Top plane and counter dimensions unchanged.",
+    "residuals": "analysis/revision_evidence.json reception/desk regions",
+    "provenance": "technical topology correction"
+  },
+  {
+    "parameter": "near_wall and recess_return structural backing offset along Y",
+    "before": 0.1,
+    "after": -0.1,
+    "frames": [
+      61,
+      74,
+      82,
+      91
+    ],
+    "rgb_regions": [
+      [
+        0,
+        90,
+        285,
+        455
+      ],
+      [
+        0,
+        0,
+        300,
+        600
+      ],
+      [
+        350,
+        270,
+        520,
+        690
+      ],
+      [
+        390,
+        100,
+        665,
+        245
+      ]
+    ],
+    "reason": "V2 actual comparison shows dark backing covering finish on the room-facing +Y side. Place behind panels, maintaining continuous seams.",
+    "residuals": "analysis/revision_evidence.json near_wall / wall_recess / mirror wall regions",
+    "provenance": "inferred thickness placement; observed panel finish remains same plane"
+  },
+  {
+    "parameter": "seat side shading",
+    "before": "all faceted",
+    "after": "smooth vertical quad normals, flat top/bottom",
+    "frames": [
+      33,
+      61,
+      129,
+      155
+    ],
+    "reason": "preserve observed curved upholstery while keeping clipped solids; no position/dimension change"
+  },
+  {
+    "parameter": "floor pattern representation",
+    "before": "procedural nodes unsupported by GLB",
+    "after": "same14/m dash formula in packed512x2048 texture with explicit XY UV",
+    "frames": [
+      33,
+      91,
+      100,
+      108,
+      129
+    ],
+    "reason": "Keep floor appearance portable; no geometry or depth changes"
+  }
+]

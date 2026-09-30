@@ -1,0 +1,92 @@
+{
+  "inspected_contact_sheets": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/000_029.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/030_059.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/060_089.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/090_119.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/120_149.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M3/contact_sheets/150_179.jpg"
+  ],
+  "inspected_original_frames": [
+    33,
+    61,
+    74,
+    82,
+    91,
+    100,
+    108,
+    118,
+    129,
+    155
+  ],
+  "inventory": [
+    {
+      "category": "architecture",
+      "observation": "Floor, black reflective inset, tall glazing with two double doors, paneled end walls, recessed right wall and projecting mirror partition",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        108,
+        129
+      ]
+    },
+    {
+      "category": "seating",
+      "observation": "Three visible seating arrangements; pale sage round seats with curved partial backs, small metal feet",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ]
+    },
+    {
+      "category": "tables",
+      "observation": "Dark oval tops, radial fin bases; small metallic bowl and dark vase",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ]
+    },
+    {
+      "category": "planting",
+      "observation": "Two yellow shrub troughs, low window bowls, ceramic round pots, topiary flanking reception, tall bird-of-paradise pots",
+      "evidence_frames": [
+        33,
+        61,
+        82,
+        91,
+        108,
+        129
+      ]
+    },
+    {
+      "category": "wall_decor",
+      "observation": "Ten circular mirrors on projecting wall; one crest with curved line decoration on far wall; reflected furnishings are not additional instances",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        129
+      ]
+    },
+    {
+      "category": "lighting",
+      "observation": "Staggered shallow woven pendant bowls, ceiling edge battens, slender floor lamps",
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ]
+    }
+  ],
+  "inference_policy": "Hidden surfaces, thickness, exact upholstery, lighting powers, plant leaf arrangement and physics are inferred. Round mirrors are reflective surfaces, never duplicated furniture."
+}

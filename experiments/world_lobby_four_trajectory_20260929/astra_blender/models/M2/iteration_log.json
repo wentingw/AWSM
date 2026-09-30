@@ -1,0 +1,163 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "purpose": "Initial independent semantic reconstruction",
+      "object_count": 70,
+      "render_attempts": [
+        {
+          "version": 1,
+          "sample_index": 0,
+          "path": "checks/v1_0000.png",
+          "status": "completed",
+          "elapsed_seconds": 7.855214538984001
+        },
+        {
+          "version": 1,
+          "sample_index": 45,
+          "path": "checks/v1_0045.png",
+          "status": "completed",
+          "elapsed_seconds": 7.736346318852156
+        },
+        {
+          "version": 1,
+          "sample_index": 90,
+          "path": "checks/v1_0090.png",
+          "status": "completed",
+          "elapsed_seconds": 7.564561915118247
+        },
+        {
+          "version": 1,
+          "sample_index": 135,
+          "path": "checks/v1_0135.png",
+          "status": "completed",
+          "elapsed_seconds": 7.697804905008525
+        },
+        {
+          "version": 1,
+          "sample_index": 179,
+          "path": "checks/v1_0179.png",
+          "status": "completed",
+          "elapsed_seconds": 7.772200596984476
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "purpose": "Repair nine independent review issues; preserve cameras and metric units",
+      "object_count": 70,
+      "render_attempts": [
+        {
+          "version": 2,
+          "sample_index": 0,
+          "path": "checks/v2_0000.png",
+          "status": "completed",
+          "elapsed_seconds": 8.21741552092135
+        },
+        {
+          "version": 2,
+          "sample_index": 45,
+          "path": "checks/v2_0045.png",
+          "status": "completed",
+          "elapsed_seconds": 8.226409727009013
+        },
+        {
+          "version": 2,
+          "sample_index": 90,
+          "path": "checks/v2_0090.png",
+          "status": "completed",
+          "elapsed_seconds": 7.918574100127444
+        },
+        {
+          "version": 2,
+          "sample_index": 135,
+          "path": "checks/v2_0135.png",
+          "status": "completed",
+          "elapsed_seconds": 8.054641182068735
+        },
+        {
+          "version": 2,
+          "sample_index": 179,
+          "path": "checks/v2_0179.png",
+          "status": "completed",
+          "elapsed_seconds": 8.07731473306194
+        }
+      ]
+    }
+  ],
+  "checking_render_count": 10,
+  "max_versions": 5,
+  "max_checking_renders": 60,
+  "input_consistency_passes": 2,
+  "input_checks": [
+    {
+      "pass": 1,
+      "report": "checks/input_v1/report.json",
+      "executed_by": "coordinator",
+      "scope": "model versus own DA3, no GT",
+      "model_sha256": "81c5104ef79673bbd778ef5c5fcc9145f82ce8545d6e6c09c8d1625f73fdf8c6",
+      "seconds": 19.006814158987254,
+      "aggregate": {
+        "pixels_domain": 3440675,
+        "pixels_valid": 3435566,
+        "valid_coverage": 0.9985151169465294,
+        "invalid_rate": 0.0014848830534706092,
+        "mae_m": 1.5173058825506038,
+        "rmse_m": 2.928633414285147,
+        "absrel": 0.66305517533781,
+        "delta1": 0.7098274345479028,
+        "delta2": 0.8453113693638835,
+        "delta3": 0.888425662612798,
+        "missing_penalty_mae_m": 1.5595993523627916
+      }
+    },
+    {
+      "pass": 2,
+      "report": "checks/input_v2/report.json",
+      "executed_by": "coordinator",
+      "scope": "model versus own predicted DA3; no GT",
+      "model_sha256": "c19f33ec434bbcf89137e67d81c283b9adfd48f42e993d8b29d63e08318f79a6",
+      "seconds": 19.700666547985747,
+      "aggregate": {
+        "pixels_domain": 3440675,
+        "pixels_valid": 3433936,
+        "valid_coverage": 0.9980413726957647,
+        "invalid_rate": 0.0019586273042353497,
+        "mae_m": 1.4588294742627117,
+        "rmse_m": 2.8768628962202043,
+        "absrel": 0.664341399743089,
+        "delta1": 0.741477418332782,
+        "delta2": 0.8628378630236556,
+        "delta3": 0.8976396182107064,
+        "missing_penalty_mae_m": 1.514730990149258
+      }
+    }
+  ],
+  "artifact_checks": [
+    {
+      "report": "checks/artifact_inspection.json",
+      "executed_by": "coordinator"
+    }
+  ],
+  "initial_author_visual_inspection": {
+    "render_files": [
+      "checks/v1_0000.png",
+      "checks/v1_0090.png"
+    ],
+    "finding": "near-end wall dark backing defect retained for review before revision"
+  },
+  "v2_build_executed_by": "coordinator; exact author-written build_scene.py, no geometry modifications",
+  "v2_build_log": "checks/build_v2_coordinator.log",
+  "v2_author_visual_inspection": {
+    "comparison_files": [
+      "checks/comparison_v2_0000.jpg",
+      "checks/comparison_v2_0045.jpg",
+      "checks/comparison_v2_0090.jpg",
+      "checks/comparison_v2_0135.jpg",
+      "checks/comparison_v2_0179.jpg"
+    ],
+    "all_five_inspected": true,
+    "findings": "Structural fixes visible; furniture, foliage, floor structure and pendant constellation retain fidelity limitations."
+  },
+  "v2_targeted_check": "checks/repair_verification_v2.json"
+}

@@ -1,0 +1,97 @@
+{
+  "method_id": "M2",
+  "version": 2,
+  "status": "ready_for_final_review",
+  "quality_status": "limited",
+  "model_sha256": "c19f33ec434bbcf89137e67d81c283b9adfd48f42e993d8b29d63e08318f79a6",
+  "initial_review_model_sha256": "81c5104ef79673bbd778ef5c5fcc9145f82ce8545d6e6c09c8d1625f73fdf8c6",
+  "issues": [
+    {
+      "issue_id": "M2-I01",
+      "status": "addressed",
+      "change": "Near-end backing moved to exterior side using orientation sign; visible panel face now wins ray at y=-2.445.",
+      "evidence": "Targeted near_wall ray hits wall_near_end__panel_016; comparison_v2_0090 shows pale panels.",
+      "residual_limitation": "Exact grain remains approximate."
+    },
+    {
+      "issue_id": "M2-I02",
+      "status": "addressed",
+      "change": "Removed unsupported closed leaf; added minimal return jambs, header and threshold. door_side_0 now open_passage with component_meshes collider.",
+      "evidence": "Targeted +X passage ray has no hit over 1.2 m; adjacent closed-door ray still hits door_side_1 leaf.",
+      "residual_limitation": "Unseen connected corridor extent is unknown and not completed."
+    },
+    {
+      "issue_id": "M2-I03",
+      "status": "addressed",
+      "change": "Reduced and refit seating; overlapping modular cushions clipped to mutually compatible power-diagram boundaries with 8 mm gap. Flat caps and bevel normals remove black seam patches.",
+      "evidence": "All pairwise evaluated cushion BVH checks return no mesh intersections; five comparison images show no black cap patches.",
+      "residual_limitation": "Modular silhouettes are approximations and have remaining projection mismatch."
+    },
+    {
+      "issue_id": "M2-I04",
+      "status": "partially_addressed",
+      "change": "Far table center fit jointly from frames0/45/135; radius reduced to .5504 m, top lowered to .4175 m. Seat tops lowered from .585 to .47 m, front ottoman radius .35 m. Near group moved ~.6 m toward camera and near table to (.12,2.45).",
+      "evidence": "Ray-plane source estimates recorded in measurements; frame135 now has table at lower left and seat cropped at bottom.",
+      "residual_limitation": "Forward views still show shifted furniture and imperfect backrest contours. No camera or global scale changes made."
+    },
+    {
+      "issue_id": "M2-I05",
+      "status": "addressed",
+      "change": "Cylinder caps now use flat shading; only side quads smooth. Mirror front planar normals are preserved.",
+      "evidence": "Maximum cap corner deviation 0.02798 degrees (float precision); reflections show coherent mullions in v2 comparisons.",
+      "residual_limitation": "Mirror positions and reflected surrounding furniture still approximate."
+    },
+    {
+      "issue_id": "M2-I06",
+      "status": "partially_addressed",
+      "change": "Lowered inset roughness .17 to .055, reduced normal perturbation, reduced exposure and window/fill illumination, darkened sage fabric and mullions.",
+      "evidence": "V2 shows clearer coherent furniture/window/pendant reflections and darker inset than v1.",
+      "residual_limitation": "Observed repeated structured floor reflection texture remains unmatched; walls still appear flatter/paler than input."
+    },
+    {
+      "issue_id": "M2-I07",
+      "status": "partially_addressed",
+      "change": "Yellow leaf widths reduced .024 to .0045 m, branch heights .35\u2013.83 m; reception crowns increased 650 to3400 leaves each; grass uses620 bowed strips per planter.",
+      "evidence": "Fixed views show fine yellow branches and denser round topiary crowns; grass is denser and curves.",
+      "residual_limitation": "Yellow sprigs now sparser than source in places; grass/planter silhouette and exact plant species remain approximate."
+    },
+    {
+      "issue_id": "M2-I08",
+      "status": "partially_addressed",
+      "change": "Added explicit staggered woven relief cells per bowl and moved nearest left pendant along room axis. Stable21 pendant IDs preserved.",
+      "evidence": "V2 bowl surfaces contain mesh relief; artifact inspection counts301090 triangles total.",
+      "residual_limitation": "Pendant constellation, apparent diameters and suspension heights remain visibly mismatched. Full joint projection fit deferred; weave remains inferred."
+    },
+    {
+      "issue_id": "M2-I09",
+      "status": "addressed",
+      "change": "Extended seat feet to inset z=.015, table bases/radial feet to z=.015; grass planter bottoms reach stone z=-.005 without changing tops.",
+      "evidence": "Targeted support-bound checks report all19 declared furniture/grass support gaps within floating precision.",
+      "residual_limitation": "Conservative furniture and foliage AABB collider approximations remain."
+    }
+  ],
+  "verification": {
+    "targeted_checks": "checks/repair_verification_v2.json",
+    "input_consistency": "checks/input_v2/report.json",
+    "artifact_inspection": "checks/artifact_inspection.json",
+    "fixed_comparisons": [
+      "checks/comparison_v2_0000.jpg",
+      "checks/comparison_v2_0045.jpg",
+      "checks/comparison_v2_0090.jpg",
+      "checks/comparison_v2_0135.jpg",
+      "checks/comparison_v2_0179.jpg"
+    ],
+    "glb_import": {
+      "status": "PASS",
+      "mesh_objects": 1664,
+      "names_match_records": true
+    }
+  },
+  "budget": {
+    "versions": 2,
+    "checking_renders": 10,
+    "full_input_passes": 2,
+    "reviewer_added_renders": 0
+  },
+  "scope": "Native cameras and model_from_input unchanged; scale1; no GT or other-method access."
+}

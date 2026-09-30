@@ -1,0 +1,145 @@
+{
+  "status": "author issue handoff; not independent review",
+  "issues": [
+    {
+      "id": "V1-LIGHTS",
+      "severity": "high",
+      "objects": [
+        "pendant_*"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "issue": "Missing western fixtures and inaccurate placements/heights; woven rib geometry is on upper side of bowl, not visible underside.",
+      "suggested_next_step": "Use additional RGB correspondences and DA3 edge-local measurements to place remaining west fixtures; remodel visible underside mesh. All heights remain inference until measured."
+    },
+    {
+      "id": "V1-WALL-SIDEDNESS",
+      "severity": "high",
+      "objects": [
+        "west_end_wall",
+        "feature_return_east"
+      ],
+      "evidence_frames": [
+        82,
+        91,
+        100
+      ],
+      "issue": "Generic x-wall panels placed on -x side, hiding panels behind backing when seen from +x. Source wall is visibly panelled.",
+      "suggested_next_step": "Expose panels on interior side and verify panel seams in82/91; no camera/scale adjustment."
+    },
+    {
+      "id": "V1-FURNITURE",
+      "severity": "high",
+      "objects": [
+        "seat_A_*",
+        "seat_B_*",
+        "coffee_table_A",
+        "coffee_table_B"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "issue": "Approximate centers and inferred backrest rotations produce wrong silhouettes and intersections; size/spacing need multi-view refinement.",
+      "suggested_next_step": "Measure seat tops/feet/back endpoints across61/74 and33/129; record parameter changes with pixel/residual evidence."
+    },
+    {
+      "id": "V1-APPEARANCE",
+      "severity": "high",
+      "objects": [
+        "dark_inlay",
+        "glazed_facade",
+        "ceiling",
+        "all_materials"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        129,
+        155
+      ],
+      "issue": "Missing grid-like gold floor appearance, weak wood texture, overly bright diffuse lighting, narrow door frames.",
+      "suggested_next_step": "Establish whether floor pattern is material or lamp reflections from cross-view evidence; improve measured frame widths and inferred illumination without new uncounted renders."
+    },
+    {
+      "id": "V1-PLANTS",
+      "severity": "medium",
+      "objects": [
+        "shrub_trough_A",
+        "shrub_trough_B",
+        "mirror_fern",
+        "window_grass",
+        "reception_tree_L",
+        "reception_tree_R"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91,
+        108,
+        118,
+        129
+      ],
+      "issue": "Foliage is broad and uniform; mirror pot spiky rather than bushy; trees sparse. Planter corner correspondences remain uncertain.",
+      "suggested_next_step": "Refine outer volumes from original silhouettes and predicted-depth patches; botanical detail remains inferred."
+    },
+    {
+      "id": "V1-DEPTH-CONFLICT",
+      "severity": "high",
+      "objects": [
+        "east_end_wall",
+        "ceiling",
+        "reception_desk"
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "issue": "Local far-wall signed medians -2.683m in33, +2.237m in129, -2.741m in155. DA3 globally inconsistent; wall/desk have low-error triangulated anchors.",
+      "suggested_next_step": "Keep exact cameras and metric scale; adjudicate with additional image correspondences, not whole-scene score minimization."
+    },
+    {
+      "id": "V1-DA3-EXTREMES",
+      "severity": "high",
+      "objects": [],
+      "evidence_frames": [
+        15,
+        16,
+        173,
+        174,
+        177,
+        178,
+        179
+      ],
+      "issue": "Existing full-input check reveals pathological shallow predicted-depth values:177..179 median~0.0666m and max~0.187m despite lobby RGB. Several other frames have median~0.47m.",
+      "suggested_next_step": "Retain prescribed unaltered domain and all-frame metrics. This is an input limitation; do not rescale cameras/geometry or trim masks to fit it."
+    },
+    {
+      "id": "V1-PHYSICS",
+      "severity": "medium",
+      "objects": [
+        "all"
+      ],
+      "evidence_frames": [],
+      "issue": "Collider AABBs and hidden construction are inferred, not validated for physical simulation; glTF uses standard Y-up conversion.",
+      "suggested_next_step": "Independent reviewer should distinguish semantic/technical validity from physical/visual fidelity."
+    }
+  ]
+}

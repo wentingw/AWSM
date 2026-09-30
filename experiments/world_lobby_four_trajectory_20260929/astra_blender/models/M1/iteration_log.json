@@ -1,0 +1,162 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "build_elapsed_seconds": 36.608582496643066,
+      "description": "Initial semantic scene inferred from RGB",
+      "complete": true
+    },
+    {
+      "version": 2,
+      "build_elapsed_seconds": 39.598641872406006,
+      "description": "v2 independent review repairs: openings, compound colliders, support, layout and appearance",
+      "complete": true
+    }
+  ],
+  "render_attempts": [
+    {
+      "version": 1,
+      "sample_index": 0,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v1_0000.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 8.17538857460022
+    },
+    {
+      "version": 1,
+      "sample_index": 45,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v1_0045.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 8.078428506851196
+    },
+    {
+      "version": 1,
+      "sample_index": 90,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v1_0090.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 8.051743507385254
+    },
+    {
+      "version": 1,
+      "sample_index": 135,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v1_0135.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 8.009368181228638
+    },
+    {
+      "version": 1,
+      "sample_index": 179,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v1_0179.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 8.20989179611206
+    },
+    {
+      "version": 2,
+      "sample_index": 0,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v2_0000.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 7.5096824169158936
+    },
+    {
+      "version": 2,
+      "sample_index": 45,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v2_0045.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 7.507975339889526
+    },
+    {
+      "version": 2,
+      "sample_index": 90,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v2_0090.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 7.227140665054321
+    },
+    {
+      "version": 2,
+      "sample_index": 135,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v2_0135.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 7.336248874664307
+    },
+    {
+      "version": 2,
+      "sample_index": 179,
+      "filepath": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M1/checks/v2_0179.png",
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 4,
+      "status": "completed",
+      "elapsed_seconds": 7.375723123550415
+    }
+  ],
+  "limits": {
+    "scene_versions": 5,
+    "checking_renders": 60
+  }
+}

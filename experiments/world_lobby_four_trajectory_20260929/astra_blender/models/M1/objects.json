@@ -1,0 +1,4879 @@
+{
+  "objects": [
+    {
+      "id": "floor_stone",
+      "category": "floor",
+      "component_names": [
+        "floor_stone__slab"
+      ],
+      "description": "Continuous light polished stone floor",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          0.0,
+          -0.20000000298023224
+        ],
+        "max": [
+          8.800000190734863,
+          18.0,
+          0.0
+        ]
+      },
+      "dimensions": [
+        8.800000190734863,
+        18.0,
+        0.20000000298023224
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "floor_black_inset",
+      "category": "floor",
+      "component_names": [
+        "floor_black_inset__slab"
+      ],
+      "description": "Dark glossy rectangular floor inset, same level as surrounding stone",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          1.4000000953674316,
+          1.4499998092651367,
+          0.0
+        ],
+        "max": [
+          5.900000095367432,
+          16.849998474121094,
+          0.012000000104308128
+        ]
+      },
+      "dimensions": [
+        4.5,
+        15.399998664855957,
+        0.012000000104308128
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "component_names": [
+        "ceiling__slab"
+      ],
+      "description": "Pale ceiling over full lobby",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          0.0,
+          5.200000286102295
+        ],
+        "max": [
+          8.800000190734863,
+          18.0,
+          5.400000095367432
+        ]
+      },
+      "dimensions": [
+        8.800000190734863,
+        18.0,
+        0.19999980926513672
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_north",
+      "category": "wall",
+      "component_names": [
+        "wall_north__substrate",
+        "wall_north__panel_0_0",
+        "wall_north__panel_0_1",
+        "wall_north__panel_0_2",
+        "wall_north__panel_1_0",
+        "wall_north__panel_1_1",
+        "wall_north__panel_1_2",
+        "wall_north__panel_2_0",
+        "wall_north__panel_2_1",
+        "wall_north__panel_2_2",
+        "wall_north__panel_3_0",
+        "wall_north__panel_3_1",
+        "wall_north__panel_3_2",
+        "wall_north__panel_4_0",
+        "wall_north__panel_4_1",
+        "wall_north__panel_4_2",
+        "wall_north__panel_5_0",
+        "wall_north__panel_5_1",
+        "wall_north__panel_5_2",
+        "wall_north__panel_6_0",
+        "wall_north__panel_6_1",
+        "wall_north__panel_6_2",
+        "wall_north__panel_7_0",
+        "wall_north__panel_7_1",
+        "wall_north__panel_7_2",
+        "wall_north__panel_8_0",
+        "wall_north__panel_8_1",
+        "wall_north__panel_8_2",
+        "wall_north__panel_9_0",
+        "wall_north__panel_9_1",
+        "wall_north__panel_9_2"
+      ],
+      "description": "Vertical oak panels and dark horizontal reveals",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          17.876501083374023,
+          0.0
+        ],
+        "max": [
+          8.800000190734863,
+          18.09000015258789,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        8.800000190734863,
+        0.2134990692138672,
+        5.199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_south",
+      "category": "wall",
+      "component_names": [
+        "wall_south__substrate",
+        "wall_south__panel_0_0",
+        "wall_south__panel_0_1",
+        "wall_south__panel_0_2",
+        "wall_south__panel_1_0",
+        "wall_south__panel_1_1",
+        "wall_south__panel_1_2",
+        "wall_south__panel_2_0",
+        "wall_south__panel_2_1",
+        "wall_south__panel_2_2",
+        "wall_south__panel_3_0",
+        "wall_south__panel_3_1",
+        "wall_south__panel_3_2",
+        "wall_south__panel_4_0",
+        "wall_south__panel_4_1",
+        "wall_south__panel_4_2",
+        "wall_south__panel_5_0",
+        "wall_south__panel_5_1",
+        "wall_south__panel_5_2",
+        "wall_south__panel_6_0",
+        "wall_south__panel_6_1",
+        "wall_south__panel_6_2",
+        "wall_south__panel_7_0",
+        "wall_south__panel_7_1",
+        "wall_south__panel_7_2",
+        "wall_south__panel_8_0",
+        "wall_south__panel_8_1",
+        "wall_south__panel_8_2",
+        "wall_south__panel_9_0",
+        "wall_south__panel_9_1",
+        "wall_south__panel_9_2"
+      ],
+      "description": "Vertical oak panels and dark horizontal reveals",
+      "evidence_sample_ids": [
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          -0.09000000357627869,
+          0.0
+        ],
+        "max": [
+          8.800000190734863,
+          0.12350000441074371,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        8.800000190734863,
+        0.2135000079870224,
+        5.199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_east_main",
+      "category": "wall",
+      "component_names": [
+        "wall_east_main__panel_0_0_0",
+        "wall_east_main__panel_0_1_0",
+        "wall_east_main__panel_0_2_0",
+        "wall_east_main__panel_1_0_0",
+        "wall_east_main__panel_1_1_0",
+        "wall_east_main__panel_1_2_0",
+        "wall_east_main__panel_2_0_0",
+        "wall_east_main__panel_2_1_0",
+        "wall_east_main__panel_2_2_0",
+        "wall_east_main__panel_3_0_0",
+        "wall_east_main__panel_3_1_0",
+        "wall_east_main__panel_3_2_0",
+        "wall_east_main__panel_4_0_0",
+        "wall_east_main__panel_4_1_0",
+        "wall_east_main__panel_4_2_0",
+        "wall_east_main__panel_5_1_0",
+        "wall_east_main__panel_5_2_0",
+        "wall_east_main__panel_6_0_0",
+        "wall_east_main__panel_6_1_0",
+        "wall_east_main__panel_6_2_0",
+        "wall_east_main__panel_7_0_0",
+        "wall_east_main__panel_7_1_0",
+        "wall_east_main__panel_7_2_0",
+        "wall_east_main__panel_8_0_0",
+        "wall_east_main__panel_8_1_0",
+        "wall_east_main__panel_8_2_0",
+        "wall_east_main__panel_9_0_0",
+        "wall_east_main__panel_9_1_0",
+        "wall_east_main__panel_9_2_0",
+        "wall_east_main__panel_10_0_0",
+        "wall_east_main__panel_10_1_0",
+        "wall_east_main__panel_10_2_0",
+        "wall_east_main__panel_11_0_0",
+        "wall_east_main__panel_11_1_0",
+        "wall_east_main__panel_11_2_0",
+        "wall_east_main__panel_12_0_0",
+        "wall_east_main__panel_12_1_0",
+        "wall_east_main__panel_12_2_0",
+        "wall_east_main__panel_13_0_0",
+        "wall_east_main__panel_13_1_0",
+        "wall_east_main__panel_13_2_0",
+        "wall_east_main__panel_14_0_0",
+        "wall_east_main__panel_14_1_0",
+        "wall_east_main__panel_14_2_0",
+        "wall_east_main__panel_15_0_0",
+        "wall_east_main__panel_15_1_0",
+        "wall_east_main__panel_15_2_0"
+      ],
+      "description": "Panelled east wall split exactly at opening jambs",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          7.269999980926514,
+          0.010000020265579224,
+          0.009999990463256836
+        ],
+        "max": [
+          7.429999828338623,
+          13.789999961853027,
+          5.190000057220459
+        ]
+      },
+      "dimensions": [
+        0.15999984741210938,
+        13.779999941587448,
+        5.180000066757202
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "passage_south",
+      "category": "open_passage",
+      "component_names": [
+        "passage_south__return_-0.53",
+        "passage_south__return_0.53",
+        "passage_south__lintel"
+      ],
+      "description": "Observed dark open passage beside mirror wall; shallow return geometry is assumed",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "compound",
+      "bounds": {
+        "min": [
+          7.390000343322754,
+          4.239999771118164,
+          0.0
+        ],
+        "max": [
+          8.40999984741211,
+          5.360000133514404,
+          2.129999876022339
+        ]
+      },
+      "dimensions": [
+        1.0199995040893555,
+        1.1200003623962402,
+        2.129999876022339
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "elevator_wall_east_main_1",
+      "category": "door",
+      "component_names": [
+        "elevator_wall_east_main_1__leaf_-0.237",
+        "elevator_wall_east_main_1__leaf_0.237",
+        "elevator_wall_east_main_1__center_seam"
+      ],
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          7.323500156402588,
+          10.82800006866455,
+          0.0
+        ],
+        "max": [
+          7.402500152587891,
+          11.77199935913086,
+          2.0399999618530273
+        ]
+      },
+      "dimensions": [
+        0.07899999618530273,
+        0.9439992904663086,
+        2.0399999618530273
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_east_main_reveals",
+      "category": "trim",
+      "component_names": [
+        "wall_east_main_reveals__rail_2.05",
+        "wall_east_main_reveals__rail_4.1"
+      ],
+      "description": "Horizontal black panel joints above doors",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.244999885559082,
+          0.0,
+          2.0429999828338623
+        ],
+        "max": [
+          7.414999961853027,
+          13.800000190734863,
+          4.10699987411499
+        ]
+      },
+      "dimensions": [
+        0.1700000762939453,
+        13.800000190734863,
+        2.063999891281128
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_east_recess",
+      "category": "wall",
+      "component_names": [
+        "wall_east_recess__panel_0_0_0",
+        "wall_east_recess__panel_0_1_0",
+        "wall_east_recess__panel_0_2_0",
+        "wall_east_recess__panel_1_0_0",
+        "wall_east_recess__panel_1_1_0",
+        "wall_east_recess__panel_1_2_0",
+        "wall_east_recess__panel_2_0_0",
+        "wall_east_recess__panel_2_1_0",
+        "wall_east_recess__panel_2_2_0",
+        "wall_east_recess__panel_3_0_0",
+        "wall_east_recess__panel_3_1_0",
+        "wall_east_recess__panel_3_2_0",
+        "wall_east_recess__panel_4_0_0",
+        "wall_east_recess__panel_4_1_0",
+        "wall_east_recess__panel_4_2_0"
+      ],
+      "description": "Panelled east wall split exactly at opening jambs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          8.720000267028809,
+          13.809999465942383,
+          0.009999990463256836
+        ],
+        "max": [
+          8.880000114440918,
+          17.989999771118164,
+          5.190000057220459
+        ]
+      },
+      "dimensions": [
+        0.15999984741210938,
+        4.180000305175781,
+        5.180000066757202
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "elevator_wall_east_recess_0",
+      "category": "door",
+      "component_names": [
+        "elevator_wall_east_recess_0__leaf_-0.237",
+        "elevator_wall_east_recess_0__leaf_0.237",
+        "elevator_wall_east_recess_0__center_seam"
+      ],
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_recess"
+        }
+      ],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          8.773499488830566,
+          14.128000259399414,
+          0.0
+        ],
+        "max": [
+          8.852499961853027,
+          15.071999549865723,
+          2.0399999618530273
+        ]
+      },
+      "dimensions": [
+        0.07900047302246094,
+        0.9439992904663086,
+        2.0399999618530273
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "elevator_wall_east_recess_1",
+      "category": "door",
+      "component_names": [
+        "elevator_wall_east_recess_1__leaf_-0.237",
+        "elevator_wall_east_recess_1__leaf_0.237",
+        "elevator_wall_east_recess_1__center_seam"
+      ],
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_recess"
+        }
+      ],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          8.773499488830566,
+          15.87800121307373,
+          0.0
+        ],
+        "max": [
+          8.852499961853027,
+          16.82200050354004,
+          2.0399999618530273
+        ]
+      },
+      "dimensions": [
+        0.07900047302246094,
+        0.9439992904663086,
+        2.0399999618530273
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_east_recess_reveals",
+      "category": "trim",
+      "component_names": [
+        "wall_east_recess_reveals__rail_2.05",
+        "wall_east_recess_reveals__rail_4.1"
+      ],
+      "description": "Horizontal black panel joints above doors",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          8.694999694824219,
+          13.799999237060547,
+          2.0429999828338623
+        ],
+        "max": [
+          8.864999771118164,
+          18.0,
+          4.10699987411499
+        ]
+      },
+      "dimensions": [
+        0.1700000762939453,
+        4.200000762939453,
+        2.063999891281128
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "wall_recess_return",
+      "category": "wall",
+      "component_names": [
+        "wall_recess_return__return"
+      ],
+      "description": "Short return between main wall and recessed elevator bank",
+      "evidence_sample_ids": [
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          7.349999904632568,
+          13.720000267028809,
+          0.0
+        ],
+        "max": [
+          8.809999465942383,
+          13.880000114440918,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.4599995613098145,
+        0.15999984741210938,
+        5.199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "glazing",
+      "category": "window_wall",
+      "component_names": [
+        "glazing__bright_glass",
+        "glazing__mullion_0",
+        "glazing__mullion_1",
+        "glazing__mullion_2",
+        "glazing__mullion_3",
+        "glazing__mullion_4",
+        "glazing__mullion_5",
+        "glazing__mullion_6",
+        "glazing__mullion_7",
+        "glazing__mullion_8",
+        "glazing__mullion_9",
+        "glazing__mullion_10",
+        "glazing__mullion_11",
+        "glazing__mullion_12",
+        "glazing__mullion_13",
+        "glazing__mullion_14",
+        "glazing__mullion_15",
+        "glazing__mullion_16",
+        "glazing__mullion_17",
+        "glazing__mullion_18",
+        "glazing__mullion_19",
+        "glazing__mullion_20",
+        "glazing__transom_0",
+        "glazing__transom_3.05",
+        "glazing__transom_5.2"
+      ],
+      "description": "Bright exterior glazing with repeated metal mullions",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          -0.09750000387430191,
+          -0.019999999552965164,
+          -0.03750000149011612
+        ],
+        "max": [
+          0.054999999701976776,
+          18.020000457763672,
+          5.237499713897705
+        ]
+      },
+      "dimensions": [
+        0.1525000035762787,
+        18.040000457316637,
+        5.274999715387821
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "entrance_0",
+      "category": "door",
+      "component_names": [
+        "entrance_0__jamb_-0.425_-0.39",
+        "entrance_0__jamb_-0.425_0.39",
+        "entrance_0__cross_-0.425_0.1",
+        "entrance_0__cross_-0.425_2.93",
+        "entrance_0__handle_-0.425",
+        "entrance_0__jamb_0.425_-0.39",
+        "entrance_0__jamb_0.425_0.39",
+        "entrance_0__cross_0.425_0.1",
+        "entrance_0__cross_0.425_2.93",
+        "entrance_0__handle_0.425"
+      ],
+      "description": "Gold framed glazed double entrance doors",
+      "evidence_sample_ids": [
+        0,
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          1.2450000047683716,
+          0.0
+        ],
+        "max": [
+          0.17999999225139618,
+          2.9549999237060547,
+          3.009999990463257
+        ]
+      },
+      "dimensions": [
+        0.17999999225139618,
+        1.709999918937683,
+        3.009999990463257
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "entrance_1",
+      "category": "door",
+      "component_names": [
+        "entrance_1__jamb_-0.425_-0.39",
+        "entrance_1__jamb_-0.425_0.39",
+        "entrance_1__cross_-0.425_0.1",
+        "entrance_1__cross_-0.425_2.93",
+        "entrance_1__handle_-0.425",
+        "entrance_1__jamb_0.425_-0.39",
+        "entrance_1__jamb_0.425_0.39",
+        "entrance_1__cross_0.425_0.1",
+        "entrance_1__cross_0.425_2.93",
+        "entrance_1__handle_0.425"
+      ],
+      "description": "Gold framed glazed double entrance doors",
+      "evidence_sample_ids": [
+        0,
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          0.0,
+          14.845000267028809,
+          0.0
+        ],
+        "max": [
+          0.17999999225139618,
+          16.55500030517578,
+          3.009999990463257
+        ]
+      },
+      "dimensions": [
+        0.17999999225139618,
+        1.7100000381469727,
+        3.009999990463257
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "column_0",
+      "category": "column",
+      "component_names": [
+        "column_0__shaft"
+      ],
+      "description": "Full height round stone column beside glazing",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          0.2800000309944153,
+          1.5799999237060547,
+          0.0
+        ],
+        "max": [
+          0.9200000166893005,
+          2.2200000286102295,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        0.6399999856948853,
+        0.6400001049041748,
+        5.199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "column_1",
+      "category": "column",
+      "component_names": [
+        "column_1__shaft"
+      ],
+      "description": "Full height round stone column beside glazing",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          0.2800000309944153,
+          10.280000686645508,
+          0.0
+        ],
+        "max": [
+          0.9200000166893005,
+          10.920000076293945,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        0.6399999856948853,
+        0.6399993896484375,
+        5.199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "ceiling_slats_glass",
+      "category": "ceiling_detail",
+      "component_names": [
+        "ceiling_slats_glass__batten_0",
+        "ceiling_slats_glass__batten_1",
+        "ceiling_slats_glass__batten_2",
+        "ceiling_slats_glass__batten_3",
+        "ceiling_slats_glass__batten_4",
+        "ceiling_slats_glass__batten_5",
+        "ceiling_slats_glass__batten_6",
+        "ceiling_slats_glass__batten_7",
+        "ceiling_slats_glass__batten_8",
+        "ceiling_slats_glass__batten_9",
+        "ceiling_slats_glass__batten_10",
+        "ceiling_slats_glass__batten_11",
+        "ceiling_slats_glass__batten_12",
+        "ceiling_slats_glass__batten_13",
+        "ceiling_slats_glass__batten_14",
+        "ceiling_slats_glass__batten_15",
+        "ceiling_slats_glass__batten_16",
+        "ceiling_slats_glass__batten_17",
+        "ceiling_slats_glass__batten_18",
+        "ceiling_slats_glass__batten_19",
+        "ceiling_slats_glass__batten_20",
+        "ceiling_slats_glass__batten_21",
+        "ceiling_slats_glass__batten_22",
+        "ceiling_slats_glass__batten_23",
+        "ceiling_slats_glass__batten_24",
+        "ceiling_slats_glass__batten_25",
+        "ceiling_slats_glass__batten_26",
+        "ceiling_slats_glass__batten_27",
+        "ceiling_slats_glass__batten_28",
+        "ceiling_slats_glass__batten_29",
+        "ceiling_slats_glass__batten_30",
+        "ceiling_slats_glass__batten_31",
+        "ceiling_slats_glass__batten_32",
+        "ceiling_slats_glass__batten_33",
+        "ceiling_slats_glass__batten_34",
+        "ceiling_slats_glass__batten_35",
+        "ceiling_slats_glass__batten_36",
+        "ceiling_slats_glass__batten_37",
+        "ceiling_slats_glass__batten_38",
+        "ceiling_slats_glass__batten_39",
+        "ceiling_slats_glass__batten_40",
+        "ceiling_slats_glass__batten_41",
+        "ceiling_slats_glass__batten_42",
+        "ceiling_slats_glass__batten_43",
+        "ceiling_slats_glass__batten_44",
+        "ceiling_slats_glass__batten_45",
+        "ceiling_slats_glass__batten_46",
+        "ceiling_slats_glass__batten_47",
+        "ceiling_slats_glass__batten_48",
+        "ceiling_slats_glass__batten_49",
+        "ceiling_slats_glass__batten_50",
+        "ceiling_slats_glass__batten_51",
+        "ceiling_slats_glass__batten_52",
+        "ceiling_slats_glass__batten_53",
+        "ceiling_slats_glass__batten_54",
+        "ceiling_slats_glass__batten_55",
+        "ceiling_slats_glass__batten_56",
+        "ceiling_slats_glass__batten_57",
+        "ceiling_slats_glass__batten_58",
+        "ceiling_slats_glass__batten_59",
+        "ceiling_slats_glass__batten_60",
+        "ceiling_slats_glass__batten_61",
+        "ceiling_slats_glass__batten_62",
+        "ceiling_slats_glass__batten_63",
+        "ceiling_slats_glass__batten_64",
+        "ceiling_slats_glass__batten_65",
+        "ceiling_slats_glass__batten_66",
+        "ceiling_slats_glass__batten_67",
+        "ceiling_slats_glass__batten_68",
+        "ceiling_slats_glass__batten_69",
+        "ceiling_slats_glass__batten_70",
+        "ceiling_slats_glass__batten_71",
+        "ceiling_slats_glass__batten_72",
+        "ceiling_slats_glass__batten_73",
+        "ceiling_slats_glass__batten_74",
+        "ceiling_slats_glass__batten_75",
+        "ceiling_slats_glass__batten_76",
+        "ceiling_slats_glass__batten_77",
+        "ceiling_slats_glass__batten_78",
+        "ceiling_slats_glass__batten_79",
+        "ceiling_slats_glass__batten_80",
+        "ceiling_slats_glass__batten_81",
+        "ceiling_slats_glass__batten_82",
+        "ceiling_slats_glass__batten_83",
+        "ceiling_slats_glass__batten_84",
+        "ceiling_slats_glass__batten_85",
+        "ceiling_slats_glass__batten_86",
+        "ceiling_slats_glass__batten_87",
+        "ceiling_slats_glass__batten_88",
+        "ceiling_slats_glass__batten_89",
+        "ceiling_slats_glass__batten_90",
+        "ceiling_slats_glass__batten_91",
+        "ceiling_slats_glass__batten_92",
+        "ceiling_slats_glass__batten_93",
+        "ceiling_slats_glass__batten_94",
+        "ceiling_slats_glass__batten_95",
+        "ceiling_slats_glass__batten_96",
+        "ceiling_slats_glass__batten_97",
+        "ceiling_slats_glass__batten_98",
+        "ceiling_slats_glass__batten_99"
+      ],
+      "description": "Closely spaced dark ceiling battens",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          0.0,
+          0.0625,
+          5.034999847412109
+        ],
+        "max": [
+          1.600000023841858,
+          17.9375,
+          5.164999961853027
+        ]
+      },
+      "dimensions": [
+        1.600000023841858,
+        17.875,
+        0.13000011444091797
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "ceiling_slats_wall",
+      "category": "ceiling_detail",
+      "component_names": [
+        "ceiling_slats_wall__batten_0",
+        "ceiling_slats_wall__batten_1",
+        "ceiling_slats_wall__batten_2",
+        "ceiling_slats_wall__batten_3",
+        "ceiling_slats_wall__batten_4",
+        "ceiling_slats_wall__batten_5",
+        "ceiling_slats_wall__batten_6",
+        "ceiling_slats_wall__batten_7",
+        "ceiling_slats_wall__batten_8",
+        "ceiling_slats_wall__batten_9",
+        "ceiling_slats_wall__batten_10",
+        "ceiling_slats_wall__batten_11",
+        "ceiling_slats_wall__batten_12",
+        "ceiling_slats_wall__batten_13",
+        "ceiling_slats_wall__batten_14",
+        "ceiling_slats_wall__batten_15",
+        "ceiling_slats_wall__batten_16",
+        "ceiling_slats_wall__batten_17",
+        "ceiling_slats_wall__batten_18",
+        "ceiling_slats_wall__batten_19",
+        "ceiling_slats_wall__batten_20",
+        "ceiling_slats_wall__batten_21",
+        "ceiling_slats_wall__batten_22",
+        "ceiling_slats_wall__batten_23",
+        "ceiling_slats_wall__batten_24",
+        "ceiling_slats_wall__batten_25",
+        "ceiling_slats_wall__batten_26",
+        "ceiling_slats_wall__batten_27",
+        "ceiling_slats_wall__batten_28",
+        "ceiling_slats_wall__batten_29",
+        "ceiling_slats_wall__batten_30",
+        "ceiling_slats_wall__batten_31",
+        "ceiling_slats_wall__batten_32",
+        "ceiling_slats_wall__batten_33",
+        "ceiling_slats_wall__batten_34",
+        "ceiling_slats_wall__batten_35",
+        "ceiling_slats_wall__batten_36",
+        "ceiling_slats_wall__batten_37",
+        "ceiling_slats_wall__batten_38",
+        "ceiling_slats_wall__batten_39",
+        "ceiling_slats_wall__batten_40",
+        "ceiling_slats_wall__batten_41",
+        "ceiling_slats_wall__batten_42",
+        "ceiling_slats_wall__batten_43",
+        "ceiling_slats_wall__batten_44",
+        "ceiling_slats_wall__batten_45",
+        "ceiling_slats_wall__batten_46",
+        "ceiling_slats_wall__batten_47",
+        "ceiling_slats_wall__batten_48",
+        "ceiling_slats_wall__batten_49",
+        "ceiling_slats_wall__batten_50",
+        "ceiling_slats_wall__batten_51",
+        "ceiling_slats_wall__batten_52",
+        "ceiling_slats_wall__batten_53",
+        "ceiling_slats_wall__batten_54",
+        "ceiling_slats_wall__batten_55",
+        "ceiling_slats_wall__batten_56",
+        "ceiling_slats_wall__batten_57",
+        "ceiling_slats_wall__batten_58",
+        "ceiling_slats_wall__batten_59",
+        "ceiling_slats_wall__batten_60",
+        "ceiling_slats_wall__batten_61",
+        "ceiling_slats_wall__batten_62",
+        "ceiling_slats_wall__batten_63",
+        "ceiling_slats_wall__batten_64",
+        "ceiling_slats_wall__batten_65",
+        "ceiling_slats_wall__batten_66",
+        "ceiling_slats_wall__batten_67",
+        "ceiling_slats_wall__batten_68",
+        "ceiling_slats_wall__batten_69",
+        "ceiling_slats_wall__batten_70",
+        "ceiling_slats_wall__batten_71",
+        "ceiling_slats_wall__batten_72",
+        "ceiling_slats_wall__batten_73",
+        "ceiling_slats_wall__batten_74",
+        "ceiling_slats_wall__batten_75",
+        "ceiling_slats_wall__batten_76",
+        "ceiling_slats_wall__batten_77",
+        "ceiling_slats_wall__batten_78",
+        "ceiling_slats_wall__batten_79",
+        "ceiling_slats_wall__batten_80",
+        "ceiling_slats_wall__batten_81",
+        "ceiling_slats_wall__batten_82",
+        "ceiling_slats_wall__batten_83",
+        "ceiling_slats_wall__batten_84",
+        "ceiling_slats_wall__batten_85",
+        "ceiling_slats_wall__batten_86",
+        "ceiling_slats_wall__batten_87",
+        "ceiling_slats_wall__batten_88",
+        "ceiling_slats_wall__batten_89",
+        "ceiling_slats_wall__batten_90",
+        "ceiling_slats_wall__batten_91",
+        "ceiling_slats_wall__batten_92",
+        "ceiling_slats_wall__batten_93",
+        "ceiling_slats_wall__batten_94",
+        "ceiling_slats_wall__batten_95",
+        "ceiling_slats_wall__batten_96",
+        "ceiling_slats_wall__batten_97",
+        "ceiling_slats_wall__batten_98",
+        "ceiling_slats_wall__batten_99"
+      ],
+      "description": "Closely spaced dark ceiling battens",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          6.0,
+          0.0625,
+          5.034999847412109
+        ],
+        "max": [
+          8.800000190734863,
+          17.9375,
+          5.164999961853027
+        ]
+      },
+      "dimensions": [
+        2.8000001907348633,
+        17.875,
+        0.13000011444091797
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N1",
+      "category": "ottoman",
+      "component_names": [
+        "seat_N1__seat_cushion",
+        "seat_N1__underside",
+        "seat_N1__foot_45",
+        "seat_N1__foot_135",
+        "seat_N1__foot_225",
+        "seat_N1__foot_315"
+      ],
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          2.005999803543091,
+          8.855999946594238,
+          0.0
+        ],
+        "max": [
+          2.694000005722046,
+          9.543999671936035,
+          0.574999988079071
+        ]
+      },
+      "dimensions": [
+        0.6880002021789551,
+        0.6879997253417969,
+        0.574999988079071
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N2",
+      "category": "chair",
+      "component_names": [
+        "seat_N2__seat_cushion",
+        "seat_N2__underside",
+        "seat_N2__foot_45",
+        "seat_N2__foot_135",
+        "seat_N2__foot_225",
+        "seat_N2__foot_315",
+        "seat_N2__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          1.8100001811981201,
+          9.700000762939453,
+          0.0
+        ],
+        "max": [
+          2.4558920860290527,
+          10.34597396850586,
+          0.9259442090988159
+        ]
+      },
+      "dimensions": [
+        0.6458919048309326,
+        0.6459732055664062,
+        0.9259442090988159
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N3",
+      "category": "chair",
+      "component_names": [
+        "seat_N3__seat_cushion",
+        "seat_N3__underside",
+        "seat_N3__foot_45",
+        "seat_N3__foot_135",
+        "seat_N3__foot_225",
+        "seat_N3__foot_315",
+        "seat_N3__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          2.450000047683716,
+          10.200000762939453,
+          0.0
+        ],
+        "max": [
+          3.0899999141693115,
+          10.845999717712402,
+          0.9259446859359741
+        ]
+      },
+      "dimensions": [
+        0.6399998664855957,
+        0.6459989547729492,
+        0.9259446859359741
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N4",
+      "category": "ottoman",
+      "component_names": [
+        "seat_N4__seat_cushion",
+        "seat_N4__underside",
+        "seat_N4__foot_45",
+        "seat_N4__foot_135",
+        "seat_N4__foot_225",
+        "seat_N4__foot_315"
+      ],
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          3.111999988555908,
+          10.112000465393066,
+          0.0
+        ],
+        "max": [
+          4.007999897003174,
+          11.008000373840332,
+          0.574999988079071
+        ]
+      },
+      "dimensions": [
+        0.8959999084472656,
+        0.8959999084472656,
+        0.574999988079071
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N5",
+      "category": "ottoman",
+      "component_names": [
+        "seat_N5__seat_cushion",
+        "seat_N5__underside",
+        "seat_N5__foot_45",
+        "seat_N5__foot_135",
+        "seat_N5__foot_225",
+        "seat_N5__foot_315"
+      ],
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          4.064000129699707,
+          9.913999557495117,
+          0.0
+        ],
+        "max": [
+          4.736000061035156,
+          10.586000442504883,
+          0.574999988079071
+        ]
+      },
+      "dimensions": [
+        0.6719999313354492,
+        0.6720008850097656,
+        0.574999988079071
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_N6",
+      "category": "chair",
+      "component_names": [
+        "seat_N6__seat_cushion",
+        "seat_N6__underside",
+        "seat_N6__foot_45",
+        "seat_N6__foot_135",
+        "seat_N6__foot_225",
+        "seat_N6__foot_315",
+        "seat_N6__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          4.788404941558838,
+          9.7839994430542,
+          0.0
+        ],
+        "max": [
+          5.466000080108643,
+          10.461854934692383,
+          0.9271308779716492
+        ]
+      },
+      "dimensions": [
+        0.6775951385498047,
+        0.6778554916381836,
+        0.9271308779716492
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_S1",
+      "category": "ottoman",
+      "component_names": [
+        "seat_S1__seat_cushion",
+        "seat_S1__underside",
+        "seat_S1__foot_45",
+        "seat_S1__foot_135",
+        "seat_S1__foot_225",
+        "seat_S1__foot_315"
+      ],
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          4.456000328063965,
+          7.206000328063965,
+          0.0
+        ],
+        "max": [
+          5.144000053405762,
+          7.894000053405762,
+          0.574999988079071
+        ]
+      },
+      "dimensions": [
+        0.6879997253417969,
+        0.6879997253417969,
+        0.574999988079071
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_S2",
+      "category": "chair",
+      "component_names": [
+        "seat_S2__seat_cushion",
+        "seat_S2__underside",
+        "seat_S2__foot_45",
+        "seat_S2__foot_135",
+        "seat_S2__foot_225",
+        "seat_S2__foot_315",
+        "seat_S2__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          5.214000225067139,
+          6.9039998054504395,
+          0.0
+        ],
+        "max": [
+          5.886000156402588,
+          7.581912994384766,
+          0.9271304607391357
+        ]
+      },
+      "dimensions": [
+        0.6719999313354492,
+        0.6779131889343262,
+        0.9271304607391357
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_S3",
+      "category": "chair",
+      "component_names": [
+        "seat_S3__seat_cushion",
+        "seat_S3__underside",
+        "seat_S3__foot_45",
+        "seat_S3__foot_135",
+        "seat_S3__foot_225",
+        "seat_S3__foot_315",
+        "seat_S3__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          5.46999979019165,
+          6.156000137329102,
+          0.0
+        ],
+        "max": [
+          6.164000034332275,
+          6.867691993713379,
+          0.9277240037918091
+        ]
+      },
+      "dimensions": [
+        0.694000244140625,
+        0.7116918563842773,
+        0.9277240037918091
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_S4",
+      "category": "ottoman",
+      "component_names": [
+        "seat_S4__seat_cushion",
+        "seat_S4__underside",
+        "seat_S4__foot_45",
+        "seat_S4__foot_135",
+        "seat_S4__foot_225",
+        "seat_S4__foot_315"
+      ],
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          4.519999980926514,
+          5.119999885559082,
+          0.0
+        ],
+        "max": [
+          5.320000171661377,
+          5.920000076293945,
+          0.574999988079071
+        ]
+      },
+      "dimensions": [
+        0.8000001907348633,
+        0.8000001907348633,
+        0.574999988079071
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "seat_S5",
+      "category": "chair",
+      "component_names": [
+        "seat_S5__seat_cushion",
+        "seat_S5__underside",
+        "seat_S5__foot_45",
+        "seat_S5__foot_135",
+        "seat_S5__foot_225",
+        "seat_S5__foot_315",
+        "seat_S5__curved_back"
+      ],
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          3.5139999389648438,
+          4.998002052307129,
+          0.0
+        ],
+        "max": [
+          4.191953182220459,
+          5.676000118255615,
+          0.9271306991577148
+        ]
+      },
+      "dimensions": [
+        0.6779532432556152,
+        0.6779980659484863,
+        0.9271306991577148
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "table_north",
+      "category": "coffee_table",
+      "component_names": [
+        "table_north__oval_top",
+        "table_north__core",
+        "table_north__flute_0",
+        "table_north__flute_1",
+        "table_north__flute_2",
+        "table_north__flute_3",
+        "table_north__flute_4",
+        "table_north__flute_5",
+        "table_north__flute_6",
+        "table_north__flute_7",
+        "table_north__flute_8",
+        "table_north__flute_9",
+        "table_north__flute_10",
+        "table_north__flute_11",
+        "table_north__flute_12",
+        "table_north__flute_13",
+        "table_north__flute_14",
+        "table_north__flute_15",
+        "table_north__flute_16",
+        "table_north__flute_17",
+        "table_north__flute_18",
+        "table_north__flute_19",
+        "table_north__flute_20",
+        "table_north__flute_21",
+        "table_north__flute_22",
+        "table_north__flute_23"
+      ],
+      "description": "Dark oval table with a radial fluted pedestal",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          2.760000228881836,
+          8.579999923706055,
+          0.01199999451637268
+        ],
+        "max": [
+          4.039999961853027,
+          9.620000839233398,
+          0.512499988079071
+        ]
+      },
+      "dimensions": [
+        1.2799997329711914,
+        1.0400009155273438,
+        0.5004999935626984
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "table_north_bowl",
+      "category": "decor",
+      "component_names": [
+        "table_north_bowl__bowl",
+        "table_north_bowl__rim"
+      ],
+      "description": "Low metallic bowl on table",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "target": "table_north"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.2200000286102295,
+          8.920000076293945,
+          0.5199999809265137
+        ],
+        "max": [
+          3.5799999237060547,
+          9.279999732971191,
+          0.6570000052452087
+        ]
+      },
+      "dimensions": [
+        0.3599998950958252,
+        0.3599996566772461,
+        0.13700002431869507
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "table_south",
+      "category": "coffee_table",
+      "component_names": [
+        "table_south__oval_top",
+        "table_south__core",
+        "table_south__flute_0",
+        "table_south__flute_1",
+        "table_south__flute_2",
+        "table_south__flute_3",
+        "table_south__flute_4",
+        "table_south__flute_5",
+        "table_south__flute_6",
+        "table_south__flute_7",
+        "table_south__flute_8",
+        "table_south__flute_9",
+        "table_south__flute_10",
+        "table_south__flute_11",
+        "table_south__flute_12",
+        "table_south__flute_13",
+        "table_south__flute_14",
+        "table_south__flute_15",
+        "table_south__flute_16",
+        "table_south__flute_17",
+        "table_south__flute_18",
+        "table_south__flute_19",
+        "table_south__flute_20",
+        "table_south__flute_21",
+        "table_south__flute_22",
+        "table_south__flute_23"
+      ],
+      "description": "Dark oval table with a radial fluted pedestal",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          3.629999876022339,
+          5.920000076293945,
+          0.01199999451637268
+        ],
+        "max": [
+          5.069999694824219,
+          6.979999542236328,
+          0.512499988079071
+        ]
+      },
+      "dimensions": [
+        1.4399998188018799,
+        1.0599994659423828,
+        0.5004999935626984
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "planter_north_left",
+      "category": "planter",
+      "component_names": [
+        "planter_north_left__body",
+        "planter_north_left__soil",
+        "planter_north_left__stem_0",
+        "planter_north_left__yellow_sprig_0",
+        "planter_north_left__yellow_mid_0",
+        "planter_north_left__stem_1",
+        "planter_north_left__yellow_sprig_1",
+        "planter_north_left__yellow_mid_1",
+        "planter_north_left__stem_2",
+        "planter_north_left__yellow_sprig_2",
+        "planter_north_left__yellow_mid_2",
+        "planter_north_left__stem_3",
+        "planter_north_left__yellow_sprig_3",
+        "planter_north_left__yellow_mid_3",
+        "planter_north_left__stem_4",
+        "planter_north_left__yellow_sprig_4",
+        "planter_north_left__yellow_mid_4",
+        "planter_north_left__stem_5",
+        "planter_north_left__yellow_sprig_5",
+        "planter_north_left__yellow_mid_5",
+        "planter_north_left__stem_6",
+        "planter_north_left__yellow_sprig_6",
+        "planter_north_left__yellow_mid_6",
+        "planter_north_left__stem_7",
+        "planter_north_left__yellow_sprig_7",
+        "planter_north_left__yellow_mid_7",
+        "planter_north_left__stem_8",
+        "planter_north_left__yellow_sprig_8",
+        "planter_north_left__yellow_mid_8",
+        "planter_north_left__stem_9",
+        "planter_north_left__yellow_sprig_9",
+        "planter_north_left__yellow_mid_9",
+        "planter_north_left__stem_10",
+        "planter_north_left__yellow_sprig_10",
+        "planter_north_left__yellow_mid_10",
+        "planter_north_left__stem_11",
+        "planter_north_left__yellow_sprig_11",
+        "planter_north_left__yellow_mid_11",
+        "planter_north_left__stem_12",
+        "planter_north_left__yellow_sprig_12",
+        "planter_north_left__yellow_mid_12",
+        "planter_north_left__stem_13",
+        "planter_north_left__yellow_sprig_13",
+        "planter_north_left__yellow_mid_13",
+        "planter_north_left__stem_14",
+        "planter_north_left__yellow_sprig_14",
+        "planter_north_left__yellow_mid_14",
+        "planter_north_left__stem_15",
+        "planter_north_left__yellow_sprig_15",
+        "planter_north_left__yellow_mid_15",
+        "planter_north_left__stem_16",
+        "planter_north_left__yellow_sprig_16",
+        "planter_north_left__yellow_mid_16",
+        "planter_north_left__stem_17",
+        "planter_north_left__yellow_sprig_17",
+        "planter_north_left__yellow_mid_17",
+        "planter_north_left__stem_18",
+        "planter_north_left__yellow_sprig_18",
+        "planter_north_left__yellow_mid_18",
+        "planter_north_left__stem_19",
+        "planter_north_left__yellow_sprig_19",
+        "planter_north_left__yellow_mid_19",
+        "planter_north_left__stem_20",
+        "planter_north_left__yellow_sprig_20",
+        "planter_north_left__yellow_mid_20",
+        "planter_north_left__stem_21",
+        "planter_north_left__yellow_sprig_21",
+        "planter_north_left__yellow_mid_21",
+        "planter_north_left__stem_22",
+        "planter_north_left__yellow_sprig_22",
+        "planter_north_left__yellow_mid_22",
+        "planter_north_left__stem_23",
+        "planter_north_left__yellow_sprig_23",
+        "planter_north_left__yellow_mid_23",
+        "planter_north_left__stem_24",
+        "planter_north_left__yellow_sprig_24",
+        "planter_north_left__yellow_mid_24",
+        "planter_north_left__stem_25",
+        "planter_north_left__yellow_sprig_25",
+        "planter_north_left__yellow_mid_25",
+        "planter_north_left__stem_26",
+        "planter_north_left__yellow_sprig_26",
+        "planter_north_left__yellow_mid_26",
+        "planter_north_left__stem_27",
+        "planter_north_left__yellow_sprig_27",
+        "planter_north_left__yellow_mid_27",
+        "planter_north_left__stem_28",
+        "planter_north_left__yellow_sprig_28",
+        "planter_north_left__yellow_mid_28",
+        "planter_north_left__stem_29",
+        "planter_north_left__yellow_sprig_29",
+        "planter_north_left__yellow_mid_29",
+        "planter_north_left__stem_30",
+        "planter_north_left__yellow_sprig_30",
+        "planter_north_left__yellow_mid_30",
+        "planter_north_left__stem_31",
+        "planter_north_left__yellow_sprig_31",
+        "planter_north_left__yellow_mid_31",
+        "planter_north_left__stem_32",
+        "planter_north_left__yellow_sprig_32",
+        "planter_north_left__yellow_mid_32",
+        "planter_north_left__stem_33",
+        "planter_north_left__yellow_sprig_33",
+        "planter_north_left__yellow_mid_33",
+        "planter_north_left__stem_34",
+        "planter_north_left__yellow_sprig_34",
+        "planter_north_left__yellow_mid_34",
+        "planter_north_left__stem_35",
+        "planter_north_left__yellow_sprig_35",
+        "planter_north_left__yellow_mid_35",
+        "planter_north_left__stem_36",
+        "planter_north_left__yellow_sprig_36",
+        "planter_north_left__yellow_mid_36",
+        "planter_north_left__stem_37",
+        "planter_north_left__yellow_sprig_37",
+        "planter_north_left__yellow_mid_37",
+        "planter_north_left__stem_38",
+        "planter_north_left__yellow_sprig_38",
+        "planter_north_left__yellow_mid_38",
+        "planter_north_left__stem_39",
+        "planter_north_left__yellow_sprig_39",
+        "planter_north_left__yellow_mid_39",
+        "planter_north_left__stem_40",
+        "planter_north_left__yellow_sprig_40",
+        "planter_north_left__yellow_mid_40",
+        "planter_north_left__stem_41",
+        "planter_north_left__yellow_sprig_41",
+        "planter_north_left__yellow_mid_41",
+        "planter_north_left__stem_42",
+        "planter_north_left__yellow_sprig_42",
+        "planter_north_left__yellow_mid_42",
+        "planter_north_left__stem_43",
+        "planter_north_left__yellow_sprig_43",
+        "planter_north_left__yellow_mid_43",
+        "planter_north_left__stem_44",
+        "planter_north_left__yellow_sprig_44",
+        "planter_north_left__yellow_mid_44",
+        "planter_north_left__stem_45",
+        "planter_north_left__yellow_sprig_45",
+        "planter_north_left__yellow_mid_45",
+        "planter_north_left__stem_46",
+        "planter_north_left__yellow_sprig_46",
+        "planter_north_left__yellow_mid_46",
+        "planter_north_left__stem_47",
+        "planter_north_left__yellow_sprig_47",
+        "planter_north_left__yellow_mid_47",
+        "planter_north_left__stem_48",
+        "planter_north_left__yellow_sprig_48",
+        "planter_north_left__yellow_mid_48",
+        "planter_north_left__stem_49",
+        "planter_north_left__yellow_sprig_49",
+        "planter_north_left__yellow_mid_49",
+        "planter_north_left__stem_50",
+        "planter_north_left__yellow_sprig_50",
+        "planter_north_left__yellow_mid_50",
+        "planter_north_left__stem_51",
+        "planter_north_left__yellow_sprig_51",
+        "planter_north_left__yellow_mid_51",
+        "planter_north_left__stem_52",
+        "planter_north_left__yellow_sprig_52",
+        "planter_north_left__yellow_mid_52",
+        "planter_north_left__stem_53",
+        "planter_north_left__yellow_sprig_53",
+        "planter_north_left__yellow_mid_53",
+        "planter_north_left__stem_54",
+        "planter_north_left__yellow_sprig_54",
+        "planter_north_left__yellow_mid_54",
+        "planter_north_left__stem_55",
+        "planter_north_left__yellow_sprig_55",
+        "planter_north_left__yellow_mid_55",
+        "planter_north_left__stem_56",
+        "planter_north_left__yellow_sprig_56",
+        "planter_north_left__yellow_mid_56",
+        "planter_north_left__stem_57",
+        "planter_north_left__yellow_sprig_57",
+        "planter_north_left__yellow_mid_57",
+        "planter_north_left__stem_58",
+        "planter_north_left__yellow_sprig_58",
+        "planter_north_left__yellow_mid_58",
+        "planter_north_left__stem_59",
+        "planter_north_left__yellow_sprig_59",
+        "planter_north_left__yellow_mid_59",
+        "planter_north_left__stem_60",
+        "planter_north_left__yellow_sprig_60",
+        "planter_north_left__yellow_mid_60",
+        "planter_north_left__stem_61",
+        "planter_north_left__yellow_sprig_61",
+        "planter_north_left__yellow_mid_61",
+        "planter_north_left__stem_62",
+        "planter_north_left__yellow_sprig_62",
+        "planter_north_left__yellow_mid_62",
+        "planter_north_left__stem_63",
+        "planter_north_left__yellow_sprig_63",
+        "planter_north_left__yellow_mid_63"
+      ],
+      "description": "Rectangular grey raised planter with spreading yellow flowering branches",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          1.3456242084503174,
+          10.923174858093262,
+          0.009999990463256836
+        ],
+        "max": [
+          3.787435531616211,
+          12.422477722167969,
+          1.5692329406738281
+        ]
+      },
+      "dimensions": [
+        2.4418113231658936,
+        1.499302864074707,
+        1.5592329502105713
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "planter_north_right",
+      "category": "planter",
+      "component_names": [
+        "planter_north_right__body",
+        "planter_north_right__soil",
+        "planter_north_right__stem_0",
+        "planter_north_right__yellow_sprig_0",
+        "planter_north_right__yellow_mid_0",
+        "planter_north_right__stem_1",
+        "planter_north_right__yellow_sprig_1",
+        "planter_north_right__yellow_mid_1",
+        "planter_north_right__stem_2",
+        "planter_north_right__yellow_sprig_2",
+        "planter_north_right__yellow_mid_2",
+        "planter_north_right__stem_3",
+        "planter_north_right__yellow_sprig_3",
+        "planter_north_right__yellow_mid_3",
+        "planter_north_right__stem_4",
+        "planter_north_right__yellow_sprig_4",
+        "planter_north_right__yellow_mid_4",
+        "planter_north_right__stem_5",
+        "planter_north_right__yellow_sprig_5",
+        "planter_north_right__yellow_mid_5",
+        "planter_north_right__stem_6",
+        "planter_north_right__yellow_sprig_6",
+        "planter_north_right__yellow_mid_6",
+        "planter_north_right__stem_7",
+        "planter_north_right__yellow_sprig_7",
+        "planter_north_right__yellow_mid_7",
+        "planter_north_right__stem_8",
+        "planter_north_right__yellow_sprig_8",
+        "planter_north_right__yellow_mid_8",
+        "planter_north_right__stem_9",
+        "planter_north_right__yellow_sprig_9",
+        "planter_north_right__yellow_mid_9",
+        "planter_north_right__stem_10",
+        "planter_north_right__yellow_sprig_10",
+        "planter_north_right__yellow_mid_10",
+        "planter_north_right__stem_11",
+        "planter_north_right__yellow_sprig_11",
+        "planter_north_right__yellow_mid_11",
+        "planter_north_right__stem_12",
+        "planter_north_right__yellow_sprig_12",
+        "planter_north_right__yellow_mid_12",
+        "planter_north_right__stem_13",
+        "planter_north_right__yellow_sprig_13",
+        "planter_north_right__yellow_mid_13",
+        "planter_north_right__stem_14",
+        "planter_north_right__yellow_sprig_14",
+        "planter_north_right__yellow_mid_14",
+        "planter_north_right__stem_15",
+        "planter_north_right__yellow_sprig_15",
+        "planter_north_right__yellow_mid_15",
+        "planter_north_right__stem_16",
+        "planter_north_right__yellow_sprig_16",
+        "planter_north_right__yellow_mid_16",
+        "planter_north_right__stem_17",
+        "planter_north_right__yellow_sprig_17",
+        "planter_north_right__yellow_mid_17",
+        "planter_north_right__stem_18",
+        "planter_north_right__yellow_sprig_18",
+        "planter_north_right__yellow_mid_18",
+        "planter_north_right__stem_19",
+        "planter_north_right__yellow_sprig_19",
+        "planter_north_right__yellow_mid_19",
+        "planter_north_right__stem_20",
+        "planter_north_right__yellow_sprig_20",
+        "planter_north_right__yellow_mid_20",
+        "planter_north_right__stem_21",
+        "planter_north_right__yellow_sprig_21",
+        "planter_north_right__yellow_mid_21",
+        "planter_north_right__stem_22",
+        "planter_north_right__yellow_sprig_22",
+        "planter_north_right__yellow_mid_22",
+        "planter_north_right__stem_23",
+        "planter_north_right__yellow_sprig_23",
+        "planter_north_right__yellow_mid_23",
+        "planter_north_right__stem_24",
+        "planter_north_right__yellow_sprig_24",
+        "planter_north_right__yellow_mid_24",
+        "planter_north_right__stem_25",
+        "planter_north_right__yellow_sprig_25",
+        "planter_north_right__yellow_mid_25",
+        "planter_north_right__stem_26",
+        "planter_north_right__yellow_sprig_26",
+        "planter_north_right__yellow_mid_26",
+        "planter_north_right__stem_27",
+        "planter_north_right__yellow_sprig_27",
+        "planter_north_right__yellow_mid_27",
+        "planter_north_right__stem_28",
+        "planter_north_right__yellow_sprig_28",
+        "planter_north_right__yellow_mid_28",
+        "planter_north_right__stem_29",
+        "planter_north_right__yellow_sprig_29",
+        "planter_north_right__yellow_mid_29",
+        "planter_north_right__stem_30",
+        "planter_north_right__yellow_sprig_30",
+        "planter_north_right__yellow_mid_30",
+        "planter_north_right__stem_31",
+        "planter_north_right__yellow_sprig_31",
+        "planter_north_right__yellow_mid_31",
+        "planter_north_right__stem_32",
+        "planter_north_right__yellow_sprig_32",
+        "planter_north_right__yellow_mid_32",
+        "planter_north_right__stem_33",
+        "planter_north_right__yellow_sprig_33",
+        "planter_north_right__yellow_mid_33",
+        "planter_north_right__stem_34",
+        "planter_north_right__yellow_sprig_34",
+        "planter_north_right__yellow_mid_34",
+        "planter_north_right__stem_35",
+        "planter_north_right__yellow_sprig_35",
+        "planter_north_right__yellow_mid_35",
+        "planter_north_right__stem_36",
+        "planter_north_right__yellow_sprig_36",
+        "planter_north_right__yellow_mid_36",
+        "planter_north_right__stem_37",
+        "planter_north_right__yellow_sprig_37",
+        "planter_north_right__yellow_mid_37",
+        "planter_north_right__stem_38",
+        "planter_north_right__yellow_sprig_38",
+        "planter_north_right__yellow_mid_38",
+        "planter_north_right__stem_39",
+        "planter_north_right__yellow_sprig_39",
+        "planter_north_right__yellow_mid_39",
+        "planter_north_right__stem_40",
+        "planter_north_right__yellow_sprig_40",
+        "planter_north_right__yellow_mid_40",
+        "planter_north_right__stem_41",
+        "planter_north_right__yellow_sprig_41",
+        "planter_north_right__yellow_mid_41",
+        "planter_north_right__stem_42",
+        "planter_north_right__yellow_sprig_42",
+        "planter_north_right__yellow_mid_42",
+        "planter_north_right__stem_43",
+        "planter_north_right__yellow_sprig_43",
+        "planter_north_right__yellow_mid_43",
+        "planter_north_right__stem_44",
+        "planter_north_right__yellow_sprig_44",
+        "planter_north_right__yellow_mid_44",
+        "planter_north_right__stem_45",
+        "planter_north_right__yellow_sprig_45",
+        "planter_north_right__yellow_mid_45",
+        "planter_north_right__stem_46",
+        "planter_north_right__yellow_sprig_46",
+        "planter_north_right__yellow_mid_46",
+        "planter_north_right__stem_47",
+        "planter_north_right__yellow_sprig_47",
+        "planter_north_right__yellow_mid_47",
+        "planter_north_right__stem_48",
+        "planter_north_right__yellow_sprig_48",
+        "planter_north_right__yellow_mid_48",
+        "planter_north_right__stem_49",
+        "planter_north_right__yellow_sprig_49",
+        "planter_north_right__yellow_mid_49",
+        "planter_north_right__stem_50",
+        "planter_north_right__yellow_sprig_50",
+        "planter_north_right__yellow_mid_50",
+        "planter_north_right__stem_51",
+        "planter_north_right__yellow_sprig_51",
+        "planter_north_right__yellow_mid_51",
+        "planter_north_right__stem_52",
+        "planter_north_right__yellow_sprig_52",
+        "planter_north_right__yellow_mid_52",
+        "planter_north_right__stem_53",
+        "planter_north_right__yellow_sprig_53",
+        "planter_north_right__yellow_mid_53",
+        "planter_north_right__stem_54",
+        "planter_north_right__yellow_sprig_54",
+        "planter_north_right__yellow_mid_54",
+        "planter_north_right__stem_55",
+        "planter_north_right__yellow_sprig_55",
+        "planter_north_right__yellow_mid_55",
+        "planter_north_right__stem_56",
+        "planter_north_right__yellow_sprig_56",
+        "planter_north_right__yellow_mid_56",
+        "planter_north_right__stem_57",
+        "planter_north_right__yellow_sprig_57",
+        "planter_north_right__yellow_mid_57",
+        "planter_north_right__stem_58",
+        "planter_north_right__yellow_sprig_58",
+        "planter_north_right__yellow_mid_58",
+        "planter_north_right__stem_59",
+        "planter_north_right__yellow_sprig_59",
+        "planter_north_right__yellow_mid_59",
+        "planter_north_right__stem_60",
+        "planter_north_right__yellow_sprig_60",
+        "planter_north_right__yellow_mid_60",
+        "planter_north_right__stem_61",
+        "planter_north_right__yellow_sprig_61",
+        "planter_north_right__yellow_mid_61",
+        "planter_north_right__stem_62",
+        "planter_north_right__yellow_sprig_62",
+        "planter_north_right__yellow_mid_62",
+        "planter_north_right__stem_63",
+        "planter_north_right__yellow_sprig_63",
+        "planter_north_right__yellow_mid_63"
+      ],
+      "description": "Rectangular grey raised planter with spreading yellow flowering branches",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          3.4325103759765625,
+          11.001599311828613,
+          0.009999990463256836
+        ],
+        "max": [
+          5.991990566253662,
+          12.40589427947998,
+          1.5799775123596191
+        ]
+      },
+      "dimensions": [
+        2.5594801902770996,
+        1.4042949676513672,
+        1.5699775218963623
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_glass_north",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_glass_north__vessel",
+        "plant_glass_north__soil",
+        "plant_glass_north__foliage",
+        "plant_glass_north__bright_blades"
+      ],
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        0,
+        45,
+        62,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          -0.40618738532066345,
+          8.475603103637695,
+          0.0
+        ],
+        "max": [
+          1.673210620880127,
+          10.529438972473145,
+          1.0346049070358276
+        ]
+      },
+      "dimensions": [
+        2.0793980062007904,
+        2.053835868835449,
+        1.0346049070358276
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_glass_south",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_glass_south__vessel",
+        "plant_glass_south__soil",
+        "plant_glass_south__foliage",
+        "plant_glass_south__bright_blades"
+      ],
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          -0.3101971745491028,
+          2.762855052947998,
+          0.0
+        ],
+        "max": [
+          1.7369035482406616,
+          4.835050106048584,
+          1.0290522575378418
+        ]
+      },
+      "dimensions": [
+        2.0471007227897644,
+        2.072195053100586,
+        1.0290522575378418
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_mirror_north",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_mirror_north__vessel",
+        "plant_mirror_north__soil",
+        "plant_mirror_north__foliage"
+      ],
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        62,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          5.817960739135742,
+          8.071125030517578,
+          0.0
+        ],
+        "max": [
+          7.713982582092285,
+          9.938475608825684,
+          1.3288408517837524
+        ]
+      },
+      "dimensions": [
+        1.896021842956543,
+        1.8673505783081055,
+        1.3288408517837524
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_reception_left",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_reception_left__vessel",
+        "plant_reception_left__soil",
+        "plant_reception_left__trunk_-1",
+        "plant_reception_left__trunk_0",
+        "plant_reception_left__trunk_1",
+        "plant_reception_left__crown",
+        "plant_reception_left__crown_light"
+      ],
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          1.2309281826019287,
+          16.674583435058594,
+          0.0
+        ],
+        "max": [
+          2.269437313079834,
+          17.735889434814453,
+          1.9498460292816162
+        ]
+      },
+      "dimensions": [
+        1.0385091304779053,
+        1.0613059997558594,
+        1.9498460292816162
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_reception_right",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_reception_right__vessel",
+        "plant_reception_right__soil",
+        "plant_reception_right__trunk_-1",
+        "plant_reception_right__trunk_0",
+        "plant_reception_right__trunk_1",
+        "plant_reception_right__crown",
+        "plant_reception_right__crown_light"
+      ],
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          5.024143218994141,
+          16.66332244873047,
+          0.0
+        ],
+        "max": [
+          6.086641311645508,
+          17.730310440063477,
+          1.9474807977676392
+        ]
+      },
+      "dimensions": [
+        1.0624980926513672,
+        1.0669879913330078,
+        1.9474807977676392
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_northeast_low",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_northeast_low__vessel",
+        "plant_northeast_low__soil",
+        "plant_northeast_low__foliage",
+        "plant_northeast_low__bright_blades"
+      ],
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        0,
+        45,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          6.679567813873291,
+          16.389554977416992,
+          0.0
+        ],
+        "max": [
+          8.600799560546875,
+          18.289390563964844,
+          1.0408369302749634
+        ]
+      },
+      "dimensions": [
+        1.921231746673584,
+        1.8998355865478516,
+        1.0408369302749634
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_south_low",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_south_low__vessel",
+        "plant_south_low__soil",
+        "plant_south_low__foliage",
+        "plant_south_low__bright_blades"
+      ],
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          0.23797976970672607,
+          0.018822133541107178,
+          0.0
+        ],
+        "max": [
+          2.2348835468292236,
+          2.01314115524292,
+          1.0299514532089233
+        ]
+      },
+      "dimensions": [
+        1.9969037771224976,
+        1.9943190217018127,
+        1.0299514532089233
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_bird_0",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_bird_0__vessel",
+        "plant_bird_0__stem_0",
+        "plant_bird_0__blade_0",
+        "plant_bird_0__stem_1",
+        "plant_bird_0__blade_1",
+        "plant_bird_0__stem_2",
+        "plant_bird_0__blade_2",
+        "plant_bird_0__stem_3",
+        "plant_bird_0__blade_3",
+        "plant_bird_0__stem_4",
+        "plant_bird_0__blade_4",
+        "plant_bird_0__stem_5",
+        "plant_bird_0__blade_5",
+        "plant_bird_0__stem_6",
+        "plant_bird_0__blade_6",
+        "plant_bird_0__stem_7",
+        "plant_bird_0__blade_7",
+        "plant_bird_0__stem_8",
+        "plant_bird_0__blade_8",
+        "plant_bird_0__stem_9",
+        "plant_bird_0__blade_9",
+        "plant_bird_0__stem_10",
+        "plant_bird_0__blade_10",
+        "plant_bird_0__flower_stem_0",
+        "plant_bird_0__flower_0",
+        "plant_bird_0__flower_stem_1",
+        "plant_bird_0__flower_1"
+      ],
+      "description": "Tall narrow planter with broad leaves and orange flowers",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          2.02665114402771,
+          0.8445127606391907,
+          0.0
+        ],
+        "max": [
+          2.680087089538574,
+          1.4891297817230225,
+          2.74165940284729
+        ]
+      },
+      "dimensions": [
+        0.6534359455108643,
+        0.6446170210838318,
+        2.74165940284729
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "plant_bird_1",
+      "category": "potted_plant",
+      "component_names": [
+        "plant_bird_1__vessel",
+        "plant_bird_1__stem_0",
+        "plant_bird_1__blade_0",
+        "plant_bird_1__stem_1",
+        "plant_bird_1__blade_1",
+        "plant_bird_1__stem_2",
+        "plant_bird_1__blade_2",
+        "plant_bird_1__stem_3",
+        "plant_bird_1__blade_3",
+        "plant_bird_1__stem_4",
+        "plant_bird_1__blade_4",
+        "plant_bird_1__stem_5",
+        "plant_bird_1__blade_5",
+        "plant_bird_1__stem_6",
+        "plant_bird_1__blade_6",
+        "plant_bird_1__stem_7",
+        "plant_bird_1__blade_7",
+        "plant_bird_1__stem_8",
+        "plant_bird_1__blade_8",
+        "plant_bird_1__stem_9",
+        "plant_bird_1__blade_9",
+        "plant_bird_1__stem_10",
+        "plant_bird_1__blade_10",
+        "plant_bird_1__flower_stem_0",
+        "plant_bird_1__flower_0",
+        "plant_bird_1__flower_stem_1",
+        "plant_bird_1__flower_1"
+      ],
+      "description": "Tall narrow planter with broad leaves and orange flowers",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          5.394856929779053,
+          0.8265637755393982,
+          0.0
+        ],
+        "max": [
+          6.146613121032715,
+          1.6323796510696411,
+          2.7194528579711914
+        ]
+      },
+      "dimensions": [
+        0.7517561912536621,
+        0.8058158755302429,
+        2.7194528579711914
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception",
+      "component_names": [
+        "reception_desk__faceted_shell",
+        "reception_desk__countertop"
+      ],
+      "description": "Angular faceted dark reception counter; back geometry inferred",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "box",
+      "bounds": {
+        "min": [
+          1.6750000715255737,
+          16.020000457763672,
+          0.0
+        ],
+        "max": [
+          5.625,
+          17.315000534057617,
+          1.0199999809265137
+        ]
+      },
+      "dimensions": [
+        3.9499999284744263,
+        1.2950000762939453,
+        1.0199999809265137
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "reception_desk_succulents",
+      "category": "decor",
+      "component_names": [
+        "reception_desk_succulents__pot_0",
+        "reception_desk_succulents__plant_0",
+        "reception_desk_succulents__pot_1",
+        "reception_desk_succulents__plant_1",
+        "reception_desk_succulents__pot_2",
+        "reception_desk_succulents__plant_2"
+      ],
+      "description": "Three tiny potted succulents on reception counter",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.5097310543060303,
+          15.894701957702637,
+          1.0099999904632568
+        ],
+        "max": [
+          5.293682098388672,
+          17.53021240234375,
+          1.8443711996078491
+        ]
+      },
+      "dimensions": [
+        1.7839510440826416,
+        1.6355104446411133,
+        0.8343712091445923
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "reception_wall_art",
+      "category": "wall_art",
+      "component_names": [
+        "reception_wall_art__horn_outline",
+        "reception_wall_art__shield"
+      ],
+      "description": "U shaped dark line and white shield wall ornament",
+      "evidence_sample_ids": [
+        0,
+        45,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          2.132000207901001,
+          17.799999237060547,
+          1.600000023841858
+        ],
+        "max": [
+          5.078000068664551,
+          17.855588912963867,
+          3.359999895095825
+        ]
+      },
+      "dimensions": [
+        2.94599986076355,
+        0.05558967590332031,
+        1.7599998712539673
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_0",
+      "category": "mirror",
+      "component_names": [
+        "mirror_0__reflective_disc",
+        "mirror_0__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          8.080999374389648,
+          1.371000051498413
+        ],
+        "max": [
+          7.246999740600586,
+          9.718999862670898,
+          3.009000062942505
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        1.63800048828125,
+        1.6380000114440918
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_1",
+      "category": "mirror",
+      "component_names": [
+        "mirror_1__reflective_disc",
+        "mirror_1__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          6.710999965667725,
+          1.031000018119812
+        ],
+        "max": [
+          7.246999740600586,
+          8.08899974822998,
+          2.4090001583099365
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        1.3779997825622559,
+        1.3780001401901245
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_2",
+      "category": "mirror",
+      "component_names": [
+        "mirror_2__reflective_disc",
+        "mirror_2__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          6.901000022888184,
+          2.63100004196167
+        ],
+        "max": [
+          7.246999740600586,
+          7.699000358581543,
+          3.428999900817871
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.7980003356933594,
+        0.7979998588562012
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_3",
+      "category": "mirror",
+      "component_names": [
+        "mirror_3__reflective_disc",
+        "mirror_3__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          8.361000061035156,
+          2.930999994277954
+        ],
+        "max": [
+          7.246999740600586,
+          8.999000549316406,
+          3.569000005722046
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.63800048828125,
+        0.6380000114440918
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_4",
+      "category": "mirror",
+      "component_names": [
+        "mirror_4__reflective_disc",
+        "mirror_4__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          9.690999984741211,
+          2.5310001373291016
+        ],
+        "max": [
+          7.246999740600586,
+          10.388999938964844,
+          3.2290000915527344
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.6979999542236328,
+        0.6979999542236328
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_5",
+      "category": "mirror",
+      "component_names": [
+        "mirror_5__reflective_disc",
+        "mirror_5__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          10.031000137329102,
+          1.9010001420974731
+        ],
+        "max": [
+          7.246999740600586,
+          10.509000778198242,
+          2.379000186920166
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.4780006408691406,
+        0.47800004482269287
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_6",
+      "category": "mirror",
+      "component_names": [
+        "mirror_6__reflective_disc",
+        "mirror_6__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          9.66100025177002,
+          1.1610000133514404
+        ],
+        "max": [
+          7.246999740600586,
+          10.33899974822998,
+          1.8389999866485596
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.6779994964599609,
+        0.6779999732971191
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_7",
+      "category": "mirror",
+      "component_names": [
+        "mirror_7__reflective_disc",
+        "mirror_7__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          8.16100025177002,
+          0.9009999632835388
+        ],
+        "max": [
+          7.246999740600586,
+          8.619000434875488,
+          1.3589999675750732
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.45800018310546875,
+        0.4580000042915344
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_8",
+      "category": "mirror",
+      "component_names": [
+        "mirror_8__reflective_disc",
+        "mirror_8__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          6.111000061035156,
+          2.0909998416900635
+        ],
+        "max": [
+          7.246999740600586,
+          7.109000205993652,
+          3.0889999866485596
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.9980001449584961,
+        0.9980001449584961
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "mirror_9",
+      "category": "mirror",
+      "component_names": [
+        "mirror_9__reflective_disc",
+        "mirror_9__rim"
+      ],
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          7.210000038146973,
+          6.301000118255615,
+          1.4010000228881836
+        ],
+        "max": [
+          7.246999740600586,
+          6.799000263214111,
+          1.8989999294281006
+        ]
+      },
+      "dimensions": [
+        0.03699970245361328,
+        0.4980001449584961,
+        0.497999906539917
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_0__leg_0",
+        "floor_lamp_0__leg_1",
+        "floor_lamp_0__leg_2",
+        "floor_lamp_0__shade",
+        "floor_lamp_0__diffuser"
+      ],
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          6.769999980926514,
+          16.229999542236328,
+          0.01923416554927826
+        ],
+        "max": [
+          7.309999942779541,
+          16.770000457763672,
+          1.850000023841858
+        ]
+      },
+      "dimensions": [
+        0.5399999618530273,
+        0.5400009155273438,
+        1.8307658582925797
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_1__leg_0",
+        "floor_lamp_1__leg_1",
+        "floor_lamp_1__leg_2",
+        "floor_lamp_1__shade",
+        "floor_lamp_1__diffuser"
+      ],
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          7.679999828338623,
+          14.029999732971191,
+          0.01923415996134281
+        ],
+        "max": [
+          8.220000267028809,
+          14.569999694824219,
+          1.850000023841858
+        ]
+      },
+      "dimensions": [
+        0.5400004386901855,
+        0.5399999618530273,
+        1.830765863880515
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_2__leg_0",
+        "floor_lamp_2__leg_1",
+        "floor_lamp_2__leg_2",
+        "floor_lamp_2__shade",
+        "floor_lamp_2__diffuser"
+      ],
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "cylinder",
+      "bounds": {
+        "min": [
+          6.03000020980835,
+          0.3799999952316284,
+          0.01923415996134281
+        ],
+        "max": [
+          6.570000171661377,
+          0.9200000166893005,
+          1.850000023841858
+        ]
+      },
+      "dimensions": [
+        0.5399999618530273,
+        0.5400000214576721,
+        1.830765863880515
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_0",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_0__bowl",
+        "pendant_0__woven_underside",
+        "pendant_0__weave_ring_3",
+        "pendant_0__weave_ring_4",
+        "pendant_0__weave_ring_5",
+        "pendant_0__weave_ring_6",
+        "pendant_0__weave_ring_7",
+        "pendant_0__weave_ring_8",
+        "pendant_0__weave_ring_9",
+        "pendant_0__weave_ring_10",
+        "pendant_0__weave_ring_11",
+        "pendant_0__diffuser",
+        "pendant_0__suspension_0",
+        "pendant_0__suspension_1",
+        "pendant_0__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          0.8899999856948853,
+          1.840000033378601,
+          4.489285945892334
+        ],
+        "max": [
+          2.2100000381469727,
+          3.1600000858306885,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.3200000524520874,
+        1.3200000524520874,
+        0.7107138633728027
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_1",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_1__bowl",
+        "pendant_1__woven_underside",
+        "pendant_1__weave_ring_3",
+        "pendant_1__weave_ring_4",
+        "pendant_1__weave_ring_5",
+        "pendant_1__weave_ring_6",
+        "pendant_1__weave_ring_7",
+        "pendant_1__weave_ring_8",
+        "pendant_1__weave_ring_9",
+        "pendant_1__weave_ring_10",
+        "pendant_1__weave_ring_11",
+        "pendant_1__diffuser",
+        "pendant_1__suspension_0",
+        "pendant_1__suspension_1",
+        "pendant_1__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.25,
+          1.75,
+          4.361599922180176
+        ],
+        "max": [
+          4.550000190734863,
+          3.049999952316284,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.3000001907348633,
+        1.2999999523162842,
+        0.8383998870849609
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_2",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_2__bowl",
+        "pendant_2__woven_underside",
+        "pendant_2__weave_ring_3",
+        "pendant_2__weave_ring_4",
+        "pendant_2__weave_ring_5",
+        "pendant_2__weave_ring_6",
+        "pendant_2__weave_ring_7",
+        "pendant_2__weave_ring_8",
+        "pendant_2__weave_ring_9",
+        "pendant_2__weave_ring_10",
+        "pendant_2__weave_ring_11",
+        "pendant_2__diffuser",
+        "pendant_2__suspension_0",
+        "pendant_2__suspension_1",
+        "pendant_2__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          5.269999980926514,
+          1.9700000286102295,
+          4.483088970184326
+        ],
+        "max": [
+          6.730000019073486,
+          3.430000066757202,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.4600000381469727,
+        1.4600000381469727,
+        0.7169108390808105
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_3",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_3__bowl",
+        "pendant_3__woven_underside",
+        "pendant_3__weave_ring_3",
+        "pendant_3__weave_ring_4",
+        "pendant_3__weave_ring_5",
+        "pendant_3__weave_ring_6",
+        "pendant_3__weave_ring_7",
+        "pendant_3__weave_ring_8",
+        "pendant_3__weave_ring_9",
+        "pendant_3__weave_ring_10",
+        "pendant_3__weave_ring_11",
+        "pendant_3__diffuser",
+        "pendant_3__suspension_0",
+        "pendant_3__suspension_1",
+        "pendant_3__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          1.3799999952316284,
+          4.28000020980835,
+          4.398541450500488
+        ],
+        "max": [
+          2.619999885559082,
+          5.519999980926514,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.2399998903274536,
+        1.239999771118164,
+        0.8014583587646484
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_4",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_4__bowl",
+        "pendant_4__woven_underside",
+        "pendant_4__weave_ring_3",
+        "pendant_4__weave_ring_4",
+        "pendant_4__weave_ring_5",
+        "pendant_4__weave_ring_6",
+        "pendant_4__weave_ring_7",
+        "pendant_4__weave_ring_8",
+        "pendant_4__weave_ring_9",
+        "pendant_4__weave_ring_10",
+        "pendant_4__weave_ring_11",
+        "pendant_4__diffuser",
+        "pendant_4__suspension_0",
+        "pendant_4__suspension_1",
+        "pendant_4__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          4.050000190734863,
+          4.599999904632568,
+          4.270030498504639
+        ],
+        "max": [
+          5.449999809265137,
+          6.0,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.3999996185302734,
+        1.4000000953674316,
+        0.929969310760498
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_5",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_5__bowl",
+        "pendant_5__woven_underside",
+        "pendant_5__weave_ring_3",
+        "pendant_5__weave_ring_4",
+        "pendant_5__weave_ring_5",
+        "pendant_5__weave_ring_6",
+        "pendant_5__weave_ring_7",
+        "pendant_5__weave_ring_8",
+        "pendant_5__weave_ring_9",
+        "pendant_5__weave_ring_10",
+        "pendant_5__weave_ring_11",
+        "pendant_5__diffuser",
+        "pendant_5__suspension_0",
+        "pendant_5__suspension_1",
+        "pendant_5__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          5.449999809265137,
+          5.900000095367432,
+          4.433168888092041
+        ],
+        "max": [
+          6.650000095367432,
+          7.099999904632568,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.200000286102295,
+        1.1999998092651367,
+        0.7668309211730957
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_6",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_6__bowl",
+        "pendant_6__woven_underside",
+        "pendant_6__weave_ring_3",
+        "pendant_6__weave_ring_4",
+        "pendant_6__weave_ring_5",
+        "pendant_6__weave_ring_6",
+        "pendant_6__weave_ring_7",
+        "pendant_6__weave_ring_8",
+        "pendant_6__weave_ring_9",
+        "pendant_6__weave_ring_10",
+        "pendant_6__weave_ring_11",
+        "pendant_6__diffuser",
+        "pendant_6__suspension_0",
+        "pendant_6__suspension_1",
+        "pendant_6__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          1.2200000286102295,
+          6.519999980926514,
+          4.347796440124512
+        ],
+        "max": [
+          2.380000114440918,
+          7.679999828338623,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1600000858306885,
+        1.1599998474121094,
+        0.852203369140625
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_7",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_7__bowl",
+        "pendant_7__woven_underside",
+        "pendant_7__weave_ring_3",
+        "pendant_7__weave_ring_4",
+        "pendant_7__weave_ring_5",
+        "pendant_7__weave_ring_6",
+        "pendant_7__weave_ring_7",
+        "pendant_7__weave_ring_8",
+        "pendant_7__weave_ring_9",
+        "pendant_7__weave_ring_10",
+        "pendant_7__weave_ring_11",
+        "pendant_7__diffuser",
+        "pendant_7__suspension_0",
+        "pendant_7__suspension_1",
+        "pendant_7__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          2.9600000381469727,
+          6.760000228881836,
+          4.463913440704346
+        ],
+        "max": [
+          4.239999771118164,
+          8.039999961853027,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.2799997329711914,
+        1.2799997329711914,
+        0.736086368560791
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_8",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_8__bowl",
+        "pendant_8__woven_underside",
+        "pendant_8__weave_ring_3",
+        "pendant_8__weave_ring_4",
+        "pendant_8__weave_ring_5",
+        "pendant_8__weave_ring_6",
+        "pendant_8__weave_ring_7",
+        "pendant_8__weave_ring_8",
+        "pendant_8__weave_ring_9",
+        "pendant_8__weave_ring_10",
+        "pendant_8__weave_ring_11",
+        "pendant_8__diffuser",
+        "pendant_8__suspension_0",
+        "pendant_8__suspension_1",
+        "pendant_8__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          4.659999847412109,
+          7.510000228881836,
+          4.245482921600342
+        ],
+        "max": [
+          5.840000152587891,
+          8.6899995803833,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1800003051757812,
+        1.1799993515014648,
+        0.9545168876647949
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_9",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_9__bowl",
+        "pendant_9__woven_underside",
+        "pendant_9__weave_ring_3",
+        "pendant_9__weave_ring_4",
+        "pendant_9__weave_ring_5",
+        "pendant_9__weave_ring_6",
+        "pendant_9__weave_ring_7",
+        "pendant_9__weave_ring_8",
+        "pendant_9__weave_ring_9",
+        "pendant_9__weave_ring_10",
+        "pendant_9__weave_ring_11",
+        "pendant_9__diffuser",
+        "pendant_9__suspension_0",
+        "pendant_9__suspension_1",
+        "pendant_9__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          1.4299999475479126,
+          8.529999732971191,
+          4.380110740661621
+        ],
+        "max": [
+          2.569999933242798,
+          9.670000076293945,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1399999856948853,
+        1.140000343322754,
+        0.8198890686035156
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_10__bowl",
+        "pendant_10__woven_underside",
+        "pendant_10__weave_ring_3",
+        "pendant_10__weave_ring_4",
+        "pendant_10__weave_ring_5",
+        "pendant_10__weave_ring_6",
+        "pendant_10__weave_ring_7",
+        "pendant_10__weave_ring_8",
+        "pendant_10__weave_ring_9",
+        "pendant_10__weave_ring_10",
+        "pendant_10__weave_ring_11",
+        "pendant_10__diffuser",
+        "pendant_10__suspension_0",
+        "pendant_10__suspension_1",
+        "pendant_10__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.380000114440918,
+          9.029999732971191,
+          4.4069719314575195
+        ],
+        "max": [
+          4.71999979019165,
+          10.369999885559082,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.3399996757507324,
+        1.3400001525878906,
+        0.7930278778076172
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_11__bowl",
+        "pendant_11__woven_underside",
+        "pendant_11__weave_ring_3",
+        "pendant_11__weave_ring_4",
+        "pendant_11__weave_ring_5",
+        "pendant_11__weave_ring_6",
+        "pendant_11__weave_ring_7",
+        "pendant_11__weave_ring_8",
+        "pendant_11__weave_ring_9",
+        "pendant_11__weave_ring_10",
+        "pendant_11__weave_ring_11",
+        "pendant_11__diffuser",
+        "pendant_11__suspension_0",
+        "pendant_11__suspension_1",
+        "pendant_11__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          5.190000057220459,
+          10.09000015258789,
+          4.310854911804199
+        ],
+        "max": [
+          6.409999847412109,
+          11.3100004196167,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.2199997901916504,
+        1.2200002670288086,
+        0.8891448974609375
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_12__bowl",
+        "pendant_12__woven_underside",
+        "pendant_12__weave_ring_3",
+        "pendant_12__weave_ring_4",
+        "pendant_12__weave_ring_5",
+        "pendant_12__weave_ring_6",
+        "pendant_12__weave_ring_7",
+        "pendant_12__weave_ring_8",
+        "pendant_12__weave_ring_9",
+        "pendant_12__weave_ring_10",
+        "pendant_12__weave_ring_11",
+        "pendant_12__diffuser",
+        "pendant_12__suspension_0",
+        "pendant_12__suspension_1",
+        "pendant_12__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          1.4700000286102295,
+          10.869999885559082,
+          4.486227512359619
+        ],
+        "max": [
+          2.7300000190734863,
+          12.130000114440918,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.2599999904632568,
+        1.260000228881836,
+        0.7137722969055176
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_13__bowl",
+        "pendant_13__woven_underside",
+        "pendant_13__weave_ring_3",
+        "pendant_13__weave_ring_4",
+        "pendant_13__weave_ring_5",
+        "pendant_13__weave_ring_6",
+        "pendant_13__weave_ring_7",
+        "pendant_13__weave_ring_8",
+        "pendant_13__weave_ring_9",
+        "pendant_13__weave_ring_10",
+        "pendant_13__weave_ring_11",
+        "pendant_13__diffuser",
+        "pendant_13__suspension_0",
+        "pendant_13__suspension_1",
+        "pendant_13__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.049999952316284,
+          11.449999809265137,
+          4.2547383308410645
+        ],
+        "max": [
+          4.150000095367432,
+          12.550000190734863,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1000001430511475,
+        1.1000003814697266,
+        0.9452614784240723
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_14__bowl",
+        "pendant_14__woven_underside",
+        "pendant_14__weave_ring_3",
+        "pendant_14__weave_ring_4",
+        "pendant_14__weave_ring_5",
+        "pendant_14__weave_ring_6",
+        "pendant_14__weave_ring_7",
+        "pendant_14__weave_ring_8",
+        "pendant_14__weave_ring_9",
+        "pendant_14__weave_ring_10",
+        "pendant_14__weave_ring_11",
+        "pendant_14__diffuser",
+        "pendant_14__suspension_0",
+        "pendant_14__suspension_1",
+        "pendant_14__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          4.929999828338623,
+          12.529999732971191,
+          4.45011043548584
+        ],
+        "max": [
+          6.070000171661377,
+          13.670000076293945,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.140000343322754,
+        1.140000343322754,
+        0.7498893737792969
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_15__bowl",
+        "pendant_15__woven_underside",
+        "pendant_15__weave_ring_3",
+        "pendant_15__weave_ring_4",
+        "pendant_15__weave_ring_5",
+        "pendant_15__weave_ring_6",
+        "pendant_15__weave_ring_7",
+        "pendant_15__weave_ring_8",
+        "pendant_15__weave_ring_9",
+        "pendant_15__weave_ring_10",
+        "pendant_15__weave_ring_11",
+        "pendant_15__diffuser",
+        "pendant_15__suspension_0",
+        "pendant_15__suspension_1",
+        "pendant_15__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          1.6100000143051147,
+          13.609999656677246,
+          4.425482749938965
+        ],
+        "max": [
+          2.7899999618530273,
+          14.789999961853027,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1799999475479126,
+        1.1800003051757812,
+        0.7745170593261719
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_16__bowl",
+        "pendant_16__woven_underside",
+        "pendant_16__weave_ring_3",
+        "pendant_16__weave_ring_4",
+        "pendant_16__weave_ring_5",
+        "pendant_16__weave_ring_6",
+        "pendant_16__weave_ring_7",
+        "pendant_16__weave_ring_8",
+        "pendant_16__weave_ring_9",
+        "pendant_16__weave_ring_10",
+        "pendant_16__weave_ring_11",
+        "pendant_16__diffuser",
+        "pendant_16__suspension_0",
+        "pendant_16__suspension_1",
+        "pendant_16__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          3.549999952316284,
+          14.25,
+          4.354738235473633
+        ],
+        "max": [
+          4.650000095367432,
+          15.350000381469727,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.1000001430511475,
+        1.1000003814697266,
+        0.8452615737915039
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_17__bowl",
+        "pendant_17__woven_underside",
+        "pendant_17__weave_ring_3",
+        "pendant_17__weave_ring_4",
+        "pendant_17__weave_ring_5",
+        "pendant_17__weave_ring_6",
+        "pendant_17__weave_ring_7",
+        "pendant_17__weave_ring_8",
+        "pendant_17__weave_ring_9",
+        "pendant_17__weave_ring_10",
+        "pendant_17__weave_ring_11",
+        "pendant_17__diffuser",
+        "pendant_17__suspension_0",
+        "pendant_17__suspension_1",
+        "pendant_17__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          5.300000190734863,
+          14.850000381469727,
+          4.4415998458862305
+        ],
+        "max": [
+          6.599999904632568,
+          16.149999618530273,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.299999713897705,
+        1.2999992370605469,
+        0.7583999633789062
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_18__bowl",
+        "pendant_18__woven_underside",
+        "pendant_18__weave_ring_3",
+        "pendant_18__weave_ring_4",
+        "pendant_18__weave_ring_5",
+        "pendant_18__weave_ring_6",
+        "pendant_18__weave_ring_7",
+        "pendant_18__weave_ring_8",
+        "pendant_18__weave_ring_9",
+        "pendant_18__weave_ring_10",
+        "pendant_18__weave_ring_11",
+        "pendant_18__diffuser",
+        "pendant_18__suspension_0",
+        "pendant_18__suspension_1",
+        "pendant_18__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          2.4700000286102295,
+          15.770000457763672,
+          4.259366035461426
+        ],
+        "max": [
+          3.5299999713897705,
+          16.829999923706055,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.059999942779541,
+        1.0599994659423828,
+        0.9406337738037109
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_19__bowl",
+        "pendant_19__woven_underside",
+        "pendant_19__weave_ring_3",
+        "pendant_19__weave_ring_4",
+        "pendant_19__weave_ring_5",
+        "pendant_19__weave_ring_6",
+        "pendant_19__weave_ring_7",
+        "pendant_19__weave_ring_8",
+        "pendant_19__weave_ring_9",
+        "pendant_19__weave_ring_10",
+        "pendant_19__weave_ring_11",
+        "pendant_19__diffuser",
+        "pendant_19__suspension_0",
+        "pendant_19__suspension_1",
+        "pendant_19__suspension_2"
+      ],
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [],
+      "collider_type": "none",
+      "bounds": {
+        "min": [
+          4.400000095367432,
+          16.200000762939453,
+          4.396307468414307
+        ],
+        "max": [
+          5.400000095367432,
+          17.200000762939453,
+          5.199999809265137
+        ]
+      },
+      "dimensions": [
+        1.0,
+        1.0,
+        0.8036923408508301
+      ],
+      "physical_parameters": {
+        "mass_kg": null,
+        "friction": 0.5,
+        "restitution": 0,
+        "provenance": "Coefficients are assumptions; no physical measurements supplied."
+      }
+    }
+  ],
+  "coordinate_frame": "model",
+  "units": "assumed meters"
+}

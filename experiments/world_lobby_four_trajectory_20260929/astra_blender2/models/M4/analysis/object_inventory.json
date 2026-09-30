@@ -1,0 +1,863 @@
+{
+  "objects": [
+    {
+      "id": "floor",
+      "category": "architecture_floor",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        100,
+        108
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "dark_inlay",
+      "category": "floor_finish",
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "ceiling",
+      "category": "architecture_ceiling",
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "east_end_wall",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "west_end_wall",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "south_recess_wall",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        82,
+        33
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "mirror_feature_wall",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "feature_return_east",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "feature_return_west",
+      "category": "architecture_wall",
+      "evidence_frames": [
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "interior_door_0",
+      "category": "door",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "interior_door_1",
+      "category": "door",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "interior_door_2",
+      "category": "door",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "side_corridor",
+      "category": "architectural_opening",
+      "evidence_frames": [
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "glazed_facade",
+      "category": "glazing",
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Observed bright glazed wall. Exterior unobserved, white diffuse/emissive approximation. BVH first opaque glazing depth as prescribed."
+    },
+    {
+      "id": "entry_east",
+      "category": "door",
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed CLOSED double door; frame/leaf dimensions inferred; collider leaves may be disabled for aperture test, exterior unobserved."
+    },
+    {
+      "id": "entry_west",
+      "category": "door",
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed CLOSED double door; frame/leaf dimensions inferred; collider leaves may be disabled for aperture test, exterior unobserved."
+    },
+    {
+      "id": "window_column",
+      "category": "structural_column",
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        118,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "ceiling_slats_north",
+      "category": "ceiling_finish",
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "ceiling_slats_south",
+      "category": "ceiling_finish",
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "mirror_00",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_01",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_02",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_03",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_04",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_05",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_06",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_07",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_08",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "mirror_09",
+      "category": "wall_mirror",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated."
+    },
+    {
+      "id": "seat_A_0",
+      "category": "ottoman",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_A_1",
+      "category": "lounge_chair",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_A_2",
+      "category": "lounge_chair",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_A_3",
+      "category": "ottoman",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_A_4",
+      "category": "lounge_chair",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_A_5",
+      "category": "ottoman",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_B_0",
+      "category": "ottoman",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_B_1",
+      "category": "lounge_chair",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_B_2",
+      "category": "lounge_chair",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "seat_B_3",
+      "category": "ottoman",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "coffee_table_A",
+      "category": "coffee_table",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "coffee_table_B",
+      "category": "coffee_table",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "side_table_B",
+      "category": "coffee_table",
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "shrub_trough_A",
+      "category": "planter_shrub",
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "shrub_trough_B",
+      "category": "planter_shrub",
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "mirror_fern",
+      "category": "potted_plant",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "window_grass",
+      "category": "potted_plant",
+      "evidence_frames": [
+        33,
+        91,
+        118,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "far_window_grass",
+      "category": "potted_plant",
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "reception_tree_L",
+      "category": "potted_plant",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "reception_tree_R",
+      "category": "potted_plant",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "reception_corner_bowl",
+      "category": "potted_plant",
+      "evidence_frames": [
+        33,
+        155
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "bird_paradise_A",
+      "category": "potted_plant",
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "bird_paradise_B",
+      "category": "potted_plant",
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred"
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_desk",
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Desk top front triangulated x25.06,y20.41..23.22,z.83..87. Rear depth, irregular facets and thickness inferred."
+    },
+    {
+      "id": "desk_succulent",
+      "category": "tabletop_plant",
+      "evidence_frames": [
+        33,
+        108,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "reception_wall_emblem",
+      "category": "wall_art",
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred"
+    },
+    {
+      "id": "pendant_00",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_01",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_02",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_03",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_04",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_05",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_06",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_07",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_08",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        82,
+        129,
+        155
+      ],
+      "provenance": "RGB ray to inferred 4.5m near / 3.8m far bottom plane; size from projected radius; suspension height uncertain"
+    },
+    {
+      "id": "pendant_09",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "evidence_frames": [
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+    },
+    {
+      "id": "pendant_20",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+    },
+    {
+      "id": "pendant_21",
+      "category": "pendant_light",
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    }
+  ],
+  "contact_sheets_read": [
+    "000_029",
+    "030_059",
+    "060_089",
+    "090_119",
+    "120_149",
+    "150_179"
+  ],
+  "original_keyframes_inspected": [
+    33,
+    61,
+    74,
+    82,
+    91,
+    100,
+    108,
+    118,
+    129,
+    155
+  ],
+  "reflections": "10 physical mirrors only; no reflected furniture duplicates"
+}

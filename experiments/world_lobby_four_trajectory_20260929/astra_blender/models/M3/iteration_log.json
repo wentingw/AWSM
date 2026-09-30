@@ -1,0 +1,96 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "status": "original_initial_candidate"
+    },
+    {
+      "version": 2,
+      "status": "discarded_scope_incident_not_input_certified"
+    },
+    {
+      "version": 3,
+      "status": "building_from_clean_v1_materials"
+    }
+  ],
+  "render_attempts": [
+    {
+      "version": 3,
+      "sample_index": 0,
+      "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+      "status": "complete",
+      "utc": "2026-09-30T00:10:02Z",
+      "settings": {
+        "samples": 12,
+        "width": 640,
+        "height": 480,
+        "engine": "CPU Cycles"
+      },
+      "seconds": 6.4992844690568745
+    },
+    {
+      "version": 3,
+      "sample_index": 45,
+      "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+      "status": "complete",
+      "utc": "2026-09-30T00:10:09Z",
+      "settings": {
+        "samples": 12,
+        "width": 640,
+        "height": 480,
+        "engine": "CPU Cycles"
+      },
+      "seconds": 7.034704254940152
+    },
+    {
+      "version": 3,
+      "sample_index": 90,
+      "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+      "status": "complete",
+      "utc": "2026-09-30T00:10:16Z",
+      "settings": {
+        "samples": 12,
+        "width": 640,
+        "height": 480,
+        "engine": "CPU Cycles"
+      },
+      "seconds": 6.397400203160942
+    },
+    {
+      "version": 3,
+      "sample_index": 135,
+      "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+      "status": "complete",
+      "utc": "2026-09-30T00:10:22Z",
+      "settings": {
+        "samples": 12,
+        "width": 640,
+        "height": 480,
+        "engine": "CPU Cycles"
+      },
+      "seconds": 6.42010217695497
+    },
+    {
+      "version": 3,
+      "sample_index": 179,
+      "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+      "status": "complete",
+      "utc": "2026-09-30T00:10:28Z",
+      "settings": {
+        "samples": 12,
+        "width": 640,
+        "height": 480,
+        "engine": "CPU Cycles"
+      },
+      "seconds": 6.499472044175491
+    }
+  ],
+  "prior_checking_renders": 10,
+  "checking_render_count": 10,
+  "input_passes_prior": 2,
+  "limits": {
+    "scene_versions": 5,
+    "checking_renders": 60,
+    "input_bvh_passes": 3
+  }
+}

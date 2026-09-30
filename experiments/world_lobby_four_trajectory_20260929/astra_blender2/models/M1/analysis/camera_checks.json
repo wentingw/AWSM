@@ -1,0 +1,1333 @@
+{
+  "calibration": "K public 1280x960; fx=fy=762.8; center640,480; Blender conversion right multiply diag(1,-1,-1,1)",
+  "all180_attempted": true,
+  "validated_pose_count": 0,
+  "check_pose_estimates": [
+    {
+      "sample_index": 33,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            424,
+            474
+          ],
+          "residual_uv_pixels": [
+            14.438989423187309,
+            -2.5356688442961968
+          ]
+        },
+        {
+          "id": "north_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            419,
+            224
+          ],
+          "residual_uv_pixels": [
+            17.83132020725452,
+            -15.249273748246821
+          ]
+        },
+        {
+          "id": "north_right_floor",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            946,
+            487
+          ],
+          "residual_uv_pixels": [
+            -64.79844410080727,
+            6.363046135213494
+          ]
+        },
+        {
+          "id": "north_right_ceiling",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            944,
+            227
+          ],
+          "residual_uv_pixels": [
+            -36.76256321608639,
+            -3.2455475842356236
+          ]
+        },
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            349,
+            514
+          ],
+          "residual_uv_pixels": [
+            -7.2200281800131165,
+            6.172448001089606
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            394,
+            488
+          ],
+          "residual_uv_pixels": [
+            -0.7497938610406436,
+            6.23572477098628
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            344,
+            315
+          ],
+          "residual_uv_pixels": [
+            -8.022120610854643,
+            3.388909516429976
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            392,
+            325
+          ],
+          "residual_uv_pixels": [
+            -1.6005910440198932,
+            -2.110823229224934
+          ]
+        },
+        {
+          "id": "desk_left",
+          "world_xyz_assumed_m": [
+            2.55,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            542,
+            437
+          ],
+          "residual_uv_pixels": [
+            28.910181094072186,
+            -5.529902102143524
+          ]
+        },
+        {
+          "id": "desk_right",
+          "world_xyz_assumed_m": [
+            5.65,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            691,
+            438
+          ],
+          "residual_uv_pixels": [
+            65.48246180900037,
+            2.0758453409625304
+          ]
+        }
+      ],
+      "rms_pixels": 24.22594477504948,
+      "camera_position": [
+        4.390460457275952,
+        2.4498510716390305,
+        2.4179444917761828
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 61,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "mirror_door_north_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            0
+          ],
+          "pixel_uv": [
+            368,
+            548
+          ],
+          "residual_uv_pixels": [
+            0.691079661553033,
+            58.97071532930272
+          ]
+        },
+        {
+          "id": "mirror_door_south_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            0
+          ],
+          "pixel_uv": [
+            447,
+            564
+          ],
+          "residual_uv_pixels": [
+            45.764663616855614,
+            64.36541274290676
+          ]
+        },
+        {
+          "id": "mirror_door_north_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            2.6
+          ],
+          "pixel_uv": [
+            366,
+            343
+          ],
+          "residual_uv_pixels": [
+            -1.265345015280218,
+            -25.70615566464204
+          ]
+        },
+        {
+          "id": "mirror_door_south_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            2.6
+          ],
+          "pixel_uv": [
+            444,
+            345
+          ],
+          "residual_uv_pixels": [
+            54.73207167188133,
+            -19.866283790547584
+          ]
+        },
+        {
+          "id": "mirror_main",
+          "world_xyz_assumed_m": [
+            6.76,
+            7.65,
+            2.15
+          ],
+          "pixel_uv": [
+            746,
+            420
+          ],
+          "residual_uv_pixels": [
+            -32.87356145883405,
+            -21.308027760393088
+          ]
+        },
+        {
+          "id": "mirror_second",
+          "world_xyz_assumed_m": [
+            6.76,
+            6.22,
+            1.55
+          ],
+          "pixel_uv": [
+            916,
+            486
+          ],
+          "residual_uv_pixels": [
+            -13.264322502634855,
+            11.747243843543686
+          ]
+        }
+      ],
+      "rms_pixels": 36.07475244622962,
+      "camera_position": [
+        1.0730999758513842,
+        6.618634367336675,
+        2.63071444300454
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 74,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "mirror_door_north_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            0
+          ],
+          "pixel_uv": [
+            417,
+            610
+          ],
+          "residual_uv_pixels": [
+            4.684877726044078,
+            12.882036408155273
+          ]
+        },
+        {
+          "id": "mirror_door_south_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            0
+          ],
+          "pixel_uv": [
+            549,
+            596
+          ],
+          "residual_uv_pixels": [
+            17.114820422018283,
+            31.078729260716727
+          ]
+        },
+        {
+          "id": "mirror_door_north_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            2.6
+          ],
+          "pixel_uv": [
+            390,
+            333
+          ],
+          "residual_uv_pixels": [
+            0.015976040932059732,
+            -21.243425128520755
+          ]
+        },
+        {
+          "id": "mirror_door_south_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            2.6
+          ],
+          "pixel_uv": [
+            546,
+            324
+          ],
+          "residual_uv_pixels": [
+            5.8569507247377715,
+            -13.768504133383942
+          ]
+        },
+        {
+          "id": "mirror_main",
+          "world_xyz_assumed_m": [
+            6.76,
+            7.65,
+            2.15
+          ],
+          "pixel_uv": [
+            866,
+            392
+          ],
+          "residual_uv_pixels": [
+            -71.31502133273295,
+            -21.143449559857288
+          ]
+        },
+        {
+          "id": "mirror_second",
+          "world_xyz_assumed_m": [
+            6.76,
+            6.22,
+            1.55
+          ],
+          "pixel_uv": [
+            993,
+            432
+          ],
+          "residual_uv_pixels": [
+            -5.605647143710485,
+            19.634016811769925
+          ]
+        }
+      ],
+      "rms_pixels": 25.935262351990474,
+      "camera_position": [
+        1.0647998719831309,
+        8.26127844175666,
+        2.928546824257638
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 82,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "mirror_door_north_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            0
+          ],
+          "pixel_uv": [
+            549,
+            678
+          ],
+          "residual_uv_pixels": [
+            -10.259955826383475,
+            31.63778092958387
+          ]
+        },
+        {
+          "id": "mirror_door_south_bottom",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            0
+          ],
+          "pixel_uv": [
+            621,
+            650
+          ],
+          "residual_uv_pixels": [
+            18.38999255532724,
+            40.666696509366375
+          ]
+        },
+        {
+          "id": "mirror_door_north_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            10.7,
+            2.6
+          ],
+          "pixel_uv": [
+            549,
+            473
+          ],
+          "residual_uv_pixels": [
+            3.5641119083757076,
+            -22.171548155732864
+          ]
+        },
+        {
+          "id": "mirror_door_south_top",
+          "world_xyz_assumed_m": [
+            6.8,
+            9.45,
+            2.6
+          ],
+          "pixel_uv": [
+            621,
+            473
+          ],
+          "residual_uv_pixels": [
+            33.04350938606808,
+            -18.307986122700015
+          ]
+        },
+        {
+          "id": "mirror_main",
+          "world_xyz_assumed_m": [
+            6.76,
+            7.65,
+            2.15
+          ],
+          "pixel_uv": [
+            788,
+            509
+          ],
+          "residual_uv_pixels": [
+            -16.437773897294164,
+            -12.695507431175088
+          ]
+        },
+        {
+          "id": "mirror_second",
+          "world_xyz_assumed_m": [
+            6.76,
+            6.22,
+            1.55
+          ],
+          "pixel_uv": [
+            851,
+            536
+          ],
+          "residual_uv_pixels": [
+            -6.96063633943038,
+            4.897897428058172
+          ]
+        }
+      ],
+      "rms_pixels": 21.473511577659075,
+      "camera_position": [
+        0.25000000000000006,
+        14.42035377839819,
+        2.853664464284631
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 91,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "south_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            0,
+            0
+          ],
+          "pixel_uv": [
+            750,
+            350
+          ],
+          "residual_uv_pixels": [
+            6.589745938842839,
+            -5.4125814668914245
+          ]
+        },
+        {
+          "id": "south_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            0,
+            4.6
+          ],
+          "pixel_uv": [
+            770,
+            82
+          ],
+          "residual_uv_pixels": [
+            8.117289214195807,
+            9.78303998260742
+          ]
+        },
+        {
+          "id": "south_right_floor",
+          "world_xyz_assumed_m": [
+            8,
+            0,
+            0
+          ],
+          "pixel_uv": [
+            349,
+            355
+          ],
+          "residual_uv_pixels": [
+            -0.32121017111666106,
+            -17.663574320451858
+          ]
+        },
+        {
+          "id": "south_right_ceiling",
+          "world_xyz_assumed_m": [
+            8,
+            0,
+            4.6
+          ],
+          "pixel_uv": [
+            349,
+            60
+          ],
+          "residual_uv_pixels": [
+            -26.09559797310743,
+            8.652658456210986
+          ]
+        }
+      ],
+      "rms_pixels": 12.758687289668902,
+      "camera_position": [
+        3.851964907378524,
+        15.169821899883738,
+        2.5845541470561417
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 100,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            920,
+            530
+          ],
+          "residual_uv_pixels": [
+            -79.96884295924144,
+            1.4570252835720794
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            1005,
+            540
+          ],
+          "residual_uv_pixels": [
+            23.784423685975753,
+            15.606507650520257
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            923,
+            280
+          ],
+          "residual_uv_pixels": [
+            -75.81200864592506,
+            -1.1267866354395437
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            1026,
+            276
+          ],
+          "residual_uv_pixels": [
+            28.57119540516578,
+            -5.666002190926008
+          ]
+        },
+        {
+          "id": "south_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            2.2,
+            0
+          ],
+          "pixel_uv": [
+            263,
+            472
+          ],
+          "residual_uv_pixels": [
+            10.954346672250779,
+            -12.96800975451157
+          ]
+        },
+        {
+          "id": "south_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            4.0,
+            0
+          ],
+          "pixel_uv": [
+            347,
+            490
+          ],
+          "residual_uv_pixels": [
+            -3.69244586303887,
+            -22.094817303181003
+          ]
+        },
+        {
+          "id": "south_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            2.2,
+            2.6
+          ],
+          "pixel_uv": [
+            256,
+            297
+          ],
+          "residual_uv_pixels": [
+            -5.705581385276446,
+            6.450916774187135
+          ]
+        },
+        {
+          "id": "south_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            4.0,
+            2.6
+          ],
+          "pixel_uv": [
+            334,
+            293
+          ],
+          "residual_uv_pixels": [
+            -12.522667023470376,
+            7.519887463571081
+          ]
+        },
+        {
+          "id": "column_floor",
+          "world_xyz_assumed_m": [
+            0.62,
+            8.0,
+            0
+          ],
+          "pixel_uv": [
+            505,
+            520
+          ],
+          "residual_uv_pixels": [
+            6.599630518616323,
+            -15.10763518099077
+          ]
+        },
+        {
+          "id": "column_ceiling",
+          "world_xyz_assumed_m": [
+            0.62,
+            8.0,
+            4.6
+          ],
+          "pixel_uv": [
+            482,
+            80
+          ],
+          "residual_uv_pixels": [
+            -1.1825929021579213,
+            28.941840269452655
+          ]
+        }
+      ],
+      "rms_pixels": 28.27710039575591,
+      "camera_position": [
+        7.69999999999847,
+        14.233105385410603,
+        2.527053522898554
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 108,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            706,
+            562
+          ],
+          "residual_uv_pixels": [
+            -0.8927522711441043,
+            5.156843850620135
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            862,
+            555
+          ],
+          "residual_uv_pixels": [
+            2.1895325438065356,
+            4.390704309790408
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            706,
+            318
+          ],
+          "residual_uv_pixels": [
+            1.9273570152395223,
+            2.5053591523960677
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            871,
+            319
+          ],
+          "residual_uv_pixels": [
+            6.219890755155916,
+            0.6433343264665154
+          ]
+        },
+        {
+          "id": "north_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            1081,
+            548
+          ],
+          "residual_uv_pixels": [
+            -34.156655753942005,
+            2.473840995976616
+          ]
+        },
+        {
+          "id": "north_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            1090,
+            146
+          ],
+          "residual_uv_pixels": [
+            1.392617530138068,
+            -26.349958608908764
+          ]
+        }
+      ],
+      "rms_pixels": 12.811490791685182,
+      "camera_position": [
+        7.699999999999999,
+        10.248161030735405,
+        2.5473683212729856
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 118,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            644,
+            585
+          ],
+          "residual_uv_pixels": [
+            -6.549146358114058,
+            -6.626548397083752
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            793,
+            550
+          ],
+          "residual_uv_pixels": [
+            0.3652987077443868,
+            1.5671379403129322
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            643,
+            274
+          ],
+          "residual_uv_pixels": [
+            3.4237666015756076,
+            8.226082972570566
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            800,
+            287
+          ],
+          "residual_uv_pixels": [
+            15.16145880845579,
+            1.0247333970228851
+          ]
+        },
+        {
+          "id": "north_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            946,
+            517
+          ],
+          "residual_uv_pixels": [
+            -2.638324091108416,
+            8.77831552677901
+          ]
+        },
+        {
+          "id": "north_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            1008,
+            104
+          ],
+          "residual_uv_pixels": [
+            -6.833596817805528,
+            -15.364842394570928
+          ]
+        }
+      ],
+      "rms_pixels": 7.992175139230632,
+      "camera_position": [
+        5.683008278204284,
+        8.86840297938397,
+        2.552030117090601
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 129,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            751,
+            574
+          ],
+          "residual_uv_pixels": [
+            -61.83437520801897,
+            10.739877848988272
+          ]
+        },
+        {
+          "id": "north_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            753,
+            306
+          ],
+          "residual_uv_pixels": [
+            -61.360484322763796,
+            2.4852888777462567
+          ]
+        },
+        {
+          "id": "north_right_floor",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            1275,
+            629
+          ],
+          "residual_uv_pixels": [
+            -5.226384291214345,
+            -1.3715341656777582
+          ]
+        },
+        {
+          "id": "north_right_ceiling",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            1275,
+            272
+          ],
+          "residual_uv_pixels": [
+            13.054557895514336,
+            3.7512018001198157
+          ]
+        },
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            592,
+            666
+          ],
+          "residual_uv_pixels": [
+            2.387113357540102,
+            -21.041616620602213
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            650,
+            627
+          ],
+          "residual_uv_pixels": [
+            -4.795479140107773,
+            -14.328981007393509
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            588,
+            409
+          ],
+          "residual_uv_pixels": [
+            6.818400653267304,
+            17.229464780294165
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            649,
+            413
+          ],
+          "residual_uv_pixels": [
+            -2.73982718040736,
+            15.238028154197877
+          ]
+        },
+        {
+          "id": "desk_left",
+          "world_xyz_assumed_m": [
+            2.55,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            840,
+            549
+          ],
+          "residual_uv_pixels": [
+            1.2841244157721121,
+            -5.685315980696714
+          ]
+        },
+        {
+          "id": "desk_right",
+          "world_xyz_assumed_m": [
+            5.65,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            1049,
+            561
+          ],
+          "residual_uv_pixels": [
+            35.02552172513697,
+            -5.320362223111033
+          ]
+        }
+      ],
+      "rms_pixels": 22.883059784499622,
+      "camera_position": [
+        3.571362715038828,
+        3.760001936419815,
+        2.4719893054888185
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    },
+    {
+      "sample_index": 155,
+      "method": "manual semantic landmark reprojection fit, assumed common architecture",
+      "landmarks": [
+        {
+          "id": "north_glass_floor",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            460,
+            439
+          ],
+          "residual_uv_pixels": [
+            8.823254953022683,
+            -1.4769420873776653
+          ]
+        },
+        {
+          "id": "north_glass_ceiling",
+          "world_xyz_assumed_m": [
+            0,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            459,
+            188
+          ],
+          "residual_uv_pixels": [
+            5.422699427550015,
+            -16.518247364318256
+          ]
+        },
+        {
+          "id": "north_right_floor",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            0
+          ],
+          "pixel_uv": [
+            977,
+            455
+          ],
+          "residual_uv_pixels": [
+            -59.47613538117139,
+            6.425830507907449
+          ]
+        },
+        {
+          "id": "north_right_ceiling",
+          "world_xyz_assumed_m": [
+            8,
+            16,
+            4.6
+          ],
+          "pixel_uv": [
+            982,
+            179
+          ],
+          "residual_uv_pixels": [
+            -32.00058595894484,
+            -0.43337877461590324
+          ]
+        },
+        {
+          "id": "north_door_near_floor",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            0
+          ],
+          "pixel_uv": [
+            375,
+            479
+          ],
+          "residual_uv_pixels": [
+            -6.867595735908083,
+            6.606188796808965
+          ]
+        },
+        {
+          "id": "north_door_far_floor",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            0
+          ],
+          "pixel_uv": [
+            417,
+            455
+          ],
+          "residual_uv_pixels": [
+            4.568936610494234,
+            5.088519999403502
+          ]
+        },
+        {
+          "id": "north_door_near_top",
+          "world_xyz_assumed_m": [
+            0,
+            12.0,
+            2.6
+          ],
+          "pixel_uv": [
+            369,
+            281
+          ],
+          "residual_uv_pixels": [
+            -10.235501254250948,
+            3.0951743578275455
+          ]
+        },
+        {
+          "id": "north_door_far_top",
+          "world_xyz_assumed_m": [
+            0,
+            13.8,
+            2.6
+          ],
+          "pixel_uv": [
+            414,
+            291
+          ],
+          "residual_uv_pixels": [
+            2.3325335755129117,
+            -2.6520338464374618
+          ]
+        },
+        {
+          "id": "desk_left",
+          "world_xyz_assumed_m": [
+            2.55,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            574,
+            405
+          ],
+          "residual_uv_pixels": [
+            24.564246659457808,
+            -7.4740965106148
+          ]
+        },
+        {
+          "id": "desk_right",
+          "world_xyz_assumed_m": [
+            5.65,
+            15.12,
+            0.95
+          ],
+          "pixel_uv": [
+            723,
+            405
+          ],
+          "residual_uv_pixels": [
+            64.31134125138306,
+            1.3169144830944788
+          ]
+        }
+      ],
+      "rms_pixels": 22.412671932552694,
+      "camera_position": [
+        4.677285099439183,
+        2.596300835537523,
+        2.4160894785847065
+      ],
+      "valid": false,
+      "reason": "manual fit is conditional on assumed geometry; no independent pose validation"
+    }
+  ],
+  "reference_depth": "N/A: M1 RGB-only",
+  "render_projection_validation": "will be asserted by generic paired checker"
+}

@@ -1,0 +1,1056 @@
+{
+  "checks": [
+    {
+      "sample_index": 0,
+      "pose_parameters": [
+        3.548293033733409,
+        3.458597300412272,
+        2.8563806016276283,
+        -0.2504096056207782,
+        0.2472001109595626,
+        0.012835881910043895
+      ],
+      "confidence": "low",
+      "valid_for_check_render": true,
+      "valid_for_metric_camera_evaluation": false,
+      "method": "Manual semantic landmark pixel picking and nonlinear projection fit against assumed model geometry",
+      "landmarks": [
+        {
+          "name": "shield",
+          "world_point": [
+            3.6,
+            17.8,
+            2.14
+          ],
+          "pixel_observed": [
+            845,
+            340
+          ],
+          "pixel_projected": [
+            843.5472286466912,
+            331.4340150928668
+          ],
+          "residual_pixels": 8.68830489993466,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "desk_front",
+          "world_point": [
+            3.65,
+            16.15,
+            0.95
+          ],
+          "pixel_observed": [
+            835,
+            402
+          ],
+          "pixel_projected": [
+            841.0069762623239,
+            411.376582074549
+          ],
+          "residual_pixels": 11.135710808784314,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_L",
+          "world_point": [
+            1.75,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            722,
+            360
+          ],
+          "pixel_projected": [
+            734.5025245131974,
+            360.5620015075496
+          ],
+          "residual_pixels": 12.515149415711727,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_R",
+          "world_point": [
+            5.55,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            968,
+            365
+          ],
+          "pixel_projected": [
+            961.6461810630608,
+            368.6312486147337
+          ],
+          "residual_pixels": 7.318263563538322,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "seat_N1",
+          "world_point": [
+            2.35,
+            9.2,
+            0.575
+          ],
+          "pixel_observed": [
+            668,
+            583
+          ],
+          "pixel_projected": [
+            670.7830933425728,
+            575.5573617631435
+          ],
+          "residual_pixels": 7.945972091455616,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_N",
+          "world_point": [
+            3.4,
+            9.1,
+            0.515
+          ],
+          "pixel_observed": [
+            798,
+            592
+          ],
+          "pixel_projected": [
+            800.4030219559571,
+            601.3557102323575
+          ],
+          "residual_pixels": 9.65939068847778,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_L",
+          "world_point": [
+            2.52,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            750,
+            486
+          ],
+          "pixel_projected": [
+            730.6757489474428,
+            479.0738796007295
+          ],
+          "residual_pixels": 20.52797658142294,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_R",
+          "world_point": [
+            4.78,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            956,
+            499
+          ],
+          "pixel_projected": [
+            954.8289447000935,
+            495.44322219975203
+          ],
+          "residual_pixels": 3.744601291963649,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "grass_N",
+          "world_point": [
+            0.65,
+            9.5,
+            0.37
+          ],
+          "pixel_observed": [
+            496,
+            562
+          ],
+          "pixel_projected": [
+            495.62901851359027,
+            565.8997196387556
+          ],
+          "residual_pixels": 3.9173256852290446,
+          "pixel_pick_uncertainty": 8
+        }
+      ],
+      "median_residual_pixels": 8.68830489993466,
+      "rms_residual_pixels": 10.62954084182551
+    },
+    {
+      "sample_index": 45,
+      "pose_parameters": [
+        2.190130058723839,
+        3.8684175558952494,
+        2.4543619446476597,
+        0.3133023487708766,
+        0.08842498855302398,
+        0.08112643187793231
+      ],
+      "confidence": "low",
+      "valid_for_check_render": true,
+      "valid_for_metric_camera_evaluation": false,
+      "method": "Manual semantic landmark pixel picking and nonlinear projection fit against assumed model geometry",
+      "landmarks": [
+        {
+          "name": "shield",
+          "world_point": [
+            3.6,
+            17.8,
+            2.14
+          ],
+          "pixel_observed": [
+            479,
+            421
+          ],
+          "pixel_projected": [
+            479.74807201757994,
+            416.7993517207736
+          ],
+          "residual_pixels": 4.266738533031284,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "desk_front",
+          "world_point": [
+            3.65,
+            16.15,
+            0.95
+          ],
+          "pixel_observed": [
+            482,
+            490
+          ],
+          "pixel_projected": [
+            488.7322722981395,
+            494.443108183403
+          ],
+          "residual_pixels": 8.066269312744227,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_L",
+          "world_point": [
+            1.75,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            357,
+            451
+          ],
+          "pixel_projected": [
+            367.52182513301295,
+            441.5959244489404
+          ],
+          "residual_pixels": 14.111890061212195,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_R",
+          "world_point": [
+            5.55,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            590,
+            450
+          ],
+          "pixel_projected": [
+            591.1704825499932,
+            455.3982945938966
+          ],
+          "residual_pixels": 5.5237318836391465,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "seat_N1",
+          "world_point": [
+            2.35,
+            9.2,
+            0.575
+          ],
+          "pixel_observed": [
+            398,
+            683
+          ],
+          "pixel_projected": [
+            408.10681560325594,
+            667.4317371851814
+          ],
+          "residual_pixels": 18.561210324477244,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_N",
+          "world_point": [
+            3.4,
+            9.1,
+            0.515
+          ],
+          "pixel_observed": [
+            527,
+            674
+          ],
+          "pixel_projected": [
+            559.8177716098259,
+            676.5406313403693
+          ],
+          "residual_pixels": 32.9159678733948,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_L",
+          "world_point": [
+            2.52,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            441,
+            575
+          ],
+          "pixel_projected": [
+            425.24302702409915,
+            559.3585402237743
+          ],
+          "residual_pixels": 22.202194965691035,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_R",
+          "world_point": [
+            4.78,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            623,
+            558
+          ],
+          "pixel_projected": [
+            646.2893782527891,
+            563.2016156076864
+          ],
+          "residual_pixels": 23.86319224939558,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "grass_N",
+          "world_point": [
+            0.65,
+            9.5,
+            0.37
+          ],
+          "pixel_observed": [
+            142,
+            688
+          ],
+          "pixel_projected": [
+            137.74898001515217,
+            688.5746310739497
+          ],
+          "residual_pixels": 4.289682014173573,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "urn_N",
+          "world_point": [
+            6.77,
+            9,
+            0.4
+          ],
+          "pixel_observed": [
+            973,
+            641
+          ],
+          "pixel_projected": [
+            952.8526910737045,
+            682.2950367536544
+          ],
+          "residual_pixels": 45.947732451746205,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "mirror_smalltop",
+          "world_point": [
+            7.22,
+            10.04,
+            2.88
+          ],
+          "pixel_observed": [
+            1110,
+            465
+          ],
+          "pixel_projected": [
+            947.0904065831847,
+            392.6535311663121
+          ],
+          "residual_pixels": 178.2513595458274,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "column_base",
+          "world_point": [
+            0.6,
+            10.6,
+            0
+          ],
+          "pixel_observed": [
+            179,
+            614
+          ],
+          "pixel_projected": [
+            173.95990334244794,
+            683.0177897057882
+          ],
+          "residual_pixels": 69.20157418866911,
+          "pixel_pick_uncertainty": 8
+        }
+      ],
+      "median_residual_pixels": 20.38170264508414,
+      "rms_residual_pixels": 58.8042630456477
+    },
+    {
+      "sample_index": 135,
+      "pose_parameters": [
+        5.825375475979478,
+        5.233741192802907,
+        2.759199970453011,
+        -0.28370470455298763,
+        0.2580564205330357,
+        0.0950142408795873
+      ],
+      "confidence": "low",
+      "valid_for_check_render": true,
+      "valid_for_metric_camera_evaluation": false,
+      "method": "Manual semantic landmark pixel picking and nonlinear projection fit against assumed model geometry",
+      "landmarks": [
+        {
+          "name": "shield",
+          "world_point": [
+            3.6,
+            17.8,
+            2.14
+          ],
+          "pixel_observed": [
+            738,
+            333
+          ],
+          "pixel_projected": [
+            739.7763818871318,
+            326.7568648634824
+          ],
+          "residual_pixels": 6.490937447068074,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "desk_front",
+          "world_point": [
+            3.65,
+            16.15,
+            0.95
+          ],
+          "pixel_observed": [
+            716,
+            400
+          ],
+          "pixel_projected": [
+            712.6663966950198,
+            412.88579061591537
+          ],
+          "residual_pixels": 13.310015431703587,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_L",
+          "world_point": [
+            1.75,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            616,
+            356
+          ],
+          "pixel_projected": [
+            618.0345121120191,
+            348.4968967446432
+          ],
+          "residual_pixels": 7.7740464363482005,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_R",
+          "world_point": [
+            5.55,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            860,
+            362
+          ],
+          "pixel_projected": [
+            855.7602844873434,
+            377.68032196823685
+          ],
+          "residual_pixels": 16.243388952304027,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "seat_N1",
+          "world_point": [
+            2.35,
+            9.2,
+            0.575
+          ],
+          "pixel_observed": [
+            290,
+            584
+          ],
+          "pixel_projected": [
+            301.16203895974377,
+            579.6498866472597
+          ],
+          "residual_pixels": 11.979757924120479,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_N",
+          "world_point": [
+            3.4,
+            9.1,
+            0.515
+          ],
+          "pixel_observed": [
+            422,
+            600
+          ],
+          "pixel_projected": [
+            427.8229739535242,
+            626.6781125513414
+          ],
+          "residual_pixels": 27.30620286611564,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_L",
+          "world_point": [
+            2.52,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            495,
+            489
+          ],
+          "pixel_projected": [
+            485.20368420947125,
+            473.44592873772564
+          ],
+          "residual_pixels": 18.3819731231354,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_R",
+          "world_point": [
+            4.78,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            694,
+            514
+          ],
+          "pixel_projected": [
+            722.2095095394319,
+            515.8277410371043
+          ],
+          "residual_pixels": 28.268658718694358,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "grass_N",
+          "world_point": [
+            0.65,
+            9.5,
+            0.37
+          ],
+          "pixel_observed": [
+            176,
+            550
+          ],
+          "pixel_projected": [
+            149.11571230629193,
+            548.102122451459
+          ],
+          "residual_pixels": 26.951194110601474,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "urn_N",
+          "world_point": [
+            6.77,
+            9,
+            0.4
+          ],
+          "pixel_observed": [
+            1000,
+            700
+          ],
+          "pixel_projected": [
+            1000.710144311863,
+            798.716785052206
+          ],
+          "residual_pixels": 98.71933932106266,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "mirror_smalltop",
+          "world_point": [
+            7.22,
+            10.04,
+            2.88
+          ],
+          "pixel_observed": [
+            1226,
+            445
+          ],
+          "pixel_projected": [
+            1164.2306217295995,
+            304.0929434841334
+          ],
+          "residual_pixels": 153.85140450407803,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "column_base",
+          "world_point": [
+            0.6,
+            10.6,
+            0
+          ],
+          "pixel_observed": [
+            238,
+            554
+          ],
+          "pixel_projected": [
+            254.1155039333225,
+            548.978271314087
+          ],
+          "residual_pixels": 16.87978749925051,
+          "pixel_pick_uncertainty": 8
+        }
+      ],
+      "median_residual_pixels": 17.630880311192954,
+      "rms_residual_pixels": 55.525359291045014
+    },
+    {
+      "sample_index": 179,
+      "pose_parameters": [
+        3.8904755957857526,
+        3.9190099546121018,
+        2.7760689749760328,
+        -0.016979182384290883,
+        0.21481073527381558,
+        0.09572616101619348
+      ],
+      "confidence": "low",
+      "valid_for_check_render": true,
+      "valid_for_metric_camera_evaluation": false,
+      "method": "Manual semantic landmark pixel picking and nonlinear projection fit against assumed model geometry",
+      "landmarks": [
+        {
+          "name": "shield",
+          "world_point": [
+            3.6,
+            17.8,
+            2.14
+          ],
+          "pixel_observed": [
+            640,
+            362
+          ],
+          "pixel_projected": [
+            649.4076265396809,
+            350.12683294072525
+          ],
+          "residual_pixels": 15.148449858898287,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "desk_front",
+          "world_point": [
+            3.65,
+            16.15,
+            0.95
+          ],
+          "pixel_observed": [
+            635,
+            428
+          ],
+          "pixel_projected": [
+            642.8487087078398,
+            429.1351896216225
+          ],
+          "residual_pixels": 7.930377283431098,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_L",
+          "world_point": [
+            1.75,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            525,
+            384
+          ],
+          "pixel_projected": [
+            539.6864224984635,
+            372.1612970440165
+          ],
+          "residual_pixels": 18.863878007540908,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "tree_R",
+          "world_point": [
+            5.55,
+            17.2,
+            1.61
+          ],
+          "pixel_observed": [
+            751,
+            384
+          ],
+          "pixel_projected": [
+            757.772543320371,
+            393.43139853891137
+          ],
+          "residual_pixels": 11.611142124101388,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "seat_N1",
+          "world_point": [
+            2.35,
+            9.2,
+            0.575
+          ],
+          "pixel_observed": [
+            440,
+            605
+          ],
+          "pixel_projected": [
+            432.0329538131218,
+            598.1982532962355
+          ],
+          "residual_pixels": 10.47557077996331,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_N",
+          "world_point": [
+            3.4,
+            9.1,
+            0.515
+          ],
+          "pixel_observed": [
+            569,
+            608
+          ],
+          "pixel_projected": [
+            570.4665500666385,
+            625.5959371181848
+          ],
+          "residual_pixels": 17.65694685286986,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_L",
+          "world_point": [
+            2.52,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            537,
+            506
+          ],
+          "pixel_projected": [
+            515.8002425853653,
+            493.74433290314323
+          ],
+          "residual_pixels": 24.48736593487218,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_R",
+          "world_point": [
+            4.78,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            729,
+            505
+          ],
+          "pixel_projected": [
+            737.5388255136819,
+            515.9728485505121
+          ],
+          "residual_pixels": 13.9037745402312,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "grass_N",
+          "world_point": [
+            0.65,
+            9.5,
+            0.37
+          ],
+          "pixel_observed": [
+            266,
+            589
+          ],
+          "pixel_projected": [
+            229.2669056865522,
+            586.9275074161238
+          ],
+          "residual_pixels": 36.791513197351264,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "urn_N",
+          "world_point": [
+            6.77,
+            9,
+            0.4
+          ],
+          "pixel_observed": [
+            1080,
+            618
+          ],
+          "pixel_projected": [
+            1038.4665727196636,
+            694.7729325552425
+          ],
+          "residual_pixels": 87.28750629261214,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "mirror_smalltop",
+          "world_point": [
+            7.22,
+            10.04,
+            2.88
+          ],
+          "pixel_observed": [
+            1272,
+            418
+          ],
+          "pixel_projected": [
+            1098.876705967437,
+            343.05880222238244
+          ],
+          "residual_pixels": 188.647443823205,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_S",
+          "world_point": [
+            4.35,
+            6.45,
+            0.51
+          ],
+          "pixel_observed": [
+            664,
+            928
+          ],
+          "pixel_projected": [
+            727.9576901045247,
+            924.1817357060864
+          ],
+          "residual_pixels": 64.07156362790428,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "column_base",
+          "world_point": [
+            0.6,
+            10.6,
+            0
+          ],
+          "pixel_observed": [
+            283,
+            523
+          ],
+          "pixel_projected": [
+            290.7579604071781,
+            582.8325937758398
+          ],
+          "residual_pixels": 60.33345032089581,
+          "pixel_pick_uncertainty": 8
+        }
+      ],
+      "median_residual_pixels": 18.863878007540908,
+      "rms_residual_pixels": 64.63111603353958
+    },
+    {
+      "sample_index": 90,
+      "pose_parameters": [
+        3.0348701286449096,
+        17.649999999999995,
+        2.528426583523305,
+        3.1356055438174595,
+        0.2529507872652505,
+        -0.054578000595331744
+      ],
+      "confidence": "low",
+      "valid_for_check_render": true,
+      "valid_for_metric_camera_evaluation": false,
+      "method": "Manual semantic landmark pixel picking and nonlinear projection fit against assumed model geometry",
+      "landmarks": [
+        {
+          "name": "planter_L",
+          "world_point": [
+            2.52,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            684,
+            496
+          ],
+          "pixel_projected": [
+            705.5188014749186,
+            481.87816670759156
+          ],
+          "residual_pixels": 25.738783818501133,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "planter_R",
+          "world_point": [
+            4.78,
+            11.415,
+            0.87
+          ],
+          "pixel_observed": [
+            438,
+            495
+          ],
+          "pixel_projected": [
+            438.97198642423183,
+            496.0288124263121
+          ],
+          "residual_pixels": 1.4153489383982703,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "table_S",
+          "world_point": [
+            4.35,
+            6.45,
+            0.51
+          ],
+          "pixel_observed": [
+            560,
+            401
+          ],
+          "pixel_projected": [
+            553.1755012869831,
+            427.51904977063106
+          ],
+          "residual_pixels": 27.3830930214462,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "south_pot_L",
+          "world_point": [
+            2.4,
+            1.2,
+            0.9
+          ],
+          "pixel_observed": [
+            664,
+            370
+          ],
+          "pixel_projected": [
+            667.7343513447416,
+            359.6997141451787
+          ],
+          "residual_pixels": 10.956334636045291,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "south_pot_R",
+          "world_point": [
+            5.8,
+            1.2,
+            0.9
+          ],
+          "pixel_observed": [
+            483,
+            369
+          ],
+          "pixel_projected": [
+            509.3000397088898,
+            368.2604923382329
+          ],
+          "residual_pixels": 26.310434437139065,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "mirror_big",
+          "world_point": [
+            7.22,
+            8.9,
+            2.19
+          ],
+          "pixel_observed": [
+            291,
+            334
+          ],
+          "pixel_projected": [
+            264.08921026665,
+            334.19013928270806
+          ],
+          "residual_pixels": 26.911461443396263,
+          "pixel_pick_uncertainty": 8
+        },
+        {
+          "name": "column_base",
+          "world_point": [
+            0.6,
+            10.6,
+            0
+          ],
+          "pixel_observed": [
+            904,
+            528
+          ],
+          "pixel_projected": [
+            897.2837322073655,
+            536.4761753501415
+          ],
+          "residual_pixels": 10.814518095076,
+          "pixel_pick_uncertainty": 8
+        }
+      ],
+      "median_residual_pixels": 25.738783818501133,
+      "rms_residual_pixels": 20.934533247621072
+    }
+  ],
+  "units": "pixels in original 1280x960 RGB",
+  "validation": "input agreement only, not GT accuracy; landmarks and model are jointly inferred",
+  "render_convention": "OpenCV camera_to_world right multiplied by diag(1,-1,-1,1)"
+}

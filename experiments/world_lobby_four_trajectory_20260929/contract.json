@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_NEW_ESTIMATOR_GT_EVALUATION",
+  "session": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/lobby_orb_success_20260929T123153",
+  "video": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/lobby_orb_success_20260929T123153/simulation_vio.mp4",
+  "frames": 4499,
+  "imu_samples": 44999,
+  "camera_timestamp_range_ns": [
+    239280011365,
+    419200019911
+  ],
+  "imu_timestamp_range_ns": [
+    239244011363,
+    419236019913
+  ],
+  "calibration": {
+    "schema_version": 1,
+    "resolution": [
+      1280,
+      960
+    ],
+    "camera_model": "pinhole",
+    "distortion_model": "radtan",
+    "intrinsics": [
+      762.8,
+      762.8,
+      640.0,
+      480.0
+    ],
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "T_imu_camera": [
+      [
+        0,
+        0,
+        1,
+        0.4
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -0.5
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "transform_convention": "p_imu = T_imu_camera @ p_camera",
+    "imu_frame": "FRD: x forward, y right, z down",
+    "camera_frame": "optical: x right, y down, z forward",
+    "timestamp_clock": "Isaac simulation time",
+    "timestamp_unit": "nanosecond",
+    "imu_rate_hz": 250,
+    "camera_rate_hz": 25,
+    "accelerometer_units": "m/s^2 specific force (gravity not removed)",
+    "gyroscope_units": "rad/s",
+    "gyroscope_noise_density": 0.0003393695767766752,
+    "gyroscope_random_walk": 3.878509448876288e-05,
+    "accelerometer_noise_density": 0.004,
+    "accelerometer_random_walk": 0.0001,
+    "notes": [
+      "Independent stable camera+IMU rigid rig, not connected to PX4.",
+      "Raw gyroscope/accelerometer contain gravity-specific force, white noise and evolving biases.",
+      "White noise std=density/sqrt(sample_dt); bias randomwalk std=density*sqrt(sample_dt).",
+      "No pose, depth, waypoint or simulator truth is an estimator input."
+    ]
+  },
+  "inputs": {
+    "manifest_sha256": "94eeb6d3b33ad903d7b787611f6fd2f47ba4c342454b9e3128f14d3d2547e280",
+    "camera_csv_sha256": "c7353103560a5966e8a7593a79b6e96ed89d448a9d98225df25466225376428b",
+    "imu_csv_sha256": "cbcb44ffa607d8ec7a5434a0e1f5aceb3881776f020dc927b99a7b76cbc2e40d",
+    "calibration_sha256": "fba9fce1ae06393b333aeb0ed87a09fa8aa1aea91194b277bbd011a4c09f9904",
+    "video_sha256": "36eadcccda0dcc3c7836f1ee0c0eab51dcd4c97dc9fd7fa0d3812abe80636ead"
+  },
+  "estimators": {
+    "orb_slam3": {
+      "frozen_camera": "/home/hchen/Documents/astraBlenderTest/stable_orbit_orb_success_20260929/frozen/camera.npz",
+      "camera_sha256": "b7fea1fb0d260111d14bae8a91c2feeb99bb5f0308e88992d06cb9dee084ef1b",
+      "coverage": 0.9455434541009113
+    },
+    "vipe_default": {
+      "runner": "/home/hchen/Documents/astraBlenderTest/world_model_blog/src/vipe/run_full_vipe.py",
+      "runner_sha256": "8b51e6d0b31472201e2b958dbe43d5a36a902bebcdf398a7de6e5e574741b27e",
+      "pipeline": "no_vda",
+      "keyframe_depth": "unidepth-s",
+      "depth_align_model": "adaptive_unidepth-s",
+      "slam_target_pixels": 98304,
+      "input_policy": "all 4499 native PNG frames; RGB only"
+    },
+    "openvins": {
+      "runner_source": "/home/hchen/Documents/astraBlenderTest/stable_orbit_da3_rerun_20260923/code/openvins/offline/offline_runner.cpp",
+      "runner_source_sha256": "d0000b0f5491833e6cbed0bfdd817199d5846d5dfa941887ed4228d17ee20610",
+      "config": "/home/hchen/Documents/astraBlenderTest/stable_orbit_da3_rerun_20260923/configs/openvins/openvins_maxclones31.yaml",
+      "config_sha256": "c3ef7cb0e853a0410d60721ee5c1aa75510b6ea6da82dce9f30700c9dd37eb07",
+      "input_policy": "native camera CSV/PNG plus FRD IMU converted to FLU in runner"
+    }
+  },
+  "evaluation_policy": {
+    "primary": "strict timestamp intersection; one global SE3 per estimator; scale=1",
+    "diagnostic": "one global Sim3 per estimator",
+    "missing_poses": "remain missing; no interpolation or extrapolation",
+    "ground_truth": "forbidden until ViPE and OpenVINS outputs are frozen"
+  },
+  "ground_truth_read": false
+}

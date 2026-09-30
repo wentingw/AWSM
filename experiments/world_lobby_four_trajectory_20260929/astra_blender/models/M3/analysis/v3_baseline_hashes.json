@@ -1,0 +1,7 @@
+{
+  "cameras.json": "ddb2fa713a87201f7bd81945b425abd3671e027a8fe5f401ee1882a628cdf3ad",
+  "analysis/model_from_input.npy": "ef36086450fce27c83d1c47d55de26e11717d745007b40f3939c12108bd08836",
+  "analysis/anchor_measurements.json": "3a3f47190dd6fc404f983051a8c7222d7f3a73364c95c25f86cfdf8339425f9e",
+  "analysis/plane_measurements.json": "69b762996b01bf836d23b6f7ebeb9786008a5b05c2fbf21b45080ae904ee4fb1",
+  "build_scene_v1_reference.py": "dc59de10086aee312b0dbf865b742c9bcc9c55e3cc516649089303c069c93459"
+}

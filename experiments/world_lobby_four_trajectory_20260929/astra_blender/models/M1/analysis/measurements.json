@@ -1,0 +1,162 @@
+{
+  "method": "Manual object and architecture ratios in calibrated RGB images; no geometry/depth/trajectory inputs",
+  "assumed_dimensions": [
+    {
+      "quantity": "typical round lounge cushion diameter",
+      "value_m": 0.8,
+      "uncertainty_m": 0.2,
+      "evidence": [
+        0,
+        45,
+        62,
+        90,
+        135,
+        179
+      ]
+    },
+    {
+      "quantity": "internal door height",
+      "value_m": 2.05,
+      "uncertainty_m": 0.35,
+      "evidence": [
+        45,
+        62,
+        80
+      ]
+    },
+    {
+      "quantity": "ceiling height",
+      "value_m": 5.2,
+      "uncertainty_m": 1.2,
+      "evidence": [
+        0,
+        45,
+        90,
+        104,
+        135,
+        179
+      ]
+    },
+    {
+      "quantity": "room length",
+      "value_m": 18.0,
+      "uncertainty_m": 4.0,
+      "evidence": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ]
+    },
+    {
+      "quantity": "room width main zone",
+      "value_m": 7.35,
+      "uncertainty_m": 1.5,
+      "evidence": [
+        62,
+        80,
+        90,
+        104
+      ]
+    }
+  ],
+  "conflicts": [
+    "Furniture modular offsets and projected sizes cannot all be aligned by a single rigid camera; inferred geometry and camera errors are coupled.",
+    "Exact chandelier count and longitudinal spacing are uncertain due to repeated forms and occlusion.",
+    "Door scale and chair scale are assumed priors, not independent physical measurements."
+  ],
+  "global_scale": "unobservable; any uniform rescaling of all objects and camera translations preserves projection",
+  "manually_picked_landmarks": {
+    "shield": [
+      3.6,
+      17.8,
+      2.14
+    ],
+    "desk_front": [
+      3.65,
+      16.15,
+      0.95
+    ],
+    "tree_L": [
+      1.75,
+      17.2,
+      1.61
+    ],
+    "tree_R": [
+      5.55,
+      17.2,
+      1.61
+    ],
+    "seat_N1": [
+      2.35,
+      9.2,
+      0.575
+    ],
+    "table_N": [
+      3.4,
+      9.1,
+      0.515
+    ],
+    "planter_L": [
+      2.52,
+      11.415,
+      0.87
+    ],
+    "planter_R": [
+      4.78,
+      11.415,
+      0.87
+    ],
+    "column_base": [
+      0.6,
+      10.6,
+      0
+    ],
+    "grass_N": [
+      0.65,
+      9.5,
+      0.37
+    ],
+    "urn_N": [
+      6.77,
+      9,
+      0.4
+    ],
+    "mirror_big": [
+      7.22,
+      8.9,
+      2.19
+    ],
+    "mirror_smalltop": [
+      7.22,
+      10.04,
+      2.88
+    ],
+    "south_pot_L": [
+      2.4,
+      1.2,
+      0.9
+    ],
+    "south_pot_R": [
+      5.8,
+      1.2,
+      0.9
+    ],
+    "table_S": [
+      4.35,
+      6.45,
+      0.51
+    ],
+    "south_corner": [
+      0,
+      0,
+      0
+    ],
+    "south_walltop": [
+      0,
+      0,
+      5.2
+    ]
+  }
+}

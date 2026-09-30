@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="World Lobby 新 180 秒序列位姿对比">
+  <title>World Lobby · 新序列几何链路对比</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <p class="eyebrow">WORLD LOBBY / FROZEN POSE EVALUATION / 2026-09-29</p>
+  <h1>从视频与 IMU 到可编辑世界</h1>
+  <p class="lede">新 180 秒轨迹上的 GT、ORB-SLAM3、ViPE default 与 OpenVINS 对比。
+  位姿输出先冻结，之后才读取 GT；所有主指标使用 4,254 个严格共同时间戳。</p>
+  <nav><a href="#methods">方法</a><a href="#metrics">位姿与深度</a><a href="#native-novel">非建模视角</a><a href="#figure14">Figure 14</a><a href="#model-novel">模型评测状态</a><a href="#evidence">证据</a></nav>
+</header>
+<main>
+  <section class="notice">
+    <strong>发布范围：</strong>M2–M4 的 pose-conditioned DA3-GIANT 原生深度已在同一 180 张建模帧和互斥的 500 张非建模帧上完成。
+    新的 M1–M4 Astra/Blender 场景尚未生成，因此所有“Model depth”与模型输入一致性指标明确保留为“待建模”，不以 DA3 原生深度代填。
+  </section>
+
+  <section id="methods">
+    <p class="eyebrow">01 / PIPELINES</p>
+    <h2>Table 1. M1–M4 方法与输入信息</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>方法</th><th>位姿来源</th><th>下游深度与建模</th><th>本次状态</th></tr></thead>
+      <tbody>
+        <tr><th>M1 · 纯视觉 + Astra</th><td>无原生米制轨迹</td><td>RGB → Astra / Blender</td><td>方法定义；本次未建模</td></tr>
+        <tr><th>M2 · ViPE + DAV3 + Astra</th><td>ViPE default，RGB-only</td><td>DA3-GIANT（ViPE pose-conditioned）→ Astra / Blender</td><td>位姿与 DA3 已完成；Blender 待运行</td></tr>
+        <tr><th>M3 · ORB-SLAM3 + DAV3 + Astra</th><td>ORB-SLAM3 monocular-inertial</td><td>DA3-GIANT（ORB-SLAM3 pose-conditioned）→ Astra / Blender</td><td>位姿与 DA3 已完成；Blender 待运行</td></tr>
+        <tr><th>M4 · GT pose + DAV3 + Astra</th><td>仿真 GT camera pose</td><td>DA3-GIANT（GT pose-conditioned）→ Astra / Blender</td><td>GT 位姿条件与 DA3 已完成；Blender 待运行</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="metrics">
+    <p class="eyebrow">02 / POSE METRICS</p>
+    <h2>Table 2. M1–M4 位姿与深度指标</h2>
+    <p>位姿使用一次全局刚性 SE(3) 对齐、scale=1；M2/M3 使用 4,254 个严格共同时间戳。Native depth 使用 180 张建模帧上的 DA3 optical-Z 与独立 GT optical-Z 直接比较，不做尺度拟合。</p>
+    <div class="scroll"><table>
+      <thead><tr><th>方法</th><th>ATE (m) ↓</th><th>Rotation (°) ↓</th><th>Native depth AbsRel ↓</th><th>Model depth AbsRel ↓</th></tr></thead>
+      <tbody>
+        <tr><th>M1 · 纯视觉 + Astra</th><td>—</td><td>—</td><td>—</td><td class="pending">待建模</td></tr>
+        <tr><th>M2 · ViPE + DAV3 + Astra</th><td>0.1668</td><td>0.3065</td><td>19.06%</td><td class="pending">待建模</td></tr>
+        <tr><th>M3 · ORB-SLAM3 + DAV3 + Astra</th><td>0.1205</td><td>0.1943</td><td>20.38%</td><td class="pending">待建模</td></tr>
+        <tr><th>M4 · GT pose + DAV3 + Astra</th><td>GT 输入</td><td>GT 输入</td><td>18.87%</td><td class="pending">待建模</td></tr>
+      </tbody>
+    </table></div>
+    <p><strong>Native depth AbsRel</strong>：DA3 直接输出与 GT 深度在有效 GT 像素上的平均相对绝对误差
+    <code>mean(|D_DA3−D_GT| / D_GT)</code>，衡量建模器收到的深度本身是否准确。
+    <strong>Model depth AbsRel</strong>：从冻结 Blender 场景按统一 GT 相机射线求交得到的模型深度与 GT 深度的同一误差，衡量最终模型几何；它不能由 Native depth 推导。</p>
+  </section>
+
+  <section id="native-novel">
+    <p class="eyebrow">03 / HELD-OUT NATIVE DEPTH</p>
+    <h2>Table 3. 同一场景非建模视角的原生 DA3 深度误差</h2>
+    <p>500 张图像与 180 张建模帧严格互斥；这是 DA3 深度泛化评测，不是 Blender 模型的新视角评测。M1 没有原生深度，因此不适用。</p>
+    <div class="scroll"><table>
+      <thead><tr><th>方法</th><th>RMSE (m) ↓</th><th>整体 AbsRel ↓</th><th>逐帧 AbsRel 中位数 ↓</th><th>有效覆盖率 ↑</th><th>缺失惩罚 MAE (m) ↓</th></tr></thead>
+      <tbody>
+        <tr><th>M1 · 纯视觉 + Astra</th><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><th>M2 · ViPE + DAV3 + Astra</th><td>2.8562</td><td>21.62%</td><td>7.79%</td><td>99.59%</td><td>1.5762</td></tr>
+        <tr><th>M3 · ORB-SLAM3 + DAV3 + Astra</th><td>3.2678</td><td>25.82%</td><td>8.82%</td><td>99.30%</td><td>1.9066</td></tr>
+        <tr><th>M4 · GT pose + DAV3 + Astra</th><td>2.9699</td><td>21.95%</td><td>7.79%</td><td>98.19%</td><td>1.9895</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="figure14">
+    <p class="eyebrow">04 / TRAJECTORY DIAGNOSTICS</p>
+    <h2>Figure 14. 轨迹、平移误差与旋转误差</h2>
+    <figure><a href="assets/figure14a.png"><img src="assets/figure14a.png" alt="Figure 14a 相机轨迹"></a>
+      <figcaption>Figure 14(a). GT、ORB-SLAM3、ViPE default 与 OpenVINS 的 XY 轨迹；每个估计器一次 SE(3) 对齐。</figcaption></figure>
+    <div class="figure-grid">
+      <figure><a href="assets/figure14b.png"><img src="assets/figure14b.png" alt="Figure 14b 平移误差"></a>
+        <figcaption>Figure 14(b). 平移误差；曲线为 1 秒移动平均，表中 RMSE 使用全部原始逐帧误差。</figcaption></figure>
+      <figure><a href="assets/figure14c.png"><img src="assets/figure14c.png" alt="Figure 14c 旋转误差"></a>
+        <figcaption>Figure 14(c). 旋转误差；曲线为 1 秒移动平均，表中 RMSE 使用全部原始逐帧误差。</figcaption></figure>
+    </div>
+    <p class="caption-note">OpenVINS 保留在 Figure 14 作为“以上四轨迹对比”的诊断曲线，但按要求不加入仅保留 M1–M4 的 Table 2。</p>
+  </section>
+
+  <section id="model-novel">
+    <p class="eyebrow">05 / MODEL-DEPENDENT EVALUATION</p>
+    <h2>Table 4. 同一场景新视角的模型深度误差</h2>
+    <div class="notice"><strong>状态：待建模。</strong>该表要求从 M1–M4 冻结 Blender 网格在统一新视角下射线求交。当前只有 DA3 原生深度，不能科学地代替模型深度。</div>
+    <div class="scroll"><table>
+      <thead><tr><th>方法</th><th>Novel depth AbsRel ↓</th><th>RMSE (m) ↓</th><th>Coverage ↑</th><th>Penalized MAE (m) ↓</th></tr></thead>
+      <tbody>
+        <tr><th>M1 · 纯视觉 + Astra</th><td colspan="4" class="pending">待 M1 Blender 模型冻结</td></tr>
+        <tr><th>M2 · ViPE + DAV3 + Astra</th><td colspan="4" class="pending">待 M2 Blender 模型冻结</td></tr>
+        <tr><th>M3 · ORB-SLAM3 + DAV3 + Astra</th><td colspan="4" class="pending">待 M3 Blender 模型冻结</td></tr>
+        <tr><th>M4 · GT pose + DAV3 + Astra</th><td colspan="4" class="pending">待 M4 Blender 模型冻结</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>Table 5. 全部建模视角的输入一致性</h2>
+    <p>该表比较每个冻结 Blender 模型的射线深度与该方法自己的建模输入深度。较低误差只表示模型更贴近自身输入，不等于更接近 GT。</p>
+    <div class="scroll"><table>
+      <thead><tr><th>方法</th><th>深度 RMSE (m) ↓</th><th>整体 AbsRel ↓</th><th>逐帧 AbsRel 中位数 ↓</th><th>表面覆盖率 ↑</th></tr></thead>
+      <tbody>
+        <tr><th>M1 · 纯视觉 + Astra</th><td colspan="4" class="pending">M1 无原生深度；待定义 RGB-only 模型检查口径</td></tr>
+        <tr><th>M2 · ViPE + DAV3 + Astra</th><td colspan="4" class="pending">待 M2 Blender 模型冻结</td></tr>
+        <tr><th>M3 · ORB-SLAM3 + DAV3 + Astra</th><td colspan="4" class="pending">待 M3 Blender 模型冻结</td></tr>
+        <tr><th>M4 · GT pose + DAV3 + Astra</th><td colspan="4" class="pending">待 M4 Blender 模型冻结</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="evidence">
+    <p class="eyebrow">06 / EVIDENCE</p>
+    <h2>冻结数据与复现</h2>
+    <div class="cards">
+      <article><h3>输入</h3><p>4,499 RGB 帧、44,999 IMU 样本，25 Hz / 250 Hz；同一 Isaac 仿真时钟。</p></article>
+      <article><h3>共同区间</h3><p>源帧 245–4498；位姿使用 4,254 个严格共同时间戳，深度使用 180 个建模帧与互斥的 500 个评测帧。</p></article>
+      <article><h3>数据仓库</h3><p><a href="https://huggingface.co/datasets/Ooliva/world-lobby-exps-new">打开私有 Dataset</a>，下载视频、轨迹、DA3 深度、GT optical-Z、逐帧指标与复现代码。</p></article>
+    </div>
+  </section>
+</main>
+<footer>World Lobby · frozen outputs · private release</footer>
+</body>
+</html>

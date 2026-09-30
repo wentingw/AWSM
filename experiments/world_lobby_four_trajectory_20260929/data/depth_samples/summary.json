@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "eligible_frames": 4254,
+  "eligible_source_range": [
+    245,
+    4498
+  ],
+  "modeling_frames": 180,
+  "evaluation_frames": 500,
+  "overlap": 0,
+  "modeling_selection_sha256": "093bb3c01f7fa984794e05bc676f89dd1e68666b067ed215a15afa13275729b4",
+  "evaluation_selection_sha256": "fa20f1aa8caae0a6d056abcde21279a5bb35d7342a44cd470dae89ac698868e1",
+  "pose_sources": {
+    "M2": {
+      "path": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/frozen/vipe_default/camera.npz",
+      "sha256": "607c1334740ea3969140b75eaa6391170191e26aa1776f92b2aecfa06da6e7b8",
+      "timestamp_count": 4499
+    },
+    "M3": {
+      "path": "/home/hchen/Documents/astraBlenderTest/stable_orbit_orb_success_20260929/frozen/camera.npz",
+      "sha256": "b7fea1fb0d260111d14bae8a91c2feeb99bb5f0308e88992d06cb9dee084ef1b",
+      "timestamp_count": 4254
+    },
+    "M4": {
+      "path": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/lobby_orb_success_20260929T123153/ground_truth/camera.csv",
+      "sha256": "5fe8cf6725bd2a755be665e5f5eca21555bdd373586ede7988a393747e83b14f",
+      "timestamp_count": 4499
+    }
+  }
+}

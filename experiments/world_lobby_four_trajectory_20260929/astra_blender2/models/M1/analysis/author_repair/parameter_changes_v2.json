@@ -1,0 +1,1398 @@
+{
+  "changes": [
+    {
+      "id": "north_group_center_m",
+      "before": [
+        3.0,
+        10.5
+      ],
+      "after": [
+        3.1,
+        7.9
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155,
+        118
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ]
+      },
+      "rationale": "Move group -2.6m alongY toward foreground in33/129/155 and out of118 open floor; ray-plane table estimates[3.718,7.458],[3.376,7.899],[1.640,6.799] conflict. Joint robust fit table[3.321,7.553] still has379px horizontal error in129; chosen group gives table[3.1,7.3].",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155",
+        "analysis/paired_visual_inspection_v2.json:sample118"
+      ]
+    },
+    {
+      "id": "seat_offsets_both_groups_m",
+      "before": [
+        [
+          -1.05,
+          -0.15
+        ],
+        [
+          -0.85,
+          0.72
+        ],
+        [
+          0,
+          1.02
+        ],
+        [
+          0.9,
+          0.75
+        ],
+        [
+          1.18,
+          -0.1
+        ]
+      ],
+      "after": [
+        [
+          -1.1,
+          -0.25
+        ],
+        [
+          -0.95,
+          0.73
+        ],
+        [
+          0,
+          1.1
+        ],
+        [
+          1.0,
+          0.7
+        ],
+        [
+          1.3,
+          -0.3
+        ]
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Small local spacing corrections avoid interpenetration of retained .47m-radius bodies; shape/count approximate.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "north_seat_2_back_orientation_degrees",
+      "before": 139.7334383305755,
+      "after": 142.46056612616835,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "north_seat_3_back_orientation_degrees",
+      "before": 90.0,
+      "after": 90.0,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "north_seat_5_back_orientation_degrees",
+      "before": -4.84400037508068,
+      "after": -12.994616791916505,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "south_seat_2_back_orientation_degrees",
+      "before": -139.7334383305755,
+      "after": -142.46056612616835,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "south_seat_3_back_orientation_degrees",
+      "before": -90.0,
+      "after": -90.0,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "south_seat_5_back_orientation_degrees",
+      "before": 4.84400037508068,
+      "after": 12.994616791916505,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Back follows changed radial seat offset; inferred orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "curved_back_caps_and_bevel",
+      "before": {
+        "end_caps": [
+          [
+            0,
+            17,
+            34,
+            51
+          ],
+          [
+            16,
+            33,
+            50,
+            67
+          ]
+        ],
+        "bevel_width_m": 0.055,
+        "bevel_segments": 3
+      },
+      "after": {
+        "end_caps": [
+          [
+            51,
+            34,
+            17,
+            0
+          ],
+          [
+            16,
+            33,
+            50,
+            67
+          ]
+        ],
+        "bevel_removed": true,
+        "normals": "recalculated outward"
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Fix initial-review inconsistent winding and collapsed evaluated polygon; no smoothing workaround. All8 current curved backs are watertight consistently wound positive-volume GLB meshes.",
+      "provenance": "technical repair; no dimensional evidence needed for winding",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "divider_rows_y_m",
+      "before": [
+        12.4,
+        5.7
+      ],
+      "after": [
+        9.8
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Treat opposite-direction pair as one physical pair. Measured conditional front-topY spans8.726\u20139.688m; chosen near/far faces9.51/10.09 retain two1.95x.58x.66m containers. Four redundant planter/plant IDs removed; retained row0 IDs. ExactY remains uncertain byabout.8m.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample91",
+        "analysis/paired_visual_inspection_v2.json:sample100",
+        "analysis/paired_visual_inspection_v2.json:sample108",
+        "analysis/paired_visual_inspection_v2.json:sample118",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "south_side_seat_centres_xy_m",
+      "before": [
+        [
+          4.9,
+          3.5
+        ],
+        [
+          5.5,
+          3.8
+        ],
+        [
+          5.4,
+          2.6
+        ]
+      ],
+      "after": [
+        [
+          5.5,
+          7.1
+        ],
+        [
+          5.5,
+          6.14
+        ],
+        [
+          5.2,
+          5.23
+        ]
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Retain3 observed side seats and resolve nearly coincident bodies by ray-plane measurements in61: seat centres[5.341,6.985],[5.344,6.277],[4.997,5.649].74 supports a seat near[6.034,5.057];82 conflicts, so coordinates remain inferred.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "side_seat_supports",
+      "before": null,
+      "after": {
+        "four_legs_each": {
+          "radius_m": 0.017,
+          "height_m": 0.13,
+          "center_z_m": 0.065,
+          "xy_offsets_m": [
+            [
+              -0.24,
+              -0.24
+            ],
+            [
+              -0.24,
+              0.24
+            ],
+            [
+              0.24,
+              -0.24
+            ],
+            [
+              0.24,
+              0.24
+            ]
+          ]
+        }
+      },
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_regions_source_1280x960": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ]
+      },
+      "rationale": "Bridge unsupported .10m base to floor; feet overlap insert by.016m as intended contact. Hidden legs are inferred.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82"
+      ]
+    },
+    {
+      "id": "side_backrests",
+      "before": null,
+      "after": {
+        "seat_ids": [
+          1,
+          2
+        ],
+        "cross_section_z_radius_m": [
+          [
+            0.48,
+            0.43
+          ],
+          [
+            0.83,
+            0.42
+          ],
+          [
+            0.85,
+            0.35
+          ],
+          [
+            0.5,
+            0.36
+          ]
+        ],
+        "azimuth_range_radians": [
+          -0.85,
+          0.85
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Two side seats show curved backs in61; add closed mesh backs with inferred thickness and exact orientation.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "mirror_side_coffee_table",
+      "before": null,
+      "after": {
+        "center_xy_m": [
+          4.2,
+          5.8
+        ],
+        "top_radius_m": 0.6,
+        "top_center_z_m": 0.43,
+        "top_thickness_m": 0.048,
+        "support_radius_m": 0.25,
+        "support_center_z_m": 0.225,
+        "support_height_m": 0.42
+      },
+      "evidence_frames": [
+        33,
+        61,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Table visible beside side seats: conditional centres from33/155 approximately[4.686,4.90]/[4.383,4.886], versus61[4.088,6.557]; choose compromise. Third logical table, not mirror reflection.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "reception_desk_support",
+      "before": {
+        "base_min_z_m": 0.1,
+        "support": null
+      },
+      "after": {
+        "plinth_center_m": [
+          4.1,
+          15.15,
+          0.055
+        ],
+        "plinth_dimensions_m": [
+          2.8,
+          0.55,
+          0.11
+        ],
+        "supported_by": "floor"
+      },
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Inferred hidden plinth bridges floating counter body; desk body remains unchanged.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample108",
+        "analysis/paired_visual_inspection_v2.json:sample118",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "floor_inlay_square_halfwidth_m",
+      "before": 0.032,
+      "after": {
+        "base": 0.012,
+        "deterministic_multiplier_range": [
+          0.75,
+          1.25
+        ],
+        "spacing_unchanged_m": [
+          0.116,
+          0.117
+        ]
+      },
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        118,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Reduce overly dominant v1 gold squares and restore black floor; exact motif/reflection density remains approximate.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample91",
+        "analysis/paired_visual_inspection_v2.json:sample100",
+        "analysis/paired_visual_inspection_v2.json:sample118",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "mirror_partition_collision",
+      "before": {
+        "type": "single_AABB",
+        "min": [
+          6.7725,
+          3.435,
+          0
+        ],
+        "max": [
+          8.0,
+          11.065,
+          4.6
+        ]
+      },
+      "after": {
+        "type": "COMPOUND",
+        "parts": "one tight box per real mesh component",
+        "enterable_clear_prism_min": [
+          6.2,
+          3.55,
+          0.02
+        ],
+        "enterable_clear_prism_max": [
+          7.85,
+          4.3,
+          2.55
+        ]
+      },
+      "evidence_frames": [
+        61,
+        74,
+        82,
+        91
+      ],
+      "pixel_regions_source_1280x960": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Keep opening clear while keeping separate north closed door proxy. Finite recess ends at inferred back wall; onward path unobserved. Entire prism and original reviewer probe tested clear against all enabled proxies.",
+      "provenance": "technical proxy repair; existing geometry retained",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample91"
+      ]
+    },
+    {
+      "id": "lathe_mesh_cleanup",
+      "before": {
+        "duplicate_pole_vertices": true
+      },
+      "after": {
+        "weld_tolerance_m": 1e-06,
+        "degenerate_edge_tolerance_m": 1e-08,
+        "normals": "consistent"
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Weld pole vertices and dissolve numerical degenerate edges without intentionally changing the profiles.",
+      "provenance": "technical mesh repair",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample74",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample91",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    },
+    {
+      "id": "appearance",
+      "before": {
+        "world_strength": 0.45,
+        "exposure": 0,
+        "facade_area_watts": 450,
+        "ceiling_fill_watts": 120,
+        "slat_material": "wall_oak"
+      },
+      "after": {
+        "world_strength": 0.18,
+        "exposure": -0.5,
+        "facade_area_watts": 260,
+        "ceiling_fill_watts": 65,
+        "slat_material": "slat_wood",
+        "wall_oak_RGB": [
+          0.3,
+          0.275,
+          0.225
+        ],
+        "wall_gray_RGB": [
+          0.25,
+          0.255,
+          0.245
+        ],
+        "ceiling_RGB": [
+          0.43,
+          0.415,
+          0.37
+        ],
+        "shade_weave_RGB": [
+          0.17,
+          0.135,
+          0.085
+        ],
+        "shade_RGB": [
+          0.5,
+          0.47,
+          0.39
+        ],
+        "metal_dark_RGB": [
+          0.035,
+          0.038,
+          0.034
+        ],
+        "brass_RGB": [
+          0.3,
+          0.225,
+          0.085
+        ],
+        "wall_grain_scale": [
+          2,
+          2,
+          0.045
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        82,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions_source_1280x960": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "rationale": "Reduce washed-out walls/fixtures, increase dark slat contrast. Inferred appearance, no calibrated materials/lighting; weave remains too smooth.",
+      "provenance": "inferred; conditional on RGB-only scale and unchanged estimated cameras",
+      "signed_input_depth_residual_m": null,
+      "depth_reason": "N/A for M1; no input DA3 or measured depth",
+      "self_depth_evidence": [
+        "analysis/paired_visual_inspection_v2.json:sample33",
+        "analysis/paired_visual_inspection_v2.json:sample61",
+        "analysis/paired_visual_inspection_v2.json:sample82",
+        "analysis/paired_visual_inspection_v2.json:sample100",
+        "analysis/paired_visual_inspection_v2.json:sample129",
+        "analysis/paired_visual_inspection_v2.json:sample155"
+      ]
+    }
+  ],
+  "ray_plane_evidence": "analysis/author_repair/rgb_ray_plane_measurements.json",
+  "per_object_before_after": "analysis/author_repair/object_parameter_deltas_v1_v2.json"
+}

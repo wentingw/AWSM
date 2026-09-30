@@ -1,0 +1,276 @@
+{
+  "role": "M2 revision AUTHOR, not independent reviewer",
+  "status": "ready_for_independent_review",
+  "quality_status": "LIMITED",
+  "final_version": 3,
+  "created_utc": "2026-09-30T06:51:23.845566+00:00",
+  "artifact_hashes": {
+    "scene.blend": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+    "scene.glb": "79c7ed61d8a7eee347b462e094fcccf324c824e1774d4f9bb3c9448612921a6f",
+    "build_scene.py": "70c62c63aa811826ac6783f657cda78244360c1baa9a97e709a820c3f6af6546",
+    "layout.json": "a1b40e97f3ff73cff06239d3021f8418ce62d8edb020f482a7731af119fb7484",
+    "cameras.json": "6026043e99023afe3660d7e78b6bea30d7f8c03d7077b31128eed92e582954e5",
+    "input_packet": "1da9bc1787d7acd44f1370e5942d4ddd2e7cb22fbe1e29304e7ab7a19224a14b"
+  },
+  "budget": {
+    "full_scene_versions": 3,
+    "paired_views": 30,
+    "supplemental_paired_views": 0,
+    "full180_input_bvh_passes": 3,
+    "limit_versions": 5,
+    "limit_paired_views": 50,
+    "limit_full180_passes": 3
+  },
+  "build": "Both v2/v3 built from scratch by build_scene.py from layout and unchanged cameras, factory startup, two CPU threads; checks CPU Cycles12samples640x480",
+  "no_geometry_change_after_final_pass": true,
+  "full_pass_geometry_explanation": "input_v2 checks major-repair v2. input_final checks v3 after counter-bevel removal and hidden backing-side fixes. They are distinct geometries; no fourth pass.",
+  "review_issues": [
+    {
+      "id": "M2-I01",
+      "author_status": "records_complete",
+      "response": "Initial evidence retained; two new versions and exactly two additional full180 passes; budgets verified. Final author records and snapshots retained."
+    },
+    {
+      "id": "M2-I02",
+      "author_status": "repaired_author_validated",
+      "response": "All975 requested rod endpoints checked; maximum error1.49519328e-06m. Mode assignment fixed before quaternion."
+    },
+    {
+      "id": "M2-I03",
+      "author_status": "repaired_author_validated",
+      "response": "All1577 closed Blender and GLB components have positive volume, no near-zero triangles. Chair bevel removed; desk counter bevel newly caught in v2 removed in v3. Open bowls and foliage are intentionally excluded from closed-volume claims."
+    },
+    {
+      "id": "M2-I04",
+      "author_status": "repaired_author_validated",
+      "response": "Continuous structural backings split at precise apertures; open service vestibule and split collision proxies. Static tested crossing box clear; closed facade state explicitly blocks exterior entrances."
+    },
+    {
+      "id": "M2-I05",
+      "author_status": "repaired_author_validated",
+      "response": "Seat center/radius/yaw preserved; explicit Voronoi shared boundaries clipped with6mm pairwise gap. Convex footprint intersection test is zero for all seat pairs; colliders use matching footprint prisms."
+    },
+    {
+      "id": "M2-I06",
+      "author_status": "LIMITED_after_measured_repair",
+      "response": "M2-I06 LIMITED: pendant13 foreground correction is supported in33/129 and reduces129 lamp residual from+3.382m to-0.074m. Other distant33/129 correspondences are tentative;82/108 silhouette ordering and missing/overlapping lamps remain visibly wrong. No claim of complete lamp recovery."
+    },
+    {
+      "id": "M2-I07",
+      "author_status": "LIMITED_after_measured_repair",
+      "response": "M2-I07 LIMITED: desk RGB silhouette fit uses33/108/118/129 (<3px front-corner errors), while own DA3 desk signs conflict.129 residual worsens to about+1.81m as33 improves to about-1.48m. End-wall y15.15m retained;33 roughly-2.62m versus129 positive residual; native scale/cameras unchanged."
+    },
+    {
+      "id": "M2-I08",
+      "author_status": "LIMITED_after_appearance_repair",
+      "response": "M2-I08 LIMITED: upholstery shapes/yaws, plant morphology, bowl weave, floor dash pattern, mirror reflections, wall grain and lighting remain approximations. Packed floor texture is visibly too subdued; GLB procedural bump materials may simplify."
+    },
+    {
+      "id": "M2-I09",
+      "author_status": "uncertainty_documented",
+      "response": "The selected DA3 window changes produce discontinuous predicted depth (median8.09 to19.67m at20->21,7.94 to18.74m at166->167) despite sub-centimeter translation and <0.07deg rotation steps and similar source RGB.175 has implausibly short0.37m median. This supports prediction-window inconsistency as a major contributor, not proof that all native poses/geometry are correct. No depth rescale, pose edit or mask trim."
+    }
+  ],
+  "parameter_and_residual_evidence": [
+    "analysis/revision_measurements.json",
+    "analysis/revision_evidence.json",
+    "analysis/v3_changes.json",
+    "analysis/object_adjustment_ledger.json"
+  ],
+  "paired_checks": [
+    {
+      "version": 1,
+      "model_sha256": "00be0f90eff6faa1de71317206e9922f5396a9de5291f9e8fca7960bc8c24b2c",
+      "count": 10,
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_comparisons_actually_inspected": true,
+      "aggregate_input_consistency": {
+        "pixels_domain": 3049640,
+        "pixels_valid": 3038811,
+        "valid_coverage": 0.9964490890728086,
+        "invalid_rate": 0.0035509109271913974,
+        "mae_m": 0.7467164041975122,
+        "rmse_m": 1.28324838530742,
+        "absrel": 0.11923887180900303,
+        "delta1": 0.853915890129396,
+        "delta2": 0.9449185882241442,
+        "delta3": 0.9850681730453128,
+        "missing_penalty_mae_m": 0.8505922085740762
+      }
+    },
+    {
+      "version": 2,
+      "model_sha256": "9490280728dba30533a43fc48894afb0590456a4a76b9e9aa45d70a2b35b61b1",
+      "count": 10,
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_comparisons_actually_inspected": true,
+      "aggregate_input_consistency": {
+        "pixels_domain": 3049640,
+        "pixels_valid": 3049612,
+        "valid_coverage": 0.9999908185884235,
+        "invalid_rate": 9.181411576464349e-06,
+        "mae_m": 0.6518827934573102,
+        "rmse_m": 1.1328485774540922,
+        "absrel": 0.1038136507783256,
+        "delta1": 0.8948751513307267,
+        "delta2": 0.9616324961995165,
+        "delta3": 0.9866287908101096,
+        "missing_penalty_mae_m": 0.6521522506003773
+      }
+    },
+    {
+      "version": 3,
+      "model_sha256": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+      "count": 10,
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_comparisons_actually_inspected": true,
+      "aggregate_input_consistency": {
+        "pixels_domain": 3049640,
+        "pixels_valid": 3049607,
+        "valid_coverage": 0.999989179050642,
+        "invalid_rate": 1.0820949358003595e-05,
+        "mae_m": 0.6491088333989397,
+        "rmse_m": 1.1298092324703615,
+        "absrel": 0.10346320934587151,
+        "delta1": 0.8958373980647343,
+        "delta2": 0.9622407083929175,
+        "delta3": 0.9866543459534294,
+        "missing_penalty_mae_m": 0.6494264379058643
+      }
+    }
+  ],
+  "full_input_checks": [
+    {
+      "directory": "checks/input_v1",
+      "version": 1,
+      "frames": 180,
+      "model_sha256": "00be0f90eff6faa1de71317206e9922f5396a9de5291f9e8fca7960bc8c24b2c",
+      "aggregate": {
+        "pixels_domain": 3440675,
+        "pixels_valid": 3430313,
+        "valid_coverage": 0.9969883816402305,
+        "invalid_rate": 0.0030116183597694857,
+        "mae_m": 1.5012600419531856,
+        "rmse_m": 2.896534239974394,
+        "absrel": 0.6542477779959428,
+        "delta1": 0.7270246184531849,
+        "delta2": 0.8500626619203554,
+        "delta3": 0.8930663178549596,
+        "missing_penalty_mae_m": 1.5870873704411366
+      },
+      "reference_sha256": "518420b05350a88933c094666376ea8fbc835a8693433dc877ede416f484b163",
+      "domain_sha256": "2e4e684dcfe9a89641d2c780dac1c1e8d2d44f3ff66a3b3cc91e43173c8fb5f1",
+      "outlier_signed_medians_m": {
+        "21": -12.33747673034668,
+        "22": -12.338624954223633,
+        "167": -11.55698013305664,
+        "168": -11.548276901245117,
+        "175": 5.340862274169922
+      }
+    },
+    {
+      "directory": "checks/input_v2",
+      "version": 2,
+      "frames": 180,
+      "model_sha256": "9490280728dba30533a43fc48894afb0590456a4a76b9e9aa45d70a2b35b61b1",
+      "aggregate": {
+        "pixels_domain": 3440675,
+        "pixels_valid": 3440600,
+        "valid_coverage": 0.9999782019516519,
+        "invalid_rate": 2.1798048348120602e-05,
+        "mae_m": 1.4276564333765076,
+        "rmse_m": 2.839149347654802,
+        "absrel": 0.6420784014955464,
+        "delta1": 0.7533148288089286,
+        "delta2": 0.8629471603790037,
+        "delta3": 0.8960379003662152,
+        "missing_penalty_mae_m": 1.4282792547029906
+      },
+      "reference_sha256": "518420b05350a88933c094666376ea8fbc835a8693433dc877ede416f484b163",
+      "domain_sha256": "2e4e684dcfe9a89641d2c780dac1c1e8d2d44f3ff66a3b3cc91e43173c8fb5f1",
+      "outlier_signed_medians_m": {
+        "21": -12.379023551940918,
+        "22": -12.385506629943848,
+        "167": -11.666802406311035,
+        "168": -11.66849136352539,
+        "175": 5.305891513824463
+      }
+    },
+    {
+      "directory": "checks/input_final",
+      "version": 3,
+      "frames": 180,
+      "model_sha256": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+      "aggregate": {
+        "pixels_domain": 3440675,
+        "pixels_valid": 3440593,
+        "valid_coverage": 0.9999761674671395,
+        "invalid_rate": 2.3832532860534883e-05,
+        "mae_m": 1.426197557307134,
+        "rmse_m": 2.838045872392222,
+        "absrel": 0.6419540377965056,
+        "delta1": 0.754040364553436,
+        "delta2": 0.8632314255129857,
+        "delta3": 0.8960757636837603,
+        "missing_penalty_mae_m": 1.4268785433928006
+      },
+      "reference_sha256": "518420b05350a88933c094666376ea8fbc835a8693433dc877ede416f484b163",
+      "domain_sha256": "2e4e684dcfe9a89641d2c780dac1c1e8d2d44f3ff66a3b3cc91e43173c8fb5f1",
+      "outlier_signed_medians_m": {
+        "21": -12.379023551940918,
+        "22": -12.385506629943848,
+        "167": -11.666802406311035,
+        "168": -11.66849136352539,
+        "175": 5.305891513824463
+      }
+    }
+  ],
+  "validation_paths": [
+    "checks/author_geometry_audit.json",
+    "checks/author_glb_geometry_audit.json",
+    "checks/artifact_inspection.json",
+    "checks/glb_load.json"
+  ],
+  "unresolved_issues": [
+    "M2-I06 LIMITED: pendant13 foreground correction is supported in33/129 and reduces129 lamp residual from+3.382m to-0.074m. Other distant33/129 correspondences are tentative;82/108 silhouette ordering and missing/overlapping lamps remain visibly wrong. No claim of complete lamp recovery.",
+    "M2-I07 LIMITED: desk RGB silhouette fit uses33/108/118/129 (<3px front-corner errors), while own DA3 desk signs conflict.129 residual worsens to about+1.81m as33 improves to about-1.48m. End-wall y15.15m retained;33 roughly-2.62m versus129 positive residual; native scale/cameras unchanged.",
+    "M2-I08 LIMITED: upholstery shapes/yaws, plant morphology, bowl weave, floor dash pattern, mirror reflections, wall grain and lighting remain approximations. Packed floor texture is visibly too subdued; GLB procedural bump materials may simplify.",
+    "M2-I09 input uncertainty: selected DA3 windows jump greatly at21/22 and167/168 with nearly unchanged native poses and RGB;175 predicts very short depth. These observations are retained without camera edits, depth scaling or masking. Native trajectory accuracy is not certified.",
+    "Service aperture1.05x2.24m is statically clear into a bounded inferred1.5m vestibule. Hidden connectivity, physics and material/thickness parameters are inferred. Closed exterior glazing deliberately blocks both entrance door pairs; no traversal claimed in their closed state.",
+    "Small feet/inset support offsets and remaining silhouette/position conflicts remain visual limitations. No full physics or navigation simulation was run."
+  ],
+  "independent_review": "Initial review retained untouched under independent_review. Final candidate must be reviewed independently. Author has not frozen or self-certified independent review."
+}

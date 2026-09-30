@@ -1,0 +1,34 @@
+{
+  "frame_count": 180,
+  "transform_determinant": 0.9999999999999998,
+  "rotation_orthogonality_error": 2.220446049250313e-16,
+  "scale": 1,
+  "all_cameras_exact_X_times_packet": true,
+  "max_camera_difference": 0.0,
+  "intrinsics": [
+    [
+      762.8,
+      0,
+      640
+    ],
+    [
+      0,
+      762.8,
+      480
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "opencv_to_blender": "right multiply diag(1,-1,-1,1)",
+  "projection_validation": "Complete paired helper reports available; helper source contains projection assertions. Exact X@packet verified numerically at handoff.",
+  "depth_backprojection": "NPZ intrinsics, NPZ valid mask, packet camera_to_world; no predicted camera used",
+  "all_camera_matrices_native": true,
+  "final_version": 3,
+  "exact_cameras_json_matches_v1": true,
+  "final_native_pose_error": 0.0,
+  "saved_projection_max_error_px": 0.00031280517578125,
+  "input_masks_identical_all_versions": true
+}

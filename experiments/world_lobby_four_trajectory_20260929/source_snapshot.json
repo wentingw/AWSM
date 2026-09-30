@@ -1,0 +1,2317 @@
+{
+  "snapshot_date": "2026-09-30T08:50:02.664496+00:00",
+  "source_workspace": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929",
+  "scope": "Trajectory/depth pipeline, both Blender authoring runs, evaluation/publication tools, small configuration and construction companions",
+  "copy_policy": "byte-identical source files; repository helpers and documentation tracked separately",
+  "excluded": [
+    "authentication state and secrets",
+    "private agent session logs",
+    "RGB/depth caches and GT geometry",
+    "Blender/GLB model binaries",
+    "rendered images and videos",
+    "weights and runtime environments",
+    "duplicate version/reproduction/backup trees",
+    "large generated mesh audit dumps",
+    "vendored viewer bundle"
+  ],
+  "files": [
+    {
+      "path": "COMMANDS.md",
+      "source": "COMMANDS.md",
+      "sha256": "fd6051d19d95af6d67b8eccb950e062c36e7fc9b08bd3979f28a4164d8213986",
+      "bytes": 4992
+    },
+    {
+      "path": "astra_blender/models/M1/analysis/camera_checks.json",
+      "source": "astra_blender/models/M1/analysis/camera_checks.json",
+      "sha256": "72a6e953b40a3839d3482dd7a757618bcd7fa293d4423edff01e1c4a844bdcab",
+      "bytes": 25088
+    },
+    {
+      "path": "astra_blender/models/M1/analysis/measurements.json",
+      "source": "astra_blender/models/M1/analysis/measurements.json",
+      "sha256": "2620c4368d9ae0e67e27132b27ef2e99e30590fedbff0e832f72990091726ab4",
+      "bytes": 2700
+    },
+    {
+      "path": "astra_blender/models/M1/analysis/object_inventory.json",
+      "source": "astra_blender/models/M1/analysis/object_inventory.json",
+      "sha256": "8e862893b583f3f8679209004b2a40989c3674f842fb41e0e3a4a2533809f3c0",
+      "bytes": 47339
+    },
+    {
+      "path": "astra_blender/models/M1/apply_v2_repairs.py",
+      "source": "astra_blender/models/M1/apply_v2_repairs.py",
+      "sha256": "842d595a5d5e6ac1595992a490edd7a05698a4a98c4d06ed43e6b8c1c3b0345d",
+      "bytes": 6980
+    },
+    {
+      "path": "astra_blender/models/M1/build_scene.py",
+      "source": "astra_blender/models/M1/build_scene.py",
+      "sha256": "5bbd2e7e541387ed008bcdec98efc31388f27cc9063e3932911005ff28b6be42",
+      "bytes": 28681
+    },
+    {
+      "path": "astra_blender/models/M1/cameras.json",
+      "source": "astra_blender/models/M1/cameras.json",
+      "sha256": "dd115ab3d1c2bd9eff85394ccd18cab9bd62a9a7f26f4ebf853f57a099f156ab",
+      "bytes": 187981
+    },
+    {
+      "path": "astra_blender/models/M1/check_repairs.py",
+      "source": "astra_blender/models/M1/check_repairs.py",
+      "sha256": "f1ad689fce254c0371594cb6aa2160ddaad8d0f3831f748607f53a215fba607c",
+      "bytes": 2107
+    },
+    {
+      "path": "astra_blender/models/M1/colliders.json",
+      "source": "astra_blender/models/M1/colliders.json",
+      "sha256": "2d509c70e933e11a3ac7ec00f8183f027a9a9196803a34a143bda23e91bb6b6e",
+      "bytes": 69230
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/final_review.json",
+      "source": "astra_blender/models/M1/independent_review/final_review.json",
+      "sha256": "0959007faea8c9c8a6fd1b1524925362762c1364ca895e29c62fc5e12154fde9",
+      "bytes": 27527
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/final_review.md",
+      "source": "astra_blender/models/M1/independent_review/final_review.md",
+      "sha256": "faa63d614034162852b1eaa92e17bc595b48ae2646a1be7cb397fff559474df8",
+      "bytes": 10827
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/final_review_audit.py",
+      "source": "astra_blender/models/M1/independent_review/final_review_audit.py",
+      "sha256": "1d56c23433bb262f5ec36f89d98fa12dfa5369877399b002e5cc5c6108dc137d",
+      "bytes": 10396
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/initial_review.json",
+      "source": "astra_blender/models/M1/independent_review/initial_review.json",
+      "sha256": "175118d7faf1b005b905c92de4d982bdd93bfab9b58b92b9c2d72d7605562f48",
+      "bytes": 22768
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/initial_review.md",
+      "source": "astra_blender/models/M1/independent_review/initial_review.md",
+      "sha256": "9847fa82418daf028c8d5454f75bdd7399a35f490f5e193bf15c53db5792a67f",
+      "bytes": 21558
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/review_audit.py",
+      "source": "astra_blender/models/M1/independent_review/review_audit.py",
+      "sha256": "94e60074598d1d2b93df1d0c91c90ab5418f3d54e8f83b83d4d595d5dc9a7ff7",
+      "bytes": 9640
+    },
+    {
+      "path": "astra_blender/models/M1/independent_review/write_final_review.py",
+      "source": "astra_blender/models/M1/independent_review/write_final_review.py",
+      "sha256": "d648f2964c535042544820b6a519d8240adcbf2f6486a0bf17136a154da49559",
+      "bytes": 18214
+    },
+    {
+      "path": "astra_blender/models/M1/iteration_log.json",
+      "source": "astra_blender/models/M1/iteration_log.json",
+      "sha256": "16998a74d67846788536554e5c6e3d576835b3fb35bd8bd2db6e70ebf5dabb5c",
+      "bytes": 4496
+    },
+    {
+      "path": "astra_blender/models/M1/layout.json",
+      "source": "astra_blender/models/M1/layout.json",
+      "sha256": "c1efcdf7ee801e393e02b4b534738738f2dbd21d3ccddb7cd0b573374a5a90b0",
+      "bytes": 25520
+    },
+    {
+      "path": "astra_blender/models/M1/modelling_manifest.json",
+      "source": "astra_blender/models/M1/modelling_manifest.json",
+      "sha256": "78b33283f94eaddf81d8c15d9f80595db2382ec213d3c1c4afd98771433d9bcc",
+      "bytes": 8562
+    },
+    {
+      "path": "astra_blender/models/M1/objects.json",
+      "source": "astra_blender/models/M1/objects.json",
+      "sha256": "3e19d6230e64d5c719384254ee128a2a4d51d7e122429f0dfae6f11a4c840ac3",
+      "bytes": 150521
+    },
+    {
+      "path": "astra_blender/models/M1/prepare_cameras.py",
+      "source": "astra_blender/models/M1/prepare_cameras.py",
+      "sha256": "839ef04da7b72b396bcadccd3633a0c09dc6a0e840e473753dd41738d47f7fdd",
+      "bytes": 6922
+    },
+    {
+      "path": "astra_blender/models/M1/repair_response.json",
+      "source": "astra_blender/models/M1/repair_response.json",
+      "sha256": "9dc0389798a05142ecdb83b3c2462cc459d7262a3709f45020c8fd6066cb1787",
+      "bytes": 7860
+    },
+    {
+      "path": "astra_blender/models/M1/repair_response.md",
+      "source": "astra_blender/models/M1/repair_response.md",
+      "sha256": "3807487ff552dfe6bbe0e48268b8b3d694caa5619315832aca208badfcb27900",
+      "bytes": 3551
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/analyze_input.py",
+      "source": "astra_blender/models/M2/analysis/analyze_input.py",
+      "sha256": "e24cd36456c91ab7353890c761c80fa140877fd36113b7a36421784537f4afd6",
+      "bytes": 3009
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/camera_checks.json",
+      "source": "astra_blender/models/M2/analysis/camera_checks.json",
+      "sha256": "b4721c7a07d69413422154f3c67eaf00116112f1779218a8a95bf1b3a787c7f6",
+      "bytes": 2288
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/depth_diagnostics.json",
+      "source": "astra_blender/models/M2/analysis/depth_diagnostics.json",
+      "sha256": "4405cba39f3853a8b239ad9073662563490b14e3829c0df205676ca9d9fadf35",
+      "bytes": 30695
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/finalize_initial.py",
+      "source": "astra_blender/models/M2/analysis/finalize_initial.py",
+      "sha256": "e09fab069fcd84920178ad78e82e8eba4aca850d206c18e92b32e7b2bbffb068",
+      "bytes": 10023
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/finalize_v2.py",
+      "source": "astra_blender/models/M2/analysis/finalize_v2.py",
+      "sha256": "6e0b85a1fd1896636bac5f2ba9433147f12046152d3873a3c9f328f682c578a1",
+      "bytes": 9744
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/landmarks.json",
+      "source": "astra_blender/models/M2/analysis/landmarks.json",
+      "sha256": "0e3ee57937225386b790290a5b04bf64c7e8409e78267c2fbfc40b60275e4bd5",
+      "bytes": 16012
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/measure_landmarks.py",
+      "source": "astra_blender/models/M2/analysis/measure_landmarks.py",
+      "sha256": "317feaa03227ce42023a157dd8df9a1626d84827313b5fc398924f5c451ad948",
+      "bytes": 3135
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/measurements.json",
+      "source": "astra_blender/models/M2/analysis/measurements.json",
+      "sha256": "931c97fa035c98753015143599be8a3c93355b8448cee87df102356a41fa9be8",
+      "bytes": 21665
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/object_inventory.json",
+      "source": "astra_blender/models/M2/analysis/object_inventory.json",
+      "sha256": "97dc2bd7729e4e5726564064ad9d3afa0295a00c81527504425ada45ef65f4f9",
+      "bytes": 69035
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/patch_v2.py",
+      "source": "astra_blender/models/M2/analysis/patch_v2.py",
+      "sha256": "7dad0c1562a7602e19097f2a3667ace7fbbf15f8ce8037451ea9dc12e473a126",
+      "bytes": 8876
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/transform.json",
+      "source": "astra_blender/models/M2/analysis/transform.json",
+      "sha256": "fa98282681d07b83855e1db86a596e4e4d180c6975c59b773e2d1a331723b8c7",
+      "bytes": 740
+    },
+    {
+      "path": "astra_blender/models/M2/analysis/verify_repairs_v2.py",
+      "source": "astra_blender/models/M2/analysis/verify_repairs_v2.py",
+      "sha256": "8bc7aa8a44343a86c0cac6156726f9ca44c88668625d8a92ff48563e4a3d8e21",
+      "bytes": 2989
+    },
+    {
+      "path": "astra_blender/models/M2/build_scene.py",
+      "source": "astra_blender/models/M2/build_scene.py",
+      "sha256": "e3a574caf2c80693e70e2fb1f730b8fbd8c238a241036c5e8d293ae63ceb0391",
+      "bytes": 32890
+    },
+    {
+      "path": "astra_blender/models/M2/cameras.json",
+      "source": "astra_blender/models/M2/cameras.json",
+      "sha256": "9694cfe642950f56e780f929f1e03590f70772cbaa7d17b5643c797e545ea2fa",
+      "bytes": 160840
+    },
+    {
+      "path": "astra_blender/models/M2/colliders.json",
+      "source": "astra_blender/models/M2/colliders.json",
+      "sha256": "a5312acd273058c502d864b00732ab7df87af1855e210ba70cc5bef919b6af7c",
+      "bytes": 50469
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/final_record_checks.py",
+      "source": "astra_blender/models/M2/independent_review/final_record_checks.py",
+      "sha256": "72976775bc53bc9e5772dfe99de763ab29fc69cf5be193edc86d3f099b4d018b",
+      "bytes": 3925
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/final_review.json",
+      "source": "astra_blender/models/M2/independent_review/final_review.json",
+      "sha256": "4584b7389eeec134376aed8d0c24ea32af8d0f0d4aea17b415fe005e327c0f33",
+      "bytes": 25199
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/final_review.md",
+      "source": "astra_blender/models/M2/independent_review/final_review.md",
+      "sha256": "0c7f3009b3cdacd8858326305a2b56a7ab8259406c738313f7847a5daec1f39f",
+      "bytes": 11596
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/final_targeted_checks.py",
+      "source": "astra_blender/models/M2/independent_review/final_targeted_checks.py",
+      "sha256": "35f4045305cf854d13466b2659b6b90c2881080d37902b55930a717daa571d8e",
+      "bytes": 3294
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/initial_review.json",
+      "source": "astra_blender/models/M2/independent_review/initial_review.json",
+      "sha256": "1725523746164b14552b13aaabddf0d1940246e41cd220a3499d3926030a9709",
+      "bytes": 24000
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/initial_review.md",
+      "source": "astra_blender/models/M2/independent_review/initial_review.md",
+      "sha256": "080443f0ab3e56c8203196bf8bb0a08c6d2d1db707ed63be5b962dfa9890c7b5",
+      "bytes": 23418
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/make_evidence.py",
+      "source": "astra_blender/models/M2/independent_review/make_evidence.py",
+      "sha256": "b11d951c8bce826556b7fd2f0990b165bc229ef8cd609a48d241a5f210b0188d",
+      "bytes": 1555
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/mirror_normals.py",
+      "source": "astra_blender/models/M2/independent_review/mirror_normals.py",
+      "sha256": "ad475bf88527d4e11425baa11058b9267916adf084dac0ecc21355d93411948b",
+      "bytes": 816
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/review_audit.py",
+      "source": "astra_blender/models/M2/independent_review/review_audit.py",
+      "sha256": "2ad6f46b8415fbaff504fecabd7f68364e0dc30d356a2beee71b820ee32bd71d",
+      "bytes": 10420
+    },
+    {
+      "path": "astra_blender/models/M2/independent_review/write_final_review.py",
+      "source": "astra_blender/models/M2/independent_review/write_final_review.py",
+      "sha256": "f07461400c4f477bcf749ca0b05a6516b751ca8b020a1e4ca0a92037b30c463a",
+      "bytes": 16477
+    },
+    {
+      "path": "astra_blender/models/M2/iteration_log.json",
+      "source": "astra_blender/models/M2/iteration_log.json",
+      "sha256": "cf51086f299e741dcb0dc541ba6385dc14c46dbd6cc3f526540993c09effbce6",
+      "bytes": 4960
+    },
+    {
+      "path": "astra_blender/models/M2/layout.json",
+      "source": "astra_blender/models/M2/layout.json",
+      "sha256": "7d5572a1c4eada93d60e464a29615a89ce5a98223612fa35b47c7b530014151c",
+      "bytes": 2644
+    },
+    {
+      "path": "astra_blender/models/M2/modelling_manifest.json",
+      "source": "astra_blender/models/M2/modelling_manifest.json",
+      "sha256": "47f8b38dc946736336494cc55b6a7fc253cef6334b126dbde074c3aa26391745",
+      "bytes": 2175
+    },
+    {
+      "path": "astra_blender/models/M2/objects.json",
+      "source": "astra_blender/models/M2/objects.json",
+      "sha256": "8adb62016349e2fe91cc27ece1aea12f4bc78855530786dffcda6f2891198045",
+      "bytes": 162364
+    },
+    {
+      "path": "astra_blender/models/M2/repair_response.json",
+      "source": "astra_blender/models/M2/repair_response.json",
+      "sha256": "c5a723b0ccd1309e4dc5029901666c19a59845528b0a350c0a6d91abcb4147a6",
+      "bytes": 5504
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/anchor_measurements.json",
+      "source": "astra_blender/models/M3/analysis/anchor_measurements.json",
+      "sha256": "3a3f47190dd6fc404f983051a8c7222d7f3a73364c95c25f86cfdf8339425f9e",
+      "bytes": 16541
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/camera_checks.json",
+      "source": "astra_blender/models/M3/analysis/camera_checks.json",
+      "sha256": "828efe9f60cf137b23bfe659eeee082424f0d23a0fee674e5f24e9968bfb6c46",
+      "bytes": 711
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/measurements.json",
+      "source": "astra_blender/models/M3/analysis/measurements.json",
+      "sha256": "a81f2adb00d10c9f779f159372791c2fd7db90525afd3059a8c786b34914cd8b",
+      "bytes": 57850
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/model_from_input.npy",
+      "source": "astra_blender/models/M3/analysis/model_from_input.npy",
+      "sha256": "ef36086450fce27c83d1c47d55de26e11717d745007b40f3939c12108bd08836",
+      "bytes": 256
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/object_inventory.json",
+      "source": "astra_blender/models/M3/analysis/object_inventory.json",
+      "sha256": "6938f5f803787bf5cf0a4e7813a3a65f2077827262dc85bc6306d60604aa7b1e",
+      "bytes": 25466
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/plane_measurements.json",
+      "source": "astra_blender/models/M3/analysis/plane_measurements.json",
+      "sha256": "69b762996b01bf836d23b6f7ebeb9786008a5b05c2fbf21b45080ae904ee4fb1",
+      "bytes": 5538
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/seat_repair_measurements.json",
+      "source": "astra_blender/models/M3/analysis/seat_repair_measurements.json",
+      "sha256": "3543cc102eab29649d2fe762a1cffaafa65fb6eebdc506a74b6964d9a5b6e17a",
+      "bytes": 27316
+    },
+    {
+      "path": "astra_blender/models/M3/analysis/v3_baseline_hashes.json",
+      "source": "astra_blender/models/M3/analysis/v3_baseline_hashes.json",
+      "sha256": "41167cda042a7146dc6ad8674609f1dcf2e8cd478ef667d0ee96b12e01660789",
+      "bytes": 505
+    },
+    {
+      "path": "astra_blender/models/M3/build_scene.py",
+      "source": "astra_blender/models/M3/build_scene.py",
+      "sha256": "dddcb15323968283aec5ae4c6dc7b67c2f8cd31381623eb8e4b6c9fcb021bf81",
+      "bytes": 30351
+    },
+    {
+      "path": "astra_blender/models/M3/build_scene_v1_reference.py",
+      "source": "astra_blender/models/M3/build_scene_v1_reference.py",
+      "sha256": "dc59de10086aee312b0dbf865b742c9bcc9c55e3cc516649089303c069c93459",
+      "bytes": 25952
+    },
+    {
+      "path": "astra_blender/models/M3/cameras.json",
+      "source": "astra_blender/models/M3/cameras.json",
+      "sha256": "ddb2fa713a87201f7bd81945b425abd3671e027a8fe5f401ee1882a628cdf3ad",
+      "bytes": 160497
+    },
+    {
+      "path": "astra_blender/models/M3/colliders.json",
+      "source": "astra_blender/models/M3/colliders.json",
+      "sha256": "045b86d7a1a017aa54497f2173fe5aa4cb047948a011ba7397e3f63d95cd9836",
+      "bytes": 138404
+    },
+    {
+      "path": "astra_blender/models/M3/complete_m3_records.py",
+      "source": "astra_blender/models/M3/complete_m3_records.py",
+      "sha256": "3bee384bd8fe0590e1ca610ec53563ea8f2c489e27ee2854bc91e0c42d308618",
+      "bytes": 17072
+    },
+    {
+      "path": "astra_blender/models/M3/independent_review/final_review.json",
+      "source": "astra_blender/models/M3/independent_review/final_review.json",
+      "sha256": "2d739e351745121a82dda78800aa48d1c2f0384d30bde49c9dbafda3aa3a6354",
+      "bytes": 25988
+    },
+    {
+      "path": "astra_blender/models/M3/independent_review/final_review.md",
+      "source": "astra_blender/models/M3/independent_review/final_review.md",
+      "sha256": "b3397dcbac67960ad0182deaebd2b754862e74e0a8535b38b254f1ecd2580bfa",
+      "bytes": 6050
+    },
+    {
+      "path": "astra_blender/models/M3/independent_review/initial_review.json",
+      "source": "astra_blender/models/M3/independent_review/initial_review.json",
+      "sha256": "59349b7a2f794eaa7cf628b80f165f0090ea9158795e6c383193e0ea443da57d",
+      "bytes": 19749
+    },
+    {
+      "path": "astra_blender/models/M3/independent_review/initial_review.md",
+      "source": "astra_blender/models/M3/independent_review/initial_review.md",
+      "sha256": "ddf9b7d8f1a408661cbf139a5b94e5c660fe76a730fe706cf978c99d65f78478",
+      "bytes": 16123
+    },
+    {
+      "path": "astra_blender/models/M3/independent_review/verify_final.py",
+      "source": "astra_blender/models/M3/independent_review/verify_final.py",
+      "sha256": "75e9c2b63a85eac62543741cabae1f8d1e899fb8422db5e16ab71cafb91a8f6b",
+      "bytes": 3877
+    },
+    {
+      "path": "astra_blender/models/M3/iteration_log.json",
+      "source": "astra_blender/models/M3/iteration_log.json",
+      "sha256": "3cd00b81152330a949d281e35bb17d7b5d5979bd3c2d20021e60936541c44b66",
+      "bytes": 2382
+    },
+    {
+      "path": "astra_blender/models/M3/layout.json",
+      "source": "astra_blender/models/M3/layout.json",
+      "sha256": "e2480bfd15ecb5fd63d649afa91103fd1bd4290510cadc6fe9eab03ed9b52a53",
+      "bytes": 1255
+    },
+    {
+      "path": "astra_blender/models/M3/modelling_manifest.json",
+      "source": "astra_blender/models/M3/modelling_manifest.json",
+      "sha256": "ffe04037c1e6feef74f494805170d65b39cecdeeb2f848c86b7428c55bbb17a0",
+      "bytes": 4528
+    },
+    {
+      "path": "astra_blender/models/M3/objects.json",
+      "source": "astra_blender/models/M3/objects.json",
+      "sha256": "fc45cbd6746f331dac8061ec570c373dbd7628518494a41a9454e23a22f72ae7",
+      "bytes": 251687
+    },
+    {
+      "path": "astra_blender/models/M3/remediation.json",
+      "source": "astra_blender/models/M3/remediation.json",
+      "sha256": "20c6216a4de3bb5e398d8c0a7c8d41cc3863652edd37d107248b4b9cf3a7ba90",
+      "bytes": 494
+    },
+    {
+      "path": "astra_blender/models/M3/repair_response.json",
+      "source": "astra_blender/models/M3/repair_response.json",
+      "sha256": "2278356e85f90ac4e6dddc54191dd58e477cb1a5e9ca1c0aa88b40c9c1d11244",
+      "bytes": 9152
+    },
+    {
+      "path": "astra_blender/models/M3/repair_response.md",
+      "source": "astra_blender/models/M3/repair_response.md",
+      "sha256": "3575317ee3cb5b40421f710996a386d622cfce50e05249e383621928c2f8d3cf",
+      "bytes": 5478
+    },
+    {
+      "path": "astra_blender/models/M3/repair_v3.py",
+      "source": "astra_blender/models/M3/repair_v3.py",
+      "sha256": "89f0a24d5c3c37a560f3a32881dc07d24fe2ccf94eb8f5f56d9c98d69c433c2e",
+      "bytes": 9362
+    },
+    {
+      "path": "astra_blender/models/M3/verify_v3.py",
+      "source": "astra_blender/models/M3/verify_v3.py",
+      "sha256": "1bbd4629d9288dc2309c422d104ea98cc210c05b195ebdb983ca92f147fe9cb1",
+      "bytes": 3856
+    },
+    {
+      "path": "astra_blender/models/M4/README.md",
+      "source": "astra_blender/models/M4/README.md",
+      "sha256": "ef7f785a7c98d361fe44616431b70a902785f0d6576489ff8410fd91a3a292a2",
+      "bytes": 1781
+    },
+    {
+      "path": "astra_blender/models/M4/analyze_inputs.py",
+      "source": "astra_blender/models/M4/analyze_inputs.py",
+      "sha256": "5c415077efd99e9eeeb85cc64bc3e2e58e5e47f7a21ca0c374575622798fba81",
+      "bytes": 2894
+    },
+    {
+      "path": "astra_blender/models/M4/apply_revision3.py",
+      "source": "astra_blender/models/M4/apply_revision3.py",
+      "sha256": "0bcb4367c5611ab0b5b8d4e892e0d0bbdc98f370d042aca1a36db355a5e7866a",
+      "bytes": 6053
+    },
+    {
+      "path": "astra_blender/models/M4/build_scene.py",
+      "source": "astra_blender/models/M4/build_scene.py",
+      "sha256": "eb53141e1ff6237aa5a6d811e0221ed7c58504f8307b426b7eee472a12a4cd94",
+      "bytes": 29298
+    },
+    {
+      "path": "astra_blender/models/M4/build_scene_v1.py",
+      "source": "astra_blender/models/M4/build_scene_v1.py",
+      "sha256": "ff027bd2e38656ccd5d808c28b492e77eb2964925943e7e30e3339774a86b723",
+      "bytes": 25359
+    },
+    {
+      "path": "astra_blender/models/M4/build_scene_v2.py",
+      "source": "astra_blender/models/M4/build_scene_v2.py",
+      "sha256": "fbde7c9b778bc8e985efd80900d755af0ae784fea81139670ebbe41051a8f07b",
+      "bytes": 25579
+    },
+    {
+      "path": "astra_blender/models/M4/build_scene_v3.py",
+      "source": "astra_blender/models/M4/build_scene_v3.py",
+      "sha256": "4d863f96f02ae636811143d19e01b78b73bd4289c0816a52f02d121c6b1e745d",
+      "bytes": 29113
+    },
+    {
+      "path": "astra_blender/models/M4/build_stats_v1.json",
+      "source": "astra_blender/models/M4/build_stats_v1.json",
+      "sha256": "4ce581b5b7894a1b91b93aa2bd219188315e17ec2f7a2161dee8fb5b1a3219bd",
+      "bytes": 272
+    },
+    {
+      "path": "astra_blender/models/M4/build_stats_v2.json",
+      "source": "astra_blender/models/M4/build_stats_v2.json",
+      "sha256": "05fb5d0f40dce5561cd13336023c0b2eb29dd745f9799112eab264aea7c40b3c",
+      "bytes": 273
+    },
+    {
+      "path": "astra_blender/models/M4/build_stats_v3.json",
+      "source": "astra_blender/models/M4/build_stats_v3.json",
+      "sha256": "3e522a9f7a2247e9c1ada621bff62808753853567c29e0c8f7cb1106b2447359",
+      "bytes": 272
+    },
+    {
+      "path": "astra_blender/models/M4/build_stats_v4.json",
+      "source": "astra_blender/models/M4/build_stats_v4.json",
+      "sha256": "a9d10dcd1d92e09ff51a0c1d0e4df5141a192a6fc30b1c02d166a02a64b50d68",
+      "bytes": 273
+    },
+    {
+      "path": "astra_blender/models/M4/cameras.json",
+      "source": "astra_blender/models/M4/cameras.json",
+      "sha256": "9e0495ed2a48db96da4d06518b3a6e891aa707e39953457856971aa4162a5868",
+      "bytes": 169518
+    },
+    {
+      "path": "astra_blender/models/M4/colliders.json",
+      "source": "astra_blender/models/M4/colliders.json",
+      "sha256": "ae3cb1b301218bca52ca5e38cd77c55305895173ae2bd8c890679946801fba17",
+      "bytes": 18946
+    },
+    {
+      "path": "astra_blender/models/M4/derive_layout.py",
+      "source": "astra_blender/models/M4/derive_layout.py",
+      "sha256": "0c5679003a6cc9dc724e68d753277b24d11b6ca904238cf41a7f9ed53f783b0d",
+      "bytes": 2214
+    },
+    {
+      "path": "astra_blender/models/M4/finalize_layout.py",
+      "source": "astra_blender/models/M4/finalize_layout.py",
+      "sha256": "f73d07cbb3e71841ad2f18765dd36a7c9fe08f2f96f7dd119e75c75caf51c547",
+      "bytes": 2152
+    },
+    {
+      "path": "astra_blender/models/M4/finalize_model.py",
+      "source": "astra_blender/models/M4/finalize_model.py",
+      "sha256": "3ab778e4d1d8dd679bae299291002a8c413bcf302dc23108e832bd6864a5ff7b",
+      "bytes": 13104
+    },
+    {
+      "path": "astra_blender/models/M4/handoff_validation.json",
+      "source": "astra_blender/models/M4/handoff_validation.json",
+      "sha256": "b984d4400a3dcb17a1129638d91155833e6307577bfee38f52bf294e4cea77ef",
+      "bytes": 296
+    },
+    {
+      "path": "astra_blender/models/M4/iteration_log.json",
+      "source": "astra_blender/models/M4/iteration_log.json",
+      "sha256": "2e91d68a5a00819f9e64deb20d5d4b5f107831dd3381c2866a66bb09f3735f6f",
+      "bytes": 7706
+    },
+    {
+      "path": "astra_blender/models/M4/layout_parameters.json",
+      "source": "astra_blender/models/M4/layout_parameters.json",
+      "sha256": "d7188aaa9b0170db46aae81578c595d787612f1c5c57ce46e197b916e3ba0f25",
+      "bytes": 9280
+    },
+    {
+      "path": "astra_blender/models/M4/layout_parameters_v1.json",
+      "source": "astra_blender/models/M4/layout_parameters_v1.json",
+      "sha256": "f6fb1cb2289afa5e15c324bf2857fa69a81e8b5a51ca9e1e2d0f0e53c607eb9b",
+      "bytes": 8356
+    },
+    {
+      "path": "astra_blender/models/M4/layout_parameters_v2.json",
+      "source": "astra_blender/models/M4/layout_parameters_v2.json",
+      "sha256": "7939c266a9aeeef9fd1c8b7771d24d27890210ba6bc03a1a5642c5eeda821242",
+      "bytes": 9261
+    },
+    {
+      "path": "astra_blender/models/M4/layout_parameters_v3.json",
+      "source": "astra_blender/models/M4/layout_parameters_v3.json",
+      "sha256": "7ca62b2d573b0aba35bc63e73c4405e1ee7bc051d1a6d41856f2297660bbb5d7",
+      "bytes": 9458
+    },
+    {
+      "path": "astra_blender/models/M4/manual_rgb_measurements.json",
+      "source": "astra_blender/models/M4/manual_rgb_measurements.json",
+      "sha256": "4cb21d96bd795fca66db898d9b9e7d7998c84f5122bae39ee9f1d9a1276d1ddd",
+      "bytes": 6893
+    },
+    {
+      "path": "astra_blender/models/M4/manual_triangulation.py",
+      "source": "astra_blender/models/M4/manual_triangulation.py",
+      "sha256": "f321b805d98eabce9ad99c619d731cff51548da70f270d8f8ca5456f16c3eb0b",
+      "bytes": 1581
+    },
+    {
+      "path": "astra_blender/models/M4/mesh_checks_v3.json",
+      "source": "astra_blender/models/M4/mesh_checks_v3.json",
+      "sha256": "17ea0074af52fb15a209863fc9c5d6ba395c40481fac05ddf188e23ac6011318",
+      "bytes": 587
+    },
+    {
+      "path": "astra_blender/models/M4/mesh_checks_v4.json",
+      "source": "astra_blender/models/M4/mesh_checks_v4.json",
+      "sha256": "1705a1a1ca832ddc5b0821e28db71f35b65558667e171f6a577d222752a09856",
+      "bytes": 587
+    },
+    {
+      "path": "astra_blender/models/M4/modelling_manifest.json",
+      "source": "astra_blender/models/M4/modelling_manifest.json",
+      "sha256": "8ff1430950fc0c31290397ea6ee08787ee9301140146d34f66ae6943b92e29e7",
+      "bytes": 7715
+    },
+    {
+      "path": "astra_blender/models/M4/objects.json",
+      "source": "astra_blender/models/M4/objects.json",
+      "sha256": "938ac684b9b9a13172b48125c8c10d6b8ab83d85e01ef04be0da19a365f0e2fb",
+      "bytes": 96462
+    },
+    {
+      "path": "astra_blender/models/M4/packet_frozen.json",
+      "source": "astra_blender/models/M4/packet_frozen.json",
+      "sha256": "3c68c36b83de165ed7be4d0d36389aa68c7e088736f0cb43de1cb623eece91f2",
+      "bytes": 156357
+    },
+    {
+      "path": "astra_blender/models/M4/probe_geometry.py",
+      "source": "astra_blender/models/M4/probe_geometry.py",
+      "sha256": "54b02c9fcd3d9f6bbdf59f09c81414c3ff01cdfc42deb01dec7f3d1107939632",
+      "bytes": 2829
+    },
+    {
+      "path": "astra_blender/models/M4/projection_checks_v4.json",
+      "source": "astra_blender/models/M4/projection_checks_v4.json",
+      "sha256": "8d7e495731004eab2c715755ba23c1a5de64c0c7b7b7c9748f9cfc4e2069aabe",
+      "bytes": 1485
+    },
+    {
+      "path": "astra_blender/models/M4/refit_pendants_v3.py",
+      "source": "astra_blender/models/M4/refit_pendants_v3.py",
+      "sha256": "1c8721c128a759abc9b772baffed1b58519df19aefb994a1005f6fb52ac71c32",
+      "bytes": 1745
+    },
+    {
+      "path": "astra_blender/models/M4/refit_revision3.py",
+      "source": "astra_blender/models/M4/refit_revision3.py",
+      "sha256": "c37933f2f4aa7a3d0021e82fc5164b0f6038248c841243ea97d4689eac279870",
+      "bytes": 2735
+    },
+    {
+      "path": "astra_blender/models/M4/review_response.json",
+      "source": "astra_blender/models/M4/review_response.json",
+      "sha256": "b70f66ba1e8d80453db7a2ec8b33908ca507183ba3087a6d8a0a7f6c290310cb",
+      "bytes": 4930
+    },
+    {
+      "path": "astra_blender/models/M4/revision3_measurements.json",
+      "source": "astra_blender/models/M4/revision3_measurements.json",
+      "sha256": "8bf855a8f58e9c9d6c51c26e62ab8c2e3ed62cacee2291161f9189fef30b67e7",
+      "bytes": 6252
+    },
+    {
+      "path": "astra_blender/models/M4/revision3_pendant_matches.json",
+      "source": "astra_blender/models/M4/revision3_pendant_matches.json",
+      "sha256": "6c7a759083ae26f9124a4b2311da7c9d8dcec920ab2f1735cd7252f63a98451c",
+      "bytes": 3434
+    },
+    {
+      "path": "astra_blender/models/M4/revision4_pendant_deduplication.json",
+      "source": "astra_blender/models/M4/revision4_pendant_deduplication.json",
+      "sha256": "b95dc450cd3d938643022b5c3f830cba1761ccd0a118c3cd93ba829944d91499",
+      "bytes": 671
+    },
+    {
+      "path": "astra_blender/models/M4/revision4_table_measurement.json",
+      "source": "astra_blender/models/M4/revision4_table_measurement.json",
+      "sha256": "1bcd8737dc8911ed4b8a9c86b91bec663d15b22cb82e8b73e2066ff731aea265",
+      "bytes": 523
+    },
+    {
+      "path": "astra_blender/models/M4/semantic_measurements.json",
+      "source": "astra_blender/models/M4/semantic_measurements.json",
+      "sha256": "1de602dbdf1d2487b4110eadbb842463c19e2fa2b4b2543a2ee5e1ca3d9a2b44",
+      "bytes": 10924
+    },
+    {
+      "path": "astra_blender/models/M4/triangulate_rgb.py",
+      "source": "astra_blender/models/M4/triangulate_rgb.py",
+      "sha256": "8c9854cd0b40f7b547739f583736ea504887e8d1ff69cf10323b5391ea4dde35",
+      "bytes": 2731
+    },
+    {
+      "path": "astra_blender/models/M4/write_audit.py",
+      "source": "astra_blender/models/M4/write_audit.py",
+      "sha256": "e6a95348f94e4ee66bb71ca7a048bee96a65eb206756ce62581b5fdfb571c9c4",
+      "bytes": 7877
+    },
+    {
+      "path": "astra_blender2/README.md",
+      "source": "astra_blender2/README.md",
+      "sha256": "cbb4547b8107e47b61795ae4d538c93f551dcf3b9aff05d72eb1bf0763286183",
+      "bytes": 4462
+    },
+    {
+      "path": "astra_blender2/configs/modelling_contract.md",
+      "source": "astra_blender2/configs/modelling_contract.md",
+      "sha256": "512a3fbb04913d336cb0c6ed2daa893b69f2adc8089facb57b969ebf9be1c9c4",
+      "bytes": 6858
+    },
+    {
+      "path": "astra_blender2/configs/run_contract.json",
+      "source": "astra_blender2/configs/run_contract.json",
+      "sha256": "df8b710d8cdcefb3f3f23d9c384357153b719f92709feeba132125812faf0349",
+      "bytes": 2652
+    },
+    {
+      "path": "astra_blender2/inputs/M1/fixed_check_views/manifest.json",
+      "source": "astra_blender2/inputs/M1/fixed_check_views/manifest.json",
+      "sha256": "5d111704129741a6d83dad8e5733b805e1a2bc11e2f8dbd42837295ccfe73f5f",
+      "bytes": 2816
+    },
+    {
+      "path": "astra_blender2/inputs/M1/packet.json",
+      "source": "astra_blender2/inputs/M1/packet.json",
+      "sha256": "a32595feae018a721ba1bb7b8a9f42ffc351146a51d036455a904ab77a106b51",
+      "bytes": 107795
+    },
+    {
+      "path": "astra_blender2/inputs/M2/fixed_check_views/manifest.json",
+      "source": "astra_blender2/inputs/M2/fixed_check_views/manifest.json",
+      "sha256": "5d111704129741a6d83dad8e5733b805e1a2bc11e2f8dbd42837295ccfe73f5f",
+      "bytes": 2816
+    },
+    {
+      "path": "astra_blender2/inputs/M2/packet.json",
+      "source": "astra_blender2/inputs/M2/packet.json",
+      "sha256": "1da9bc1787d7acd44f1370e5942d4ddd2e7cb22fbe1e29304e7ab7a19224a14b",
+      "bytes": 259273
+    },
+    {
+      "path": "astra_blender2/inputs/M3/fixed_check_views/manifest.json",
+      "source": "astra_blender2/inputs/M3/fixed_check_views/manifest.json",
+      "sha256": "5d111704129741a6d83dad8e5733b805e1a2bc11e2f8dbd42837295ccfe73f5f",
+      "bytes": 2816
+    },
+    {
+      "path": "astra_blender2/inputs/M3/packet.json",
+      "source": "astra_blender2/inputs/M3/packet.json",
+      "sha256": "524d186fdc72e848a178cdace79fd93503ffd403e7f0f1f55d7d7e88ee1eee98",
+      "bytes": 258793
+    },
+    {
+      "path": "astra_blender2/inputs/M4/fixed_check_views/manifest.json",
+      "source": "astra_blender2/inputs/M4/fixed_check_views/manifest.json",
+      "sha256": "5d111704129741a6d83dad8e5733b805e1a2bc11e2f8dbd42837295ccfe73f5f",
+      "bytes": 2816
+    },
+    {
+      "path": "astra_blender2/inputs/M4/packet.json",
+      "source": "astra_blender2/inputs/M4/packet.json",
+      "sha256": "7e6f29df12774545c9d0a19c485f241d8c8716da024011a0b0124d8d77f793d2",
+      "bytes": 258468
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/audit_blender.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/audit_blender.py",
+      "sha256": "ff52ad1a47b16c21b1f09e0b03ed2496b482c4c6f12626d55526777bf73d5b95",
+      "bytes": 3489
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/complete_records.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/complete_records.py",
+      "sha256": "d737f2c488ef0e6668a53073beeec0ce38c491bf26b6c9cd68f133a5c2460918",
+      "bytes": 6722
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/finalize.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/finalize.py",
+      "sha256": "ac856764d4d653fdd957a37fa9e0e9e504ea083076074fccc6c4a7e0199f0f7c",
+      "bytes": 20434
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/measure_rgb.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/measure_rgb.py",
+      "sha256": "031dd2e132cabb581e909fb18187c55d94aaebad9ea6076e5ee09288efabcd44",
+      "bytes": 2323
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/object_parameter_deltas_v1_v2.json",
+      "source": "astra_blender2/models/M1/analysis/author_repair/object_parameter_deltas_v1_v2.json",
+      "sha256": "a3dc0f2eb58c8d238d69bd0f14d2f55723234af3752ca896caab0879591b5ea3",
+      "bytes": 65486
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/parameter_changes_v2.json",
+      "source": "astra_blender2/models/M1/analysis/author_repair/parameter_changes_v2.json",
+      "sha256": "37f06c2162e3e17b8cf6718cc6d5738bcbe7ba9bd5faa279a06ead4a378f35c3",
+      "bytes": 32749
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/record_access.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/record_access.py",
+      "sha256": "f3aeea6715c75789cead8612b6840488b597ce4f7381766ba09127044d6b9516",
+      "bytes": 4060
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/rgb_ray_plane_measurements.json",
+      "source": "astra_blender2/models/M1/analysis/author_repair/rgb_ray_plane_measurements.json",
+      "sha256": "c26b20471c3d4148a352b18ba8e4a81aee2c86475f22be6d53f2c57f2e43c070",
+      "bytes": 8801
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/author_repair/verify_candidate.py",
+      "source": "astra_blender2/models/M1/analysis/author_repair/verify_candidate.py",
+      "sha256": "c8886afc4d739a8b5221ddee40dcfdc400f29868d6c78d7e30171f893fc8bcd3",
+      "bytes": 5506
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/camera_checks.json",
+      "source": "astra_blender2/models/M1/analysis/camera_checks.json",
+      "sha256": "c19a7929ad1eeabfb19b08da9d86629d61048becd6180eb0509ab21365a7bf38",
+      "bytes": 29418
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/measurements.json",
+      "source": "astra_blender2/models/M1/analysis/measurements.json",
+      "sha256": "1769a505cfe68cba7f01be38dc0715ddd0859a4e42c8c630b4591de62ae33b2c",
+      "bytes": 31548
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/object_inventory.json",
+      "source": "astra_blender2/models/M1/analysis/object_inventory.json",
+      "sha256": "a2f9234160e3f464baa8cabf1d4620ba6c9a5835a879108429410a32531f87a0",
+      "bytes": 81294
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/paired_visual_inspection_v1.json",
+      "source": "astra_blender2/models/M1/analysis/paired_visual_inspection_v1.json",
+      "sha256": "cf15c4250d5f198e990af931cd9c3f94502b5cdea67c07cbcef5d8819b4edfad",
+      "bytes": 7033
+    },
+    {
+      "path": "astra_blender2/models/M1/analysis/paired_visual_inspection_v2.json",
+      "source": "astra_blender2/models/M1/analysis/paired_visual_inspection_v2.json",
+      "sha256": "4987471a0c7f48b472bdd897daeac61976ab16e476ebd38b716543cfcc1c613c",
+      "bytes": 11751
+    },
+    {
+      "path": "astra_blender2/models/M1/author_prepare_v2.py",
+      "source": "astra_blender2/models/M1/author_prepare_v2.py",
+      "sha256": "41df06e83abfbd5898b02006deb2a2c9a0161fdc49e417a469f201abcdff1390",
+      "bytes": 8465
+    },
+    {
+      "path": "astra_blender2/models/M1/author_repair_notes.json",
+      "source": "astra_blender2/models/M1/author_repair_notes.json",
+      "sha256": "bf3f332e4d9dac76c3b07ee2be04f8ebca23a563c32ea42839f5fe4b3183e62d",
+      "bytes": 45520
+    },
+    {
+      "path": "astra_blender2/models/M1/author_repair_notes.md",
+      "source": "astra_blender2/models/M1/author_repair_notes.md",
+      "sha256": "13f36bbebe6a22c1615fcfa0b5753fac76f1d16fa7cf55e26ec6e4a93ece7748",
+      "bytes": 4286
+    },
+    {
+      "path": "astra_blender2/models/M1/build_scene.py",
+      "source": "astra_blender2/models/M1/build_scene.py",
+      "sha256": "c4862f365d9813e1609280543f3650178f7c0d35db8500919ee395f3c2c8505b",
+      "bytes": 22417
+    },
+    {
+      "path": "astra_blender2/models/M1/cameras.json",
+      "source": "astra_blender2/models/M1/cameras.json",
+      "sha256": "ff42bb139e729aa7bd795107c6a0fe2d62c2c422496f91ebb526b61ed4c81b26",
+      "bytes": 200209
+    },
+    {
+      "path": "astra_blender2/models/M1/colliders.json",
+      "source": "astra_blender2/models/M1/colliders.json",
+      "sha256": "89b77abef219aca75c37232a4f04d9b83f909b2095c4794521fdcbdc308873a3",
+      "bytes": 41655
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/audit_blender.py",
+      "source": "astra_blender2/models/M1/independent_review/audit_blender.py",
+      "sha256": "7efd2d7931361be48eed83a645690980533fdab71107f4e5ee019ce94460f262",
+      "bytes": 3476
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/audit_records.py",
+      "source": "astra_blender2/models/M1/independent_review/audit_records.py",
+      "sha256": "b9a16b3fb4e8f48ebd2b23863618d2d9103b11c7c02d883e4ced053fbb7dd981",
+      "bytes": 8524
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/final_audit_blender.py",
+      "source": "astra_blender2/models/M1/independent_review/final_audit_blender.py",
+      "sha256": "271108ebab6943a6c3a5f1039d58e9d75410288c2555f78ab0288ae2bf18030a",
+      "bytes": 3482
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/final_audit_records.py",
+      "source": "astra_blender2/models/M1/independent_review/final_audit_records.py",
+      "sha256": "a7295b2ef12c444b84267c06d5f5cc34b749af61c04fcf2ff2c7c978bdc8b757",
+      "bytes": 11164
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/final_review.json",
+      "source": "astra_blender2/models/M1/independent_review/final_review.json",
+      "sha256": "185070424eec4f4286351e47fd532de50590f8093867d439e36686cbb39b1e3f",
+      "bytes": 51629
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/final_review.md",
+      "source": "astra_blender2/models/M1/independent_review/final_review.md",
+      "sha256": "e30511dbc92ea90a52a115a71b2fee8dd972c2a1c5cb9ba289052b06a7a460fd",
+      "bytes": 4435
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/initial_review.json",
+      "source": "astra_blender2/models/M1/independent_review/initial_review.json",
+      "sha256": "9b493eedbb1ef4cb479a10a1a04a8cc1bea9b227f968c15affe3aeaa4d317085",
+      "bytes": 39212
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/initial_review.md",
+      "source": "astra_blender2/models/M1/independent_review/initial_review.md",
+      "sha256": "ba0ad18adca41c1f21b06cbaa04c2865776c533b2cccebd1a2dcee0370cc8197",
+      "bytes": 5189
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/write_final_review.py",
+      "source": "astra_blender2/models/M1/independent_review/write_final_review.py",
+      "sha256": "31dfb3254c409fa76418a3652174f0fe2e63dcfe44dd12631c76fc1116958c97",
+      "bytes": 22090
+    },
+    {
+      "path": "astra_blender2/models/M1/independent_review/write_review.py",
+      "source": "astra_blender2/models/M1/independent_review/write_review.py",
+      "sha256": "0e8b26887f8a7e2ea08a6cf3cc6f61720092cb08cf6a85d49f3e8c1b22056d41",
+      "bytes": 26396
+    },
+    {
+      "path": "astra_blender2/models/M1/iteration_log.json",
+      "source": "astra_blender2/models/M1/iteration_log.json",
+      "sha256": "31d905d95a95dfc095bdd9810ae4fc9e6f739f0b040b8d2113aea4479d338670",
+      "bytes": 2700
+    },
+    {
+      "path": "astra_blender2/models/M1/layout.json",
+      "source": "astra_blender2/models/M1/layout.json",
+      "sha256": "253bd78efeb7f0036ceb45e9d16f5d393fad43f62ce8b60558579979ab7e38f1",
+      "bytes": 1754
+    },
+    {
+      "path": "astra_blender2/models/M1/modelling_manifest.json",
+      "source": "astra_blender2/models/M1/modelling_manifest.json",
+      "sha256": "55a7d39569da92e7ada96b202578fa9845b75299da95b7aab191d7b94223f9ee",
+      "bytes": 2165
+    },
+    {
+      "path": "astra_blender2/models/M1/objects.json",
+      "source": "astra_blender2/models/M1/objects.json",
+      "sha256": "aa071353aa124d004ca05c7dbe16c10f66305baf1139021063f823b5cdc29b4c",
+      "bytes": 81100
+    },
+    {
+      "path": "astra_blender2/models/M1/prepare.py",
+      "source": "astra_blender2/models/M1/prepare.py",
+      "sha256": "1c8f7d19209bafdec0e9d98af8512dac3c8c171d471419961f222ead6f9bcd38",
+      "bytes": 8841
+    },
+    {
+      "path": "astra_blender2/models/M1/record_initial.py",
+      "source": "astra_blender2/models/M1/record_initial.py",
+      "sha256": "6c1611fdf220c8b0bd86649671c884db49f220f7c2c5000453d72c85e17d0382",
+      "bytes": 7480
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/camera_checks.json",
+      "source": "astra_blender2/models/M2/analysis/camera_checks.json",
+      "sha256": "55683555c20956c455a5c728d5bbbf30a4ed3368c0ae97fcbb0bf8b0b2024a9a",
+      "bytes": 9698
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/initial_limitations.md",
+      "source": "astra_blender2/models/M2/analysis/initial_limitations.md",
+      "sha256": "0baf545a4e1fd7927c976eb23e2ba32c13c9552bcf5f839b77b2c0dd610b9f1b",
+      "bytes": 1223
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/measurements.json",
+      "source": "astra_blender2/models/M2/analysis/measurements.json",
+      "sha256": "f24621cb038bdc6c8e06ecec00986c181d7b4a1596a13399379f754dddab0d6c",
+      "bytes": 47970
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/object_adjustment_ledger.json",
+      "source": "astra_blender2/models/M2/analysis/object_adjustment_ledger.json",
+      "sha256": "e99ff4be0f86793e10dbe1166bc1e45f508bb4d4c091dc01b5bdf0fc0a3e8340",
+      "bytes": 211076
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/object_depth_regions.json",
+      "source": "astra_blender2/models/M2/analysis/object_depth_regions.json",
+      "sha256": "a6de865beaa68b30531bc42ae52fcc6717ee1527b3bd7be8c493d1945e4f329e",
+      "bytes": 21081
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/object_inventory.json",
+      "source": "astra_blender2/models/M2/analysis/object_inventory.json",
+      "sha256": "565753af1ee4400d3badc12cdfab6726477dbd9ec2647dcebbea3ff33bbe4571",
+      "bytes": 107062
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/plane_observations.json",
+      "source": "astra_blender2/models/M2/analysis/plane_observations.json",
+      "sha256": "27f7172c2c8539bd544c682598728b5645384e5848d29c1004c750bf291a9d94",
+      "bytes": 11520
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/proposed_layout_v2.json",
+      "source": "astra_blender2/models/M2/analysis/proposed_layout_v2.json",
+      "sha256": "bc6da90a5d6e60139c49a344d898ae76aac1f088657bf38aa29571c0a3d2c2fe",
+      "bytes": 15852
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/repair_measurements_pre.json",
+      "source": "astra_blender2/models/M2/analysis/repair_measurements_pre.json",
+      "sha256": "b4a5d93167d1d474f071be26430c8fdede9157e6511d8d5431087c4eb0642663",
+      "bytes": 9587
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/repair_visual_inspection.json",
+      "source": "astra_blender2/models/M2/analysis/repair_visual_inspection.json",
+      "sha256": "60dcb6c8f64e80e90ce4266bcf973e28ef01a54990e3977d514313deae5a73df",
+      "bytes": 7071
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/revision_evidence.json",
+      "source": "astra_blender2/models/M2/analysis/revision_evidence.json",
+      "sha256": "db335af3d04703a07206706dba4779fb5a5b59c02e707c46805c763614423bf2",
+      "bytes": 76458
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/revision_measurements.json",
+      "source": "astra_blender2/models/M2/analysis/revision_measurements.json",
+      "sha256": "998be25401a2f0ee81d1e5e06af3880f6c9c154f3f6e419615d700013c39c457",
+      "bytes": 35245
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/rod_requests.json",
+      "source": "astra_blender2/models/M2/analysis/rod_requests.json",
+      "sha256": "2f8df5651ffc0bc876d6b4d71191ff08562023a98b28fa7d1be82b71be495d98",
+      "bytes": 223868
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/transform.json",
+      "source": "astra_blender2/models/M2/analysis/transform.json",
+      "sha256": "674d1cec22999d20ed6b390c6552c199d5ed24228f522d88a626a21e279d1132",
+      "bytes": 945
+    },
+    {
+      "path": "astra_blender2/models/M2/analysis/v3_changes.json",
+      "source": "astra_blender2/models/M2/analysis/v3_changes.json",
+      "sha256": "df07689e56c59756bd58ab5f71eafe110f32a9e146b4a2cb3c531a0894ad337b",
+      "bytes": 2325
+    },
+    {
+      "path": "astra_blender2/models/M2/apply_revision.py",
+      "source": "astra_blender2/models/M2/apply_revision.py",
+      "sha256": "6012f32fc365cf72ca2c94badeec32b626454300709226875abb7ef191ae8905",
+      "bytes": 11025
+    },
+    {
+      "path": "astra_blender2/models/M2/author_geometry_audit.py",
+      "source": "astra_blender2/models/M2/author_geometry_audit.py",
+      "sha256": "691f67d7f4bba721afc6d71b9f667125ea657fc082be2c53c3a86eca0fc5fd2f",
+      "bytes": 4445
+    },
+    {
+      "path": "astra_blender2/models/M2/author_repair_notes.json",
+      "source": "astra_blender2/models/M2/author_repair_notes.json",
+      "sha256": "7aee3a06ec3db6f6be886958aa1129e7c9b455402befd9849a5bc688d9de43e7",
+      "bytes": 12427
+    },
+    {
+      "path": "astra_blender2/models/M2/author_repair_notes.md",
+      "source": "astra_blender2/models/M2/author_repair_notes.md",
+      "sha256": "e869c28a07d94a6e739116f134d85207675de1d1700169dc2ea767444baf5486",
+      "bytes": 7649
+    },
+    {
+      "path": "astra_blender2/models/M2/build_scene.py",
+      "source": "astra_blender2/models/M2/build_scene.py",
+      "sha256": "70c62c63aa811826ac6783f657cda78244360c1baa9a97e709a820c3f6af6546",
+      "bytes": 24019
+    },
+    {
+      "path": "astra_blender2/models/M2/cameras.json",
+      "source": "astra_blender2/models/M2/cameras.json",
+      "sha256": "6026043e99023afe3660d7e78b6bea30d7f8c03d7077b31128eed92e582954e5",
+      "bytes": 175417
+    },
+    {
+      "path": "astra_blender2/models/M2/colliders.json",
+      "source": "astra_blender2/models/M2/colliders.json",
+      "sha256": "658e3fbd406d3e12b1b0b787bc26b5c4cff59280bf52107bee10d93fb34e7738",
+      "bytes": 64477
+    },
+    {
+      "path": "astra_blender2/models/M2/finalize_initial.py",
+      "source": "astra_blender2/models/M2/finalize_initial.py",
+      "sha256": "33771e29c74e8b50cdedd4bf0c35c560dcca319617f2e4dda510c3e83706ace8",
+      "bytes": 13477
+    },
+    {
+      "path": "astra_blender2/models/M2/finalize_revision.py",
+      "source": "astra_blender2/models/M2/finalize_revision.py",
+      "sha256": "34aac3d126ba6e90c4815e81b3962630ca7082959cd7a44b62f606c07ef69e4c",
+      "bytes": 20577
+    },
+    {
+      "path": "astra_blender2/models/M2/glb_author_audit.py",
+      "source": "astra_blender2/models/M2/glb_author_audit.py",
+      "sha256": "bd9153d97ef917b3a57202c18f5729e00ac777d0a4afcb5091fa53b4d951dfd1",
+      "bytes": 1554
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/final_glb_audit.py",
+      "source": "astra_blender2/models/M2/independent_review/final_glb_audit.py",
+      "sha256": "8a47230e57375924062b5222bf761b14866f815ee76de571304eaa2eea9555e3",
+      "bytes": 3362
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/final_records_audit.py",
+      "source": "astra_blender2/models/M2/independent_review/final_records_audit.py",
+      "sha256": "19719ebb869e2157c364602431332596afac91a32e35069f49ca437c3331f0fb",
+      "bytes": 9893
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/final_review.json",
+      "source": "astra_blender2/models/M2/independent_review/final_review.json",
+      "sha256": "ae457253d1c26a585f756c32972f293c1679418091e2361cfa991f513384f21a",
+      "bytes": 80942
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/final_review.md",
+      "source": "astra_blender2/models/M2/independent_review/final_review.md",
+      "sha256": "a55436c1eeb9d567d2d55b1589db0ddcbbab3bf58c533d76ddd95ec6d2db4c1b",
+      "bytes": 5408
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/final_static_audit.py",
+      "source": "astra_blender2/models/M2/independent_review/final_static_audit.py",
+      "sha256": "16799cdf5c37c72f4fdf1b52936cb5f9a85af9214e9a661a49b51939e8a7e920",
+      "bytes": 6236
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/initial_review.json",
+      "source": "astra_blender2/models/M2/independent_review/initial_review.json",
+      "sha256": "c40d5cea95d4686ce3ddf70174e622ba7c3b3da79b4d0f2a268fdea0413062ec",
+      "bytes": 37237
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/initial_review.md",
+      "source": "astra_blender2/models/M2/independent_review/initial_review.md",
+      "sha256": "c8046d9927bf2c1e4441ad9b34c0c4cd1c27412acdfb3ff0160a3d6743a293bd",
+      "bytes": 12369
+    },
+    {
+      "path": "astra_blender2/models/M2/independent_review/write_final_review.py",
+      "source": "astra_blender2/models/M2/independent_review/write_final_review.py",
+      "sha256": "6e233a784083f48dc5002a6c9959afb1cd097987dfae2626223203303f583a73",
+      "bytes": 26338
+    },
+    {
+      "path": "astra_blender2/models/M2/iteration_log.json",
+      "source": "astra_blender2/models/M2/iteration_log.json",
+      "sha256": "bcfe96f26f0a9b64768457bc625532ba4c143b33c6c1d4223857231e88bc32e2",
+      "bytes": 3944
+    },
+    {
+      "path": "astra_blender2/models/M2/layout.json",
+      "source": "astra_blender2/models/M2/layout.json",
+      "sha256": "a1b40e97f3ff73cff06239d3021f8418ce62d8edb020f482a7731af119fb7484",
+      "bytes": 16086
+    },
+    {
+      "path": "astra_blender2/models/M2/make_layout.py",
+      "source": "astra_blender2/models/M2/make_layout.py",
+      "sha256": "e46df37bf714dccf2565bbbb6087d81384655abe2d956c13612a6146668ec602",
+      "bytes": 4309
+    },
+    {
+      "path": "astra_blender2/models/M2/measure_inputs.py",
+      "source": "astra_blender2/models/M2/measure_inputs.py",
+      "sha256": "7276e8659a906afe302017d181a7c5c4a59d3580e6467fbf832ec9e683488cfa",
+      "bytes": 4264
+    },
+    {
+      "path": "astra_blender2/models/M2/modelling_manifest.json",
+      "source": "astra_blender2/models/M2/modelling_manifest.json",
+      "sha256": "5f4fe6b317191577e10bfddc954f1eda3e7e53a6778008fa6d70a4b55d2ae3f2",
+      "bytes": 2907
+    },
+    {
+      "path": "astra_blender2/models/M2/object_measurements.py",
+      "source": "astra_blender2/models/M2/object_measurements.py",
+      "sha256": "259fb09cec69ff28c3e6a06a505c5c34885db72b2cdbbf545580928fbe1427f0",
+      "bytes": 3686
+    },
+    {
+      "path": "astra_blender2/models/M2/objects.json",
+      "source": "astra_blender2/models/M2/objects.json",
+      "sha256": "925f79e70027d16e824495b00e86bbc3331a6f420d62115a48a6e25265f6f883",
+      "bytes": 105754
+    },
+    {
+      "path": "astra_blender2/models/M2/prepare_v3.py",
+      "source": "astra_blender2/models/M2/prepare_v3.py",
+      "sha256": "06e798b9ac3cce865d7aa86a7cc2e58610249c88f5c7a011b5f7eb656b6f7b59",
+      "bytes": 4593
+    },
+    {
+      "path": "astra_blender2/models/M2/repair_measurements.py",
+      "source": "astra_blender2/models/M2/repair_measurements.py",
+      "sha256": "09db0811c4aa13a79de9a03a69435e32dfd220ac70be641cdd2268a088fa3e1e",
+      "bytes": 2635
+    },
+    {
+      "path": "astra_blender2/models/M2/revision_evidence.py",
+      "source": "astra_blender2/models/M2/revision_evidence.py",
+      "sha256": "e2af741e44f7853a84a602bd21896660629faa7c98e8d57242726d73099b1ebe",
+      "bytes": 7580
+    },
+    {
+      "path": "astra_blender2/models/M2/revision_measure.py",
+      "source": "astra_blender2/models/M2/revision_measure.py",
+      "sha256": "4dcbb0d07b581a84b19f4e3ff6bd895d27954bc86b11a189fab82c30ce1a1271",
+      "bytes": 6776
+    },
+    {
+      "path": "astra_blender2/models/M3/HANDOFF_V1.md",
+      "source": "astra_blender2/models/M3/HANDOFF_V1.md",
+      "sha256": "e18fcd7ab05ad6ec1411d732b0754fd5675705af02a9175e2bc05a0d7d768b42",
+      "bytes": 1925
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/access_log.py",
+      "source": "astra_blender2/models/M3/analysis/access_log.py",
+      "sha256": "1fa00c84015c261d846a4b3127af621e6debf9a5f0ca176a2469e19967d9698d",
+      "bytes": 3362
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/additional.py",
+      "source": "astra_blender2/models/M3/analysis/additional.py",
+      "sha256": "b61bfd4edaa6555261103cd50985b3c13e1ec4817f7cf0e2fe2413390989f529",
+      "bytes": 676
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/anchors.json",
+      "source": "astra_blender2/models/M3/analysis/anchors.json",
+      "sha256": "5e23c0b4f49f6db5039035a5664ee242599d726fb0d291bc9a810207a6fd8e26",
+      "bytes": 14749
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/anchors.py",
+      "source": "astra_blender2/models/M3/analysis/anchors.py",
+      "sha256": "9d77482ad00cdca6c0932da39e41e69dc0c91eb801123969bc295131278fc2ef",
+      "bytes": 1858
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/camera_checks.json",
+      "source": "astra_blender2/models/M3/analysis/camera_checks.json",
+      "sha256": "19a1ccc541d2a71658d64716b2cfcaaa95c87bd880b65dc9b7e4d7067f6c98fa",
+      "bytes": 940
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/derive.py",
+      "source": "astra_blender2/models/M3/analysis/derive.py",
+      "sha256": "72c03333f1a952ad4715c8f141e02f6132bc463c81b2e72732d4ee8ebd61e9b7",
+      "bytes": 2522
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/finish_v1.py",
+      "source": "astra_blender2/models/M3/analysis/finish_v1.py",
+      "sha256": "242749d80235ee0a880afc0f8345ac4ded147a7d4fb93d5457a1c9847417389a",
+      "bytes": 13389
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/input_pass_observations_v1.json",
+      "source": "astra_blender2/models/M3/analysis/input_pass_observations_v1.json",
+      "sha256": "abe4432a5cfd0c2384d3ad1b2a4b1da7f4355ee7abed54de3f5461caeae9ad1e",
+      "bytes": 10619
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/measure.py",
+      "source": "astra_blender2/models/M3/analysis/measure.py",
+      "sha256": "969702b3e28fe6559781e3916fe58a5ada5e893215ae1577b07cf296484715cd",
+      "bytes": 1866
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/measurements.json",
+      "source": "astra_blender2/models/M3/analysis/measurements.json",
+      "sha256": "3672688f6ae5978be85d56704c641e345361efaeec97c1cb562f3389a58df248",
+      "bytes": 44190
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/measurements_preliminary.json",
+      "source": "astra_blender2/models/M3/analysis/measurements_preliminary.json",
+      "sha256": "214612d8b1d3ca55f1bdf8a30459e59f37e41cfd9e7f5a2b2e5e58f5c32e1d78",
+      "bytes": 9643
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/object_inventory.json",
+      "source": "astra_blender2/models/M3/analysis/object_inventory.json",
+      "sha256": "9b3b48d9e78015e6918738cba8261badaf3c445ab590665667a476018f0cab20",
+      "bytes": 2839
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/observed_issues_v1.json",
+      "source": "astra_blender2/models/M3/analysis/observed_issues_v1.json",
+      "sha256": "a24663be16126bc8df12f0247869202785be3fdd9a4c386fc6d269f7cc22da7d",
+      "bytes": 5947
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/paired_region_residuals_v1.json",
+      "source": "astra_blender2/models/M3/analysis/paired_region_residuals_v1.json",
+      "sha256": "9933983567672670a8a0c375b0100975de422552bd5c4ead810dbf262339271f",
+      "bytes": 6793
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/prepare.py",
+      "source": "astra_blender2/models/M3/analysis/prepare.py",
+      "sha256": "a141003a13ea00d8a5370e2315eb01dadf6e8f39b80e9c68224fc1afb5129815",
+      "bytes": 6252
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/analyse_checks.py",
+      "source": "astra_blender2/models/M3/analysis/repair/analyse_checks.py",
+      "sha256": "75f1bb7a1ddec2d505f473b6b83ee1a63382dc24a1cbacc1faf69ffb824d9c7b",
+      "bytes": 1527
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/audit_glb.py",
+      "source": "astra_blender2/models/M3/analysis/repair/audit_glb.py",
+      "sha256": "4cf6f4c8b60c451f90c933cbb39763ae562666045a0723f0e59103932bfeba47",
+      "bytes": 1420
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/audit_scene.py",
+      "source": "astra_blender2/models/M3/analysis/repair/audit_scene.py",
+      "sha256": "9ad41d207e97d5075fe22effd64c4d2c12a0d7feca77fbb5ebeec14e6134ed6a",
+      "bytes": 3232
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/edit_builder_v2.py",
+      "source": "astra_blender2/models/M3/analysis/repair/edit_builder_v2.py",
+      "sha256": "d23ecb4bf5c84176d3dfdccc13b58712c53bef24b9bf95aee6a569b95e4514da",
+      "bytes": 5857
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/finalize.py",
+      "source": "astra_blender2/models/M3/analysis/repair/finalize.py",
+      "sha256": "fee3b3114ced34ea14677f3bc840262f63ae1680fc479469c8033ac423eadce3",
+      "bytes": 19344
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/finish_evidence.py",
+      "source": "astra_blender2/models/M3/analysis/repair/finish_evidence.py",
+      "sha256": "d0be3b8b78bec9e40e397477c9090e1a328f0759dda76296a87d5e9fb3aa97c4",
+      "bytes": 3951
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/fit_repairs.py",
+      "source": "astra_blender2/models/M3/analysis/repair/fit_repairs.py",
+      "sha256": "510dd6d07a6850b09a63ddf48864e1773e05990321f33ebac59e7d31e17ff06a",
+      "bytes": 2769
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/fits.json",
+      "source": "astra_blender2/models/M3/analysis/repair/fits.json",
+      "sha256": "a6aded3d323541eac1b4b02e6d3583f7489e2f79c4def03d64b4a5a029698bf4",
+      "bytes": 4314
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/full_input_observations_final.json",
+      "source": "astra_blender2/models/M3/analysis/repair/full_input_observations_final.json",
+      "sha256": "acbdd0b05551b03a944e1aed6b29890f9951ab9fc5ff579076359efd66878282",
+      "bytes": 2307
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/full_input_observations_v2.json",
+      "source": "astra_blender2/models/M3/analysis/repair/full_input_observations_v2.json",
+      "sha256": "7666468ccbcef710c5affae9e1f6ba8fed2784f9bfc85d11f5da8789c1617891",
+      "bytes": 5602
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/log_commands.py",
+      "source": "astra_blender2/models/M3/analysis/repair/log_commands.py",
+      "sha256": "c2566158a587dc9ba03cb83a9b9b262a8db1166432911edc3a15b3adb76bacd4",
+      "bytes": 1477
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/measure_repairs.py",
+      "source": "astra_blender2/models/M3/analysis/repair/measure_repairs.py",
+      "sha256": "a2b18a08cbd7da999831c91b9e1e24445d60c72d0457b5b075da3bc7e1e53013",
+      "bytes": 2111
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/prepare_v2.py",
+      "source": "astra_blender2/models/M3/analysis/repair/prepare_v2.py",
+      "sha256": "3e6b9b349f57d03bc64b97fef9c064ed6276c680bdb97d58f92ad48018e087bf",
+      "bytes": 7231
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/prepare_v3.py",
+      "source": "astra_blender2/models/M3/analysis/repair/prepare_v3.py",
+      "sha256": "0ee50ecde45a6f9d80308eaaddc6425e1cb81a457aad7fe5d9709e00836d4a91",
+      "bytes": 5933
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/region_comparison_v2.json",
+      "source": "astra_blender2/models/M3/analysis/repair/region_comparison_v2.json",
+      "sha256": "eb9a01ee985029fd0b981e3619cb08a28f6f61d48375680e22b9d7d2846693d9",
+      "bytes": 19975
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/region_comparison_v3.json",
+      "source": "astra_blender2/models/M3/analysis/repair/region_comparison_v3.json",
+      "sha256": "fa3a67cece5d63c470a79b727174a9078059e30335023bad826401a01fc2db60",
+      "bytes": 19983
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/repair/session_log.py",
+      "source": "astra_blender2/models/M3/analysis/repair/session_log.py",
+      "sha256": "6841c7eb6888344de019dd3c9626d750ba0308edb907c92a35bbcf61cf3e1697",
+      "bytes": 1139
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/transform.json",
+      "source": "astra_blender2/models/M3/analysis/transform.json",
+      "sha256": "2ca0c23c16b4add532a26a509ed05d8be9d6022b2461d5267eafcfb0f6ed8811",
+      "bytes": 412
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/triangulation.json",
+      "source": "astra_blender2/models/M3/analysis/triangulation.json",
+      "sha256": "7977e667b7ab49797eb75721ba32eca2020704a24b2dcfabf75462c9d5a51a53",
+      "bytes": 8949
+    },
+    {
+      "path": "astra_blender2/models/M3/analysis/triangulation_additional.json",
+      "source": "astra_blender2/models/M3/analysis/triangulation_additional.json",
+      "sha256": "0a204e988ebbd9e54f04beacd4f8695361b6dddf0b8730b9b963cb18584b5120",
+      "bytes": 5781
+    },
+    {
+      "path": "astra_blender2/models/M3/author_repair_notes.json",
+      "source": "astra_blender2/models/M3/author_repair_notes.json",
+      "sha256": "4417cb592ce7af17db90629ec621b55cb2841ac60c41390712a3d38df498199b",
+      "bytes": 161553
+    },
+    {
+      "path": "astra_blender2/models/M3/author_repair_notes.md",
+      "source": "astra_blender2/models/M3/author_repair_notes.md",
+      "sha256": "04af3e9c5420e5838c5d2b6b961c3f1daca6182066deae5589d8be96fae5c20d",
+      "bytes": 3780
+    },
+    {
+      "path": "astra_blender2/models/M3/build_scene.py",
+      "source": "astra_blender2/models/M3/build_scene.py",
+      "sha256": "8aaa3f0abad8bf0d85733c7374359bb97fafec6bf01031f74dac6088644a28aa",
+      "bytes": 23771
+    },
+    {
+      "path": "astra_blender2/models/M3/cameras.json",
+      "source": "astra_blender2/models/M3/cameras.json",
+      "sha256": "349bf525ddf32f62d3fbe2b641f215e599779d075215264ddd095e2656404e72",
+      "bytes": 174486
+    },
+    {
+      "path": "astra_blender2/models/M3/colliders.json",
+      "source": "astra_blender2/models/M3/colliders.json",
+      "sha256": "8c16135719644edec6ee74219234b5b2309c38aa1c0294d52f4c196ebe274426",
+      "bytes": 316696
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/audit_evidence.py",
+      "source": "astra_blender2/models/M3/independent_review/audit_evidence.py",
+      "sha256": "34994832309ae98e8d432775a18d866b1c10e2f69a68c20da9798d26d0aad34a",
+      "bytes": 8349
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/final_audit_evidence.py",
+      "source": "astra_blender2/models/M3/independent_review/final_audit_evidence.py",
+      "sha256": "f257fa4843893d094c4621bdbfe67a5e2eee535146323aa4e25f278fea46faad",
+      "bytes": 8336
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/final_inspect_static.py",
+      "source": "astra_blender2/models/M3/independent_review/final_inspect_static.py",
+      "sha256": "fdf3eb838b80ff725d7ccda14c9af975e7c55bc34fa2cef7749ae6107d5f6d01",
+      "bytes": 6348
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/final_review.json",
+      "source": "astra_blender2/models/M3/independent_review/final_review.json",
+      "sha256": "5a68053dbfa481dcaa5d5bbc43c06f051aeb0f21f27a9deee1674304a9584344",
+      "bytes": 80588
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/final_review.md",
+      "source": "astra_blender2/models/M3/independent_review/final_review.md",
+      "sha256": "19d054c4553b676e0c2fa46a1d0e3e023c0696784d3f4d5c878adef96e2f22ef",
+      "bytes": 6163
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/final_supplement_audit.py",
+      "source": "astra_blender2/models/M3/independent_review/final_supplement_audit.py",
+      "sha256": "a95c42e01cb63b57ede63b3ad793187015d2b44f54bd6022379e241bee1ba5f7",
+      "bytes": 6650
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/initial_review.json",
+      "source": "astra_blender2/models/M3/independent_review/initial_review.json",
+      "sha256": "88b7626221b200c370b6ab72e9308132551478de2ccb968e66685ace3fbc6b6b",
+      "bytes": 40913
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/initial_review.md",
+      "source": "astra_blender2/models/M3/independent_review/initial_review.md",
+      "sha256": "b7ad1e430982e876a3b97663b41c92da3cc1cde87760500dd81feddb735afffe",
+      "bytes": 6944
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/inspect_static.py",
+      "source": "astra_blender2/models/M3/independent_review/inspect_static.py",
+      "sha256": "742d70cbbd85128da2a204f20b3b26084263818d3cdbee7d5de8f1e08c918066",
+      "bytes": 4488
+    },
+    {
+      "path": "astra_blender2/models/M3/independent_review/write_final_review.py",
+      "source": "astra_blender2/models/M3/independent_review/write_final_review.py",
+      "sha256": "80a7dcce26ff42a06255e33cce0e52a4af3351e61ce9a53c6a1c1232734e5732",
+      "bytes": 22994
+    },
+    {
+      "path": "astra_blender2/models/M3/iteration_log.json",
+      "source": "astra_blender2/models/M3/iteration_log.json",
+      "sha256": "4f640de22d72dbc5e9a4bf943d078dbcb8341206f8caa9e9e8818517969de6a5",
+      "bytes": 2320
+    },
+    {
+      "path": "astra_blender2/models/M3/layout.json",
+      "source": "astra_blender2/models/M3/layout.json",
+      "sha256": "05681da37433128a0de9b5c219b362d6de1d1bce9a307811d94d48d41a1166b8",
+      "bytes": 5074
+    },
+    {
+      "path": "astra_blender2/models/M3/modelling_manifest.json",
+      "source": "astra_blender2/models/M3/modelling_manifest.json",
+      "sha256": "82201d0b1abeb5eb005790c797646231650d217c4bbb691d2c311d74c6f7a3c1",
+      "bytes": 4538
+    },
+    {
+      "path": "astra_blender2/models/M3/objects.json",
+      "source": "astra_blender2/models/M3/objects.json",
+      "sha256": "ec19c73df1dbd1bc61f74ee106de9b1dd3dcd66916c98d0f590d0b288fc314e6",
+      "bytes": 133061
+    },
+    {
+      "path": "astra_blender2/models/M4/INITIAL_HANDOFF.md",
+      "source": "astra_blender2/models/M4/INITIAL_HANDOFF.md",
+      "sha256": "ee0cee8343e75d2abf0218f83d6cc45eb61e99effd63f81c43e50997bf69b5bc",
+      "bytes": 4713
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/camera_checks.json",
+      "source": "astra_blender2/models/M4/analysis/camera_checks.json",
+      "sha256": "1a295de06a436b47e9c0927008bf5ffc1717e41e88db8fd774fb58dea12971e9",
+      "bytes": 1344
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/comparison_observations_v1.json",
+      "source": "astra_blender2/models/M4/analysis/comparison_observations_v1.json",
+      "sha256": "0eb08de3d9f3b6ccf0a55718e60357b48a99a56eea0f9df37ce81662f8aac7fa",
+      "bytes": 33618
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/comparison_observations_v2.json",
+      "source": "astra_blender2/models/M4/analysis/comparison_observations_v2.json",
+      "sha256": "f7d007a273773f1d093688de3cb7927fbfd8acb59c2ddbd8c8a8c44c1852155b",
+      "bytes": 4709
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/full_input_diagnostics_v1.json",
+      "source": "astra_blender2/models/M4/analysis/full_input_diagnostics_v1.json",
+      "sha256": "e2b4c4a6cf627f81dcf5679d56f0bdce53bb72345120d68a24afe6c3907496ed",
+      "bytes": 10252
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/full_input_diagnostics_v2.json",
+      "source": "astra_blender2/models/M4/analysis/full_input_diagnostics_v2.json",
+      "sha256": "08a050bc3535d88f844df60772378978a1571ffc008232d33105746dafac1a93",
+      "bytes": 17586
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/image_point_measurements.json",
+      "source": "astra_blender2/models/M4/analysis/image_point_measurements.json",
+      "sha256": "ba6e6a90f736628f80810694ccb33f66610fae365c64156c6e39775b365a1392",
+      "bytes": 11247
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/initial_issues.json",
+      "source": "astra_blender2/models/M4/analysis/initial_issues.json",
+      "sha256": "05a92881270e8c2a39e5069ad37bb8facfa077d1eec54e85ab6f99bfcb49df60",
+      "bytes": 4636
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/measurement_decisions.json",
+      "source": "astra_blender2/models/M4/analysis/measurement_decisions.json",
+      "sha256": "b2cc5b87fedc71ed8c439880d911eb1eaaa115a98f10edb97f6338618912bd7a",
+      "bytes": 4043
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/measurements.json",
+      "source": "astra_blender2/models/M4/analysis/measurements.json",
+      "sha256": "378948eef921ed9b2ccf1ec753ef7605cc911e633e197ec5246b6cc7119f4095",
+      "bytes": 37975
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/object_inventory.json",
+      "source": "astra_blender2/models/M4/analysis/object_inventory.json",
+      "sha256": "c45177fa61c4aa9a8d169e1e4b35bbb0a2f0150e34cc4ce9a693ebe3d95bf189",
+      "bytes": 23585
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/repair_changes_v2.json",
+      "source": "astra_blender2/models/M4/analysis/repair_changes_v2.json",
+      "sha256": "f1c8c5dab45893a0a0afca98a05daca755239f55b793914701ca15bbb367af26",
+      "bytes": 72952
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/repair_measurements_v2.json",
+      "source": "astra_blender2/models/M4/analysis/repair_measurements_v2.json",
+      "sha256": "e707d60b5e08faed9e31c825d5644c07c836a9f21730dc8cd25c199dde0e06e2",
+      "bytes": 12934
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/spatial_residuals_v1.json",
+      "source": "astra_blender2/models/M4/analysis/spatial_residuals_v1.json",
+      "sha256": "516b399b10c94b2c66ce693a23c1724cca64b18cc9d33250453265bd57abeb99",
+      "bytes": 18233
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/spatial_residuals_v2.json",
+      "source": "astra_blender2/models/M4/analysis/spatial_residuals_v2.json",
+      "sha256": "c97ee29d040dfcc0ccaea603601eb7f7190a6bf941e9672f53eccf9f5bc880ab",
+      "bytes": 18249
+    },
+    {
+      "path": "astra_blender2/models/M4/analysis/triangulation.json",
+      "source": "astra_blender2/models/M4/analysis/triangulation.json",
+      "sha256": "ba6e6a90f736628f80810694ccb33f66610fae365c64156c6e39775b365a1392",
+      "bytes": 11247
+    },
+    {
+      "path": "astra_blender2/models/M4/analyze_checks.py",
+      "source": "astra_blender2/models/M4/analyze_checks.py",
+      "sha256": "7ee9a37ac2e6375cb02c09d32b33a51400083c293ac8d6b015c4d171eb5b9ba6",
+      "bytes": 3025
+    },
+    {
+      "path": "astra_blender2/models/M4/analyze_repair.py",
+      "source": "astra_blender2/models/M4/analyze_repair.py",
+      "sha256": "c375d883f0f311be39d3d241c5b7ec60b36bb686eca4fe6a3255fb44b93ed3cf",
+      "bytes": 3175
+    },
+    {
+      "path": "astra_blender2/models/M4/author_candidate_audit.py",
+      "source": "astra_blender2/models/M4/author_candidate_audit.py",
+      "sha256": "94fde55a00cbcae8e1a403650410994adab91a5d0230f08f5e2cd8bca8663376",
+      "bytes": 3568
+    },
+    {
+      "path": "astra_blender2/models/M4/author_repair_notes.json",
+      "source": "astra_blender2/models/M4/author_repair_notes.json",
+      "sha256": "6c960da0ea08d96cc9f1a307ccc3f0b01599796329715ec30504b12ea4b97473",
+      "bytes": 84157
+    },
+    {
+      "path": "astra_blender2/models/M4/author_repair_notes.md",
+      "source": "astra_blender2/models/M4/author_repair_notes.md",
+      "sha256": "00c006c87b620ceb7e91752ff440381f2321ce269dff7bfed890ab8133a790f8",
+      "bytes": 8064
+    },
+    {
+      "path": "astra_blender2/models/M4/build_scene.py",
+      "source": "astra_blender2/models/M4/build_scene.py",
+      "sha256": "c5729162e48594454ea3a5983f17aa330bb77a4126dec7f3664bb42da49fcd0a",
+      "bytes": 24861
+    },
+    {
+      "path": "astra_blender2/models/M4/cameras.json",
+      "source": "astra_blender2/models/M4/cameras.json",
+      "sha256": "548e7259e90d72047a93c7d5fdd0205761ee20e58edaa064ad68d1b4d3ba0eb0",
+      "bytes": 172559
+    },
+    {
+      "path": "astra_blender2/models/M4/colliders.json",
+      "source": "astra_blender2/models/M4/colliders.json",
+      "sha256": "b44db0d632d43a4563a3ce10c66ee829bbdb1dd4f5b49ff097cc859833e45e1b",
+      "bytes": 367379
+    },
+    {
+      "path": "astra_blender2/models/M4/edit_builder_v2.py",
+      "source": "astra_blender2/models/M4/edit_builder_v2.py",
+      "sha256": "7150ca1cda0a2bbe60919212e8c2feefaab6b9761dc7a71fda42a447bbf19181",
+      "bytes": 10499
+    },
+    {
+      "path": "astra_blender2/models/M4/final_record_audit.py",
+      "source": "astra_blender2/models/M4/final_record_audit.py",
+      "sha256": "064a14056315970da9c9cbb990ac79ac8748a3c0fcfda1da557867ea89a10c7f",
+      "bytes": 8370
+    },
+    {
+      "path": "astra_blender2/models/M4/finalize_initial.py",
+      "source": "astra_blender2/models/M4/finalize_initial.py",
+      "sha256": "4720c0b10a1291023f17edd1ae112dd959a616d6e8e60bcdcdaf85f88b8ea629",
+      "bytes": 12347
+    },
+    {
+      "path": "astra_blender2/models/M4/finalize_repair.py",
+      "source": "astra_blender2/models/M4/finalize_repair.py",
+      "sha256": "5d27915076327ba5b573d47a7c21a86dffc9678e610bf88b4b5e82a396a0adef",
+      "bytes": 15812
+    },
+    {
+      "path": "astra_blender2/models/M4/independent_review/final_review.json",
+      "source": "astra_blender2/models/M4/independent_review/final_review.json",
+      "sha256": "298b803491c8e5b3e2c342ad6bf5a31d571295c742ecd0f257ca209c7558e3b1",
+      "bytes": 49257
+    },
+    {
+      "path": "astra_blender2/models/M4/independent_review/final_review.md",
+      "source": "astra_blender2/models/M4/independent_review/final_review.md",
+      "sha256": "2c67f828613e40280ce0639477be56f4d8588f4a0f9076cf08f44698a5b59b29",
+      "bytes": 11448
+    },
+    {
+      "path": "astra_blender2/models/M4/independent_review/initial_review.json",
+      "source": "astra_blender2/models/M4/independent_review/initial_review.json",
+      "sha256": "b424e41f0f8fea28bcbac0b8c8cc6799560764ab902b0af921ca188a7675d394",
+      "bytes": 42274
+    },
+    {
+      "path": "astra_blender2/models/M4/independent_review/initial_review.md",
+      "source": "astra_blender2/models/M4/independent_review/initial_review.md",
+      "sha256": "6ff7084e3bd6601c7bb98788f57907cee13f5bc60caa7a9584334558d80fd5bc",
+      "bytes": 11377
+    },
+    {
+      "path": "astra_blender2/models/M4/iteration_log.json",
+      "source": "astra_blender2/models/M4/iteration_log.json",
+      "sha256": "744168352ab7e7b345813e02f3972a7f54b95d0d49d9cc986b75e1648d786826",
+      "bytes": 4833
+    },
+    {
+      "path": "astra_blender2/models/M4/layout.json",
+      "source": "astra_blender2/models/M4/layout.json",
+      "sha256": "5198039501b776d8527163ad17ec024b784f86641db78ef534624a774b7ae493",
+      "bytes": 25897
+    },
+    {
+      "path": "astra_blender2/models/M4/measure_scene.py",
+      "source": "astra_blender2/models/M4/measure_scene.py",
+      "sha256": "8d5b5dfe6770f30c46a47bc8514d208104b1fac25c4ee23021a3c43b21b41635",
+      "bytes": 4319
+    },
+    {
+      "path": "astra_blender2/models/M4/modelling_manifest.json",
+      "source": "astra_blender2/models/M4/modelling_manifest.json",
+      "sha256": "5219cadef1ec55f0a325acd71af61dab585f226d428136bda529c4d164e81c5b",
+      "bytes": 4163
+    },
+    {
+      "path": "astra_blender2/models/M4/objects.json",
+      "source": "astra_blender2/models/M4/objects.json",
+      "sha256": "66bc78a8ab7064e9175eb143548c97000ad08c8b3eb0d479003f2d7df9fcd720",
+      "bytes": 139514
+    },
+    {
+      "path": "astra_blender2/models/M4/prepare_layout.py",
+      "source": "astra_blender2/models/M4/prepare_layout.py",
+      "sha256": "b49861d5f88964897013147698a2b6d49291f475af75c8afdb225dd2ee479769",
+      "bytes": 5817
+    },
+    {
+      "path": "astra_blender2/models/M4/prepare_repair.py",
+      "source": "astra_blender2/models/M4/prepare_repair.py",
+      "sha256": "7d496a2fc03e83056fc58ff5cb5e91f786180d332963e68c5e9f535d1832f532",
+      "bytes": 8627
+    },
+    {
+      "path": "astra_blender2/models/M4/record_access.py",
+      "source": "astra_blender2/models/M4/record_access.py",
+      "sha256": "f24b4790ed3eda91b2c19eb49d12c91d2d642c9486259e42a30fe002977d2715",
+      "bytes": 5191
+    },
+    {
+      "path": "astra_blender2/models/M4/repair_access.py",
+      "source": "astra_blender2/models/M4/repair_access.py",
+      "sha256": "7a2adfe7d9f5d311260f50060242270541b3d67afe8be19f625bccbfc34c2da2",
+      "bytes": 2583
+    },
+    {
+      "path": "astra_blender2/models/M4/repair_colliders.py",
+      "source": "astra_blender2/models/M4/repair_colliders.py",
+      "sha256": "254923b333d468e89325e2aef1c84ee38d7e8ead2e3051a108b5a87d5d7a22cf",
+      "bytes": 2571
+    },
+    {
+      "path": "astra_blender2/models/M4/repair_measure.py",
+      "source": "astra_blender2/models/M4/repair_measure.py",
+      "sha256": "c286d942a5ffec2bb9d408d12e79a74da0c737a28a6cdeb3f3f38f6f1794b9d0",
+      "bytes": 2323
+    },
+    {
+      "path": "astra_blender2/models/M4/repair_mesh_audit.py",
+      "source": "astra_blender2/models/M4/repair_mesh_audit.py",
+      "sha256": "a3ec862d2792e6f3f9f8c273481f2a5f6f73bcbb95a963b0809a71825d2a76eb",
+      "bytes": 1601
+    },
+    {
+      "path": "astra_blender2/models/M4/run_initial_checks.py",
+      "source": "astra_blender2/models/M4/run_initial_checks.py",
+      "sha256": "edb15351157da7fc47a5880577cae6fd55c377062c9b7468ebe15c152d23ea0f",
+      "bytes": 2153
+    },
+    {
+      "path": "astra_blender2/models/M4/run_repair_checks.py",
+      "source": "astra_blender2/models/M4/run_repair_checks.py",
+      "sha256": "4692e9c599900760d4dbe327695a28d155be092ece64786cf926907d3421bfe1",
+      "bytes": 2602
+    },
+    {
+      "path": "astra_blender2/models/M4/saved_mesh_validate.py",
+      "source": "astra_blender2/models/M4/saved_mesh_validate.py",
+      "sha256": "740f46df862f999ff0509fc3a29bd234353a75474cb581169b04bf39e07b0d6c",
+      "bytes": 1350
+    },
+    {
+      "path": "astra_blender2/models/M4/triangulate.py",
+      "source": "astra_blender2/models/M4/triangulate.py",
+      "sha256": "6aba1fa7963e07f45b6e8209790adc0dd0cf5510ddd5709d3f64e26a1e526522",
+      "bytes": 2815
+    },
+    {
+      "path": "astra_blender2/provenance/check_generic_pair.py",
+      "source": "astra_blender2/provenance/check_generic_pair.py",
+      "sha256": "3ef4fa2a15252493d8986dc9bbe35beaf3dac460fc18c45e47c38fdeac6fa302",
+      "bytes": 1375
+    },
+    {
+      "path": "astra_blender2/report/space/README.md",
+      "source": "astra_blender2/report/space/README.md",
+      "sha256": "a43c6868ad85a1796a3a246d6a13909419f40c181875c85815b32f860cb21a4d",
+      "bytes": 423
+    },
+    {
+      "path": "astra_blender2/report/space/index.html",
+      "source": "astra_blender2/report/space/index.html",
+      "sha256": "ac31c2be1a27ef38893b946d82846c16564d76558dd8851d05e30c862a8406dc",
+      "bytes": 33718
+    },
+    {
+      "path": "astra_blender2/report/space/model_report.js",
+      "source": "astra_blender2/report/space/model_report.js",
+      "sha256": "c49a070d63ec17d24f28ae412f8deaea2153d103a2f8d77ad4b7e529854c8f7a",
+      "bytes": 164
+    },
+    {
+      "path": "astra_blender2/report/space/styles.css",
+      "source": "astra_blender2/report/space/styles.css",
+      "sha256": "392385f4ef9bbdf76c48cc234d5b9d62704082c3032d50644a3a0526e2ccc4b7",
+      "bytes": 2933
+    },
+    {
+      "path": "astra_blender2/tools/after_repair.py",
+      "source": "astra_blender2/tools/after_repair.py",
+      "sha256": "b0e7c1adbdde1593d5592a20e2154d8350f613cc2cb371c1e4057cfcebe2f9b2",
+      "bytes": 2114
+    },
+    {
+      "path": "astra_blender2/tools/build_blog_tables_1_6.py",
+      "source": "astra_blender2/tools/build_blog_tables_1_6.py",
+      "sha256": "5557f01ef4bb45307de719b852b05a169dd9082816c2b9f88c8055531e1ae550",
+      "bytes": 25932
+    },
+    {
+      "path": "astra_blender2/tools/build_blog_tables_1_7.py",
+      "source": "astra_blender2/tools/build_blog_tables_1_7.py",
+      "sha256": "b943df4d59856d3686765c5926b23a704d8fa7bcd5540e604be31162fcef6cfc",
+      "bytes": 5295
+    },
+    {
+      "path": "astra_blender2/tools/build_metrics_release.py",
+      "source": "astra_blender2/tools/build_metrics_release.py",
+      "sha256": "b7cb9fec64647e895771ef4f23b728755b2edef5f6c05a4aafcaae6be9154266",
+      "bytes": 12698
+    },
+    {
+      "path": "astra_blender2/tools/build_reference_style_figures.py",
+      "source": "astra_blender2/tools/build_reference_style_figures.py",
+      "sha256": "97897c31599c596cde113a073e95b5cd54029c449a94aef0414bbba14502e55a",
+      "bytes": 9018
+    },
+    {
+      "path": "astra_blender2/tools/check_metrics_release.py",
+      "source": "astra_blender2/tools/check_metrics_release.py",
+      "sha256": "8b044e2efebfd0423a5b1d1ec09930460edbfc1b448e8f251acf5091c0165eee",
+      "bytes": 3948
+    },
+    {
+      "path": "astra_blender2/tools/compute_current_m4_model_depth.py",
+      "source": "astra_blender2/tools/compute_current_m4_model_depth.py",
+      "sha256": "57e26952af42fb2e64d27355d6edc4ba332fc9a5c19b84bd9401788feb0fd093",
+      "bytes": 2286
+    },
+    {
+      "path": "astra_blender2/tools/compute_table2_m1.py",
+      "source": "astra_blender2/tools/compute_table2_m1.py",
+      "sha256": "c1ee1d7b9d1fbbf0982e4aefe13d4a8a629431bd0c50d936f3038fc9dac1bddf",
+      "bytes": 2358
+    },
+    {
+      "path": "astra_blender2/tools/depth_math.py",
+      "source": "astra_blender2/tools/depth_math.py",
+      "sha256": "3be3467a840f68585b51e6f5da06c6b43597f2cb20f7d9276fda495f6545ffc8",
+      "bytes": 1946
+    },
+    {
+      "path": "astra_blender2/tools/evaluate_blog_extended_views.py",
+      "source": "astra_blender2/tools/evaluate_blog_extended_views.py",
+      "sha256": "c86445526f68fd4c3cc10afac4b9bf4c491c1ad5fd51a3657106858447048c8d",
+      "bytes": 11956
+    },
+    {
+      "path": "astra_blender2/tools/evaluate_blog_table5.py",
+      "source": "astra_blender2/tools/evaluate_blog_table5.py",
+      "sha256": "f7d09286c56b430be1d0bfd8158fc35e3cb0a891c5980174922251d17af41d6e",
+      "bytes": 5757
+    },
+    {
+      "path": "astra_blender2/tools/evaluate_blog_tables_46_blender.py",
+      "source": "astra_blender2/tools/evaluate_blog_tables_46_blender.py",
+      "sha256": "258b02543eaaac8e38f059ffd473bcef2c93e41a86db9a1317a9131a52188dac",
+      "bytes": 13747
+    },
+    {
+      "path": "astra_blender2/tools/evaluate_models.py",
+      "source": "astra_blender2/tools/evaluate_models.py",
+      "sha256": "bdcc183fcbacdc0a37bc084dcb8b5e420c107a62c26f96fb18fa4ae2cb2dbd35",
+      "bytes": 8904
+    },
+    {
+      "path": "astra_blender2/tools/finalize_table2_m1_release.py",
+      "source": "astra_blender2/tools/finalize_table2_m1_release.py",
+      "sha256": "beb74acf14c6f34639a06345b93571466704623f55ed0836a8f16a815ffab548",
+      "bytes": 2362
+    },
+    {
+      "path": "astra_blender2/tools/freeze_models.py",
+      "source": "astra_blender2/tools/freeze_models.py",
+      "sha256": "89e40a1ae4c536bd6fb9dc0676a1b269f39f4e9b7570ef9a9d5cc431b0e44631",
+      "bytes": 5471
+    },
+    {
+      "path": "astra_blender2/tools/hf_metrics_release.py",
+      "source": "astra_blender2/tools/hf_metrics_release.py",
+      "sha256": "05d0f5721645f3b6a5518df701b06aa230a096c5aab555f0cd8784f07486ace8",
+      "bytes": 3857
+    },
+    {
+      "path": "astra_blender2/tools/inspect_scene.py",
+      "source": "astra_blender2/tools/inspect_scene.py",
+      "sha256": "cfe2289e6eff8bcf1bce9a8e772b1c73dcd910023d2d79de86976ec2a2365e81",
+      "bytes": 1807
+    },
+    {
+      "path": "astra_blender2/tools/launch_phase.py",
+      "source": "astra_blender2/tools/launch_phase.py",
+      "sha256": "90960de617ce0a25d7424600a2fd5390fa886ad997cd5f05480a681df4a3447f",
+      "bytes": 5508
+    },
+    {
+      "path": "astra_blender2/tools/launch_scoped_task.py",
+      "source": "astra_blender2/tools/launch_scoped_task.py",
+      "sha256": "e84ed44c62aee476f09eb1d710a10b696e62ce24def4bf5e40a6936cc0943286",
+      "bytes": 1427
+    },
+    {
+      "path": "astra_blender2/tools/paired_check_blender.py",
+      "source": "astra_blender2/tools/paired_check_blender.py",
+      "sha256": "98e8c50eb3c04df60f6edd6edf80e5862b078709381bc78f3f16a76145679939",
+      "bytes": 7033
+    },
+    {
+      "path": "astra_blender2/tools/prepare_inputs.py",
+      "source": "astra_blender2/tools/prepare_inputs.py",
+      "sha256": "a852befacb1b9ccc11b81121f5dcd7c0b474e160cebea011024f5dcec7a42ef1",
+      "bytes": 6396
+    },
+    {
+      "path": "astra_blender2/tools/raycast_scene.py",
+      "source": "astra_blender2/tools/raycast_scene.py",
+      "sha256": "72bc4356cd3a7a5f15c73e6d87c4a7d3e7f6aa8685e4d7c26418b4594fefc54f",
+      "bytes": 5657
+    },
+    {
+      "path": "astra_blender2/tools/render_frozen_views.py",
+      "source": "astra_blender2/tools/render_frozen_views.py",
+      "sha256": "99eafb9767390f0a08ef6c9d1bcf8324b57193cf592ac43209f32b568f08b3ca",
+      "bytes": 4172
+    },
+    {
+      "path": "astra_blender2/tools/run_frozen_evaluation.py",
+      "source": "astra_blender2/tools/run_frozen_evaluation.py",
+      "sha256": "010358af68dc126cfee45e9dac01e3a9803fa8a1bd899700467f60140937aa0a",
+      "bytes": 2795
+    },
+    {
+      "path": "astra_blender2/tools/status.py",
+      "source": "astra_blender2/tools/status.py",
+      "sha256": "346ed082b7123e3fdb96fa346a667f2d0f4d23cded3163bcca46e04d1407fd30",
+      "bytes": 1027
+    },
+    {
+      "path": "astra_blender2/tools/validate_artifacts.py",
+      "source": "astra_blender2/tools/validate_artifacts.py",
+      "sha256": "09c181582567c9f12ab065f277cc4fa25029688bf506f8043f05a40bbfbbf011",
+      "bytes": 2544
+    },
+    {
+      "path": "astra_blender2/tools/verify_rebuild.py",
+      "source": "astra_blender2/tools/verify_rebuild.py",
+      "sha256": "c107afeac28e13e7c38dd76ef5be43c225307ff496ddf84690bbd471ae11bc7e",
+      "bytes": 2905
+    },
+    {
+      "path": "astra_blender2/tools/visualize_checks.py",
+      "source": "astra_blender2/tools/visualize_checks.py",
+      "sha256": "cc707ab6a5cdbc05b3480ceea3d127cb967d6525a54e3b965d4824438ea6db68",
+      "bytes": 3365
+    },
+    {
+      "path": "astra_blender2/tools/write_execution_record.py",
+      "source": "astra_blender2/tools/write_execution_record.py",
+      "sha256": "3811e8b67e83ec0116c7645b127d9825d43785ea8efb8f3677c3ea464d2a521a",
+      "bytes": 6647
+    },
+    {
+      "path": "code/build_depth_packets.py",
+      "source": "code/build_depth_packets.py",
+      "sha256": "1f07a32c7b8b9442b996b199c493dd865f3154682e20f70fbb7e61fa5490fc01",
+      "bytes": 6491
+    },
+    {
+      "path": "code/build_hf_release.py",
+      "source": "code/build_hf_release.py",
+      "sha256": "66e1cccb18aef509eda162b86589c3d4a8400e276806dd17105988d23b95938a",
+      "bytes": 27029
+    },
+    {
+      "path": "code/depth_pipeline.py",
+      "source": "code/depth_pipeline.py",
+      "sha256": "215684b1c0d1da73445e34fee7f38f985ddbcb3bfd4c6b807b2633b7f7bc4e15",
+      "bytes": 10260
+    },
+    {
+      "path": "code/evaluate_and_plot.py",
+      "source": "code/evaluate_and_plot.py",
+      "sha256": "c11ca4700357850b4c447be99bb0496c35576a3ff55d95ad2a895c635ea30d97",
+      "bytes": 14641
+    },
+    {
+      "path": "code/evaluate_da3_depth.py",
+      "source": "code/evaluate_da3_depth.py",
+      "sha256": "b3c3780f046ab885d4a744e78397661e8479c87c25a01665ced0dddfc02f840f",
+      "bytes": 8877
+    },
+    {
+      "path": "code/freeze_contract.py",
+      "source": "code/freeze_contract.py",
+      "sha256": "504d8acd5c2b54325327fcda1806c02d31e215a7e986cd80416ba4da96e4bd1a",
+      "bytes": 4592
+    },
+    {
+      "path": "code/freeze_openvins.py",
+      "source": "code/freeze_openvins.py",
+      "sha256": "c5592860019e3d5ddbef7c710ac386858bcfdc06f0a28076ebf4265f0523ccf2",
+      "bytes": 3759
+    },
+    {
+      "path": "code/freeze_vipe.py",
+      "source": "code/freeze_vipe.py",
+      "sha256": "333a423958e7e426beb36394bdb888b59596bd0ad4a8d7dff29cbb95fb76ff24",
+      "bytes": 2983
+    },
+    {
+      "path": "code/generate_canvas.py",
+      "source": "code/generate_canvas.py",
+      "sha256": "6ff8eae0d045f4c80930f4bf1183d03ebc4fd557a9a46836d428503b063ce81b",
+      "bytes": 8643
+    },
+    {
+      "path": "code/generate_gt_depth_blender.py",
+      "source": "code/generate_gt_depth_blender.py",
+      "sha256": "84907b87b1d098be672e14571613e14fbab2daa853f91caa186cb19e9a47977b",
+      "bytes": 7359
+    },
+    {
+      "path": "code/prepare_depth_samples.py",
+      "source": "code/prepare_depth_samples.py",
+      "sha256": "b2fdb3b450258ecc00bcca549a05fa3df27c9d4c6c4987c742e32977b1f3f428",
+      "bytes": 4035
+    },
+    {
+      "path": "code/run_da3_depth.py",
+      "source": "code/run_da3_depth.py",
+      "sha256": "b86c93da47fb6fd04979fcf12cfc84cc914dab0b806c5ad76e1682bc19cd261d",
+      "bytes": 12675
+    },
+    {
+      "path": "code/select_fixed_check_views.py",
+      "source": "code/select_fixed_check_views.py",
+      "sha256": "9da14164e24afe81b5f8730d95f1708c2a8bc5fb41d0f9947edaee86ba04464b",
+      "bytes": 11548
+    },
+    {
+      "path": "code/test_depth_pipeline.py",
+      "source": "code/test_depth_pipeline.py",
+      "sha256": "633fd8832ec7e72390f241212901487e683c850427cd5164bd7e780feb2c9ae7",
+      "bytes": 4360
+    },
+    {
+      "path": "code/verify_depth_pipeline.py",
+      "source": "code/verify_depth_pipeline.py",
+      "sha256": "0f955aa04776e235f3f5b33310637cbe943a97949c23db0565fc2fa04fcbe6e2",
+      "bytes": 5893
+    },
+    {
+      "path": "code/verify_results.py",
+      "source": "code/verify_results.py",
+      "sha256": "103ec18a18097fa67a99d912178e940a613bf0d1696c85bf1f5fdb267aae0f23",
+      "bytes": 6082
+    },
+    {
+      "path": "contract.json",
+      "source": "contract.json",
+      "sha256": "09387214bd6769f5f724d944dce927c91ad6c47b9f3da8b4c2a017428c8871fa",
+      "bytes": 4201
+    },
+    {
+      "path": "data/depth_samples/eval_500.json",
+      "source": "data/depth_samples/eval_500.json",
+      "sha256": "a3dfb2541c0f5a612c713f850cd42dc5b879dadb33f438722dbf97322e5f540a",
+      "bytes": 174195
+    },
+    {
+      "path": "data/depth_samples/modeling_180.json",
+      "source": "data/depth_samples/modeling_180.json",
+      "sha256": "4b86ed69522426cf3a6138a76bc43b5f95ae5d6b48beac7613a2e8c964fb6dc0",
+      "bytes": 63536
+    },
+    {
+      "path": "data/depth_samples/summary.json",
+      "source": "data/depth_samples/summary.json",
+      "sha256": "7095f53889bc391a430b823aea6516fe7b10f1df2afd99995bad70c4aeb982b3",
+      "bytes": 1173
+    },
+    {
+      "path": "fixed_check_views/README.md",
+      "source": "fixed_check_views/README.md",
+      "sha256": "3804c3b8e7ac1da4d16f5cc304059a8c11e33b14fd76e75799346fc2828cc6af",
+      "bytes": 455
+    },
+    {
+      "path": "fixed_check_views/manifest.json",
+      "source": "fixed_check_views/manifest.json",
+      "sha256": "0c1a32d204c878389d6d6f1bc68d492ae5e4e76fc7abd4ee94f2b0500db369dd",
+      "bytes": 5566
+    },
+    {
+      "path": "orb-slam3-old-vs-new-motion.canvas.tsx",
+      "source": "orb-slam3-old-vs-new-motion.canvas.tsx",
+      "sha256": "69f65cb6cadb492c5099c6482da94538aeb3ceafdd80465018ede0d0120558ea",
+      "bytes": 5111
+    },
+    {
+      "path": "packets/M2/packet.json",
+      "source": "packets/M2/packet.json",
+      "sha256": "6434d8c954271960004ecae758831689909cb61924db2a819665d6c2d646775a",
+      "bytes": 251656
+    },
+    {
+      "path": "packets/M3/packet.json",
+      "source": "packets/M3/packet.json",
+      "sha256": "386aac8e205be1681967340ee96974db307baae8e93a809ab8f83d868dd89c91",
+      "bytes": 250980
+    },
+    {
+      "path": "packets/M4/packet.json",
+      "source": "packets/M4/packet.json",
+      "sha256": "19968211ffeeb9c5bb07eb2fe53fe2467262906aa4959194aff7ee0b4e7a8501",
+      "bytes": 250509
+    },
+    {
+      "path": "plan_astra_blender.md",
+      "source": "plan_astra_blender.md",
+      "sha256": "eb16735e13ca173efcdf0316a3828dcf16999c3cc83614bbcdcabe29f843d399",
+      "bytes": 24217
+    },
+    {
+      "path": "plan_astra_blender2.md",
+      "source": "plan_astra_blender2.md",
+      "sha256": "a5eee4f92d5d0ca2e3e3e68ebf60c08f058109624d53f190e41746523091f710",
+      "bytes": 22718
+    },
+    {
+      "path": "plan_depth.md",
+      "source": "plan_depth.md",
+      "sha256": "09b79a32dee2e251499649c8277f439364b3c6b3e33a47d3dfb08d32e4b8142a",
+      "bytes": 11963
+    },
+    {
+      "path": "publication/huggingface/space/README.md",
+      "source": "publication/huggingface/space/README.md",
+      "sha256": "a43c6868ad85a1796a3a246d6a13909419f40c181875c85815b32f860cb21a4d",
+      "bytes": 423
+    },
+    {
+      "path": "publication/huggingface/space/index.html",
+      "source": "publication/huggingface/space/index.html",
+      "sha256": "eb3832e5944c9d262cf0261fb0fdf057f7550927bd87c36e935c1021ad877108",
+      "bytes": 9086
+    },
+    {
+      "path": "publication/huggingface/space/styles.css",
+      "source": "publication/huggingface/space/styles.css",
+      "sha256": "116a19269945b4514dee5e05908d4f0768d452f00a7cbdac1470d03bf9bff46f",
+      "bytes": 1796
+    },
+    {
+      "path": "world-lobby-four-trajectory.canvas.tsx",
+      "source": "world-lobby-four-trajectory.canvas.tsx",
+      "sha256": "8963884eb2861cabc759427e68fcfc81738fab3bafcc94796d03bdffa1506679",
+      "bytes": 21530
+    },
+    {
+      "path": "四轨迹统一对比_c01acd21.plan.md",
+      "source": "四轨迹统一对比_c01acd21.plan.md",
+      "sha256": "a4131212d7d33051abe33658d3e63bb237a337c2c56700b764ef8bb5149be3c5",
+      "bytes": 3679
+    }
+  ]
+}

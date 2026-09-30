@@ -1,0 +1,14 @@
+# Optional host-side analysis/publication dependencies, not a complete environment lock.
+# Blender supplies bpy, bmesh and mathutils; do not install them with this file.
+numpy
+scipy
+Pillow
+matplotlib
+trimesh
+beautifulsoup4
+huggingface-hub
+playwright
+scikit-image
+lpips==0.1.4
+# Install a mutually compatible torch/torchvision build for your CPU/CUDA environment.
+# DA3, ViPE, estimator runtimes and their model weights are separate dependencies.

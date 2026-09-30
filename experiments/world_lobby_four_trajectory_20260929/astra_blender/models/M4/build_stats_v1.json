@@ -1,0 +1,17 @@
+{
+  "revision": 1,
+  "elapsed_seconds": 90.26717209815979,
+  "render_ids": [
+    0,
+    60,
+    90,
+    108,
+    138
+  ],
+  "cycles_device": "CPU",
+  "threads": 4,
+  "samples": 40,
+  "objects": 71,
+  "blender_objects": 3640,
+  "glb_axes": "native Z up; export_yup=False"
+}

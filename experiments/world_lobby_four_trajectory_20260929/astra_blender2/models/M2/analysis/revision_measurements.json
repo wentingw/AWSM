@@ -1,0 +1,1467 @@
+{
+  "lamps": [
+    {
+      "id": "pendant_00",
+      "before_center": [
+        -1.4914708831376204,
+        4.93990150375832,
+        3.9919553532991676
+      ],
+      "after_center": [
+        -1.5436354797023575,
+        5.286243685913403,
+        3.914474200022344
+      ],
+      "before_diameter": 1.2485953488772494,
+      "after_diameter": 1.3457986828139767,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            360,
+            70
+          ],
+          "rgb_box": [
+            350,
+            62,
+            370,
+            78
+          ],
+          "before_projection": [
+            349.9999822842454,
+            32.999996626054156
+          ],
+          "after_projection": [
+            360.28523113558975,
+            69.02105388754586
+          ],
+          "reprojection_error_px": 1.0196530251996963,
+          "input_da3_z_m": 5.035383701324463,
+          "before_center_minus_da3_m": -0.5215044098846349,
+          "after_center_minus_da3_m": -0.17009822620360282
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            266,
+            127
+          ],
+          "rgb_box": [
+            256,
+            119,
+            276,
+            135
+          ],
+          "before_projection": [
+            205.34113352056244,
+            85.23260418728051
+          ],
+          "after_projection": [
+            265.9331822716201,
+            127.8576594999779
+          ],
+          "reprojection_error_px": 0.8602583488279474,
+          "input_da3_z_m": 4.051375389099121,
+          "before_center_minus_da3_m": -0.25454217842449633,
+          "after_center_minus_da3_m": 0.06815735789795863
+        }
+      ]
+    },
+    {
+      "id": "pendant_01",
+      "before_center": [
+        -1.2204893125376177,
+        6.9500914533738385,
+        3.9576736625844475
+      ],
+      "after_center": [
+        -1.2614640724232566,
+        7.330876732041578,
+        3.927437781678527
+      ],
+      "before_diameter": 1.1958561208651963,
+      "after_diameter": 1.2653536051168417,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            464,
+            151
+          ],
+          "rgb_box": [
+            454,
+            143,
+            474,
+            159
+          ],
+          "before_projection": [
+            459.9999882815333,
+            137.9999970482964
+          ],
+          "after_projection": [
+            463.42585834363535,
+            153.66175340209884
+          ],
+          "reprojection_error_px": 2.7229707701622288,
+          "input_da3_z_m": 6.748693466186523,
+          "before_center_minus_da3_m": -0.2329859876128797,
+          "after_center_minus_da3_m": 0.14567603369295412
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            549,
+            216
+          ],
+          "rgb_box": [
+            539,
+            208,
+            559,
+            224
+          ],
+          "before_projection": [
+            518.7958847787166,
+            194.49764110591866
+          ],
+          "after_projection": [
+            549.1180470148543,
+            213.7586922650773
+          ],
+          "reprojection_error_px": 2.244414280016144,
+          "input_da3_z_m": 5.287944316864014,
+          "before_center_minus_da3_m": 0.053425606147310845,
+          "after_center_minus_da3_m": 0.3969192677951785
+        }
+      ]
+    },
+    {
+      "id": "pendant_02",
+      "before_center": [
+        -1.7046156252107056,
+        8.559855304902515,
+        3.768280992450845
+      ],
+      "after_center": [
+        -1.6679709355683077,
+        8.512640786793396,
+        3.6563442800855093
+      ],
+      "before_diameter": 1.2335805437861156,
+      "after_diameter": 1.2293579520784754,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            446,
+            210
+          ],
+          "rgb_box": [
+            436,
+            202,
+            456,
+            218
+          ],
+          "before_projection": [
+            442.999987283272,
+            199.9999974604898
+          ],
+          "after_projection": [
+            445.9802174825703,
+            210.1344265227134
+          ],
+          "reprojection_error_px": 0.13587434638176374,
+          "input_da3_z_m": 8.444775581359863,
+          "before_center_minus_da3_m": -0.33292009246563836,
+          "after_center_minus_da3_m": -0.36068725510588884
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            598,
+            285
+          ],
+          "rgb_box": [
+            588,
+            277,
+            608,
+            293
+          ],
+          "before_projection": [
+            597.7554710104848,
+            273.8688045772053
+          ],
+          "after_projection": [
+            598.003237652218,
+            284.88210659487595
+          ],
+          "reprojection_error_px": 0.11793785381983223,
+          "input_da3_z_m": 5.933241844177246,
+          "before_center_minus_da3_m": 1.0309166801816385,
+          "after_center_minus_da3_m": 0.976439481930143
+        }
+      ]
+    },
+    {
+      "id": "pendant_03",
+      "before_center": [
+        -1.2248044194736953,
+        9.558015506316682,
+        3.777970127633132
+      ],
+      "after_center": [
+        -1.5036982262528913,
+        12.038398570729047,
+        4.150326105453732
+      ],
+      "before_diameter": 0.8366789190195341,
+      "after_diameter": 1.0549599904422986,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            504,
+            220
+          ],
+          "rgb_box": [
+            494,
+            212,
+            514,
+            228
+          ],
+          "before_projection": [
+            500.99999051392103,
+            216.99999748884403
+          ],
+          "after_projection": [
+            503.73361921638354,
+            221.89853985134476
+          ],
+          "reprojection_error_px": 1.9171364815850536,
+          "input_da3_z_m": 9.289141654968262,
+          "before_center_minus_da3_m": -0.17173197090756886,
+          "after_center_minus_da3_m": 2.2069080694515275
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            770,
+            295
+          ],
+          "rgb_box": [
+            760,
+            287,
+            780,
+            303
+          ],
+          "before_projection": [
+            696.3885160527283,
+            286.13302661055343
+          ],
+          "after_projection": [
+            770.0420987548544,
+            293.35339315885665
+          ],
+          "reprojection_error_px": 1.6471449221183838,
+          "input_da3_z_m": 5.476296901702881,
+          "before_center_minus_da3_m": 2.0671298638327533,
+          "after_center_minus_da3_m": 4.285673821045071
+        }
+      ]
+    },
+    {
+      "id": "pendant_04",
+      "before_center": [
+        -0.4613698494229087,
+        9.56277404356148,
+        3.865816062574913
+      ],
+      "after_center": [
+        -0.5743297401202839,
+        11.120890712265776,
+        4.013016277973592
+      ],
+      "before_diameter": 1.0188434407794795,
+      "after_diameter": 1.1871419356374484,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            563,
+            217
+          ],
+          "rgb_box": [
+            553,
+            209,
+            573,
+            225
+          ],
+          "before_projection": [
+            564.999994122688,
+            209.9999973547674
+          ],
+          "after_projection": [
+            562.4407608210536,
+            220.8147825120236
+          ],
+          "reprojection_error_px": 3.8555562599072335,
+          "input_da3_z_m": 9.266979217529297,
+          "before_center_minus_da3_m": -0.12375833985540119,
+          "after_center_minus_da3_m": 1.386572176638298
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            815,
+            286
+          ],
+          "rgb_box": [
+            805,
+            278,
+            825,
+            294
+          ],
+          "before_projection": [
+            768.6239773338382,
+            267.5121071769594
+          ],
+          "after_projection": [
+            815.0898817193345,
+            282.94915729151205
+          ],
+          "reprojection_error_px": 3.052166436386555,
+          "input_da3_z_m": 5.239867687225342,
+          "before_center_minus_da3_m": 1.8912908471749752,
+          "after_center_minus_da3_m": 3.2551811144230403
+        }
+      ]
+    },
+    {
+      "id": "pendant_05",
+      "before_center": [
+        0.0773447902830916,
+        11.802611238334734,
+        3.68943565860648
+      ],
+      "after_center": [
+        0.0034169944882014008,
+        12.34238947110256,
+        3.640540842571152
+      ],
+      "before_diameter": 1.4354286533909817,
+      "after_diameter": 1.5030082803109728,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            604,
+            261
+          ],
+          "rgb_box": [
+            594,
+            253,
+            614,
+            269
+          ],
+          "before_projection": [
+            608.9999965893231,
+            251.99999758292503
+          ],
+          "after_projection": [
+            604.0961500700652,
+            260.0845211029124
+          ],
+          "reprojection_error_px": 0.9205142296489948,
+          "input_da3_z_m": 12.039057731628418,
+          "before_center_minus_da3_m": -0.6333809217752684,
+          "after_center_minus_da3_m": -0.09640443765748152
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            896,
+            326
+          ],
+          "rgb_box": [
+            886,
+            318,
+            906,
+            334
+          ],
+          "before_projection": [
+            890.4629037028358,
+            315.67048748333355
+          ],
+          "after_projection": [
+            895.9908186813545,
+            326.72258381581975
+          ],
+          "reprojection_error_px": 0.7226421434546246,
+          "input_da3_z_m": 8.253787994384766,
+          "before_center_minus_da3_m": 0.4766355401487221,
+          "after_center_minus_da3_m": 0.9723786077614349
+        }
+      ]
+    },
+    {
+      "id": "pendant_06",
+      "before_center": [
+        0.3519487973784706,
+        13.83208096995326,
+        3.457552400587564
+      ],
+      "after_center": [
+        0.20637232459549945,
+        13.446462579758142,
+        3.314252108731032
+      ],
+      "before_diameter": 1.2525548144792098,
+      "after_diameter": 1.2185575854592412,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            616,
+            290
+          ],
+          "rgb_box": [
+            606,
+            282,
+            626,
+            298
+          ],
+          "before_projection": [
+            623.9999974249321,
+            281.9999977748204
+          ],
+          "after_projection": [
+            616.1091914594762,
+            288.2296137952736
+          ],
+          "reprojection_error_px": 1.7737502892763697,
+          "input_da3_z_m": 13.459917068481445,
+          "before_center_minus_da3_m": -0.002891579302639613,
+          "after_center_minus_da3_m": -0.3681462770968089
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            933,
+            360
+          ],
+          "rgb_box": [
+            923,
+            352,
+            943,
+            368
+          ],
+          "before_projection": [
+            950.7201635978407,
+            352.72552285613824
+          ],
+          "after_projection": [
+            933.0033671463577,
+            361.37973875286275
+          ],
+          "reprojection_error_px": 1.379742861487549,
+          "input_da3_z_m": 9.21424674987793,
+          "before_center_minus_da3_m": 1.083776735850492,
+          "after_center_minus_da3_m": 0.8447248963784375
+        }
+      ]
+    },
+    {
+      "id": "pendant_07",
+      "before_center": [
+        -1.2763608330703353,
+        13.634261040149292,
+        3.5476527159871387
+      ],
+      "after_center": [
+        -1.2496589703366998,
+        13.54304963802334,
+        3.4740710786643363
+      ],
+      "before_diameter": 1.2953074177210406,
+      "after_diameter": 1.2876841325298567,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            531,
+            281
+          ],
+          "rgb_box": [
+            521,
+            273,
+            541,
+            289
+          ],
+          "before_projection": [
+            529.9999921028739,
+            274.99999783684945
+          ],
+          "after_projection": [
+            531.1453052763427,
+            278.82502497070584
+          ],
+          "reprojection_error_px": 2.1798233876592295,
+          "input_da3_z_m": 13.142660140991211,
+          "before_center_minus_da3_m": 0.031479801449492584,
+          "after_center_minus_da3_m": -0.04605405707421539
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            828,
+            355
+          ],
+          "rgb_box": [
+            818,
+            347,
+            838,
+            363
+          ],
+          "before_projection": [
+            828.3639121801266,
+            352.4461253172334
+          ],
+          "after_projection": [
+            828.0007677836762,
+            356.83919193409724
+          ],
+          "reprojection_error_px": 1.8391920943555986,
+          "input_da3_z_m": 9.002826690673828,
+          "before_center_minus_da3_m": 2.0044134700753844,
+          "after_center_minus_da3_m": 1.9166200782116576
+        }
+      ]
+    },
+    {
+      "id": "pendant_08",
+      "before_center": [
+        0.8801060551795272,
+        11.32118637887381,
+        3.4891726360214843
+      ],
+      "after_center": [
+        1.0365872258485909,
+        12.50117223018599,
+        3.5805689013802806
+      ],
+      "before_diameter": 1.1822239516227735,
+      "after_diameter": 1.3066908650456808,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            669,
+            266
+          ],
+          "rgb_box": [
+            659,
+            258,
+            679,
+            274
+          ],
+          "before_projection": [
+            664.9999997758254,
+            261.9999975838464
+          ],
+          "after_projection": [
+            669.0346943178624,
+            265.6775349114701
+          ],
+          "reprojection_error_px": 0.32432611521820576,
+          "input_da3_z_m": 11.00191879272461,
+          "before_center_minus_da3_m": -0.00435260234745094,
+          "after_center_minus_da3_m": 1.1534933030905758
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            991,
+            326
+          ],
+          "rgb_box": [
+            981,
+            318,
+            1001,
+            334
+          ],
+          "before_projection": [
+            956.8096279397753,
+            321.3662234337282
+          ],
+          "after_projection": [
+            990.9967716430209,
+            326.2389828117273
+          ],
+          "reprojection_error_px": 0.23900461625220198,
+          "input_da3_z_m": 7.572697162628174,
+          "before_center_minus_da3_m": 0.3284823008596929,
+          "after_center_minus_da3_m": 1.231549210093446
+        }
+      ]
+    },
+    {
+      "id": "pendant_09",
+      "before_center": [
+        2.112516639556794,
+        12.585017787245071,
+        3.40384420292754
+      ],
+      "after_center": [
+        2.3983462143870318,
+        14.374647220481659,
+        3.490480548618616
+      ],
+      "before_diameter": 1.3560311708015238,
+      "after_diameter": 1.550529029550423,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            734,
+            285
+          ],
+          "rgb_box": [
+            724,
+            277,
+            744,
+            293
+          ],
+          "before_projection": [
+            735.000003786447,
+            277.9999976160344
+          ],
+          "after_projection": [
+            734.1083052508126,
+            283.7300910451514
+          ],
+          "reprojection_error_px": 1.274519039072455,
+          "input_da3_z_m": 12.310578346252441,
+          "before_center_minus_da3_m": 0.003476103300522837,
+          "after_center_minus_da3_m": 1.7697019363792563
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            1131,
+            343
+          ],
+          "rgb_box": [
+            1121,
+            335,
+            1141,
+            351
+          ],
+          "before_projection": [
+            1099.5831300750667,
+            335.27428861790975
+          ],
+          "after_projection": [
+            1130.994857394095,
+            343.88558826596596
+          ],
+          "reprojection_error_px": 0.8856031973813647,
+          "input_da3_z_m": 8.167884826660156,
+          "before_center_minus_da3_m": 0.1335782075118157,
+          "after_center_minus_da3_m": 1.4793400450933003
+        }
+      ]
+    },
+    {
+      "id": "pendant_10",
+      "before_center": [
+        2.47430163307884,
+        9.877816086591285,
+        3.6118566219532267
+      ],
+      "after_center": [
+        2.70631477904154,
+        10.750789592744118,
+        3.6321367981765738
+      ],
+      "before_diameter": 1.325054892583486,
+      "after_diameter": 1.4446907698889033,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            801,
+            245
+          ],
+          "rgb_box": [
+            791,
+            237,
+            811,
+            253
+          ],
+          "before_projection": [
+            800.0000075589757,
+            237.9999972381241
+          ],
+          "after_projection": [
+            800.6871661552059,
+            246.7401415522744
+          ],
+          "reprojection_error_px": 1.7680377926957915,
+          "input_da3_z_m": 10.02649211883545,
+          "before_center_minus_da3_m": -0.40028384580908316,
+          "after_center_minus_da3_m": 0.46884235041460265
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            1175,
+            277
+          ],
+          "rgb_box": [
+            1165,
+            269,
+            1185,
+            285
+          ],
+          "before_projection": [
+            1143.4502069133673,
+            260.80449978496904
+          ],
+          "after_projection": [
+            1175.043020877597,
+            275.9135969713675
+          ],
+          "reprojection_error_px": 1.0872544948314031,
+          "input_da3_z_m": 9.168893814086914,
+          "before_center_minus_da3_m": -3.3472612878585712,
+          "after_center_minus_da3_m": -2.7398317969918926
+        }
+      ]
+    },
+    {
+      "id": "pendant_11",
+      "before_center": [
+        1.4191547142874512,
+        8.585778720978997,
+        3.5521874288990185
+      ],
+      "after_center": [
+        1.8272823634732576,
+        11.078292210230293,
+        3.8334269127549048
+      ],
+      "before_diameter": 1.3948043879252425,
+      "after_diameter": 1.8035267703789217,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            733,
+            238
+          ],
+          "rgb_box": [
+            723,
+            230,
+            743,
+            246
+          ],
+          "before_projection": [
+            734.0000037522497,
+            223.99999722211857
+          ],
+          "after_projection": [
+            733.5266064198531,
+            234.97174354149115
+          ],
+          "reprojection_error_px": 3.0737032224876693,
+          "input_da3_z_m": 8.909913063049316,
+          "before_center_minus_da3_m": -0.5977506898471905,
+          "after_center_minus_da3_m": 1.8379792841775693
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            1060,
+            270
+          ],
+          "rgb_box": [
+            1050,
+            262,
+            1070,
+            278
+          ],
+          "before_projection": [
+            964.1932854655931,
+            251.4107687516908
+          ],
+          "after_projection": [
+            1059.9214529942597,
+            272.02889745660116
+          ],
+          "reprojection_error_px": 2.030417326933904,
+          "input_da3_z_m": 5.2371506690979,
+          "before_center_minus_da3_m": 0.07121975662265356,
+          "after_center_minus_da3_m": 1.9329485508881632
+        }
+      ]
+    },
+    {
+      "id": "pendant_12",
+      "before_center": [
+        1.1237623394574856,
+        8.637016237599825,
+        4.028219485273638
+      ],
+      "after_center": [
+        1.0873053260232448,
+        8.47681752561237,
+        3.8966822857067247
+      ],
+      "before_diameter": 1.301987332452575,
+      "after_diameter": 1.2800261135879107,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            705,
+            190
+          ],
+          "rgb_box": [
+            695,
+            182,
+            715,
+            198
+          ],
+          "before_projection": [
+            707.0000022217893,
+            178.9999969387718
+          ],
+          "after_projection": [
+            705.4220774668368,
+            188.34711903880765
+          ],
+          "reprojection_error_px": 1.7059205315264496,
+          "input_da3_z_m": 8.70032787322998,
+          "before_center_minus_da3_m": -0.4240284214015517,
+          "after_center_minus_da3_m": -0.5636285445228282
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            912,
+            204
+          ],
+          "rgb_box": [
+            902,
+            196,
+            922,
+            212
+          ],
+          "before_projection": [
+            922.8261007042724,
+            191.61616441383939
+          ],
+          "after_projection": [
+            911.9259844359144,
+            205.1215762882
+          ],
+          "reprojection_error_px": 1.124015869095897,
+          "input_da3_z_m": 5.01330041885376,
+          "before_center_minus_da3_m": 0.47643742533997013,
+          "after_center_minus_da3_m": 0.36736634364995524
+        }
+      ]
+    },
+    {
+      "id": "pendant_13",
+      "before_center": [
+        1.4149003915899117,
+        5.944468735943987,
+        3.652402532058613
+      ],
+      "after_center": [
+        1.1878730294203566,
+        4.991671964127786,
+        3.220880343818274
+      ],
+      "before_diameter": 1.4096493250922377,
+      "after_diameter": 1.1904748382703023,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            793,
+            174
+          ],
+          "rgb_box": [
+            783,
+            166,
+            803,
+            182
+          ],
+          "before_projection": [
+            793.000007185588,
+            146.9999965793598
+          ],
+          "after_projection": [
+            792.0878184429085,
+            176.82883026821827
+          ],
+          "reprojection_error_px": 2.972264436332279,
+          "input_da3_z_m": 6.163132190704346,
+          "before_center_minus_da3_m": -0.4738173667717236,
+          "after_center_minus_da3_m": -1.3584009386800782
+        },
+        {
+          "frame": 129,
+          "rgb_point": [
+            677,
+            126
+          ],
+          "rgb_box": [
+            667,
+            118,
+            687,
+            134
+          ],
+          "before_projection": [
+            843.7598581212859,
+            86.4634195911596
+          ],
+          "after_projection": [
+            677.1319181675143,
+            124.55682152338852
+          ],
+          "reprojection_error_px": 1.4491951277433137,
+          "input_da3_z_m": 2.5277931690216064,
+          "before_center_minus_da3_m": 0.5586380878637898,
+          "after_center_minus_da3_m": -0.10021839651193831
+        }
+      ]
+    },
+    {
+      "id": "pendant_14",
+      "before_center": [
+        2.919435441730285,
+        4.274360954136909,
+        3.3809045377125733
+      ],
+      "after_center": [
+        2.702424170549106,
+        4.113098443671236,
+        3.129272830293758
+      ],
+      "before_diameter": 1.5670746561739544,
+      "after_diameter": 1.5178406402439772,
+      "observations": [
+        {
+          "frame": 33,
+          "rgb_point": [
+            1118,
+            159
+          ],
+          "rgb_box": [
+            1108,
+            151,
+            1128,
+            167
+          ],
+          "before_projection": [
+            1140.0000276080432,
+            117.99999579383285
+          ],
+          "after_projection": [
+            1116.4814756268113,
+            158.41292144280942
+          ],
+          "reprojection_error_px": 1.6280594289770696,
+          "input_da3_z_m": 4.797110557556152,
+          "before_center_minus_da3_m": -0.6465392288464855,
+          "after_center_minus_da3_m": -0.7769409729099515
+        },
+        {
+          "frame": 61,
+          "rgb_point": [
+            577,
+            128
+          ],
+          "rgb_box": [
+            567,
+            120,
+            587,
+            136
+          ],
+          "before_projection": [
+            566.6144167484256,
+            90.40752246419498
+          ],
+          "after_projection": [
+            579.4107433184075,
+            125.15422653135766
+          ],
+          "reprojection_error_px": 3.729625984207419,
+          "input_da3_z_m": 4.518275737762451,
+          "before_center_minus_da3_m": 0.21298041517221744,
+          "after_center_minus_da3_m": 0.02440212645325701
+        },
+        {
+          "frame": 74,
+          "rgb_point": [
+            891,
+            80
+          ],
+          "rgb_box": [
+            881,
+            72,
+            901,
+            88
+          ],
+          "before_projection": [
+            843.5379835783268,
+            36.35623224582798
+          ],
+          "after_projection": [
+            888.7205496373729,
+            80.91572860265359
+          ],
+          "reprojection_error_px": 2.4565123303982928,
+          "input_da3_z_m": 4.218377113342285,
+          "before_center_minus_da3_m": -0.03310304777540729,
+          "after_center_minus_da3_m": -0.10930410955276404
+        },
+        {
+          "frame": 82,
+          "rgb_point": [
+            826,
+            333
+          ],
+          "rgb_box": [
+            816,
+            325,
+            836,
+            341
+          ],
+          "before_projection": [
+            800.7310004152426,
+            313.14636080350573
+          ],
+          "after_projection": [
+            827.1351158292338,
+            336.89746006051115
+          ],
+          "reprojection_error_px": 4.059394396835154,
+          "input_da3_z_m": 7.507282733917236,
+          "before_center_minus_da3_m": 0.4145237302941558,
+          "after_center_minus_da3_m": 0.3685329553608687
+        }
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "center": [
+        3.61,
+        3.306929369012252,
+        1.2497339631599313
+      ],
+      "radius": 0.6408973834510708,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            745,
+            423
+          ],
+          "rgb_radius_px": 87,
+          "reprojection_px": 13.896717441208999,
+          "center_minus_da3_m": 1.431533290313519
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            864,
+            389
+          ],
+          "rgb_radius_px": 85,
+          "reprojection_px": 17.07596942553255,
+          "center_minus_da3_m": -0.016218970876489713
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        4.251370730611017,
+        1.6676127409037318
+      ],
+      "radius": 0.2898666406311543,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            621,
+            361
+          ],
+          "rgb_radius_px": 39,
+          "reprojection_px": 12.304560039293163,
+          "center_minus_da3_m": -0.14653338249382575
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            759,
+            339
+          ],
+          "rgb_radius_px": 42,
+          "reprojection_px": 12.110444293986122,
+          "center_minus_da3_m": -0.036434119314130875
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        4.479141902154248,
+        1.1269776772010267
+      ],
+      "radius": 0.1988893342281403,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            594,
+            430
+          ],
+          "rgb_radius_px": 25,
+          "reprojection_px": 12.218643719638232,
+          "center_minus_da3_m": 0.0685779457663358
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            727,
+            418
+          ],
+          "rgb_radius_px": 28,
+          "reprojection_px": 11.513766276738378,
+          "center_minus_da3_m": -0.1465717001406066
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        4.1930171361899164,
+        0.6113887290685542
+      ],
+      "radius": 0.32301755533587784,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            628,
+            498
+          ],
+          "rgb_radius_px": 40,
+          "reprojection_px": 10.859234629914226,
+          "center_minus_da3_m": -0.11786568023687938
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            760,
+            483
+          ],
+          "rgb_radius_px": 42,
+          "reprojection_px": 11.260438534977393,
+          "center_minus_da3_m": -0.8087667651358252
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        2.788055503788052,
+        0.46657880680771224
+      ],
+      "radius": 0.19006035773834473,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            807,
+            529
+          ],
+          "rgb_radius_px": 25,
+          "reprojection_px": 8.860121558813685,
+          "center_minus_da3_m": 0.5266323801839903
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            915,
+            485
+          ],
+          "rgb_radius_px": 24,
+          "reprojection_px": 12.002545831568183,
+          "center_minus_da3_m": 0.18914033889482074
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        2.0715086978223614,
+        0.8509064863051267
+      ],
+      "radius": 0.5265730565485657,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            913,
+            486
+          ],
+          "rgb_radius_px": 79,
+          "reprojection_px": 8.78280687264809,
+          "center_minus_da3_m": 0.5881682766687204
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            991,
+            430
+          ],
+          "rgb_radius_px": 64,
+          "reprojection_px": 14.000089981618908,
+          "center_minus_da3_m": -0.26921095075447443
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        2.4137575010030305,
+        1.6332219272267356
+      ],
+      "radius": 0.25859538744488786,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            870,
+            372
+          ],
+          "rgb_radius_px": 38,
+          "reprojection_px": 9.024158269304522,
+          "center_minus_da3_m": 0.44550947135313823
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            970,
+            335
+          ],
+          "rgb_radius_px": 35,
+          "reprojection_px": 13.207800019226775,
+          "center_minus_da3_m": -0.22213717184389647
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        1.9155016946169277,
+        2.018776582242317
+      ],
+      "radius": 0.30097098575775294,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            951,
+            315
+          ],
+          "rgb_radius_px": 49,
+          "reprojection_px": 7.950103781826699,
+          "center_minus_da3_m": 0.3401877918124141
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            1028,
+            283
+          ],
+          "rgb_radius_px": 40,
+          "reprojection_px": 12.913957228913409,
+          "center_minus_da3_m": -0.5847597304559278
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        1.2899288397084836,
+        1.5442744625873088
+      ],
+      "radius": 0.4088715868225956,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            1045,
+            392
+          ],
+          "rgb_radius_px": 69,
+          "reprojection_px": 6.8522000705074255,
+          "center_minus_da3_m": 0.04038919237000549
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            1080,
+            339
+          ],
+          "rgb_radius_px": 51,
+          "reprojection_px": 12.558666226435122,
+          "center_minus_da3_m": -0.942672720060048
+        }
+      ]
+    },
+    {
+      "center": [
+        3.61,
+        1.2629137626990676,
+        0.8583890503877772
+      ],
+      "radius": 0.19699241411174448,
+      "observations": [
+        {
+          "frame": 61,
+          "rgb_center": [
+            1039,
+            492
+          ],
+          "rgb_radius_px": 31,
+          "reprojection_px": 7.9549524023437925,
+          "center_minus_da3_m": -0.1421131662015842
+        },
+        {
+          "frame": 74,
+          "rgb_center": [
+            1066,
+            423
+          ],
+          "rgb_radius_px": 24,
+          "reprojection_px": 14.82674064141312,
+          "center_minus_da3_m": 0.05129514052420259
+        }
+      ]
+    }
+  ],
+  "desk": {
+    "before": {
+      "center": [
+        0.6,
+        13.45,
+        0.38
+      ],
+      "dimensions": [
+        3.1,
+        1.05,
+        1.12
+      ]
+    },
+    "after": {
+      "center": [
+        0.23424434654125262,
+        14.358316954150656,
+        0.27519214296343053
+      ],
+      "dimensions": [
+        2.61821583808892,
+        1.05,
+        0.9103842859268612
+      ]
+    },
+    "observations": [
+      [
+        33,
+        [
+          [
+            543,
+            438
+          ],
+          [
+            689,
+            437
+          ]
+        ]
+      ],
+      [
+        129,
+        [
+          [
+            847,
+            547
+          ],
+          [
+            1046,
+            559
+          ]
+        ]
+      ],
+      [
+        108,
+        [
+          [
+            1080,
+            531
+          ],
+          null
+        ]
+      ],
+      [
+        118,
+        [
+          [
+            1080,
+            510
+          ],
+          null
+        ]
+      ]
+    ],
+    "fit_corner_errors_px": [
+      2.6724032258841817,
+      -1.5474893510126435,
+      0.6894814243458995,
+      -1.1660924691472019,
+      -2.9114547886675837,
+      -0.7942064629775132,
+      -0.5559576676164397,
+      1.7674765234939969,
+      0.5851650211598098,
+      0.9402185517495809,
+      -0.12139009799693667,
+      -0.3498751529991182
+    ],
+    "note": "RGB top front silhouette fit; corner identification in grazing108/118 approximate. Depth sign conflict kept."
+  },
+  "recess_corner": [
+    {
+      "frame": 61,
+      "rgb_u_at_z2_3": 297,
+      "fitted_y": 7.07005873492173
+    },
+    {
+      "frame": 74,
+      "rgb_u_at_z2_3": 296,
+      "fitted_y": 7.221245137936657
+    },
+    {
+      "frame": 82,
+      "rgb_u_at_z2_3": 508,
+      "fitted_y": 7.296648592412589
+    }
+  ]
+}

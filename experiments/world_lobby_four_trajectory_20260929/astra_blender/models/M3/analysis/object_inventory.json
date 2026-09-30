@@ -1,0 +1,1112 @@
+{
+  "objects": [
+    {
+      "id": "floor",
+      "category": "floor",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        110,
+        135
+      ],
+      "description": "Polished pale floor around a charcoal central inlay",
+      "uncertainty_m": 0.13
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Pale ceiling with dark slatted margins",
+      "uncertainty_m": 0.22
+    },
+    {
+      "id": "far_end_wall",
+      "category": "wall",
+      "evidence_sample_ids": [
+        0,
+        90,
+        135
+      ],
+      "description": "Vertical timber panels and joints, top closure inferred",
+      "uncertainty_m": 0.4
+    },
+    {
+      "id": "near_end_wall",
+      "category": "wall",
+      "evidence_sample_ids": [
+        0,
+        90,
+        135
+      ],
+      "description": "Vertical timber panels and joints, top closure inferred",
+      "uncertainty_m": 0.4
+    },
+    {
+      "id": "mirror_bay_wall",
+      "category": "wall",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Timber-clad wall with substrate and panels cut around framed door apertures",
+      "uncertainty_m": 0.22
+    },
+    {
+      "id": "recess_wall",
+      "category": "wall",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Timber-clad wall with substrate and panels cut around framed door apertures",
+      "uncertainty_m": 0.22
+    },
+    {
+      "id": "wall_return",
+      "category": "wall",
+      "evidence_sample_ids": [
+        80
+      ],
+      "description": "Return wall at recess behind mirror bay",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "interior_door_00",
+      "category": "door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Open passage beside near end of mirror cluster",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "interior_door_01",
+      "category": "door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Closed flush metal interior door; no open passage claimed",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "interior_door_02",
+      "category": "door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Closed flush metal interior door; no open passage claimed",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "interior_door_03",
+      "category": "door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Closed flush metal interior door; no open passage claimed",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "interior_door_04",
+      "category": "door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Closed flush metal interior door; no open passage claimed",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "glazing_bay_00",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_01",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_02",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_03",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_04",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_05",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_06",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_07",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_08",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_09",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_10",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_11",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_12",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_13",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_14",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_15",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_16",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_17",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_18",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_19",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_20",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_21",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "glazing_bay_22",
+      "category": "window",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Floor-to-ceiling glazed bay; exterior overexposed",
+      "uncertainty_m": 0.35
+    },
+    {
+      "id": "entrance_doors_0",
+      "category": "door",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Paired bronze framed glazed entry doors",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "entrance_doors_1",
+      "category": "door",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        125
+      ],
+      "description": "Paired bronze framed glazed entry doors",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "round_column",
+      "category": "column",
+      "evidence_sample_ids": [
+        0,
+        90,
+        110,
+        125
+      ],
+      "description": "Round structural column beside glazing",
+      "uncertainty_m": 0.23
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_desk",
+      "evidence_sample_ids": [
+        0,
+        100,
+        110,
+        135
+      ],
+      "description": "Faceted dark reception desk with thin top and work recess",
+      "uncertainty_m": 0.5
+    },
+    {
+      "id": "reception_wall_emblem",
+      "category": "wall_art",
+      "evidence_sample_ids": [
+        0,
+        135
+      ],
+      "description": "White shield relief and curved dark line",
+      "uncertainty_m": 0.3
+    },
+    {
+      "id": "far_seat_0",
+      "category": "ottoman",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_seat_1",
+      "category": "lounge_chair",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_seat_2",
+      "category": "lounge_chair",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_seat_3",
+      "category": "ottoman",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_seat_4",
+      "category": "ottoman",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_seat_5",
+      "category": "lounge_chair",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "near_seat_0",
+      "category": "ottoman",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "near_seat_1",
+      "category": "lounge_chair",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "near_seat_2",
+      "category": "lounge_chair",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "near_seat_3",
+      "category": "ottoman",
+      "evidence_sample_ids": [
+        45,
+        60,
+        72,
+        90
+      ],
+      "description": "Separate rounded upholstered module; clipped contact sides inferred from distinct scalloped RGB silhouettes",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "far_coffee_table",
+      "category": "coffee_table",
+      "evidence_sample_ids": [
+        0,
+        135
+      ],
+      "description": "Thin oval dark tabletop on fluted radial pedestal",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "near_coffee_table",
+      "category": "coffee_table",
+      "evidence_sample_ids": [
+        45,
+        60,
+        90
+      ],
+      "description": "Thin oval dark tabletop on fluted radial pedestal",
+      "uncertainty_m": 0.16
+    },
+    {
+      "id": "window_bush",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        0,
+        90,
+        125
+      ],
+      "description": "Observed foliage mass and planter; individual leaves inferred",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "mirror_vase",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        45,
+        60,
+        90,
+        135
+      ],
+      "description": "Observed foliage mass and planter; individual leaves inferred",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "near_window_bush",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        90,
+        100
+      ],
+      "description": "Observed foliage mass and planter; individual leaves inferred",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "far_corner_bowl",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        0,
+        45
+      ],
+      "description": "Observed foliage mass and planter; individual leaves inferred",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "flower_trough_0",
+      "category": "planter",
+      "evidence_sample_ids": [
+        0,
+        80,
+        90,
+        135
+      ],
+      "description": "Rectangular concrete trough with yellow flowering branches",
+      "uncertainty_m": 0.18
+    },
+    {
+      "id": "flower_trough_1",
+      "category": "planter",
+      "evidence_sample_ids": [
+        0,
+        80,
+        90,
+        135
+      ],
+      "description": "Rectangular concrete trough with yellow flowering branches",
+      "uncertainty_m": 0.18
+    },
+    {
+      "id": "bird_of_paradise_0",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        60,
+        90
+      ],
+      "description": "Tall square planter with broad leaves and orange flowers",
+      "uncertainty_m": 0.2
+    },
+    {
+      "id": "bird_of_paradise_1",
+      "category": "potted_plant",
+      "evidence_sample_ids": [
+        60,
+        90
+      ],
+      "description": "Tall square planter with broad leaves and orange flowers",
+      "uncertainty_m": 0.2
+    },
+    {
+      "id": "reception_tree_0",
+      "category": "potted_tree",
+      "evidence_sample_ids": [
+        0,
+        135
+      ],
+      "description": "Slender indoor tree in pale ceramic vase",
+      "uncertainty_m": 0.4
+    },
+    {
+      "id": "reception_tree_1",
+      "category": "potted_tree",
+      "evidence_sample_ids": [
+        0,
+        135
+      ],
+      "description": "Slender indoor tree in pale ceramic vase",
+      "uncertainty_m": 0.4
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90
+      ],
+      "description": "White cylindrical drum shade on three slender legs",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90
+      ],
+      "description": "White cylindrical drum shade on three slender legs",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90
+      ],
+      "description": "White cylindrical drum shade on three slender legs",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "mirror_00",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_01",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_02",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_03",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_04",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_05",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_06",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_07",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_08",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "mirror_09",
+      "category": "mirror",
+      "evidence_sample_ids": [
+        45,
+        60,
+        80
+      ],
+      "description": "Circular reflective disc on timber wall; reflection is not extra room",
+      "uncertainty_m": 0.12
+    },
+    {
+      "id": "pendant_00",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_01",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_02",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_03",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_04",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_05",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_06",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_07",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_08",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_09",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_10",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_11",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_12",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_13",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_14",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_15",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_16",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_17",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_18",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    },
+    {
+      "id": "pendant_19",
+      "category": "ceiling_light",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        125
+      ],
+      "description": "Suspended shallow woven bowl with luminous central disc",
+      "uncertainty_m": 0.25
+    }
+  ]
+}

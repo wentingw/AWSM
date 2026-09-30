@@ -1,0 +1,4789 @@
+{
+  "objects": [
+    {
+      "id": "floor",
+      "category": "floor",
+      "components": [
+        "floor__slab"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        108,
+        129
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "floor__slab"
+      ],
+      "dimensions": [
+        20.450000762939453,
+        10.25,
+        0.20000000298023224
+      ],
+      "bounds_model_m": [
+        [
+          -2.200000762939453,
+          -6.400000095367432,
+          -0.20000000298023224
+        ],
+        [
+          18.25,
+          3.8499999046325684,
+          0.0
+        ]
+      ],
+      "position": [
+        8.024999618530273,
+        -1.2750000953674316,
+        -0.10000000149011612
+      ]
+    },
+    {
+      "id": "floor_inset",
+      "category": "floor_finish",
+      "components": [
+        "floor_inset__polished_rectangle"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        108,
+        129
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "floor_inset__polished_rectangle"
+      ],
+      "dimensions": [
+        17.750000476837158,
+        4.650000095367432,
+        0.017999999225139618
+      ],
+      "bounds_model_m": [
+        [
+          -1.6500000953674316,
+          -2.6000001430511475,
+          0.0
+        ],
+        [
+          16.100000381469727,
+          2.049999952316284,
+          0.017999999225139618
+        ]
+      ],
+      "position": [
+        7.2250001430511475,
+        -0.27500009536743164,
+        0.008999999612569809
+      ]
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "components": [
+        "ceiling__plaster"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "above": "room"
+      },
+      "component_names": [
+        "ceiling__plaster"
+      ],
+      "dimensions": [
+        20.450000762939453,
+        10.25,
+        0.18000030517578125
+      ],
+      "bounds_model_m": [
+        [
+          -2.200000762939453,
+          -6.400000095367432,
+          5.25
+        ],
+        [
+          18.25,
+          3.8499999046325684,
+          5.430000305175781
+        ]
+      ],
+      "position": [
+        8.024999618530273,
+        -1.2750000953674316,
+        5.340000152587891
+      ]
+    },
+    {
+      "id": "reception_wall",
+      "category": "wall",
+      "components": [
+        "reception_wall__substrate",
+        "reception_wall__panel_0_0",
+        "reception_wall__panel_0_1",
+        "reception_wall__panel_0_2",
+        "reception_wall__panel_1_0",
+        "reception_wall__panel_1_1",
+        "reception_wall__panel_1_2",
+        "reception_wall__panel_2_0",
+        "reception_wall__panel_2_1",
+        "reception_wall__panel_2_2",
+        "reception_wall__panel_3_0",
+        "reception_wall__panel_3_1",
+        "reception_wall__panel_3_2",
+        "reception_wall__panel_4_0",
+        "reception_wall__panel_4_1",
+        "reception_wall__panel_4_2",
+        "reception_wall__panel_5_0",
+        "reception_wall__panel_5_1",
+        "reception_wall__panel_5_2",
+        "reception_wall__panel_6_0",
+        "reception_wall__panel_6_1",
+        "reception_wall__panel_6_2",
+        "reception_wall__panel_7_0",
+        "reception_wall__panel_7_1",
+        "reception_wall__panel_7_2",
+        "reception_wall__panel_8_0",
+        "reception_wall__panel_8_1",
+        "reception_wall__panel_8_2",
+        "reception_wall__panel_9_0",
+        "reception_wall__panel_9_1",
+        "reception_wall__panel_9_2",
+        "reception_wall__panel_10_0",
+        "reception_wall__panel_10_1",
+        "reception_wall__panel_10_2",
+        "reception_wall__panel_11_0",
+        "reception_wall__panel_11_1",
+        "reception_wall__panel_11_2"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        129
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "reception_wall__substrate",
+        "reception_wall__panel_0_0",
+        "reception_wall__panel_0_1",
+        "reception_wall__panel_0_2",
+        "reception_wall__panel_1_0",
+        "reception_wall__panel_1_1",
+        "reception_wall__panel_1_2",
+        "reception_wall__panel_2_0",
+        "reception_wall__panel_2_1",
+        "reception_wall__panel_2_2",
+        "reception_wall__panel_3_0",
+        "reception_wall__panel_3_1",
+        "reception_wall__panel_3_2",
+        "reception_wall__panel_4_0",
+        "reception_wall__panel_4_1",
+        "reception_wall__panel_4_2",
+        "reception_wall__panel_5_0",
+        "reception_wall__panel_5_1",
+        "reception_wall__panel_5_2",
+        "reception_wall__panel_6_0",
+        "reception_wall__panel_6_1",
+        "reception_wall__panel_6_2",
+        "reception_wall__panel_7_0",
+        "reception_wall__panel_7_1",
+        "reception_wall__panel_7_2",
+        "reception_wall__panel_8_0",
+        "reception_wall__panel_8_1",
+        "reception_wall__panel_8_2",
+        "reception_wall__panel_9_0",
+        "reception_wall__panel_9_1",
+        "reception_wall__panel_9_2",
+        "reception_wall__panel_10_0",
+        "reception_wall__panel_10_1",
+        "reception_wall__panel_10_2",
+        "reception_wall__panel_11_0",
+        "reception_wall__panel_11_1",
+        "reception_wall__panel_11_2"
+      ],
+      "dimensions": [
+        0.17950057983398438,
+        10.25,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          18.14550018310547,
+          -6.400000095367432,
+          0.0
+        ],
+        [
+          18.325000762939453,
+          3.8499999046325684,
+          5.25
+        ]
+      ],
+      "position": [
+        18.23525047302246,
+        -1.2750000953674316,
+        2.625
+      ]
+    },
+    {
+      "id": "near_end_wall",
+      "category": "wall",
+      "components": [
+        "near_end_wall__substrate",
+        "near_end_wall__panel_0_0",
+        "near_end_wall__panel_0_1",
+        "near_end_wall__panel_0_2",
+        "near_end_wall__panel_1_0",
+        "near_end_wall__panel_1_1",
+        "near_end_wall__panel_1_2",
+        "near_end_wall__panel_2_0",
+        "near_end_wall__panel_2_1",
+        "near_end_wall__panel_2_2",
+        "near_end_wall__panel_3_0",
+        "near_end_wall__panel_3_1",
+        "near_end_wall__panel_3_2",
+        "near_end_wall__panel_4_0",
+        "near_end_wall__panel_4_1",
+        "near_end_wall__panel_4_2",
+        "near_end_wall__panel_5_0",
+        "near_end_wall__panel_5_1",
+        "near_end_wall__panel_5_2",
+        "near_end_wall__panel_6_0",
+        "near_end_wall__panel_6_1",
+        "near_end_wall__panel_6_2",
+        "near_end_wall__panel_7_0",
+        "near_end_wall__panel_7_1",
+        "near_end_wall__panel_7_2",
+        "near_end_wall__panel_8_0",
+        "near_end_wall__panel_8_1",
+        "near_end_wall__panel_8_2",
+        "near_end_wall__panel_9_0",
+        "near_end_wall__panel_9_1",
+        "near_end_wall__panel_9_2",
+        "near_end_wall__panel_10_0",
+        "near_end_wall__panel_10_1",
+        "near_end_wall__panel_10_2",
+        "near_end_wall__panel_11_0",
+        "near_end_wall__panel_11_1",
+        "near_end_wall__panel_11_2"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        129
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "near_end_wall__substrate",
+        "near_end_wall__panel_0_0",
+        "near_end_wall__panel_0_1",
+        "near_end_wall__panel_0_2",
+        "near_end_wall__panel_1_0",
+        "near_end_wall__panel_1_1",
+        "near_end_wall__panel_1_2",
+        "near_end_wall__panel_2_0",
+        "near_end_wall__panel_2_1",
+        "near_end_wall__panel_2_2",
+        "near_end_wall__panel_3_0",
+        "near_end_wall__panel_3_1",
+        "near_end_wall__panel_3_2",
+        "near_end_wall__panel_4_0",
+        "near_end_wall__panel_4_1",
+        "near_end_wall__panel_4_2",
+        "near_end_wall__panel_5_0",
+        "near_end_wall__panel_5_1",
+        "near_end_wall__panel_5_2",
+        "near_end_wall__panel_6_0",
+        "near_end_wall__panel_6_1",
+        "near_end_wall__panel_6_2",
+        "near_end_wall__panel_7_0",
+        "near_end_wall__panel_7_1",
+        "near_end_wall__panel_7_2",
+        "near_end_wall__panel_8_0",
+        "near_end_wall__panel_8_1",
+        "near_end_wall__panel_8_2",
+        "near_end_wall__panel_9_0",
+        "near_end_wall__panel_9_1",
+        "near_end_wall__panel_9_2",
+        "near_end_wall__panel_10_0",
+        "near_end_wall__panel_10_1",
+        "near_end_wall__panel_10_2",
+        "near_end_wall__panel_11_0",
+        "near_end_wall__panel_11_1",
+        "near_end_wall__panel_11_2"
+      ],
+      "dimensions": [
+        0.17950010299682617,
+        10.25,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          -2.2750000953674316,
+          -6.400000095367432,
+          0.0
+        ],
+        [
+          -2.0954999923706055,
+          3.8499999046325684,
+          5.25
+        ]
+      ],
+      "position": [
+        -2.1852500438690186,
+        -1.2750000953674316,
+        2.625
+      ]
+    },
+    {
+      "id": "recess_wall",
+      "category": "wall",
+      "components": [
+        "recess_wall__core0",
+        "recess_wall__panel0_0_0",
+        "recess_wall__panel0_0_1",
+        "recess_wall__panel0_0_2",
+        "recess_wall__panel0_1_0",
+        "recess_wall__panel0_1_1",
+        "recess_wall__panel0_1_2",
+        "recess_wall__panel0_2_0",
+        "recess_wall__panel0_2_1",
+        "recess_wall__panel0_2_2",
+        "recess_wall__panel0_3_0",
+        "recess_wall__panel0_3_1",
+        "recess_wall__panel0_3_2",
+        "recess_wall__panel0_4_0",
+        "recess_wall__panel0_4_1",
+        "recess_wall__panel0_4_2",
+        "recess_wall__panel0_5_0",
+        "recess_wall__panel0_5_1",
+        "recess_wall__panel0_5_2",
+        "recess_wall__panel0_6_0",
+        "recess_wall__panel0_6_1",
+        "recess_wall__panel0_6_2",
+        "recess_wall__panel0_7_0",
+        "recess_wall__panel0_7_1",
+        "recess_wall__panel0_7_2",
+        "recess_wall__panel0_8_0",
+        "recess_wall__panel0_8_1",
+        "recess_wall__panel0_8_2",
+        "recess_wall__panel0_9_0",
+        "recess_wall__panel0_9_1",
+        "recess_wall__panel0_9_2",
+        "recess_wall__panel0_10_0",
+        "recess_wall__panel0_10_1",
+        "recess_wall__panel0_10_2",
+        "recess_wall__panel0_11_0",
+        "recess_wall__panel0_11_1",
+        "recess_wall__panel0_11_2",
+        "recess_wall__panel0_12_0",
+        "recess_wall__panel0_12_1",
+        "recess_wall__panel0_12_2",
+        "recess_wall__panel0_13_0",
+        "recess_wall__panel0_13_1",
+        "recess_wall__panel0_13_2",
+        "recess_wall__core1",
+        "recess_wall__panel1_0_1",
+        "recess_wall__panel1_0_2",
+        "recess_wall__core2",
+        "recess_wall__panel2_0_0",
+        "recess_wall__panel2_0_1",
+        "recess_wall__panel2_0_2",
+        "recess_wall__panel2_1_0",
+        "recess_wall__panel2_1_1",
+        "recess_wall__panel2_1_2",
+        "recess_wall__panel2_2_0",
+        "recess_wall__panel2_2_1",
+        "recess_wall__panel2_2_2",
+        "recess_wall__panel2_3_0",
+        "recess_wall__panel2_3_1",
+        "recess_wall__panel2_3_2",
+        "recess_wall__core3",
+        "recess_wall__panel3_0_1",
+        "recess_wall__panel3_0_2",
+        "recess_wall__core4",
+        "recess_wall__panel4_0_0",
+        "recess_wall__panel4_0_1",
+        "recess_wall__panel4_0_2",
+        "recess_wall__panel4_1_0",
+        "recess_wall__panel4_1_1",
+        "recess_wall__panel4_1_2",
+        "recess_wall__panel4_2_0",
+        "recess_wall__panel4_2_1",
+        "recess_wall__panel4_2_2",
+        "recess_wall__panel4_3_0",
+        "recess_wall__panel4_3_1",
+        "recess_wall__panel4_3_2",
+        "recess_wall__panel4_4_0",
+        "recess_wall__panel4_4_1",
+        "recess_wall__panel4_4_2"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "recess_wall__core0",
+        "recess_wall__panel0_0_0",
+        "recess_wall__panel0_0_1",
+        "recess_wall__panel0_0_2",
+        "recess_wall__panel0_1_0",
+        "recess_wall__panel0_1_1",
+        "recess_wall__panel0_1_2",
+        "recess_wall__panel0_2_0",
+        "recess_wall__panel0_2_1",
+        "recess_wall__panel0_2_2",
+        "recess_wall__panel0_3_0",
+        "recess_wall__panel0_3_1",
+        "recess_wall__panel0_3_2",
+        "recess_wall__panel0_4_0",
+        "recess_wall__panel0_4_1",
+        "recess_wall__panel0_4_2",
+        "recess_wall__panel0_5_0",
+        "recess_wall__panel0_5_1",
+        "recess_wall__panel0_5_2",
+        "recess_wall__panel0_6_0",
+        "recess_wall__panel0_6_1",
+        "recess_wall__panel0_6_2",
+        "recess_wall__panel0_7_0",
+        "recess_wall__panel0_7_1",
+        "recess_wall__panel0_7_2",
+        "recess_wall__panel0_8_0",
+        "recess_wall__panel0_8_1",
+        "recess_wall__panel0_8_2",
+        "recess_wall__panel0_9_0",
+        "recess_wall__panel0_9_1",
+        "recess_wall__panel0_9_2",
+        "recess_wall__panel0_10_0",
+        "recess_wall__panel0_10_1",
+        "recess_wall__panel0_10_2",
+        "recess_wall__panel0_11_0",
+        "recess_wall__panel0_11_1",
+        "recess_wall__panel0_11_2",
+        "recess_wall__panel0_12_0",
+        "recess_wall__panel0_12_1",
+        "recess_wall__panel0_12_2",
+        "recess_wall__panel0_13_0",
+        "recess_wall__panel0_13_1",
+        "recess_wall__panel0_13_2",
+        "recess_wall__core1",
+        "recess_wall__panel1_0_1",
+        "recess_wall__panel1_0_2",
+        "recess_wall__core2",
+        "recess_wall__panel2_0_0",
+        "recess_wall__panel2_0_1",
+        "recess_wall__panel2_0_2",
+        "recess_wall__panel2_1_0",
+        "recess_wall__panel2_1_1",
+        "recess_wall__panel2_1_2",
+        "recess_wall__panel2_2_0",
+        "recess_wall__panel2_2_1",
+        "recess_wall__panel2_2_2",
+        "recess_wall__panel2_3_0",
+        "recess_wall__panel2_3_1",
+        "recess_wall__panel2_3_2",
+        "recess_wall__core3",
+        "recess_wall__panel3_0_1",
+        "recess_wall__panel3_0_2",
+        "recess_wall__core4",
+        "recess_wall__panel4_0_0",
+        "recess_wall__panel4_0_1",
+        "recess_wall__panel4_0_2",
+        "recess_wall__panel4_1_0",
+        "recess_wall__panel4_1_1",
+        "recess_wall__panel4_1_2",
+        "recess_wall__panel4_2_0",
+        "recess_wall__panel4_2_1",
+        "recess_wall__panel4_2_2",
+        "recess_wall__panel4_3_0",
+        "recess_wall__panel4_3_1",
+        "recess_wall__panel4_3_2",
+        "recess_wall__panel4_4_0",
+        "recess_wall__panel4_4_1",
+        "recess_wall__panel4_4_2"
+      ],
+      "dimensions": [
+        20.450000286102295,
+        0.1875,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          -2.200000286102295,
+          -6.474999904632568,
+          0.0
+        ],
+        [
+          18.25,
+          -6.287499904632568,
+          5.25
+        ]
+      ],
+      "position": [
+        8.024999856948853,
+        -6.381249904632568,
+        2.625
+      ]
+    },
+    {
+      "id": "mirror_partition",
+      "category": "wall",
+      "components": [
+        "mirror_partition__core0",
+        "mirror_partition__panel0_0_1",
+        "mirror_partition__panel0_0_2",
+        "mirror_partition__core1",
+        "mirror_partition__panel1_0_0",
+        "mirror_partition__panel1_0_1",
+        "mirror_partition__panel1_0_2",
+        "mirror_partition__panel1_1_0",
+        "mirror_partition__panel1_1_1",
+        "mirror_partition__panel1_1_2",
+        "mirror_partition__panel1_2_0",
+        "mirror_partition__panel1_2_1",
+        "mirror_partition__panel1_2_2",
+        "mirror_partition__panel1_3_0",
+        "mirror_partition__panel1_3_1",
+        "mirror_partition__panel1_3_2",
+        "mirror_partition__panel1_4_0",
+        "mirror_partition__panel1_4_1",
+        "mirror_partition__panel1_4_2",
+        "mirror_partition__panel1_5_0",
+        "mirror_partition__panel1_5_1",
+        "mirror_partition__panel1_5_2",
+        "mirror_partition__panel1_6_0",
+        "mirror_partition__panel1_6_1",
+        "mirror_partition__panel1_6_2",
+        "mirror_partition__panel1_7_0",
+        "mirror_partition__panel1_7_1",
+        "mirror_partition__panel1_7_2",
+        "mirror_partition__core2",
+        "mirror_partition__panel2_0_1",
+        "mirror_partition__panel2_0_2",
+        "mirror_partition__core3",
+        "mirror_partition__panel3_0_0",
+        "mirror_partition__panel3_0_1",
+        "mirror_partition__panel3_0_2"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "mirror_partition__core0",
+        "mirror_partition__panel0_0_1",
+        "mirror_partition__panel0_0_2",
+        "mirror_partition__core1",
+        "mirror_partition__panel1_0_0",
+        "mirror_partition__panel1_0_1",
+        "mirror_partition__panel1_0_2",
+        "mirror_partition__panel1_1_0",
+        "mirror_partition__panel1_1_1",
+        "mirror_partition__panel1_1_2",
+        "mirror_partition__panel1_2_0",
+        "mirror_partition__panel1_2_1",
+        "mirror_partition__panel1_2_2",
+        "mirror_partition__panel1_3_0",
+        "mirror_partition__panel1_3_1",
+        "mirror_partition__panel1_3_2",
+        "mirror_partition__panel1_4_0",
+        "mirror_partition__panel1_4_1",
+        "mirror_partition__panel1_4_2",
+        "mirror_partition__panel1_5_0",
+        "mirror_partition__panel1_5_1",
+        "mirror_partition__panel1_5_2",
+        "mirror_partition__panel1_6_0",
+        "mirror_partition__panel1_6_1",
+        "mirror_partition__panel1_6_2",
+        "mirror_partition__panel1_7_0",
+        "mirror_partition__panel1_7_1",
+        "mirror_partition__panel1_7_2",
+        "mirror_partition__core2",
+        "mirror_partition__panel2_0_1",
+        "mirror_partition__panel2_0_2",
+        "mirror_partition__core3",
+        "mirror_partition__panel3_0_0",
+        "mirror_partition__panel3_0_1",
+        "mirror_partition__panel3_0_2"
+      ],
+      "dimensions": [
+        8.599999964237213,
+        0.1874995231628418,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          -0.5999999642372131,
+          -4.274999618530273,
+          0.0
+        ],
+        [
+          8.0,
+          -4.087500095367432,
+          5.25
+        ]
+      ],
+      "position": [
+        3.7000000178813934,
+        -4.1812498569488525,
+        2.625
+      ]
+    },
+    {
+      "id": "partition_end",
+      "category": "wall",
+      "components": [
+        "partition_end__return"
+      ],
+      "evidence_frames": [
+        74,
+        82
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "partition_end__return"
+      ],
+      "dimensions": [
+        0.1399998664855957,
+        2.1999998092651367,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          7.929999828338623,
+          -6.400000095367432,
+          0.0
+        ],
+        [
+          8.069999694824219,
+          -4.200000286102295,
+          5.25
+        ]
+      ],
+      "position": [
+        7.999999761581421,
+        -5.300000190734863,
+        2.625
+      ]
+    },
+    {
+      "id": "metal_door_0",
+      "category": "door",
+      "components": [
+        "metal_door_0__leaf",
+        "metal_door_0__handle"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "metal_door_0__leaf",
+        "metal_door_0__handle"
+      ],
+      "dimensions": [
+        0.9399995803833008,
+        0.12000036239624023,
+        2.240000009536743
+      ],
+      "bounds_model_m": [
+        [
+          6.480000019073486,
+          -4.180000305175781,
+          0.0
+        ],
+        [
+          7.419999599456787,
+          -4.059999942779541,
+          2.240000009536743
+        ]
+      ],
+      "position": [
+        6.949999809265137,
+        -4.120000123977661,
+        1.1200000047683716
+      ]
+    },
+    {
+      "id": "metal_door_1",
+      "category": "door",
+      "components": [
+        "metal_door_1__leaf",
+        "metal_door_1__handle"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "metal_door_1__leaf",
+        "metal_door_1__handle"
+      ],
+      "dimensions": [
+        0.9400005340576172,
+        0.11999988555908203,
+        2.240000009536743
+      ],
+      "bounds_model_m": [
+        [
+          9.179999351501465,
+          -6.380000114440918,
+          0.0
+        ],
+        [
+          10.119999885559082,
+          -6.260000228881836,
+          2.240000009536743
+        ]
+      ],
+      "position": [
+        9.649999618530273,
+        -6.320000171661377,
+        1.1200000047683716
+      ]
+    },
+    {
+      "id": "metal_door_2",
+      "category": "door",
+      "components": [
+        "metal_door_2__leaf",
+        "metal_door_2__handle"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "metal_door_2__leaf",
+        "metal_door_2__handle"
+      ],
+      "dimensions": [
+        0.9400005340576172,
+        0.11999988555908203,
+        2.240000009536743
+      ],
+      "bounds_model_m": [
+        [
+          13.479999542236328,
+          -6.380000114440918,
+          0.0
+        ],
+        [
+          14.420000076293945,
+          -6.260000228881836,
+          2.240000009536743
+        ]
+      ],
+      "position": [
+        13.949999809265137,
+        -6.320000171661377,
+        1.1200000047683716
+      ]
+    },
+    {
+      "id": "glazed_facade",
+      "category": "window_wall",
+      "components": [
+        "glazed_facade__bright_glass_0",
+        "glazed_facade__bright_glass_1",
+        "glazed_facade__bright_glass_2",
+        "glazed_facade__bright_glass_3",
+        "glazed_facade__bright_glass_4",
+        "glazed_facade__mullion_0",
+        "glazed_facade__mullion_1",
+        "glazed_facade__mullion_2",
+        "glazed_facade__mullion_3",
+        "glazed_facade__mullion_4",
+        "glazed_facade__mullion_5",
+        "glazed_facade__mullion_8",
+        "glazed_facade__mullion_9",
+        "glazed_facade__mullion_10",
+        "glazed_facade__mullion_11",
+        "glazed_facade__mullion_12",
+        "glazed_facade__mullion_13",
+        "glazed_facade__mullion_14",
+        "glazed_facade__mullion_15",
+        "glazed_facade__mullion_16",
+        "glazed_facade__mullion_17",
+        "glazed_facade__mullion_20",
+        "glazed_facade__mullion_21",
+        "glazed_facade__mullion_22",
+        "glazed_facade__mullion_23",
+        "glazed_facade__mullion_24",
+        "glazed_facade__mullion_25",
+        "glazed_facade__mullion_26",
+        "glazed_facade__transom"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Measured DA3 plane y3.85; frames and pane segmentation from RGB. Opaque bright glass proxy: exterior not observed. Thickness inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "glazed_facade__bright_glass_0",
+        "glazed_facade__bright_glass_1",
+        "glazed_facade__bright_glass_2",
+        "glazed_facade__bright_glass_3",
+        "glazed_facade__bright_glass_4",
+        "glazed_facade__mullion_0",
+        "glazed_facade__mullion_1",
+        "glazed_facade__mullion_2",
+        "glazed_facade__mullion_3",
+        "glazed_facade__mullion_4",
+        "glazed_facade__mullion_5",
+        "glazed_facade__mullion_8",
+        "glazed_facade__mullion_9",
+        "glazed_facade__mullion_10",
+        "glazed_facade__mullion_11",
+        "glazed_facade__mullion_12",
+        "glazed_facade__mullion_13",
+        "glazed_facade__mullion_14",
+        "glazed_facade__mullion_15",
+        "glazed_facade__mullion_16",
+        "glazed_facade__mullion_17",
+        "glazed_facade__mullion_20",
+        "glazed_facade__mullion_21",
+        "glazed_facade__mullion_22",
+        "glazed_facade__mullion_23",
+        "glazed_facade__mullion_24",
+        "glazed_facade__mullion_25",
+        "glazed_facade__mullion_26",
+        "glazed_facade__transom"
+      ],
+      "dimensions": [
+        20.484999895095825,
+        0.19250011444091797,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          -2.2174999713897705,
+          3.75,
+          0.0
+        ],
+        [
+          18.267499923706055,
+          3.942500114440918,
+          5.25
+        ]
+      ],
+      "position": [
+        8.024999976158142,
+        3.846250057220459,
+        2.625
+      ]
+    },
+    {
+      "id": "entry_double_door_0",
+      "category": "door",
+      "components": [
+        "entry_double_door_0__leaf0_glass",
+        "entry_double_door_0__leaf0_upright-1",
+        "entry_double_door_0__leaf0_upright1",
+        "entry_double_door_0__leaf0_rail0.07",
+        "entry_double_door_0__leaf0_rail2.67",
+        "entry_double_door_0__leaf0_handle",
+        "entry_double_door_0__leaf1_glass",
+        "entry_double_door_0__leaf1_upright-1",
+        "entry_double_door_0__leaf1_upright1",
+        "entry_double_door_0__leaf1_rail0.07",
+        "entry_double_door_0__leaf1_rail2.67",
+        "entry_double_door_0__leaf1_handle"
+      ],
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "entry_double_door_0__leaf0_glass",
+        "entry_double_door_0__leaf0_upright-1",
+        "entry_double_door_0__leaf0_upright1",
+        "entry_double_door_0__leaf0_rail0.07",
+        "entry_double_door_0__leaf0_rail2.67",
+        "entry_double_door_0__leaf0_handle",
+        "entry_double_door_0__leaf1_glass",
+        "entry_double_door_0__leaf1_upright-1",
+        "entry_double_door_0__leaf1_upright1",
+        "entry_double_door_0__leaf1_rail0.07",
+        "entry_double_door_0__leaf1_rail2.67",
+        "entry_double_door_0__leaf1_handle"
+      ],
+      "dimensions": [
+        1.7999999523162842,
+        0.19999980926513672,
+        2.819999970495701
+      ],
+      "bounds_model_m": [
+        [
+          1.7899999618530273,
+          3.6075000762939453,
+          -0.03999999910593033
+        ],
+        [
+          3.5899999141693115,
+          3.807499885559082,
+          2.7799999713897705
+        ]
+      ],
+      "position": [
+        2.6899999380111694,
+        3.7074999809265137,
+        1.36999998614192
+      ]
+    },
+    {
+      "id": "entry_double_door_1",
+      "category": "door",
+      "components": [
+        "entry_double_door_1__leaf0_glass",
+        "entry_double_door_1__leaf0_upright-1",
+        "entry_double_door_1__leaf0_upright1",
+        "entry_double_door_1__leaf0_rail0.07",
+        "entry_double_door_1__leaf0_rail2.67",
+        "entry_double_door_1__leaf0_handle",
+        "entry_double_door_1__leaf1_glass",
+        "entry_double_door_1__leaf1_upright-1",
+        "entry_double_door_1__leaf1_upright1",
+        "entry_double_door_1__leaf1_rail0.07",
+        "entry_double_door_1__leaf1_rail2.67",
+        "entry_double_door_1__leaf1_handle"
+      ],
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "entry_double_door_1__leaf0_glass",
+        "entry_double_door_1__leaf0_upright-1",
+        "entry_double_door_1__leaf0_upright1",
+        "entry_double_door_1__leaf0_rail0.07",
+        "entry_double_door_1__leaf0_rail2.67",
+        "entry_double_door_1__leaf0_handle",
+        "entry_double_door_1__leaf1_glass",
+        "entry_double_door_1__leaf1_upright-1",
+        "entry_double_door_1__leaf1_upright1",
+        "entry_double_door_1__leaf1_rail0.07",
+        "entry_double_door_1__leaf1_rail2.67",
+        "entry_double_door_1__leaf1_handle"
+      ],
+      "dimensions": [
+        1.7999992370605469,
+        0.19999980926513672,
+        2.819999970495701
+      ],
+      "bounds_model_m": [
+        [
+          11.200000762939453,
+          3.6075000762939453,
+          -0.03999999910593033
+        ],
+        [
+          13.0,
+          3.807499885559082,
+          2.7799999713897705
+        ]
+      ],
+      "position": [
+        12.100000381469727,
+        3.7074999809265137,
+        1.36999998614192
+      ]
+    },
+    {
+      "id": "window_column",
+      "category": "column",
+      "components": [
+        "window_column__shaft"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Cylinder visually observed; radius and position inferred from ray-plane estimates. Silhouette triangulation was rejected.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "window_column__shaft"
+      ],
+      "dimensions": [
+        0.5966825485229492,
+        0.5966830253601074,
+        5.25
+      ],
+      "bounds_model_m": [
+        [
+          7.476229667663574,
+          2.6138269901275635,
+          0.0
+        ],
+        [
+          8.072912216186523,
+          3.210510015487671,
+          5.25
+        ]
+      ],
+      "position": [
+        7.774570941925049,
+        2.912168502807617,
+        2.625
+      ]
+    },
+    {
+      "id": "ceiling_battens_window",
+      "category": "ceiling_detail",
+      "components": [
+        "ceiling_battens_window__slat_0",
+        "ceiling_battens_window__slat_1",
+        "ceiling_battens_window__slat_2",
+        "ceiling_battens_window__slat_3",
+        "ceiling_battens_window__slat_4",
+        "ceiling_battens_window__slat_5",
+        "ceiling_battens_window__slat_6",
+        "ceiling_battens_window__slat_7",
+        "ceiling_battens_window__slat_8",
+        "ceiling_battens_window__slat_9",
+        "ceiling_battens_window__slat_10",
+        "ceiling_battens_window__slat_11",
+        "ceiling_battens_window__slat_12",
+        "ceiling_battens_window__slat_13",
+        "ceiling_battens_window__slat_14",
+        "ceiling_battens_window__slat_15",
+        "ceiling_battens_window__slat_16",
+        "ceiling_battens_window__slat_17",
+        "ceiling_battens_window__slat_18",
+        "ceiling_battens_window__slat_19",
+        "ceiling_battens_window__slat_20",
+        "ceiling_battens_window__slat_21",
+        "ceiling_battens_window__slat_22",
+        "ceiling_battens_window__slat_23",
+        "ceiling_battens_window__slat_24",
+        "ceiling_battens_window__slat_25",
+        "ceiling_battens_window__slat_26",
+        "ceiling_battens_window__slat_27",
+        "ceiling_battens_window__slat_28",
+        "ceiling_battens_window__slat_29",
+        "ceiling_battens_window__slat_30",
+        "ceiling_battens_window__slat_31",
+        "ceiling_battens_window__slat_32",
+        "ceiling_battens_window__slat_33",
+        "ceiling_battens_window__slat_34",
+        "ceiling_battens_window__slat_35",
+        "ceiling_battens_window__slat_36",
+        "ceiling_battens_window__slat_37",
+        "ceiling_battens_window__slat_38",
+        "ceiling_battens_window__slat_39",
+        "ceiling_battens_window__slat_40",
+        "ceiling_battens_window__slat_41",
+        "ceiling_battens_window__slat_42",
+        "ceiling_battens_window__slat_43",
+        "ceiling_battens_window__slat_44",
+        "ceiling_battens_window__slat_45",
+        "ceiling_battens_window__slat_46",
+        "ceiling_battens_window__slat_47",
+        "ceiling_battens_window__slat_48",
+        "ceiling_battens_window__slat_49",
+        "ceiling_battens_window__slat_50",
+        "ceiling_battens_window__slat_51",
+        "ceiling_battens_window__slat_52",
+        "ceiling_battens_window__slat_53",
+        "ceiling_battens_window__slat_54",
+        "ceiling_battens_window__slat_55",
+        "ceiling_battens_window__slat_56",
+        "ceiling_battens_window__slat_57",
+        "ceiling_battens_window__slat_58",
+        "ceiling_battens_window__slat_59",
+        "ceiling_battens_window__slat_60",
+        "ceiling_battens_window__slat_61",
+        "ceiling_battens_window__slat_62",
+        "ceiling_battens_window__slat_63",
+        "ceiling_battens_window__slat_64",
+        "ceiling_battens_window__slat_65",
+        "ceiling_battens_window__slat_66",
+        "ceiling_battens_window__slat_67",
+        "ceiling_battens_window__slat_68",
+        "ceiling_battens_window__slat_69",
+        "ceiling_battens_window__slat_70",
+        "ceiling_battens_window__slat_71",
+        "ceiling_battens_window__slat_72",
+        "ceiling_battens_window__slat_73",
+        "ceiling_battens_window__slat_74",
+        "ceiling_battens_window__slat_75",
+        "ceiling_battens_window__slat_76",
+        "ceiling_battens_window__slat_77",
+        "ceiling_battens_window__slat_78",
+        "ceiling_battens_window__slat_79",
+        "ceiling_battens_window__slat_80",
+        "ceiling_battens_window__slat_81",
+        "ceiling_battens_window__slat_82",
+        "ceiling_battens_window__slat_83",
+        "ceiling_battens_window__slat_84",
+        "ceiling_battens_window__slat_85",
+        "ceiling_battens_window__slat_86",
+        "ceiling_battens_window__slat_87",
+        "ceiling_battens_window__slat_88",
+        "ceiling_battens_window__slat_89",
+        "ceiling_battens_window__slat_90",
+        "ceiling_battens_window__slat_91",
+        "ceiling_battens_window__slat_92",
+        "ceiling_battens_window__slat_93",
+        "ceiling_battens_window__slat_94",
+        "ceiling_battens_window__slat_95",
+        "ceiling_battens_window__slat_96",
+        "ceiling_battens_window__slat_97",
+        "ceiling_battens_window__slat_98",
+        "ceiling_battens_window__slat_99"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "attached_to": "ceiling"
+      },
+      "component_names": [
+        "ceiling_battens_window__slat_0",
+        "ceiling_battens_window__slat_1",
+        "ceiling_battens_window__slat_2",
+        "ceiling_battens_window__slat_3",
+        "ceiling_battens_window__slat_4",
+        "ceiling_battens_window__slat_5",
+        "ceiling_battens_window__slat_6",
+        "ceiling_battens_window__slat_7",
+        "ceiling_battens_window__slat_8",
+        "ceiling_battens_window__slat_9",
+        "ceiling_battens_window__slat_10",
+        "ceiling_battens_window__slat_11",
+        "ceiling_battens_window__slat_12",
+        "ceiling_battens_window__slat_13",
+        "ceiling_battens_window__slat_14",
+        "ceiling_battens_window__slat_15",
+        "ceiling_battens_window__slat_16",
+        "ceiling_battens_window__slat_17",
+        "ceiling_battens_window__slat_18",
+        "ceiling_battens_window__slat_19",
+        "ceiling_battens_window__slat_20",
+        "ceiling_battens_window__slat_21",
+        "ceiling_battens_window__slat_22",
+        "ceiling_battens_window__slat_23",
+        "ceiling_battens_window__slat_24",
+        "ceiling_battens_window__slat_25",
+        "ceiling_battens_window__slat_26",
+        "ceiling_battens_window__slat_27",
+        "ceiling_battens_window__slat_28",
+        "ceiling_battens_window__slat_29",
+        "ceiling_battens_window__slat_30",
+        "ceiling_battens_window__slat_31",
+        "ceiling_battens_window__slat_32",
+        "ceiling_battens_window__slat_33",
+        "ceiling_battens_window__slat_34",
+        "ceiling_battens_window__slat_35",
+        "ceiling_battens_window__slat_36",
+        "ceiling_battens_window__slat_37",
+        "ceiling_battens_window__slat_38",
+        "ceiling_battens_window__slat_39",
+        "ceiling_battens_window__slat_40",
+        "ceiling_battens_window__slat_41",
+        "ceiling_battens_window__slat_42",
+        "ceiling_battens_window__slat_43",
+        "ceiling_battens_window__slat_44",
+        "ceiling_battens_window__slat_45",
+        "ceiling_battens_window__slat_46",
+        "ceiling_battens_window__slat_47",
+        "ceiling_battens_window__slat_48",
+        "ceiling_battens_window__slat_49",
+        "ceiling_battens_window__slat_50",
+        "ceiling_battens_window__slat_51",
+        "ceiling_battens_window__slat_52",
+        "ceiling_battens_window__slat_53",
+        "ceiling_battens_window__slat_54",
+        "ceiling_battens_window__slat_55",
+        "ceiling_battens_window__slat_56",
+        "ceiling_battens_window__slat_57",
+        "ceiling_battens_window__slat_58",
+        "ceiling_battens_window__slat_59",
+        "ceiling_battens_window__slat_60",
+        "ceiling_battens_window__slat_61",
+        "ceiling_battens_window__slat_62",
+        "ceiling_battens_window__slat_63",
+        "ceiling_battens_window__slat_64",
+        "ceiling_battens_window__slat_65",
+        "ceiling_battens_window__slat_66",
+        "ceiling_battens_window__slat_67",
+        "ceiling_battens_window__slat_68",
+        "ceiling_battens_window__slat_69",
+        "ceiling_battens_window__slat_70",
+        "ceiling_battens_window__slat_71",
+        "ceiling_battens_window__slat_72",
+        "ceiling_battens_window__slat_73",
+        "ceiling_battens_window__slat_74",
+        "ceiling_battens_window__slat_75",
+        "ceiling_battens_window__slat_76",
+        "ceiling_battens_window__slat_77",
+        "ceiling_battens_window__slat_78",
+        "ceiling_battens_window__slat_79",
+        "ceiling_battens_window__slat_80",
+        "ceiling_battens_window__slat_81",
+        "ceiling_battens_window__slat_82",
+        "ceiling_battens_window__slat_83",
+        "ceiling_battens_window__slat_84",
+        "ceiling_battens_window__slat_85",
+        "ceiling_battens_window__slat_86",
+        "ceiling_battens_window__slat_87",
+        "ceiling_battens_window__slat_88",
+        "ceiling_battens_window__slat_89",
+        "ceiling_battens_window__slat_90",
+        "ceiling_battens_window__slat_91",
+        "ceiling_battens_window__slat_92",
+        "ceiling_battens_window__slat_93",
+        "ceiling_battens_window__slat_94",
+        "ceiling_battens_window__slat_95",
+        "ceiling_battens_window__slat_96",
+        "ceiling_battens_window__slat_97",
+        "ceiling_battens_window__slat_98",
+        "ceiling_battens_window__slat_99"
+      ],
+      "dimensions": [
+        20.300500869750977,
+        1.4499998092651367,
+        0.13000011444091797
+      ],
+      "bounds_model_m": [
+        [
+          -2.1252498626708984,
+          2.4000000953674316,
+          5.125
+        ],
+        [
+          18.175251007080078,
+          3.8499999046325684,
+          5.255000114440918
+        ]
+      ],
+      "position": [
+        8.02500057220459,
+        3.125,
+        5.190000057220459
+      ]
+    },
+    {
+      "id": "ceiling_battens_inner",
+      "category": "ceiling_detail",
+      "components": [
+        "ceiling_battens_inner__slat_0",
+        "ceiling_battens_inner__slat_1",
+        "ceiling_battens_inner__slat_2",
+        "ceiling_battens_inner__slat_3",
+        "ceiling_battens_inner__slat_4",
+        "ceiling_battens_inner__slat_5",
+        "ceiling_battens_inner__slat_6",
+        "ceiling_battens_inner__slat_7",
+        "ceiling_battens_inner__slat_8",
+        "ceiling_battens_inner__slat_9",
+        "ceiling_battens_inner__slat_10",
+        "ceiling_battens_inner__slat_11",
+        "ceiling_battens_inner__slat_12",
+        "ceiling_battens_inner__slat_13",
+        "ceiling_battens_inner__slat_14",
+        "ceiling_battens_inner__slat_15",
+        "ceiling_battens_inner__slat_16",
+        "ceiling_battens_inner__slat_17",
+        "ceiling_battens_inner__slat_18",
+        "ceiling_battens_inner__slat_19",
+        "ceiling_battens_inner__slat_20",
+        "ceiling_battens_inner__slat_21",
+        "ceiling_battens_inner__slat_22",
+        "ceiling_battens_inner__slat_23",
+        "ceiling_battens_inner__slat_24",
+        "ceiling_battens_inner__slat_25",
+        "ceiling_battens_inner__slat_26",
+        "ceiling_battens_inner__slat_27",
+        "ceiling_battens_inner__slat_28",
+        "ceiling_battens_inner__slat_29",
+        "ceiling_battens_inner__slat_30",
+        "ceiling_battens_inner__slat_31",
+        "ceiling_battens_inner__slat_32",
+        "ceiling_battens_inner__slat_33",
+        "ceiling_battens_inner__slat_34",
+        "ceiling_battens_inner__slat_35",
+        "ceiling_battens_inner__slat_36",
+        "ceiling_battens_inner__slat_37",
+        "ceiling_battens_inner__slat_38",
+        "ceiling_battens_inner__slat_39",
+        "ceiling_battens_inner__slat_40",
+        "ceiling_battens_inner__slat_41",
+        "ceiling_battens_inner__slat_42",
+        "ceiling_battens_inner__slat_43",
+        "ceiling_battens_inner__slat_44",
+        "ceiling_battens_inner__slat_45",
+        "ceiling_battens_inner__slat_46",
+        "ceiling_battens_inner__slat_47",
+        "ceiling_battens_inner__slat_48",
+        "ceiling_battens_inner__slat_49",
+        "ceiling_battens_inner__slat_50",
+        "ceiling_battens_inner__slat_51",
+        "ceiling_battens_inner__slat_52",
+        "ceiling_battens_inner__slat_53",
+        "ceiling_battens_inner__slat_54",
+        "ceiling_battens_inner__slat_55",
+        "ceiling_battens_inner__slat_56",
+        "ceiling_battens_inner__slat_57",
+        "ceiling_battens_inner__slat_58",
+        "ceiling_battens_inner__slat_59",
+        "ceiling_battens_inner__slat_60",
+        "ceiling_battens_inner__slat_61",
+        "ceiling_battens_inner__slat_62",
+        "ceiling_battens_inner__slat_63",
+        "ceiling_battens_inner__slat_64",
+        "ceiling_battens_inner__slat_65",
+        "ceiling_battens_inner__slat_66",
+        "ceiling_battens_inner__slat_67",
+        "ceiling_battens_inner__slat_68",
+        "ceiling_battens_inner__slat_69",
+        "ceiling_battens_inner__slat_70",
+        "ceiling_battens_inner__slat_71",
+        "ceiling_battens_inner__slat_72",
+        "ceiling_battens_inner__slat_73",
+        "ceiling_battens_inner__slat_74",
+        "ceiling_battens_inner__slat_75",
+        "ceiling_battens_inner__slat_76",
+        "ceiling_battens_inner__slat_77",
+        "ceiling_battens_inner__slat_78",
+        "ceiling_battens_inner__slat_79",
+        "ceiling_battens_inner__slat_80",
+        "ceiling_battens_inner__slat_81",
+        "ceiling_battens_inner__slat_82",
+        "ceiling_battens_inner__slat_83",
+        "ceiling_battens_inner__slat_84",
+        "ceiling_battens_inner__slat_85",
+        "ceiling_battens_inner__slat_86",
+        "ceiling_battens_inner__slat_87",
+        "ceiling_battens_inner__slat_88",
+        "ceiling_battens_inner__slat_89",
+        "ceiling_battens_inner__slat_90",
+        "ceiling_battens_inner__slat_91",
+        "ceiling_battens_inner__slat_92",
+        "ceiling_battens_inner__slat_93",
+        "ceiling_battens_inner__slat_94",
+        "ceiling_battens_inner__slat_95",
+        "ceiling_battens_inner__slat_96",
+        "ceiling_battens_inner__slat_97",
+        "ceiling_battens_inner__slat_98",
+        "ceiling_battens_inner__slat_99"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "attached_to": "ceiling"
+      },
+      "component_names": [
+        "ceiling_battens_inner__slat_0",
+        "ceiling_battens_inner__slat_1",
+        "ceiling_battens_inner__slat_2",
+        "ceiling_battens_inner__slat_3",
+        "ceiling_battens_inner__slat_4",
+        "ceiling_battens_inner__slat_5",
+        "ceiling_battens_inner__slat_6",
+        "ceiling_battens_inner__slat_7",
+        "ceiling_battens_inner__slat_8",
+        "ceiling_battens_inner__slat_9",
+        "ceiling_battens_inner__slat_10",
+        "ceiling_battens_inner__slat_11",
+        "ceiling_battens_inner__slat_12",
+        "ceiling_battens_inner__slat_13",
+        "ceiling_battens_inner__slat_14",
+        "ceiling_battens_inner__slat_15",
+        "ceiling_battens_inner__slat_16",
+        "ceiling_battens_inner__slat_17",
+        "ceiling_battens_inner__slat_18",
+        "ceiling_battens_inner__slat_19",
+        "ceiling_battens_inner__slat_20",
+        "ceiling_battens_inner__slat_21",
+        "ceiling_battens_inner__slat_22",
+        "ceiling_battens_inner__slat_23",
+        "ceiling_battens_inner__slat_24",
+        "ceiling_battens_inner__slat_25",
+        "ceiling_battens_inner__slat_26",
+        "ceiling_battens_inner__slat_27",
+        "ceiling_battens_inner__slat_28",
+        "ceiling_battens_inner__slat_29",
+        "ceiling_battens_inner__slat_30",
+        "ceiling_battens_inner__slat_31",
+        "ceiling_battens_inner__slat_32",
+        "ceiling_battens_inner__slat_33",
+        "ceiling_battens_inner__slat_34",
+        "ceiling_battens_inner__slat_35",
+        "ceiling_battens_inner__slat_36",
+        "ceiling_battens_inner__slat_37",
+        "ceiling_battens_inner__slat_38",
+        "ceiling_battens_inner__slat_39",
+        "ceiling_battens_inner__slat_40",
+        "ceiling_battens_inner__slat_41",
+        "ceiling_battens_inner__slat_42",
+        "ceiling_battens_inner__slat_43",
+        "ceiling_battens_inner__slat_44",
+        "ceiling_battens_inner__slat_45",
+        "ceiling_battens_inner__slat_46",
+        "ceiling_battens_inner__slat_47",
+        "ceiling_battens_inner__slat_48",
+        "ceiling_battens_inner__slat_49",
+        "ceiling_battens_inner__slat_50",
+        "ceiling_battens_inner__slat_51",
+        "ceiling_battens_inner__slat_52",
+        "ceiling_battens_inner__slat_53",
+        "ceiling_battens_inner__slat_54",
+        "ceiling_battens_inner__slat_55",
+        "ceiling_battens_inner__slat_56",
+        "ceiling_battens_inner__slat_57",
+        "ceiling_battens_inner__slat_58",
+        "ceiling_battens_inner__slat_59",
+        "ceiling_battens_inner__slat_60",
+        "ceiling_battens_inner__slat_61",
+        "ceiling_battens_inner__slat_62",
+        "ceiling_battens_inner__slat_63",
+        "ceiling_battens_inner__slat_64",
+        "ceiling_battens_inner__slat_65",
+        "ceiling_battens_inner__slat_66",
+        "ceiling_battens_inner__slat_67",
+        "ceiling_battens_inner__slat_68",
+        "ceiling_battens_inner__slat_69",
+        "ceiling_battens_inner__slat_70",
+        "ceiling_battens_inner__slat_71",
+        "ceiling_battens_inner__slat_72",
+        "ceiling_battens_inner__slat_73",
+        "ceiling_battens_inner__slat_74",
+        "ceiling_battens_inner__slat_75",
+        "ceiling_battens_inner__slat_76",
+        "ceiling_battens_inner__slat_77",
+        "ceiling_battens_inner__slat_78",
+        "ceiling_battens_inner__slat_79",
+        "ceiling_battens_inner__slat_80",
+        "ceiling_battens_inner__slat_81",
+        "ceiling_battens_inner__slat_82",
+        "ceiling_battens_inner__slat_83",
+        "ceiling_battens_inner__slat_84",
+        "ceiling_battens_inner__slat_85",
+        "ceiling_battens_inner__slat_86",
+        "ceiling_battens_inner__slat_87",
+        "ceiling_battens_inner__slat_88",
+        "ceiling_battens_inner__slat_89",
+        "ceiling_battens_inner__slat_90",
+        "ceiling_battens_inner__slat_91",
+        "ceiling_battens_inner__slat_92",
+        "ceiling_battens_inner__slat_93",
+        "ceiling_battens_inner__slat_94",
+        "ceiling_battens_inner__slat_95",
+        "ceiling_battens_inner__slat_96",
+        "ceiling_battens_inner__slat_97",
+        "ceiling_battens_inner__slat_98",
+        "ceiling_battens_inner__slat_99"
+      ],
+      "dimensions": [
+        20.300500869750977,
+        2.6999998092651367,
+        0.13000011444091797
+      ],
+      "bounds_model_m": [
+        [
+          -2.1252498626708984,
+          -6.400000095367432,
+          5.125
+        ],
+        [
+          18.175251007080078,
+          -3.700000286102295,
+          5.255000114440918
+        ]
+      ],
+      "position": [
+        8.02500057220459,
+        -5.050000190734863,
+        5.190000057220459
+      ]
+    },
+    {
+      "id": "lounge_a_chair0",
+      "category": "armchair",
+      "components": [
+        "lounge_a_chair0__seat",
+        "lounge_a_chair0__seat_piping",
+        "lounge_a_chair0__foot0",
+        "lounge_a_chair0__foot1",
+        "lounge_a_chair0__foot2",
+        "lounge_a_chair0__foot3",
+        "lounge_a_chair0__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_chair0__seat",
+        "lounge_a_chair0__seat_piping",
+        "lounge_a_chair0__foot0",
+        "lounge_a_chair0__foot1",
+        "lounge_a_chair0__foot2",
+        "lounge_a_chair0__foot3",
+        "lounge_a_chair0__curved_back"
+      ],
+      "dimensions": [
+        0.9249997138977051,
+        0.9194587469100952,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          5.943296432495117,
+          0.8019527196884155,
+          0.0
+        ],
+        [
+          6.868296146392822,
+          1.7214114665985107,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        6.40579628944397,
+        1.2616820931434631,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_a_chair1",
+      "category": "armchair",
+      "components": [
+        "lounge_a_chair1__seat",
+        "lounge_a_chair1__seat_piping",
+        "lounge_a_chair1__foot0",
+        "lounge_a_chair1__foot1",
+        "lounge_a_chair1__foot2",
+        "lounge_a_chair1__foot3",
+        "lounge_a_chair1__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_chair1__seat",
+        "lounge_a_chair1__seat_piping",
+        "lounge_a_chair1__foot0",
+        "lounge_a_chair1__foot1",
+        "lounge_a_chair1__foot2",
+        "lounge_a_chair1__foot3",
+        "lounge_a_chair1__curved_back"
+      ],
+      "dimensions": [
+        0.9250001907348633,
+        0.9194587767124176,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          6.839385986328125,
+          0.48647984862327576,
+          0.0
+        ],
+        [
+          7.764386177062988,
+          1.4059386253356934,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        7.301886081695557,
+        0.9462092369794846,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_a_chair2",
+      "category": "armchair",
+      "components": [
+        "lounge_a_chair2__seat",
+        "lounge_a_chair2__seat_piping",
+        "lounge_a_chair2__foot0",
+        "lounge_a_chair2__foot1",
+        "lounge_a_chair2__foot2",
+        "lounge_a_chair2__foot3",
+        "lounge_a_chair2__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_chair2__seat",
+        "lounge_a_chair2__seat_piping",
+        "lounge_a_chair2__foot0",
+        "lounge_a_chair2__foot1",
+        "lounge_a_chair2__foot2",
+        "lounge_a_chair2__foot3",
+        "lounge_a_chair2__curved_back"
+      ],
+      "dimensions": [
+        0.9250001907348633,
+        0.91945880651474,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          6.341703414916992,
+          -1.7060273885726929,
+          0.0
+        ],
+        [
+          7.2667036056518555,
+          -0.7865685820579529,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        6.804203510284424,
+        -1.2462979853153229,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_a_ottoman0",
+      "category": "ottoman",
+      "components": [
+        "lounge_a_ottoman0__seat",
+        "lounge_a_ottoman0__seat_piping",
+        "lounge_a_ottoman0__foot0",
+        "lounge_a_ottoman0__foot1",
+        "lounge_a_ottoman0__foot2",
+        "lounge_a_ottoman0__foot3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_ottoman0__seat",
+        "lounge_a_ottoman0__seat_piping",
+        "lounge_a_ottoman0__foot0",
+        "lounge_a_ottoman0__foot1",
+        "lounge_a_ottoman0__foot2",
+        "lounge_a_ottoman0__foot3"
+      ],
+      "dimensions": [
+        0.9099998474121094,
+        0.9100000858306885,
+        0.5750000476837158
+      ],
+      "bounds_model_m": [
+        [
+          5.019834518432617,
+          0.5837061405181885,
+          0.0
+        ],
+        [
+          5.929834365844727,
+          1.493706226348877,
+          0.5750000476837158
+        ]
+      ],
+      "position": [
+        5.474834442138672,
+        1.0387061834335327,
+        0.2875000238418579
+      ]
+    },
+    {
+      "id": "lounge_a_ottoman1",
+      "category": "ottoman",
+      "components": [
+        "lounge_a_ottoman1__seat",
+        "lounge_a_ottoman1__seat_piping",
+        "lounge_a_ottoman1__foot0",
+        "lounge_a_ottoman1__foot1",
+        "lounge_a_ottoman1__foot2",
+        "lounge_a_ottoman1__foot3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_ottoman1__seat",
+        "lounge_a_ottoman1__seat_piping",
+        "lounge_a_ottoman1__foot0",
+        "lounge_a_ottoman1__foot1",
+        "lounge_a_ottoman1__foot2",
+        "lounge_a_ottoman1__foot3"
+      ],
+      "dimensions": [
+        0.9099998474121094,
+        0.9099999964237213,
+        0.5750000476837158
+      ],
+      "bounds_model_m": [
+        [
+          6.49290657043457,
+          -0.7611124515533447,
+          0.0
+        ],
+        [
+          7.40290641784668,
+          0.1488875448703766,
+          0.5750000476837158
+        ]
+      ],
+      "position": [
+        6.947906494140625,
+        -0.30611245334148407,
+        0.2875000238418579
+      ]
+    },
+    {
+      "id": "lounge_a_table",
+      "category": "coffee_table",
+      "components": [
+        "lounge_a_table__oval_top",
+        "lounge_a_table__base_disc",
+        "lounge_a_table__radial_fin0",
+        "lounge_a_table__radial_fin1",
+        "lounge_a_table__radial_fin2",
+        "lounge_a_table__radial_fin3",
+        "lounge_a_table__radial_fin4",
+        "lounge_a_table__radial_fin5",
+        "lounge_a_table__radial_fin6",
+        "lounge_a_table__radial_fin7",
+        "lounge_a_table__radial_fin8",
+        "lounge_a_table__radial_fin9",
+        "lounge_a_table__radial_fin10",
+        "lounge_a_table__radial_fin11",
+        "lounge_a_table__radial_fin12",
+        "lounge_a_table__radial_fin13",
+        "lounge_a_table__radial_fin14",
+        "lounge_a_table__radial_fin15",
+        "lounge_a_table__radial_fin16",
+        "lounge_a_table__radial_fin17",
+        "lounge_a_table__radial_fin18",
+        "lounge_a_table__radial_fin19",
+        "lounge_a_table__radial_fin20",
+        "lounge_a_table__radial_fin21",
+        "lounge_a_table__radial_fin22",
+        "lounge_a_table__radial_fin23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_a_table__oval_top",
+        "lounge_a_table__base_disc",
+        "lounge_a_table__radial_fin0",
+        "lounge_a_table__radial_fin1",
+        "lounge_a_table__radial_fin2",
+        "lounge_a_table__radial_fin3",
+        "lounge_a_table__radial_fin4",
+        "lounge_a_table__radial_fin5",
+        "lounge_a_table__radial_fin6",
+        "lounge_a_table__radial_fin7",
+        "lounge_a_table__radial_fin8",
+        "lounge_a_table__radial_fin9",
+        "lounge_a_table__radial_fin10",
+        "lounge_a_table__radial_fin11",
+        "lounge_a_table__radial_fin12",
+        "lounge_a_table__radial_fin13",
+        "lounge_a_table__radial_fin14",
+        "lounge_a_table__radial_fin15",
+        "lounge_a_table__radial_fin16",
+        "lounge_a_table__radial_fin17",
+        "lounge_a_table__radial_fin18",
+        "lounge_a_table__radial_fin19",
+        "lounge_a_table__radial_fin20",
+        "lounge_a_table__radial_fin21",
+        "lounge_a_table__radial_fin22",
+        "lounge_a_table__radial_fin23"
+      ],
+      "dimensions": [
+        1.260000228881836,
+        0.9959999918937683,
+        0.5399999506771564
+      ],
+      "bounds_model_m": [
+        [
+          5.319999694824219,
+          -0.4179999828338623,
+          0.01249999925494194
+        ],
+        [
+          6.579999923706055,
+          0.578000009059906,
+          0.5524999499320984
+        ]
+      ],
+      "position": [
+        5.949999809265137,
+        0.08000001311302185,
+        0.28249997459352016
+      ]
+    },
+    {
+      "id": "lounge_a_table_bowl",
+      "category": "decorative_bowl",
+      "components": [
+        "lounge_a_table_bowl__bowl"
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "lounge_a_table"
+      },
+      "component_names": [
+        "lounge_a_table_bowl__bowl"
+      ],
+      "dimensions": [
+        0.3399996757507324,
+        0.3400000035762787,
+        0.14000004529953003
+      ],
+      "bounds_model_m": [
+        [
+          5.78000020980835,
+          -0.09000000357627869,
+          0.5529999732971191
+        ],
+        [
+          6.119999885559082,
+          0.25,
+          0.6930000185966492
+        ]
+      ],
+      "position": [
+        5.950000047683716,
+        0.07999999821186066,
+        0.6229999959468842
+      ]
+    },
+    {
+      "id": "lounge_b_chair0",
+      "category": "armchair",
+      "components": [
+        "lounge_b_chair0__seat",
+        "lounge_b_chair0__seat_piping",
+        "lounge_b_chair0__foot0",
+        "lounge_b_chair0__foot1",
+        "lounge_b_chair0__foot2",
+        "lounge_b_chair0__foot3",
+        "lounge_b_chair0__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_b_chair0__seat",
+        "lounge_b_chair0__seat_piping",
+        "lounge_b_chair0__foot0",
+        "lounge_b_chair0__foot1",
+        "lounge_b_chair0__foot2",
+        "lounge_b_chair0__foot3",
+        "lounge_b_chair0__curved_back"
+      ],
+      "dimensions": [
+        0.9249999523162842,
+        0.9194587469100952,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          2.1889216899871826,
+          -1.9096968173980713,
+          0.0
+        ],
+        [
+          3.113921642303467,
+          -0.9902380704879761,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        2.6514216661453247,
+        -1.4499674439430237,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_b_chair1",
+      "category": "armchair",
+      "components": [
+        "lounge_b_chair1__seat",
+        "lounge_b_chair1__seat_piping",
+        "lounge_b_chair1__foot0",
+        "lounge_b_chair1__foot1",
+        "lounge_b_chair1__foot2",
+        "lounge_b_chair1__foot3",
+        "lounge_b_chair1__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_b_chair1__seat",
+        "lounge_b_chair1__seat_piping",
+        "lounge_b_chair1__foot0",
+        "lounge_b_chair1__foot1",
+        "lounge_b_chair1__foot2",
+        "lounge_b_chair1__foot3",
+        "lounge_b_chair1__curved_back"
+      ],
+      "dimensions": [
+        0.9246712923049927,
+        0.924881637096405,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          1.2495659589767456,
+          -1.7631536722183228,
+          0.0
+        ],
+        [
+          2.1742372512817383,
+          -0.8382720351219177,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        1.711901605129242,
+        -1.3007128536701202,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_b_ottoman0",
+      "category": "ottoman",
+      "components": [
+        "lounge_b_ottoman0__seat",
+        "lounge_b_ottoman0__seat_piping",
+        "lounge_b_ottoman0__foot0",
+        "lounge_b_ottoman0__foot1",
+        "lounge_b_ottoman0__foot2",
+        "lounge_b_ottoman0__foot3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_b_ottoman0__seat",
+        "lounge_b_ottoman0__seat_piping",
+        "lounge_b_ottoman0__foot0",
+        "lounge_b_ottoman0__foot1",
+        "lounge_b_ottoman0__foot2",
+        "lounge_b_ottoman0__foot3"
+      ],
+      "dimensions": [
+        0.9100000858306885,
+        0.9100000858306885,
+        0.5750000476837158
+      ],
+      "bounds_model_m": [
+        [
+          3.1304728984832764,
+          -2.0313849449157715,
+          0.0
+        ],
+        [
+          4.040472984313965,
+          -1.121384859085083,
+          0.5750000476837158
+        ]
+      ],
+      "position": [
+        3.5854729413986206,
+        -1.5763849020004272,
+        0.2875000238418579
+      ]
+    },
+    {
+      "id": "lounge_b_ottoman1",
+      "category": "ottoman",
+      "components": [
+        "lounge_b_ottoman1__seat",
+        "lounge_b_ottoman1__seat_piping",
+        "lounge_b_ottoman1__foot0",
+        "lounge_b_ottoman1__foot1",
+        "lounge_b_ottoman1__foot2",
+        "lounge_b_ottoman1__foot3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_b_ottoman1__seat",
+        "lounge_b_ottoman1__seat_piping",
+        "lounge_b_ottoman1__foot0",
+        "lounge_b_ottoman1__foot1",
+        "lounge_b_ottoman1__foot2",
+        "lounge_b_ottoman1__foot3"
+      ],
+      "dimensions": [
+        0.9099999666213989,
+        0.9099999964237213,
+        0.5750000476837158
+      ],
+      "bounds_model_m": [
+        [
+          1.3122602701187134,
+          -0.8152246475219727,
+          0.0
+        ],
+        [
+          2.2222602367401123,
+          0.09477534890174866,
+          0.5750000476837158
+        ]
+      ],
+      "position": [
+        1.7672602534294128,
+        -0.360224649310112,
+        0.2875000238418579
+      ]
+    },
+    {
+      "id": "lounge_b_table",
+      "category": "coffee_table",
+      "components": [
+        "lounge_b_table__oval_top",
+        "lounge_b_table__base_disc",
+        "lounge_b_table__radial_fin0",
+        "lounge_b_table__radial_fin1",
+        "lounge_b_table__radial_fin2",
+        "lounge_b_table__radial_fin3",
+        "lounge_b_table__radial_fin4",
+        "lounge_b_table__radial_fin5",
+        "lounge_b_table__radial_fin6",
+        "lounge_b_table__radial_fin7",
+        "lounge_b_table__radial_fin8",
+        "lounge_b_table__radial_fin9",
+        "lounge_b_table__radial_fin10",
+        "lounge_b_table__radial_fin11",
+        "lounge_b_table__radial_fin12",
+        "lounge_b_table__radial_fin13",
+        "lounge_b_table__radial_fin14",
+        "lounge_b_table__radial_fin15",
+        "lounge_b_table__radial_fin16",
+        "lounge_b_table__radial_fin17",
+        "lounge_b_table__radial_fin18",
+        "lounge_b_table__radial_fin19",
+        "lounge_b_table__radial_fin20",
+        "lounge_b_table__radial_fin21",
+        "lounge_b_table__radial_fin22",
+        "lounge_b_table__radial_fin23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_b_table__oval_top",
+        "lounge_b_table__base_disc",
+        "lounge_b_table__radial_fin0",
+        "lounge_b_table__radial_fin1",
+        "lounge_b_table__radial_fin2",
+        "lounge_b_table__radial_fin3",
+        "lounge_b_table__radial_fin4",
+        "lounge_b_table__radial_fin5",
+        "lounge_b_table__radial_fin6",
+        "lounge_b_table__radial_fin7",
+        "lounge_b_table__radial_fin8",
+        "lounge_b_table__radial_fin9",
+        "lounge_b_table__radial_fin10",
+        "lounge_b_table__radial_fin11",
+        "lounge_b_table__radial_fin12",
+        "lounge_b_table__radial_fin13",
+        "lounge_b_table__radial_fin14",
+        "lounge_b_table__radial_fin15",
+        "lounge_b_table__radial_fin16",
+        "lounge_b_table__radial_fin17",
+        "lounge_b_table__radial_fin18",
+        "lounge_b_table__radial_fin19",
+        "lounge_b_table__radial_fin20",
+        "lounge_b_table__radial_fin21",
+        "lounge_b_table__radial_fin22",
+        "lounge_b_table__radial_fin23"
+      ],
+      "dimensions": [
+        1.260000228881836,
+        0.9959999918937683,
+        0.5699999816715717
+      ],
+      "bounds_model_m": [
+        [
+          2.2199997901916504,
+          -0.8980000019073486,
+          0.01249999925494194
+        ],
+        [
+          3.4800000190734863,
+          0.09799998998641968,
+          0.5824999809265137
+        ]
+      ],
+      "position": [
+        2.8499999046325684,
+        -0.4000000059604645,
+        0.2974999900907278
+      ]
+    },
+    {
+      "id": "lounge_c_chair0",
+      "category": "armchair",
+      "components": [
+        "lounge_c_chair0__seat",
+        "lounge_c_chair0__seat_piping",
+        "lounge_c_chair0__foot0",
+        "lounge_c_chair0__foot1",
+        "lounge_c_chair0__foot2",
+        "lounge_c_chair0__foot3",
+        "lounge_c_chair0__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_c_chair0__seat",
+        "lounge_c_chair0__seat_piping",
+        "lounge_c_chair0__foot0",
+        "lounge_c_chair0__foot1",
+        "lounge_c_chair0__foot2",
+        "lounge_c_chair0__foot3",
+        "lounge_c_chair0__curved_back"
+      ],
+      "dimensions": [
+        0.9250000715255737,
+        0.9194587841629982,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          -1.5897088050842285,
+          -1.0346930027008057,
+          0.0
+        ],
+        [
+          -0.6647087335586548,
+          -0.11523421853780746,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        -1.1272087693214417,
+        -0.5749636106193066,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_c_chair1",
+      "category": "armchair",
+      "components": [
+        "lounge_c_chair1__seat",
+        "lounge_c_chair1__seat_piping",
+        "lounge_c_chair1__foot0",
+        "lounge_c_chair1__foot1",
+        "lounge_c_chair1__foot2",
+        "lounge_c_chair1__foot3",
+        "lounge_c_chair1__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_c_chair1__seat",
+        "lounge_c_chair1__seat_piping",
+        "lounge_c_chair1__foot0",
+        "lounge_c_chair1__foot1",
+        "lounge_c_chair1__foot2",
+        "lounge_c_chair1__foot3",
+        "lounge_c_chair1__curved_back"
+      ],
+      "dimensions": [
+        0.924998551607132,
+        0.9249284267425537,
+        0.8999999761581421
+      ],
+      "bounds_model_m": [
+        [
+          -1.3973920345306396,
+          -1.9602941274642944,
+          0.0
+        ],
+        [
+          -0.4723934829235077,
+          -1.0353657007217407,
+          0.8999999761581421
+        ]
+      ],
+      "position": [
+        -0.9348927587270737,
+        -1.4978299140930176,
+        0.44999998807907104
+      ]
+    },
+    {
+      "id": "lounge_c_ottoman0",
+      "category": "ottoman",
+      "components": [
+        "lounge_c_ottoman0__seat",
+        "lounge_c_ottoman0__seat_piping",
+        "lounge_c_ottoman0__foot0",
+        "lounge_c_ottoman0__foot1",
+        "lounge_c_ottoman0__foot2",
+        "lounge_c_ottoman0__foot3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Seat footprint from RGB ray-plane anchors; visible curved back and four feet. Diameter .88\u20131.0 m and upholstery thickness inferred within DA3 spread.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_c_ottoman0__seat",
+        "lounge_c_ottoman0__seat_piping",
+        "lounge_c_ottoman0__foot0",
+        "lounge_c_ottoman0__foot1",
+        "lounge_c_ottoman0__foot2",
+        "lounge_c_ottoman0__foot3"
+      ],
+      "dimensions": [
+        0.9100000262260437,
+        0.9100000858306885,
+        0.5750000476837158
+      ],
+      "bounds_model_m": [
+        [
+          -0.4714011251926422,
+          -2.229724884033203,
+          0.0
+        ],
+        [
+          0.4385989010334015,
+          -1.3197247982025146,
+          0.5750000476837158
+        ]
+      ],
+      "position": [
+        -0.01640111207962036,
+        -1.7747248411178589,
+        0.2875000238418579
+      ]
+    },
+    {
+      "id": "lounge_c_table",
+      "category": "coffee_table",
+      "components": [
+        "lounge_c_table__oval_top",
+        "lounge_c_table__base_disc",
+        "lounge_c_table__radial_fin0",
+        "lounge_c_table__radial_fin1",
+        "lounge_c_table__radial_fin2",
+        "lounge_c_table__radial_fin3",
+        "lounge_c_table__radial_fin4",
+        "lounge_c_table__radial_fin5",
+        "lounge_c_table__radial_fin6",
+        "lounge_c_table__radial_fin7",
+        "lounge_c_table__radial_fin8",
+        "lounge_c_table__radial_fin9",
+        "lounge_c_table__radial_fin10",
+        "lounge_c_table__radial_fin11",
+        "lounge_c_table__radial_fin12",
+        "lounge_c_table__radial_fin13",
+        "lounge_c_table__radial_fin14",
+        "lounge_c_table__radial_fin15",
+        "lounge_c_table__radial_fin16",
+        "lounge_c_table__radial_fin17",
+        "lounge_c_table__radial_fin18",
+        "lounge_c_table__radial_fin19",
+        "lounge_c_table__radial_fin20",
+        "lounge_c_table__radial_fin21",
+        "lounge_c_table__radial_fin22",
+        "lounge_c_table__radial_fin23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "lounge_c_table__oval_top",
+        "lounge_c_table__base_disc",
+        "lounge_c_table__radial_fin0",
+        "lounge_c_table__radial_fin1",
+        "lounge_c_table__radial_fin2",
+        "lounge_c_table__radial_fin3",
+        "lounge_c_table__radial_fin4",
+        "lounge_c_table__radial_fin5",
+        "lounge_c_table__radial_fin6",
+        "lounge_c_table__radial_fin7",
+        "lounge_c_table__radial_fin8",
+        "lounge_c_table__radial_fin9",
+        "lounge_c_table__radial_fin10",
+        "lounge_c_table__radial_fin11",
+        "lounge_c_table__radial_fin12",
+        "lounge_c_table__radial_fin13",
+        "lounge_c_table__radial_fin14",
+        "lounge_c_table__radial_fin15",
+        "lounge_c_table__radial_fin16",
+        "lounge_c_table__radial_fin17",
+        "lounge_c_table__radial_fin18",
+        "lounge_c_table__radial_fin19",
+        "lounge_c_table__radial_fin20",
+        "lounge_c_table__radial_fin21",
+        "lounge_c_table__radial_fin22",
+        "lounge_c_table__radial_fin23"
+      ],
+      "dimensions": [
+        1.2599999904632568,
+        0.9959999620914459,
+        0.5299999602138996
+      ],
+      "bounds_model_m": [
+        [
+          -0.6800000071525574,
+          -1.0479999780654907,
+          0.01249999925494194
+        ],
+        [
+          0.5799999833106995,
+          -0.0520000159740448,
+          0.5424999594688416
+        ]
+      ],
+      "position": [
+        -0.050000011920928955,
+        -0.5499999970197678,
+        0.27749997936189175
+      ]
+    },
+    {
+      "id": "divider_left",
+      "category": "planter",
+      "components": [
+        "divider_left__body",
+        "divider_left__soil",
+        "divider_left__branches",
+        "divider_left__foliage",
+        "divider_left__branches.001",
+        "divider_left__foliage.001",
+        "divider_left__branches.002",
+        "divider_left__foliage.002",
+        "divider_left__branches.003",
+        "divider_left__foliage.003"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        108,
+        129
+      ],
+      "provenance": "Triangulated visible front corners and ray-plane baseline. Concrete shell thickness and shrub topology inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "divider_left__body",
+        "divider_left__soil",
+        "divider_left__branches",
+        "divider_left__foliage",
+        "divider_left__branches.001",
+        "divider_left__foliage.001",
+        "divider_left__branches.002",
+        "divider_left__foliage.002",
+        "divider_left__branches.003",
+        "divider_left__foliage.003"
+      ],
+      "dimensions": [
+        0.7111644744873047,
+        1.937576194293797,
+        1.7522660493850708
+      ],
+      "bounds_model_m": [
+        [
+          8.393850326538086,
+          -0.00927629042416811,
+          0.0
+        ],
+        [
+          9.10501480102539,
+          1.928299903869629,
+          1.7522660493850708
+        ]
+      ],
+      "position": [
+        8.749432563781738,
+        0.9595118067227304,
+        0.8761330246925354
+      ]
+    },
+    {
+      "id": "divider_right",
+      "category": "planter",
+      "components": [
+        "divider_right__body",
+        "divider_right__soil",
+        "divider_right__branches",
+        "divider_right__foliage",
+        "divider_right__branches.001",
+        "divider_right__foliage.001",
+        "divider_right__branches.002",
+        "divider_right__foliage.002",
+        "divider_right__branches.003",
+        "divider_right__foliage.003"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        108,
+        129
+      ],
+      "provenance": "Triangulated visible front corners and ray-plane baseline. Concrete shell thickness and shrub topology inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "divider_right__body",
+        "divider_right__soil",
+        "divider_right__branches",
+        "divider_right__foliage",
+        "divider_right__branches.001",
+        "divider_right__foliage.001",
+        "divider_right__branches.002",
+        "divider_right__foliage.002",
+        "divider_right__branches.003",
+        "divider_right__foliage.003"
+      ],
+      "dimensions": [
+        0.7732572555541992,
+        2.0539119839668274,
+        1.7582999467849731
+      ],
+      "bounds_model_m": [
+        [
+          8.335247039794922,
+          -2.3486084938049316,
+          0.0
+        ],
+        [
+          9.108504295349121,
+          -0.29469650983810425,
+          1.7582999467849731
+        ]
+      ],
+      "position": [
+        8.721875667572021,
+        -1.321652501821518,
+        0.8791499733924866
+      ]
+    },
+    {
+      "id": "window_grass_middle",
+      "category": "potted_plant",
+      "components": [
+        "window_grass_middle__ceramic_pot",
+        "window_grass_middle__soil",
+        "window_grass_middle__branches",
+        "window_grass_middle__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "window_grass_middle__ceramic_pot",
+        "window_grass_middle__soil",
+        "window_grass_middle__branches",
+        "window_grass_middle__foliage"
+      ],
+      "dimensions": [
+        1.4979248046875,
+        1.4260993003845215,
+        1.0200939178466797
+      ],
+      "bounds_model_m": [
+        [
+          5.587821960449219,
+          2.318107843399048,
+          0.0
+        ],
+        [
+          7.085746765136719,
+          3.7442071437835693,
+          1.0200939178466797
+        ]
+      ],
+      "position": [
+        6.336784362792969,
+        3.0311574935913086,
+        0.5100469589233398
+      ]
+    },
+    {
+      "id": "window_grass_near",
+      "category": "potted_plant",
+      "components": [
+        "window_grass_near__ceramic_pot",
+        "window_grass_near__soil",
+        "window_grass_near__branches",
+        "window_grass_near__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "window_grass_near__ceramic_pot",
+        "window_grass_near__soil",
+        "window_grass_near__branches",
+        "window_grass_near__foliage"
+      ],
+      "dimensions": [
+        1.4521486014127731,
+        1.3730981349945068,
+        1.074578881263733
+      ],
+      "bounds_model_m": [
+        [
+          -1.5834709405899048,
+          2.3198838233947754,
+          0.0
+        ],
+        [
+          -0.13132233917713165,
+          3.6929819583892822,
+          1.074578881263733
+        ]
+      ],
+      "position": [
+        -0.8573966398835182,
+        3.006432890892029,
+        0.5372894406318665
+      ]
+    },
+    {
+      "id": "wall_grass",
+      "category": "potted_plant",
+      "components": [
+        "wall_grass__ceramic_pot",
+        "wall_grass__soil",
+        "wall_grass__branches",
+        "wall_grass__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "wall_grass__ceramic_pot",
+        "wall_grass__soil",
+        "wall_grass__branches",
+        "wall_grass__foliage"
+      ],
+      "dimensions": [
+        1.0389404296875,
+        0.9417781829833984,
+        1.256443977355957
+      ],
+      "bounds_model_m": [
+        [
+          5.213471412658691,
+          -4.072414875030518,
+          0.0
+        ],
+        [
+          6.252411842346191,
+          -3.130636692047119,
+          1.256443977355957
+        ]
+      ],
+      "position": [
+        5.732941627502441,
+        -3.6015257835388184,
+        0.6282219886779785
+      ]
+    },
+    {
+      "id": "reception_tree_left",
+      "category": "potted_plant",
+      "components": [
+        "reception_tree_left__ceramic_pot",
+        "reception_tree_left__soil",
+        "reception_tree_left__trunks",
+        "reception_tree_left__branches",
+        "reception_tree_left__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "reception_tree_left__ceramic_pot",
+        "reception_tree_left__soil",
+        "reception_tree_left__trunks",
+        "reception_tree_left__branches",
+        "reception_tree_left__foliage"
+      ],
+      "dimensions": [
+        0.96405029296875,
+        0.9820963144302368,
+        2.0174648761749268
+      ],
+      "bounds_model_m": [
+        [
+          16.191146850585938,
+          1.5283232927322388,
+          0.0
+        ],
+        [
+          17.155197143554688,
+          2.5104196071624756,
+          2.0174648761749268
+        ]
+      ],
+      "position": [
+        16.673171997070312,
+        2.019371449947357,
+        1.0087324380874634
+      ]
+    },
+    {
+      "id": "reception_tree_right",
+      "category": "potted_plant",
+      "components": [
+        "reception_tree_right__ceramic_pot",
+        "reception_tree_right__soil",
+        "reception_tree_right__trunks",
+        "reception_tree_right__branches",
+        "reception_tree_right__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "reception_tree_right__ceramic_pot",
+        "reception_tree_right__soil",
+        "reception_tree_right__trunks",
+        "reception_tree_right__branches",
+        "reception_tree_right__foliage"
+      ],
+      "dimensions": [
+        0.9304351806640625,
+        0.9686028957366943,
+        2.025749683380127
+      ],
+      "bounds_model_m": [
+        [
+          16.222309112548828,
+          -3.012416124343872,
+          0.0
+        ],
+        [
+          17.15274429321289,
+          -2.0438132286071777,
+          2.025749683380127
+        ]
+      ],
+      "position": [
+        16.68752670288086,
+        -2.528114676475525,
+        1.0128748416900635
+      ]
+    },
+    {
+      "id": "reception_grass",
+      "category": "potted_plant",
+      "components": [
+        "reception_grass__ceramic_pot",
+        "reception_grass__soil",
+        "reception_grass__branches",
+        "reception_grass__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Visible plant category and approximate RGB ray-plane placement; pot profile, foliage and branches inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "reception_grass__ceramic_pot",
+        "reception_grass__soil",
+        "reception_grass__branches",
+        "reception_grass__foliage"
+      ],
+      "dimensions": [
+        1.2072181701660156,
+        1.2743120193481445,
+        1.0095102787017822
+      ],
+      "bounds_model_m": [
+        [
+          16.3830623626709,
+          -5.229089736938477,
+          0.0
+        ],
+        [
+          17.590280532836914,
+          -3.954777717590332,
+          1.0095102787017822
+        ]
+      ],
+      "position": [
+        16.986671447753906,
+        -4.591933727264404,
+        0.5047551393508911
+      ]
+    },
+    {
+      "id": "tall_plant_0",
+      "category": "potted_plant",
+      "components": [
+        "tall_plant_0__square_planter",
+        "tall_plant_0__soil",
+        "tall_plant_0__stems",
+        "tall_plant_0__long_leaves",
+        "tall_plant_0__orange_flower0",
+        "tall_plant_0__orange_flower1"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "tall_plant_0__square_planter",
+        "tall_plant_0__soil",
+        "tall_plant_0__stems",
+        "tall_plant_0__long_leaves",
+        "tall_plant_0__orange_flower0",
+        "tall_plant_0__orange_flower1"
+      ],
+      "dimensions": [
+        1.3141694068908691,
+        1.299028992652893,
+        2.205000162124634
+      ],
+      "bounds_model_m": [
+        [
+          -0.15201520919799805,
+          -3.2096145153045654,
+          0.0
+        ],
+        [
+          1.162154197692871,
+          -1.9105855226516724,
+          2.205000162124634
+        ]
+      ],
+      "position": [
+        0.5050694942474365,
+        -2.560100018978119,
+        1.102500081062317
+      ]
+    },
+    {
+      "id": "tall_plant_1",
+      "category": "potted_plant",
+      "components": [
+        "tall_plant_1__square_planter",
+        "tall_plant_1__soil",
+        "tall_plant_1__stems",
+        "tall_plant_1__long_leaves",
+        "tall_plant_1__orange_flower0",
+        "tall_plant_1__orange_flower1"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "tall_plant_1__square_planter",
+        "tall_plant_1__soil",
+        "tall_plant_1__stems",
+        "tall_plant_1__long_leaves",
+        "tall_plant_1__orange_flower0",
+        "tall_plant_1__orange_flower1"
+      ],
+      "dimensions": [
+        1.3141695261001587,
+        1.299028992652893,
+        2.205000162124634
+      ],
+      "bounds_model_m": [
+        [
+          -2.102015256881714,
+          -0.25961458683013916,
+          0.0
+        ],
+        [
+          -0.7878457307815552,
+          1.039414405822754,
+          2.205000162124634
+        ]
+      ],
+      "position": [
+        -1.4449304938316345,
+        0.3898999094963074,
+        1.102500081062317
+      ]
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_counter",
+      "components": [
+        "reception_desk__faceted_shell",
+        "reception_desk__concealed_plinth"
+      ],
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129,
+        155
+      ],
+      "provenance": "Desk endpoints triangulated 0.3\u20130.9 px. Top and side facets observed, hidden back and thickness inferred.",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "reception_desk__faceted_shell",
+        "reception_desk__concealed_plinth"
+      ],
+      "dimensions": [
+        1.1499996185302734,
+        3.1999999284744263,
+        0.8719999864697456
+      ],
+      "bounds_model_m": [
+        [
+          14.899999618530273,
+          -1.899999976158142,
+          0.017999999225139618
+        ],
+        [
+          16.049999237060547,
+          1.2999999523162842,
+          0.8899999856948853
+        ]
+      ],
+      "position": [
+        15.47499942779541,
+        -0.30000001192092896,
+        0.45399999246001244
+      ]
+    },
+    {
+      "id": "desk_vase",
+      "category": "decor",
+      "components": [
+        "desk_vase__vase",
+        "desk_vase__stems"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "reception_desk"
+      },
+      "component_names": [
+        "desk_vase__vase",
+        "desk_vase__stems"
+      ],
+      "dimensions": [
+        0.10000038146972656,
+        0.10000002384185791,
+        0.3503892421722412
+      ],
+      "bounds_model_m": [
+        [
+          15.34999942779541,
+          -0.550000011920929,
+          0.8899999856948853
+        ],
+        [
+          15.449999809265137,
+          -0.44999998807907104,
+          1.2403892278671265
+        ]
+      ],
+      "position": [
+        15.399999618530273,
+        -0.5,
+        1.0651946067810059
+      ]
+    },
+    {
+      "id": "wall_mirror_0",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_0__reflective_disc",
+        "wall_mirror_0__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_0__reflective_disc",
+        "wall_mirror_0__thin_rim"
+      ],
+      "dimensions": [
+        1.4039998054504395,
+        0.04789161682128906,
+        1.404000163078308
+      ],
+      "bounds_model_m": [
+        [
+          3.075131416320801,
+          -4.087499618530273,
+          0.8167644739151001
+        ],
+        [
+          4.47913122177124,
+          -4.039608001708984,
+          2.220764636993408
+        ]
+      ],
+      "position": [
+        3.7771313190460205,
+        -4.063553810119629,
+        1.5187645554542542
+      ]
+    },
+    {
+      "id": "wall_mirror_1",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_1__reflective_disc",
+        "wall_mirror_1__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_1__reflective_disc",
+        "wall_mirror_1__thin_rim"
+      ],
+      "dimensions": [
+        1.24399995803833,
+        0.04789161682128906,
+        1.2440001368522644
+      ],
+      "bounds_model_m": [
+        [
+          1.8927156925201416,
+          -4.087499618530273,
+          0.48341625928878784
+        ],
+        [
+          3.1367156505584717,
+          -4.039608001708984,
+          1.7274163961410522
+        ]
+      ],
+      "position": [
+        2.5147156715393066,
+        -4.063553810119629,
+        1.10541632771492
+      ]
+    },
+    {
+      "id": "wall_mirror_2",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_2__reflective_disc",
+        "wall_mirror_2__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_2__reflective_disc",
+        "wall_mirror_2__thin_rim"
+      ],
+      "dimensions": [
+        0.6440000534057617,
+        0.04789161682128906,
+        0.6439999341964722
+      ],
+      "bounds_model_m": [
+        [
+          4.495657920837402,
+          -4.087499618530273,
+          1.654114842414856
+        ],
+        [
+          5.139657974243164,
+          -4.039608001708984,
+          2.298114776611328
+        ]
+      ],
+      "position": [
+        4.817657947540283,
+        -4.063553810119629,
+        1.976114809513092
+      ]
+    },
+    {
+      "id": "wall_mirror_3",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_3__reflective_disc",
+        "wall_mirror_3__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_3__reflective_disc",
+        "wall_mirror_3__thin_rim"
+      ],
+      "dimensions": [
+        0.444000244140625,
+        0.04789161682128906,
+        0.4440000057220459
+      ],
+      "bounds_model_m": [
+        [
+          4.844499111175537,
+          -4.087499618530273,
+          1.1205723285675049
+        ],
+        [
+          5.288499355316162,
+          -4.039608001708984,
+          1.5645723342895508
+        ]
+      ],
+      "position": [
+        5.06649923324585,
+        -4.063553810119629,
+        1.3425723314285278
+      ]
+    },
+    {
+      "id": "wall_mirror_4",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_4__reflective_disc",
+        "wall_mirror_4__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_4__reflective_disc",
+        "wall_mirror_4__thin_rim"
+      ],
+      "dimensions": [
+        0.6840000152587891,
+        0.04789161682128906,
+        0.6840000748634338
+      ],
+      "bounds_model_m": [
+        [
+          4.417851448059082,
+          -4.087499618530273,
+          0.45015615224838257
+        ],
+        [
+          5.101851463317871,
+          -4.039608001708984,
+          1.1341562271118164
+        ]
+      ],
+      "position": [
+        4.759851455688477,
+        -4.063553810119629,
+        0.7921561896800995
+      ]
+    },
+    {
+      "id": "wall_mirror_5",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_5__reflective_disc",
+        "wall_mirror_5__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_5__reflective_disc",
+        "wall_mirror_5__thin_rim"
+      ],
+      "dimensions": [
+        0.4439997673034668,
+        0.04789161682128906,
+        0.4440000057220459
+      ],
+      "bounds_model_m": [
+        [
+          2.990741491317749,
+          -4.087499618530273,
+          0.4442925453186035
+        ],
+        [
+          3.434741258621216,
+          -4.039608001708984,
+          0.8882925510406494
+        ]
+      ],
+      "position": [
+        3.2127413749694824,
+        -4.063553810119629,
+        0.6662925481796265
+      ]
+    },
+    {
+      "id": "wall_mirror_6",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_6__reflective_disc",
+        "wall_mirror_6__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_6__reflective_disc",
+        "wall_mirror_6__thin_rim"
+      ],
+      "dimensions": [
+        0.48399996757507324,
+        0.04789161682128906,
+        0.48399996757507324
+      ],
+      "bounds_model_m": [
+        [
+          1.2850791215896606,
+          -4.087499618530273,
+          0.849254846572876
+        ],
+        [
+          1.7690790891647339,
+          -4.039608001708984,
+          1.3332548141479492
+        ]
+      ],
+      "position": [
+        1.5270791053771973,
+        -4.063553810119629,
+        1.0912548303604126
+      ]
+    },
+    {
+      "id": "wall_mirror_7",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_7__reflective_disc",
+        "wall_mirror_7__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_7__reflective_disc",
+        "wall_mirror_7__thin_rim"
+      ],
+      "dimensions": [
+        0.9639999866485596,
+        0.04789161682128906,
+        0.9640001058578491
+      ],
+      "bounds_model_m": [
+        [
+          1.109980821609497,
+          -4.087499618530273,
+          1.3408035039901733
+        ],
+        [
+          2.0739808082580566,
+          -4.039608001708984,
+          2.3048036098480225
+        ]
+      ],
+      "position": [
+        1.5919808149337769,
+        -4.063553810119629,
+        1.822803556919098
+      ]
+    },
+    {
+      "id": "wall_mirror_8",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_8__reflective_disc",
+        "wall_mirror_8__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_8__reflective_disc",
+        "wall_mirror_8__thin_rim"
+      ],
+      "dimensions": [
+        0.7439999580383301,
+        0.04789161682128906,
+        0.7439999580383301
+      ],
+      "bounds_model_m": [
+        [
+          1.8936970233917236,
+          -4.087499618530273,
+          1.9839363098144531
+        ],
+        [
+          2.6376969814300537,
+          -4.039608001708984,
+          2.727936267852783
+        ]
+      ],
+      "position": [
+        2.2656970024108887,
+        -4.063553810119629,
+        2.355936288833618
+      ]
+    },
+    {
+      "id": "wall_mirror_9",
+      "category": "mirror",
+      "components": [
+        "wall_mirror_9__reflective_disc",
+        "wall_mirror_9__thin_rim"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Centre ray-plane measured from original sample61 against y=-4.2; radius inferred from pixel extent; reflection not a duplicate object.",
+      "relations": {
+        "attached_to": "mirror_partition"
+      },
+      "component_names": [
+        "wall_mirror_9__reflective_disc",
+        "wall_mirror_9__thin_rim"
+      ],
+      "dimensions": [
+        0.6040000915527344,
+        0.04789161682128906,
+        0.6040000915527344
+      ],
+      "bounds_model_m": [
+        [
+          2.50447940826416,
+          -4.087499618530273,
+          1.6355855464935303
+        ],
+        [
+          3.1084794998168945,
+          -4.039608001708984,
+          2.2395856380462646
+        ]
+      ],
+      "position": [
+        2.8064794540405273,
+        -4.063553810119629,
+        1.9375855922698975
+      ]
+    },
+    {
+      "id": "wall_crest",
+      "category": "wall_art",
+      "components": [
+        "wall_crest__shield",
+        "wall_crest__curved_emblem_lines"
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "Top and bottom triangulated; shield outline visually inferred.",
+      "relations": {
+        "attached_to": "reception_wall"
+      },
+      "component_names": [
+        "wall_crest__shield",
+        "wall_crest__curved_emblem_lines"
+      ],
+      "dimensions": [
+        0.04399871826171875,
+        2.24399995803833,
+        2.1699999570846558
+      ],
+      "bounds_model_m": [
+        [
+          18.058000564575195,
+          -1.5219999551773071,
+          1.3799999952316284
+        ],
+        [
+          18.101999282836914,
+          0.722000002861023,
+          3.549999952316284
+        ]
+      ],
+      "position": [
+        18.079999923706055,
+        -0.3999999761581421,
+        2.4649999737739563
+      ]
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_0__base",
+        "floor_lamp_0__stem",
+        "floor_lamp_0__shade",
+        "floor_lamp_0__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "floor_lamp_0__base",
+        "floor_lamp_0__stem",
+        "floor_lamp_0__shade",
+        "floor_lamp_0__diffuser"
+      ],
+      "dimensions": [
+        0.4999990463256836,
+        0.5,
+        2.049999952316284
+      ],
+      "bounds_model_m": [
+        [
+          15.550000190734863,
+          -4.550000190734863,
+          0.0
+        ],
+        [
+          16.049999237060547,
+          -4.050000190734863,
+          2.049999952316284
+        ]
+      ],
+      "position": [
+        15.799999713897705,
+        -4.300000190734863,
+        1.024999976158142
+      ]
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_1__base",
+        "floor_lamp_1__stem",
+        "floor_lamp_1__shade",
+        "floor_lamp_1__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "floor_lamp_1__base",
+        "floor_lamp_1__stem",
+        "floor_lamp_1__shade",
+        "floor_lamp_1__diffuser"
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        2.049999952316284
+      ],
+      "bounds_model_m": [
+        [
+          8.75,
+          -5.949999809265137,
+          0.0
+        ],
+        [
+          9.25,
+          -5.449999809265137,
+          2.049999952316284
+        ]
+      ],
+      "position": [
+        9.0,
+        -5.699999809265137,
+        1.024999976158142
+      ]
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_2__base",
+        "floor_lamp_2__stem",
+        "floor_lamp_2__shade",
+        "floor_lamp_2__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Observed silhouette/category; dimensions and placement from measured layout; concealed topology, materials and detail inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "component_names": [
+        "floor_lamp_2__base",
+        "floor_lamp_2__stem",
+        "floor_lamp_2__shade",
+        "floor_lamp_2__diffuser"
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        2.049999952316284
+      ],
+      "bounds_model_m": [
+        [
+          -1.7999999523162842,
+          -3.049999952316284,
+          0.0
+        ],
+        [
+          -1.2999999523162842,
+          -2.549999952316284,
+          2.049999952316284
+        ]
+      ],
+      "position": [
+        -1.5499999523162842,
+        -2.799999952316284,
+        1.024999976158142
+      ]
+    },
+    {
+      "id": "pendant_0",
+      "category": "pendant_light",
+      "components": [
+        "pendant_0__cable",
+        "pendant_0__shade_body",
+        "pendant_0__woven_strands",
+        "pendant_0__rim",
+        "pendant_0__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_0__cable",
+        "pendant_0__shade_body",
+        "pendant_0__woven_strands",
+        "pendant_0__rim",
+        "pendant_0__warm_diffuser"
+      ],
+      "dimensions": [
+        1.704000473022461,
+        1.7040001153945923,
+        0.49375200271606445
+      ],
+      "bounds_model_m": [
+        [
+          5.197999954223633,
+          0.7280000448226929,
+          4.736248016357422
+        ],
+        [
+          6.902000427246094,
+          2.432000160217285,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        6.050000190734863,
+        1.580000102519989,
+        4.983124017715454
+      ]
+    },
+    {
+      "id": "pendant_1",
+      "category": "pendant_light",
+      "components": [
+        "pendant_1__cable",
+        "pendant_1__shade_body",
+        "pendant_1__woven_strands",
+        "pendant_1__rim",
+        "pendant_1__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_1__cable",
+        "pendant_1__shade_body",
+        "pendant_1__woven_strands",
+        "pendant_1__rim",
+        "pendant_1__warm_diffuser"
+      ],
+      "dimensions": [
+        1.384000301361084,
+        1.3840000629425049,
+        0.7237520217895508
+      ],
+      "bounds_model_m": [
+        [
+          7.408000469207764,
+          0.5479999780654907,
+          4.5062479972839355
+        ],
+        [
+          8.792000770568848,
+          1.9320000410079956,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        8.100000619888306,
+        1.2400000095367432,
+        4.868124008178711
+      ]
+    },
+    {
+      "id": "pendant_2",
+      "category": "pendant_light",
+      "components": [
+        "pendant_2__cable",
+        "pendant_2__shade_body",
+        "pendant_2__woven_strands",
+        "pendant_2__rim",
+        "pendant_2__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_2__cable",
+        "pendant_2__shade_body",
+        "pendant_2__woven_strands",
+        "pendant_2__rim",
+        "pendant_2__warm_diffuser"
+      ],
+      "dimensions": [
+        1.4239997863769531,
+        1.4240001440048218,
+        1.1237516403198242
+      ],
+      "bounds_model_m": [
+        [
+          8.598000526428223,
+          0.7380000352859497,
+          4.106248378753662
+        ],
+        [
+          10.022000312805176,
+          2.1620001792907715,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        9.3100004196167,
+        1.4500001072883606,
+        4.668124198913574
+      ]
+    },
+    {
+      "id": "pendant_3",
+      "category": "pendant_light",
+      "components": [
+        "pendant_3__cable",
+        "pendant_3__shade_body",
+        "pendant_3__woven_strands",
+        "pendant_3__rim",
+        "pendant_3__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_3__cable",
+        "pendant_3__shade_body",
+        "pendant_3__woven_strands",
+        "pendant_3__rim",
+        "pendant_3__warm_diffuser"
+      ],
+      "dimensions": [
+        1.1639995574951172,
+        1.1640000343322754,
+        1.1037516593933105
+      ],
+      "bounds_model_m": [
+        [
+          10.218000411987305,
+          0.1679999828338623,
+          4.126248359680176
+        ],
+        [
+          11.381999969482422,
+          1.3320000171661377,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        10.800000190734863,
+        0.75,
+        4.678124189376831
+      ]
+    },
+    {
+      "id": "pendant_4",
+      "category": "pendant_light",
+      "components": [
+        "pendant_4__cable",
+        "pendant_4__shade_body",
+        "pendant_4__woven_strands",
+        "pendant_4__rim",
+        "pendant_4__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_4__cable",
+        "pendant_4__shade_body",
+        "pendant_4__woven_strands",
+        "pendant_4__rim",
+        "pendant_4__warm_diffuser"
+      ],
+      "dimensions": [
+        1.3040008544921875,
+        1.3040000200271606,
+        1.0937519073486328
+      ],
+      "bounds_model_m": [
+        [
+          10.64799976348877,
+          -0.8519999980926514,
+          4.1362481117248535
+        ],
+        [
+          11.952000617980957,
+          0.4520000219345093,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        11.300000190734863,
+        -0.19999998807907104,
+        4.68312406539917
+      ]
+    },
+    {
+      "id": "pendant_5",
+      "category": "pendant_light",
+      "components": [
+        "pendant_5__cable",
+        "pendant_5__shade_body",
+        "pendant_5__woven_strands",
+        "pendant_5__rim",
+        "pendant_5__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_5__cable",
+        "pendant_5__shade_body",
+        "pendant_5__woven_strands",
+        "pendant_5__rim",
+        "pendant_5__warm_diffuser"
+      ],
+      "dimensions": [
+        1.4640007019042969,
+        1.464000165462494,
+        0.9937520027160645
+      ],
+      "bounds_model_m": [
+        [
+          9.967999458312988,
+          -2.0320000648498535,
+          4.236248016357422
+        ],
+        [
+          11.432000160217285,
+          -0.5679998993873596,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        10.699999809265137,
+        -1.2999999821186066,
+        4.733124017715454
+      ]
+    },
+    {
+      "id": "pendant_6",
+      "category": "pendant_light",
+      "components": [
+        "pendant_6__cable",
+        "pendant_6__shade_body",
+        "pendant_6__woven_strands",
+        "pendant_6__rim",
+        "pendant_6__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_6__cable",
+        "pendant_6__shade_body",
+        "pendant_6__woven_strands",
+        "pendant_6__rim",
+        "pendant_6__warm_diffuser"
+      ],
+      "dimensions": [
+        1.2018404006958008,
+        1.2018401622772217,
+        1.634005069732666
+      ],
+      "bounds_model_m": [
+        [
+          4.948972702026367,
+          -1.9343512058258057,
+          3.5959949493408203
+        ],
+        [
+          6.150813102722168,
+          -0.732511043548584,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        5.549892902374268,
+        -1.3334311246871948,
+        4.412997484207153
+      ]
+    },
+    {
+      "id": "pendant_7",
+      "category": "pendant_light",
+      "components": [
+        "pendant_7__cable",
+        "pendant_7__shade_body",
+        "pendant_7__woven_strands",
+        "pendant_7__rim",
+        "pendant_7__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_7__cable",
+        "pendant_7__shade_body",
+        "pendant_7__woven_strands",
+        "pendant_7__rim",
+        "pendant_7__warm_diffuser"
+      ],
+      "dimensions": [
+        1.40447998046875,
+        1.40447998046875,
+        1.6955101490020752
+      ],
+      "bounds_model_m": [
+        [
+          3.952892780303955,
+          -3.6728951930999756,
+          3.534489870071411
+        ],
+        [
+          5.357372760772705,
+          -2.2684152126312256,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        4.65513277053833,
+        -2.9706552028656006,
+        4.382244944572449
+      ]
+    },
+    {
+      "id": "pendant_8",
+      "category": "pendant_light",
+      "components": [
+        "pendant_8__cable",
+        "pendant_8__shade_body",
+        "pendant_8__woven_strands",
+        "pendant_8__rim",
+        "pendant_8__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_8__cable",
+        "pendant_8__shade_body",
+        "pendant_8__woven_strands",
+        "pendant_8__rim",
+        "pendant_8__warm_diffuser"
+      ],
+      "dimensions": [
+        1.1240005493164062,
+        1.124000072479248,
+        1.143751621246338
+      ],
+      "bounds_model_m": [
+        [
+          11.437999725341797,
+          -2.9620001316070557,
+          4.086248397827148
+        ],
+        [
+          12.562000274658203,
+          -1.8380000591278076,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        12.0,
+        -2.4000000953674316,
+        4.658124208450317
+      ]
+    },
+    {
+      "id": "pendant_9",
+      "category": "pendant_light",
+      "components": [
+        "pendant_9__cable",
+        "pendant_9__shade_body",
+        "pendant_9__woven_strands",
+        "pendant_9__rim",
+        "pendant_9__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_9__cable",
+        "pendant_9__shade_body",
+        "pendant_9__woven_strands",
+        "pendant_9__rim",
+        "pendant_9__warm_diffuser"
+      ],
+      "dimensions": [
+        1.2240009307861328,
+        1.224000096321106,
+        1.2137517929077148
+      ],
+      "bounds_model_m": [
+        [
+          11.98799991607666,
+          -0.862000048160553,
+          4.0162482261657715
+        ],
+        [
+          13.212000846862793,
+          0.362000048160553,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        12.600000381469727,
+        -0.25,
+        4.623124122619629
+      ]
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "components": [
+        "pendant_10__cable",
+        "pendant_10__shade_body",
+        "pendant_10__woven_strands",
+        "pendant_10__rim",
+        "pendant_10__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_10__cable",
+        "pendant_10__shade_body",
+        "pendant_10__woven_strands",
+        "pendant_10__rim",
+        "pendant_10__warm_diffuser"
+      ],
+      "dimensions": [
+        1.3239994049072266,
+        1.3239999413490295,
+        1.343752145767212
+      ],
+      "bounds_model_m": [
+        [
+          13.838000297546387,
+          0.5979999899864197,
+          3.8862478733062744
+        ],
+        [
+          15.161999702453613,
+          1.9219999313354492,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        14.5,
+        1.2599999606609344,
+        4.55812394618988
+      ]
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "components": [
+        "pendant_11__cable",
+        "pendant_11__shade_body",
+        "pendant_11__woven_strands",
+        "pendant_11__rim",
+        "pendant_11__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_11__cable",
+        "pendant_11__shade_body",
+        "pendant_11__woven_strands",
+        "pendant_11__rim",
+        "pendant_11__warm_diffuser"
+      ],
+      "dimensions": [
+        1.1839990615844727,
+        1.1839999854564667,
+        1.343752145767212
+      ],
+      "bounds_model_m": [
+        [
+          15.608000755310059,
+          -0.44200000166893005,
+          3.8862478733062744
+        ],
+        [
+          16.79199981689453,
+          0.7419999837875366,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        16.200000286102295,
+        0.14999999105930328,
+        4.55812394618988
+      ]
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "components": [
+        "pendant_12__cable",
+        "pendant_12__shade_body",
+        "pendant_12__woven_strands",
+        "pendant_12__rim",
+        "pendant_12__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_12__cable",
+        "pendant_12__shade_body",
+        "pendant_12__woven_strands",
+        "pendant_12__rim",
+        "pendant_12__warm_diffuser"
+      ],
+      "dimensions": [
+        1.2240009307861328,
+        1.2240001559257507,
+        1.3137521743774414
+      ],
+      "bounds_model_m": [
+        [
+          14.187999725341797,
+          -2.01200008392334,
+          3.916247844696045
+        ],
+        [
+          15.41200065612793,
+          -0.7879999279975891,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        14.800000190734863,
+        -1.4000000059604645,
+        4.573123931884766
+      ]
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "components": [
+        "pendant_13__cable",
+        "pendant_13__shade_body",
+        "pendant_13__woven_strands",
+        "pendant_13__rim",
+        "pendant_13__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_13__cable",
+        "pendant_13__shade_body",
+        "pendant_13__woven_strands",
+        "pendant_13__rim",
+        "pendant_13__warm_diffuser"
+      ],
+      "dimensions": [
+        1.2239999771118164,
+        1.2239999771118164,
+        1.2437520027160645
+      ],
+      "bounds_model_m": [
+        [
+          15.387999534606934,
+          -3.611999988555908,
+          3.986248016357422
+        ],
+        [
+          16.61199951171875,
+          -2.388000011444092,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        15.999999523162842,
+        -3.0,
+        4.608124017715454
+      ]
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "components": [
+        "pendant_14__cable",
+        "pendant_14__shade_body",
+        "pendant_14__woven_strands",
+        "pendant_14__rim",
+        "pendant_14__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_14__cable",
+        "pendant_14__shade_body",
+        "pendant_14__woven_strands",
+        "pendant_14__rim",
+        "pendant_14__warm_diffuser"
+      ],
+      "dimensions": [
+        1.4639999866485596,
+        1.4640001058578491,
+        0.5437517166137695
+      ],
+      "bounds_model_m": [
+        [
+          3.367999792098999,
+          0.0679999589920044,
+          4.686248302459717
+        ],
+        [
+          4.831999778747559,
+          1.5320000648498535,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        4.099999785423279,
+        0.800000011920929,
+        4.958124160766602
+      ]
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "components": [
+        "pendant_15__cable",
+        "pendant_15__shade_body",
+        "pendant_15__woven_strands",
+        "pendant_15__rim",
+        "pendant_15__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_15__cable",
+        "pendant_15__shade_body",
+        "pendant_15__woven_strands",
+        "pendant_15__rim",
+        "pendant_15__warm_diffuser"
+      ],
+      "dimensions": [
+        1.5840001106262207,
+        1.584000051021576,
+        0.6937518119812012
+      ],
+      "bounds_model_m": [
+        [
+          1.2079999446868896,
+          0.40800005197525024,
+          4.536248207092285
+        ],
+        [
+          2.7920000553131104,
+          1.9920001029968262,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        2.0,
+        1.2000000774860382,
+        4.883124113082886
+      ]
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "components": [
+        "pendant_16__cable",
+        "pendant_16__shade_body",
+        "pendant_16__woven_strands",
+        "pendant_16__rim",
+        "pendant_16__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_16__cable",
+        "pendant_16__shade_body",
+        "pendant_16__woven_strands",
+        "pendant_16__rim",
+        "pendant_16__warm_diffuser"
+      ],
+      "dimensions": [
+        1.4640001058578491,
+        1.464000165462494,
+        0.7437520027160645
+      ],
+      "bounds_model_m": [
+        [
+          -0.7320000529289246,
+          0.26799994707107544,
+          4.486248016357422
+        ],
+        [
+          0.7320000529289246,
+          1.7320001125335693,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        0.0,
+        1.0000000298023224,
+        4.858124017715454
+      ]
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "components": [
+        "pendant_17__cable",
+        "pendant_17__shade_body",
+        "pendant_17__woven_strands",
+        "pendant_17__rim",
+        "pendant_17__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_17__cable",
+        "pendant_17__shade_body",
+        "pendant_17__woven_strands",
+        "pendant_17__rim",
+        "pendant_17__warm_diffuser"
+      ],
+      "dimensions": [
+        1.4240002632141113,
+        1.4240001440048218,
+        0.5937519073486328
+      ],
+      "bounds_model_m": [
+        [
+          2.5879998207092285,
+          -2.51200008392334,
+          4.6362481117248535
+        ],
+        [
+          4.01200008392334,
+          -1.087999939918518,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        3.299999952316284,
+        -1.800000011920929,
+        4.93312406539917
+      ]
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "components": [
+        "pendant_18__cable",
+        "pendant_18__shade_body",
+        "pendant_18__woven_strands",
+        "pendant_18__rim",
+        "pendant_18__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_18__cable",
+        "pendant_18__shade_body",
+        "pendant_18__woven_strands",
+        "pendant_18__rim",
+        "pendant_18__warm_diffuser"
+      ],
+      "dimensions": [
+        1.3039999604225159,
+        1.303999900817871,
+        0.6937518119812012
+      ],
+      "bounds_model_m": [
+        [
+          0.3479999899864197,
+          -3.052000045776367,
+          4.536248207092285
+        ],
+        [
+          1.6519999504089355,
+          -1.748000144958496,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        0.9999999701976776,
+        -2.4000000953674316,
+        4.883124113082886
+      ]
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "components": [
+        "pendant_19__cable",
+        "pendant_19__shade_body",
+        "pendant_19__woven_strands",
+        "pendant_19__rim",
+        "pendant_19__warm_diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        108,
+        129
+      ],
+      "provenance": "Visible woven bowl type. Four centres triangulated; remaining staggered layout inferred from rays and occlusion. Weave, support thickness and power inferred.",
+      "relations": {
+        "suspended_from": "ceiling"
+      },
+      "component_names": [
+        "pendant_19__cable",
+        "pendant_19__shade_body",
+        "pendant_19__woven_strands",
+        "pendant_19__rim",
+        "pendant_19__warm_diffuser"
+      ],
+      "dimensions": [
+        1.3040000796318054,
+        1.3039999604225159,
+        0.7637519836425781
+      ],
+      "bounds_model_m": [
+        [
+          -1.5520000457763672,
+          -2.1519999504089355,
+          4.466248035430908
+        ],
+        [
+          -0.24799996614456177,
+          -0.8479999899864197,
+          5.230000019073486
+        ]
+      ],
+      "position": [
+        -0.9000000059604645,
+        -1.4999999701976776,
+        4.848124027252197
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "method_id": "M4",
+  "modeller": "GPT-6 Astra independent modeller subagent",
+  "status": "frozen_for_independent_GT_evaluation",
+  "input_freeze": {
+    "packet_sha256": "e215caebb02bc21b122915d4c8826dcde3cc71bb202a948b3400620e167024f9",
+    "status": "complete",
+    "frames": 180,
+    "geometry_frames": 180,
+    "frozen_utc": "2026-09-23T05:58:19.860286+00:00"
+  },
+  "allowed_inputs": "sampled RGB + supplied metric camera poses + MapAnything depth; no GT mesh/depth/object labels",
+  "geometry_policy": "Native metric poses and predicted MapAnything optical-Z; additional RGB correspondences triangulated using the supplied poses. No GT geometry, GT depth, old model, other-method scene source or evaluation opened.",
+  "coordinate_system": {
+    "units": "m",
+    "T_input_model": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "model_world_up": [
+      0,
+      0,
+      1
+    ],
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "camera_input_convention": "OpenCV RDF c2w",
+    "blender_camera_conversion": "T_cv @ diag(1,-1,-1,1)",
+    "glb_export_yup": false,
+    "glb_world_up": "Z"
+  },
+  "construction": "Empty Blender factory scene, independently authored named parametric solids and curves. No scan mesh used as scene or hidden layer.",
+  "measurement_conflicts": [
+    {
+      "surface": "floor",
+      "measurements": "frame 0 z about 0.42 m versus frame108 about0.04 m and triangulated floor near0",
+      "resolution": "modeled z0.025 from local near views; no global depth rescaling; uncertainty about0.12m"
+    },
+    {
+      "surface": "reception wall",
+      "measurements": "frame0 predicted x23.27, later frame126 x26.05; triangulated crest x26.74-26.85",
+      "resolution": "modeled inner face x26.805, supported by RGB triangulation and close depth"
+    },
+    {
+      "surface": "south mirror wall",
+      "measurements": "frame0 y18.7, frames60/70 y18.1",
+      "resolution": "used local near-wall y18.1; circular geometry projected from RGB outlines"
+    },
+    {
+      "surface": "lamps",
+      "measurements": "independent windows produce incompatible positions/heights, and repeated weave gives unreliable correspondence",
+      "resolution": "retained local depth anchors except three validated triangulated rear lamps; uncertainty documented; no fitting to GT"
+    }
+  ],
+  "derived_measurements": {
+    "rgb_sift_points": 2194,
+    "rgb_sift_script": "triangulate_rgb.py",
+    "semantic_point_script": "probe_geometry.py",
+    "manual_rgb_triangulation_script": "manual_triangulation.py",
+    "manual_rejection_rule": "Do not use ambiguous manually matched points with reprojection residual above 2.5 px at image width780; rejected measurements retained in raw diagnostic JSON",
+    "axes_or_scale_adjusted": false
+  },
+  "observed_vs_inferred": {
+    "observed": "visible object categories, visible silhouettes, surface palette, metric camera frame, local measured depths, selected RGB correspondences",
+    "inferred": "backsides and internal structures, thickness of panels and furniture shells, mechanical attachment, leaf and wicker detail, material BRDF and light intensity, all physical friction/restitution"
+  },
+  "limitations": [
+    "MapAnything depth is inconsistent across windows even with supplied metric poses. Modeling reconciles per-surface local evidence and RGB triangulation without secretly scaling depths.",
+    "Room dimensions and high suspended lights remain approximate; unseen portions are inferred.",
+    "AABBs are conservative collision proxies and may enclose foliage or curved furniture empty space.",
+    "Procedural shader micro-bump is primarily represented in BLEND; GLB retains colors, packed image textures and explicit weave geometry.",
+    "No quantitative fidelity claim is made before independent evaluation.",
+    "Unresolved clean-review findings are explicitly listed in review_response.json (remaining pendant correspondence, manual furniture fit residual, and appearance).",
+    "Uncertainty distances are heuristic author estimates of inconsistent evidence, not calibrated error bounds.",
+    "The near furniture uses an inferred common z0.42 seat-top plane; manual multi-view contour residuals are recorded."
+  ],
+  "budget": {
+    "revision_limit": 5,
+    "revisions_used": 4,
+    "tool_rendered_view_limit": 60,
+    "tool_rendered_views_used": 20,
+    "workflow_elapsed_seconds_so_far": 4047.9265110492706,
+    "render_stats": [
+      {
+        "revision": 1,
+        "elapsed_seconds": 90.26717209815979,
+        "render_ids": [
+          0,
+          60,
+          90,
+          108,
+          138
+        ],
+        "cycles_device": "CPU",
+        "threads": 4,
+        "samples": 40,
+        "objects": 71,
+        "blender_objects": 3640,
+        "glb_axes": "native Z up; export_yup=False"
+      },
+      {
+        "revision": 2,
+        "elapsed_seconds": 100.63933873176575,
+        "render_ids": [
+          0,
+          60,
+          90,
+          108,
+          138
+        ],
+        "cycles_device": "CPU",
+        "threads": 4,
+        "samples": 40,
+        "objects": 74,
+        "blender_objects": 4466,
+        "glb_axes": "native Z up; export_yup=False"
+      },
+      {
+        "revision": 3,
+        "elapsed_seconds": 98.16312670707703,
+        "render_ids": [
+          0,
+          60,
+          90,
+          108,
+          138
+        ],
+        "cycles_device": "CPU",
+        "threads": 4,
+        "samples": 40,
+        "objects": 75,
+        "blender_objects": 4469,
+        "glb_axes": "native Z up; export_yup=False"
+      },
+      {
+        "revision": 4,
+        "elapsed_seconds": 102.72064471244812,
+        "render_ids": [
+          0,
+          60,
+          90,
+          108,
+          138
+        ],
+        "cycles_device": "CPU",
+        "threads": 4,
+        "samples": 40,
+        "objects": 74,
+        "blender_objects": 4388,
+        "glb_axes": "native Z up; export_yup=False"
+      }
+    ],
+    "tool_token_use": "not exposed by the subagent runtime",
+    "model_token_use": "not exposed by the subagent runtime"
+  },
+  "reproducibility": {
+    "command": "M4_REVISION=4 /home/hchen/Documents/blender/blender-5.2.0-linux-x64/blender -b -t 4 -P build_scene.py",
+    "blender": "5.2.0",
+    "render_engine": "Cycles",
+    "device": "CPU",
+    "threads": 4,
+    "samples": 40,
+    "seed": 41007,
+    "inputs_for_rebuild": [
+      "build_scene.py",
+      "layout_parameters.json",
+      "cameras.json"
+    ]
+  },
+  "required_artifacts": [
+    "scene.blend",
+    "scene.glb",
+    "build_scene.py",
+    "objects.json",
+    "colliders.json",
+    "cameras.json",
+    "input_access_log.json",
+    "iteration_log.json",
+    "modelling_manifest.json"
+  ],
+  "independent_verification": {
+    "status": "clean reviewer examined v2 and requested repairs; modeller addressed findings in v3/v4 and froze without reading GT; parent can independently verify key repairs",
+    "review": "independent_review/review.json",
+    "response": "review_response.json",
+    "new_review_renders": 0,
+    "GT_evaluation_used_for_model_changes": false
+  },
+  "required_artifact_validation": {
+    "all_present": true,
+    "input_hashes_match": true,
+    "semantic_objects": 74,
+    "colliders": 37,
+    "cameras": 180,
+    "bounds_valid": true,
+    "ids_unique": true,
+    "backrests_manifold_positive_volume": true,
+    "glb_header_length_valid": true,
+    "floor_finish_contact_top_z": 0.04100000113248825
+  },
+  "final_revision": 4,
+  "frozen_utc": "2026-09-23T06:51:21.308783+00:00"
+}

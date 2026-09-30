@@ -1,0 +1,21 @@
+import os
+os.environ['OPENBLAS_NUM_THREADS']='2'
+import numpy as np,json,hashlib
+from pathlib import Path
+ROOT=Path(__file__).parent;INPUT=ROOT.parent.parent/'inputs/M2';P=json.loads((INPUT/'packet.json').read_text());X=np.array(json.loads((ROOT/'analysis/transform.json').read_text())['model_from_input'])
+lights=[]
+# Source33 hand observed bowl silhouettes; interior median predicted Z establishes centers, apparent width establishes diameter.
+for j,(u,v,w) in enumerate([(350,33,211),(460,138,140),(443,200,116),(501,217,70),(565,210,85),(609,252,96),(624,282,71),(530,275,75),(665,262,82),(735,278,84),(800,238,105),(734,224,128),(707,179,120),(793,147,189),(1140,118,288)]):
+ n=np.load(P['frames'][33]['geometry']);d=n['depth_z_m'];K=n['intrinsics'];xx=int(u*d.shape[1]/1280);yy=int(v*d.shape[0]/960);z=float(np.median(d[max(0,yy-2):yy+3,max(0,xx-3):xx+4]));q=np.array([(u-640)/762.8*z,(v-480)/762.8*z,z]);T=X@np.array(P['frames'][33]['camera_to_world']);pt=T[:3,:3]@q+T[:3,3];diam=w/762.8*z
+ lights.append({'id':f'pendant_{j:02d}','center':pt.tolist(),'diameter':diam,'pixel_center':[u,v],'pixel_width':w,'depth_z':z,'evidence_frames':[33,129],'uncertainty':'center from single RGB identified depth region; hidden bowl profile inferred'})
+ print(j,np.round(pt,2),round(diam,2))
+L={'version':1,'coordinate_frame':'rigid model frame with median per-view floor normals +Z, long lobby +Y','model_from_input':X.tolist(),'geometry_scale':1,'floor_z':-.18,'ceiling_z':4.8,'bounds':{'window_x':-4.02,'near_y':-2.08,'far_y':15.15,'side_x':3.78,'recess_x':6.38,'recess_start_y':8.0},'carpet':{'center':[.1,6.2,-.17],'dimensions':[4.9,16.3,.015]},'column':{'center':[-2.62,7.2,2.31],'radius':.36,'height':4.98},'planters':[{'id':'planter_west','center':[-.75,8.05,.17],'dimensions':[1.65,.59,.7]},{'id':'planter_east','center':[1.28,8.05,.17],'dimensions':[1.65,.59,.7]}], 'seats':[], 'tables':[{'id':'coffee_table_far','center':[.0,5.58,.20],'radius':.57,'evidence_frames':[33,129]},{'id':'coffee_table_near','center':[.40,2.25,.2],'radius':.66,'evidence_frames':[61,155]},{'id':'side_table_near','center':[-.30,.75,.32],'radius':.31,'evidence_frames':[91]}], 'lights':lights, 'mirrors':{'x':3.715,'center_y':2.55,'center_z':1.72,'evidence_frames':[61,74,82]}, 'reception':{'center':[.60,13.45,.38],'dimensions':[3.1,1.05,1.12]},'notes':['Joint unconstrained floor fit tilted due spatially varying prediction offsets; orientation chosen median of five single-view floor normals.','End wall sample33 y17.8 conflicts with sample129 y14.05. Chosen15.15 is explicitly compromise inference; no scale fit.','Two floor planters observed from opposite directions are the same pair, not four.','Mirror images and polished floor reflections are not duplicate furniture.','Full floor and ceiling extents beyond observations, thicknesses, supporting feet and material parameters are inferred.']}
+for j,(x,y,yaw,back) in enumerate([(-1.12,5.72,-.45,False),(-1.06,6.58,2.2,True),(-.40,6.68,1.7,True),(.15,6.98,1.4,False),(.51,6.30,1.0,False),(1.10,6.29,.35,True),(1.25,2.9,.0,False),(1.25,2.15,.0,True),(1.18,1.4,.1,True),(.6,.77,-1.,False),(-.03,1.0,-2.,True)]):
+ L['seats'].append({'id':f'lounge_seat_{j:02d}','center':[x,y,.13],'radius':.40 if j<6 else .43,'height':.48,'yaw':yaw,'back':back,'evidence_frames':[33,129] if j<6 else [61,91,155]})
+(ROOT/'layout.json').write_text(json.dumps(L,indent=2))
+frames=[]
+for f in P['frames']:
+ frames.append({k:f[k] for k in ['sample_index','source_index','timestamp_ns','intrinsics']}|{'camera_to_world':(X@np.array(f['camera_to_world'])).tolist(),'valid':True,'confidence':'native ViPE pose retained; reconstruction consistency varies'})
+(ROOT/'cameras.json').write_text(json.dumps({'frames':frames,'coordinate_frame':'model','pose_convention':'OpenCV RDF camera-to-world'},indent=2))
+manifest={'method_id':'M2','model_id':'gpt-6-astra','status':'ready_for_independent_review','model_from_input':X.tolist(),'geometry_scale':1,'revisions':1,'checking_render_count':0,'input_bvh_pass_count':0,'input_packet_sha256':hashlib.sha256((INPUT/'packet.json').read_bytes()).hexdigest(),'quality_status':'LIMITED; initial candidate, independent review pending','unresolved_issues':L['notes'],'author_phase':'initial'}
+(ROOT/'modelling_manifest.json').write_text(json.dumps(manifest,indent=2))

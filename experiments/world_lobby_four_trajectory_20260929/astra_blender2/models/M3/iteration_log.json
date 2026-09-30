@@ -1,0 +1,75 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "stage": "initial complete; awaiting separate reviewer",
+      "reason": "Fresh independent measurement and semantic authoring",
+      "parameter_snapshot": "versions/v1/layout.json",
+      "prior_scene": null,
+      "changes": "All geometry new; no historical code or dimensions",
+      "paired_checks": "checks/v1/paired_report.json",
+      "input_pass": "checks/input_v1/report.json",
+      "observations": "analysis/observed_issues_v1.json",
+      "geometry_changes_after_checks": false
+    }
+  ],
+  "failures": [
+    {
+      "script": "analysis/anchors.py first invocation",
+      "error": "RecursionError due to nested exec using wrong __file__",
+      "impact": "No scene built, no render attempted; script corrected and rerun"
+    },
+    {
+      "script": "generic checker execution provenance",
+      "error": "Paired invocation returned Already completed same model/version; complete reports for paired checks, full BVH and artifact validation appeared in own output without their creating invocations visible in this author tool transcript.",
+      "impact": "Hashes, exact indices,180 frames and ledger checked; reused actual outputs. No extra render or input pass. This is a provenance limitation, not a claimed helper failure."
+    }
+  ],
+  "budget": {
+    "max_versions": 5,
+    "max_paired_views": 50,
+    "used_versions": 1,
+    "used_paired_views": 10,
+    "used_full_input_passes": 1
+  },
+  "revision_author_iterations": [
+    {
+      "version": 2,
+      "action": "Main measured/technical repairs; remaining bevel degeneracy discovered",
+      "paired_checks": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "input_pass": "checks/input_v2",
+      "inspection": "all ten actual paired sheets viewed",
+      "author_only": true
+    },
+    {
+      "version": 3,
+      "action": "Remove chair bevel; final closed nondegenerate geometry, no layout change fromv2",
+      "paired_checks": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "input_pass": "checks/input_final",
+      "inspection": "all ten actual paired sheets viewed",
+      "author_only": true
+    }
+  ]
+}

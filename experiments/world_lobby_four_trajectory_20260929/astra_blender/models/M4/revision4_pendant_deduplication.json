@@ -1,0 +1,24 @@
+{
+  "removed_object": "pendant_front_00",
+  "merged_into": "pendant_13",
+  "old_single_view_parameters": {
+    "id": "pendant_front_00",
+    "center": [
+      15.540061155692735,
+      19.408923572331467,
+      3.5019401546320243
+    ],
+    "radius": 0.6098876476229356,
+    "evidence": [
+      90
+    ],
+    "provenance": "input depth anchor with RGB silhouette radius"
+  },
+  "evidence_frames": [
+    0,
+    60,
+    90
+  ],
+  "accepted_three_view_identity": "pendant13 triangulated from0/60 projects to90 at(239.6,118.4), within3.8px of single-view fixture(243,120) at780px width",
+  "remaining_identity_uncertainty": "Other pendant correspondences remain imperfect."
+}

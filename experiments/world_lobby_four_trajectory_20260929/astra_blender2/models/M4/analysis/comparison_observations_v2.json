@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "role": "author visual inspection of all ten actual saved comparison sheets",
+  "views": [
+    {
+      "sample_index": 33,
+      "path": "checks/v2/0033_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Lamp rim alignment improved; middle cluster still displaced. Floor grid too regular; separated furniture remains approximate."
+    },
+    {
+      "sample_index": 61,
+      "path": "checks/v2/0061_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Missing mirror pendant restored close to source/depth edges. No black chair slivers. Backrest rotations imperfect; fern too thin/flat and lacks convincing stems."
+    },
+    {
+      "sample_index": 74,
+      "path": "checks/v2/0074_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Mirror pendant restored and feature return panel visible. Seat body displaced; plant silhouettes approximate."
+    },
+    {
+      "sample_index": 82,
+      "path": "checks/v2/0082_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Feature return now panelled. Several near fixtures still displaced or absent. Narrower shrubs improve broad silhouette but botanical form differs."
+    },
+    {
+      "sample_index": 91,
+      "path": "checks/v2/0091_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "West panels and cluster restored. Lamp identities/heights uncertain. Source lighting has stronger contrast; floor grid too uniform."
+    },
+    {
+      "sample_index": 100,
+      "path": "checks/v2/0100_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Broader closed entry frames with split leaves. Floor has pattern but reflectance/regularity differs. West lamp arrangement approximate."
+    },
+    {
+      "sample_index": 108,
+      "path": "checks/v2/0108_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Reduced shrub spread; fine depth edges differ. Door material/brightness and fixtures remain approximate."
+    },
+    {
+      "sample_index": 118,
+      "path": "checks/v2/0118_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Shrub mixed-ROI depth agreement improves; source height/spread and branching still differ."
+    },
+    {
+      "sample_index": 129,
+      "path": "checks/v2/0129_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Near pendant alignment improves. Seating has no solid overlap but seat-region DA3 MAE worsens. Far-wall prediction conflict and middle lamp mismatch remain."
+    },
+    {
+      "sample_index": 155,
+      "path": "checks/v2/0155_comparison.jpg",
+      "inspected_panels": [
+        "input RGB",
+        "rendered RGB",
+        "model Z",
+        "own DA3 Z",
+        "absolute error",
+        "relative error",
+        "unaltered domain",
+        "edges"
+      ],
+      "observations": "Separated furniture/reduced shrubs lower seating-region depth error. Appearance remains approximate and far-wall DA3 predicts deeper surfaces."
+    }
+  ]
+}

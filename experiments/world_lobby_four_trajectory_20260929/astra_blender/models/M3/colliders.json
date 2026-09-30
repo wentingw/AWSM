@@ -1,0 +1,5250 @@
+{
+  "colliders": [
+    {
+      "object_id": "floor",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          -0.10000038146972656,
+          -3.200000047683716,
+          -0.1599999964237213
+        ],
+        "max": [
+          19.600000381469727,
+          7.800000190734863,
+          0.013000000268220901
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "ceiling",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          -0.10000038146972656,
+          -3.200000047683716,
+          4.90500020980835
+        ],
+        "max": [
+          19.600000381469727,
+          7.809999942779541,
+          5.130000114440918
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__substrate",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.15999984741211,
+          -3.25,
+          0.0
+        ],
+        "max": [
+          19.34000015258789,
+          7.800000190734863,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_00_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -3.24399995803833,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          -2.4260001182556152,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_00_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -3.24399995803833,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          -2.4260001182556152,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_00_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -3.24399995803833,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          -2.4260001182556152,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_01_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -2.4140000343322754,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          -1.596000075340271,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_01_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -2.4140000343322754,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          -1.596000075340271,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_01_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -2.4140000343322754,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          -1.596000075340271,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_02_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -1.5839999914169312,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          -0.7659999132156372,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_02_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -1.5839999914169312,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          -0.7659999132156372,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_02_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -1.5839999914169312,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          -0.7659999132156372,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_03_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -0.7540000081062317,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          0.06400001049041748,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_03_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -0.7540000081062317,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          0.06400001049041748,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_03_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          -0.7540000081062317,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          0.06400001049041748,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_04_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.07600000500679016,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          0.8940000534057617,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_04_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.07600000500679016,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          0.8940000534057617,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_04_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.07600000500679016,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          0.8940000534057617,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_05_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.906000018119812,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          1.724000096321106,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_05_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.906000018119812,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          1.724000096321106,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_05_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          0.906000018119812,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          1.724000096321106,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_06_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          1.7359999418258667,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          2.553999900817871,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_06_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          1.7359999418258667,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          2.553999900817871,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_06_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          1.7359999418258667,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          2.553999900817871,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_07_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          2.565999984741211,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          3.383999824523926,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_07_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          2.565999984741211,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          3.383999824523926,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_07_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          2.565999984741211,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          3.383999824523926,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_08_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          3.3960001468658447,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          4.214000225067139,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_08_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          3.3960001468658447,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          4.214000225067139,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_08_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          3.3960001468658447,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          4.214000225067139,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_09_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          4.2260003089904785,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          5.044000148773193,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_09_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          4.2260003089904785,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          5.044000148773193,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_09_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          4.2260003089904785,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          5.044000148773193,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_10_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.056000232696533,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          5.874000072479248,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_10_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.056000232696533,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          5.874000072479248,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_10_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.056000232696533,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          5.874000072479248,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_11_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.886000156402588,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          6.703999996185303,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_11_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.886000156402588,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          6.703999996185303,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_11_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          5.886000156402588,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          6.703999996185303,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_12_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          6.716000080108643,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          7.533999919891357,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_12_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          6.716000080108643,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          7.533999919891357,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_12_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          6.716000080108643,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          7.533999919891357,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_13_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          7.546000003814697,
+          0.00700002908706665
+        ],
+        "max": [
+          19.17249870300293,
+          7.794000148773193,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_13_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          7.546000003814697,
+          1.8570001125335693
+        ],
+        "max": [
+          19.17249870300293,
+          7.794000148773193,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "far_end_wall",
+      "component_name": "far_end_wall__panel_13_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.127500534057617,
+          7.546000003814697,
+          3.7069997787475586
+        ],
+        "max": [
+          19.17249870300293,
+          7.794000148773193,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__substrate",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.6599999666213989,
+          -0.20000004768371582,
+          0.0
+        ],
+        "max": [
+          0.8400000333786011,
+          7.800000190734863,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_00_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          -0.1940000057220459,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          0.6240000128746033,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_00_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          -0.1940000057220459,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          0.6240000128746033,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_00_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          -0.1940000057220459,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          0.6240000128746033,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_01_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          0.6359999179840088,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          1.4539999961853027,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_01_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          0.6359999179840088,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          1.4539999961853027,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_01_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          0.6359999179840088,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          1.4539999961853027,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_02_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          1.465999960899353,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          2.2839999198913574,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_02_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          1.465999960899353,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          2.2839999198913574,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_02_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          1.465999960899353,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          2.2839999198913574,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_03_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          2.2960000038146973,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          3.113999843597412,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_03_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          2.2960000038146973,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          3.113999843597412,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_03_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          2.2960000038146973,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          3.113999843597412,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_04_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.126000165939331,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          3.944000005722046,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_04_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.126000165939331,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          3.944000005722046,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_04_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.126000165939331,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          3.944000005722046,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_05_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.9559998512268066,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          4.7739996910095215,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_05_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.9559998512268066,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          4.7739996910095215,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_05_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          3.9559998512268066,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          4.7739996910095215,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_06_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          4.7860002517700195,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          5.604000091552734,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_06_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          4.7860002517700195,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          5.604000091552734,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_06_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          4.7860002517700195,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          5.604000091552734,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_07_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          5.616000175476074,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          6.434000015258789,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_07_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          5.616000175476074,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          6.434000015258789,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_07_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          5.616000175476074,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          6.434000015258789,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_08_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          6.446000099182129,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          7.263999938964844,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_08_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          6.446000099182129,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          7.263999938964844,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_08_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          6.446000099182129,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          7.263999938964844,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_09_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          7.276000022888184,
+          0.00700002908706665
+        ],
+        "max": [
+          0.9024999737739563,
+          7.793999671936035,
+          1.8429999351501465
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_09_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          7.276000022888184,
+          1.8570001125335693
+        ],
+        "max": [
+          0.9024999737739563,
+          7.793999671936035,
+          3.693000078201294
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "near_end_wall",
+      "component_name": "near_end_wall__panel_09_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.8575000166893005,
+          7.276000022888184,
+          3.7069997787475586
+        ],
+        "max": [
+          0.9024999737739563,
+          7.793999671936035,
+          4.993000030517578
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__substrate_pier_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.75,
+          -0.3100000023841858,
+          0.0
+        ],
+        "max": [
+          1.5499999523162842,
+          -0.12999999523162842,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__substrate_header_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.5499999523162842,
+          -0.3100000023841858,
+          1.9000000953674316
+        ],
+        "max": [
+          2.549999952316284,
+          -0.12999999523162842,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__substrate_pier_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.5500001907348633,
+          -0.3100000023841858,
+          0.0
+        ],
+        "max": [
+          8.670000076293945,
+          -0.12999999523162842,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__substrate_header_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.670000076293945,
+          -0.3100000023841858,
+          1.9000000953674316
+        ],
+        "max": [
+          9.569999694824219,
+          -0.12999999523162842,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__substrate_pier_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.569999694824219,
+          -0.3100000023841858,
+          0.0
+        ],
+        "max": [
+          10.25,
+          -0.12999999523162842,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_00_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.7559999823570251,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          1.5439999103546143,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_00_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.7559999823570251,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          1.5439999103546143,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_00_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.7559999823570251,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          1.5439999103546143,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_00_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          0.7559999823570251,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          1.5439999103546143,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_01_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.555999994277954,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          2.3440001010894775,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_01_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.555999994277954,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          2.3440001010894775,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_02_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.555999994277954,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          3.1439998149871826,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_02_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.555999994277954,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          3.1439998149871826,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_02_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.3559999465942383,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          3.1440000534057617,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_02_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.3559999465942383,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          3.1440000534057617,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_03_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.1559998989105225,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          3.944000005722046,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_03_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.1559998989105225,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          3.944000005722046,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_03_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.1559998989105225,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          3.944000005722046,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_03_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.1559998989105225,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          3.944000005722046,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_04_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.9559998512268066,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          4.74399995803833,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_04_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.9559998512268066,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          4.74399995803833,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_04_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.9559998512268066,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          4.74399995803833,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_04_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.9559998512268066,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          4.74399995803833,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_05_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.75600004196167,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          5.544000148773193,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_05_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.75600004196167,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          5.544000148773193,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_05_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.75600004196167,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          5.544000148773193,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_05_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.75600004196167,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          5.544000148773193,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_06_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.555999755859375,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          6.343999862670898,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_06_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.555999755859375,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          6.343999862670898,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_06_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.555999755859375,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          6.343999862670898,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_06_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.555999755859375,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          6.343999862670898,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_07_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          6.355999946594238,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          7.144000053405762,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_07_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          6.355999946594238,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          7.144000053405762,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_07_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          6.355999946594238,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          7.144000053405762,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_07_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          6.355999946594238,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          7.144000053405762,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_08_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.156000137329102,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          7.944000244140625,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_08_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.156000137329102,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          7.944000244140625,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_08_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.156000137329102,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          7.944000244140625,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_08_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.156000137329102,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          7.944000244140625,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_09_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.956000328063965,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          8.664000511169434,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_09_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.956000328063965,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          8.664000511169434,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_09_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.956000328063965,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          8.744000434875488,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_09_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.956000328063965,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          8.744000434875488,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_10_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.755999565124512,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          9.543999671936035,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_10_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.755999565124512,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          9.543999671936035,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_11_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.576000213623047,
+          -0.13650000095367432,
+          0.0059999823570251465
+        ],
+        "max": [
+          10.243999481201172,
+          -0.09149999916553497,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_11_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.576000213623047,
+          -0.13650000095367432,
+          1.8559999465942383
+        ],
+        "max": [
+          10.243999481201172,
+          -0.09149999916553497,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_11_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.555999755859375,
+          -0.13650000095367432,
+          1.9059998989105225
+        ],
+        "max": [
+          10.243999481201172,
+          -0.09149999916553497,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "mirror_bay_wall",
+      "component_name": "mirror_bay_wall__panel_11_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.555999755859375,
+          -0.13650000095367432,
+          3.7059998512268066
+        ],
+        "max": [
+          10.243999481201172,
+          -0.09149999916553497,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_pier_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.25,
+          -3.43999981880188,
+          0.0
+        ],
+        "max": [
+          11.149999618530273,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_header_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.15000057220459,
+          -3.43999981880188,
+          1.9000000953674316
+        ],
+        "max": [
+          12.050000190734863,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_pier_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.049999237060547,
+          -3.43999981880188,
+          0.0
+        ],
+        "max": [
+          13.670000076293945,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_header_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.670000076293945,
+          -3.43999981880188,
+          1.9000000953674316
+        ],
+        "max": [
+          14.569999694824219,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_pier_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.570000648498535,
+          -3.43999981880188,
+          0.0
+        ],
+        "max": [
+          16.200000762939453,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_header_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.19999885559082,
+          -3.43999981880188,
+          1.9000000953674316
+        ],
+        "max": [
+          17.100000381469727,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__substrate_pier_3",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.099998474121094,
+          -3.43999981880188,
+          0.0
+        ],
+        "max": [
+          19.25,
+          -3.259999990463257,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_00_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.255999565124512,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          11.043999671936035,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_00_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.255999565124512,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          11.043999671936035,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_00_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.255999565124512,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          11.043999671936035,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_00_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.255999565124512,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          11.043999671936035,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_01_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.056000709533691,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          11.144000053405762,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_01_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.056000709533691,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          11.144000053405762,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_01_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.055999755859375,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          11.843999862670898,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_01_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.055999755859375,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          11.843999862670898,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_02_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.056000709533691,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          12.644000053405762,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_02_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.056000709533691,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          12.644000053405762,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_02_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.855999946594238,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          12.644000053405762,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_02_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.855999946594238,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          12.644000053405762,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_03_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.656000137329102,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          13.444000244140625,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_03_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.656000137329102,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          13.444000244140625,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_03_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.656000137329102,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          13.444000244140625,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_03_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.656000137329102,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          13.444000244140625,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_04_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.456000328063965,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          13.664000511169434,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_04_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.456000328063965,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          13.664000511169434,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_04_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.456000328063965,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          14.244000434875488,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_04_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.456000328063965,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          14.244000434875488,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_05_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.576000213623047,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          15.044000625610352,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_05_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.576000213623047,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          15.044000625610352,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_05_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.255999565124512,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          15.043999671936035,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_05_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.255999565124512,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          15.043999671936035,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_06_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.055999755859375,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          15.843999862670898,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_06_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.055999755859375,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          15.843999862670898,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_06_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.055999755859375,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          15.843999862670898,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_06_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.055999755859375,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          15.843999862670898,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_07_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.855999946594238,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          16.194000244140625,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_07_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.855999946594238,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          16.194000244140625,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_07_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.855999946594238,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          16.643999099731445,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_07_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.855999946594238,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          16.643999099731445,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_08_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.105998992919922,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          17.444000244140625,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_08_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.105998992919922,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          17.444000244140625,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_08_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.6560001373291,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          17.443998336791992,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_08_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.6560001373291,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          17.443998336791992,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_09_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.45600128173828,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          18.243999481201172,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_09_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.45600128173828,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          18.243999481201172,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_09_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.45600128173828,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          18.243999481201172,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_09_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.45600128173828,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          18.243999481201172,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_10_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          18.256000518798828,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          19.04399871826172,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_10_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          18.256000518798828,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          19.04399871826172,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_10_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          18.256000518798828,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          19.04399871826172,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_10_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          18.256000518798828,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          19.04399871826172,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_11_0_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.055999755859375,
+          -3.2664999961853027,
+          0.0059999823570251465
+        ],
+        "max": [
+          19.243999481201172,
+          -3.2214999198913574,
+          1.8440001010894775
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_11_1_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.055999755859375,
+          -3.2664999961853027,
+          1.8559999465942383
+        ],
+        "max": [
+          19.243999481201172,
+          -3.2214999198913574,
+          1.8940000534057617
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_11_2_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.055999755859375,
+          -3.2664999961853027,
+          1.9059998989105225
+        ],
+        "max": [
+          19.243999481201172,
+          -3.2214999198913574,
+          3.694000005722046
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "recess_wall",
+      "component_name": "recess_wall__panel_11_3_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          19.055999755859375,
+          -3.2664999961853027,
+          3.7059998512268066
+        ],
+        "max": [
+          19.243999481201172,
+          -3.2214999198913574,
+          4.99399995803833
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "wall_return",
+      "component_name": "wall_return__return",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.15999984741211,
+          -3.25,
+          0.0
+        ],
+        "max": [
+          10.34000015258789,
+          -0.1700000762939453,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_00",
+      "component_name": "interior_door_00__head",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.5499999523162842,
+          -0.060499999672174454,
+          1.8624999523162842
+        ],
+        "max": [
+          2.549999952316284,
+          -0.01549999788403511,
+          1.8975000381469727
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_00",
+      "component_name": "interior_door_00__jamb_-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.5525000095367432,
+          -0.29500001668930054,
+          0.0
+        ],
+        "max": [
+          1.5875000953674316,
+          -0.04500000178813934,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_00",
+      "component_name": "interior_door_00__jamb_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.512500047683716,
+          -0.29500001668930054,
+          0.0
+        ],
+        "max": [
+          2.547499895095825,
+          -0.04500000178813934,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_01",
+      "component_name": "interior_door_01__leaf",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.720000267028809,
+          -0.0949999988079071,
+          0.0
+        ],
+        "max": [
+          9.519999504089355,
+          -0.04500000178813934,
+          1.8700000047683716
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_01",
+      "component_name": "interior_door_01__head",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.670000076293945,
+          -0.060499999672174454,
+          1.8624999523162842
+        ],
+        "max": [
+          9.569999694824219,
+          -0.01549999788403511,
+          1.8975000381469727
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_01",
+      "component_name": "interior_door_01__jamb_-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.672499656677246,
+          -0.29500001668930054,
+          0.0
+        ],
+        "max": [
+          8.707499504089355,
+          -0.04500000178813934,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_01",
+      "component_name": "interior_door_01__jamb_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.532500267028809,
+          -0.29500001668930054,
+          0.0
+        ],
+        "max": [
+          9.567500114440918,
+          -0.04500000178813934,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_01",
+      "component_name": "interior_door_01__pull",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.82800006866455,
+          -0.001412680372595787,
+          0.809999942779541
+        ],
+        "max": [
+          8.85200023651123,
+          0.02141267992556095,
+          1.0299999713897705
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_02",
+      "component_name": "interior_door_02__leaf",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.200000762939453,
+          -3.2250001430511475,
+          0.0
+        ],
+        "max": [
+          12.0,
+          -3.174999952316284,
+          1.8700000047683716
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_02",
+      "component_name": "interior_door_02__head",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.15000057220459,
+          -3.190500020980835,
+          1.8624999523162842
+        ],
+        "max": [
+          12.050000190734863,
+          -3.1454999446868896,
+          1.8975000381469727
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_02",
+      "component_name": "interior_door_02__jamb_-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.15250015258789,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          11.1875,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_02",
+      "component_name": "interior_door_02__jamb_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          12.012499809265137,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          12.047499656677246,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_02",
+      "component_name": "interior_door_02__pull",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.307999610900879,
+          -3.1314125061035156,
+          0.809999942779541
+        ],
+        "max": [
+          11.331999778747559,
+          -3.1085872650146484,
+          1.0299999713897705
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_03",
+      "component_name": "interior_door_03__leaf",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.720000267028809,
+          -3.2250001430511475,
+          0.0
+        ],
+        "max": [
+          14.519999504089355,
+          -3.174999952316284,
+          1.8700000047683716
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_03",
+      "component_name": "interior_door_03__head",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.670000076293945,
+          -3.190500020980835,
+          1.8624999523162842
+        ],
+        "max": [
+          14.569999694824219,
+          -3.1454999446868896,
+          1.8975000381469727
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_03",
+      "component_name": "interior_door_03__jamb_-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.672499656677246,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          13.707499504089355,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_03",
+      "component_name": "interior_door_03__jamb_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.532500267028809,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          14.567500114440918,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_03",
+      "component_name": "interior_door_03__pull",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          13.82800006866455,
+          -3.1314125061035156,
+          0.809999942779541
+        ],
+        "max": [
+          13.85200023651123,
+          -3.1085872650146484,
+          1.0299999713897705
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_04",
+      "component_name": "interior_door_04__leaf",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.25,
+          -3.2250001430511475,
+          0.0
+        ],
+        "max": [
+          17.049999237060547,
+          -3.174999952316284,
+          1.8700000047683716
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_04",
+      "component_name": "interior_door_04__head",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.19999885559082,
+          -3.190500020980835,
+          1.8624999523162842
+        ],
+        "max": [
+          17.100000381469727,
+          -3.1454999446868896,
+          1.8975000381469727
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_04",
+      "component_name": "interior_door_04__jamb_-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.202499389648438,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          16.237499237060547,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_04",
+      "component_name": "interior_door_04__jamb_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.0625,
+          -3.424999952316284,
+          0.0
+        ],
+        "max": [
+          17.09749984741211,
+          -3.174999952316284,
+          1.8799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "interior_door_04",
+      "component_name": "interior_door_04__pull",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.358001708984375,
+          -3.1314125061035156,
+          0.809999942779541
+        ],
+        "max": [
+          16.381999969482422,
+          -3.1085872650146484,
+          1.0299999713897705
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf-1_stile-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.8374998569488525,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          3.9024999141693115,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf-1_stile1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.637500286102295,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          4.702499866485596,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf-1_rail0.09",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.859999895095825,
+          7.695000171661377,
+          0.020000003278255463
+        ],
+        "max": [
+          4.679999828338623,
+          7.775000095367432,
+          0.1599999964237213
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf-1_rail2.73",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.859999895095825,
+          7.695000171661377,
+          2.6600000858306885
+        ],
+        "max": [
+          4.679999828338623,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf-1_handle",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.565000057220459,
+          7.6357340812683105,
+          0.7999999523162842
+        ],
+        "max": [
+          4.59499979019165,
+          7.664266109466553,
+          1.4800000190734863
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf1_stile-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.697500228881836,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          4.762499809265137,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf1_stile1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.497500419616699,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          5.5625,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf1_rail0.09",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.720000267028809,
+          7.695000171661377,
+          0.020000003278255463
+        ],
+        "max": [
+          5.539999961853027,
+          7.775000095367432,
+          0.1599999964237213
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf1_rail2.73",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.720000267028809,
+          7.695000171661377,
+          2.6600000858306885
+        ],
+        "max": [
+          5.539999961853027,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_0",
+      "component_name": "entrance_doors_0__leaf1_handle",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.805000305175781,
+          7.6357340812683105,
+          0.7999999523162842
+        ],
+        "max": [
+          4.835000038146973,
+          7.664266109466553,
+          1.4800000190734863
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf-1_stile-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.4375,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          14.502500534057617,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf-1_stile1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.237500190734863,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          15.30250072479248,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf-1_rail0.09",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.460000038146973,
+          7.695000171661377,
+          0.020000003278255463
+        ],
+        "max": [
+          15.279999732971191,
+          7.775000095367432,
+          0.1599999964237213
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf-1_rail2.73",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          14.460000038146973,
+          7.695000171661377,
+          2.6600000858306885
+        ],
+        "max": [
+          15.279999732971191,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf-1_handle",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.164999961853027,
+          7.6357340812683105,
+          0.7999999523162842
+        ],
+        "max": [
+          15.195000648498535,
+          7.664266109466553,
+          1.4800000190734863
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf1_stile-1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.297499656677246,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          15.362500190734863,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf1_stile1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.09749984741211,
+          7.695000171661377,
+          0.0
+        ],
+        "max": [
+          16.162498474121094,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf1_rail0.09",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.319999694824219,
+          7.695000171661377,
+          0.020000003278255463
+        ],
+        "max": [
+          16.139999389648438,
+          7.775000095367432,
+          0.1599999964237213
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf1_rail2.73",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.319999694824219,
+          7.695000171661377,
+          2.6600000858306885
+        ],
+        "max": [
+          16.139999389648438,
+          7.775000095367432,
+          2.799999952316284
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "entrance_doors_1",
+      "component_name": "entrance_doors_1__leaf1_handle",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.404999732971191,
+          7.6357340812683105,
+          0.7999999523162842
+        ],
+        "max": [
+          15.4350004196167,
+          7.664266109466553,
+          1.4800000190734863
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "individual visible structural component; no aperture-spanning union box"
+    },
+    {
+      "object_id": "round_column",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.34999942779541,
+          6.590000152587891,
+          0.0
+        ],
+        "max": [
+          10.210000038146973,
+          7.449999809265137,
+          5.0
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "reception_desk",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          16.780000686645508,
+          2.1449999809265137,
+          0.05999999865889549
+        ],
+        "max": [
+          18.079999923706055,
+          5.795000076293945,
+          0.8524999618530273
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.5,
+          4.699999809265137,
+          0.009999997913837433
+        ],
+        "max": [
+          8.342055320739746,
+          5.599999904632568,
+          0.5099999904632568
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.307944297790527,
+          4.769999980926514,
+          0.009999997913837433
+        ],
+        "max": [
+          9.149999618530273,
+          5.674806118011475,
+          0.8500000238418579
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.800000190734863,
+          4.225912094116211,
+          0.009999997913837433
+        ],
+        "max": [
+          9.701434135437012,
+          5.104805946350098,
+          0.8500000238418579
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_3",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          9.110008239746094,
+          3.609999895095825,
+          0.009999997913837433
+        ],
+        "max": [
+          10.050000190734863,
+          4.554143905639648,
+          0.5099999904632568
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_4",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.579999923706055,
+          3.295353889465332,
+          0.009999997913837433
+        ],
+        "max": [
+          9.506880760192871,
+          4.199999809265137,
+          0.5099999904632568
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_seat_5",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.319999694824219,
+          2.6952157020568848,
+          0.009999997913837433
+        ],
+        "max": [
+          9.220000267028809,
+          3.5679373741149902,
+          0.8500000238418579
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_seat_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          5.124264717102051,
+          2.309999942779541,
+          0.009999997913837433
+        ],
+        "max": [
+          5.960000038146973,
+          3.2300000190734863,
+          0.5099999904632568
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_seat_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.323489189147949,
+          2.355025291442871,
+          0.009999997913837433
+        ],
+        "max": [
+          5.124864101409912,
+          3.2200000286102295,
+          0.8500000238418579
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_seat_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.738921880722046,
+          2.6950197219848633,
+          0.009999997913837433
+        ],
+        "max": [
+          4.6472554206848145,
+          3.606476306915283,
+          0.8500000238418579
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_seat_3",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          3.809999942779541,
+          3.609999895095825,
+          0.009999997913837433
+        ],
+        "max": [
+          4.690000057220459,
+          4.489999771118164,
+          0.5099999904632568
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_coffee_table",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          7.640000343322754,
+          3.5999999046325684,
+          0.017504436895251274
+        ],
+        "max": [
+          8.800000190734863,
+          4.87999963760376,
+          0.6100000143051147
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_coffee_table",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          4.519999980926514,
+          3.120000123977661,
+          0.017504453659057617
+        ],
+        "max": [
+          5.820000171661377,
+          4.200000286102295,
+          0.45250001549720764
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "window_bush",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          8.17291259765625,
+          6.072293281555176,
+          0.0
+        ],
+        "max": [
+          9.863703727722168,
+          7.737071514129639,
+          1.1280711889266968
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "mirror_vase",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          6.725607395172119,
+          -0.13526038825511932,
+          0.0
+        ],
+        "max": [
+          8.346712112426758,
+          1.407111406326294,
+          1.3300535678863525
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "near_window_bush",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          1.0813095569610596,
+          6.1179585456848145,
+          0.0
+        ],
+        "max": [
+          2.743671417236328,
+          7.7128119468688965,
+          1.0641670227050781
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "far_corner_bowl",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.344003677368164,
+          -2.4311883449554443,
+          0.0
+        ],
+        "max": [
+          18.923900604248047,
+          -0.7670596837997437,
+          0.9986339807510376
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "flower_trough_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.165736198425293,
+          1.701517939567566,
+          0.0
+        ],
+        "max": [
+          11.338556289672852,
+          3.8294665813446045,
+          1.781137466430664
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "flower_trough_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          10.234474182128906,
+          3.9078245162963867,
+          0.0
+        ],
+        "max": [
+          11.369147300720215,
+          5.9385271072387695,
+          1.7712502479553223
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "bird_of_paradise_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.700016498565674,
+          1.4687259197235107,
+          0.0
+        ],
+        "max": [
+          3.915006160736084,
+          2.7967092990875244,
+          2.241464853286743
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "bird_of_paradise_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.1767141819000244,
+          4.963658809661865,
+          0.0
+        ],
+        "max": [
+          3.537734031677246,
+          6.32989501953125,
+          2.241464853286743
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "reception_tree_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.522430419921875,
+          0.6528015732765198,
+          0.0
+        ],
+        "max": [
+          18.773622512817383,
+          1.8676722049713135,
+          1.839274287223816
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "reception_tree_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          17.535932540893555,
+          5.530182838439941,
+          0.0
+        ],
+        "max": [
+          18.770328521728516,
+          6.764729976654053,
+          1.8279350996017456
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "floor_lamp_0",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          15.770000457763672,
+          -0.12999999523162842,
+          0.014404257759451866
+        ],
+        "max": [
+          16.229999542236328,
+          0.33000001311302185,
+          1.8600000143051147
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "floor_lamp_1",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          11.069999694824219,
+          -2.8299999237060547,
+          0.014404251240193844
+        ],
+        "max": [
+          11.529999732971191,
+          -2.369999885559082,
+          1.8600000143051147
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    },
+    {
+      "object_id": "floor_lamp_2",
+      "type": "axis_aligned_box",
+      "bounds": {
+        "min": [
+          2.1700000762939453,
+          0.8700000047683716,
+          0.014404257759451866
+        ],
+        "max": [
+          2.630000114440918,
+          1.3300000429153442,
+          1.8600000143051147
+        ]
+      },
+      "static": true,
+      "friction": 0.5,
+      "restitution": 0,
+      "provenance": "inferred conservative broad-phase collider; foliage included where applicable"
+    }
+  ],
+  "units": "metres",
+  "limitations": [
+    "Conservative furniture bounds include gaps; no rigid-body articulation or dynamics calibration."
+  ]
+}

@@ -1,0 +1,25 @@
+# Preserve this one small legacy scene-construction transform.
+!astra_blender/models/M3/analysis/model_from_input.npy
+
+# Generated outputs and agent session history are not part of the source snapshot.
+**/checks/
+**/versions/
+**/reproductions/
+**/logs/
+**/*_events.jsonl
+**/*_stderr.log
+**/input_access_log.json
+**/revision_access_log.json
+**/.tmp/
+**/.mpl/
+**/.mplconfig/
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.log
+depth/
+evaluation/
+frozen/
+openvins/
+astra_blender2/evaluation/

@@ -1,0 +1,152 @@
+{
+  "method_id": "M1",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "quality_status": "limited",
+  "model_from_input": null,
+  "geometry_scale": {
+    "type": "inferred",
+    "units": "assumed meters",
+    "metric_observable": false,
+    "anchor": "Typical 0.8 m lounge seat diameter and 2.1 m internal door height",
+    "confidence": "low"
+  },
+  "coordinate_frame": "arbitrary RGB-inferred model frame",
+  "revisions": 2,
+  "checking_render_count": 10,
+  "unresolved_issues": [
+    {
+      "id": "M1-I01",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "cameras / mirror_0..9 / seat_S1..5 / table_south",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "Foreground south furniture and right-wall mirrors now enter the forward views. Composition remains materially wrong: frame 0 shows much more foreground furniture; frames 45/179 show substantially more mirror cluster; frame 135 shows a wider, separated north seating arrangement and changed floor/wall perspective; frame 90 has changed planter/wall/column proportions. Current author-picked mirror_smalltop residuals are 178.25, 153.85 and 188.65 pixels at 45,135,179. These are recomputed conditional landmark errors, not independent pixel measurements.",
+      "recommended_action": "Jointly fit architectural boundaries, mirror centers and furniture silhouettes across all five frames, retaining invalid-for-metric-evaluation cameras.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "high"
+    },
+    {
+      "id": "M1-I02",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "plant_glass_north / column_1",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "North bowl position improves: grass_N residuals are 3.92,4.29,26.95,36.79 pixels at 0,45,135,179. However, the final render has a shallow wide bowl with sparse radial blades and exposed dark soil; RGB has a fuller dense tuft and deeper-looking bowl. In 45/179 the column/bowl grouping still differs; column_base residuals are 69.20/60.33 pixels.",
+      "recommended_action": "Retain the positional improvement while fitting bowl depth, tuft envelope and column alignment in multiple frames.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "medium"
+    },
+    {
+      "id": "M1-I03",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "wall_east_main / wall_east_recess / elevator_wall_east_main_0 / elevator_wall_east_main_1 / elevator_wall_east_recess_0",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "Confirmed topology repair: passage_south replaces the closed south leaf, nine rays at y=4.4/4.8/5.2 and z=0.3/1.0/1.8 travel from x=7.0 to8.6 without a hit; no closed-door leaf intersects an east-wall panel in the targeted box test. Door semantics and clear jamb splits exist. Visual placement/width remain approximate: at frame90 the wall opening is a narrow dark strip, and at45/179 broad source metal-door surfaces are not reproduced.",
+      "recommended_action": "Keep the repaired topology; refine projected jamb positions and door widths from RGB. Unseen passage depth remains an assumption.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "medium"
+    },
+    {
+      "id": "M1-I05",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "seat_N3 / seat_N4 / seat_N5 / seat_N6 / table_north / table_south",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "The circular cushion test now reports no penetrations greater than0.025 inferred units. Both table minima are z0.011999995 against inset top0.012, resolving the prior unsupported gap. Visual modular shape is unresolved: frames0/45/135/179 show separated cylindrical stools and straight-backed chairs instead of the tightly fitted curved source group. Seat feet still reach z0, a0.012 inset penetration, a minor support approximation.",
+      "recommended_action": "Preserve support/contact repairs while fitting cushion outlines and modular boundaries; do not restore intersecting cylinders.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "medium"
+    },
+    {
+      "id": "M1-I06",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "pendant_0..19 / ceiling_slats_glass / ceiling_slats_wall",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "Actual pendant components now include woven_underside geometry and final renders show some added underside detail. The source fixtures remain much shallower and more intricately patterned; frames45/135/179 show major differences in centers, diameters and ceiling-band layout, while the model reads as repeated concentric bowls.",
+      "recommended_action": "Fit identifiable fixture silhouettes and centers before refining visible underside relief; keep correspondence/count uncertainty explicit.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "medium"
+    },
+    {
+      "id": "M1-I07",
+      "status": "UNRESOLVED",
+      "object_id": "floor_black_inset / floor_stone / wall_north / wall_east_main / lighting",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "All five comparisons lack the strong fine patterned floor highlights/reflections of RGB. The final black inset is a smooth dark mirror with large furniture/window reflections; actual material roughness is0.055 and has no normal-detail nodes. Oak and pale stone also appear flatter and brighter. RGB alone does not determine whether the missing pattern originates in surface relief, reflected ceiling geometry, or lighting.",
+      "recommended_action": "Treat floor/fixture/lighting appearance jointly; match reflection structure and broad tones without baking input imagery.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "high"
+    },
+    {
+      "id": "M1-I08",
+      "status": "PARTIALLY_FIXED",
+      "object_id": "planter_north_left / planter_north_right",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "description": "Vegetation was shortened and densified (current planter maxima about z1.57/1.58), but final frames0/45/135/179 form low thick yellow leaf bands instead of the source airy fine branches. Frame90 has overly large smooth planter fronts and dense foliage, with different front silhouettes/spacing.",
+      "recommended_action": "Fit planter bodies separately from branch/leaf envelopes using forward and reverse views; retain inferred hidden branches.",
+      "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+      "severity": "medium"
+    },
+    {
+      "id": "M1-F09",
+      "severity": "low",
+      "object_id": "review provenance records",
+      "evidence_frames": [],
+      "evidence_type": "observed_record_gap",
+      "description": "No standalone issue-by-issue author response was found. The v2 repair script and iteration description document actions, but input_access_log.json does not list v2 repair/review commands. The manifest still says independent_review=pending. No unauthorized input evidence was found in the inspected records.",
+      "recommended_action": "Carry this final hash/status forward and update author repair/access provenance during any subsequent coordinator freeze process."
+    }
+  ],
+  "input_packet_sha256": "9fb1ba47f7022ce29fbcd6e4ef1e59879aec99446d1fbf5b466deb67f4e6227f",
+  "ground_truth_used": false,
+  "prior_scene_used": false,
+  "external_sfm_slam_depth_models_used": false,
+  "independent_review": "initial review repaired; final review pending",
+  "authoring_seconds": 76.58868885040283,
+  "candidate_scene_sha256": "80f985ad09591bdb227e99e71f6bacaa0b9e8c8b565c27da64ad4ac4ceb8910e",
+  "repair_response": "repair_response.json",
+  "independent_review_complete": true,
+  "final_review_status": "LIMITED",
+  "repair_response_provenance": "coordinator summary of original author build/iteration records and independent final review; not an independent review or retroactive author testimony",
+  "frozen_utc": "2026-09-29T23:59:13Z"
+}

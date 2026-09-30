@@ -13,7 +13,7 @@ python -m venv .venv-core
 .venv-core/bin/python tests/test_pose_metrics.py
 ```
 
-The verifier checks the bytes and SHA256 of all files listed in the current `source_snapshot.json` (1,122 source/evidence files in this update), parses every runnable Python file, and checks the artifact lock. The pose checks cover alignment and relative-pose invariance, quaternion sign equivalence, timestamp endpoint rounding, and rejection of trajectories without overlap. Passing these checks does not re-execute reconstruction or robot tasks.
+The verifier checks the bytes and SHA256 of all files listed in the original 1,122-file `source_snapshot.json` and its linked supplemental snapshot manifests, parses every runnable Python file, and checks the artifact lock. The pose checks cover alignment and relative-pose invariance, quaternion sign equivalence, timestamp endpoint rounding, and rejection of trajectories without overlap. Passing these checks does not re-execute reconstruction or robot tasks.
 
 `source_snapshot.json` maps each preserved file to its historical origin. Root project documentation and new portability helpers are separately tracked by Git. The original experiment workspace and legacy experiments remain unchanged.
 
@@ -80,3 +80,9 @@ python revisions/m4_downstream_20260924/verify_g1_results.py
 The standard-library audit checks all 20 LPIPS input-pair hashes and score means, drone outcomes/thresholds, G1 identity/visibility records and both pages' table numbering. It verifies saved evidence, not fresh LPIPS inference or physics. The preserved independent check scripts document the deeper evaluations. To re-run LPIPS install the versions recorded in its report, obtain the exact weight hashes, and follow `scripts/evaluate_appearance_lpips.py`; no model checkpoint or Python environment is vendored here.
 
 See [the current evidence index](evidence/blog_20260925/README.md) for the table-to-file map. `published_files.json` records the SHA256 of every deployed file at the fixed public commit. Source article files use the workspace layout and can differ from deployed copies due to link rewriting. `source_snapshot.json` preserves the original workspace bytes; the published ZIP rewrites paths and normalizes text, so its bytes can differ without changing the experimental values.
+
+## September 29 / fixed ten-view modelling run
+
+The [new experiment snapshot](experiments/world_lobby_four_trajectory_20260929/README.md) is preserved separately and uses the updated ViPE/ORB-SLAM3 + DA3 methods. The main verifier includes its byte-identical source manifest. Run the existing portable depth tests with `python scripts/check_world_lobby_depth_math.py`.
+
+To rebuild one of the latest M1–M4 scene programs from included small companions, use `python scripts/rebuild_world_lobby_scene.py --method M4 --blender /path/to/blender --output /tmp/sceneweft-M4` with a new output directory. This rebuilds saved construction code without renders or a new Astra session. Full pipeline execution additionally requires the original capture, estimator solutions, GT scene and runtime dependencies, plus path relocation; it is not a one-command reproduction. The older pinned asset lock is unchanged and does not identify these newly authored scene binaries.

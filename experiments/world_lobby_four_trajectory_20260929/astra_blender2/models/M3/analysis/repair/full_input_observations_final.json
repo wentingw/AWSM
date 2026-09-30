@@ -1,0 +1,82 @@
+{
+  "sample_grid_shape": [
+    120,
+    160
+  ],
+  "source": "checks/input_final/depth.npz; native geometric input grid",
+  "observations": [
+    {
+      "sample_index": 33,
+      "median_model_z": 6.007891654968262,
+      "median_input_da3_z": 7.304429054260254,
+      "median_signed": -1.2533435821533203
+    },
+    {
+      "sample_index": 61,
+      "median_model_z": 5.44136905670166,
+      "median_input_da3_z": 5.288985252380371,
+      "median_signed": 0.02547311782836914
+    },
+    {
+      "sample_index": 82,
+      "median_model_z": 6.940212249755859,
+      "median_input_da3_z": 6.970855712890625,
+      "median_signed": 0.20746994018554688
+    },
+    {
+      "sample_index": 91,
+      "median_model_z": 5.756374359130859,
+      "median_input_da3_z": 6.054626941680908,
+      "median_signed": -0.06585836410522461
+    },
+    {
+      "sample_index": 108,
+      "median_model_z": 7.181953430175781,
+      "median_input_da3_z": 6.969799995422363,
+      "median_signed": 0.03699076175689697
+    },
+    {
+      "sample_index": 118,
+      "median_model_z": 5.6925249099731445,
+      "median_input_da3_z": 5.934776782989502,
+      "median_signed": -0.2116243839263916
+    },
+    {
+      "sample_index": 129,
+      "median_model_z": 6.156922817230225,
+      "median_input_da3_z": 5.345839500427246,
+      "median_signed": 0.7634222507476807
+    },
+    {
+      "sample_index": 155,
+      "median_model_z": 5.902355670928955,
+      "median_input_da3_z": 6.884945392608643,
+      "median_signed": -0.9979406595230103
+    },
+    {
+      "sample_index": 160,
+      "median_model_z": 5.970047473907471,
+      "median_input_da3_z": 7.688979148864746,
+      "median_signed": -1.6764593124389648
+    },
+    {
+      "sample_index": 167,
+      "median_model_z": 5.969037055969238,
+      "median_input_da3_z": 21.280466079711914,
+      "median_signed": -15.12057113647461
+    },
+    {
+      "sample_index": 170,
+      "median_model_z": 5.976567268371582,
+      "median_input_da3_z": 1.577526569366455,
+      "median_signed": 4.342198371887207
+    },
+    {
+      "sample_index": 179,
+      "median_model_z": 5.978599548339844,
+      "median_input_da3_z": 0.4996892213821411,
+      "median_signed": 5.478115081787109
+    }
+  ],
+  "limitation": "Own prediction, not ground truth; temporal depth instability preserved."
+}

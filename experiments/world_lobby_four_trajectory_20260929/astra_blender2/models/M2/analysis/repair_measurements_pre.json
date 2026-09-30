@@ -1,0 +1,350 @@
+{
+  "input_outliers": [
+    {
+      "sample_index": 19,
+      "selected_window": 9,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.27226416771846235,
+        0.013074714054029721,
+        2.0561728882422945
+      ],
+      "pose_translation_step_m": 0.0018680556089181878,
+      "rotation_step_deg": 0.013871978247468884,
+      "DA3_Z_quantiles": [
+        4.3129335880279545,
+        8.090123176574707,
+        20.427895355224614
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0267444133758543,
+        5.7083539962768555,
+        13.780270195007324
+      ],
+      "existing_residual_median": -2.2024219036102295
+    },
+    {
+      "sample_index": 20,
+      "selected_window": 9,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.26960607354937177,
+        0.013013272722770447,
+        2.0564158567514395
+      ],
+      "pose_translation_step_m": 0.0026698826463678786,
+      "rotation_step_deg": 0.01602574608357106,
+      "DA3_Z_quantiles": [
+        4.312817144393921,
+        8.091915130615234,
+        20.446785736083992
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.027608299255371,
+        5.708108425140381,
+        13.785204887390137
+      ],
+      "existing_residual_median": -2.2040891647338867
+    },
+    {
+      "sample_index": 21,
+      "selected_window": 10,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.2654830451397226,
+        0.012723205358746319,
+        2.0562284525650156
+      ],
+      "pose_translation_step_m": 0.004137465730557208,
+      "rotation_step_deg": 0.031145861556648904,
+      "DA3_Z_quantiles": [
+        10.546680545806884,
+        19.673160552978516,
+        49.86033630371094
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0282301902770996,
+        5.708248615264893,
+        13.822232818603513
+      ],
+      "existing_residual_median": -12.33747673034668
+    },
+    {
+      "sample_index": 22,
+      "selected_window": 10,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.26004244687950745,
+        0.011847439373100802,
+        2.057182299968029
+      ],
+      "pose_translation_step_m": 0.005592575467430491,
+      "rotation_step_deg": 0.04330727525384047,
+      "DA3_Z_quantiles": [
+        10.551306343078613,
+        19.68039894104004,
+        49.8140510559082
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.030269813537598,
+        5.707824945449829,
+        13.796695232391418
+      ],
+      "existing_residual_median": -12.338624954223633
+    },
+    {
+      "sample_index": 23,
+      "selected_window": 11,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.25309299648729144,
+        0.01185766021797723,
+        2.057744136991409
+      ],
+      "pose_translation_step_m": 0.006972132102906643,
+      "rotation_step_deg": 0.05809383691594153,
+      "DA3_Z_quantiles": [
+        5.5582225799560545,
+        10.119494915008545,
+        25.74886283874512
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0324909925460815,
+        5.714050054550171,
+        14.034771347045899
+      ],
+      "existing_residual_median": -4.2316389083862305
+    },
+    {
+      "sample_index": 24,
+      "selected_window": 11,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.2455970100811257,
+        0.01336702615532369,
+        2.05561629258456
+      ],
+      "pose_translation_step_m": 0.007936984285860876,
+      "rotation_step_deg": 0.07511505673547583,
+      "DA3_Z_quantiles": [
+        5.566754102706909,
+        10.12512493133545,
+        25.811831283569337
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.033052921295166,
+        5.716996431350708,
+        14.017539501190186
+      ],
+      "existing_residual_median": -4.230741024017334
+    },
+    {
+      "sample_index": 165,
+      "selected_window": 82,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.3170532262877323,
+        0.012832145246302658,
+        2.054355377338878
+      ],
+      "pose_translation_step_m": 0.012996328208202235,
+      "rotation_step_deg": 0.10676840638517861,
+      "DA3_Z_quantiles": [
+        4.3495594501495365,
+        7.937946081161499,
+        20.07817764282227
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.015811491012573,
+        5.722283363342285,
+        14.086718750000001
+      ],
+      "existing_residual_median": -2.0853991508483887
+    },
+    {
+      "sample_index": 166,
+      "selected_window": 82,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.3070875234659518,
+        0.012210242995823836,
+        2.0532625016184
+      ],
+      "pose_translation_step_m": 0.010044718636258818,
+      "rotation_step_deg": 0.08518424764634366,
+      "DA3_Z_quantiles": [
+        4.3528160572052,
+        7.936963319778442,
+        20.107455253601074
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0171162128448485,
+        5.719355583190918,
+        14.043825149536133
+      ],
+      "existing_residual_median": -2.0883681774139404
+    },
+    {
+      "sample_index": 167,
+      "selected_window": 83,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.29887371225147213,
+        0.010945328281310066,
+        2.0537195524161778
+      ],
+      "pose_translation_step_m": 0.008323196461327518,
+      "rotation_step_deg": 0.06730198955066276,
+      "DA3_Z_quantiles": [
+        10.132731437683105,
+        18.737829208374023,
+        47.12232360839845
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0195518732070923,
+        5.715799331665039,
+        14.067608833312988
+      ],
+      "existing_residual_median": -11.55698013305664
+    },
+    {
+      "sample_index": 168,
+      "selected_window": 83,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.291768694372348,
+        0.010059488280595382,
+        2.0546067024462378
+      ],
+      "pose_translation_step_m": 0.007214778357328488,
+      "rotation_step_deg": 0.064163183926663,
+      "DA3_Z_quantiles": [
+        10.12860927581787,
+        18.732933044433594,
+        47.13381767272949
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.022674298286438,
+        5.7081298828125,
+        13.782583808898927
+      ],
+      "existing_residual_median": -11.548276901245117
+    },
+    {
+      "sample_index": 169,
+      "selected_window": 84,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.28653183898349194,
+        0.009714117945234517,
+        2.0558205859167233
+      ],
+      "pose_translation_step_m": 0.005386784580086337,
+      "rotation_step_deg": 0.048396436604355955,
+      "DA3_Z_quantiles": [
+        3.128906321525574,
+        5.8550848960876465,
+        14.685815143585206
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0252782344818114,
+        5.708845376968384,
+        13.777678108215332
+      ],
+      "existing_residual_median": -0.06482982635498047
+    },
+    {
+      "sample_index": 170,
+      "selected_window": 84,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.28333723852075,
+        0.009214066738818125,
+        2.0559805917421397
+      ],
+      "pose_translation_step_m": 0.0032374565927216245,
+      "rotation_step_deg": 0.03173631948630462,
+      "DA3_Z_quantiles": [
+        3.1296547412872315,
+        5.857733249664307,
+        14.691276836395266
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0266682386398314,
+        5.7077367305755615,
+        13.777153396606446
+      ],
+      "existing_residual_median": -0.06472039222717285
+    },
+    {
+      "sample_index": 174,
+      "selected_window": 86,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.27994893486085193,
+        0.008925794614016515,
+        2.0553591247493572
+      ],
+      "pose_translation_step_m": 0.0006930448126110688,
+      "rotation_step_deg": 0.015003316011181744,
+      "DA3_Z_quantiles": [
+        0.3397557735443115,
+        0.6310898065567017,
+        1.5794135928153996
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.027310848236084,
+        5.709671974182129,
+        13.780037879943848
+      ],
+      "existing_residual_median": 5.0770745277404785
+    },
+    {
+      "sample_index": 175,
+      "selected_window": 87,
+      "window_local_index": 1,
+      "camera_position_model": [
+        0.2800914731585514,
+        0.008840943417838126,
+        2.055011463635533
+      ],
+      "pose_translation_step_m": 0.00038520792030987837,
+      "rotation_step_deg": 0.01291296467580649,
+      "DA3_Z_quantiles": [
+        0.20077471137046815,
+        0.37227655947208405,
+        0.9347011268138886
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.0270081043243406,
+        5.709443807601929,
+        13.779610633850105
+      ],
+      "existing_residual_median": 5.340862274169922
+    },
+    {
+      "sample_index": 176,
+      "selected_window": 87,
+      "window_local_index": 2,
+      "camera_position_model": [
+        0.28023128808219644,
+        0.008698603084120021,
+        2.054866880048344
+      ],
+      "pose_translation_step_m": 0.00024640088709515365,
+      "rotation_step_deg": 0.009078584563436713,
+      "DA3_Z_quantiles": [
+        0.20058367699384688,
+        0.3724290728569031,
+        0.9343870222568513
+      ],
+      "existing_BVH_Z_quantiles": [
+        3.026883125305176,
+        5.709320545196533,
+        13.780243873596191
+      ],
+      "existing_residual_median": 5.340528964996338
+    }
+  ],
+  "overlay_note": "Labels project existing semantic centers on source RGB for correspondence inspection; no Blender render or new depth cast."
+}

@@ -1,0 +1,60 @@
+{
+  "frame_count": 180,
+  "all_camera_matrices_exact": true,
+  "model_from_input": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rotation_max_orthogonality_error": 8.881784197001252e-16,
+  "calibration": {
+    "resolution": [
+      1280,
+      960
+    ],
+    "fx": 762.8,
+    "fy": 762.8,
+    "cx": 640,
+    "cy": 480,
+    "npz_resolution": [
+      392,
+      294
+    ],
+    "npz_fx": 233.6075
+  },
+  "blender_conversion": "c2w @ diag(1,-1,-1,1)",
+  "projection_validation": "PASS: generic helper asserted three projected points at each of ten fixed cameras <0.01px at640x480",
+  "paired_camera_exactness": "PASS: helper asserts X@packet c2w equality; local audit also exact for all180",
+  "geometry_scale": 1,
+  "revision_author_validation": {
+    "version": 2,
+    "frames_exact": 180,
+    "camera_json_sha256": "548e7259e90d72047a93c7d5fdd0205761ee20e58edaa064ad68d1b4d3ba0eb0",
+    "packet_sha256": "7e6f29df12774545c9d0a19c485f241d8c8716da024011a0b0124d8d77f793d2",
+    "projection": "Generic paired checker assertions passed all10 prescribed cameras at pixel centers",
+    "transform": "identity",
+    "scale": 1,
+    "no_cameras_altered": true
+  }
+}

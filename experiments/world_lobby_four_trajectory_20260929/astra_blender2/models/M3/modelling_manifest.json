@@ -1,0 +1,104 @@
+{
+  "method_id": "M3",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "phase": "final_candidate_author_complete",
+  "model_from_input": [
+    [
+      0.9399260903100589,
+      -0.26746542071262963,
+      0.21213484739066996,
+      0.0
+    ],
+    [
+      0.2627217870913086,
+      0.9635342543040673,
+      0.05078388888470568,
+      0.0
+    ],
+    [
+      -0.21798212619844753,
+      0.007999344080676974,
+      0.9759199778425908,
+      2.15
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "revisions": 3,
+  "checking_render_count": 30,
+  "input_bvh_pass_count": 3,
+  "input_packet_sha256": "524d186fdc72e848a178cdace79fd93503ffd403e7f0f1f55d7d7e88ee1eee98",
+  "unresolved_issues": [
+    "M3-I06 LIMITED: one upright cylinder fitted to five views; residual/manual pose conflicts remain, especially sample33 and91. Entry frame proportions approximate.",
+    "M3-I07 LIMITED: pendants6/7 measured from multi-view identities; remaining lamps and weave approximate. Prominent source82 lamps still absent at expected pixels.",
+    "M3-I08 LIMITED: trough dimensions retained due conflicting corners; foliage now fills length but is too dense/coarse and not source botanical topology.",
+    "M3-I09 LIMITED: flat mirrors/tables, outward crest and floor bump corrected; lighting, colors, wooden grain and patterned floor reflections remain materially different.",
+    "M3-I10 LIMITED: own predicted DA3 temporal depth changes and cross-view wall conflicts retained; cameras/scale/masks not altered.",
+    "Furniture placement/orientation and round upholstery silhouettes remain approximate despite removing measured solid penetrations. Concealed construction and physics inferred; no dynamic navigation certification."
+  ],
+  "quality_status": "LIMITED",
+  "scope": "M3 final candidate by revision author; requires fresh independent review; no freeze or independent approval claimed",
+  "threads": 2,
+  "check_provenance": "v1 originating coordinator record supplied method-locally and hash-verified. v2/v3 built and all20 paired checks observed by revision author. Full input_v2 and input_final executed by author; total exactly3 including retained input_v1.",
+  "paired_metrics": {
+    "pixels_domain": 3049640,
+    "pixels_valid": 3047189,
+    "valid_coverage": 0.9991962985795044,
+    "invalid_rate": 0.0008037014204955728,
+    "mae_m": 0.7849294405938464,
+    "rmse_m": 1.3403540316036124,
+    "absrel": 0.11678015033536589,
+    "delta1": 0.8693835531698231,
+    "delta2": 0.9526137039743843,
+    "delta3": 0.9800717973187748,
+    "missing_penalty_mae_m": 0.8084096343023184
+  },
+  "input_metrics": {
+    "pixels_domain": 3447177,
+    "pixels_valid": 3444698,
+    "valid_coverage": 0.9992808608319214,
+    "invalid_rate": 0.0007191391680786419,
+    "mae_m": 1.5252947916686772,
+    "rmse_m": 2.973075766328902,
+    "absrel": 0.8319791515860668,
+    "delta1": 0.7433705364011591,
+    "delta2": 0.8478685214204554,
+    "delta3": 0.8813579593915054,
+    "missing_penalty_mae_m": 1.5457720674834825
+  },
+  "model_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+  "glb_sha256": "d6ca8430042bd4c7e3a0d9a0a243e118e4856d3f8d2c69779b985b28ec51c153",
+  "samples": 12,
+  "author_technical_validation": "PASS for documented targeted repairs and artifact/camera/semantic checks; independent review pending",
+  "full_input_passes": [
+    {
+      "directory": "checks/input_v1",
+      "model_sha256": "a8bde3bf06d3db06e591bd40c0fb8e2f976f6317869cb371f2a8f4158eea9f85",
+      "report_sha256": "2095bfb30206ad3afa49e0f632c5771c5df817cb2e02baa1594cf9acce605edc",
+      "depth_sha256": "f2cc2e9c463d65daca2508022dd50ecc6b728690ed8972e37c75eedc13552141",
+      "frames": 180
+    },
+    {
+      "directory": "checks/input_v2",
+      "model_sha256": "78fa53683655f88444c0b64a3c23719c3332e868bddb96d4c10e297850590864",
+      "report_sha256": "e2691649af1ccc840a2b8f283198ea209a91b8ae9d0ff1a1644a40a45d8999b3",
+      "depth_sha256": "b3df3226a38508f393ccea3dd272a3dac8a61b504686cf0c92e4916fbd89d59d",
+      "frames": 180
+    },
+    {
+      "directory": "checks/input_final",
+      "model_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+      "report_sha256": "b11a45140dfd6608d03364e615e87e3c41424c2e100b9c291db6f17ba97e9a5e",
+      "depth_sha256": "c96616c2115a8b4fd0b68c891ad96847f4bc776f5ed8246d6aacc5351a995383",
+      "frames": 180
+    }
+  ],
+  "frozen_utc": "2026-09-30T06:24:46Z",
+  "final_review_status": "LIMITED"
+}

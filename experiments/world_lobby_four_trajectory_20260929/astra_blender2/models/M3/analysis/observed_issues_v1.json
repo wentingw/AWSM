@@ -1,0 +1,147 @@
+{
+  "kind": "Author required comparison observations; not independent review and not certification",
+  "comparison_images_actually_inspected": [
+    33,
+    61,
+    74,
+    82,
+    91,
+    100,
+    108,
+    118,
+    129,
+    155
+  ],
+  "pixel_coordinates": "Region stats use original camera image downsampled to640x480, excludes 30px comparison-sheet titles.",
+  "issues": [
+    {
+      "id": "V1-01",
+      "priority": "high",
+      "frames": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "issue": "Chair caps smooth-shaded and backs tall, angular and misoriented; seat arrangement deviates from RGB.",
+      "action": "Use flat cap normals, rounded upholstery edges; measure seat/back silhouettes and orientations across multiple original views before changing footprint.",
+      "evidence": "61 chairs signed median -0.189m, 129 chairs +0.415m; inconsistent sign disallows a simple global chair translation."
+    },
+    {
+      "id": "V1-02",
+      "priority": "high",
+      "frames": [
+        61,
+        74,
+        82
+      ],
+      "issue": "Mirror reflections appear convex and repeated because cylinder cap normals are smooth. Mirrors should be flat.",
+      "action": "Flat-shade cap polygons, isolate smooth side normals and use thin physical rim; preserve single mirror objects and do not duplicate reflections.",
+      "evidence": "61 wall signed median +0.039m versus 74 wall -0.229m; RGB reflection shape is stronger evidence for this shading repair than depth on mirror pixels."
+    },
+    {
+      "id": "V1-03",
+      "priority": "high",
+      "frames": [
+        33,
+        61,
+        74,
+        82,
+        100,
+        108,
+        129
+      ],
+      "issue": "Several pendants are absent at expected pixels or offset; model near-window/centre lamp distribution has poor edge agreement.",
+      "action": "Match individual rim extrema in at least two input RGB views and triangulate or ray-plane constrain; do not force one common lamp height.",
+      "evidence": "82 upper region signed median +0.554m, MAE1.150m; 100 upper MAE1.417m. 129 large source top-centre lamp missing from matching location."
+    },
+    {
+      "id": "V1-04",
+      "priority": "high",
+      "frames": [
+        33,
+        82,
+        91,
+        108,
+        118,
+        129
+      ],
+      "issue": "Planter vegetation consists of small central bushes; source shrubs fill trough lengths and have finer denser yellow branching.",
+      "action": "Distribute stem roots along each trough, check projected top/side envelope before adding fine leaves. Pot geometry is a solid proxy with soil on top, not a genuinely hollow planter.",
+      "evidence": "82 shrub MAE0.786m; 91 plants median -0.517m; 108 divider median -0.249m. Mixed occlusion residuals should not be interpreted as a single surface offset."
+    },
+    {
+      "id": "V1-05",
+      "priority": "high",
+      "frames": [
+        33,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "issue": "Walls and floor are too pale, wood grain is weak, black inset has rippled reflection rather than crisp patterned reflections; smooth-shaded table caps look domed.",
+      "action": "Flat-shade tabletops; reduce large-scale bump and tune physically plausible dark materials and directional illumination against original RGB. Glazing proxy is opaque bright emission and does not reproduce transmitted sunlight.",
+      "evidence": "91 floor geometry median -0.016m yet appearance strongly differs, so this is largely a shading/lighting issue."
+    },
+    {
+      "id": "V1-06",
+      "priority": "medium",
+      "frames": [
+        33,
+        108,
+        118,
+        129,
+        155
+      ],
+      "issue": "Far wall, desk and crest vertical alignment remain uncertain; crest pale/missing against wall in actual render.",
+      "action": "Reconcile crest surface orientation and contrast, desk height measured endpoints (~0.86\u20130.91m) against authored 1.15m top; seek additional RGB correspondences before moving far wall.",
+      "evidence": "33 back-wall median -2.428m and 155 -1.758m versus own DA3; RGB triangulation puts wall near x18.2 while DA3 region x20.6. Desk region129 median +0.904m with mixed signed residuals."
+    },
+    {
+      "id": "V1-07",
+      "priority": "medium",
+      "frames": [
+        33,
+        91,
+        108,
+        118,
+        129
+      ],
+      "issue": "Column and door silhouettes do not align consistently; source column leaves image differently in sample118.",
+      "action": "Use stable physical correspondences and cylindrical silhouette fitting across views; rejected silhouette point matches must not be reused as measurements. Door frame members too thin in RGB.",
+      "evidence": "118 column region median +0.204m, MAE0.570m. 100 glass +0.344m; 108 glass +0.042m;118 glass -0.288m shows input inconsistency."
+    },
+    {
+      "id": "V1-08",
+      "priority": "medium",
+      "frames": [
+        16,
+        17,
+        167,
+        168,
+        171,
+        179
+      ],
+      "issue": "Full180 predicted-depth consistency is much worse than selected ten; some native predicted input depths have extreme scale/range changes despite similar RGB.",
+      "action": "Reviewer should inspect recorded per-frame numerical conflicts; preserve native cameras and scale. Do not treat predicted DA3 as ground truth.",
+      "evidence": "Full180 MAE1.586m, AbsRel0.858; worst frames167/168 MAE>13m. Input quantiles saved separately."
+    },
+    {
+      "id": "V1-09",
+      "priority": "medium",
+      "frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "issue": "Wall doorway details, hidden returns, botanical species, exact furniture shapes, collider envelopes and lighting powers remain inferred.",
+      "action": "Maintain observed/inferred distinction; collider AABBs are unvalidated conservative approximations."
+    }
+  ]
+}

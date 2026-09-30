@@ -1,0 +1,1408 @@
+{
+  "inventory": [
+    {
+      "id": "floor_stone",
+      "category": "floor",
+      "description": "Continuous light polished stone floor",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "floor_black_inset",
+      "category": "floor",
+      "description": "Dark glossy rectangular floor inset, same level as surrounding stone",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "description": "Pale ceiling over full lobby",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "wall_north",
+      "category": "wall",
+      "description": "Vertical oak panels and dark horizontal reveals",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "wall_south",
+      "category": "wall",
+      "description": "Vertical oak panels and dark horizontal reveals",
+      "evidence_sample_ids": [
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "wall_east_main",
+      "category": "wall",
+      "description": "Panelled east wall split exactly at opening jambs",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "passage_south",
+      "category": "open_passage",
+      "description": "Observed dark open passage beside mirror wall; shallow return geometry is assumed",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "elevator_wall_east_main_1",
+      "category": "door",
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "wall_east_main_reveals",
+      "category": "trim",
+      "description": "Horizontal black panel joints above doors",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "wall_east_recess",
+      "category": "wall",
+      "description": "Panelled east wall split exactly at opening jambs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "elevator_wall_east_recess_0",
+      "category": "door",
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_recess"
+        }
+      ]
+    },
+    {
+      "id": "elevator_wall_east_recess_1",
+      "category": "door",
+      "description": "Closed brushed silver double panel door with exact clear wall opening",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "set_in",
+          "target": "wall_east_recess"
+        }
+      ]
+    },
+    {
+      "id": "wall_east_recess_reveals",
+      "category": "trim",
+      "description": "Horizontal black panel joints above doors",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "wall_recess_return",
+      "category": "wall",
+      "description": "Short return between main wall and recessed elevator bank",
+      "evidence_sample_ids": [
+        45,
+        80,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "glazing",
+      "category": "window_wall",
+      "description": "Bright exterior glazing with repeated metal mullions",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "entrance_0",
+      "category": "door",
+      "description": "Gold framed glazed double entrance doors",
+      "evidence_sample_ids": [
+        0,
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "entrance_1",
+      "category": "door",
+      "description": "Gold framed glazed double entrance doors",
+      "evidence_sample_ids": [
+        0,
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "column_0",
+      "category": "column",
+      "description": "Full height round stone column beside glazing",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "column_1",
+      "category": "column",
+      "description": "Full height round stone column beside glazing",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "ceiling_slats_glass",
+      "category": "ceiling_detail",
+      "description": "Closely spaced dark ceiling battens",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "ceiling_slats_wall",
+      "category": "ceiling_detail",
+      "description": "Closely spaced dark ceiling battens",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "seat_N1",
+      "category": "ottoman",
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_N2",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_N3",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_N4",
+      "category": "ottoman",
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_N5",
+      "category": "ottoman",
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_N6",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_S1",
+      "category": "ottoman",
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_S2",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_S3",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_S4",
+      "category": "ottoman",
+      "description": "Round upholstered modular seat",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "seat_S5",
+      "category": "chair",
+      "description": "Round upholstered modular seat with curved backrest",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "table_north",
+      "category": "coffee_table",
+      "description": "Dark oval table with a radial fluted pedestal",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "table_north_bowl",
+      "category": "decor",
+      "description": "Low metallic bowl on table",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "target": "table_north"
+        }
+      ]
+    },
+    {
+      "id": "table_south",
+      "category": "coffee_table",
+      "description": "Dark oval table with a radial fluted pedestal",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_black_inset"
+        }
+      ]
+    },
+    {
+      "id": "planter_north_left",
+      "category": "planter",
+      "description": "Rectangular grey raised planter with spreading yellow flowering branches",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "planter_north_right",
+      "category": "planter",
+      "description": "Rectangular grey raised planter with spreading yellow flowering branches",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_glass_north",
+      "category": "potted_plant",
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        0,
+        45,
+        62,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_glass_south",
+      "category": "potted_plant",
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        90,
+        104,
+        118,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_mirror_north",
+      "category": "potted_plant",
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        62,
+        90,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_reception_left",
+      "category": "potted_plant",
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_reception_right",
+      "category": "potted_plant",
+      "description": "Ceramic urn with clipped small tree",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_northeast_low",
+      "category": "potted_plant",
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        0,
+        45,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_south_low",
+      "category": "potted_plant",
+      "description": "Ceramic low bowl of arching foliage",
+      "evidence_sample_ids": [
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_bird_0",
+      "category": "potted_plant",
+      "description": "Tall narrow planter with broad leaves and orange flowers",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "plant_bird_1",
+      "category": "potted_plant",
+      "description": "Tall narrow planter with broad leaves and orange flowers",
+      "evidence_sample_ids": [
+        62,
+        80,
+        90
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception",
+      "description": "Angular faceted dark reception counter; back geometry inferred",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "reception_desk_succulents",
+      "category": "decor",
+      "description": "Three tiny potted succulents on reception counter",
+      "evidence_sample_ids": [
+        0,
+        45,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "reception_wall_art",
+      "category": "wall_art",
+      "description": "U shaped dark line and white shield wall ornament",
+      "evidence_sample_ids": [
+        0,
+        45,
+        118,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "mirror_0",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_1",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_2",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_3",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_4",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_5",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_6",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_7",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_8",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "mirror_9",
+      "category": "mirror",
+      "description": "Circular flush mirror with slim metal rim",
+      "evidence_sample_ids": [
+        45,
+        62,
+        80,
+        90,
+        135
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": [
+        {
+          "relation": "mounted_on",
+          "target": "wall_east_main"
+        }
+      ]
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "description": "White drum shade on three thin light legs",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_0",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_1",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_2",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_3",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_4",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_5",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_6",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_7",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_8",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_9",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "description": "Shallow ribbed suspended luminous bowl; weave approximated procedurally",
+      "evidence_sample_ids": [
+        0,
+        45,
+        80,
+        90,
+        104,
+        135,
+        179
+      ],
+      "provenance": "observed form; dimensions inferred from RGB",
+      "uncertainty": "Scale is unobservable from calibrated monocular RGB; sizes depend on assumed typical furniture scale. Hidden backs, thickness, joints and material parameters inferred.",
+      "spatial_relations": []
+    }
+  ]
+}

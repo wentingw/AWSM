@@ -1,0 +1,1675 @@
+{
+  "method": "DA3 prediction backprojection; robust spatial median and SVD local plane; no GT depth",
+  "coordinate_frame": "native_input",
+  "patch_planes": [
+    {
+      "sample_index": 33,
+      "label": "end_wall",
+      "pixel_region": [
+        560,
+        285,
+        940,
+        340
+      ],
+      "point_count": 1972,
+      "centroid": [
+        30.113568054586082,
+        18.51386663796073,
+        3.5497866302029477
+      ],
+      "normal": [
+        -0.04850806305395036,
+        -0.007898808007418781,
+        -0.998791558159567
+      ],
+      "plane_offset": 5.152485255533895,
+      "rms_m": 0.3836227029514724,
+      "axis_spread_m": [
+        0.7351387058247776,
+        2.785036145065527,
+        0.38495205095870066
+      ]
+    },
+    {
+      "sample_index": 33,
+      "label": "floor",
+      "pixel_region": [
+        840,
+        650,
+        920,
+        760
+      ],
+      "point_count": 792,
+      "centroid": [
+        16.20630447087776,
+        19.83997197396668,
+        -0.38891604143587544
+      ],
+      "normal": [
+        0.00935317071205079,
+        -0.006646841909799819,
+        0.9999341666781155
+      ],
+      "plane_offset": 0.36918326267915746,
+      "rms_m": 0.0025798305422349804,
+      "axis_spread_m": [
+        0.5798357326336909,
+        0.27594208985956387,
+        0.007337376015512561
+      ]
+    },
+    {
+      "sample_index": 33,
+      "label": "ceiling",
+      "pixel_region": [
+        500,
+        20,
+        680,
+        110
+      ],
+      "point_count": 1485,
+      "centroid": [
+        19.4235957678151,
+        22.178332228347617,
+        5.515800788157538
+      ],
+      "normal": [
+        0.0016848762596236566,
+        -0.0003596424683982094,
+        0.999998515923541
+      ],
+      "plane_offset": -5.540542687525596,
+      "rms_m": 0.0016839694934243344,
+      "axis_spread_m": [
+        0.7281362264422476,
+        0.5684215256523182,
+        0.0020388267782418044
+      ]
+    },
+    {
+      "sample_index": 33,
+      "label": "right_wall",
+      "pixel_region": [
+        1070,
+        200,
+        1190,
+        360
+      ],
+      "point_count": 1813,
+      "centroid": [
+        17.529030721740106,
+        17.21833280259562,
+        3.0721431641520107
+      ],
+      "normal": [
+        -0.018147777486215422,
+        -0.9997632945834753,
+        -0.012000540650567326
+      ],
+      "plane_offset": 17.56923745797066,
+      "rms_m": 0.004431864785094831,
+      "axis_spread_m": [
+        0.5094470817107353,
+        0.012193204125600824,
+        0.4255724857624066
+      ]
+    },
+    {
+      "sample_index": 33,
+      "label": "column",
+      "pixel_region": [
+        260,
+        250,
+        310,
+        480
+      ],
+      "point_count": 1065,
+      "centroid": [
+        18.72829466730505,
+        25.387379072283355,
+        2.2977982699707784
+      ],
+      "normal": [
+        0.5268820568596997,
+        -0.8489191857618021,
+        -0.04161146722733228
+      ],
+      "plane_offset": 11.779845512290683,
+      "rms_m": 0.11578917398816,
+      "axis_spread_m": [
+        0.4185349309845717,
+        0.28846888179459396,
+        0.7029923031640559
+      ]
+    },
+    {
+      "sample_index": 61,
+      "label": "mirror_wall",
+      "pixel_region": [
+        460,
+        160,
+        780,
+        300
+      ],
+      "point_count": 4116,
+      "centroid": [
+        14.91229186213559,
+        18.14186763144667,
+        2.9095041554439587
+      ],
+      "normal": [
+        -0.007547548515618326,
+        0.9999263810265215,
+        -0.009500896726466146
+      ],
+      "plane_offset": -18.000337900960034,
+      "rms_m": 0.005089129548222598,
+      "axis_spread_m": [
+        0.7452071320756706,
+        0.008172666612302756,
+        0.2900660335630556
+      ]
+    },
+    {
+      "sample_index": 61,
+      "label": "floor",
+      "pixel_region": [
+        280,
+        570,
+        400,
+        625
+      ],
+      "point_count": 629,
+      "centroid": [
+        16.990340440902887,
+        19.122370200711917,
+        0.04600293934261579
+      ],
+      "normal": [
+        -0.0011369514518292407,
+        -0.021756088185159835,
+        -0.9997626618194319
+      ],
+      "plane_offset": 0.48133718571601003,
+      "rms_m": 0.0008673325158095397,
+      "axis_spread_m": [
+        0.3487128427459249,
+        0.2900509118191179,
+        0.006234158661932829
+      ]
+    },
+    {
+      "sample_index": 61,
+      "label": "ceiling",
+      "pixel_region": [
+        600,
+        10,
+        740,
+        50
+      ],
+      "point_count": 516,
+      "centroid": [
+        14.519517629240907,
+        18.143803757721262,
+        4.25216849085929
+      ],
+      "normal": [
+        0.025975437617169497,
+        0.9937986985530138,
+        -0.10811763683568165
+      ],
+      "plane_offset": -17.948704976975556,
+      "rms_m": 0.005193738878006713,
+      "axis_spread_m": [
+        0.2994922563632918,
+        0.010057429920349461,
+        0.07508200419055995
+      ]
+    },
+    {
+      "sample_index": 74,
+      "label": "mirror_wall",
+      "pixel_region": [
+        410,
+        40,
+        650,
+        280
+      ],
+      "point_count": 5402,
+      "centroid": [
+        16.596360110914112,
+        17.891151938058236,
+        3.1003967205024194
+      ],
+      "normal": [
+        0.003416086536031628,
+        -0.9999903637253454,
+        -0.002757319210622944
+      ],
+      "plane_offset": 17.842833715120243,
+      "rms_m": 0.001782936751818585,
+      "axis_spread_m": [
+        0.4612160950839382,
+        0.0026596015916977352,
+        0.4188087436065921
+      ]
+    },
+    {
+      "sample_index": 74,
+      "label": "floor",
+      "pixel_region": [
+        330,
+        650,
+        470,
+        700
+      ],
+      "point_count": 630,
+      "centroid": [
+        17.700944929434087,
+        18.68988224263152,
+        -0.036129636032992796
+      ],
+      "normal": [
+        0.00434679296719623,
+        -0.0026224070982249076,
+        -0.9999871141029325
+      ],
+      "plane_offset": -0.06405903354414909,
+      "rms_m": 0.002266040104731871,
+      "axis_spread_m": [
+        0.23566979642680735,
+        0.19395938885702255,
+        0.0025980440383495855
+      ]
+    },
+    {
+      "sample_index": 82,
+      "label": "end_return",
+      "pixel_region": [
+        30,
+        220,
+        330,
+        400
+      ],
+      "point_count": 5060,
+      "centroid": [
+        20.186575097085502,
+        15.43219973150943,
+        3.630688224625531
+      ],
+      "normal": [
+        -0.00646203723373298,
+        -0.9999650525702485,
+        -0.005304310791197642
+      ],
+      "plane_offset": 15.58136511442167,
+      "rms_m": 0.004180972820964493,
+      "axis_spread_m": [
+        0.7531310373770626,
+        0.006610237532666121,
+        0.5192752214760443
+      ]
+    },
+    {
+      "sample_index": 82,
+      "label": "mirror_wall",
+      "pixel_region": [
+        530,
+        290,
+        650,
+        420
+      ],
+      "point_count": 1480,
+      "centroid": [
+        17.253753229652467,
+        18.291857582567424,
+        3.163052457083632
+      ],
+      "normal": [
+        0.013562960365811302,
+        -0.9998979447702121,
+        -0.004488446326023854
+      ],
+      "plane_offset": 18.07017602280334,
+      "rms_m": 0.0021868209166905775,
+      "axis_spread_m": [
+        0.4156745993520608,
+        0.006384057974489284,
+        0.35899524356872237
+      ]
+    },
+    {
+      "sample_index": 82,
+      "label": "ceiling",
+      "pixel_region": [
+        860,
+        30,
+        1110,
+        140
+      ],
+      "point_count": 2508,
+      "centroid": [
+        16.29368475786798,
+        21.59443010902839,
+        4.799321948753413
+      ],
+      "normal": [
+        0.018283732290132085,
+        -0.005412994080592981,
+        -0.9998181857861088
+      ],
+      "plane_offset": 4.617430516027374,
+      "rms_m": 0.002144833680862885,
+      "axis_spread_m": [
+        0.5788167747723524,
+        0.39632459446603724,
+        0.01119182251860563
+      ]
+    },
+    {
+      "sample_index": 91,
+      "label": "far_wall",
+      "pixel_region": [
+        440,
+        130,
+        690,
+        250
+      ],
+      "point_count": 2849,
+      "centroid": [
+        7.974875907066814,
+        22.181531294038884,
+        2.9553525208712492
+      ],
+      "normal": [
+        0.9998776506273959,
+        0.0011125571034827381,
+        0.015602755927437654
+      ],
+      "plane_offset": -8.044690050272989,
+      "rms_m": 0.013708699952439058,
+      "axis_spread_m": [
+        0.0168972254396393,
+        1.4614383174758796,
+        0.6580134648271375
+      ]
+    },
+    {
+      "sample_index": 91,
+      "label": "floor",
+      "pixel_region": [
+        70,
+        480,
+        210,
+        630
+      ],
+      "point_count": 1935,
+      "centroid": [
+        18.522169035683557,
+        18.3259133077805,
+        -0.09647151444927493
+      ],
+      "normal": [
+        0.002515415095606809,
+        -0.06228993915517517,
+        -0.9980549264278703
+      ],
+      "plane_offset": 0.9986452110528664,
+      "rms_m": 0.05817680188882352,
+      "axis_spread_m": [
+        0.8172809192731242,
+        0.4625634085850347,
+        0.06165414685507873
+      ]
+    },
+    {
+      "sample_index": 100,
+      "label": "glazing",
+      "pixel_region": [
+        620,
+        340,
+        740,
+        470
+      ],
+      "point_count": 1443,
+      "centroid": [
+        20.10857711590732,
+        25.6250218652525,
+        1.4919640569436345
+      ],
+      "normal": [
+        0.036435190010554064,
+        0.9990788439499404,
+        -0.022670255855321897
+      ],
+      "plane_offset": -26.300253842490516,
+      "rms_m": 0.009312797912128176,
+      "axis_spread_m": [
+        0.49534488346893224,
+        0.02260568712276891,
+        0.46466605064144106
+      ]
+    },
+    {
+      "sample_index": 100,
+      "label": "floor",
+      "pixel_region": [
+        610,
+        855,
+        900,
+        925
+      ],
+      "point_count": 1958,
+      "centroid": [
+        23.330235522192197,
+        19.47873626494155,
+        0.17325899842494907
+      ],
+      "normal": [
+        0.0038280503621323887,
+        0.021924904644567898,
+        0.9997522916136535
+      ],
+      "plane_offset": -0.6895948324629211,
+      "rms_m": 0.0034992906386433343,
+      "axis_spread_m": [
+        0.3041583704571855,
+        0.20107142395666147,
+        0.005897744251080462
+      ]
+    },
+    {
+      "sample_index": 108,
+      "label": "glazing",
+      "pixel_region": [
+        920,
+        350,
+        1000,
+        490
+      ],
+      "point_count": 1075,
+      "centroid": [
+        25.1312143169908,
+        25.85704340678462,
+        1.725271698155144
+      ],
+      "normal": [
+        0.01602124592478938,
+        0.9992701188438132,
+        -0.03467779209938915
+      ],
+      "plane_offset": -26.18097558974482,
+      "rms_m": 0.008567240115367959,
+      "axis_spread_m": [
+        0.31572174097695005,
+        0.019981015766284436,
+        0.5056581050650802
+      ]
+    },
+    {
+      "sample_index": 108,
+      "label": "floor",
+      "pixel_region": [
+        1100,
+        895,
+        1250,
+        940
+      ],
+      "point_count": 598,
+      "centroid": [
+        22.535656217200618,
+        19.633238737693787,
+        0.008755667934394307
+      ],
+      "normal": [
+        -0.01759449180029927,
+        0.04414597439111245,
+        -0.9988701451156443
+      ],
+      "plane_offset": -0.4614792607007146,
+      "rms_m": 0.0027099416213242997,
+      "axis_spread_m": [
+        0.20240507821130888,
+        0.06863709132017601,
+        0.005494388329033916
+      ]
+    },
+    {
+      "sample_index": 118,
+      "label": "end_wall",
+      "pixel_region": [
+        1080,
+        40,
+        1240,
+        230
+      ],
+      "point_count": 2842,
+      "centroid": [
+        27.23527235688958,
+        23.41449109614595,
+        4.026068711443752
+      ],
+      "normal": [
+        -0.1180572367977023,
+        0.45367613974777304,
+        -0.8833122036195641
+      ],
+      "plane_offset": -3.8509993113417096,
+      "rms_m": 0.31757128439542426,
+      "axis_spread_m": [
+        1.9315735446083102,
+        0.8450312269097107,
+        0.36812628408594805
+      ]
+    },
+    {
+      "sample_index": 129,
+      "label": "end_wall",
+      "pixel_region": [
+        950,
+        315,
+        1230,
+        375
+      ],
+      "point_count": 1548,
+      "centroid": [
+        25.000097282514922,
+        20.023608536871784,
+        3.6718729307324405
+      ],
+      "normal": [
+        0.016333918993455404,
+        0.03386888011880715,
+        -0.9992928009596653
+      ],
+      "plane_offset": 2.5827494247972584,
+      "rms_m": 0.20812497767467425,
+      "axis_spread_m": [
+        0.9128189737588824,
+        0.8659114383353852,
+        0.20631839135196559
+      ]
+    },
+    {
+      "sample_index": 129,
+      "label": "ceiling",
+      "pixel_region": [
+        710,
+        15,
+        860,
+        90
+      ],
+      "point_count": 1058,
+      "centroid": [
+        15.633759667102108,
+        20.395865197754134,
+        3.637947493999799
+      ],
+      "normal": [
+        0.3761174213433439,
+        0.2835346221763725,
+        -0.8821245962954075
+      ],
+      "plane_offset": -8.453940340209,
+      "rms_m": 0.059203858067447886,
+      "axis_spread_m": [
+        0.280695215518392,
+        0.10388659263572227,
+        0.13865352749960524
+      ]
+    },
+    {
+      "sample_index": 155,
+      "label": "end_wall",
+      "pixel_region": [
+        580,
+        285,
+        920,
+        320
+      ],
+      "point_count": 1144,
+      "centroid": [
+        30.210431492307052,
+        19.553996936107538,
+        2.963326839173411
+      ],
+      "normal": [
+        0.9990007034826518,
+        0.007735386205780069,
+        -0.044019975481749796
+      ],
+      "plane_offset": -30.20105445669181,
+      "rms_m": 0.03348540419474209,
+      "axis_spread_m": [
+        0.039884730331675444,
+        2.4396182291413933,
+        0.2515793982267388
+      ]
+    },
+    {
+      "sample_index": 155,
+      "label": "floor",
+      "pixel_region": [
+        860,
+        600,
+        930,
+        710
+      ],
+      "point_count": 714,
+      "centroid": [
+        16.52697849795345,
+        19.56108831244924,
+        -0.24718962911750042
+      ],
+      "normal": [
+        -0.03091890549450792,
+        -0.41733102652883747,
+        0.9082284049617743
+      ],
+      "plane_offset": 8.898949794320153,
+      "rms_m": 0.06894130210744842,
+      "axis_spread_m": [
+        0.848112666172535,
+        0.3153570113926767,
+        0.11122522997976327
+      ]
+    }
+  ],
+  "point_anchors": [
+    {
+      "sample_index": 33,
+      "label": "endwall_floor",
+      "pixel_uv": [
+        920,
+        468
+      ],
+      "world_point": [
+        29.40708955042075,
+        14.050365474531583,
+        -0.37935754416819023
+      ],
+      "optical_z_m": 19.39211082458496,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "column_foot",
+      "pixel_uv": [
+        293,
+        632
+      ],
+      "world_point": [
+        17.749256485385764,
+        25.05837634865001,
+        -0.30526842259727127
+      ],
+      "optical_z_m": 7.425605773925781,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "bowlplanter",
+      "pixel_uv": [
+        258,
+        615
+      ],
+      "world_point": [
+        17.518295900180433,
+        25.271209573461313,
+        -0.02412008439115887
+      ],
+      "optical_z_m": 7.144618988037109,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "planterA",
+      "pixel_uv": [
+        529,
+        548
+      ],
+      "world_point": [
+        19.761497176363157,
+        22.972424447081536,
+        0.01486138278959137
+      ],
+      "optical_z_m": 9.450841903686523,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "planterB",
+      "pixel_uv": [
+        715,
+        540
+      ],
+      "world_point": [
+        18.596716926779735,
+        20.827394954085044,
+        0.3733230422308842
+      ],
+      "optical_z_m": 8.305112838745117,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "desk",
+      "pixel_uv": [
+        620,
+        459
+      ],
+      "world_point": [
+        27.32364441830471,
+        21.717820337742204,
+        0.10601536600216876
+      ],
+      "optical_z_m": 16.940841674804688,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "treeA",
+      "pixel_uv": [
+        507,
+        448
+      ],
+      "world_point": [
+        23.40073001325039,
+        23.730499458902756,
+        0.8043757941187384
+      ],
+      "optical_z_m": 12.648401260375977,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "treeB",
+      "pixel_uv": [
+        737,
+        450
+      ],
+      "world_point": [
+        26.739098189665448,
+        19.194826249155923,
+        0.3955969504777439
+      ],
+      "optical_z_m": 16.428813934326172,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "floorlamp",
+      "pixel_uv": [
+        830,
+        452
+      ],
+      "world_point": [
+        29.829898664499197,
+        16.340590635558044,
+        0.06642345731786392
+      ],
+      "optical_z_m": 19.657958984375,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "tableA",
+      "pixel_uv": [
+        575,
+        618
+      ],
+      "world_point": [
+        17.024737721263698,
+        22.289896553297595,
+        0.07103752123571239
+      ],
+      "optical_z_m": 6.7697954177856445,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "seatA1",
+      "pixel_uv": [
+        445,
+        630
+      ],
+      "world_point": [
+        16.53567219179633,
+        23.33157728806991,
+        0.14702218487584862
+      ],
+      "optical_z_m": 6.227725028991699,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "seatA2",
+      "pixel_uv": [
+        540,
+        575
+      ],
+      "world_point": [
+        18.155954499102,
+        22.70633425053285,
+        0.14027464990107408
+      ],
+      "optical_z_m": 7.853268623352051,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "seatA3",
+      "pixel_uv": [
+        619,
+        585
+      ],
+      "world_point": [
+        17.87818353772976,
+        21.870674033822937,
+        0.10918512889497833
+      ],
+      "optical_z_m": 7.618916988372803,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "seatA4",
+      "pixel_uv": [
+        689,
+        573
+      ],
+      "world_point": [
+        17.889187208980566,
+        21.183524934673752,
+        0.23273276731735448
+      ],
+      "optical_z_m": 7.638000011444092,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "mirrorpot",
+      "pixel_uv": [
+        1090,
+        640
+      ],
+      "world_point": [
+        16.320680084199594,
+        18.047126815802372,
+        0.061643332196351874
+      ],
+      "optical_z_m": 6.245284557342529,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "carpet_left",
+      "pixel_uv": [
+        283,
+        790
+      ],
+      "world_point": [
+        15.116246889791732,
+        24.069205214762334,
+        -0.3910471472856063
+      ],
+      "optical_z_m": 4.881248474121094,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 33,
+      "label": "carpet_right",
+      "pixel_uv": [
+        879,
+        720
+      ],
+      "world_point": [
+        15.918140280972608,
+        19.929425862502168,
+        -0.3846285225825228
+      ],
+      "optical_z_m": 5.841248035430908,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "mirror_pot",
+      "pixel_uv": [
+        518,
+        561
+      ],
+      "world_point": [
+        15.445370867282179,
+        18.93805277116587,
+        0.4164586887322659
+      ],
+      "optical_z_m": 5.8401618003845215,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "silverdoor",
+      "pixel_uv": [
+        413,
+        459
+      ],
+      "world_point": [
+        16.885487780852813,
+        18.08693478142646,
+        0.9480239495435889
+      ],
+      "optical_z_m": 6.903069019317627,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "tableB",
+      "pixel_uv": [
+        824,
+        856
+      ],
+      "world_point": [
+        13.035262768973677,
+        21.44030764449223,
+        0.3497001623887632
+      ],
+      "optical_z_m": 2.863166332244873,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "seatB1",
+      "pixel_uv": [
+        761,
+        720
+      ],
+      "world_point": [
+        13.3642333229159,
+        20.74107121271225,
+        0.46567747274217064
+      ],
+      "optical_z_m": 3.5783324241638184,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "seatB2",
+      "pixel_uv": [
+        887,
+        754
+      ],
+      "world_point": [
+        12.79491935967011,
+        20.83776782424049,
+        0.44189042428290426
+      ],
+      "optical_z_m": 3.3383753299713135,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "seatB3",
+      "pixel_uv": [
+        1032,
+        790
+      ],
+      "world_point": [
+        12.248295689400514,
+        20.96504558361162,
+        0.4608834631155827
+      ],
+      "optical_z_m": 3.066190242767334,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "plant_tall",
+      "pixel_uv": [
+        1250,
+        706
+      ],
+      "world_point": [
+        11.232364817158727,
+        20.2297484959213,
+        0.5956124437421617
+      ],
+      "optical_z_m": 3.4433627128601074,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 61,
+      "label": "mirror_center",
+      "pixel_uv": [
+        739,
+        420
+      ],
+      "world_point": [
+        13.67287471214308,
+        19.733010028448362,
+        1.7035107751845713
+      ],
+      "optical_z_m": 4.317890167236328,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 74,
+      "label": "silverdoor",
+      "pixel_uv": [
+        470,
+        499
+      ],
+      "world_point": [
+        17.098977666360142,
+        17.845554930651822,
+        0.7898848579092961
+      ],
+      "optical_z_m": 5.508746147155762,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 74,
+      "label": "mirrorpot",
+      "pixel_uv": [
+        691,
+        576
+      ],
+      "world_point": [
+        15.700671712151117,
+        18.673014207015335,
+        0.3478414779300514
+      ],
+      "optical_z_m": 5.30913782119751,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 74,
+      "label": "mirror_center",
+      "pixel_uv": [
+        856,
+        381
+      ],
+      "world_point": [
+        14.209490409306834,
+        18.258433485110984,
+        1.5593144098700658
+      ],
+      "optical_z_m": 5.810007095336914,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 74,
+      "label": "seatA_edge",
+      "pixel_uv": [
+        576,
+        889
+      ],
+      "world_point": [
+        17.165934178731103,
+        21.186528892277575,
+        0.43837712608657764
+      ],
+      "optical_z_m": 2.544889211654663,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "mirrorcorner",
+      "pixel_uv": [
+        510,
+        600
+      ],
+      "world_point": [
+        18.099813143295776,
+        18.23471292642099,
+        0.8618394007128396
+      ],
+      "optical_z_m": 6.918057918548584,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "opening_right",
+      "pixel_uv": [
+        944,
+        528
+      ],
+      "world_point": [
+        9.453574624173775,
+        17.71360316395002,
+        0.7782244541818417
+      ],
+      "optical_z_m": 12.855804443359375,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "plant_tall",
+      "pixel_uv": [
+        1049,
+        559
+      ],
+      "world_point": [
+        12.202648988923961,
+        20.497383836948423,
+        0.9159551841654203
+      ],
+      "optical_z_m": 8.95536994934082,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "planterA",
+      "pixel_uv": [
+        655,
+        771
+      ],
+      "world_point": [
+        18.870909851973945,
+        21.14697555063495,
+        0.513884413995708
+      ],
+      "optical_z_m": 4.2141218185424805,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "planterB",
+      "pixel_uv": [
+        1008,
+        917
+      ],
+      "world_point": [
+        18.917375578783492,
+        23.089957504369917,
+        0.6686035977591405
+      ],
+      "optical_z_m": 2.6874077320098877,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 82,
+      "label": "lamp",
+      "pixel_uv": [
+        397,
+        574
+      ],
+      "world_point": [
+        18.756988323032868,
+        17.33958027737627,
+        1.025822682232555
+      ],
+      "optical_z_m": 7.190964221954346,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "planterA",
+      "pixel_uv": [
+        704,
+        481
+      ],
+      "world_point": [
+        18.527124590291095,
+        22.90903253381122,
+        0.29021584651608334
+      ],
+      "optical_z_m": 6.495060443878174,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "planterB",
+      "pixel_uv": [
+        437,
+        488
+      ],
+      "world_point": [
+        18.497242522918228,
+        20.683697895292315,
+        0.3275991345092466
+      ],
+      "optical_z_m": 6.228965759277344,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "bowlplanter",
+      "pixel_uv": [
+        835,
+        431
+      ],
+      "world_point": [
+        16.622027979593668,
+        24.828608394906407,
+        0.12423908802902695
+      ],
+      "optical_z_m": 8.57518196105957,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "farwall_floor",
+      "pixel_uv": [
+        648,
+        344
+      ],
+      "world_point": [
+        11.183098542288795,
+        23.4508373311976,
+        0.2834850587318165
+      ],
+      "optical_z_m": 13.379610061645508,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "columnfoot",
+      "pixel_uv": [
+        894,
+        475
+      ],
+      "world_point": [
+        17.753767494550452,
+        25.007481553771612,
+        -0.0069670252815901
+      ],
+      "optical_z_m": 7.582334041595459,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 91,
+      "label": "seatB",
+      "pixel_uv": [
+        477,
+        353
+      ],
+      "world_point": [
+        12.080582744888822,
+        20.58248109335879,
+        0.36434491614061093
+      ],
+      "optical_z_m": 12.21800422668457,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 100,
+      "label": "door_center",
+      "pixel_uv": [
+        909,
+        424
+      ],
+      "world_point": [
+        22.94027800227429,
+        25.483545795744302,
+        1.3800083210016307
+      ],
+      "optical_z_m": 8.260038375854492,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 100,
+      "label": "columnfoot",
+      "pixel_uv": [
+        495,
+        489
+      ],
+      "world_point": [
+        18.14865168440236,
+        24.4419925450468,
+        0.4112194802375486
+      ],
+      "optical_z_m": 9.742902755737305,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 100,
+      "label": "planterA",
+      "pixel_uv": [
+        419,
+        537
+      ],
+      "world_point": [
+        18.899335550114444,
+        22.25432195789581,
+        0.405779955046099
+      ],
+      "optical_z_m": 7.491705417633057,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 100,
+      "label": "planterB",
+      "pixel_uv": [
+        208,
+        587
+      ],
+      "world_point": [
+        18.976220693662846,
+        20.07334330856553,
+        0.55612253162586
+      ],
+      "optical_z_m": 5.533504009246826,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "door_bottom_left",
+      "pixel_uv": [
+        708,
+        555
+      ],
+      "world_point": [
+        21.941624912750534,
+        25.73140251206978,
+        0.11345919831039364
+      ],
+      "optical_z_m": 9.198620796203613,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "door_bottom_right",
+      "pixel_uv": [
+        854,
+        551
+      ],
+      "world_point": [
+        23.804709170820345,
+        25.71207491251939,
+        0.09270018874648134
+      ],
+      "optical_z_m": 9.44852352142334,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "door_top_left",
+      "pixel_uv": [
+        708,
+        321
+      ],
+      "world_point": [
+        21.921452161486787,
+        25.810091821615167,
+        2.897856880135344
+      ],
+      "optical_z_m": 8.851070404052734,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "columnfoot",
+      "pixel_uv": [
+        329,
+        514
+      ],
+      "world_point": [
+        17.89421905464115,
+        24.64475922830885,
+        0.9766536507372894
+      ],
+      "optical_z_m": 7.4095025062561035,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "desk",
+      "pixel_uv": [
+        1190,
+        600
+      ],
+      "world_point": [
+        25.138003860129892,
+        22.293527368045012,
+        0.4723889285638294
+      ],
+      "optical_z_m": 6.255992889404297,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 108,
+      "label": "tree",
+      "pixel_uv": [
+        1176,
+        512
+      ],
+      "world_point": [
+        26.78967846430846,
+        24.212774294430886,
+        0.7883245500206941
+      ],
+      "optical_z_m": 8.327841758728027,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 118,
+      "label": "door_bottom_left",
+      "pixel_uv": [
+        651,
+        579
+      ],
+      "world_point": [
+        22.0527183767425,
+        26.03415991528995,
+        -0.021206754247587334
+      ],
+      "optical_z_m": 7.88707160949707,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 118,
+      "label": "door_bottom_right",
+      "pixel_uv": [
+        793,
+        548
+      ],
+      "world_point": [
+        24.12894069324613,
+        26.02791541200402,
+        -0.05464214750740437
+      ],
+      "optical_z_m": 9.062397003173828,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 118,
+      "label": "columnfoot",
+      "pixel_uv": [
+        187,
+        772
+      ],
+      "world_point": [
+        17.80618780984341,
+        24.78309227597073,
+        -0.06907171717681848
+      ],
+      "optical_z_m": 4.5319061279296875,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 118,
+      "label": "desk",
+      "pixel_uv": [
+        1192,
+        584
+      ],
+      "world_point": [
+        25.018966497209977,
+        22.306456964103816,
+        0.3902809272121326
+      ],
+      "optical_z_m": 6.43480920791626,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "desk",
+      "pixel_uv": [
+        951,
+        587
+      ],
+      "world_point": [
+        22.540223322980104,
+        21.175834493079943,
+        0.8040723108559034
+      ],
+      "optical_z_m": 8.63803768157959,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "treeA",
+      "pixel_uv": [
+        819,
+        554
+      ],
+      "world_point": [
+        23.92526419658962,
+        23.200638537246036,
+        0.8345521860488341
+      ],
+      "optical_z_m": 10.896295547485352,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "treeB",
+      "pixel_uv": [
+        1132,
+        579
+      ],
+      "world_point": [
+        24.53662411484663,
+        19.43784905887876,
+        0.7832656436314627
+      ],
+      "optical_z_m": 9.369293212890625,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "planterA",
+      "pixel_uv": [
+        635,
+        701
+      ],
+      "world_point": [
+        17.72554110058279,
+        22.29737153287637,
+        0.6832625350485857
+      ],
+      "optical_z_m": 5.216150283813477,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "planterB",
+      "pixel_uv": [
+        933,
+        766
+      ],
+      "world_point": [
+        17.794875663406778,
+        20.352384350980124,
+        0.663706008902331
+      ],
+      "optical_z_m": 4.219600200653076,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "tableA",
+      "pixel_uv": [
+        478,
+        859
+      ],
+      "world_point": [
+        15.90369125751632,
+        21.96218478890131,
+        0.5440480837932322
+      ],
+      "optical_z_m": 3.5157527923583984,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "seatA1",
+      "pixel_uv": [
+        337,
+        839
+      ],
+      "world_point": [
+        15.615137537205971,
+        22.59076538669219,
+        0.5844750839364392
+      ],
+      "optical_z_m": 3.6110715866088867,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "seatA2",
+      "pixel_uv": [
+        501,
+        781
+      ],
+      "world_point": [
+        16.427159539488976,
+        22.310187990414,
+        0.6285306357515004
+      ],
+      "optical_z_m": 4.136500358581543,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "seatA3",
+      "pixel_uv": [
+        635,
+        831
+      ],
+      "world_point": [
+        16.53510575292242,
+        21.512522409592037,
+        0.5346422935363397
+      ],
+      "optical_z_m": 3.7999155521392822,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "seatA4",
+      "pixel_uv": [
+        713,
+        845
+      ],
+      "world_point": [
+        16.478621330883506,
+        21.044645527809063,
+        0.6159058753177848
+      ],
+      "optical_z_m": 3.493624448776245,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    },
+    {
+      "sample_index": 129,
+      "label": "columnfoot",
+      "pixel_uv": [
+        391,
+        726
+      ],
+      "world_point": [
+        17.108721195124566,
+        24.039069360995512,
+        0.3630983831974688
+      ],
+      "optical_z_m": 5.656823635101318,
+      "method": "3x3 NPZ depth median backprojection; NPZ K and packet c2w"
+    }
+  ],
+  "limitations": [
+    "DA3 is not truth",
+    "Reflected and glazed pixels may predict virtual or biased depth",
+    "Plane estimates are local and contain prediction distortion"
+  ]
+}

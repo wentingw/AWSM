@@ -1,0 +1,100 @@
+{
+  "method_id": "M4",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "model_from_input": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "revisions": 2,
+  "checking_render_count": 20,
+  "input_bvh_pass_count": 3,
+  "input_packet_sha256": "7e6f29df12774545c9d0a19c485f241d8c8716da024011a0b0124d8d77f793d2",
+  "unresolved_issues": [
+    {
+      "id": "M4-I02",
+      "status": "REPAIRED_PENDING_INDEPENDENT_VERIFICATION",
+      "issue": "Curved backs have less rounded corners; visual approximation."
+    },
+    {
+      "id": "M4-I03",
+      "status": "SOLID_OVERLAPS_REPAIRED_VISUAL_LIMITED",
+      "issue": "Source seat shapes, rotations and spacing imperfect. 129 seats_A mixed ROI MAE 0.326->0.396m worsens;155 seats_A 1.295->1.040m improves. Estimates not exact triangulation."
+    },
+    {
+      "id": "M4-I04",
+      "status": "PARTIALLY_REPAIRED_LIMITED",
+      "issue": "Some correspondences have >5px reprojection error. West identities and heights inferred; two DA3 anchors crossed room boundary and were explicitly regularized. Pendant08 unchanged uncertain. Other near/middle lamps still displaced."
+    },
+    {
+      "id": "M4-I05",
+      "status": "REPAIRED_PENDING_INDEPENDENT_VERIFICATION",
+      "issue": "Panel joint layout and material remain approximate."
+    },
+    {
+      "id": "M4-I06",
+      "status": "PARTIALLY_REPAIRED_LIMITED",
+      "issue": "Shrubs still approximate. Mirror fern is too thin/flat and lacks convincing visible connecting stems; grass and reception trees remain simplified. Botanical detail inferred. No reflected DA3 used to duplicate plants."
+    },
+    {
+      "id": "M4-I07",
+      "status": "PROXY_AND_SUPPORT_REPAIRS_PENDING_INDEPENDENT_VERIFICATION",
+      "issue": "Doors remain CLOSED as observed; exterior/interior destinations and articulation unknown. Corridor is declared finite inferred recess ending at y16.25. No dynamic simulation, exact collision hull or comprehensive assembly intersection sweep."
+    },
+    {
+      "id": "M4-I08",
+      "status": "PARTIALLY_REPAIRED_LIMITED",
+      "issue": "Pattern is too uniform and reflection/lighting differ substantially. Source finish mechanism uncertain. Procedural Blender floor/oak shaders are not baked into GLB, which retains approximate base PBR materials."
+    },
+    {
+      "id": "M4-I09",
+      "status": "DOCUMENTED_INPUT_LIMITATION_RETAINED",
+      "issue": "Far-wall median signed residual remains -2.685m at33,+2.226m at129,-2.746m at155. Frames177..179 median own DA3 about0.0666m. No attempt to distort layout to fit global prediction score."
+    }
+  ],
+  "quality_status": "LIMITED; repaired author candidate, final independent review pending",
+  "model_sha256": "a86c6656bfd7f3ff1435c037a48aecb1d503047b799d75c9fc5524baba5c5ec5",
+  "scene_glb_sha256": "a98c5f5a83776c2fb2a4d3a0635db5c6b8794994b49d15fa4fb6b3600823a31b",
+  "supplemental_paired_render_count": 0,
+  "initial_phase_complete": true,
+  "independent_review_status": "initial independent review read and addressed; final independent review pending",
+  "helper_failures": [],
+  "remaining_budgets": {
+    "scene_versions": 3,
+    "standard_paired_views": 30,
+    "input_bvh_passes": 0
+  },
+  "input_depth_reference": "own DA3 predictions only; never GT depth",
+  "material_export_limitation": "Procedural Blender shader detail not baked to GLB texture maps; GLB base PBR appearance is approximate.",
+  "author_repair_notes": "author_repair_notes.json",
+  "final_phase_author_complete": true,
+  "final_candidate_geometry_version": 2,
+  "final_same_geometry_pass": true,
+  "initial_v1_build_process_anomaly": "Build process exit1 after delayed Ctrl-C/internal-break event; log confirms BUILD_COMPLETE and complete blend/GLB exports before exit. All five generic checking/validation commands exit0; no rebuild or extra renders.",
+  "latest_build_exit_code": 0,
+  "frozen_utc": "2026-09-30T07:19:34Z",
+  "final_review_status": "LIMITED"
+}

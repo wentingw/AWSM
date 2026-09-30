@@ -1,0 +1,57 @@
+{
+  "frames": 180,
+  "all_valid": true,
+  "opencv_to_blender_right_multiplier": [
+    1,
+    -1,
+    -1,
+    1
+  ],
+  "pose_rotation_orthogonality_max": 2.063087037123136e-15,
+  "camera_height_range_m": [
+    2.273217380404697,
+    2.608205244257016
+  ],
+  "camera_positions_within_floor_extent": true,
+  "fixed_check_samples": [
+    0,
+    45,
+    90,
+    135,
+    179
+  ],
+  "intrinsics_rgb": [
+    [
+      762.8,
+      0,
+      640
+    ],
+    [
+      0,
+      762.8,
+      480
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "intrinsics_depth": [
+    [
+      233.6074981689453,
+      0,
+      196
+    ],
+    [
+      0,
+      233.6074981689453,
+      147
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}

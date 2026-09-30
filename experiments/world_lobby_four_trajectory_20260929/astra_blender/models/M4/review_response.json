@@ -1,0 +1,97 @@
+{
+  "reviewed_revision": 2,
+  "response_revision": 4,
+  "review_source": "independent_review/review.json",
+  "review_contains_no_GT_evaluation": true,
+  "responses": [
+    {
+      "review_id": "M4-R01",
+      "status": "resolved",
+      "changes": "Added lounge_seat_8, the fourth near-group piece, as a separately named round ottoman. Frame60 top-circle and adjacent66 right-edge evidence retained.",
+      "evidence": [
+        "revision3_measurements.json",
+        "renders_v4/frame_060.png"
+      ],
+      "inference": "Seat z0.42 and hidden underside remain inferred from related furniture."
+    },
+    {
+      "review_id": "M4-R02",
+      "status": "resolved",
+      "changes": "Reversed final backrest end-cap winding; recalculated closed-mesh face normals; reduced bevel radius. All four backrest meshes have zero nonmanifold edges and positive signed volume. Own frames60/138 visually checked.",
+      "evidence": [
+        "mesh_checks_v4.json",
+        "renders_v4/frame_060.png",
+        "renders_v4/frame_138.png"
+      ]
+    },
+    {
+      "review_id": "M4-R03",
+      "status": "improved_with_residual_uncertainty",
+      "changes": "Near ottoman silhouette rays from frames0/60/138 yield radius0.352m, radial RMS0.030m. Other near pieces refit from calibrated frame60 rays, with adjacent66 check. Near seat top lowered0.52\u21920.42m. The final tabletop uses an inspected frame60 color-continuity boundary (729 boundary samples), inverse projection to z0.4, and a fitted ellipse with radii0.4641/0.4275m and angle-0.4062rad. Middle-chair facing corrected to match its visible back.",
+      "evidence": [
+        "revision3_measurements.json",
+        "revision4_table_measurement.json",
+        "comparison_v4.jpg"
+      ],
+      "remaining": "Manual outlines and assumed horizontal heights are imperfect. The final tabletop boundary fit has normalized radial RMS0.038; neither uncertainty nor fidelity is statistically calibrated."
+    },
+    {
+      "review_id": "M4-R04",
+      "status": "resolved",
+      "changes": "Moved tropical_front_0 to native (11.10,20.16) from frame60 visible planter top/base rays, restoring its right-edge presence; reverse-view semantic correspondence retained.",
+      "evidence": [
+        "renders_v4/frame_060.png",
+        "renders_v4/frame_090.png",
+        "revision3_measurements.json"
+      ]
+    },
+    {
+      "review_id": "M4-R05",
+      "status": "partially_resolved",
+      "changes": "Five explicitly matched pendants accepted below2.5px reprojection error at780px width, and their centers/radii updated. Three ambiguous matches rejected and kept in the diagnostic. No new fixture was added in revision3. Revision4 removes pendant_front_00: accepted pendant13 from frames0/60 projects within3.8px of the same reverse90 fixture, establishing that the single-view addition was a duplicate.",
+      "evidence": [
+        "revision3_pendant_matches.json",
+        "revision4_pendant_deduplication.json",
+        "layout_parameters.json",
+        "comparison_v4.jpg"
+      ],
+      "remaining": "Other fixture identities, suspension height and cross-view diameter remain approximate; repeated weave makes correspondences ambiguous and predicted depth windows disagree."
+    },
+    {
+      "review_id": "M4-R06",
+      "status": "resolved_for_identified_complaints",
+      "changes": "Door0 edges from frame100 imply center x13.021m and width2.073m; door1 edges from108 imply x22.848m and width1.955m. Frames widened, rail/stile silhouette corrected.",
+      "evidence": [
+        "revision3_measurements.json",
+        "renders_v4/frame_108.png"
+      ],
+      "remaining": "Glass is still a bright appearance proxy; concealed opening mechanisms are inferred."
+    },
+    {
+      "review_id": "M4-R07",
+      "status": "resolved",
+      "changes": "Added a static role=floor collider for floor_dark_inset, with contact_surface_z matching visible topz0.041. Consumers should use the highest supporting floor surface.",
+      "evidence": [
+        "colliders.json"
+      ]
+    },
+    {
+      "review_id": "M4-R08",
+      "status": "resolved",
+      "changes": "Added furniture/plant/table supported_by, mirror mounted_on and pendant suspended_from relations. Numeric uncertainties now explicitly state heuristic author estimates, not calibrated confidence. Measured objects link specific measurement JSON records.",
+      "evidence": [
+        "objects.json",
+        "modelling_manifest.json"
+      ]
+    },
+    {
+      "review_id": "M4-R09",
+      "status": "partially_resolved",
+      "changes": "Reduced floor roughness and sharpened/brightened small mosaic pattern; table made darker and less reflective; central lamp diffusers reduced in brightness.",
+      "evidence": [
+        "comparison_v4.jpg"
+      ],
+      "remaining": "BRDFs and lighting are inferred; the original concentrated reflection pattern and fabric appearance are not fully reproduced."
+    }
+  ]
+}

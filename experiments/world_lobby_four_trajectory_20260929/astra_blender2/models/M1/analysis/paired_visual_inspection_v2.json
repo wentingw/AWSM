@@ -1,0 +1,257 @@
+{
+  "role": "revision author inspection; not independent review",
+  "version": 2,
+  "quality_status": "LIMITED",
+  "views": [
+    {
+      "sample_index": 33,
+      "comparison_path": "checks/v2/0033_comparison.jpg",
+      "comparison_sha256": "2ade4c68a4f3a6d96065856f628e9499f1fb8982a4e5b33fee4a824b9e4afbbf",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "False near divider removed; north lounge and side chairs visible. North furniture still too large/right, mirror disks too exposed; materials and ceiling differ.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "before_model_z_median_m": 3.4199137687683105,
+        "after_model_z_median_m": 4.231838226318359,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.060209274291992,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 61,
+      "comparison_path": "checks/v2/0061_comparison.jpg",
+      "comparison_sha256": "2c61590aae2fea63661e1b9c9d72a44e95ceed8e2415d548482abd896443a6de",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Moved side seats now occupy observed right-side seating region and no longer penetrate. North group creates excessive furniture across lower left/centre; mirror landmark/door proportions remain wrong.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "before_model_z_median_m": 4.026496887207031,
+        "after_model_z_median_m": 4.070900917053223,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.1601409912109375,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 74,
+      "comparison_path": "checks/v2/0074_comparison.jpg",
+      "comparison_sha256": "49376a787cd214065dcc7d95425ce3cd35e7fdb3a9fac7727548fc1f1fa429aa",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Divider now left, consistent direction, but too central/close. Excess north seats cover source open black floor. Metal door remains an overly sharp mirror.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "before_model_z_median_m": 4.415975570678711,
+        "after_model_z_median_m": 4.120513439178467,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.279897689819336,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 82,
+      "comparison_path": "checks/v2/0082_comparison.jpg",
+      "comparison_sha256": "b14de44bacf3f71017268322a617dd13d1c3103f1127fe908f5b695e6d9f78b4",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Single planter pair now foreground and side seating to right; shell/door proportions and table depth order still disagree. The inferred single-pair layout is more coherent across directions.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "before_model_z_median_m": 5.7043375968933105,
+        "after_model_z_median_m": 5.446490287780762,
+        "median_signed_model_change_v2_minus_v1_m": 0.0006132125854492188,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 6.055427551269531,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 91,
+      "comparison_path": "checks/v2/0091_comparison.jpg",
+      "comparison_sha256": "72fb9cb108962fc1613c8547c31352d589f4bb091b1e50a359272d28b35541ea",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Large near duplicate pair gone. Open floor extends to a single pair, with lower furniture behind it; pair still too wide/near, floor dot density and column differ.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "before_model_z_median_m": 3.22066068649292,
+        "after_model_z_median_m": 4.441083908081055,
+        "median_signed_model_change_v2_minus_v1_m": 0.21086573600769043,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.175474166870117,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 100,
+      "comparison_path": "checks/v2/0100_comparison.jpg",
+      "comparison_sha256": "63f7dd406a1c3e5d592db5ab85219ad84d1bb8728df059aafbd2d90e688ed049",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Right half is now open circulation floor. Spurious foreground lamp remains and black floor pattern/door width differ; camera is unchanged.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "before_model_z_median_m": 3.8100085258483887,
+        "after_model_z_median_m": 4.264317035675049,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 6.099387168884277,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 108,
+      "comparison_path": "checks/v2/0108_comparison.jpg",
+      "comparison_sha256": "041a9b891e95c61b9c98bbcfcb2cb417e0b18e37a7e568ce532036c180f780cb",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Severe near partition obstruction unchanged. Source facade is open; median model opticalZ remains0.791m,91.43percent below1m. No camera move or geometry visibility masking used.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "before_model_z_median_m": 0.7909664511680603,
+        "after_model_z_median_m": 0.7909661531448364,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 0.7909661531448364,
+      "model_z_below1m_fraction": 0.9142545572916667
+    },
+    {
+      "sample_index": 118,
+      "comparison_path": "checks/v2/0118_comparison.jpg",
+      "comparison_sha256": "ee6b2132f4f6b0357403cfa8d75f49ae7b31cb5ac9877619a891f038ab9595ac",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Room opens beyond divider and seating shifted left; divider still too far right/near. Source shows broader open floor. Unvalidated trajectory prevents a common fit.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "before_model_z_median_m": 3.5050649642944336,
+        "after_model_z_median_m": 3.493967294692993,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.1493916511535645,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 129,
+      "comparison_path": "checks/v2/0129_comparison.jpg",
+      "comparison_sha256": "8fa5da78d5025dba544a4d6631ebd451da759fbedf4e757710efbd6744227ea2",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "Near false foliage removed; north furniture now at foreground depth but too far right. Conditional table ray-plane fit disagrees by over300px horizontally in this view.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "before_model_z_median_m": 4.277719497680664,
+        "after_model_z_median_m": 4.147627830505371,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 4.690664291381836,
+      "model_z_below1m_fraction": 0.0
+    },
+    {
+      "sample_index": 155,
+      "comparison_path": "checks/v2/0155_comparison.jpg",
+      "comparison_sha256": "086a33a16b8dd389f4372e8b6e200103b80d87bbcaf0903077ef518351130686",
+      "actually_visually_inspected": true,
+      "model_depth_panel_inspected": true,
+      "saved_depth_array_inspected": true,
+      "observations": "False near divider gone; table/chairs are visible again. Side seating is too far up/right and north lounge somewhat oversized; mirrors too visible.",
+      "regional_self_depth_evidence": {
+        "pixel_region_source_1280x960": [
+          180,
+          520,
+          1100,
+          950
+        ],
+        "before_model_z_median_m": 3.36804461479187,
+        "after_model_z_median_m": 3.9656224250793457,
+        "median_signed_model_change_v2_minus_v1_m": 0.0,
+        "interpretation": "Signed change between two model predictions only; NOT residual against measured or predicted input depth",
+        "input_signed_depth_residual_m": null,
+        "depth_reference": "N/A: M1 RGB only"
+      },
+      "global_model_z_median_m": 5.074903964996338,
+      "model_z_below1m_fraction": 0.0
+    }
+  ]
+}

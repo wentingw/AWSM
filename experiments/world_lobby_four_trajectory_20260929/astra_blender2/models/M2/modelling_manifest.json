@@ -1,0 +1,57 @@
+{
+  "method_id": "M2",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "model_from_input": [
+    [
+      0.9999907721308798,
+      -0.0003693707673746153,
+      0.00428009559742884,
+      0.27657707381822766
+    ],
+    [
+      -0.004280826128969189,
+      -0.169350834625214,
+      0.9855465333201661,
+      0.011417470595419865
+    ],
+    [
+      0.0003608056824044154,
+      -0.9855557611708126,
+      -0.1693508530899089,
+      2.053855068615482
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "revisions": 3,
+  "checking_render_count": 30,
+  "input_bvh_pass_count": 3,
+  "input_packet_sha256": "1da9bc1787d7acd44f1370e5942d4ddd2e7cb22fbe1e29304e7ab7a19224a14b",
+  "quality_status": "LIMITED",
+  "unresolved_issues": [
+    "M2-I06 LIMITED: pendant13 foreground correction is supported in33/129 and reduces129 lamp residual from+3.382m to-0.074m. Other distant33/129 correspondences are tentative;82/108 silhouette ordering and missing/overlapping lamps remain visibly wrong. No claim of complete lamp recovery.",
+    "M2-I07 LIMITED: desk RGB silhouette fit uses33/108/118/129 (<3px front-corner errors), while own DA3 desk signs conflict.129 residual worsens to about+1.81m as33 improves to about-1.48m. End-wall y15.15m retained;33 roughly-2.62m versus129 positive residual; native scale/cameras unchanged.",
+    "M2-I08 LIMITED: upholstery shapes/yaws, plant morphology, bowl weave, floor dash pattern, mirror reflections, wall grain and lighting remain approximations. Packed floor texture is visibly too subdued; GLB procedural bump materials may simplify.",
+    "M2-I09 input uncertainty: selected DA3 windows jump greatly at21/22 and167/168 with nearly unchanged native poses and RGB;175 predicts very short depth. These observations are retained without camera edits, depth scaling or masking. Native trajectory accuracy is not certified.",
+    "Service aperture1.05x2.24m is statically clear into a bounded inferred1.5m vestibule. Hidden connectivity, physics and material/thickness parameters are inferred. Closed exterior glazing deliberately blocks both entrance door pairs; no traversal claimed in their closed state.",
+    "Small feet/inset support offsets and remaining silhouette/position conflicts remain visual limitations. No full physics or navigation simulation was run."
+  ],
+  "author_phase": "final_candidate",
+  "scene_sha256": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+  "glb_sha256": "79c7ed61d8a7eee347b462e094fcccf324c824e1774d4f9bb3c9448612921a6f",
+  "technical_validation": "Author checks PASS; pending independent final review",
+  "input_bvh_pass_directories": [
+    "checks/input_v1",
+    "checks/input_v2",
+    "checks/input_final"
+  ],
+  "author_repair_notes": "author_repair_notes.md",
+  "frozen_utc": "2026-09-30T07:22:19Z",
+  "final_review_status": "LIMITED"
+}

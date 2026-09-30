@@ -1,0 +1,99 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "created_utc": "2026-09-30T04:38:06.132393+00:00",
+      "action": "Fresh semantic construction from empty Blender scene; no old models read",
+      "parameter_snapshot": "versions/v1/layout.json",
+      "geometry_changes": "Initial measured/inferred architecture and65 semantic objects",
+      "paired_check_count": 10,
+      "paired_samples": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all10_comparisons_actually_inspected": true,
+      "full180_input_pass": "checks/input_v1",
+      "scene_sha256": "00be0f90eff6faa1de71317206e9922f5396a9de5291f9e8fca7960bc8c24b2c",
+      "limitations": [
+        "Pendant radial rods and plant stems appear vertical in actual renders; likely rotation-mode order bug in rod(); repair geometry orientation next version.",
+        "Cylinder end-cap smooth shading makes flat mirror disks and table tops appear curved; flatten cap normals next version.",
+        "V1 material exposure too bright and floor surface roughness/bump too high; compare all ten RGBs when revising.",
+        "Reception desk intrudes in100/108; needs multi-view silhouette triangulation or constrained positioning.",
+        "Light positions from single33 depth disagree with82/129; use multiple source rays for major repair if correspondence reliable.",
+        "Panel gaps produce thin BVH misses; inferred backing wall can close gaps while keeping panels.",
+        "Window door frames too thin; column position and chair extents conflict across native pose/depth input.",
+        "Plant detail is sparse and approximate; full source appearance is not reconstructed.",
+        "Native input is inconsistent across views; no scale, camera edits or score-targeting transformations applied."
+      ],
+      "review_status": "awaiting independent reviewer; author does not certify freeze"
+    },
+    {
+      "version": 2,
+      "action": "Main measured/technical repairs",
+      "parameter_snapshot": "versions/v2/layout.json",
+      "build_snapshot": "versions/v2/build_scene.py",
+      "paired_check_count": 10,
+      "paired_samples": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all10_comparisons_actually_inspected": true,
+      "visual_inspection_records": "analysis/repair_visual_inspection.json",
+      "full180_input_pass": "checks/input_v2",
+      "scene_sha256": "9490280728dba30533a43fc48894afb0590456a4a76b9e9aa45d70a2b35b61b1",
+      "geometry_changes_evidence": [
+        "analysis/revision_measurements.json",
+        "analysis/revision_evidence.json",
+        "analysis/v3_changes.json",
+        "analysis/object_adjustment_ledger.json"
+      ],
+      "review_status": "Author repaired candidate; independent final review pending"
+    },
+    {
+      "version": 3,
+      "action": "Remove counter bevel degeneracy, correct backing side, smooth seat sides and exportable floor texture",
+      "parameter_snapshot": "versions/v3/layout.json",
+      "build_snapshot": "versions/v3/build_scene.py",
+      "paired_check_count": 10,
+      "paired_samples": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all10_comparisons_actually_inspected": true,
+      "visual_inspection_records": "analysis/repair_visual_inspection.json",
+      "full180_input_pass": "checks/input_final",
+      "scene_sha256": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+      "geometry_changes_evidence": [
+        "analysis/revision_measurements.json",
+        "analysis/revision_evidence.json",
+        "analysis/v3_changes.json",
+        "analysis/object_adjustment_ledger.json"
+      ],
+      "review_status": "Author repaired candidate; independent final review pending"
+    }
+  ]
+}

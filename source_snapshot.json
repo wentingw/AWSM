@@ -6749,5 +6749,8 @@
     }
   ],
   "previous_snapshot_commit": "44c874cfa077f16ecaeeb664b8596af9f380a2e0",
-  "public_blog_commit": "cd63134103e1f14660d00fd4d20988f25cbf50ea"
+  "public_blog_commit": "cd63134103e1f14660d00fd4d20988f25cbf50ea",
+  "additional_snapshots": [
+    "experiments/world_lobby_four_trajectory_20260929/source_snapshot.json"
+  ]
 }

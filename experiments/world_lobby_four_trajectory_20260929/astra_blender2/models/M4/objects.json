@@ -1,0 +1,4887 @@
+{
+  "objects": [
+    {
+      "id": "floor",
+      "category": "architecture_floor",
+      "components": [
+        "floor__slab"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        100,
+        108
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        19.5,
+        10.0,
+        0.23999999463558197
+      ],
+      "bounds": [
+        [
+          8.0,
+          16.0,
+          -0.23999999463558197
+        ],
+        [
+          27.5,
+          26.0,
+          0.0
+        ]
+      ],
+      "component_names": [
+        "floor__slab"
+      ]
+    },
+    {
+      "id": "dark_inlay",
+      "category": "floor_finish",
+      "components": [
+        "dark_inlay__polished_field"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        17.5,
+        4.400001525878906,
+        0.012000000104308128
+      ],
+      "bounds": [
+        [
+          8.200000762939453,
+          19.599998474121094,
+          -0.0010000001639127731
+        ],
+        [
+          25.700000762939453,
+          24.0,
+          0.010999999940395355
+        ]
+      ],
+      "component_names": [
+        "dark_inlay__polished_field"
+      ]
+    },
+    {
+      "id": "ceiling",
+      "category": "architecture_ceiling",
+      "components": [
+        "ceiling__slab"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        19.5,
+        10.0,
+        0.23999977111816406
+      ],
+      "bounds": [
+        [
+          8.0,
+          16.0,
+          5.0
+        ],
+        [
+          27.5,
+          26.0,
+          5.239999771118164
+        ]
+      ],
+      "component_names": [
+        "ceiling__slab"
+      ]
+    },
+    {
+      "id": "east_end_wall",
+      "category": "architecture_wall",
+      "components": [
+        "east_end_wall__backing_0",
+        "east_end_wall__panel_0_0_0",
+        "east_end_wall__panel_0_1_0",
+        "east_end_wall__panel_0_2_0",
+        "east_end_wall__panel_1_0_0",
+        "east_end_wall__panel_1_1_0",
+        "east_end_wall__panel_1_2_0",
+        "east_end_wall__panel_2_0_0",
+        "east_end_wall__panel_2_1_0",
+        "east_end_wall__panel_2_2_0",
+        "east_end_wall__panel_3_0_0",
+        "east_end_wall__panel_3_1_0",
+        "east_end_wall__panel_3_2_0",
+        "east_end_wall__panel_4_0_0",
+        "east_end_wall__panel_4_1_0",
+        "east_end_wall__panel_4_2_0",
+        "east_end_wall__panel_5_0_0",
+        "east_end_wall__panel_5_1_0",
+        "east_end_wall__panel_5_2_0",
+        "east_end_wall__panel_6_0_0",
+        "east_end_wall__panel_6_1_0",
+        "east_end_wall__panel_6_2_0",
+        "east_end_wall__panel_7_0_0",
+        "east_end_wall__panel_7_1_0",
+        "east_end_wall__panel_7_2_0",
+        "east_end_wall__panel_8_0_0",
+        "east_end_wall__panel_8_1_0",
+        "east_end_wall__panel_8_2_0",
+        "east_end_wall__panel_9_0_0",
+        "east_end_wall__panel_9_1_0",
+        "east_end_wall__panel_9_2_0",
+        "east_end_wall__panel_10_0_0",
+        "east_end_wall__panel_10_1_0",
+        "east_end_wall__panel_10_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        0.19499969482421875,
+        10.0,
+        5.0
+      ],
+      "bounds": [
+        [
+          27.385000228881836,
+          16.0,
+          0.0
+        ],
+        [
+          27.579999923706055,
+          26.0,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "east_end_wall__backing_0",
+        "east_end_wall__panel_0_0_0",
+        "east_end_wall__panel_0_1_0",
+        "east_end_wall__panel_0_2_0",
+        "east_end_wall__panel_1_0_0",
+        "east_end_wall__panel_1_1_0",
+        "east_end_wall__panel_1_2_0",
+        "east_end_wall__panel_2_0_0",
+        "east_end_wall__panel_2_1_0",
+        "east_end_wall__panel_2_2_0",
+        "east_end_wall__panel_3_0_0",
+        "east_end_wall__panel_3_1_0",
+        "east_end_wall__panel_3_2_0",
+        "east_end_wall__panel_4_0_0",
+        "east_end_wall__panel_4_1_0",
+        "east_end_wall__panel_4_2_0",
+        "east_end_wall__panel_5_0_0",
+        "east_end_wall__panel_5_1_0",
+        "east_end_wall__panel_5_2_0",
+        "east_end_wall__panel_6_0_0",
+        "east_end_wall__panel_6_1_0",
+        "east_end_wall__panel_6_2_0",
+        "east_end_wall__panel_7_0_0",
+        "east_end_wall__panel_7_1_0",
+        "east_end_wall__panel_7_2_0",
+        "east_end_wall__panel_8_0_0",
+        "east_end_wall__panel_8_1_0",
+        "east_end_wall__panel_8_2_0",
+        "east_end_wall__panel_9_0_0",
+        "east_end_wall__panel_9_1_0",
+        "east_end_wall__panel_9_2_0",
+        "east_end_wall__panel_10_0_0",
+        "east_end_wall__panel_10_1_0",
+        "east_end_wall__panel_10_2_0"
+      ]
+    },
+    {
+      "id": "west_end_wall",
+      "category": "architecture_wall",
+      "components": [
+        "west_end_wall__backing_0",
+        "west_end_wall__panel_0_0_0",
+        "west_end_wall__panel_0_1_0",
+        "west_end_wall__panel_0_2_0",
+        "west_end_wall__panel_1_0_0",
+        "west_end_wall__panel_1_1_0",
+        "west_end_wall__panel_1_2_0",
+        "west_end_wall__panel_2_0_0",
+        "west_end_wall__panel_2_1_0",
+        "west_end_wall__panel_2_2_0",
+        "west_end_wall__panel_3_0_0",
+        "west_end_wall__panel_3_1_0",
+        "west_end_wall__panel_3_2_0",
+        "west_end_wall__panel_4_0_0",
+        "west_end_wall__panel_4_1_0",
+        "west_end_wall__panel_4_2_0",
+        "west_end_wall__panel_5_0_0",
+        "west_end_wall__panel_5_1_0",
+        "west_end_wall__panel_5_2_0",
+        "west_end_wall__panel_6_0_0",
+        "west_end_wall__panel_6_1_0",
+        "west_end_wall__panel_6_2_0",
+        "west_end_wall__panel_7_0_0",
+        "west_end_wall__panel_7_1_0",
+        "west_end_wall__panel_7_2_0",
+        "west_end_wall__panel_8_0_0",
+        "west_end_wall__panel_8_1_0",
+        "west_end_wall__panel_8_2_0",
+        "west_end_wall__panel_9_0_0",
+        "west_end_wall__panel_9_1_0",
+        "west_end_wall__panel_9_2_0",
+        "west_end_wall__panel_10_0_0",
+        "west_end_wall__panel_10_1_0",
+        "west_end_wall__panel_10_2_0"
+      ],
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        0.19499969482421875,
+        10.0,
+        5.0
+      ],
+      "bounds": [
+        [
+          7.920000076293945,
+          16.0,
+          0.0
+        ],
+        [
+          8.114999771118164,
+          26.0,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "west_end_wall__backing_0",
+        "west_end_wall__panel_0_0_0",
+        "west_end_wall__panel_0_1_0",
+        "west_end_wall__panel_0_2_0",
+        "west_end_wall__panel_1_0_0",
+        "west_end_wall__panel_1_1_0",
+        "west_end_wall__panel_1_2_0",
+        "west_end_wall__panel_2_0_0",
+        "west_end_wall__panel_2_1_0",
+        "west_end_wall__panel_2_2_0",
+        "west_end_wall__panel_3_0_0",
+        "west_end_wall__panel_3_1_0",
+        "west_end_wall__panel_3_2_0",
+        "west_end_wall__panel_4_0_0",
+        "west_end_wall__panel_4_1_0",
+        "west_end_wall__panel_4_2_0",
+        "west_end_wall__panel_5_0_0",
+        "west_end_wall__panel_5_1_0",
+        "west_end_wall__panel_5_2_0",
+        "west_end_wall__panel_6_0_0",
+        "west_end_wall__panel_6_1_0",
+        "west_end_wall__panel_6_2_0",
+        "west_end_wall__panel_7_0_0",
+        "west_end_wall__panel_7_1_0",
+        "west_end_wall__panel_7_2_0",
+        "west_end_wall__panel_8_0_0",
+        "west_end_wall__panel_8_1_0",
+        "west_end_wall__panel_8_2_0",
+        "west_end_wall__panel_9_0_0",
+        "west_end_wall__panel_9_1_0",
+        "west_end_wall__panel_9_2_0",
+        "west_end_wall__panel_10_0_0",
+        "west_end_wall__panel_10_1_0",
+        "west_end_wall__panel_10_2_0"
+      ]
+    },
+    {
+      "id": "south_recess_wall",
+      "category": "architecture_wall",
+      "components": [
+        "south_recess_wall__backing_0",
+        "south_recess_wall__backing_1",
+        "south_recess_wall__backing_2",
+        "south_recess_wall__backing_3",
+        "south_recess_wall__backing_4",
+        "south_recess_wall__panel_0_0_0",
+        "south_recess_wall__panel_0_1_0",
+        "south_recess_wall__panel_0_2_0",
+        "south_recess_wall__panel_1_0_0",
+        "south_recess_wall__panel_1_1_0",
+        "south_recess_wall__panel_1_2_0",
+        "south_recess_wall__panel_2_0_0",
+        "south_recess_wall__panel_2_1_0",
+        "south_recess_wall__panel_2_2_0",
+        "south_recess_wall__panel_3_0_0",
+        "south_recess_wall__panel_3_1_0",
+        "south_recess_wall__panel_3_2_0",
+        "south_recess_wall__panel_4_0_0",
+        "south_recess_wall__panel_4_1_0",
+        "south_recess_wall__panel_4_2_0",
+        "south_recess_wall__panel_5_0_0",
+        "south_recess_wall__panel_5_1_0",
+        "south_recess_wall__panel_5_2_0",
+        "south_recess_wall__panel_6_0_0",
+        "south_recess_wall__panel_6_1_0",
+        "south_recess_wall__panel_6_2_0",
+        "south_recess_wall__panel_7_0_0",
+        "south_recess_wall__panel_7_1_0",
+        "south_recess_wall__panel_7_2_0",
+        "south_recess_wall__panel_8_0_0",
+        "south_recess_wall__panel_8_1_0",
+        "south_recess_wall__panel_8_2_0",
+        "south_recess_wall__panel_9_0_0",
+        "south_recess_wall__panel_9_1_0",
+        "south_recess_wall__panel_9_2_0",
+        "south_recess_wall__panel_10_0_0",
+        "south_recess_wall__panel_10_1_0",
+        "south_recess_wall__panel_10_2_0",
+        "south_recess_wall__panel_11_0_0",
+        "south_recess_wall__panel_11_1_0",
+        "south_recess_wall__panel_11_2_0",
+        "south_recess_wall__panel_12_0_0",
+        "south_recess_wall__panel_12_1_0",
+        "south_recess_wall__panel_12_1_1",
+        "south_recess_wall__panel_12_2_0",
+        "south_recess_wall__panel_13_0_0",
+        "south_recess_wall__panel_13_1_0",
+        "south_recess_wall__panel_13_1_1",
+        "south_recess_wall__panel_13_2_0",
+        "south_recess_wall__panel_14_0_0",
+        "south_recess_wall__panel_14_1_0",
+        "south_recess_wall__panel_14_2_0",
+        "south_recess_wall__panel_15_0_0",
+        "south_recess_wall__panel_15_1_0",
+        "south_recess_wall__panel_15_1_1",
+        "south_recess_wall__panel_15_2_0",
+        "south_recess_wall__panel_16_0_0",
+        "south_recess_wall__panel_16_1_0",
+        "south_recess_wall__panel_16_1_1",
+        "south_recess_wall__panel_16_2_0",
+        "south_recess_wall__panel_17_0_0",
+        "south_recess_wall__panel_17_1_0",
+        "south_recess_wall__panel_17_2_0",
+        "south_recess_wall__panel_18_0_0",
+        "south_recess_wall__panel_18_1_0",
+        "south_recess_wall__panel_18_2_0",
+        "south_recess_wall__panel_19_0_0",
+        "south_recess_wall__panel_19_1_0",
+        "south_recess_wall__panel_19_2_0",
+        "south_recess_wall__panel_20_0_0",
+        "south_recess_wall__panel_20_1_0",
+        "south_recess_wall__panel_20_2_0"
+      ],
+      "evidence_frames": [
+        82,
+        33
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        19.5,
+        0.19499969482421875,
+        5.0
+      ],
+      "bounds": [
+        [
+          8.0,
+          15.920000076293945,
+          0.0
+        ],
+        [
+          27.5,
+          16.114999771118164,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "south_recess_wall__backing_0",
+        "south_recess_wall__backing_1",
+        "south_recess_wall__backing_2",
+        "south_recess_wall__backing_3",
+        "south_recess_wall__backing_4",
+        "south_recess_wall__panel_0_0_0",
+        "south_recess_wall__panel_0_1_0",
+        "south_recess_wall__panel_0_2_0",
+        "south_recess_wall__panel_1_0_0",
+        "south_recess_wall__panel_1_1_0",
+        "south_recess_wall__panel_1_2_0",
+        "south_recess_wall__panel_2_0_0",
+        "south_recess_wall__panel_2_1_0",
+        "south_recess_wall__panel_2_2_0",
+        "south_recess_wall__panel_3_0_0",
+        "south_recess_wall__panel_3_1_0",
+        "south_recess_wall__panel_3_2_0",
+        "south_recess_wall__panel_4_0_0",
+        "south_recess_wall__panel_4_1_0",
+        "south_recess_wall__panel_4_2_0",
+        "south_recess_wall__panel_5_0_0",
+        "south_recess_wall__panel_5_1_0",
+        "south_recess_wall__panel_5_2_0",
+        "south_recess_wall__panel_6_0_0",
+        "south_recess_wall__panel_6_1_0",
+        "south_recess_wall__panel_6_2_0",
+        "south_recess_wall__panel_7_0_0",
+        "south_recess_wall__panel_7_1_0",
+        "south_recess_wall__panel_7_2_0",
+        "south_recess_wall__panel_8_0_0",
+        "south_recess_wall__panel_8_1_0",
+        "south_recess_wall__panel_8_2_0",
+        "south_recess_wall__panel_9_0_0",
+        "south_recess_wall__panel_9_1_0",
+        "south_recess_wall__panel_9_2_0",
+        "south_recess_wall__panel_10_0_0",
+        "south_recess_wall__panel_10_1_0",
+        "south_recess_wall__panel_10_2_0",
+        "south_recess_wall__panel_11_0_0",
+        "south_recess_wall__panel_11_1_0",
+        "south_recess_wall__panel_11_2_0",
+        "south_recess_wall__panel_12_0_0",
+        "south_recess_wall__panel_12_1_0",
+        "south_recess_wall__panel_12_1_1",
+        "south_recess_wall__panel_12_2_0",
+        "south_recess_wall__panel_13_0_0",
+        "south_recess_wall__panel_13_1_0",
+        "south_recess_wall__panel_13_1_1",
+        "south_recess_wall__panel_13_2_0",
+        "south_recess_wall__panel_14_0_0",
+        "south_recess_wall__panel_14_1_0",
+        "south_recess_wall__panel_14_2_0",
+        "south_recess_wall__panel_15_0_0",
+        "south_recess_wall__panel_15_1_0",
+        "south_recess_wall__panel_15_1_1",
+        "south_recess_wall__panel_15_2_0",
+        "south_recess_wall__panel_16_0_0",
+        "south_recess_wall__panel_16_1_0",
+        "south_recess_wall__panel_16_1_1",
+        "south_recess_wall__panel_16_2_0",
+        "south_recess_wall__panel_17_0_0",
+        "south_recess_wall__panel_17_1_0",
+        "south_recess_wall__panel_17_2_0",
+        "south_recess_wall__panel_18_0_0",
+        "south_recess_wall__panel_18_1_0",
+        "south_recess_wall__panel_18_2_0",
+        "south_recess_wall__panel_19_0_0",
+        "south_recess_wall__panel_19_1_0",
+        "south_recess_wall__panel_19_2_0",
+        "south_recess_wall__panel_20_0_0",
+        "south_recess_wall__panel_20_1_0",
+        "south_recess_wall__panel_20_2_0"
+      ]
+    },
+    {
+      "id": "mirror_feature_wall",
+      "category": "architecture_wall",
+      "components": [
+        "mirror_feature_wall__backing_0",
+        "mirror_feature_wall__backing_1",
+        "mirror_feature_wall__backing_2",
+        "mirror_feature_wall__panel_0_0_0",
+        "mirror_feature_wall__panel_0_1_0",
+        "mirror_feature_wall__panel_0_2_0",
+        "mirror_feature_wall__panel_1_0_0",
+        "mirror_feature_wall__panel_1_1_0",
+        "mirror_feature_wall__panel_1_2_0",
+        "mirror_feature_wall__panel_2_0_0",
+        "mirror_feature_wall__panel_2_1_0",
+        "mirror_feature_wall__panel_2_2_0",
+        "mirror_feature_wall__panel_3_0_0",
+        "mirror_feature_wall__panel_3_1_0",
+        "mirror_feature_wall__panel_3_2_0",
+        "mirror_feature_wall__panel_4_0_0",
+        "mirror_feature_wall__panel_4_1_0",
+        "mirror_feature_wall__panel_4_2_0",
+        "mirror_feature_wall__panel_5_0_0",
+        "mirror_feature_wall__panel_5_1_0",
+        "mirror_feature_wall__panel_5_1_1",
+        "mirror_feature_wall__panel_5_2_0",
+        "mirror_feature_wall__panel_6_0_0",
+        "mirror_feature_wall__panel_6_1_0",
+        "mirror_feature_wall__panel_6_1_1",
+        "mirror_feature_wall__panel_6_2_0"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        7.099998474121094,
+        0.19500160217285156,
+        5.0
+      ],
+      "bounds": [
+        [
+          11.100000381469727,
+          17.799999237060547,
+          0.0
+        ],
+        [
+          18.19999885559082,
+          17.9950008392334,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "mirror_feature_wall__backing_0",
+        "mirror_feature_wall__backing_1",
+        "mirror_feature_wall__backing_2",
+        "mirror_feature_wall__panel_0_0_0",
+        "mirror_feature_wall__panel_0_1_0",
+        "mirror_feature_wall__panel_0_2_0",
+        "mirror_feature_wall__panel_1_0_0",
+        "mirror_feature_wall__panel_1_1_0",
+        "mirror_feature_wall__panel_1_2_0",
+        "mirror_feature_wall__panel_2_0_0",
+        "mirror_feature_wall__panel_2_1_0",
+        "mirror_feature_wall__panel_2_2_0",
+        "mirror_feature_wall__panel_3_0_0",
+        "mirror_feature_wall__panel_3_1_0",
+        "mirror_feature_wall__panel_3_2_0",
+        "mirror_feature_wall__panel_4_0_0",
+        "mirror_feature_wall__panel_4_1_0",
+        "mirror_feature_wall__panel_4_2_0",
+        "mirror_feature_wall__panel_5_0_0",
+        "mirror_feature_wall__panel_5_1_0",
+        "mirror_feature_wall__panel_5_1_1",
+        "mirror_feature_wall__panel_5_2_0",
+        "mirror_feature_wall__panel_6_0_0",
+        "mirror_feature_wall__panel_6_1_0",
+        "mirror_feature_wall__panel_6_1_1",
+        "mirror_feature_wall__panel_6_2_0"
+      ]
+    },
+    {
+      "id": "feature_return_east",
+      "category": "architecture_wall",
+      "components": [
+        "feature_return_east__backing_0",
+        "feature_return_east__panel_0_0_0",
+        "feature_return_east__panel_0_1_0",
+        "feature_return_east__panel_0_2_0",
+        "feature_return_east__panel_1_0_0",
+        "feature_return_east__panel_1_1_0",
+        "feature_return_east__panel_1_2_0"
+      ],
+      "evidence_frames": [
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        0.19499969482421875,
+        1.9000015258789062,
+        5.0
+      ],
+      "bounds": [
+        [
+          18.1200008392334,
+          16.0,
+          0.0
+        ],
+        [
+          18.315000534057617,
+          17.900001525878906,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "feature_return_east__backing_0",
+        "feature_return_east__panel_0_0_0",
+        "feature_return_east__panel_0_1_0",
+        "feature_return_east__panel_0_2_0",
+        "feature_return_east__panel_1_0_0",
+        "feature_return_east__panel_1_1_0",
+        "feature_return_east__panel_1_2_0"
+      ]
+    },
+    {
+      "id": "feature_return_west",
+      "category": "architecture_wall",
+      "components": [
+        "feature_return_west__backing_0",
+        "feature_return_west__panel_0_0_0",
+        "feature_return_west__panel_0_1_0",
+        "feature_return_west__panel_0_2_0",
+        "feature_return_west__panel_1_0_0",
+        "feature_return_west__panel_1_1_0",
+        "feature_return_west__panel_1_2_0"
+      ],
+      "evidence_frames": [
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        0.19500064849853516,
+        1.9000015258789062,
+        5.0
+      ],
+      "bounds": [
+        [
+          10.984999656677246,
+          16.0,
+          0.0
+        ],
+        [
+          11.180000305175781,
+          17.900001525878906,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "feature_return_west__backing_0",
+        "feature_return_west__panel_0_0_0",
+        "feature_return_west__panel_0_1_0",
+        "feature_return_west__panel_0_2_0",
+        "feature_return_west__panel_1_0_0",
+        "feature_return_west__panel_1_1_0",
+        "feature_return_west__panel_1_2_0"
+      ]
+    },
+    {
+      "id": "interior_door_0",
+      "category": "door",
+      "components": [
+        "interior_door_0__leaf",
+        "interior_door_0__upper_frame"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0499992370605469,
+        0.10000038146972656,
+        2.06000018119812
+      ],
+      "bounds": [
+        [
+          16.575000762939453,
+          18.010000228881836,
+          0.0
+        ],
+        [
+          17.625,
+          18.110000610351562,
+          2.06000018119812
+        ]
+      ],
+      "component_names": [
+        "interior_door_0__leaf",
+        "interior_door_0__upper_frame"
+      ]
+    },
+    {
+      "id": "interior_door_1",
+      "category": "door",
+      "components": [
+        "interior_door_1__leaf",
+        "interior_door_1__upper_frame"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0499992370605469,
+        0.10000038146972656,
+        2.06000018119812
+      ],
+      "bounds": [
+        [
+          19.875,
+          16.09000015258789,
+          0.0
+        ],
+        [
+          20.924999237060547,
+          16.190000534057617,
+          2.06000018119812
+        ]
+      ],
+      "component_names": [
+        "interior_door_1__leaf",
+        "interior_door_1__upper_frame"
+      ]
+    },
+    {
+      "id": "interior_door_2",
+      "category": "door",
+      "components": [
+        "interior_door_2__leaf",
+        "interior_door_2__upper_frame"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0499992370605469,
+        0.10000038146972656,
+        2.06000018119812
+      ],
+      "bounds": [
+        [
+          22.575000762939453,
+          16.09000015258789,
+          0.0
+        ],
+        [
+          23.625,
+          16.190000534057617,
+          2.06000018119812
+        ]
+      ],
+      "component_names": [
+        "interior_door_2__leaf",
+        "interior_door_2__upper_frame"
+      ]
+    },
+    {
+      "id": "side_corridor",
+      "category": "architectural_opening",
+      "components": [
+        "side_corridor__dark_recess"
+      ],
+      "evidence_frames": [
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0499992370605469,
+        0.0800018310546875,
+        2.0
+      ],
+      "bounds": [
+        [
+          9.995000839233398,
+          16.209999084472656,
+          0.0
+        ],
+        [
+          11.045000076293945,
+          16.290000915527344,
+          2.0
+        ]
+      ],
+      "component_names": [
+        "side_corridor__dark_recess"
+      ]
+    },
+    {
+      "id": "glazed_facade",
+      "category": "glazing",
+      "components": [
+        "glazed_facade__pane_segment_0",
+        "glazed_facade__sill_0",
+        "glazed_facade__pane_segment_2",
+        "glazed_facade__sill_2",
+        "glazed_facade__pane_segment_4",
+        "glazed_facade__sill_4",
+        "glazed_facade__overdoor_entry_east",
+        "glazed_facade__overdoor_entry_west",
+        "glazed_facade__mullion_0",
+        "glazed_facade__mullion_1",
+        "glazed_facade__mullion_2",
+        "glazed_facade__mullion_3",
+        "glazed_facade__mullion_4",
+        "glazed_facade__mullion_5",
+        "glazed_facade__mullion_6",
+        "glazed_facade__mullion_7",
+        "glazed_facade__mullion_8",
+        "glazed_facade__mullion_9",
+        "glazed_facade__mullion_10",
+        "glazed_facade__mullion_11",
+        "glazed_facade__mullion_12",
+        "glazed_facade__mullion_13",
+        "glazed_facade__mullion_14",
+        "glazed_facade__mullion_15",
+        "glazed_facade__mullion_16",
+        "glazed_facade__mullion_17",
+        "glazed_facade__mullion_18",
+        "glazed_facade__mullion_19",
+        "glazed_facade__mullion_20",
+        "glazed_facade__mullion_21",
+        "glazed_facade__mullion_22",
+        "glazed_facade__mullion_23",
+        "glazed_facade__transom"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Observed bright glazed wall. Exterior unobserved, white diffuse/emissive approximation. BVH first opaque glazing depth as prescribed.",
+      "relations": [
+        "bounded_by:floor",
+        "bounded_by:ceiling"
+      ],
+      "dimensions": [
+        19.54499912261963,
+        0.1400012969970703,
+        5.0
+      ],
+      "bounds": [
+        [
+          7.977499961853027,
+          25.939998626708984,
+          0.0
+        ],
+        [
+          27.522499084472656,
+          26.079999923706055,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "glazed_facade__pane_segment_0",
+        "glazed_facade__sill_0",
+        "glazed_facade__pane_segment_2",
+        "glazed_facade__sill_2",
+        "glazed_facade__pane_segment_4",
+        "glazed_facade__sill_4",
+        "glazed_facade__overdoor_entry_east",
+        "glazed_facade__overdoor_entry_west",
+        "glazed_facade__mullion_0",
+        "glazed_facade__mullion_1",
+        "glazed_facade__mullion_2",
+        "glazed_facade__mullion_3",
+        "glazed_facade__mullion_4",
+        "glazed_facade__mullion_5",
+        "glazed_facade__mullion_6",
+        "glazed_facade__mullion_7",
+        "glazed_facade__mullion_8",
+        "glazed_facade__mullion_9",
+        "glazed_facade__mullion_10",
+        "glazed_facade__mullion_11",
+        "glazed_facade__mullion_12",
+        "glazed_facade__mullion_13",
+        "glazed_facade__mullion_14",
+        "glazed_facade__mullion_15",
+        "glazed_facade__mullion_16",
+        "glazed_facade__mullion_17",
+        "glazed_facade__mullion_18",
+        "glazed_facade__mullion_19",
+        "glazed_facade__mullion_20",
+        "glazed_facade__mullion_21",
+        "glazed_facade__mullion_22",
+        "glazed_facade__mullion_23",
+        "glazed_facade__transom"
+      ]
+    },
+    {
+      "id": "entry_east",
+      "category": "door",
+      "components": [
+        "entry_east__static_jamb_-0.925",
+        "entry_east__static_jamb_0.925",
+        "entry_east__static_header",
+        "entry_east__leaf_-1_glass",
+        "entry_east__leaf_-1_stile_-0.4625",
+        "entry_east__leaf_-1_stile_0.4625",
+        "entry_east__leaf_-1_rail_0.065",
+        "entry_east__leaf_-1_rail_2.9000000000000004",
+        "entry_east__leaf_-1_handle",
+        "entry_east__leaf_1_glass",
+        "entry_east__leaf_1_stile_-0.4625",
+        "entry_east__leaf_1_stile_0.4625",
+        "entry_east__leaf_1_rail_0.065",
+        "entry_east__leaf_1_rail_2.9000000000000004",
+        "entry_east__leaf_1_handle"
+      ],
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed CLOSED double door; frame/leaf dimensions inferred; collider leaves may be disabled for aperture test, exterior unobserved.",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.980001449584961,
+        0.16499900817871094,
+        3.009999990463257
+      ],
+      "bounds": [
+        [
+          21.90999984741211,
+          25.815000534057617,
+          0.0
+        ],
+        [
+          23.89000129699707,
+          25.979999542236328,
+          3.009999990463257
+        ]
+      ],
+      "component_names": [
+        "entry_east__static_jamb_-0.925",
+        "entry_east__static_jamb_0.925",
+        "entry_east__static_header",
+        "entry_east__leaf_-1_glass",
+        "entry_east__leaf_-1_stile_-0.4625",
+        "entry_east__leaf_-1_stile_0.4625",
+        "entry_east__leaf_-1_rail_0.065",
+        "entry_east__leaf_-1_rail_2.9000000000000004",
+        "entry_east__leaf_-1_handle",
+        "entry_east__leaf_1_glass",
+        "entry_east__leaf_1_stile_-0.4625",
+        "entry_east__leaf_1_stile_0.4625",
+        "entry_east__leaf_1_rail_0.065",
+        "entry_east__leaf_1_rail_2.9000000000000004",
+        "entry_east__leaf_1_handle"
+      ]
+    },
+    {
+      "id": "entry_west",
+      "category": "door",
+      "components": [
+        "entry_west__static_jamb_-0.825",
+        "entry_west__static_jamb_0.825",
+        "entry_west__static_header",
+        "entry_west__leaf_-1_glass",
+        "entry_west__leaf_-1_stile_-0.4125",
+        "entry_west__leaf_-1_stile_0.4125",
+        "entry_west__leaf_-1_rail_0.065",
+        "entry_west__leaf_-1_rail_2.9000000000000004",
+        "entry_west__leaf_-1_handle",
+        "entry_west__leaf_1_glass",
+        "entry_west__leaf_1_stile_-0.4125",
+        "entry_west__leaf_1_stile_0.4125",
+        "entry_west__leaf_1_rail_0.065",
+        "entry_west__leaf_1_rail_2.9000000000000004",
+        "entry_west__leaf_1_handle"
+      ],
+      "evidence_frames": [
+        33,
+        100,
+        108,
+        118
+      ],
+      "provenance": "Observed CLOSED double door; frame/leaf dimensions inferred; collider leaves may be disabled for aperture test, exterior unobserved.",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.779998779296875,
+        0.16499900817871094,
+        3.009999990463257
+      ],
+      "bounds": [
+        [
+          10.610000610351562,
+          25.815000534057617,
+          0.0
+        ],
+        [
+          12.389999389648438,
+          25.979999542236328,
+          3.009999990463257
+        ]
+      ],
+      "component_names": [
+        "entry_west__static_jamb_-0.825",
+        "entry_west__static_jamb_0.825",
+        "entry_west__static_header",
+        "entry_west__leaf_-1_glass",
+        "entry_west__leaf_-1_stile_-0.4125",
+        "entry_west__leaf_-1_stile_0.4125",
+        "entry_west__leaf_-1_rail_0.065",
+        "entry_west__leaf_-1_rail_2.9000000000000004",
+        "entry_west__leaf_-1_handle",
+        "entry_west__leaf_1_glass",
+        "entry_west__leaf_1_stile_-0.4125",
+        "entry_west__leaf_1_stile_0.4125",
+        "entry_west__leaf_1_rail_0.065",
+        "entry_west__leaf_1_rail_2.9000000000000004",
+        "entry_west__leaf_1_handle"
+      ]
+    },
+    {
+      "id": "window_column",
+      "category": "structural_column",
+      "components": [
+        "window_column__round_column"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        118,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.8600006103515625,
+        0.8600006103515625,
+        5.0
+      ],
+      "bounds": [
+        [
+          17.56999969482422,
+          24.719999313354492,
+          0.0
+        ],
+        [
+          18.43000030517578,
+          25.579999923706055,
+          5.0
+        ]
+      ],
+      "component_names": [
+        "window_column__round_column"
+      ]
+    },
+    {
+      "id": "ceiling_slats_north",
+      "category": "ceiling_finish",
+      "components": [
+        "ceiling_slats_north__slat_000",
+        "ceiling_slats_north__slat_001",
+        "ceiling_slats_north__slat_002",
+        "ceiling_slats_north__slat_003",
+        "ceiling_slats_north__slat_004",
+        "ceiling_slats_north__slat_005",
+        "ceiling_slats_north__slat_006",
+        "ceiling_slats_north__slat_007",
+        "ceiling_slats_north__slat_008",
+        "ceiling_slats_north__slat_009",
+        "ceiling_slats_north__slat_010",
+        "ceiling_slats_north__slat_011",
+        "ceiling_slats_north__slat_012",
+        "ceiling_slats_north__slat_013",
+        "ceiling_slats_north__slat_014",
+        "ceiling_slats_north__slat_015",
+        "ceiling_slats_north__slat_016",
+        "ceiling_slats_north__slat_017",
+        "ceiling_slats_north__slat_018",
+        "ceiling_slats_north__slat_019",
+        "ceiling_slats_north__slat_020",
+        "ceiling_slats_north__slat_021",
+        "ceiling_slats_north__slat_022",
+        "ceiling_slats_north__slat_023",
+        "ceiling_slats_north__slat_024",
+        "ceiling_slats_north__slat_025",
+        "ceiling_slats_north__slat_026",
+        "ceiling_slats_north__slat_027",
+        "ceiling_slats_north__slat_028",
+        "ceiling_slats_north__slat_029",
+        "ceiling_slats_north__slat_030",
+        "ceiling_slats_north__slat_031",
+        "ceiling_slats_north__slat_032",
+        "ceiling_slats_north__slat_033",
+        "ceiling_slats_north__slat_034",
+        "ceiling_slats_north__slat_035",
+        "ceiling_slats_north__slat_036",
+        "ceiling_slats_north__slat_037",
+        "ceiling_slats_north__slat_038",
+        "ceiling_slats_north__slat_039",
+        "ceiling_slats_north__slat_040",
+        "ceiling_slats_north__slat_041",
+        "ceiling_slats_north__slat_042",
+        "ceiling_slats_north__slat_043",
+        "ceiling_slats_north__slat_044",
+        "ceiling_slats_north__slat_045",
+        "ceiling_slats_north__slat_046",
+        "ceiling_slats_north__slat_047",
+        "ceiling_slats_north__slat_048",
+        "ceiling_slats_north__slat_049",
+        "ceiling_slats_north__slat_050",
+        "ceiling_slats_north__slat_051",
+        "ceiling_slats_north__slat_052",
+        "ceiling_slats_north__slat_053",
+        "ceiling_slats_north__slat_054",
+        "ceiling_slats_north__slat_055",
+        "ceiling_slats_north__slat_056",
+        "ceiling_slats_north__slat_057",
+        "ceiling_slats_north__slat_058",
+        "ceiling_slats_north__slat_059",
+        "ceiling_slats_north__slat_060",
+        "ceiling_slats_north__slat_061",
+        "ceiling_slats_north__slat_062",
+        "ceiling_slats_north__slat_063",
+        "ceiling_slats_north__slat_064",
+        "ceiling_slats_north__slat_065",
+        "ceiling_slats_north__slat_066",
+        "ceiling_slats_north__slat_067",
+        "ceiling_slats_north__slat_068",
+        "ceiling_slats_north__slat_069",
+        "ceiling_slats_north__slat_070",
+        "ceiling_slats_north__slat_071",
+        "ceiling_slats_north__slat_072",
+        "ceiling_slats_north__slat_073",
+        "ceiling_slats_north__slat_074",
+        "ceiling_slats_north__slat_075",
+        "ceiling_slats_north__slat_076",
+        "ceiling_slats_north__slat_077",
+        "ceiling_slats_north__slat_078",
+        "ceiling_slats_north__slat_079",
+        "ceiling_slats_north__slat_080",
+        "ceiling_slats_north__slat_081",
+        "ceiling_slats_north__slat_082",
+        "ceiling_slats_north__slat_083",
+        "ceiling_slats_north__slat_084",
+        "ceiling_slats_north__slat_085",
+        "ceiling_slats_north__slat_086",
+        "ceiling_slats_north__slat_087",
+        "ceiling_slats_north__slat_088",
+        "ceiling_slats_north__slat_089",
+        "ceiling_slats_north__slat_090",
+        "ceiling_slats_north__slat_091",
+        "ceiling_slats_north__slat_092",
+        "ceiling_slats_north__slat_093",
+        "ceiling_slats_north__slat_094",
+        "ceiling_slats_north__slat_095",
+        "ceiling_slats_north__slat_096",
+        "ceiling_slats_north__slat_097"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "attached_to:ceiling"
+      ],
+      "dimensions": [
+        19.47000026702881,
+        1.6500015258789062,
+        0.15999984741210938
+      ],
+      "bounds": [
+        [
+          8.015000343322754,
+          24.32499885559082,
+          4.809999942779541
+        ],
+        [
+          27.485000610351562,
+          25.975000381469727,
+          4.96999979019165
+        ]
+      ],
+      "component_names": [
+        "ceiling_slats_north__slat_000",
+        "ceiling_slats_north__slat_001",
+        "ceiling_slats_north__slat_002",
+        "ceiling_slats_north__slat_003",
+        "ceiling_slats_north__slat_004",
+        "ceiling_slats_north__slat_005",
+        "ceiling_slats_north__slat_006",
+        "ceiling_slats_north__slat_007",
+        "ceiling_slats_north__slat_008",
+        "ceiling_slats_north__slat_009",
+        "ceiling_slats_north__slat_010",
+        "ceiling_slats_north__slat_011",
+        "ceiling_slats_north__slat_012",
+        "ceiling_slats_north__slat_013",
+        "ceiling_slats_north__slat_014",
+        "ceiling_slats_north__slat_015",
+        "ceiling_slats_north__slat_016",
+        "ceiling_slats_north__slat_017",
+        "ceiling_slats_north__slat_018",
+        "ceiling_slats_north__slat_019",
+        "ceiling_slats_north__slat_020",
+        "ceiling_slats_north__slat_021",
+        "ceiling_slats_north__slat_022",
+        "ceiling_slats_north__slat_023",
+        "ceiling_slats_north__slat_024",
+        "ceiling_slats_north__slat_025",
+        "ceiling_slats_north__slat_026",
+        "ceiling_slats_north__slat_027",
+        "ceiling_slats_north__slat_028",
+        "ceiling_slats_north__slat_029",
+        "ceiling_slats_north__slat_030",
+        "ceiling_slats_north__slat_031",
+        "ceiling_slats_north__slat_032",
+        "ceiling_slats_north__slat_033",
+        "ceiling_slats_north__slat_034",
+        "ceiling_slats_north__slat_035",
+        "ceiling_slats_north__slat_036",
+        "ceiling_slats_north__slat_037",
+        "ceiling_slats_north__slat_038",
+        "ceiling_slats_north__slat_039",
+        "ceiling_slats_north__slat_040",
+        "ceiling_slats_north__slat_041",
+        "ceiling_slats_north__slat_042",
+        "ceiling_slats_north__slat_043",
+        "ceiling_slats_north__slat_044",
+        "ceiling_slats_north__slat_045",
+        "ceiling_slats_north__slat_046",
+        "ceiling_slats_north__slat_047",
+        "ceiling_slats_north__slat_048",
+        "ceiling_slats_north__slat_049",
+        "ceiling_slats_north__slat_050",
+        "ceiling_slats_north__slat_051",
+        "ceiling_slats_north__slat_052",
+        "ceiling_slats_north__slat_053",
+        "ceiling_slats_north__slat_054",
+        "ceiling_slats_north__slat_055",
+        "ceiling_slats_north__slat_056",
+        "ceiling_slats_north__slat_057",
+        "ceiling_slats_north__slat_058",
+        "ceiling_slats_north__slat_059",
+        "ceiling_slats_north__slat_060",
+        "ceiling_slats_north__slat_061",
+        "ceiling_slats_north__slat_062",
+        "ceiling_slats_north__slat_063",
+        "ceiling_slats_north__slat_064",
+        "ceiling_slats_north__slat_065",
+        "ceiling_slats_north__slat_066",
+        "ceiling_slats_north__slat_067",
+        "ceiling_slats_north__slat_068",
+        "ceiling_slats_north__slat_069",
+        "ceiling_slats_north__slat_070",
+        "ceiling_slats_north__slat_071",
+        "ceiling_slats_north__slat_072",
+        "ceiling_slats_north__slat_073",
+        "ceiling_slats_north__slat_074",
+        "ceiling_slats_north__slat_075",
+        "ceiling_slats_north__slat_076",
+        "ceiling_slats_north__slat_077",
+        "ceiling_slats_north__slat_078",
+        "ceiling_slats_north__slat_079",
+        "ceiling_slats_north__slat_080",
+        "ceiling_slats_north__slat_081",
+        "ceiling_slats_north__slat_082",
+        "ceiling_slats_north__slat_083",
+        "ceiling_slats_north__slat_084",
+        "ceiling_slats_north__slat_085",
+        "ceiling_slats_north__slat_086",
+        "ceiling_slats_north__slat_087",
+        "ceiling_slats_north__slat_088",
+        "ceiling_slats_north__slat_089",
+        "ceiling_slats_north__slat_090",
+        "ceiling_slats_north__slat_091",
+        "ceiling_slats_north__slat_092",
+        "ceiling_slats_north__slat_093",
+        "ceiling_slats_north__slat_094",
+        "ceiling_slats_north__slat_095",
+        "ceiling_slats_north__slat_096",
+        "ceiling_slats_north__slat_097"
+      ]
+    },
+    {
+      "id": "ceiling_slats_south",
+      "category": "ceiling_finish",
+      "components": [
+        "ceiling_slats_south__slat_000",
+        "ceiling_slats_south__slat_001",
+        "ceiling_slats_south__slat_002",
+        "ceiling_slats_south__slat_003",
+        "ceiling_slats_south__slat_004",
+        "ceiling_slats_south__slat_005",
+        "ceiling_slats_south__slat_006",
+        "ceiling_slats_south__slat_007",
+        "ceiling_slats_south__slat_008",
+        "ceiling_slats_south__slat_009",
+        "ceiling_slats_south__slat_010",
+        "ceiling_slats_south__slat_011",
+        "ceiling_slats_south__slat_012",
+        "ceiling_slats_south__slat_013",
+        "ceiling_slats_south__slat_014",
+        "ceiling_slats_south__slat_015",
+        "ceiling_slats_south__slat_016",
+        "ceiling_slats_south__slat_017",
+        "ceiling_slats_south__slat_018",
+        "ceiling_slats_south__slat_019",
+        "ceiling_slats_south__slat_020",
+        "ceiling_slats_south__slat_021",
+        "ceiling_slats_south__slat_022",
+        "ceiling_slats_south__slat_023",
+        "ceiling_slats_south__slat_024",
+        "ceiling_slats_south__slat_025",
+        "ceiling_slats_south__slat_026",
+        "ceiling_slats_south__slat_027",
+        "ceiling_slats_south__slat_028",
+        "ceiling_slats_south__slat_029",
+        "ceiling_slats_south__slat_030",
+        "ceiling_slats_south__slat_031",
+        "ceiling_slats_south__slat_032",
+        "ceiling_slats_south__slat_033",
+        "ceiling_slats_south__slat_034",
+        "ceiling_slats_south__slat_035",
+        "ceiling_slats_south__slat_036",
+        "ceiling_slats_south__slat_037",
+        "ceiling_slats_south__slat_038",
+        "ceiling_slats_south__slat_039",
+        "ceiling_slats_south__slat_040",
+        "ceiling_slats_south__slat_041",
+        "ceiling_slats_south__slat_042",
+        "ceiling_slats_south__slat_043",
+        "ceiling_slats_south__slat_044",
+        "ceiling_slats_south__slat_045",
+        "ceiling_slats_south__slat_046",
+        "ceiling_slats_south__slat_047",
+        "ceiling_slats_south__slat_048",
+        "ceiling_slats_south__slat_049",
+        "ceiling_slats_south__slat_050",
+        "ceiling_slats_south__slat_051",
+        "ceiling_slats_south__slat_052",
+        "ceiling_slats_south__slat_053",
+        "ceiling_slats_south__slat_054",
+        "ceiling_slats_south__slat_055",
+        "ceiling_slats_south__slat_056",
+        "ceiling_slats_south__slat_057",
+        "ceiling_slats_south__slat_058",
+        "ceiling_slats_south__slat_059",
+        "ceiling_slats_south__slat_060",
+        "ceiling_slats_south__slat_061",
+        "ceiling_slats_south__slat_062",
+        "ceiling_slats_south__slat_063",
+        "ceiling_slats_south__slat_064",
+        "ceiling_slats_south__slat_065",
+        "ceiling_slats_south__slat_066",
+        "ceiling_slats_south__slat_067",
+        "ceiling_slats_south__slat_068",
+        "ceiling_slats_south__slat_069",
+        "ceiling_slats_south__slat_070",
+        "ceiling_slats_south__slat_071",
+        "ceiling_slats_south__slat_072",
+        "ceiling_slats_south__slat_073",
+        "ceiling_slats_south__slat_074",
+        "ceiling_slats_south__slat_075",
+        "ceiling_slats_south__slat_076",
+        "ceiling_slats_south__slat_077",
+        "ceiling_slats_south__slat_078",
+        "ceiling_slats_south__slat_079",
+        "ceiling_slats_south__slat_080",
+        "ceiling_slats_south__slat_081",
+        "ceiling_slats_south__slat_082",
+        "ceiling_slats_south__slat_083",
+        "ceiling_slats_south__slat_084",
+        "ceiling_slats_south__slat_085",
+        "ceiling_slats_south__slat_086",
+        "ceiling_slats_south__slat_087",
+        "ceiling_slats_south__slat_088",
+        "ceiling_slats_south__slat_089",
+        "ceiling_slats_south__slat_090",
+        "ceiling_slats_south__slat_091",
+        "ceiling_slats_south__slat_092",
+        "ceiling_slats_south__slat_093",
+        "ceiling_slats_south__slat_094",
+        "ceiling_slats_south__slat_095",
+        "ceiling_slats_south__slat_096",
+        "ceiling_slats_south__slat_097"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "attached_to:ceiling"
+      ],
+      "dimensions": [
+        19.47000026702881,
+        2.200000762939453,
+        0.15999984741210938
+      ],
+      "bounds": [
+        [
+          8.015000343322754,
+          16.0,
+          4.809999942779541
+        ],
+        [
+          27.485000610351562,
+          18.200000762939453,
+          4.96999979019165
+        ]
+      ],
+      "component_names": [
+        "ceiling_slats_south__slat_000",
+        "ceiling_slats_south__slat_001",
+        "ceiling_slats_south__slat_002",
+        "ceiling_slats_south__slat_003",
+        "ceiling_slats_south__slat_004",
+        "ceiling_slats_south__slat_005",
+        "ceiling_slats_south__slat_006",
+        "ceiling_slats_south__slat_007",
+        "ceiling_slats_south__slat_008",
+        "ceiling_slats_south__slat_009",
+        "ceiling_slats_south__slat_010",
+        "ceiling_slats_south__slat_011",
+        "ceiling_slats_south__slat_012",
+        "ceiling_slats_south__slat_013",
+        "ceiling_slats_south__slat_014",
+        "ceiling_slats_south__slat_015",
+        "ceiling_slats_south__slat_016",
+        "ceiling_slats_south__slat_017",
+        "ceiling_slats_south__slat_018",
+        "ceiling_slats_south__slat_019",
+        "ceiling_slats_south__slat_020",
+        "ceiling_slats_south__slat_021",
+        "ceiling_slats_south__slat_022",
+        "ceiling_slats_south__slat_023",
+        "ceiling_slats_south__slat_024",
+        "ceiling_slats_south__slat_025",
+        "ceiling_slats_south__slat_026",
+        "ceiling_slats_south__slat_027",
+        "ceiling_slats_south__slat_028",
+        "ceiling_slats_south__slat_029",
+        "ceiling_slats_south__slat_030",
+        "ceiling_slats_south__slat_031",
+        "ceiling_slats_south__slat_032",
+        "ceiling_slats_south__slat_033",
+        "ceiling_slats_south__slat_034",
+        "ceiling_slats_south__slat_035",
+        "ceiling_slats_south__slat_036",
+        "ceiling_slats_south__slat_037",
+        "ceiling_slats_south__slat_038",
+        "ceiling_slats_south__slat_039",
+        "ceiling_slats_south__slat_040",
+        "ceiling_slats_south__slat_041",
+        "ceiling_slats_south__slat_042",
+        "ceiling_slats_south__slat_043",
+        "ceiling_slats_south__slat_044",
+        "ceiling_slats_south__slat_045",
+        "ceiling_slats_south__slat_046",
+        "ceiling_slats_south__slat_047",
+        "ceiling_slats_south__slat_048",
+        "ceiling_slats_south__slat_049",
+        "ceiling_slats_south__slat_050",
+        "ceiling_slats_south__slat_051",
+        "ceiling_slats_south__slat_052",
+        "ceiling_slats_south__slat_053",
+        "ceiling_slats_south__slat_054",
+        "ceiling_slats_south__slat_055",
+        "ceiling_slats_south__slat_056",
+        "ceiling_slats_south__slat_057",
+        "ceiling_slats_south__slat_058",
+        "ceiling_slats_south__slat_059",
+        "ceiling_slats_south__slat_060",
+        "ceiling_slats_south__slat_061",
+        "ceiling_slats_south__slat_062",
+        "ceiling_slats_south__slat_063",
+        "ceiling_slats_south__slat_064",
+        "ceiling_slats_south__slat_065",
+        "ceiling_slats_south__slat_066",
+        "ceiling_slats_south__slat_067",
+        "ceiling_slats_south__slat_068",
+        "ceiling_slats_south__slat_069",
+        "ceiling_slats_south__slat_070",
+        "ceiling_slats_south__slat_071",
+        "ceiling_slats_south__slat_072",
+        "ceiling_slats_south__slat_073",
+        "ceiling_slats_south__slat_074",
+        "ceiling_slats_south__slat_075",
+        "ceiling_slats_south__slat_076",
+        "ceiling_slats_south__slat_077",
+        "ceiling_slats_south__slat_078",
+        "ceiling_slats_south__slat_079",
+        "ceiling_slats_south__slat_080",
+        "ceiling_slats_south__slat_081",
+        "ceiling_slats_south__slat_082",
+        "ceiling_slats_south__slat_083",
+        "ceiling_slats_south__slat_084",
+        "ceiling_slats_south__slat_085",
+        "ceiling_slats_south__slat_086",
+        "ceiling_slats_south__slat_087",
+        "ceiling_slats_south__slat_088",
+        "ceiling_slats_south__slat_089",
+        "ceiling_slats_south__slat_090",
+        "ceiling_slats_south__slat_091",
+        "ceiling_slats_south__slat_092",
+        "ceiling_slats_south__slat_093",
+        "ceiling_slats_south__slat_094",
+        "ceiling_slats_south__slat_095",
+        "ceiling_slats_south__slat_096",
+        "ceiling_slats_south__slat_097"
+      ]
+    },
+    {
+      "id": "mirror_00",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_00__rim",
+        "mirror_00__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.6707229614257812,
+        0.03999900817871094,
+        0.6707231998443604
+      ],
+      "bounds": [
+        [
+          14.576242446899414,
+          18.030000686645508,
+          1.5542981624603271
+        ],
+        [
+          15.246965408325195,
+          18.06999969482422,
+          2.2250213623046875
+        ]
+      ],
+      "component_names": [
+        "mirror_00__rim",
+        "mirror_00__reflector"
+      ]
+    },
+    {
+      "id": "mirror_01",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_01__rim",
+        "mirror_01__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.4576263427734375,
+        0.03999900817871094,
+        0.4576265811920166
+      ],
+      "bounds": [
+        [
+          14.915085792541504,
+          18.030000686645508,
+          1.0665804147720337
+        ],
+        [
+          15.372712135314941,
+          18.06999969482422,
+          1.5242069959640503
+        ]
+      ],
+      "component_names": [
+        "mirror_01__rim",
+        "mirror_01__reflector"
+      ]
+    },
+    {
+      "id": "mirror_02",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_02__rim",
+        "mirror_02__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.679931640625,
+        0.03999900817871094,
+        0.6799319386482239
+      ],
+      "bounds": [
+        [
+          14.499407768249512,
+          18.030000686645508,
+          0.3892098069190979
+        ],
+        [
+          15.179339408874512,
+          18.06999969482422,
+          1.0691417455673218
+        ]
+      ],
+      "component_names": [
+        "mirror_02__rim",
+        "mirror_02__reflector"
+      ]
+    },
+    {
+      "id": "mirror_03",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_03__rim",
+        "mirror_03__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        1.3482704162597656,
+        0.03999900817871094,
+        1.3482705354690552
+      ],
+      "bounds": [
+        [
+          13.23058032989502,
+          18.030000686645508,
+          0.7614556550979614
+        ],
+        [
+          14.578850746154785,
+          18.06999969482422,
+          2.1097261905670166
+        ]
+      ],
+      "component_names": [
+        "mirror_03__rim",
+        "mirror_03__reflector"
+      ]
+    },
+    {
+      "id": "mirror_04",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_04__rim",
+        "mirror_04__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.4167137145996094,
+        0.03999900817871094,
+        0.4167141914367676
+      ],
+      "bounds": [
+        [
+          13.159521102905273,
+          18.030000686645508,
+          0.3924896717071533
+        ],
+        [
+          13.576234817504883,
+          18.06999969482422,
+          0.8092038631439209
+        ]
+      ],
+      "component_names": [
+        "mirror_04__rim",
+        "mirror_04__reflector"
+      ]
+    },
+    {
+      "id": "mirror_05",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_05__rim",
+        "mirror_05__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.5055217742919922,
+        0.03999900817871094,
+        0.5055218935012817
+      ],
+      "bounds": [
+        [
+          12.712069511413574,
+          18.030000686645508,
+          1.6071218252182007
+        ],
+        [
+          13.217591285705566,
+          18.06999969482422,
+          2.1126437187194824
+        ]
+      ],
+      "component_names": [
+        "mirror_05__rim",
+        "mirror_05__reflector"
+      ]
+    },
+    {
+      "id": "mirror_06",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_06__rim",
+        "mirror_06__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.6138057708740234,
+        0.03999900817871094,
+        0.6138049364089966
+      ],
+      "bounds": [
+        [
+          12.141109466552734,
+          18.030000686645508,
+          1.9760957956314087
+        ],
+        [
+          12.754915237426758,
+          18.06999969482422,
+          2.5899007320404053
+        ]
+      ],
+      "component_names": [
+        "mirror_06__rim",
+        "mirror_06__reflector"
+      ]
+    },
+    {
+      "id": "mirror_07",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_07__rim",
+        "mirror_07__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        1.0574016571044922,
+        0.03999900817871094,
+        1.0574020743370056
+      ],
+      "bounds": [
+        [
+          12.11020278930664,
+          18.030000686645508,
+          0.48265427350997925
+        ],
+        [
+          13.167604446411133,
+          18.06999969482422,
+          1.5400563478469849
+        ]
+      ],
+      "component_names": [
+        "mirror_07__rim",
+        "mirror_07__reflector"
+      ]
+    },
+    {
+      "id": "mirror_08",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_08__rim",
+        "mirror_08__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.8320808410644531,
+        0.03999900817871094,
+        0.8320810794830322
+      ],
+      "bounds": [
+        [
+          11.36674690246582,
+          18.030000686645508,
+          1.3278920650482178
+        ],
+        [
+          12.198827743530273,
+          18.06999969482422,
+          2.15997314453125
+        ]
+      ],
+      "component_names": [
+        "mirror_08__rim",
+        "mirror_08__reflector"
+      ]
+    },
+    {
+      "id": "mirror_09",
+      "category": "wall_mirror",
+      "components": [
+        "mirror_09__rim",
+        "mirror_09__reflector"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed mirror circle; ray-plane center/radius on y18.045. Thickness inferred, reflected furnishings not duplicated.",
+      "relations": [
+        "attached_to:mirror_feature_wall"
+      ],
+      "dimensions": [
+        0.3880329132080078,
+        0.03999900817871094,
+        0.38803231716156006
+      ],
+      "bounds": [
+        [
+          11.53807544708252,
+          18.030000686645508,
+          0.8053401708602905
+        ],
+        [
+          11.926108360290527,
+          18.06999969482422,
+          1.1933724880218506
+        ]
+      ],
+      "component_names": [
+        "mirror_09__rim",
+        "mirror_09__reflector"
+      ]
+    },
+    {
+      "id": "seat_A_0",
+      "category": "ottoman",
+      "components": [
+        "seat_A_0__seat",
+        "seat_A_0__foot_pad_0",
+        "seat_A_0__foot_0",
+        "seat_A_0__foot_pad_1",
+        "seat_A_0__foot_1",
+        "seat_A_0__foot_pad_2",
+        "seat_A_0__foot_2",
+        "seat_A_0__foot_pad_3",
+        "seat_A_0__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7999992370605469,
+        0.7999992370605469,
+        0.5089999809861183
+      ],
+      "bounds": [
+        [
+          15.5,
+          22.829999923706055,
+          0.010999999940395355
+        ],
+        [
+          16.299999237060547,
+          23.6299991607666,
+          0.5199999809265137
+        ]
+      ],
+      "component_names": [
+        "seat_A_0__seat",
+        "seat_A_0__foot_pad_0",
+        "seat_A_0__foot_0",
+        "seat_A_0__foot_pad_1",
+        "seat_A_0__foot_1",
+        "seat_A_0__foot_pad_2",
+        "seat_A_0__foot_2",
+        "seat_A_0__foot_pad_3",
+        "seat_A_0__foot_3"
+      ]
+    },
+    {
+      "id": "seat_A_1",
+      "category": "lounge_chair",
+      "components": [
+        "seat_A_1__seat",
+        "seat_A_1__foot_pad_0",
+        "seat_A_1__foot_0",
+        "seat_A_1__foot_pad_1",
+        "seat_A_1__foot_1",
+        "seat_A_1__foot_pad_2",
+        "seat_A_1__foot_2",
+        "seat_A_1__foot_pad_3",
+        "seat_A_1__foot_3",
+        "seat_A_1__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7400016784667969,
+        0.7400016784667969,
+        0.8590000048279762
+      ],
+      "bounds": [
+        [
+          16.31999969482422,
+          22.869998931884766,
+          0.010999999940395355
+        ],
+        [
+          17.060001373291016,
+          23.610000610351562,
+          0.8700000047683716
+        ]
+      ],
+      "component_names": [
+        "seat_A_1__seat",
+        "seat_A_1__foot_pad_0",
+        "seat_A_1__foot_0",
+        "seat_A_1__foot_pad_1",
+        "seat_A_1__foot_1",
+        "seat_A_1__foot_pad_2",
+        "seat_A_1__foot_2",
+        "seat_A_1__foot_pad_3",
+        "seat_A_1__foot_3",
+        "seat_A_1__curved_back"
+      ]
+    },
+    {
+      "id": "seat_A_2",
+      "category": "lounge_chair",
+      "components": [
+        "seat_A_2__seat",
+        "seat_A_2__foot_pad_0",
+        "seat_A_2__foot_0",
+        "seat_A_2__foot_pad_1",
+        "seat_A_2__foot_1",
+        "seat_A_2__foot_pad_2",
+        "seat_A_2__foot_2",
+        "seat_A_2__foot_pad_3",
+        "seat_A_2__foot_3",
+        "seat_A_2__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7400016784667969,
+        0.7400016784667969,
+        0.8590000048279762
+      ],
+      "bounds": [
+        [
+          16.78999900817871,
+          22.19999885559082,
+          0.010999999940395355
+        ],
+        [
+          17.530000686645508,
+          22.940000534057617,
+          0.8700000047683716
+        ]
+      ],
+      "component_names": [
+        "seat_A_2__seat",
+        "seat_A_2__foot_pad_0",
+        "seat_A_2__foot_0",
+        "seat_A_2__foot_pad_1",
+        "seat_A_2__foot_1",
+        "seat_A_2__foot_pad_2",
+        "seat_A_2__foot_2",
+        "seat_A_2__foot_pad_3",
+        "seat_A_2__foot_3",
+        "seat_A_2__curved_back"
+      ]
+    },
+    {
+      "id": "seat_A_3",
+      "category": "ottoman",
+      "components": [
+        "seat_A_3__seat",
+        "seat_A_3__foot_pad_0",
+        "seat_A_3__foot_0",
+        "seat_A_3__foot_pad_1",
+        "seat_A_3__foot_1",
+        "seat_A_3__foot_pad_2",
+        "seat_A_3__foot_2",
+        "seat_A_3__foot_pad_3",
+        "seat_A_3__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.8800010681152344,
+        0.8800010681152344,
+        0.5089999809861183
+      ],
+      "bounds": [
+        [
+          17.3799991607666,
+          21.51999855041504,
+          0.010999999940395355
+        ],
+        [
+          18.260000228881836,
+          22.399999618530273,
+          0.5199999809265137
+        ]
+      ],
+      "component_names": [
+        "seat_A_3__seat",
+        "seat_A_3__foot_pad_0",
+        "seat_A_3__foot_0",
+        "seat_A_3__foot_pad_1",
+        "seat_A_3__foot_1",
+        "seat_A_3__foot_pad_2",
+        "seat_A_3__foot_2",
+        "seat_A_3__foot_pad_3",
+        "seat_A_3__foot_3"
+      ]
+    },
+    {
+      "id": "seat_A_4",
+      "category": "lounge_chair",
+      "components": [
+        "seat_A_4__seat",
+        "seat_A_4__foot_pad_0",
+        "seat_A_4__foot_0",
+        "seat_A_4__foot_pad_1",
+        "seat_A_4__foot_1",
+        "seat_A_4__foot_pad_2",
+        "seat_A_4__foot_2",
+        "seat_A_4__foot_pad_3",
+        "seat_A_4__foot_3",
+        "seat_A_4__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.779998779296875,
+        0.779998779296875,
+        0.8590000048279762
+      ],
+      "bounds": [
+        [
+          16.65999984741211,
+          20.600000381469727,
+          0.010999999940395355
+        ],
+        [
+          17.439998626708984,
+          21.3799991607666,
+          0.8700000047683716
+        ]
+      ],
+      "component_names": [
+        "seat_A_4__seat",
+        "seat_A_4__foot_pad_0",
+        "seat_A_4__foot_0",
+        "seat_A_4__foot_pad_1",
+        "seat_A_4__foot_1",
+        "seat_A_4__foot_pad_2",
+        "seat_A_4__foot_2",
+        "seat_A_4__foot_pad_3",
+        "seat_A_4__foot_3",
+        "seat_A_4__curved_back"
+      ]
+    },
+    {
+      "id": "seat_A_5",
+      "category": "ottoman",
+      "components": [
+        "seat_A_5__seat",
+        "seat_A_5__foot_pad_0",
+        "seat_A_5__foot_0",
+        "seat_A_5__foot_pad_1",
+        "seat_A_5__foot_1",
+        "seat_A_5__foot_pad_2",
+        "seat_A_5__foot_2",
+        "seat_A_5__foot_pad_3",
+        "seat_A_5__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.720001220703125,
+        0.720001220703125,
+        0.5089999809861183
+      ],
+      "bounds": [
+        [
+          16.65999984741211,
+          21.43000030517578,
+          0.010999999940395355
+        ],
+        [
+          17.380001068115234,
+          22.150001525878906,
+          0.5199999809265137
+        ]
+      ],
+      "component_names": [
+        "seat_A_5__seat",
+        "seat_A_5__foot_pad_0",
+        "seat_A_5__foot_0",
+        "seat_A_5__foot_pad_1",
+        "seat_A_5__foot_1",
+        "seat_A_5__foot_pad_2",
+        "seat_A_5__foot_2",
+        "seat_A_5__foot_pad_3",
+        "seat_A_5__foot_3"
+      ]
+    },
+    {
+      "id": "seat_B_0",
+      "category": "ottoman",
+      "components": [
+        "seat_B_0__seat",
+        "seat_B_0__foot_pad_0",
+        "seat_B_0__foot_0",
+        "seat_B_0__foot_pad_1",
+        "seat_B_0__foot_1",
+        "seat_B_0__foot_pad_2",
+        "seat_B_0__foot_2",
+        "seat_B_0__foot_pad_3",
+        "seat_B_0__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7600002288818359,
+        0.7599983215332031,
+        0.5089999809861183
+      ],
+      "bounds": [
+        [
+          13.079999923706055,
+          20.23000144958496,
+          0.010999999940395355
+        ],
+        [
+          13.84000015258789,
+          20.989999771118164,
+          0.5199999809265137
+        ]
+      ],
+      "component_names": [
+        "seat_B_0__seat",
+        "seat_B_0__foot_pad_0",
+        "seat_B_0__foot_0",
+        "seat_B_0__foot_pad_1",
+        "seat_B_0__foot_1",
+        "seat_B_0__foot_pad_2",
+        "seat_B_0__foot_2",
+        "seat_B_0__foot_pad_3",
+        "seat_B_0__foot_3"
+      ]
+    },
+    {
+      "id": "seat_B_1",
+      "category": "lounge_chair",
+      "components": [
+        "seat_B_1__seat",
+        "seat_B_1__foot_pad_0",
+        "seat_B_1__foot_0",
+        "seat_B_1__foot_pad_1",
+        "seat_B_1__foot_1",
+        "seat_B_1__foot_pad_2",
+        "seat_B_1__foot_2",
+        "seat_B_1__foot_pad_3",
+        "seat_B_1__foot_3",
+        "seat_B_1__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7600002288818359,
+        0.7599983215332031,
+        0.8590000048279762
+      ],
+      "bounds": [
+        [
+          12.319999694824219,
+          20.32000160217285,
+          0.010999999940395355
+        ],
+        [
+          13.079999923706055,
+          21.079999923706055,
+          0.8700000047683716
+        ]
+      ],
+      "component_names": [
+        "seat_B_1__seat",
+        "seat_B_1__foot_pad_0",
+        "seat_B_1__foot_0",
+        "seat_B_1__foot_pad_1",
+        "seat_B_1__foot_1",
+        "seat_B_1__foot_pad_2",
+        "seat_B_1__foot_2",
+        "seat_B_1__foot_pad_3",
+        "seat_B_1__foot_3",
+        "seat_B_1__curved_back"
+      ]
+    },
+    {
+      "id": "seat_B_2",
+      "category": "lounge_chair",
+      "components": [
+        "seat_B_2__seat",
+        "seat_B_2__foot_pad_0",
+        "seat_B_2__foot_0",
+        "seat_B_2__foot_pad_1",
+        "seat_B_2__foot_1",
+        "seat_B_2__foot_pad_2",
+        "seat_B_2__foot_2",
+        "seat_B_2__foot_pad_3",
+        "seat_B_2__foot_3",
+        "seat_B_2__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7600002288818359,
+        0.7599983215332031,
+        0.8590000048279762
+      ],
+      "bounds": [
+        [
+          11.670000076293945,
+          20.760000228881836,
+          0.010999999940395355
+        ],
+        [
+          12.430000305175781,
+          21.51999855041504,
+          0.8700000047683716
+        ]
+      ],
+      "component_names": [
+        "seat_B_2__seat",
+        "seat_B_2__foot_pad_0",
+        "seat_B_2__foot_0",
+        "seat_B_2__foot_pad_1",
+        "seat_B_2__foot_1",
+        "seat_B_2__foot_pad_2",
+        "seat_B_2__foot_2",
+        "seat_B_2__foot_pad_3",
+        "seat_B_2__foot_3",
+        "seat_B_2__curved_back"
+      ]
+    },
+    {
+      "id": "seat_B_3",
+      "category": "ottoman",
+      "components": [
+        "seat_B_3__seat",
+        "seat_B_3__foot_pad_0",
+        "seat_B_3__foot_0",
+        "seat_B_3__foot_pad_1",
+        "seat_B_3__foot_1",
+        "seat_B_3__foot_pad_2",
+        "seat_B_3__foot_2",
+        "seat_B_3__foot_pad_3",
+        "seat_B_3__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.8600006103515625,
+        0.8600006103515625,
+        0.5089999809861183
+      ],
+      "bounds": [
+        [
+          11.369999885559082,
+          21.59000015258789,
+          0.010999999940395355
+        ],
+        [
+          12.230000495910645,
+          22.450000762939453,
+          0.5199999809265137
+        ]
+      ],
+      "component_names": [
+        "seat_B_3__seat",
+        "seat_B_3__foot_pad_0",
+        "seat_B_3__foot_0",
+        "seat_B_3__foot_pad_1",
+        "seat_B_3__foot_1",
+        "seat_B_3__foot_pad_2",
+        "seat_B_3__foot_2",
+        "seat_B_3__foot_pad_3",
+        "seat_B_3__foot_3"
+      ]
+    },
+    {
+      "id": "coffee_table_A",
+      "category": "coffee_table",
+      "components": [
+        "coffee_table_A__top",
+        "coffee_table_A__base_pad_0",
+        "coffee_table_A__rib_0",
+        "coffee_table_A__base_pad_1",
+        "coffee_table_A__rib_1",
+        "coffee_table_A__base_pad_2",
+        "coffee_table_A__rib_2",
+        "coffee_table_A__base_pad_3",
+        "coffee_table_A__rib_3",
+        "coffee_table_A__base_pad_4",
+        "coffee_table_A__rib_4",
+        "coffee_table_A__base_pad_5",
+        "coffee_table_A__rib_5",
+        "coffee_table_A__base_pad_6",
+        "coffee_table_A__rib_6",
+        "coffee_table_A__base_pad_7",
+        "coffee_table_A__rib_7",
+        "coffee_table_A__base_pad_8",
+        "coffee_table_A__rib_8",
+        "coffee_table_A__base_pad_9",
+        "coffee_table_A__rib_9",
+        "coffee_table_A__base_pad_10",
+        "coffee_table_A__rib_10",
+        "coffee_table_A__base_pad_11",
+        "coffee_table_A__rib_11",
+        "coffee_table_A__base_pad_12",
+        "coffee_table_A__rib_12",
+        "coffee_table_A__base_pad_13",
+        "coffee_table_A__rib_13",
+        "coffee_table_A__base_pad_14",
+        "coffee_table_A__rib_14",
+        "coffee_table_A__base_pad_15",
+        "coffee_table_A__rib_15",
+        "coffee_table_A__base_pad_16",
+        "coffee_table_A__rib_16",
+        "coffee_table_A__base_pad_17",
+        "coffee_table_A__rib_17",
+        "coffee_table_A__base_pad_18",
+        "coffee_table_A__rib_18",
+        "coffee_table_A__base_pad_19",
+        "coffee_table_A__rib_19",
+        "coffee_table_A__base_pad_20",
+        "coffee_table_A__rib_20",
+        "coffee_table_A__base_pad_21",
+        "coffee_table_A__rib_21",
+        "coffee_table_A__base_pad_22",
+        "coffee_table_A__rib_22",
+        "coffee_table_A__base_pad_23",
+        "coffee_table_A__rib_23",
+        "coffee_table_A__decorative_bowl"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0600004196166992,
+        0.8600006103515625,
+        0.5530000105500221
+      ],
+      "bounds": [
+        [
+          15.49000072479248,
+          21.520000457763672,
+          0.010999999940395355
+        ],
+        [
+          16.55000114440918,
+          22.380001068115234,
+          0.5640000104904175
+        ]
+      ],
+      "component_names": [
+        "coffee_table_A__top",
+        "coffee_table_A__base_pad_0",
+        "coffee_table_A__rib_0",
+        "coffee_table_A__base_pad_1",
+        "coffee_table_A__rib_1",
+        "coffee_table_A__base_pad_2",
+        "coffee_table_A__rib_2",
+        "coffee_table_A__base_pad_3",
+        "coffee_table_A__rib_3",
+        "coffee_table_A__base_pad_4",
+        "coffee_table_A__rib_4",
+        "coffee_table_A__base_pad_5",
+        "coffee_table_A__rib_5",
+        "coffee_table_A__base_pad_6",
+        "coffee_table_A__rib_6",
+        "coffee_table_A__base_pad_7",
+        "coffee_table_A__rib_7",
+        "coffee_table_A__base_pad_8",
+        "coffee_table_A__rib_8",
+        "coffee_table_A__base_pad_9",
+        "coffee_table_A__rib_9",
+        "coffee_table_A__base_pad_10",
+        "coffee_table_A__rib_10",
+        "coffee_table_A__base_pad_11",
+        "coffee_table_A__rib_11",
+        "coffee_table_A__base_pad_12",
+        "coffee_table_A__rib_12",
+        "coffee_table_A__base_pad_13",
+        "coffee_table_A__rib_13",
+        "coffee_table_A__base_pad_14",
+        "coffee_table_A__rib_14",
+        "coffee_table_A__base_pad_15",
+        "coffee_table_A__rib_15",
+        "coffee_table_A__base_pad_16",
+        "coffee_table_A__rib_16",
+        "coffee_table_A__base_pad_17",
+        "coffee_table_A__rib_17",
+        "coffee_table_A__base_pad_18",
+        "coffee_table_A__rib_18",
+        "coffee_table_A__base_pad_19",
+        "coffee_table_A__rib_19",
+        "coffee_table_A__base_pad_20",
+        "coffee_table_A__rib_20",
+        "coffee_table_A__base_pad_21",
+        "coffee_table_A__rib_21",
+        "coffee_table_A__base_pad_22",
+        "coffee_table_A__rib_22",
+        "coffee_table_A__base_pad_23",
+        "coffee_table_A__rib_23",
+        "coffee_table_A__decorative_bowl"
+      ]
+    },
+    {
+      "id": "coffee_table_B",
+      "category": "coffee_table",
+      "components": [
+        "coffee_table_B__top",
+        "coffee_table_B__base_pad_0",
+        "coffee_table_B__rib_0",
+        "coffee_table_B__base_pad_1",
+        "coffee_table_B__rib_1",
+        "coffee_table_B__base_pad_2",
+        "coffee_table_B__rib_2",
+        "coffee_table_B__base_pad_3",
+        "coffee_table_B__rib_3",
+        "coffee_table_B__base_pad_4",
+        "coffee_table_B__rib_4",
+        "coffee_table_B__base_pad_5",
+        "coffee_table_B__rib_5",
+        "coffee_table_B__base_pad_6",
+        "coffee_table_B__rib_6",
+        "coffee_table_B__base_pad_7",
+        "coffee_table_B__rib_7",
+        "coffee_table_B__base_pad_8",
+        "coffee_table_B__rib_8",
+        "coffee_table_B__base_pad_9",
+        "coffee_table_B__rib_9",
+        "coffee_table_B__base_pad_10",
+        "coffee_table_B__rib_10",
+        "coffee_table_B__base_pad_11",
+        "coffee_table_B__rib_11",
+        "coffee_table_B__base_pad_12",
+        "coffee_table_B__rib_12",
+        "coffee_table_B__base_pad_13",
+        "coffee_table_B__rib_13",
+        "coffee_table_B__base_pad_14",
+        "coffee_table_B__rib_14",
+        "coffee_table_B__base_pad_15",
+        "coffee_table_B__rib_15",
+        "coffee_table_B__base_pad_16",
+        "coffee_table_B__rib_16",
+        "coffee_table_B__base_pad_17",
+        "coffee_table_B__rib_17",
+        "coffee_table_B__base_pad_18",
+        "coffee_table_B__rib_18",
+        "coffee_table_B__base_pad_19",
+        "coffee_table_B__rib_19",
+        "coffee_table_B__base_pad_20",
+        "coffee_table_B__rib_20",
+        "coffee_table_B__base_pad_21",
+        "coffee_table_B__rib_21",
+        "coffee_table_B__base_pad_22",
+        "coffee_table_B__rib_22",
+        "coffee_table_B__base_pad_23",
+        "coffee_table_B__rib_23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.2000007629394531,
+        0.9599990844726562,
+        0.4115000143647194
+      ],
+      "bounds": [
+        [
+          12.369999885559082,
+          21.420000076293945,
+          0.010999999940395355
+        ],
+        [
+          13.570000648498535,
+          22.3799991607666,
+          0.42250001430511475
+        ]
+      ],
+      "component_names": [
+        "coffee_table_B__top",
+        "coffee_table_B__base_pad_0",
+        "coffee_table_B__rib_0",
+        "coffee_table_B__base_pad_1",
+        "coffee_table_B__rib_1",
+        "coffee_table_B__base_pad_2",
+        "coffee_table_B__rib_2",
+        "coffee_table_B__base_pad_3",
+        "coffee_table_B__rib_3",
+        "coffee_table_B__base_pad_4",
+        "coffee_table_B__rib_4",
+        "coffee_table_B__base_pad_5",
+        "coffee_table_B__rib_5",
+        "coffee_table_B__base_pad_6",
+        "coffee_table_B__rib_6",
+        "coffee_table_B__base_pad_7",
+        "coffee_table_B__rib_7",
+        "coffee_table_B__base_pad_8",
+        "coffee_table_B__rib_8",
+        "coffee_table_B__base_pad_9",
+        "coffee_table_B__rib_9",
+        "coffee_table_B__base_pad_10",
+        "coffee_table_B__rib_10",
+        "coffee_table_B__base_pad_11",
+        "coffee_table_B__rib_11",
+        "coffee_table_B__base_pad_12",
+        "coffee_table_B__rib_12",
+        "coffee_table_B__base_pad_13",
+        "coffee_table_B__rib_13",
+        "coffee_table_B__base_pad_14",
+        "coffee_table_B__rib_14",
+        "coffee_table_B__base_pad_15",
+        "coffee_table_B__rib_15",
+        "coffee_table_B__base_pad_16",
+        "coffee_table_B__rib_16",
+        "coffee_table_B__base_pad_17",
+        "coffee_table_B__rib_17",
+        "coffee_table_B__base_pad_18",
+        "coffee_table_B__rib_18",
+        "coffee_table_B__base_pad_19",
+        "coffee_table_B__rib_19",
+        "coffee_table_B__base_pad_20",
+        "coffee_table_B__rib_20",
+        "coffee_table_B__base_pad_21",
+        "coffee_table_B__rib_21",
+        "coffee_table_B__base_pad_22",
+        "coffee_table_B__rib_22",
+        "coffee_table_B__base_pad_23",
+        "coffee_table_B__rib_23"
+      ]
+    },
+    {
+      "id": "side_table_B",
+      "category": "coffee_table",
+      "components": [
+        "side_table_B__top",
+        "side_table_B__base_pad_0",
+        "side_table_B__rib_0",
+        "side_table_B__base_pad_1",
+        "side_table_B__rib_1",
+        "side_table_B__base_pad_2",
+        "side_table_B__rib_2",
+        "side_table_B__base_pad_3",
+        "side_table_B__rib_3",
+        "side_table_B__base_pad_4",
+        "side_table_B__rib_4",
+        "side_table_B__base_pad_5",
+        "side_table_B__rib_5",
+        "side_table_B__base_pad_6",
+        "side_table_B__rib_6",
+        "side_table_B__base_pad_7",
+        "side_table_B__rib_7",
+        "side_table_B__base_pad_8",
+        "side_table_B__rib_8",
+        "side_table_B__base_pad_9",
+        "side_table_B__rib_9",
+        "side_table_B__base_pad_10",
+        "side_table_B__rib_10",
+        "side_table_B__base_pad_11",
+        "side_table_B__rib_11",
+        "side_table_B__base_pad_12",
+        "side_table_B__rib_12",
+        "side_table_B__base_pad_13",
+        "side_table_B__rib_13",
+        "side_table_B__base_pad_14",
+        "side_table_B__rib_14",
+        "side_table_B__base_pad_15",
+        "side_table_B__rib_15",
+        "side_table_B__base_pad_16",
+        "side_table_B__rib_16",
+        "side_table_B__base_pad_17",
+        "side_table_B__rib_17",
+        "side_table_B__base_pad_18",
+        "side_table_B__rib_18",
+        "side_table_B__base_pad_19",
+        "side_table_B__rib_19",
+        "side_table_B__base_pad_20",
+        "side_table_B__rib_20",
+        "side_table_B__base_pad_21",
+        "side_table_B__rib_21",
+        "side_table_B__base_pad_22",
+        "side_table_B__rib_22",
+        "side_table_B__base_pad_23",
+        "side_table_B__rib_23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        91,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7280006408691406,
+        0.7000007629394531,
+        0.5814999714493752
+      ],
+      "bounds": [
+        [
+          10.435999870300293,
+          21.899999618530273,
+          0.010999999940395355
+        ],
+        [
+          11.164000511169434,
+          22.600000381469727,
+          0.5924999713897705
+        ]
+      ],
+      "component_names": [
+        "side_table_B__top",
+        "side_table_B__base_pad_0",
+        "side_table_B__rib_0",
+        "side_table_B__base_pad_1",
+        "side_table_B__rib_1",
+        "side_table_B__base_pad_2",
+        "side_table_B__rib_2",
+        "side_table_B__base_pad_3",
+        "side_table_B__rib_3",
+        "side_table_B__base_pad_4",
+        "side_table_B__rib_4",
+        "side_table_B__base_pad_5",
+        "side_table_B__rib_5",
+        "side_table_B__base_pad_6",
+        "side_table_B__rib_6",
+        "side_table_B__base_pad_7",
+        "side_table_B__rib_7",
+        "side_table_B__base_pad_8",
+        "side_table_B__rib_8",
+        "side_table_B__base_pad_9",
+        "side_table_B__rib_9",
+        "side_table_B__base_pad_10",
+        "side_table_B__rib_10",
+        "side_table_B__base_pad_11",
+        "side_table_B__rib_11",
+        "side_table_B__base_pad_12",
+        "side_table_B__rib_12",
+        "side_table_B__base_pad_13",
+        "side_table_B__rib_13",
+        "side_table_B__base_pad_14",
+        "side_table_B__rib_14",
+        "side_table_B__base_pad_15",
+        "side_table_B__rib_15",
+        "side_table_B__base_pad_16",
+        "side_table_B__rib_16",
+        "side_table_B__base_pad_17",
+        "side_table_B__rib_17",
+        "side_table_B__base_pad_18",
+        "side_table_B__rib_18",
+        "side_table_B__base_pad_19",
+        "side_table_B__rib_19",
+        "side_table_B__base_pad_20",
+        "side_table_B__rib_20",
+        "side_table_B__base_pad_21",
+        "side_table_B__rib_21",
+        "side_table_B__base_pad_22",
+        "side_table_B__rib_22",
+        "side_table_B__base_pad_23",
+        "side_table_B__rib_23"
+      ]
+    },
+    {
+      "id": "shrub_trough_A",
+      "category": "planter_shrub",
+      "components": [
+        "shrub_trough_A__body",
+        "shrub_trough_A__soil",
+        "shrub_trough_A__branch_0",
+        "shrub_trough_A__branch_1",
+        "shrub_trough_A__branch_2",
+        "shrub_trough_A__branch_3",
+        "shrub_trough_A__branch_4",
+        "shrub_trough_A__branch_5",
+        "shrub_trough_A__branch_6",
+        "shrub_trough_A__branch_7",
+        "shrub_trough_A__branch_8",
+        "shrub_trough_A__branch_9",
+        "shrub_trough_A__branch_10",
+        "shrub_trough_A__branch_11",
+        "shrub_trough_A__branch_12",
+        "shrub_trough_A__branch_13",
+        "shrub_trough_A__branch_14",
+        "shrub_trough_A__branch_15",
+        "shrub_trough_A__branch_16",
+        "shrub_trough_A__branch_17",
+        "shrub_trough_A__branch_18",
+        "shrub_trough_A__branch_19",
+        "shrub_trough_A__branch_20",
+        "shrub_trough_A__branch_21",
+        "shrub_trough_A__branch_22",
+        "shrub_trough_A__branch_23",
+        "shrub_trough_A__branch_24",
+        "shrub_trough_A__branch_25",
+        "shrub_trough_A__branch_26",
+        "shrub_trough_A__branch_27",
+        "shrub_trough_A__branch_28",
+        "shrub_trough_A__branch_29",
+        "shrub_trough_A__branch_30",
+        "shrub_trough_A__branch_31",
+        "shrub_trough_A__branch_32",
+        "shrub_trough_A__branch_33",
+        "shrub_trough_A__branch_34",
+        "shrub_trough_A__branch_35",
+        "shrub_trough_A__branch_36",
+        "shrub_trough_A__branch_37",
+        "shrub_trough_A__branch_38",
+        "shrub_trough_A__branch_39",
+        "shrub_trough_A__branch_40",
+        "shrub_trough_A__branch_41",
+        "shrub_trough_A__branch_42",
+        "shrub_trough_A__branch_43",
+        "shrub_trough_A__branch_44",
+        "shrub_trough_A__branch_45",
+        "shrub_trough_A__branch_46",
+        "shrub_trough_A__branch_47",
+        "shrub_trough_A__branch_48",
+        "shrub_trough_A__branch_49",
+        "shrub_trough_A__branch_50",
+        "shrub_trough_A__branch_51",
+        "shrub_trough_A__branch_52",
+        "shrub_trough_A__branch_53",
+        "shrub_trough_A__branch_54",
+        "shrub_trough_A__branch_55",
+        "shrub_trough_A__branch_56",
+        "shrub_trough_A__branch_57",
+        "shrub_trough_A__branch_58",
+        "shrub_trough_A__branch_59",
+        "shrub_trough_A__branch_60",
+        "shrub_trough_A__branch_61",
+        "shrub_trough_A__branch_62",
+        "shrub_trough_A__branch_63",
+        "shrub_trough_A__branch_64",
+        "shrub_trough_A__branch_65",
+        "shrub_trough_A__branch_66",
+        "shrub_trough_A__branch_67",
+        "shrub_trough_A__branch_68",
+        "shrub_trough_A__branch_69",
+        "shrub_trough_A__branch_70",
+        "shrub_trough_A__branch_71",
+        "shrub_trough_A__branch_72",
+        "shrub_trough_A__branch_73",
+        "shrub_trough_A__branch_74",
+        "shrub_trough_A__yellow_leaves"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0579872131347656,
+        1.992279052734375,
+        1.5424355268478394
+      ],
+      "bounds": [
+        [
+          18.117191314697266,
+          21.88641357421875,
+          0.0
+        ],
+        [
+          19.17517852783203,
+          23.878692626953125,
+          1.5424355268478394
+        ]
+      ],
+      "component_names": [
+        "shrub_trough_A__body",
+        "shrub_trough_A__soil",
+        "shrub_trough_A__branch_0",
+        "shrub_trough_A__branch_1",
+        "shrub_trough_A__branch_2",
+        "shrub_trough_A__branch_3",
+        "shrub_trough_A__branch_4",
+        "shrub_trough_A__branch_5",
+        "shrub_trough_A__branch_6",
+        "shrub_trough_A__branch_7",
+        "shrub_trough_A__branch_8",
+        "shrub_trough_A__branch_9",
+        "shrub_trough_A__branch_10",
+        "shrub_trough_A__branch_11",
+        "shrub_trough_A__branch_12",
+        "shrub_trough_A__branch_13",
+        "shrub_trough_A__branch_14",
+        "shrub_trough_A__branch_15",
+        "shrub_trough_A__branch_16",
+        "shrub_trough_A__branch_17",
+        "shrub_trough_A__branch_18",
+        "shrub_trough_A__branch_19",
+        "shrub_trough_A__branch_20",
+        "shrub_trough_A__branch_21",
+        "shrub_trough_A__branch_22",
+        "shrub_trough_A__branch_23",
+        "shrub_trough_A__branch_24",
+        "shrub_trough_A__branch_25",
+        "shrub_trough_A__branch_26",
+        "shrub_trough_A__branch_27",
+        "shrub_trough_A__branch_28",
+        "shrub_trough_A__branch_29",
+        "shrub_trough_A__branch_30",
+        "shrub_trough_A__branch_31",
+        "shrub_trough_A__branch_32",
+        "shrub_trough_A__branch_33",
+        "shrub_trough_A__branch_34",
+        "shrub_trough_A__branch_35",
+        "shrub_trough_A__branch_36",
+        "shrub_trough_A__branch_37",
+        "shrub_trough_A__branch_38",
+        "shrub_trough_A__branch_39",
+        "shrub_trough_A__branch_40",
+        "shrub_trough_A__branch_41",
+        "shrub_trough_A__branch_42",
+        "shrub_trough_A__branch_43",
+        "shrub_trough_A__branch_44",
+        "shrub_trough_A__branch_45",
+        "shrub_trough_A__branch_46",
+        "shrub_trough_A__branch_47",
+        "shrub_trough_A__branch_48",
+        "shrub_trough_A__branch_49",
+        "shrub_trough_A__branch_50",
+        "shrub_trough_A__branch_51",
+        "shrub_trough_A__branch_52",
+        "shrub_trough_A__branch_53",
+        "shrub_trough_A__branch_54",
+        "shrub_trough_A__branch_55",
+        "shrub_trough_A__branch_56",
+        "shrub_trough_A__branch_57",
+        "shrub_trough_A__branch_58",
+        "shrub_trough_A__branch_59",
+        "shrub_trough_A__branch_60",
+        "shrub_trough_A__branch_61",
+        "shrub_trough_A__branch_62",
+        "shrub_trough_A__branch_63",
+        "shrub_trough_A__branch_64",
+        "shrub_trough_A__branch_65",
+        "shrub_trough_A__branch_66",
+        "shrub_trough_A__branch_67",
+        "shrub_trough_A__branch_68",
+        "shrub_trough_A__branch_69",
+        "shrub_trough_A__branch_70",
+        "shrub_trough_A__branch_71",
+        "shrub_trough_A__branch_72",
+        "shrub_trough_A__branch_73",
+        "shrub_trough_A__branch_74",
+        "shrub_trough_A__yellow_leaves"
+      ]
+    },
+    {
+      "id": "shrub_trough_B",
+      "category": "planter_shrub",
+      "components": [
+        "shrub_trough_B__body",
+        "shrub_trough_B__soil",
+        "shrub_trough_B__branch_0",
+        "shrub_trough_B__branch_1",
+        "shrub_trough_B__branch_2",
+        "shrub_trough_B__branch_3",
+        "shrub_trough_B__branch_4",
+        "shrub_trough_B__branch_5",
+        "shrub_trough_B__branch_6",
+        "shrub_trough_B__branch_7",
+        "shrub_trough_B__branch_8",
+        "shrub_trough_B__branch_9",
+        "shrub_trough_B__branch_10",
+        "shrub_trough_B__branch_11",
+        "shrub_trough_B__branch_12",
+        "shrub_trough_B__branch_13",
+        "shrub_trough_B__branch_14",
+        "shrub_trough_B__branch_15",
+        "shrub_trough_B__branch_16",
+        "shrub_trough_B__branch_17",
+        "shrub_trough_B__branch_18",
+        "shrub_trough_B__branch_19",
+        "shrub_trough_B__branch_20",
+        "shrub_trough_B__branch_21",
+        "shrub_trough_B__branch_22",
+        "shrub_trough_B__branch_23",
+        "shrub_trough_B__branch_24",
+        "shrub_trough_B__branch_25",
+        "shrub_trough_B__branch_26",
+        "shrub_trough_B__branch_27",
+        "shrub_trough_B__branch_28",
+        "shrub_trough_B__branch_29",
+        "shrub_trough_B__branch_30",
+        "shrub_trough_B__branch_31",
+        "shrub_trough_B__branch_32",
+        "shrub_trough_B__branch_33",
+        "shrub_trough_B__branch_34",
+        "shrub_trough_B__branch_35",
+        "shrub_trough_B__branch_36",
+        "shrub_trough_B__branch_37",
+        "shrub_trough_B__branch_38",
+        "shrub_trough_B__branch_39",
+        "shrub_trough_B__branch_40",
+        "shrub_trough_B__branch_41",
+        "shrub_trough_B__branch_42",
+        "shrub_trough_B__branch_43",
+        "shrub_trough_B__branch_44",
+        "shrub_trough_B__branch_45",
+        "shrub_trough_B__branch_46",
+        "shrub_trough_B__branch_47",
+        "shrub_trough_B__branch_48",
+        "shrub_trough_B__branch_49",
+        "shrub_trough_B__branch_50",
+        "shrub_trough_B__branch_51",
+        "shrub_trough_B__branch_52",
+        "shrub_trough_B__branch_53",
+        "shrub_trough_B__branch_54",
+        "shrub_trough_B__branch_55",
+        "shrub_trough_B__branch_56",
+        "shrub_trough_B__branch_57",
+        "shrub_trough_B__branch_58",
+        "shrub_trough_B__branch_59",
+        "shrub_trough_B__branch_60",
+        "shrub_trough_B__branch_61",
+        "shrub_trough_B__branch_62",
+        "shrub_trough_B__branch_63",
+        "shrub_trough_B__branch_64",
+        "shrub_trough_B__branch_65",
+        "shrub_trough_B__branch_66",
+        "shrub_trough_B__branch_67",
+        "shrub_trough_B__branch_68",
+        "shrub_trough_B__branch_69",
+        "shrub_trough_B__branch_70",
+        "shrub_trough_B__branch_71",
+        "shrub_trough_B__branch_72",
+        "shrub_trough_B__branch_73",
+        "shrub_trough_B__branch_74",
+        "shrub_trough_B__yellow_leaves"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.0518074035644531,
+        2.0417823791503906,
+        1.5323997735977173
+      ],
+      "bounds": [
+        [
+          18.17243194580078,
+          19.65821647644043,
+          0.0
+        ],
+        [
+          19.224239349365234,
+          21.69999885559082,
+          1.5323997735977173
+        ]
+      ],
+      "component_names": [
+        "shrub_trough_B__body",
+        "shrub_trough_B__soil",
+        "shrub_trough_B__branch_0",
+        "shrub_trough_B__branch_1",
+        "shrub_trough_B__branch_2",
+        "shrub_trough_B__branch_3",
+        "shrub_trough_B__branch_4",
+        "shrub_trough_B__branch_5",
+        "shrub_trough_B__branch_6",
+        "shrub_trough_B__branch_7",
+        "shrub_trough_B__branch_8",
+        "shrub_trough_B__branch_9",
+        "shrub_trough_B__branch_10",
+        "shrub_trough_B__branch_11",
+        "shrub_trough_B__branch_12",
+        "shrub_trough_B__branch_13",
+        "shrub_trough_B__branch_14",
+        "shrub_trough_B__branch_15",
+        "shrub_trough_B__branch_16",
+        "shrub_trough_B__branch_17",
+        "shrub_trough_B__branch_18",
+        "shrub_trough_B__branch_19",
+        "shrub_trough_B__branch_20",
+        "shrub_trough_B__branch_21",
+        "shrub_trough_B__branch_22",
+        "shrub_trough_B__branch_23",
+        "shrub_trough_B__branch_24",
+        "shrub_trough_B__branch_25",
+        "shrub_trough_B__branch_26",
+        "shrub_trough_B__branch_27",
+        "shrub_trough_B__branch_28",
+        "shrub_trough_B__branch_29",
+        "shrub_trough_B__branch_30",
+        "shrub_trough_B__branch_31",
+        "shrub_trough_B__branch_32",
+        "shrub_trough_B__branch_33",
+        "shrub_trough_B__branch_34",
+        "shrub_trough_B__branch_35",
+        "shrub_trough_B__branch_36",
+        "shrub_trough_B__branch_37",
+        "shrub_trough_B__branch_38",
+        "shrub_trough_B__branch_39",
+        "shrub_trough_B__branch_40",
+        "shrub_trough_B__branch_41",
+        "shrub_trough_B__branch_42",
+        "shrub_trough_B__branch_43",
+        "shrub_trough_B__branch_44",
+        "shrub_trough_B__branch_45",
+        "shrub_trough_B__branch_46",
+        "shrub_trough_B__branch_47",
+        "shrub_trough_B__branch_48",
+        "shrub_trough_B__branch_49",
+        "shrub_trough_B__branch_50",
+        "shrub_trough_B__branch_51",
+        "shrub_trough_B__branch_52",
+        "shrub_trough_B__branch_53",
+        "shrub_trough_B__branch_54",
+        "shrub_trough_B__branch_55",
+        "shrub_trough_B__branch_56",
+        "shrub_trough_B__branch_57",
+        "shrub_trough_B__branch_58",
+        "shrub_trough_B__branch_59",
+        "shrub_trough_B__branch_60",
+        "shrub_trough_B__branch_61",
+        "shrub_trough_B__branch_62",
+        "shrub_trough_B__branch_63",
+        "shrub_trough_B__branch_64",
+        "shrub_trough_B__branch_65",
+        "shrub_trough_B__branch_66",
+        "shrub_trough_B__branch_67",
+        "shrub_trough_B__branch_68",
+        "shrub_trough_B__branch_69",
+        "shrub_trough_B__branch_70",
+        "shrub_trough_B__branch_71",
+        "shrub_trough_B__branch_72",
+        "shrub_trough_B__branch_73",
+        "shrub_trough_B__branch_74",
+        "shrub_trough_B__yellow_leaves"
+      ]
+    },
+    {
+      "id": "mirror_fern",
+      "category": "potted_plant",
+      "components": [
+        "mirror_fern__vessel",
+        "mirror_fern__soil",
+        "mirror_fern__foliage0",
+        "mirror_fern__foliage1"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.9101486206054688,
+        0.9030551910400391,
+        1.2327723503112793
+      ],
+      "bounds": [
+        [
+          15.201883316040039,
+          18.201326370239258,
+          0.0
+        ],
+        [
+          16.112031936645508,
+          19.104381561279297,
+          1.2327723503112793
+        ]
+      ],
+      "component_names": [
+        "mirror_fern__vessel",
+        "mirror_fern__soil",
+        "mirror_fern__foliage0",
+        "mirror_fern__foliage1"
+      ]
+    },
+    {
+      "id": "window_grass",
+      "category": "potted_plant",
+      "components": [
+        "window_grass__vessel",
+        "window_grass__soil",
+        "window_grass__foliage0",
+        "window_grass__foliage1"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        118,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.227752685546875,
+        1.2027111053466797,
+        1.1143624782562256
+      ],
+      "bounds": [
+        [
+          16.431726455688477,
+          24.459999084472656,
+          0.0
+        ],
+        [
+          17.65947914123535,
+          25.662710189819336,
+          1.1143624782562256
+        ]
+      ],
+      "component_names": [
+        "window_grass__vessel",
+        "window_grass__soil",
+        "window_grass__foliage0",
+        "window_grass__foliage1"
+      ]
+    },
+    {
+      "id": "far_window_grass",
+      "category": "potted_plant",
+      "components": [
+        "far_window_grass__vessel",
+        "far_window_grass__soil",
+        "far_window_grass__foliage0",
+        "far_window_grass__foliage1"
+      ],
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.191603660583496,
+        1.1883506774902344,
+        1.1190283298492432
+      ],
+      "bounds": [
+        [
+          8.507661819458008,
+          24.451648712158203,
+          0.0
+        ],
+        [
+          9.699265480041504,
+          25.639999389648438,
+          1.1190283298492432
+        ]
+      ],
+      "component_names": [
+        "far_window_grass__vessel",
+        "far_window_grass__soil",
+        "far_window_grass__foliage0",
+        "far_window_grass__foliage1"
+      ]
+    },
+    {
+      "id": "reception_tree_L",
+      "category": "potted_plant",
+      "components": [
+        "reception_tree_L__vessel",
+        "reception_tree_L__soil",
+        "reception_tree_L__trunk0",
+        "reception_tree_L__trunk1",
+        "reception_tree_L__trunk2",
+        "reception_tree_L__foliage0",
+        "reception_tree_L__foliage1"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.2655105590820312,
+        1.1960163116455078,
+        1.9834333658218384
+      ],
+      "bounds": [
+        [
+          25.786516189575195,
+          23.50295066833496,
+          0.0
+        ],
+        [
+          27.052026748657227,
+          24.69896697998047,
+          1.9834333658218384
+        ]
+      ],
+      "component_names": [
+        "reception_tree_L__vessel",
+        "reception_tree_L__soil",
+        "reception_tree_L__trunk0",
+        "reception_tree_L__trunk1",
+        "reception_tree_L__trunk2",
+        "reception_tree_L__foliage0",
+        "reception_tree_L__foliage1"
+      ]
+    },
+    {
+      "id": "reception_tree_R",
+      "category": "potted_plant",
+      "components": [
+        "reception_tree_R__vessel",
+        "reception_tree_R__soil",
+        "reception_tree_R__trunk0",
+        "reception_tree_R__trunk1",
+        "reception_tree_R__trunk2",
+        "reception_tree_R__foliage0",
+        "reception_tree_R__foliage1"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.1889705657958984,
+        1.2235469818115234,
+        1.963462233543396
+      ],
+      "bounds": [
+        [
+          25.816509246826172,
+          18.71063804626465,
+          0.0
+        ],
+        [
+          27.00547981262207,
+          19.934185028076172,
+          1.963462233543396
+        ]
+      ],
+      "component_names": [
+        "reception_tree_R__vessel",
+        "reception_tree_R__soil",
+        "reception_tree_R__trunk0",
+        "reception_tree_R__trunk1",
+        "reception_tree_R__trunk2",
+        "reception_tree_R__foliage0",
+        "reception_tree_R__foliage1"
+      ]
+    },
+    {
+      "id": "reception_corner_bowl",
+      "category": "potted_plant",
+      "components": [
+        "reception_corner_bowl__vessel",
+        "reception_corner_bowl__soil",
+        "reception_corner_bowl__foliage0",
+        "reception_corner_bowl__foliage1"
+      ],
+      "evidence_frames": [
+        33,
+        155
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.2148170471191406,
+        1.1800003051757812,
+        1.119489312171936
+      ],
+      "bounds": [
+        [
+          25.89776039123535,
+          16.309999465942383,
+          0.0
+        ],
+        [
+          27.112577438354492,
+          17.489999771118164,
+          1.119489312171936
+        ]
+      ],
+      "component_names": [
+        "reception_corner_bowl__vessel",
+        "reception_corner_bowl__soil",
+        "reception_corner_bowl__foliage0",
+        "reception_corner_bowl__foliage1"
+      ]
+    },
+    {
+      "id": "bird_paradise_A",
+      "category": "potted_plant",
+      "components": [
+        "bird_paradise_A__square_pot",
+        "bird_paradise_A__soil",
+        "bird_paradise_A__stem0",
+        "bird_paradise_A__stem1",
+        "bird_paradise_A__stem2",
+        "bird_paradise_A__stem3",
+        "bird_paradise_A__stem4",
+        "bird_paradise_A__stem5",
+        "bird_paradise_A__stem6",
+        "bird_paradise_A__stem7",
+        "bird_paradise_A__stem8",
+        "bird_paradise_A__stem9",
+        "bird_paradise_A__stem10",
+        "bird_paradise_A__stem11",
+        "bird_paradise_A__stem12",
+        "bird_paradise_A__stem13",
+        "bird_paradise_A__flowerstem0",
+        "bird_paradise_A__flowerstem1",
+        "bird_paradise_A__flowerstem2",
+        "bird_paradise_A__foliage0",
+        "bird_paradise_A__foliage1",
+        "bird_paradise_A__foliage2"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.7428045272827148,
+        0.8507671356201172,
+        2.259999990463257
+      ],
+      "bounds": [
+        [
+          11.164566040039062,
+          18.61212158203125,
+          0.0
+        ],
+        [
+          11.907370567321777,
+          19.462888717651367,
+          2.259999990463257
+        ]
+      ],
+      "component_names": [
+        "bird_paradise_A__square_pot",
+        "bird_paradise_A__soil",
+        "bird_paradise_A__stem0",
+        "bird_paradise_A__stem1",
+        "bird_paradise_A__stem2",
+        "bird_paradise_A__stem3",
+        "bird_paradise_A__stem4",
+        "bird_paradise_A__stem5",
+        "bird_paradise_A__stem6",
+        "bird_paradise_A__stem7",
+        "bird_paradise_A__stem8",
+        "bird_paradise_A__stem9",
+        "bird_paradise_A__stem10",
+        "bird_paradise_A__stem11",
+        "bird_paradise_A__stem12",
+        "bird_paradise_A__stem13",
+        "bird_paradise_A__flowerstem0",
+        "bird_paradise_A__flowerstem1",
+        "bird_paradise_A__flowerstem2",
+        "bird_paradise_A__foliage0",
+        "bird_paradise_A__foliage1",
+        "bird_paradise_A__foliage2"
+      ]
+    },
+    {
+      "id": "bird_paradise_B",
+      "category": "potted_plant",
+      "components": [
+        "bird_paradise_B__square_pot",
+        "bird_paradise_B__soil",
+        "bird_paradise_B__stem0",
+        "bird_paradise_B__stem1",
+        "bird_paradise_B__stem2",
+        "bird_paradise_B__stem3",
+        "bird_paradise_B__stem4",
+        "bird_paradise_B__stem5",
+        "bird_paradise_B__stem6",
+        "bird_paradise_B__stem7",
+        "bird_paradise_B__stem8",
+        "bird_paradise_B__stem9",
+        "bird_paradise_B__stem10",
+        "bird_paradise_B__stem11",
+        "bird_paradise_B__stem12",
+        "bird_paradise_B__stem13",
+        "bird_paradise_B__flowerstem0",
+        "bird_paradise_B__flowerstem1",
+        "bird_paradise_B__flowerstem2",
+        "bird_paradise_B__foliage0",
+        "bird_paradise_B__foliage1",
+        "bird_paradise_B__foliage2"
+      ],
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "Observed plant type and support; procedural branch/leaf detail inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.88128662109375,
+        0.7925662994384766,
+        2.259999990463257
+      ],
+      "bounds": [
+        [
+          8.584746360778809,
+          22.9254150390625,
+          0.0
+        ],
+        [
+          9.466032981872559,
+          23.717981338500977,
+          2.259999990463257
+        ]
+      ],
+      "component_names": [
+        "bird_paradise_B__square_pot",
+        "bird_paradise_B__soil",
+        "bird_paradise_B__stem0",
+        "bird_paradise_B__stem1",
+        "bird_paradise_B__stem2",
+        "bird_paradise_B__stem3",
+        "bird_paradise_B__stem4",
+        "bird_paradise_B__stem5",
+        "bird_paradise_B__stem6",
+        "bird_paradise_B__stem7",
+        "bird_paradise_B__stem8",
+        "bird_paradise_B__stem9",
+        "bird_paradise_B__stem10",
+        "bird_paradise_B__stem11",
+        "bird_paradise_B__stem12",
+        "bird_paradise_B__stem13",
+        "bird_paradise_B__flowerstem0",
+        "bird_paradise_B__flowerstem1",
+        "bird_paradise_B__flowerstem2",
+        "bird_paradise_B__foliage0",
+        "bird_paradise_B__foliage1",
+        "bird_paradise_B__foliage2"
+      ]
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_desk",
+      "components": [
+        "reception_desk__faceted_body",
+        "reception_desk__hidden_support",
+        "reception_desk__top"
+      ],
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129
+      ],
+      "provenance": "Desk top front triangulated x25.06,y20.41..23.22,z.83..87. Rear depth, irregular facets and thickness inferred.",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        1.1299991607666016,
+        3.0,
+        0.8964999690651894
+      ],
+      "bounds": [
+        [
+          24.950000762939453,
+          20.299999237060547,
+          0.010999999940395355
+        ],
+        [
+          26.079999923706055,
+          23.299999237060547,
+          0.9074999690055847
+        ]
+      ],
+      "component_names": [
+        "reception_desk__faceted_body",
+        "reception_desk__hidden_support",
+        "reception_desk__top"
+      ]
+    },
+    {
+      "id": "desk_succulent",
+      "category": "tabletop_plant",
+      "components": [
+        "desk_succulent__pot",
+        "desk_succulent__leaves"
+      ],
+      "evidence_frames": [
+        33,
+        108,
+        129
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:reception_desk"
+      ],
+      "dimensions": [
+        0.17910003662109375,
+        0.16814041137695312,
+        0.2800000309944153
+      ],
+      "bounds": [
+        [
+          25.410900115966797,
+          21.113697052001953,
+          0.9200000166893005
+        ],
+        [
+          25.59000015258789,
+          21.281837463378906,
+          1.2000000476837158
+        ]
+      ],
+      "component_names": [
+        "desk_succulent__pot",
+        "desk_succulent__leaves"
+      ]
+    },
+    {
+      "id": "reception_wall_emblem",
+      "category": "wall_art",
+      "components": [
+        "reception_wall_emblem__shield",
+        "reception_wall_emblem__upright-1",
+        "reception_wall_emblem__crossarm-1",
+        "reception_wall_emblem__upright1",
+        "reception_wall_emblem__crossarm1"
+      ],
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "attached_to:east_end_wall"
+      ],
+      "dimensions": [
+        0.08300018310546875,
+        2.7360000610351562,
+        1.6799999475479126
+      ],
+      "bounds": [
+        [
+          27.281999588012695,
+          20.381999969482422,
+          1.6699999570846558
+        ],
+        [
+          27.364999771118164,
+          23.118000030517578,
+          3.3499999046325684
+        ]
+      ],
+      "component_names": [
+        "reception_wall_emblem__shield",
+        "reception_wall_emblem__upright-1",
+        "reception_wall_emblem__crossarm-1",
+        "reception_wall_emblem__upright1",
+        "reception_wall_emblem__crossarm1"
+      ]
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_0__base",
+        "floor_lamp_0__leg-1",
+        "floor_lamp_0__leg0",
+        "floor_lamp_0__leg1",
+        "floor_lamp_0__shade",
+        "floor_lamp_0__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.5200004577636719,
+        0.5200004577636719,
+        1.940000057220459
+      ],
+      "bounds": [
+        [
+          18.84000015258789,
+          16.739999771118164,
+          0.0
+        ],
+        [
+          19.360000610351562,
+          17.260000228881836,
+          1.940000057220459
+        ]
+      ],
+      "component_names": [
+        "floor_lamp_0__base",
+        "floor_lamp_0__leg-1",
+        "floor_lamp_0__leg0",
+        "floor_lamp_0__leg1",
+        "floor_lamp_0__shade",
+        "floor_lamp_0__diffuser"
+      ]
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_1__base",
+        "floor_lamp_1__leg-1",
+        "floor_lamp_1__leg0",
+        "floor_lamp_1__leg1",
+        "floor_lamp_1__shade",
+        "floor_lamp_1__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.5200004577636719,
+        0.5200004577636719,
+        1.940000057220459
+      ],
+      "bounds": [
+        [
+          25.739999771118164,
+          17.139999389648438,
+          0.0
+        ],
+        [
+          26.260000228881836,
+          17.65999984741211,
+          1.940000057220459
+        ]
+      ],
+      "component_names": [
+        "floor_lamp_1__base",
+        "floor_lamp_1__leg-1",
+        "floor_lamp_1__leg0",
+        "floor_lamp_1__leg1",
+        "floor_lamp_1__shade",
+        "floor_lamp_1__diffuser"
+      ]
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "components": [
+        "floor_lamp_2__base",
+        "floor_lamp_2__leg-1",
+        "floor_lamp_2__leg0",
+        "floor_lamp_2__leg1",
+        "floor_lamp_2__shade",
+        "floor_lamp_2__diffuser"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed semantic form; dimensions from measured layout; hidden construction and material inferred",
+      "relations": [
+        "supported_by:floor"
+      ],
+      "dimensions": [
+        0.5200004577636719,
+        0.5200004577636719,
+        1.940000057220459
+      ],
+      "bounds": [
+        [
+          8.739999771118164,
+          22.639999389648438,
+          0.0
+        ],
+        [
+          9.260000228881836,
+          23.15999984741211,
+          1.940000057220459
+        ]
+      ],
+      "component_names": [
+        "floor_lamp_2__base",
+        "floor_lamp_2__leg-1",
+        "floor_lamp_2__leg0",
+        "floor_lamp_2__leg1",
+        "floor_lamp_2__shade",
+        "floor_lamp_2__diffuser"
+      ]
+    },
+    {
+      "id": "pendant_00",
+      "category": "pendant_light",
+      "components": [
+        "pendant_00__bowl",
+        "pendant_00__diffuser",
+        "pendant_00__underside_weave",
+        "pendant_00__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.4377107620239258,
+        1.4377098083496094,
+        0.8087968826293945
+      ],
+      "bounds": [
+        [
+          15.183798789978027,
+          22.864910125732422,
+          4.171202659606934
+        ],
+        [
+          16.621509552001953,
+          24.30261993408203,
+          4.979999542236328
+        ]
+      ],
+      "component_names": [
+        "pendant_00__bowl",
+        "pendant_00__diffuser",
+        "pendant_00__underside_weave",
+        "pendant_00__suspension"
+      ]
+    },
+    {
+      "id": "pendant_01",
+      "category": "pendant_light",
+      "components": [
+        "pendant_01__bowl",
+        "pendant_01__diffuser",
+        "pendant_01__underside_weave",
+        "pendant_01__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.3077449798583984,
+        1.3077468872070312,
+        0.7960176467895508
+      ],
+      "bounds": [
+        [
+          17.288867950439453,
+          22.64862060546875,
+          4.183981895446777
+        ],
+        [
+          18.59661293029785,
+          23.95636749267578,
+          4.979999542236328
+        ]
+      ],
+      "component_names": [
+        "pendant_01__bowl",
+        "pendant_01__diffuser",
+        "pendant_01__underside_weave",
+        "pendant_01__suspension"
+      ]
+    },
+    {
+      "id": "pendant_02",
+      "category": "pendant_light",
+      "components": [
+        "pendant_02__bowl",
+        "pendant_02__diffuser",
+        "pendant_02__underside_weave",
+        "pendant_02__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.239767074584961,
+        1.2397651672363281,
+        1.085054874420166
+      ],
+      "bounds": [
+        [
+          18.580801010131836,
+          23.154518127441406,
+          3.8949456214904785
+        ],
+        [
+          19.820568084716797,
+          24.394283294677734,
+          4.9800004959106445
+        ]
+      ],
+      "component_names": [
+        "pendant_02__bowl",
+        "pendant_02__diffuser",
+        "pendant_02__underside_weave",
+        "pendant_02__suspension"
+      ]
+    },
+    {
+      "id": "pendant_03",
+      "category": "pendant_light",
+      "components": [
+        "pendant_03__bowl",
+        "pendant_03__diffuser",
+        "pendant_03__underside_weave",
+        "pendant_03__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.6236572265625,
+        1.6236572265625,
+        0.7875251770019531
+      ],
+      "bounds": [
+        [
+          20.80491065979004,
+          21.911060333251953,
+          4.192475318908691
+        ],
+        [
+          22.42856788635254,
+          23.534717559814453,
+          4.9800004959106445
+        ]
+      ],
+      "component_names": [
+        "pendant_03__bowl",
+        "pendant_03__diffuser",
+        "pendant_03__underside_weave",
+        "pendant_03__suspension"
+      ]
+    },
+    {
+      "id": "pendant_04",
+      "category": "pendant_light",
+      "components": [
+        "pendant_04__bowl",
+        "pendant_04__diffuser",
+        "pendant_04__underside_weave",
+        "pendant_04__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.4117183685302734,
+        1.4117183685302734,
+        1.038320541381836
+      ],
+      "bounds": [
+        [
+          20.09649658203125,
+          20.896495819091797,
+          3.9416799545288086
+        ],
+        [
+          21.508214950561523,
+          22.30821418762207,
+          4.9800004959106445
+        ]
+      ],
+      "component_names": [
+        "pendant_04__bowl",
+        "pendant_04__diffuser",
+        "pendant_04__underside_weave",
+        "pendant_04__suspension"
+      ]
+    },
+    {
+      "id": "pendant_05",
+      "category": "pendant_light",
+      "components": [
+        "pendant_05__bowl",
+        "pendant_05__diffuser",
+        "pendant_05__underside_weave",
+        "pendant_05__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.8895835876464844,
+        1.8895835876464844,
+        0.9452710151672363
+      ],
+      "bounds": [
+        [
+          20.79147720336914,
+          19.161582946777344,
+          4.034729480743408
+        ],
+        [
+          22.681060791015625,
+          21.051166534423828,
+          4.9800004959106445
+        ]
+      ],
+      "component_names": [
+        "pendant_05__bowl",
+        "pendant_05__diffuser",
+        "pendant_05__underside_weave",
+        "pendant_05__suspension"
+      ]
+    },
+    {
+      "id": "pendant_06",
+      "category": "pendant_light",
+      "components": [
+        "pendant_06__bowl",
+        "pendant_06__diffuser",
+        "pendant_06__underside_weave",
+        "pendant_06__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.2117729187011719,
+        1.2117729187011719,
+        0.7604751586914062
+      ],
+      "bounds": [
+        [
+          18.946853637695312,
+          20.355453491210938,
+          4.21952486038208
+        ],
+        [
+          20.158626556396484,
+          21.56722640991211,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_06__bowl",
+        "pendant_06__diffuser",
+        "pendant_06__underside_weave",
+        "pendant_06__suspension"
+      ]
+    },
+    {
+      "id": "pendant_07",
+      "category": "pendant_light",
+      "components": [
+        "pendant_07__bowl",
+        "pendant_07__diffuser",
+        "pendant_07__underside_weave",
+        "pendant_07__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.1717853546142578,
+        1.171783447265625,
+        1.4813125133514404
+      ],
+      "bounds": [
+        [
+          15.127290725708008,
+          20.202123641967773,
+          3.498687505722046
+        ],
+        [
+          16.299076080322266,
+          21.3739070892334,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_07__bowl",
+        "pendant_07__diffuser",
+        "pendant_07__underside_weave",
+        "pendant_07__suspension"
+      ]
+    },
+    {
+      "id": "pendant_08",
+      "category": "pendant_light",
+      "components": [
+        "pendant_08__bowl",
+        "pendant_08__diffuser",
+        "pendant_08__underside_weave",
+        "pendant_08__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        129,
+        155
+      ],
+      "provenance": "RGB ray to inferred 4.5m near / 3.8m far bottom plane; size from projected radius; suspension height uncertain",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        2.107522964477539,
+        2.107522964477539,
+        0.4941678047180176
+      ],
+      "bounds": [
+        [
+          16.36871910095215,
+          16.275522232055664,
+          4.485832214355469
+        ],
+        [
+          18.476242065429688,
+          18.383045196533203,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_08__bowl",
+        "pendant_08__diffuser",
+        "pendant_08__underside_weave",
+        "pendant_08__suspension"
+      ]
+    },
+    {
+      "id": "pendant_09",
+      "category": "pendant_light",
+      "components": [
+        "pendant_09__bowl",
+        "pendant_09__diffuser",
+        "pendant_09__underside_weave",
+        "pendant_09__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.1138019561767578,
+        1.1138019561767578,
+        1.157217264175415
+      ],
+      "bounds": [
+        [
+          20.509313583374023,
+          18.707563400268555,
+          3.8227827548980713
+        ],
+        [
+          21.62311553955078,
+          19.821365356445312,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_09__bowl",
+        "pendant_09__diffuser",
+        "pendant_09__underside_weave",
+        "pendant_09__suspension"
+      ]
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "components": [
+        "pendant_10__bowl",
+        "pendant_10__diffuser",
+        "pendant_10__underside_weave",
+        "pendant_10__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.2877521514892578,
+        1.2877521514892578,
+        1.255544900894165
+      ],
+      "bounds": [
+        [
+          24.28618812561035,
+          22.786996841430664,
+          3.7244551181793213
+        ],
+        [
+          25.57394027709961,
+          24.074748992919922,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_10__bowl",
+        "pendant_10__diffuser",
+        "pendant_10__underside_weave",
+        "pendant_10__suspension"
+      ]
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "components": [
+        "pendant_11__bowl",
+        "pendant_11__diffuser",
+        "pendant_11__underside_weave",
+        "pendant_11__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.0938053131103516,
+        1.0938072204589844,
+        1.122894048690796
+      ],
+      "bounds": [
+        [
+          22.567758560180664,
+          21.647319793701172,
+          3.8571059703826904
+        ],
+        [
+          23.661563873291016,
+          22.741127014160156,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_11__bowl",
+        "pendant_11__diffuser",
+        "pendant_11__underside_weave",
+        "pendant_11__suspension"
+      ]
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "components": [
+        "pendant_12__bowl",
+        "pendant_12__diffuser",
+        "pendant_12__underside_weave",
+        "pendant_12__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.10980224609375,
+        1.10980224609375,
+        1.4922773838043213
+      ],
+      "bounds": [
+        [
+          23.8841552734375,
+          21.220386505126953,
+          3.487722635269165
+        ],
+        [
+          24.99395751953125,
+          22.330188751220703,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_12__bowl",
+        "pendant_12__diffuser",
+        "pendant_12__underside_weave",
+        "pendant_12__suspension"
+      ]
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "components": [
+        "pendant_13__bowl",
+        "pendant_13__diffuser",
+        "pendant_13__underside_weave",
+        "pendant_13__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.1138019561767578,
+        1.1138019561767578,
+        1.15653657913208
+      ],
+      "bounds": [
+        [
+          23.10836410522461,
+          20.525299072265625,
+          3.8234634399414062
+        ],
+        [
+          24.222166061401367,
+          21.639101028442383,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_13__bowl",
+        "pendant_13__diffuser",
+        "pendant_13__underside_weave",
+        "pendant_13__suspension"
+      ]
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "components": [
+        "pendant_14__bowl",
+        "pendant_14__diffuser",
+        "pendant_14__underside_weave",
+        "pendant_14__suspension"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.3277416229248047,
+        1.3277397155761719,
+        1.3253288269042969
+      ],
+      "bounds": [
+        [
+          24.544919967651367,
+          18.93218231201172,
+          3.6546711921691895
+        ],
+        [
+          25.872661590576172,
+          20.25992202758789,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_14__bowl",
+        "pendant_14__diffuser",
+        "pendant_14__underside_weave",
+        "pendant_14__suspension"
+      ]
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "components": [
+        "pendant_15__bowl",
+        "pendant_15__diffuser",
+        "pendant_15__underside_weave",
+        "pendant_15__suspension"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82,
+        91
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.4037199020385742,
+        1.4037189483642578,
+        1.5680432319641113
+      ],
+      "bounds": [
+        [
+          14.096461296081543,
+          18.50337791442871,
+          3.411956787109375
+        ],
+        [
+          15.500181198120117,
+          19.90709686279297,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_15__bowl",
+        "pendant_15__diffuser",
+        "pendant_15__underside_weave",
+        "pendant_15__suspension"
+      ]
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "components": [
+        "pendant_16__bowl",
+        "pendant_16__diffuser",
+        "pendant_16__underside_weave",
+        "pendant_16__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.4858837127685547,
+        1.4858837127685547,
+        1.4252822399139404
+      ],
+      "bounds": [
+        [
+          16.96170997619629,
+          20.20383644104004,
+          3.554717779159546
+        ],
+        [
+          18.447593688964844,
+          21.689720153808594,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_16__bowl",
+        "pendant_16__diffuser",
+        "pendant_16__underside_weave",
+        "pendant_16__suspension"
+      ]
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "components": [
+        "pendant_17__bowl",
+        "pendant_17__diffuser",
+        "pendant_17__underside_weave",
+        "pendant_17__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.6476507186889648,
+        1.6476516723632812,
+        0.9934608936309814
+      ],
+      "bounds": [
+        [
+          12.517619132995605,
+          19.92916488647461,
+          3.986539125442505
+        ],
+        [
+          14.16526985168457,
+          21.57681655883789,
+          4.980000019073486
+        ]
+      ],
+      "component_names": [
+        "pendant_17__bowl",
+        "pendant_17__diffuser",
+        "pendant_17__underside_weave",
+        "pendant_17__suspension"
+      ]
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "components": [
+        "pendant_18__bowl",
+        "pendant_18__diffuser",
+        "pendant_18__underside_weave",
+        "pendant_18__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.596212387084961,
+        1.596212387084961,
+        1.10211181640625
+      ],
+      "bounds": [
+        [
+          10.482451438903809,
+          20.479019165039062,
+          3.877887725830078
+        ],
+        [
+          12.07866382598877,
+          22.075231552124023,
+          4.979999542236328
+        ]
+      ],
+      "component_names": [
+        "pendant_18__bowl",
+        "pendant_18__diffuser",
+        "pendant_18__underside_weave",
+        "pendant_18__suspension"
+      ]
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "components": [
+        "pendant_19__bowl",
+        "pendant_19__diffuser",
+        "pendant_19__underside_weave",
+        "pendant_19__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.6476516723632812,
+        1.6476516723632812,
+        0.6547460556030273
+      ],
+      "bounds": [
+        [
+          8.42617416381836,
+          21.726417541503906,
+          4.325254440307617
+        ],
+        [
+          10.07382583618164,
+          23.374069213867188,
+          4.9800004959106445
+        ]
+      ],
+      "component_names": [
+        "pendant_19__bowl",
+        "pendant_19__diffuser",
+        "pendant_19__underside_weave",
+        "pendant_19__suspension"
+      ]
+    },
+    {
+      "id": "pendant_20",
+      "category": "pendant_light",
+      "components": [
+        "pendant_20__bowl",
+        "pendant_20__diffuser",
+        "pendant_20__underside_weave",
+        "pendant_20__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.6476516723632812,
+        1.6476516723632812,
+        0.5441675186157227
+      ],
+      "bounds": [
+        [
+          9.67617416381836,
+          22.747224807739258,
+          4.4358320236206055
+        ],
+        [
+          11.32382583618164,
+          24.39487648010254,
+          4.979999542236328
+        ]
+      ],
+      "component_names": [
+        "pendant_20__bowl",
+        "pendant_20__diffuser",
+        "pendant_20__underside_weave",
+        "pendant_20__suspension"
+      ]
+    },
+    {
+      "id": "pendant_21",
+      "category": "pendant_light",
+      "components": [
+        "pendant_21__bowl",
+        "pendant_21__diffuser",
+        "pendant_21__underside_weave",
+        "pendant_21__suspension"
+      ],
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence",
+      "relations": [
+        "suspended_from:ceiling"
+      ],
+      "dimensions": [
+        1.6476507186889648,
+        1.6476516723632812,
+        0.5441675186157227
+      ],
+      "bounds": [
+        [
+          9.026485443115234,
+          23.445377349853516,
+          4.4358320236206055
+        ],
+        [
+          10.6741361618042,
+          25.093029022216797,
+          4.979999542236328
+        ]
+      ],
+      "component_names": [
+        "pendant_21__bowl",
+        "pendant_21__diffuser",
+        "pendant_21__underside_weave",
+        "pendant_21__suspension"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "inspector": "modelling author (not independent reviewer)",
+  "views": [
+    {
+      "sample_index": 33,
+      "comparison_path": "checks/v1/0033_comparison.jpg",
+      "comparison_sha256": "5e4e3dc3d75ccd3423d347aef6dc247bbbfb2fa5d79f28e3054cf64b7f667752",
+      "actually_inspected": true,
+      "observations": "False near planter row occludes lower image; source near foreground has coffee table and seats instead. Main distant furniture is too far and overly pale.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 61,
+      "comparison_path": "checks/v1/0061_comparison.jpg",
+      "comparison_sha256": "e3d5099b1d809480700db38a532c08c10b85a9c31d29b2e129f20a8cc2511ed4",
+      "actually_inspected": true,
+      "observations": "Mirror cluster roughly framed but furniture lies left of expected source placement. Reflective door appearance wrong; duplicated planter appears at right.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 74,
+      "comparison_path": "checks/v1/0074_comparison.jpg",
+      "comparison_sha256": "6e7a6ec50d61d8ba2a6970b48e4168d6103f280527e16d55d24687e2866246cf",
+      "actually_inspected": true,
+      "observations": "Main disk and door roughly aligned; source right dark opening absent from view; chair/table foreground position wrong. Pot contains coarse blades instead of fine dense shrub.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 82,
+      "comparison_path": "checks/v1/0082_comparison.jpg",
+      "comparison_sha256": "ae1732d13e2f603e690e5c7f4e92bb5ac3b2b9d5ae29d9e32f2df317f140550c",
+      "actually_inspected": true,
+      "observations": "View direction qualitatively similar but source long dark recess left is replaced by broad light panels; planter/seat locations and pendant projections differ.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 91,
+      "comparison_path": "checks/v1/0091_comparison.jpg",
+      "comparison_sha256": "44a4f1927370b9719a7dc87503e19d007838481b2c669ea7d6fe2fb1ab9e2ca1",
+      "actually_inspected": true,
+      "observations": "The near model planter row dominates foreground where source is open dark floor. Opposite reference view likely sees the same single divider pair rather than a second pair.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 100,
+      "comparison_path": "checks/v1/0100_comparison.jpg",
+      "comparison_sha256": "308747553956ce8573b873b0d2b74ef5d68c8e83134257026ea26c0ece37cb36",
+      "actually_inspected": true,
+      "observations": "Glazed fa\u00e7ade/column alignment recognizable but source open floor is occupied by model chairs and planters. Camera is too close to an inferred floor lamp at bottom left.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 108,
+      "comparison_path": "checks/v1/0108_comparison.jpg",
+      "comparison_sha256": "9406fa1b8b60dfc9c54ba8469b2e2d350daff6ca8e8b60a5fdac90f2cde8d048",
+      "actually_inspected": true,
+      "observations": "Severe failure: inferred camera at x7.7 y10.25 is behind projecting mirror partition, giving near opaque wall and tiny opening instead of full glazed facade. Needs camera-wall consistency repair.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 118,
+      "comparison_path": "checks/v1/0118_comparison.jpg",
+      "comparison_sha256": "f6cc0f6aec17fca311c4fdb12b2a6a301f6640b27cdf10ccc9c330e85ddce13f",
+      "actually_inspected": true,
+      "observations": "Door and column projections broadly match but seating occupies source open circulation floor. Plant divider probably belongs on opposite side of current camera.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 129,
+      "comparison_path": "checks/v1/0129_comparison.jpg",
+      "comparison_sha256": "edb545418e1042755c7d9d7c2dbd4d8921a2b90ef16d88e3b8751d263fcd881e",
+      "actually_inspected": true,
+      "observations": "Main composition matches room orientation but camera fit leaves near false planter vegetation and makes source foreground seating much too small/distant.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    },
+    {
+      "sample_index": 155,
+      "comparison_path": "checks/v1/0155_comparison.jpg",
+      "comparison_sha256": "28004530e68e33df98b26a12552593849956210c6a3b03ae0dab516b65e89695",
+      "actually_inspected": true,
+      "observations": "Repeat of33: false divider blocks expected table/chair foreground; mirror group too visible at right; lights and walls too bright.",
+      "model_depth_inspected": true,
+      "depth_reference": "N/A, RGB-only",
+      "actionable_next_step": "Review common scene arrangement and camera constraints before any revision; do not treat opticalZ as measured reference."
+    }
+  ],
+  "cross_view_findings": [
+    "Two opposite views likely show same planter pair; initial model mistakenly contains two pairs.",
+    "Camera108 is inconsistent with partition occlusion despite low landmark residual.",
+    "Known publicK projection checks passed but cameras remain unvalidated.",
+    "Materials and lighting underrepresent warm wood, dark slats, pendant weave and black reflective floor.",
+    "All actual fixed10 outputs retained without selective omission."
+  ]
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="World Lobby 新 180 秒序列位姿对比" name="description"/>
+<title>World Lobby · 位姿、深度与 Astra Blender 统一报告</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="data:," rel="icon"/>
+<script src="vendor/model-viewer-4.1.0.min.js" type="module"></script>
+</head>
+<body>
+<header>
+<p class="eyebrow">WORLD LOBBY / FROZEN END-TO-END EVALUATION / 2026-09-30</p>
+<h1>从视频与 IMU 到可编辑世界</h1>
+<p class="lede">GT、ORB-SLAM3、ViPE 与 OpenVINS 位姿诊断，DA3 原生深度，
+  以及 M1–M4 Astra/Blender 冻结模型、渲染和几何评测的统一报告。</p>
+<nav><a href="#methods">方法</a><a href="#metrics">位姿与深度</a>
+<a href="#figure14">轨迹诊断</a><a href="#fixed-view-comparisons">五视角对比</a>
+<a href="#blender-report">模型与渲染</a>
+<a href="#reference-protocol-evaluation">几何、外观与新视角</a>
+<a href="#evidence">证据</a></nav>
+</header>
+<main>
+<section class="notice"><strong>发布范围：</strong>本页只比较
+  <code>astra_blender/models/M1–M4</code> 的四个冻结模型，并按参考博客定义报告 Table 1–5。
+  M1 的模型空间结果使用一次 GT 辅助 Sim(3)，仅作形状诊断。</section>
+<section id="methods"><p class="eyebrow">01 / PIPELINES</p><h2>Table 1. 四种建模路线与输入信息</h2>
+<div class="scroll"><table id="table1"><thead><tr><th>方法</th><th>允许输入</th><th>几何来源</th><th>Astra / Blender 的工作</th></tr></thead><tbody>
+<tr><th>M1 · 纯视觉 + Astra</th><td>180 张采样 RGB</td><td>视觉推断，无测量尺度</td><td>推断布局，编写对象与材质</td></tr>
+<tr><th>M2 · ViPE + DA3 + Astra</th><td>完整 RGB 视频；选取 180 帧建模</td><td>ViPE RGB-only 位姿 → pose-conditioned DA3 深度</td><td>将位姿与深度测量组织为对象化场景</td></tr>
+<tr><th>M3 · ORB-SLAM3 + DA3 + Astra</th><td>视频、IMU、相机–IMU 标定</td><td>ORB-SLAM3 单目惯性位姿 → pose-conditioned DA3 深度</td><td>结合图像、位姿、深度建模</td></tr>
+<tr><th>M4 · GT pose + DA3 + Astra</th><td>视频及 GT camera pose</td><td>GT 位姿 → pose-conditioned DA3 深度</td><td>与 M3 相同类型的建模流程</td></tr>
+</tbody></table></div></section>
+<section id="metrics"><p class="eyebrow">02 / POSE AND DEPTH</p><h2>Table 2. 相机位姿和深度误差</h2>
+<div class="scroll"><table id="table2"><thead><tr><th>方法</th><th>ATE (m) ↓</th><th>Rotation (°) ↓</th><th>Native depth AbsRel ↓</th><th>Model depth AbsRel ↓</th></tr></thead><tbody>
+<tr><th>M1 · 纯视觉 + Astra / GT 辅助 Sim(3)†</th><td>—</td><td>—</td><td>—</td><td>16.44%</td></tr>
+<tr><th>M2 · ViPE + DA3 + Astra</th><td>0.1668</td><td>0.3065</td><td>19.06%</td><td>9.29%</td></tr>
+<tr><th>M3 · ORB-SLAM3 + DA3 + Astra</th><td><strong>0.1205</strong></td><td><strong>0.1943</strong></td><td>20.38%</td><td>8.37%</td></tr>
+<tr><th>M4 · GT pose + DA3 + Astra</th><td>GT 输入</td><td>GT 输入</td><td><strong>18.87%</strong></td><td><strong>7.60%</strong></td></tr>
+</tbody></table></div>
+<p>位姿对 M2/M3 使用一次全局 SE(3) 对齐且 scale=1；M4 为 GT 输入。两项深度指标均在
+    180 个固定视角、每帧 19,200 个采样位置上计算。<strong>Native depth AbsRel</strong>
+    比较 DA3 optical-Z 与 GT；<strong>Model depth AbsRel</strong> 比较冻结 Blender 模型射线深度与 GT。
+    † M1 无原生米制位姿或深度，其模型深度只作 GT 辅助 Sim(3) 诊断，不参与原生米制恢复排名。</p>
+</section>
+<section id="figure14">
+<p class="eyebrow">03 / TRAJECTORY DIAGNOSTICS</p>
+<h2>Figure 14. 轨迹、平移误差与旋转误差</h2>
+<figure class="figure-wide">
+<a href="assets/figure14_abc.png"><img alt="Figure 14 相机轨迹、平移误差与旋转误差组合图" src="assets/figure14_abc.png"/></a>
+<figcaption>Figure 14. (a) GT、ORB-SLAM3、ViPE default 与 OpenVINS 的 XY 轨迹；
+      (b) 平移误差；(c) 旋转误差。每个估计器使用一次 SE(3) 对齐，误差曲线为 1 秒移动平均，
+      Table 2 的 RMSE 使用全部原始逐帧误差。</figcaption>
+</figure>
+<p class="caption-note">OpenVINS 仅保留为轨迹诊断曲线，不加入仅含 M1–M4 的 Table 2。</p>
+</section>
+<section id="fixed-view-comparisons">
+<p class="eyebrow">04 / FIXED-VIEW COMPARISONS</p>
+<h2>五视角 RGB 对比（参考博客 Figure 5 布局）</h2>
+<figure class="figure-wide">
+<a href="assets/fixed_five_view_comparison_m1_m4.jpg">
+<img alt="M1–M4 与输入 GT 的五视角 RGB 比较" loading="lazy" src="assets/fixed_five_view_comparison_m1_m4.jpg"/></a>
+<figcaption>行依次为固定建模视角 0、36、72、108、144；列依次为 M1、M2、M3、M4
+      和输入 GT。所有预测均使用同一 GT 相机及冻结全局配准，640×480，不做逐视角调整。</figcaption>
+</figure>
+<h2>固定 GT 相机模型深度误差（参考博客 Figure 7 布局）</h2>
+<figure class="figure-wide">
+<a href="assets/model_depth_error_five_views_m1_m4.png">
+<img alt="M1–M4 固定 GT 相机模型深度相对误差热图" loading="lazy" src="assets/model_depth_error_five_views_m1_m4.png"/></a>
+<figcaption>同一组五个视角与 M1–M4 冻结模型。颜色为
+      |预测 optical-Z − GT optical-Z| / GT optical-Z，统一截断到 1.0；
+      青色表示缺失或无效预测。</figcaption>
+</figure>
+<p><a href="results/blog_tables_1_5/reference_style_figures.json">图片输入、模型深度来源及哈希</a></p>
+</section>
+<section id="blender-report"><p class="eyebrow">06 / ASTRA + BLENDER</p><p class="numbering-note">页面仅保留连续编号的 Table 1–5；表格、交互模型与统一相机渲染中的 M1–M4 均严格来自 <code>astra_blender/models/M1–M4</code>。</p><div class="notice"><strong>实验边界：</strong>一次工程建模运行；隐藏结构、材质与光照包含推断。M1 无原生米制尺度；仅在相机可验证时提供 GT 相机辅助 Sim(3) 诊断，否则标为不可评。M2–M4 使用一次刚性 SE(3)、scale=1。审查遗留问题随模型保留。</div><h2 id="figure15">Figure 15. 同一组输入检查视角</h2><div class="strip"><figure><img alt="建模输入采样 0" src="views/source/000.jpg"/><figcaption>Figure 15(a). 输入采样 0</figcaption></figure><figure><img alt="建模输入采样 45" src="views/source/045.jpg"/><figcaption>Figure 15(b). 输入采样 45</figcaption></figure><figure><img alt="建模输入采样 90" src="views/source/090.jpg"/><figcaption>Figure 15(c). 输入采样 90</figcaption></figure><figure><img alt="建模输入采样 135" src="views/source/135.jpg"/><figcaption>Figure 15(d). 输入采样 135</figcaption></figure><figure><img alt="建模输入采样 179" src="views/source/179.jpg"/><figcaption>Figure 15(e). 输入采样 179</figcaption></figure></div><h2 id="models">四套可编辑模型</h2><p>拖动旋转、滚轮缩放；默认预览隐藏围护结构，可切换完整模型。若三维加载受网络影响，可直接下载 GLB 或 Blender 文件。图片口径标在每张模型卡中；相机不可验证的 M1 仅展示作者输入对照。</p><div class="grid"><article class="model-card"><h3>M1 · 纯视觉 + Astra</h3><figure id="figure16"><model-viewer alt="M1 可交互语义模型" camera-controls="" environment-image="neutral" exposure="1" id="viewer-M1" shadow-intensity="0.5" src="models/M1/preview.glb" touch-action="pan-y"></model-viewer><figcaption>Figure 16. M1 可交互语义模型（室内预览 / 完整模型）</figcaption></figure><p><button data-model="models/M1/preview.glb" data-viewer="viewer-M1" type="button">室内预览</button> <button data-model="models/M1/scene.glb" data-viewer="viewer-M1" type="button">完整模型</button></p><small>室内预览省略屋顶和围护墙面；评分和原始下载使用完整模型。</small><p>质量状态：limited；独立复审：LIMITED</p><p><a href="models/M1/scene.glb">GLB</a> · <a href="models/M1/scene.blend">Blender</a> · <a href="models/M1/source_and_evidence.zip">程序、测量、审查与证据</a> · <a href="models/M1/modelling_manifest.json">Manifest</a></p><details><summary>未解决问题与限制</summary><pre>[
+  {
+    "id": "M1-I01",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "cameras / mirror_0..9 / seat_S1..5 / table_south",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "Foreground south furniture and right-wall mirrors now enter the forward views. Composition remains materially wrong: frame 0 shows much more foreground furniture; frames 45/179 show substantially more mirror cluster; frame 135 shows a wider, separated north seating arrangement and changed floor/wall perspective; frame 90 has changed planter/wall/column proportions. Current author-picked mirror_smalltop residuals are 178.25, 153.85 and 188.65 pixels at 45,135,179. These are recomputed conditional landmark errors, not independent pixel measurements.",
+    "recommended_action": "Jointly fit architectural boundaries, mirror centers and furniture silhouettes across all five frames, retaining invalid-for-metric-evaluation cameras.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "high"
+  },
+  {
+    "id": "M1-I02",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "plant_glass_north / column_1",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "North bowl position improves: grass_N residuals are 3.92,4.29,26.95,36.79 pixels at 0,45,135,179. However, the final render has a shallow wide bowl with sparse radial blades and exposed dark soil; RGB has a fuller dense tuft and deeper-looking bowl. In 45/179 the column/bowl grouping still differs; column_base residuals are 69.20/60.33 pixels.",
+    "recommended_action": "Retain the positional improvement while fitting bowl depth, tuft envelope and column alignment in multiple frames.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "medium"
+  },
+  {
+    "id": "M1-I03",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "wall_east_main / wall_east_recess / elevator_wall_east_main_0 / elevator_wall_east_main_1 / elevator_wall_east_recess_0",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "Confirmed topology repair: passage_south replaces the closed south leaf, nine rays at y=4.4/4.8/5.2 and z=0.3/1.0/1.8 travel from x=7.0 to8.6 without a hit; no closed-door leaf intersects an east-wall panel in the targeted box test. Door semantics and clear jamb splits exist. Visual placement/width remain approximate: at frame90 the wall opening is a narrow dark strip, and at45/179 broad source metal-door surfaces are not reproduced.",
+    "recommended_action": "Keep the repaired topology; refine projected jamb positions and door widths from RGB. Unseen passage depth remains an assumption.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "medium"
+  },
+  {
+    "id": "M1-I05",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "seat_N3 / seat_N4 / seat_N5 / seat_N6 / table_north / table_south",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "The circular cushion test now reports no penetrations greater than0.025 inferred units. Both table minima are z0.011999995 against inset top0.012, resolving the prior unsupported gap. Visual modular shape is unresolved: frames0/45/135/179 show separated cylindrical stools and straight-backed chairs instead of the tightly fitted curved source group. Seat feet still reach z0, a0.012 inset penetration, a minor support approximation.",
+    "recommended_action": "Preserve support/contact repairs while fitting cushion outlines and modular boundaries; do not restore intersecting cylinders.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "medium"
+  },
+  {
+    "id": "M1-I06",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "pendant_0..19 / ceiling_slats_glass / ceiling_slats_wall",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "Actual pendant components now include woven_underside geometry and final renders show some added underside detail. The source fixtures remain much shallower and more intricately patterned; frames45/135/179 show major differences in centers, diameters and ceiling-band layout, while the model reads as repeated concentric bowls.",
+    "recommended_action": "Fit identifiable fixture silhouettes and centers before refining visible underside relief; keep correspondence/count uncertainty explicit.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "medium"
+  },
+  {
+    "id": "M1-I07",
+    "status": "UNRESOLVED",
+    "object_id": "floor_black_inset / floor_stone / wall_north / wall_east_main / lighting",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "All five comparisons lack the strong fine patterned floor highlights/reflections of RGB. The final black inset is a smooth dark mirror with large furniture/window reflections; actual material roughness is0.055 and has no normal-detail nodes. Oak and pale stone also appear flatter and brighter. RGB alone does not determine whether the missing pattern originates in surface relief, reflected ceiling geometry, or lighting.",
+    "recommended_action": "Treat floor/fixture/lighting appearance jointly; match reflection structure and broad tones without baking input imagery.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "high"
+  },
+  {
+    "id": "M1-I08",
+    "status": "PARTIALLY_FIXED",
+    "object_id": "planter_north_left / planter_north_right",
+    "evidence_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "description": "Vegetation was shortened and densified (current planter maxima about z1.57/1.58), but final frames0/45/135/179 form low thick yellow leaf bands instead of the source airy fine branches. Frame90 has overly large smooth planter fronts and dense foliage, with different front silhouettes/spacing.",
+    "recommended_action": "Fit planter bodies separately from branch/leaf envelopes using forward and reverse views; retain inferred hidden branches.",
+    "evidence_type": "current_visual_comparison_and_targeted_artifact_checks",
+    "severity": "medium"
+  },
+  {
+    "id": "M1-F09",
+    "severity": "low",
+    "object_id": "review provenance records",
+    "evidence_frames": [],
+    "evidence_type": "observed_record_gap",
+    "description": "No standalone issue-by-issue author response was found. The v2 repair script and iteration description document actions, but input_access_log.json does not list v2 repair/review commands. The manifest still says independent_review=pending. No unauthorized input evidence was found in the inspected records.",
+    "recommended_action": "Carry this final hash/status forward and update author repair/access provenance during any subsequent coordinator freeze process."
+  }
+]</pre></details><p><small>作者假设相机的输入对照；相机未验证，不作为 GT 评测</small></p><div class="strip"><figure id="figure17a"><img alt="M1 作者假设相机检查，不是GT评测" loading="lazy" src="views/M1/compare_v2_0000.jpg"/><figcaption>Figure 17(a). M1 输入 RGB 与假设相机渲染对照，采样 0</figcaption></figure><figure id="figure17b"><img alt="M1 作者假设相机检查，不是GT评测" loading="lazy" src="views/M1/compare_v2_0045.jpg"/><figcaption>Figure 17(b). M1 输入 RGB 与假设相机渲染对照，采样 45</figcaption></figure><figure id="figure17c"><img alt="M1 作者假设相机检查，不是GT评测" loading="lazy" src="views/M1/compare_v2_0090.jpg"/><figcaption>Figure 17(c). M1 输入 RGB 与假设相机渲染对照，采样 90</figcaption></figure><figure id="figure17d"><img alt="M1 作者假设相机检查，不是GT评测" loading="lazy" src="views/M1/compare_v2_0135.jpg"/><figcaption>Figure 17(d). M1 输入 RGB 与假设相机渲染对照，采样 135</figcaption></figure><figure id="figure17e"><img alt="M1 作者假设相机检查，不是GT评测" loading="lazy" src="views/M1/compare_v2_0179.jpg"/><figcaption>Figure 17(e). M1 输入 RGB 与假设相机渲染对照，采样 179</figcaption></figure></div></article><article class="model-card"><h3>M2 · ViPE + DA3 + Astra</h3><figure id="figure18"><model-viewer alt="M2 可交互语义模型" camera-controls="" environment-image="neutral" exposure="1" id="viewer-M2" shadow-intensity="0.5" src="models/M2/preview.glb" touch-action="pan-y"></model-viewer><figcaption>Figure 18. M2 可交互语义模型（室内预览 / 完整模型）</figcaption></figure><p><button data-model="models/M2/preview.glb" data-viewer="viewer-M2" type="button">室内预览</button> <button data-model="models/M2/scene.glb" data-viewer="viewer-M2" type="button">完整模型</button></p><small>室内预览省略屋顶和围护墙面；评分和原始下载使用完整模型。</small><p>质量状态：limited；独立复审：LIMITED</p><p><a href="models/M2/scene.glb">GLB</a> · <a href="models/M2/scene.blend">Blender</a> · <a href="models/M2/source_and_evidence.zip">程序、测量、审查与证据</a> · <a href="models/M2/modelling_manifest.json">Manifest</a></p><details><summary>未解决问题与限制</summary><pre>[
+  "Forward views still show shifted furniture and imperfect backrest contours. No camera or global scale changes made.",
+  "Observed repeated structured floor reflection texture remains unmatched; walls still appear flatter/paler than input.",
+  "Yellow sprigs now sparser than source in places; grass/planter silhouette and exact plant species remain approximate.",
+  "Pendant constellation, apparent diameters and suspension heights remain visibly mismatched. Full joint projection fit deferred; weave remains inferred.",
+  "DA3 near-static windows have gross metric scale inconsistencies; native poses and scale preserved.",
+  "Unseen geometry, thickness, joints, materials, illumination and physical coefficients inferred."
+]</pre></details><p><small>冻结后统一 GT 相机渲染</small></p><div class="strip"><figure id="figure19a"><img alt="M2 冻结后统一相机，采样 0" loading="lazy" src="views/M2/000.png"/><figcaption>Figure 19(a). M2 统一 GT 相机渲染，采样 0</figcaption></figure><figure id="figure19b"><img alt="M2 冻结后统一相机，采样 45" loading="lazy" src="views/M2/045.png"/><figcaption>Figure 19(b). M2 统一 GT 相机渲染，采样 45</figcaption></figure><figure id="figure19c"><img alt="M2 冻结后统一相机，采样 90" loading="lazy" src="views/M2/090.png"/><figcaption>Figure 19(c). M2 统一 GT 相机渲染，采样 90</figcaption></figure><figure id="figure19d"><img alt="M2 冻结后统一相机，采样 135" loading="lazy" src="views/M2/135.png"/><figcaption>Figure 19(d). M2 统一 GT 相机渲染，采样 135</figcaption></figure><figure id="figure19e"><img alt="M2 冻结后统一相机，采样 179" loading="lazy" src="views/M2/179.png"/><figcaption>Figure 19(e). M2 统一 GT 相机渲染，采样 179</figcaption></figure></div></article><article class="model-card"><h3>M3 · ORB-SLAM3 + DA3 + Astra</h3><figure id="figure20"><model-viewer alt="M3 可交互语义模型" camera-controls="" environment-image="neutral" exposure="1" id="viewer-M3" shadow-intensity="0.5" src="models/M3/preview.glb" touch-action="pan-y"></model-viewer><figcaption>Figure 20. M3 可交互语义模型（室内预览 / 完整模型）</figcaption></figure><p><button data-model="models/M3/preview.glb" data-viewer="viewer-M3" type="button">室内预览</button> <button data-model="models/M3/scene.glb" data-viewer="viewer-M3" type="button">完整模型</button></p><small>室内预览省略屋顶和围护墙面；评分和原始下载使用完整模型。</small><p>质量状态：limited；独立复审：LIMITED</p><p><a href="models/M3/scene.glb">GLB</a> · <a href="models/M3/scene.blend">Blender</a> · <a href="models/M3/source_and_evidence.zip">程序、测量、审查与证据</a> · <a href="models/M3/modelling_manifest.json">Manifest</a></p><details><summary>未解决问题与限制</summary><pre>[
+  "M3 DA3 metric scale collapses on stationary samples; sample 179 median depth ~0.5m conflicts with stable same-view ~6m. No scale correction was applied.",
+  "Far wall and glass positions vary by roughly 0.3–1.2m across stable depth frames.",
+  "Desk far-end dimensions, hidden backs, joinery, material parameters, and exact light placement inferred.",
+  "Plants reconstructed as semantic procedural foliage; leaf topology is assumed.",
+  "Two near seating modules and lamp placements are occluded across many views.",
+  "M3-I01: Clipped contact silhouettes are inferred. Original center/size projection discrepancies remain; no exhaustive collision check or independent resolution claimed.",
+  "M3-I02: Door-state evidence is the geometry author’s recorded RGB interpretation. This completion author did not independently fit leaf angles or inspect unseen space beyond the wall; the doorway remains visually approximate.",
+  "M3-I03: All five comparisons retain smooth opaque pendant undersides and pale ceiling slats instead of prominent weave and dark bands.",
+  "M3-I04: Repeated floor highlight structure and pendant reflections remain poorly matched; floor/wall appearance is washed out and panel/grain contrast weak.",
+  "M3-I05: Troughs remain sparse, mirror-vase foliage broad and spiky, and reception crowns too faint compared with the source RGB panels.",
+  "M3-I06: Furniture size/placement, trough separation and column width still disagree visually, particularly in views 0/45/90/135.",
+  "M3-I07: Relation semantics were not independently rechecked here. Historical commands are copied literally from the supplied record, not independently recovered from its provenance source. Historical timing gaps are not invented; iteration_log.json is preserved, with final budget accounting supplied here."
+]</pre></details><p><small>冻结后统一 GT 相机渲染</small></p><div class="strip"><figure id="figure21a"><img alt="M3 冻结后统一相机，采样 0" loading="lazy" src="views/M3/000.png"/><figcaption>Figure 21(a). M3 统一 GT 相机渲染，采样 0</figcaption></figure><figure id="figure21b"><img alt="M3 冻结后统一相机，采样 45" loading="lazy" src="views/M3/045.png"/><figcaption>Figure 21(b). M3 统一 GT 相机渲染，采样 45</figcaption></figure><figure id="figure21c"><img alt="M3 冻结后统一相机，采样 90" loading="lazy" src="views/M3/090.png"/><figcaption>Figure 21(c). M3 统一 GT 相机渲染，采样 90</figcaption></figure><figure id="figure21d"><img alt="M3 冻结后统一相机，采样 135" loading="lazy" src="views/M3/135.png"/><figcaption>Figure 21(d). M3 统一 GT 相机渲染，采样 135</figcaption></figure><figure id="figure21e"><img alt="M3 冻结后统一相机，采样 179" loading="lazy" src="views/M3/179.png"/><figcaption>Figure 21(e). M3 统一 GT 相机渲染，采样 179</figcaption></figure></div></article><article class="model-card"><h3>M4 · GT pose + DA3 + Astra</h3>
+<figure id="figure22"><model-viewer alt="M4 revision 4 可交互语义模型" camera-controls="" environment-image="neutral" exposure="1" id="viewer-M4" shadow-intensity="0.5" src="models/M4/preview.glb" touch-action="pan-y"></model-viewer>
+<figcaption>Figure 22. M4 revision 4 可交互语义模型</figcaption></figure>
+<p><button data-model="models/M4/preview.glb" data-viewer="viewer-M4" type="button">交互预览</button>
+<button data-model="models/M4/scene.glb" data-viewer="viewer-M4" type="button">完整模型</button></p>
+<p>冻结版本：revision 4；状态：<strong>frozen_for_independent_GT_evaluation</strong>。
+模型使用米、Z-up、identity input/model transform；包含 74 个语义对象、37 个静态 AABB
+碰撞代理和 180 个输入相机。BLEND SHA-256：
+<code>cc6cb605246a255d94e36b9dc3f8b91d5a292b047470bc0ff75b8a5c404b0cfe</code>。</p>
+<p><a href="models/M4/scene.glb">GLB</a> · <a href="models/M4/scene.blend">Blender</a> ·
+<a href="models/M4/source_and_evidence_compact.zip">程序、清单与审查证据</a> ·
+<a href="models/M4/modelling_manifest.json">Manifest</a> ·
+<a href="models/M4/final_freeze.json">Freeze record</a></p>
+<details><summary>审查边界与限制</summary><p>独立审查员检查 revision 2 后要求修改；
+建模器在 revision 3/4 回应并冻结。该干净审查未对 revision 4 重新执行完整视觉复审，
+因此这里不宣称最终视觉质量通过。材质、隐藏结构、植物细节和物理参数仍包含推断；
+碰撞体是静态 AABB 代理。</p></details>
+<p><small>冻结后统一 GT 相机渲染</small></p><div class="strip">
+<figure id="figure23a"><img alt="M4 revision 4 统一 GT 相机，采样 0" loading="lazy" src="views/M4/000.png"/><figcaption>Figure 23(a). M4 统一 GT 相机渲染，采样 0</figcaption></figure>
+<figure id="figure23b"><img alt="M4 revision 4 统一 GT 相机，采样 45" loading="lazy" src="views/M4/045.png"/><figcaption>Figure 23(b). M4 统一 GT 相机渲染，采样 45</figcaption></figure>
+<figure id="figure23c"><img alt="M4 revision 4 统一 GT 相机，采样 90" loading="lazy" src="views/M4/090.png"/><figcaption>Figure 23(c). M4 统一 GT 相机渲染，采样 90</figcaption></figure>
+<figure id="figure23d"><img alt="M4 revision 4 统一 GT 相机，采样 135" loading="lazy" src="views/M4/135.png"/><figcaption>Figure 23(d). M4 统一 GT 相机渲染，采样 135</figcaption></figure>
+<figure id="figure23e"><img alt="M4 revision 4 统一 GT 相机，采样 179" loading="lazy" src="views/M4/179.png"/><figcaption>Figure 23(e). M4 统一 GT 相机渲染，采样 179</figcaption></figure>
+</div></article></div>
+<section id="reference-protocol-evaluation"><p class="eyebrow">NEW ASTRA BLENDER RUN / METRICS ONLY</p><p class="notice"><strong>本轮指标已更新，模型暂未发布：</strong>原 Table 9/10/11 对应当前 Table 3/4/5。这三表使用按新版计划、固定 10 个检查视角重新建模并冻结的 M1–M4。页面其他表格、三维模型、模型下载和渲染图仍对应此前轮次，不代表本轮模型。本轮模型文件保存在本地。</p><p>M1 无足够可靠的冻结 RGB 相机对应，按新计划标为不可评；未沿用历史人工 GT 配准。</p><p>四组最终独立复审均为 LIMITED：技术与协议阻塞项已关闭，仍有布局、轮廓、材质或物理近似的质量限制。场景哈希、版本预算与遗留问题见下方来源记录。</p><h2>Table 3. 新版 Astra/Blender：双向表面距离（原 Table 9）</h2><p>模型表面按三角形面积采样 100,000 点；可观测 GT 从新生成的 180 帧有效射线命中中均匀采样 100,000 点，按观测频次加权。两方向均使用 BVH 最近三角面距离，单位米。</p><div class="scroll"><table id="table3"><caption>Table 3. 双向表面距离（本轮冻结模型）</caption><thead><tr><th>方法</th><th>Model → GT mean (m) ↓</th><th>Observed GT → model mean (m) ↓</th></tr></thead><tbody><tr><th>M1</th><td>N/A</td><td>N/A</td></tr><tr><th>M2</th><td>0.1547</td><td>0.1490</td></tr><tr><th>M3</th><td>0.2304</td><td>0.1841</td></tr><tr><th>M4</th><td>0.1998</td><td>0.1262</td></tr></tbody></table></div><h2>Table 4. 新版 Astra/Blender：五个建模视角外观一致性（原 Table 10）</h2><p>冻结后使用既定评测视角 0/36/72/108/144，统一 GT 相机渲染 640×480，CPU Cycles 16 samples。GT RGB 用 Lanczos 缩小；全图 PSNR、SSIM、LPIPS AlexNet v0.1，不裁剪、不遮罩、不拟合颜色或曝光。这五个评测视角与每版修订使用的十个检查视角不同。</p><div class="scroll"><table id="table4"><caption>Table 4. 五个建模视角外观一致性（本轮冻结模型）</caption><thead><tr><th>方法</th><th>PSNR (dB) ↑</th><th>SSIM ↑</th><th>LPIPS ↓</th></tr></thead><tbody><tr><th>M1</th><td>N/A</td><td>N/A</td><td>N/A</td></tr><tr><th>M2</th><td>12.7912</td><td>0.3703</td><td>0.5409</td></tr><tr><th>M3</th><td>11.7982</td><td>0.3833</td><td>0.5511</td></tr><tr><th>M4</th><td>12.9371</td><td>0.3611</td><td>0.4849</td></tr></tbody></table></div><h2>Table 5. 新版 Astra/Blender：同轨迹扰动新视角深度（原 Table 11）</h2><p>冻结后在同一轨迹上生成 20 个确定性扰动相机，每视角随机固定 5,000 像素；原始 GT 网格与冻结模型均使用 optical-Z 射线深度。GT 有效域 0.1–30 m，固定域覆盖率，缺失预测记 30 m 惩罚。不是跨场景泛化。</p><div class="scroll"><table id="table5"><caption>Table 5. 同轨迹扰动新视角深度（本轮冻结模型）</caption><thead><tr><th>方法</th><th>AbsRel ↓</th><th>RMSE (m) ↓</th><th>Coverage ↑</th><th>Penalized MAE (m) ↓</th></tr></thead><tbody><tr><th>M1</th><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr><tr><th>M2</th><td>8.25%</td><td>1.1009</td><td>100.00%</td><td>0.5482</td></tr><tr><th>M3</th><td>8.99%</td><td>1.2060</td><td>99.92%</td><td>0.6255</td></tr><tr><th>M4</th><td>6.13%</td><td>0.9538</td><td>99.98%</td><td>0.4194</td></tr></tbody></table></div><p><a href="results/astra_blender2/tables_4_6.json">原 Table 9/11 完整指标</a> · <a href="results/astra_blender2/table9_means.csv">原 Table 9 CSV</a> · <a href="results/astra_blender2/table11_means.csv">原 Table 11 CSV</a> · <a href="results/astra_blender2/table5_appearance.json">原 Table 10 完整指标</a> · <a href="results/astra_blender2/table5_appearance_per_view.csv">原 Table 10 逐视角 CSV</a> · <a href="results/astra_blender2/model_depth_180_500.json">180/500 模型深度评测</a> · <a href="results/astra_blender2/numeric_evidence.zip">数值证据 ZIP</a> · <a href="results/astra_blender2/model_provenance.json">模型哈希与预算记录</a> · <a href="docs/ASTRA_BLENDER2_METRICS.md">口径与限制</a> · <a href="docs/plan_astra_blender2.md">新版计划与本轮记录</a></p></section>
+<h2>逐帧指标与模型深度下载</h2><ul><li>M2 · modeling_180: <a href="results/M2/modeling_180/metrics.json">完整指标 JSON</a> · <a href="results/M2/modeling_180/per_frame.csv">逐帧 CSV</a> · <a href="results/M2/modeling_180/depth.npz">模型射线深度 NPZ</a></li><li>M2 · eval_500: <a href="results/M2/eval_500/metrics.json">完整指标 JSON</a> · <a href="results/M2/eval_500/per_frame.csv">逐帧 CSV</a> · <a href="results/M2/eval_500/depth.npz">模型射线深度 NPZ</a></li><li>M3 · modeling_180: <a href="results/M3/modeling_180/metrics.json">完整指标 JSON</a> · <a href="results/M3/modeling_180/per_frame.csv">逐帧 CSV</a> · <a href="results/M3/modeling_180/depth.npz">模型射线深度 NPZ</a></li><li>M3 · eval_500: <a href="results/M3/eval_500/metrics.json">完整指标 JSON</a> · <a href="results/M3/eval_500/per_frame.csv">逐帧 CSV</a> · <a href="results/M3/eval_500/depth.npz">模型射线深度 NPZ</a></li><li>M4 · modeling_180: <a href="results/M4/modeling_180/metrics.json">完整指标 JSON</a> · <a href="results/M4/modeling_180/per_frame.csv">逐帧 CSV</a> · <a href="results/M4/modeling_180/depth.npz">模型射线深度 NPZ</a></li><li>M4 · eval_500: <a href="results/M4/eval_500/metrics.json">完整指标 JSON</a> · <a href="results/M4/eval_500/per_frame.csv">逐帧 CSV</a> · <a href="results/M4/eval_500/depth.npz">模型射线深度 NPZ</a></li></ul><h2>证据与复现</h2><p><a href="results/run_summary.json">模型规模、预算与可用调用记录</a> · <a href="results/input_audit.json">输入审计</a> · <a href="results/run_contract.json">统一预算与协议</a> · <a href="docs/REPRODUCING.md">复现说明</a> · <a href="release_verification.json">发布完整性检查</a></p><p>输入均为同一场景的 180 张 RGB；额外 500 张只用于冻结后评测。模型访问隔离采用物理副本、独立上下文和工具访问记录，未强制文件系统沙箱。M3/M4 第二版修订会话曾在进程列表中意外看到其他会话命令参数。第二版因此被拒绝，未用于最终评分；最终第三版由新独立上下文从原始初版材料重新修订，未读取第二版代码或模型，并重新接受独立复审。<a href="results/process_scope_incident.json">隔离事件与补救记录</a>。源程序可重建几何，不保证重新调用模型产生相同推理。</p></section><section id="evidence">
+<p class="eyebrow">07 / EVIDENCE</p>
+<h2>冻结数据与复现</h2>
+<div class="cards">
+<article><h3>输入</h3><p>4,499 RGB 帧、44,999 IMU 样本，25 Hz / 250 Hz；同一 Isaac 仿真时钟。</p></article>
+<article><h3>共同区间</h3><p>源帧 245–4498；位姿使用 4,254 个严格共同时间戳，深度使用 180 个建模帧与互斥的 500 个评测帧。</p></article>
+<article><h3>数据仓库</h3><p><a href="https://huggingface.co/datasets/Ooliva/world-lobby-exps-new">打开私有 Dataset</a>，下载视频、轨迹、DA3 深度、GT optical-Z、逐帧指标与复现代码。</p></article>
+</div>
+</section>
+</main>
+<footer>World Lobby · frozen outputs · private release</footer>
+<script src="model_report.js"></script></body>
+</html>

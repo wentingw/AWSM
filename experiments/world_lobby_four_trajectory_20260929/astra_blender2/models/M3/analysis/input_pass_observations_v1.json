@@ -1,0 +1,404 @@
+{
+  "pass_index": 1,
+  "frames": 180,
+  "source": "Existing matching-hash checks/input_v1 depth/report; numerical summaries only, no new BVH pass",
+  "quantiles": [
+    {
+      "sample_index": 0,
+      "input_da3_quantiles_m": [
+        3.356226921081543,
+        5.678110361099243,
+        14.542528247833253
+      ],
+      "model_quantiles_m": [
+        3.4401093244552614,
+        5.888803005218506,
+        14.734425735473636
+      ]
+    },
+    {
+      "sample_index": 16,
+      "input_da3_quantiles_m": [
+        0.7527794003486633,
+        1.4154821634292603,
+        3.5592858552932753
+      ],
+      "model_quantiles_m": [
+        3.2494644641876222,
+        5.961542844772339,
+        14.813255023956305
+      ]
+    },
+    {
+      "sample_index": 17,
+      "input_da3_quantiles_m": [
+        0.40246138274669646,
+        0.7558094561100006,
+        1.8824851036071815
+      ],
+      "model_quantiles_m": [
+        3.2494216918945313,
+        5.961949348449707,
+        14.807222652435303
+      ]
+    },
+    {
+      "sample_index": 33,
+      "input_da3_quantiles_m": [
+        4.109007120132446,
+        7.304428815841675,
+        18.236918258666993
+      ],
+      "model_quantiles_m": [
+        3.361846613883972,
+        5.93918776512146,
+        14.777181339263917
+      ]
+    },
+    {
+      "sample_index": 61,
+      "input_da3_quantiles_m": [
+        3.191532111167908,
+        5.288985013961792,
+        9.097500610351563
+      ],
+      "model_quantiles_m": [
+        3.025140881538391,
+        5.512153148651123,
+        9.183978271484376
+      ]
+    },
+    {
+      "sample_index": 82,
+      "input_da3_quantiles_m": [
+        3.4004559755325316,
+        6.970855474472046,
+        10.090211868286133
+      ],
+      "model_quantiles_m": [
+        3.6420232534408568,
+        7.03017783164978,
+        10.811877727508547
+      ]
+    },
+    {
+      "sample_index": 108,
+      "input_da3_quantiles_m": [
+        3.5389259338378904,
+        6.969799757003784,
+        9.357626342773438
+      ],
+      "model_quantiles_m": [
+        3.5901339054107666,
+        7.1052656173706055,
+        9.509405136108398
+      ]
+    },
+    {
+      "sample_index": 129,
+      "input_da3_quantiles_m": [
+        3.5935230016708375,
+        5.345839738845825,
+        10.338468647003175
+      ],
+      "model_quantiles_m": [
+        4.107361936569214,
+        5.9699625968933105,
+        12.445265197753905
+      ]
+    },
+    {
+      "sample_index": 155,
+      "input_da3_quantiles_m": [
+        3.5761545181274412,
+        6.884945392608643,
+        18.042468452453623
+      ],
+      "model_quantiles_m": [
+        3.094056487083435,
+        5.987462282180786,
+        14.757191658020023
+      ]
+    },
+    {
+      "sample_index": 167,
+      "input_da3_quantiles_m": [
+        11.517287063598634,
+        21.280466079711914,
+        53.366451644897495
+      ],
+      "model_quantiles_m": [
+        3.2424179553985595,
+        5.960514068603516,
+        14.793951225280761
+      ]
+    },
+    {
+      "sample_index": 168,
+      "input_da3_quantiles_m": [
+        11.519679927825928,
+        21.290103912353516,
+        53.42157325744629
+      ],
+      "model_quantiles_m": [
+        3.24512894153595,
+        5.960608243942261,
+        14.814221763610846
+      ]
+    },
+    {
+      "sample_index": 171,
+      "input_da3_quantiles_m": [
+        0.23648033738136293,
+        0.43997226655483246,
+        1.099201273918152
+      ],
+      "model_quantiles_m": [
+        3.250155472755432,
+        5.960009813308716,
+        14.81223945617676
+      ]
+    },
+    {
+      "sample_index": 179,
+      "input_da3_quantiles_m": [
+        0.2676969289779663,
+        0.4996892064809799,
+        1.246549963951111
+      ],
+      "model_quantiles_m": [
+        3.250865030288696,
+        5.961703300476074,
+        14.815709304809568
+      ]
+    }
+  ],
+  "worst_mae": [
+    {
+      "sample_index": 168,
+      "timestamp_ns": 408760019415,
+      "pixels_domain": 14813,
+      "pixels_valid": 14805,
+      "valid_coverage": 0.9994599338418957,
+      "invalid_rate": 0.0005400661581043131,
+      "mae_m": 13.177012621213976,
+      "rmse_m": 13.792407467823349,
+      "absrel": 0.7070018169554664,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.007835190813914218,
+      "missing_penalty_mae_m": 13.186098147375475
+    },
+    {
+      "sample_index": 167,
+      "timestamp_ns": 407800019369,
+      "pixels_domain": 14764,
+      "pixels_valid": 14754,
+      "valid_coverage": 0.9993226767813601,
+      "invalid_rate": 0.0006773232186398914,
+      "mae_m": 13.150746656146671,
+      "rmse_m": 13.76193588219371,
+      "absrel": 0.7070786430062664,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0075233834892232615,
+      "missing_penalty_mae_m": 13.16215904665321
+    },
+    {
+      "sample_index": 171,
+      "timestamp_ns": 411600019550,
+      "pixels_domain": 19200,
+      "pixels_valid": 19192,
+      "valid_coverage": 0.9995833333333334,
+      "invalid_rate": 0.0004166666666666208,
+      "mae_m": 6.793967004323583,
+      "rmse_m": 7.810457670951593,
+      "absrel": 13.250526834940608,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.803636184738448
+    },
+    {
+      "sample_index": 172,
+      "timestamp_ns": 412560019596,
+      "pixels_domain": 19200,
+      "pixels_valid": 19189,
+      "valid_coverage": 0.9994270833333333,
+      "invalid_rate": 0.0005729166666667007,
+      "mae_m": 6.7938636911810795,
+      "rmse_m": 7.809997151392337,
+      "absrel": 13.251382903882343,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.80715887344134
+    },
+    {
+      "sample_index": 178,
+      "timestamp_ns": 418240019865,
+      "pixels_domain": 19200,
+      "pixels_valid": 19188,
+      "valid_coverage": 0.999375,
+      "invalid_rate": 0.0006249999999999867,
+      "mae_m": 6.724674499461833,
+      "rmse_m": 7.732840192469972,
+      "absrel": 11.523983329050749,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.739221577899669
+    },
+    {
+      "sample_index": 177,
+      "timestamp_ns": 417280019820,
+      "pixels_domain": 19200,
+      "pixels_valid": 19188,
+      "valid_coverage": 0.999375,
+      "invalid_rate": 0.0006249999999999867,
+      "mae_m": 6.72454756527713,
+      "rmse_m": 7.732555956555391,
+      "absrel": 11.527400096777418,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.739094723048832
+    },
+    {
+      "sample_index": 179,
+      "timestamp_ns": 419200019911,
+      "pixels_domain": 19200,
+      "pixels_valid": 19188,
+      "valid_coverage": 0.999375,
+      "invalid_rate": 0.0006249999999999867,
+      "mae_m": 6.723391693421194,
+      "rmse_m": 7.73087337266827,
+      "absrel": 11.523768104113795,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.737939573612806
+    },
+    {
+      "sample_index": 173,
+      "timestamp_ns": 413480019639,
+      "pixels_domain": 19200,
+      "pixels_valid": 19190,
+      "valid_coverage": 0.9994791666666667,
+      "invalid_rate": 0.0005208333333333037,
+      "mae_m": 6.6413353965671496,
+      "rmse_m": 7.6389339386824755,
+      "absrel": 9.985722258432247,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.653501367714771
+    },
+    {
+      "sample_index": 174,
+      "timestamp_ns": 414440019685,
+      "pixels_domain": 19200,
+      "pixels_valid": 19188,
+      "valid_coverage": 0.999375,
+      "invalid_rate": 0.0006249999999999867,
+      "mae_m": 6.640226524627514,
+      "rmse_m": 7.637629366476748,
+      "absrel": 9.983878657468313,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.654826383049621
+    },
+    {
+      "sample_index": 176,
+      "timestamp_ns": 416360019776,
+      "pixels_domain": 19200,
+      "pixels_valid": 19190,
+      "valid_coverage": 0.9994791666666667,
+      "invalid_rate": 0.0005208333333333037,
+      "mae_m": 6.528384341604859,
+      "rmse_m": 7.511814799155184,
+      "absrel": 8.415154178596541,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.540609141426939
+    },
+    {
+      "sample_index": 175,
+      "timestamp_ns": 415400019730,
+      "pixels_domain": 19200,
+      "pixels_valid": 19189,
+      "valid_coverage": 0.9994270833333333,
+      "invalid_rate": 0.0005729166666667007,
+      "mae_m": 6.527672144498555,
+      "rmse_m": 7.510409820917742,
+      "absrel": 8.413919579729773,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.541119832332436
+    },
+    {
+      "sample_index": 17,
+      "timestamp_ns": 265240012598,
+      "pixels_domain": 19200,
+      "pixels_valid": 19190,
+      "valid_coverage": 0.9994791666666667,
+      "invalid_rate": 0.0005208333333333037,
+      "mae_m": 6.4205122248386015,
+      "rmse_m": 7.3894564638555735,
+      "absrel": 7.293455882479149,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.432793208054831
+    },
+    {
+      "sample_index": 18,
+      "timestamp_ns": 266200012644,
+      "pixels_domain": 19200,
+      "pixels_valid": 19189,
+      "valid_coverage": 0.9994270833333333,
+      "invalid_rate": 0.0005729166666667007,
+      "mae_m": 6.418975642944361,
+      "rmse_m": 7.3864765158349455,
+      "absrel": 7.2958543777130815,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 6.432485604815591
+    },
+    {
+      "sample_index": 16,
+      "timestamp_ns": 264280012553,
+      "pixels_domain": 19200,
+      "pixels_valid": 19190,
+      "valid_coverage": 0.9994791666666667,
+      "invalid_rate": 0.0005208333333333037,
+      "mae_m": 5.635046677870712,
+      "rmse_m": 6.509019994146365,
+      "absrel": 3.3992123413446964,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 5.647736757725987
+    },
+    {
+      "sample_index": 15,
+      "timestamp_ns": 263320012507,
+      "pixels_domain": 19200,
+      "pixels_valid": 19188,
+      "valid_coverage": 0.999375,
+      "invalid_rate": 0.0006249999999999867,
+      "mae_m": 5.6313086935721355,
+      "rmse_m": 6.504134730932172,
+      "absrel": 3.3978560996308156,
+      "delta1": 0.0,
+      "delta2": 0.0,
+      "delta3": 0.0,
+      "missing_penalty_mae_m": 5.646539125638653
+    }
+  ],
+  "limitation": "Late input depth outliers dominate aggregate. Do not use whole-scene score alone to change geometry; reconcile individual semantic regions and RGB."
+}

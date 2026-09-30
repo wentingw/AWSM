@@ -1,0 +1,3190 @@
+{
+  "method_id": "M4",
+  "model_id": "gpt-6-astra",
+  "role": "REVISION AUTHOR ONLY",
+  "status": "ready_for_independent_review",
+  "quality_status": "LIMITED",
+  "final_candidate_version": 2,
+  "scene_blend_sha256": "a86c6656bfd7f3ff1435c037a48aecb1d503047b799d75c9fc5524baba5c5ec5",
+  "scene_glb_sha256": "a98c5f5a83776c2fb2a4d3a0635db5c6b8794994b49d15fa4fb6b3600823a31b",
+  "input_packet_sha256": "7e6f29df12774545c9d0a19c485f241d8c8716da024011a0b0124d8d77f793d2",
+  "review_addressed": "independent_review/initial_review.md",
+  "independent_final_review": "not performed by author; pending external reviewer",
+  "frozen": false,
+  "versions_built": 2,
+  "paired_render_count": 20,
+  "supplemental_paired_render_count": 0,
+  "input_bvh_pass_count": 3,
+  "input_bvh_passes": [
+    "checks/input_v1",
+    "checks/input_v2",
+    "checks/input_final"
+  ],
+  "same_geometry_final_pass_explanation": "Main repairs produced v2; after all ten comparisons and technical validation, v2 was retained as final. input_final is a separate actual180-frame BVH execution, not a copied directory. Geometry/material/scene hashes unchanged; exact depth arrays reproduce.",
+  "budgets_remaining": {
+    "full_versions": 3,
+    "paired_views": 30,
+    "input_bvh_passes": 0
+  },
+  "technical_validation": {
+    "semantic_objects": 80,
+    "semantic_components": 1059,
+    "component_names": "complete one-owner Blender/GLB coverage",
+    "exact_cameras": 180,
+    "geometry_scale": 1,
+    "model_from_input": "identity",
+    "mesh_blocker_validation": "no inward closed solids/inconsistent manifold edges/degenerate triangles in saved scene",
+    "solid_furniture_intersections": 0,
+    "door_apertures_clear_when_closed_leaf_parts_disabled": 5,
+    "finite_recess_clear": true,
+    "artifacts": "generic inspect_scene.py and validate_artifacts.py PASS"
+  },
+  "paired_consistency": {
+    "pixels_domain": 3049640,
+    "pixels_valid": 3049078,
+    "valid_coverage": 0.9998157159533584,
+    "invalid_rate": 0.00018428404664161402,
+    "mae_m": 0.7244385708975206,
+    "rmse_m": 1.1843167537790869,
+    "absrel": 0.10575137145939899,
+    "delta1": 0.8959760950687388,
+    "delta2": 0.9713359251550797,
+    "delta3": 0.9932714086028629,
+    "missing_penalty_mae_m": 0.7298335898253795
+  },
+  "final_full_input_consistency": {
+    "pixels_domain": 3390631,
+    "pixels_valid": 3390047,
+    "valid_coverage": 0.9998277606734558,
+    "invalid_rate": 0.00017223932654419905,
+    "mae_m": 1.3799596612468994,
+    "rmse_m": 2.9021645966891385,
+    "absrel": 0.8006707639307504,
+    "delta1": 0.7821788311489487,
+    "delta2": 0.8812957460471788,
+    "delta3": 0.9134020855758047,
+    "missing_penalty_mae_m": 1.3848891577205151
+  },
+  "metric_caveat": "Consistency with own predicted DA3 only, not truth or independent visual fidelity.",
+  "issue_responses": [
+    {
+      "id": "M4-I01",
+      "author_disposition": "RECORDS_PRESERVED",
+      "action": "v1 snapshots and completed handoff retained. v2 exact commands, one pre-export failed construction attempt, full check counts, geometry hashes and own validation recorded."
+    },
+    {
+      "id": "M4-I02",
+      "author_disposition": "REPAIRED_PENDING_INDEPENDENT_VERIFICATION",
+      "action": "Reverse desk shell faces; correct final chair-back cap winding, recalculate outward solid normals, remove degenerate-generating backrest bevel. Read-only saved-file audit finds no inconsistent edges, degenerate triangles or nonpositive closed volumes.",
+      "evidence": [
+        "checks/author_mesh_audit_v2.json",
+        "checks/saved_mesh_validation.json"
+      ],
+      "remaining": "Curved backs have less rounded corners; visual approximation."
+    },
+    {
+      "id": "M4-I03",
+      "author_disposition": "SOLID_OVERLAPS_REPAIRED_VISUAL_LIMITED",
+      "action": "Jointly refit all ten seat centers/radii/rotations and two main tables using RGB top rays plus clearance constraints. Conservative circle-envelope audit: minimum clearance 0.0053104m and no seat-seat or seat-table solid intersection.",
+      "evidence": [
+        "analysis/repair_changes_v2.json",
+        "checks/author_candidate_audit.json",
+        "analysis/spatial_residuals_v2.json"
+      ],
+      "remaining": "Source seat shapes, rotations and spacing imperfect. 129 seats_A mixed ROI MAE 0.326->0.396m worsens;155 seats_A 1.295->1.040m improves. Estimates not exact triangulation."
+    },
+    {
+      "id": "M4-I04",
+      "author_disposition": "PARTIALLY_REPAIRED_LIMITED",
+      "action": "Four-view missing mirror pendant fit;14 existing fixtures refit with two-view diffuser observations; six uncertain west fixtures added with own DA3 anchors and explicit in-room inference. Exposed underside weave geometry.",
+      "evidence": [
+        "analysis/repair_measurements_v2.json",
+        "analysis/repair_changes_v2.json",
+        "checks/v2/"
+      ],
+      "remaining": "Some correspondences have >5px reprojection error. West identities and heights inferred; two DA3 anchors crossed room boundary and were explicitly regularized. Pendant08 unchanged uncertain. Other near/middle lamps still displaced."
+    },
+    {
+      "id": "M4-I05",
+      "author_disposition": "REPAIRED_PENDING_INDEPENDENT_VERIFICATION",
+      "action": "West wall and east feature-return panels placed on +X room faces at +0.0975m offset. Actual82/91/100 comparisons now show exposed panels.",
+      "evidence": [
+        "checks/v2/0082_comparison.jpg",
+        "checks/v2/0091_comparison.jpg",
+        "checks/v2/0100_comparison.jpg"
+      ],
+      "remaining": "Panel joint layout and material remain approximate."
+    },
+    {
+      "id": "M4-I06",
+      "author_disposition": "PARTIALLY_REPAIRED_LIMITED",
+      "action": "Reduce shrub spread, leaf width and branch count; replace spiky mirror fern with rounded fine-leaf canopy. Keep pot centers and measured architecture.",
+      "remaining": "Shrubs still approximate. Mirror fern is too thin/flat and lacks convincing visible connecting stems; grass and reception trees remain simplified. Botanical detail inferred. No reflected DA3 used to duplicate plants.",
+      "evidence": [
+        "analysis/comparison_observations_v2.json",
+        "analysis/spatial_residuals_v2.json"
+      ]
+    },
+    {
+      "id": "M4-I07",
+      "author_disposition": "PROXY_AND_SUPPORT_REPAIRS_PENDING_INDEPENDENT_VERIFICATION",
+      "action": "Add inferred desk plinth and foot pads to inlay top z0.011. Component compound colliders replace semantic AABBs. Segment facade and backing around doors; separate closed leaves. Author aperture-volume test has no static obstruction in five door apertures when leaves disabled or in declared finite recess.",
+      "remaining": "Doors remain CLOSED as observed; exterior/interior destinations and articulation unknown. Corridor is declared finite inferred recess ending at y16.25. No dynamic simulation, exact collision hull or comprehensive assembly intersection sweep.",
+      "evidence": [
+        "colliders.json",
+        "checks/author_candidate_audit.json"
+      ]
+    },
+    {
+      "id": "M4-I08",
+      "author_disposition": "PARTIALLY_REPAIRED_LIMITED",
+      "action": "Add inferred regular metallic floor pattern, darker/wider frames, visible lamp underside weave, oak color grain and reduced diffuse lighting.",
+      "remaining": "Pattern is too uniform and reflection/lighting differ substantially. Source finish mechanism uncertain. Procedural Blender floor/oak shaders are not baked into GLB, which retains approximate base PBR materials.",
+      "evidence": [
+        "analysis/comparison_observations_v2.json",
+        "checks/v2/"
+      ]
+    },
+    {
+      "id": "M4-I09",
+      "author_disposition": "DOCUMENTED_INPUT_LIMITATION_RETAINED",
+      "action": "Retain identity transform, metric scale1, all180 exact packet cameras and unchanged prescribed depth domains. Keep conflicting end-wall/ceiling predictions and extreme DA3 frames. Final pass uses own DA3 only.",
+      "remaining": "Far-wall median signed residual remains -2.685m at33,+2.226m at129,-2.746m at155. Frames177..179 median own DA3 about0.0666m. No attempt to distort layout to fit global prediction score.",
+      "evidence": [
+        "analysis/full_input_diagnostics_v2.json",
+        "analysis/spatial_residuals_v2.json",
+        "checks/input_final/report.json"
+      ]
+    }
+  ],
+  "parameter_adjustments": [
+    {
+      "object_id": "pendant_00",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          16.230653002022354,
+          23.718869948147855,
+          4.5
+        ],
+        "radius": 0.7675980332686908
+      },
+      "after": {
+        "center": [
+          15.902653834826086,
+          23.583765550657034,
+          4.185370331661467
+        ],
+        "radius": 0.715
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            359,
+            73
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              169,
+              26,
+              189,
+              46
+            ],
+            "median_signed_m": 1.38436519175032,
+            "mae_m": 1.3579764045555687
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            256,
+            126
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              118,
+              53,
+              138,
+              73
+            ],
+            "median_signed_m": 1.4722725584693,
+            "mae_m": 1.329268321960822
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_01",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          18.593636174151975,
+          23.42342581281851,
+          4.5
+        ],
+        "radius": 0.7047611204198899
+      },
+      "after": {
+        "center": [
+          17.942740610293214,
+          23.302493399778957,
+          4.19814970681969
+        ],
+        "radius": 0.65
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            462,
+            153
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              221,
+              66,
+              241,
+              86
+            ],
+            "median_signed_m": 0.46881100650171836,
+            "mae_m": 1.7011867691762756
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            538,
+            211
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              259,
+              95,
+              279,
+              115
+            ],
+            "median_signed_m": 2.298354183315312,
+            "mae_m": 1.837542767312375
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_02",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          21.693038954217307,
+          24.296372747992862,
+          4.5
+        ],
+        "radius": 0.7916541869517343
+      },
+      "after": {
+        "center": [
+          19.200684431025714,
+          23.77440046520626,
+          3.9091135220770936
+        ],
+        "radius": 0.616
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            441,
+            210
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              210,
+              95,
+              230,
+              115
+            ],
+            "median_signed_m": 1.5195499375230854,
+            "mae_m": 2.887769644781832
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            588,
+            287
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              284,
+              133,
+              304,
+              153
+            ],
+            "median_signed_m": 4.543972634210667,
+            "mae_m": 3.683263679407683
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_03",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          22.278444478150263,
+          22.75965457012911,
+          4.5
+        ],
+        "radius": 0.8542589520970583
+      },
+      "after": {
+        "center": [
+          21.61673877242374,
+          22.722888752801584,
+          4.2066431508717415
+        ],
+        "radius": 0.808
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            554,
+            217
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              267,
+              98,
+              287,
+              118
+            ],
+            "median_signed_m": 0.89801258335903,
+            "mae_m": 2.2807460579669034
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            793,
+            292
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              386,
+              136,
+              406,
+              156
+            ],
+            "median_signed_m": 6.526008547474817,
+            "mae_m": 5.102335987492114
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_04",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          24.096770631083125,
+          21.502118660622898,
+          4.5
+        ],
+        "radius": 0.9260154245350812
+      },
+      "after": {
+        "center": [
+          20.802355750742926,
+          21.60235463772893,
+          3.9558478126350334
+        ],
+        "radius": 0.702
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            635,
+            239
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              307,
+              109,
+              327,
+              129
+            ],
+            "median_signed_m": 2.6860687787706903,
+            "mae_m": 3.0421011365789474
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            874,
+            275
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              427,
+              127,
+              447,
+              147
+            ],
+            "median_signed_m": 6.389348953537983,
+            "mae_m": 5.763817528026117
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_05",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          23.33992559623834,
+          19.853102157394687,
+          4.5
+        ],
+        "radius": 1.05
+      },
+      "after": {
+        "center": [
+          21.73626929876937,
+          20.106374639914403,
+          4.048897187272854
+        ],
+        "radius": 0.941
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            738,
+            240
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              359,
+              110,
+              379,
+              130
+            ],
+            "median_signed_m": 3.1524139052320628,
+            "mae_m": 4.063754778398527
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            1061,
+            269
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              520,
+              124,
+              540,
+              144
+            ],
+            "median_signed_m": 3.6120785943938074,
+            "mae_m": 4.134266720688449
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_06",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          20.083625462327774,
+          20.899163401340623,
+          4.5
+        ],
+        "radius": 0.6354399638075088
+      },
+      "after": {
+        "center": [
+          19.552740671876734,
+          20.961339913968743,
+          4.233692530014535
+        ],
+        "radius": 0.602
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            697,
+            188
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              338,
+              84,
+              358,
+              104
+            ],
+            "median_signed_m": 1.43787879277496,
+            "mae_m": 1.5563357427227738
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            910,
+            212
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              445,
+              96,
+              465,
+              116
+            ],
+            "median_signed_m": 3.9895335739534725,
+            "mae_m": 3.607776541748699
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_07",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          18.89461692330066,
+          20.056730154149275,
+          4.5
+        ],
+        "radius": 0.9342003173104695
+      },
+      "after": {
+        "center": [
+          15.713183311371086,
+          20.788015494947285,
+          3.5128552926127043
+        ],
+        "radius": 0.582
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            790,
+            174
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              385,
+              77,
+              405,
+              97
+            ],
+            "median_signed_m": 3.9996989387982125,
+            "mae_m": 3.430140928564327
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            678,
+            135
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              329,
+              57,
+              349,
+              77
+            ],
+            "median_signed_m": 3.6421804082509883,
+            "mae_m": 3.643639225931413
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_09",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          24.732564768433,
+          18.32122602046142,
+          4.5
+        ],
+        "radius": 0.7438210686407803
+      },
+      "after": {
+        "center": [
+          21.066214421853495,
+          19.264464091185726,
+          3.836950508239649
+        ],
+        "radius": 0.553
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            809,
+            245
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              394,
+              112,
+              414,
+              132
+            ],
+            "median_signed_m": 2.0250771589466936,
+            "mae_m": 3.014051265593364
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            1170,
+            274
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              575,
+              127,
+              595,
+              147
+            ],
+            "median_signed_m": 4.086437748124969,
+            "mae_m": 3.828246142056338
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_10",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          24.995573365952687,
+          23.43603274197389,
+          3.8
+        ],
+        "radius": 0.6422884490899904
+      },
+      "after": {
+        "center": [
+          24.930064847431655,
+          23.430872931135973,
+          3.7386230039391424
+        ],
+        "radius": 0.64
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            528,
+            280
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              254,
+              130,
+              274,
+              150
+            ],
+            "median_signed_m": -2.6824008300055677,
+            "mae_m": 2.576221228219246
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            830,
+            359
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              405,
+              169,
+              425,
+              189
+            ],
+            "median_signed_m": 2.7342574201648944,
+            "mae_m": 2.6302279071227734
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_11",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          21.3901596149381,
+          22.162136959003895,
+          3.8
+        ],
+        "radius": 0.46769130877947185
+      },
+      "after": {
+        "center": [
+          23.11466086641096,
+          22.194223305629897,
+          3.8712737670899804
+        ],
+        "radius": 0.543
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            594,
+            259
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              287,
+              119,
+              307,
+              139
+            ],
+            "median_signed_m": -2.1654986435736765,
+            "mae_m": 2.9824645319909644
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            878,
+            331
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              429,
+              155,
+              449,
+              175
+            ],
+            "median_signed_m": 3.990285399381097,
+            "mae_m": 3.6324992888361116
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_12",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          26.70285925153571,
+          21.741993305283533,
+          3.8
+        ],
+        "radius": 0.6401736714643774
+      },
+      "after": {
+        "center": [
+          24.439056455017905,
+          21.775287914068194,
+          3.5018904047029005
+        ],
+        "radius": 0.551
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            619,
+            293
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              299,
+              136,
+              319,
+              156
+            ],
+            "median_signed_m": -2.6310147300076867,
+            "mae_m": 2.032832208868592
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            936,
+            364
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              458,
+              172,
+              478,
+              192
+            ],
+            "median_signed_m": 2.5079331439519468,
+            "mae_m": 2.7782795410785655
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_13",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          22.435835815292513,
+          21.166682763369423,
+          3.8
+        ],
+        "radius": 0.500341307988584
+      },
+      "after": {
+        "center": [
+          23.665265056666307,
+          21.082200074185586,
+          3.83763137174519
+        ],
+        "radius": 0.553
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            661,
+            268
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              320,
+              124,
+              340,
+              144
+            ],
+            "median_signed_m": -1.7228623131625218,
+            "mae_m": 2.4570405977068206
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            982,
+            329
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              481,
+              154,
+              501,
+              174
+            ],
+            "median_signed_m": 2.226690560834496,
+            "mae_m": 2.73534419512469
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_14",
+      "parameter": "center,radius",
+      "before": {
+        "center": [
+          25.196063719470985,
+          19.60029611828627,
+          3.8
+        ],
+        "radius": 0.6585862348825017
+      },
+      "after": {
+        "center": [
+          25.208790735523326,
+          19.59605215418614,
+          3.668839042110331
+        ],
+        "radius": 0.66
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            734,
+            287
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              357,
+              133,
+              377,
+              153
+            ],
+            "median_signed_m": -2.6801481771212927,
+            "mae_m": 2.4011449781647842
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            1126,
+            348
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              553,
+              164,
+              573,
+              184
+            ],
+            "median_signed_m": 1.9378298513826095,
+            "mae_m": 2.1342373504390064
+          }
+        }
+      ],
+      "rationale": "Replace single-view assumed height by two-view diffuser correspondence; >5px fits remain approximate",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_15",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_15",
+        "center": [
+          14.798321573044422,
+          19.20523780917285,
+          3.426124650553678
+        ],
+        "radius": 0.698,
+        "evidence_frames": [
+          61,
+          74,
+          82,
+          91
+        ],
+        "observations": [
+          [
+            61,
+            579,
+            125
+          ],
+          [
+            74,
+            891,
+            79
+          ],
+          [
+            82,
+            823,
+            334
+          ],
+          [
+            91,
+            316,
+            119
+          ]
+        ],
+        "reprojection_errors_px": [
+          1.118565783384177,
+          1.9279929035710985,
+          2.12975154407015,
+          1.1860583100276536
+        ],
+        "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            579,
+            125
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              279,
+              52,
+              299,
+              72
+            ],
+            "median_signed_m": 1.2597268936956563,
+            "mae_m": 1.0375421397548197
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            891,
+            79
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              435,
+              29,
+              455,
+              49
+            ],
+            "median_signed_m": 1.218525047313539,
+            "mae_m": 0.9632544726674124
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            823,
+            334
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              401,
+              157,
+              421,
+              177
+            ],
+            "median_signed_m": 2.2012077033501134,
+            "mae_m": 1.65612262497017
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            316,
+            119
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              148,
+              49,
+              168,
+              69
+            ],
+            "median_signed_m": 5.610319563417442,
+            "mae_m": 4.037639107217621
+          }
+        }
+      ],
+      "rationale": "Missing fixture is consistent across four camera rays",
+      "provenance": "measured approximate"
+    },
+    {
+      "object_id": "pendant_16",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_16",
+        "center": [
+          17.704651978176898,
+          20.946778718144255,
+          3.5688856967451006
+        ],
+        "radius": 0.7390930100017401,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            446,
+            60
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              213,
+              20,
+              233,
+              40
+            ],
+            "median_signed_m": 6.6780722871550395,
+            "mae_m": 5.5905167874373225
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            772.5064392268104,
+            248.38336892339038
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              376,
+              114,
+              396,
+              134
+            ],
+            "median_signed_m": 0.4170186051737961,
+            "mae_m": 2.116336119805415
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "pendant_17",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_17",
+        "center": [
+          13.34144443952884,
+          20.752990380585366,
+          4.000706973380273
+        ],
+        "radius": 0.82,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            463,
+            85
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              221,
+              32,
+              241,
+              52
+            ],
+            "median_signed_m": 4.243240989505077,
+            "mae_m": 3.53089916249799
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            1036.7586487965127,
+            275.4674484660215
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              508,
+              127,
+              528,
+              147
+            ],
+            "median_signed_m": 5.0620124145387555,
+            "mae_m": 4.205733723176846
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "pendant_18",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_18",
+        "center": [
+          11.28055772028228,
+          21.277124957216415,
+          3.892055635731982
+        ],
+        "radius": 0.794273192931297,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            511,
+            113
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              245,
+              46,
+              265,
+              66
+            ],
+            "median_signed_m": 3.1341869910043467,
+            "mae_m": 2.1861981677740543
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            1161.7732157864843,
+            301.68150715186584
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              570,
+              140,
+              590,
+              160
+            ],
+            "median_signed_m": 1.0537160399937795,
+            "mae_m": 2.1442633436491083
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "pendant_19",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_19",
+        "center": [
+          9.25,
+          22.550242705532707,
+          4.3394223556538805
+        ],
+        "radius": 0.82,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            579,
+            112
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              279,
+              46,
+              299,
+              66
+            ],
+            "median_signed_m": -0.08991002219621436,
+            "mae_m": 1.4220850285029167
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "pendant_20",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_20",
+        "center": [
+          10.5,
+          23.571050402440807,
+          4.45
+        ],
+        "radius": 0.82,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            631,
+            98
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              305,
+              39,
+              325,
+              59
+            ],
+            "median_signed_m": 0.00974610770611406,
+            "mae_m": 1.2311092587349755
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "pendant_21",
+      "parameter": "added",
+      "before": null,
+      "after": {
+        "id": "pendant_21",
+        "center": [
+          9.850310866963564,
+          24.269202421046437,
+          4.45
+        ],
+        "radius": 0.82,
+        "evidence_frames": [
+          91,
+          82,
+          100
+        ],
+        "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            681,
+            64
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              330,
+              22,
+              350,
+              42
+            ],
+            "median_signed_m": 0.49314648379116033,
+            "mae_m": 1.3263490012733303
+          }
+        }
+      ],
+      "rationale": "Fill observed west cluster; exact identities/radii uncertain. Projection82 is a diagnostic region only.",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "seat_A_0",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          15.4,
+          23.05,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 0,
+        "back": false
+      },
+      "after": {
+        "center": [
+          15.9,
+          23.23,
+          0.32
+        ],
+        "radius": 0.4,
+        "rotation": 0,
+        "back": false
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            445,
+            620
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              212,
+              300,
+              232,
+              320
+            ],
+            "median_signed_m": -1.0974480566346125,
+            "mae_m": 1.1135541129854922
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            325,
+            820
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              152,
+              400,
+              172,
+              420
+            ],
+            "median_signed_m": 0.20365816024462902,
+            "mae_m": 0.20725559349043646
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_A_1",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          16.2,
+          23.0,
+          0.3
+        ],
+        "radius": 0.44,
+        "rotation": 0,
+        "back": true
+      },
+      "after": {
+        "center": [
+          16.69,
+          23.24,
+          0.32
+        ],
+        "radius": 0.37,
+        "rotation": -1.57,
+        "back": true
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            461,
+            595
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              220,
+              287,
+              240,
+              307
+            ],
+            "median_signed_m": -1.3478484766778616,
+            "mae_m": 1.539185817641387
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            414,
+            768
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              197,
+              374,
+              217,
+              394
+            ],
+            "median_signed_m": 0.413524746998462,
+            "mae_m": 0.4473171609982569
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_A_2",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          16.9,
+          22.63,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 0.7,
+        "back": true
+      },
+      "after": {
+        "center": [
+          17.16,
+          22.57,
+          0.32
+        ],
+        "radius": 0.37,
+        "rotation": 0,
+        "back": true
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            539,
+            578
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              259,
+              279,
+              279,
+              299
+            ],
+            "median_signed_m": -1.4945325050241052,
+            "mae_m": 1.5378416139639324
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            510,
+            754
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              245,
+              367,
+              265,
+              387
+            ],
+            "median_signed_m": 0.30815492573270786,
+            "mae_m": 0.3138458257720487
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_A_3",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          17.0,
+          21.85,
+          0.3
+        ],
+        "radius": 0.56,
+        "rotation": 0,
+        "back": false
+      },
+      "after": {
+        "center": [
+          17.82,
+          21.96,
+          0.32
+        ],
+        "radius": 0.44,
+        "rotation": 0,
+        "back": false
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            593,
+            559
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              286,
+              269,
+              306,
+              289
+            ],
+            "median_signed_m": -1.352036729639984,
+            "mae_m": 1.3064378771091518
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            635,
+            755
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              307,
+              367,
+              327,
+              387
+            ],
+            "median_signed_m": 0.30609415799150463,
+            "mae_m": 0.6154072032331631
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_A_4",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          16.65,
+          21.2,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 3.1,
+        "back": true
+      },
+      "after": {
+        "center": [
+          17.05,
+          20.99,
+          0.32
+        ],
+        "radius": 0.39,
+        "rotation": -1.0,
+        "back": true
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            691,
+            575
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              335,
+              277,
+              355,
+              297
+            ],
+            "median_signed_m": -1.638474790775092,
+            "mae_m": 1.8464651300391848
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            738,
+            840
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              359,
+              410,
+              379,
+              430
+            ],
+            "median_signed_m": -0.16618835237337493,
+            "mae_m": 0.22300113961800105
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            576,
+            889
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              278,
+              434,
+              298,
+              454
+            ],
+            "median_signed_m": 0.5405403097318082,
+            "mae_m": 0.5275563912428677
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_A_5",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          16.15,
+          21.85,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 0,
+        "back": false
+      },
+      "after": {
+        "center": [
+          17.02,
+          21.79,
+          0.32
+        ],
+        "radius": 0.36,
+        "rotation": 0,
+        "back": false
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            622,
+            574
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              301,
+              277,
+              321,
+              297
+            ],
+            "median_signed_m": -1.3384968178123366,
+            "mae_m": 1.3780994752944549
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            650,
+            790
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              315,
+              385,
+              335,
+              405
+            ],
+            "median_signed_m": 0.27006369021420484,
+            "mae_m": 0.37264592908727495
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_B_0",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          13.35,
+          20.75,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 0,
+        "back": false
+      },
+      "after": {
+        "center": [
+          13.46,
+          20.61,
+          0.32
+        ],
+        "radius": 0.38,
+        "rotation": 0,
+        "back": false
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            762,
+            695
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              371,
+              337,
+              391,
+              357
+            ],
+            "median_signed_m": -0.09173222695103722,
+            "mae_m": 0.08733575015895619
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_uv_1280": [
+            890,
+            800
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              435,
+              390,
+              455,
+              410
+            ],
+            "median_signed_m": -0.656728179656807,
+            "mae_m": 0.6560135352795183
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_B_1",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          12.55,
+          20.75,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 3.14,
+        "back": true
+      },
+      "after": {
+        "center": [
+          12.7,
+          20.7,
+          0.32
+        ],
+        "radius": 0.38,
+        "rotation": 1.57,
+        "back": true
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            901,
+            728
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              440,
+              354,
+              460,
+              374
+            ],
+            "median_signed_m": 0.06840581274231217,
+            "mae_m": 0.10380299350082715
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_uv_1280": [
+            906,
+            855
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              443,
+              417,
+              463,
+              437
+            ],
+            "median_signed_m": -0.4211120118128977,
+            "mae_m": 0.3714904901777378
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_B_2",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          11.8,
+          20.75,
+          0.3
+        ],
+        "radius": 0.43,
+        "rotation": 3.14,
+        "back": true
+      },
+      "after": {
+        "center": [
+          12.05,
+          21.14,
+          0.32
+        ],
+        "radius": 0.38,
+        "rotation": -1.57,
+        "back": true
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            1033,
+            786
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              506,
+              383,
+              526,
+              403
+            ],
+            "median_signed_m": -0.12018699919148434,
+            "mae_m": 0.12761739169238337
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_uv_1280": [
+            987,
+            945
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              483,
+              462,
+              503,
+              480
+            ],
+            "median_signed_m": -0.746945928343798,
+            "mae_m": 0.6837898324407726
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "seat_B_3",
+      "parameter": "center,radius,rotation,back",
+      "before": {
+        "center": [
+          11.6,
+          21.6,
+          0.3
+        ],
+        "radius": 0.47,
+        "rotation": 0,
+        "back": false
+      },
+      "after": {
+        "center": [
+          11.8,
+          22.02,
+          0.32
+        ],
+        "radius": 0.43,
+        "rotation": 0,
+        "back": false
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            1144,
+            938
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              562,
+              459,
+              582,
+              479
+            ],
+            "median_signed_m": -0.03418191355361566,
+            "mae_m": 0.04303557953066361
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            567,
+            347
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              273,
+              163,
+              293,
+              183
+            ],
+            "median_signed_m": -3.3642939393925424,
+            "mae_m": 4.328676627027497
+          }
+        }
+      ],
+      "rationale": "Separate solid upholstery and table; source top correspondences imperfect, so constrained estimate not exact measurement",
+      "provenance": "inferred with RGB constraints",
+      "note": "center z .30->.32 corrects layout metadata to actual seat body center; actual mesh vertical position remains .32, seat bottom .12 top .52."
+    },
+    {
+      "object_id": "coffee_table_A",
+      "parameter": "center,radii",
+      "before": {
+        "id": "coffee_table_A",
+        "center": [
+          15.8,
+          22.05,
+          0.43
+        ],
+        "radii": [
+          0.6,
+          0.48
+        ]
+      },
+      "after": {
+        "id": "coffee_table_A",
+        "center": [
+          16.02,
+          21.95,
+          0.4
+        ],
+        "radii": [
+          0.53,
+          0.43
+        ]
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            575,
+            618
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              277,
+              299,
+              297,
+              319
+            ],
+            "median_signed_m": -1.1628530529717747,
+            "mae_m": 1.1815204525953795
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            480,
+            859
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              230,
+              419,
+              250,
+              439
+            ],
+            "median_signed_m": 0.028646420314119236,
+            "mae_m": 0.06787475073718785
+          }
+        }
+      ],
+      "rationale": "Source top-height/backprojection uncertain; maintain separation from upholstery and original visual oval form",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "coffee_table_B",
+      "parameter": "center,radii",
+      "before": {
+        "id": "coffee_table_B",
+        "center": [
+          12.6,
+          21.8,
+          0.43
+        ],
+        "radii": [
+          0.68,
+          0.5
+        ]
+      },
+      "after": {
+        "id": "coffee_table_B",
+        "center": [
+          12.97,
+          21.9,
+          0.4
+        ],
+        "radii": [
+          0.6,
+          0.48
+        ]
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            824,
+            856
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              402,
+              418,
+              422,
+              438
+            ],
+            "median_signed_m": -0.14398002340424632,
+            "mae_m": 0.14397274371092328
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_uv_1280": [
+            655,
+            849
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              317,
+              414,
+              337,
+              434
+            ],
+            "median_signed_m": -0.020390051295989364,
+            "mae_m": 0.24226425319461498
+          }
+        }
+      ],
+      "rationale": "Source top-height/backprojection uncertain; maintain separation from upholstery and original visual oval form",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "west_end_wall",
+      "parameter": "panel_offset_x",
+      "before": -0.09,
+      "after": 0.0975,
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            540,
+            240
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              260,
+              110,
+              280,
+              130
+            ],
+            "median_signed_m": -0.08551203378903072,
+            "mae_m": 0.08504472914768403
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            40,
+            270
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              10,
+              125,
+              30,
+              145
+            ],
+            "median_signed_m": 1.0894579618219318,
+            "mae_m": 1.0904774166620688
+          }
+        }
+      ],
+      "rationale": "Expose panels on room-facing +X surface",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "feature_return_east",
+      "parameter": "panel_offset_x",
+      "before": -0.09,
+      "after": 0.0975,
+      "evidence": [
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            170,
+            260
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              75,
+              120,
+              95,
+              140
+            ],
+            "median_signed_m": -1.0371250750922787,
+            "mae_m": 1.0368210315373467
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            445,
+            400
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              212,
+              190,
+              232,
+              210
+            ],
+            "median_signed_m": -0.3793648235828817,
+            "mae_m": 0.380227107107642
+          }
+        }
+      ],
+      "rationale": "Expose panels on +X surface",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "all_chair_backs",
+      "parameter": "end_cap_winding/bevel",
+      "before": {
+        "same_end_winding": true,
+        "bevel": 0.06
+      },
+      "after": {
+        "outward_consistent": true,
+        "bevel": 0
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            905,
+            715
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              442,
+              347,
+              462,
+              367
+            ],
+            "median_signed_m": 0.2059160404206275,
+            "mae_m": 0.21021189160545453
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            576,
+            830
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              278,
+              405,
+              298,
+              425
+            ],
+            "median_signed_m": 0.65595292722421,
+            "mae_m": 0.6614900583245411
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            733,
+            817
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              356,
+              398,
+              376,
+              418
+            ],
+            "median_signed_m": -0.29354853227762656,
+            "mae_m": 0.4888006643789278
+          }
+        }
+      ],
+      "rationale": "Fix independently audited inconsistent winding and degenerate bevel; pre-export validation still detected collapsed bevel triangles, so remove bevel from this closed curved solid",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "reception_desk",
+      "parameter": "shell_winding/support",
+      "before": {
+        "signed_volume": -2.073760054,
+        "bottom": 0.09
+      },
+      "after": {
+        "outward": true,
+        "support_bottom": 0.011,
+        "support_top": 0.11
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            620,
+            459
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              300,
+              219,
+              320,
+              239
+            ],
+            "median_signed_m": -2.7848085022438447,
+            "mae_m": 5.342002185855391
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            951,
+            587
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              465,
+              283,
+              485,
+              303
+            ],
+            "median_signed_m": 2.0936958376263552,
+            "mae_m": 2.7670803809485243
+          }
+        }
+      ],
+      "rationale": "Reverse shell faces; inferred hidden plinth connects floor to underside",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "all_seats_tables",
+      "parameter": "feet_bottom",
+      "before": {
+        "seat": 0.02672,
+        "table": 0.03813
+      },
+      "after": 0.011,
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            760,
+            792
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              370,
+              386,
+              390,
+              406
+            ],
+            "median_signed_m": -0.07112665473724733,
+            "mae_m": 0.21555482633935236
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            450,
+            920
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              215,
+              450,
+              235,
+              470
+            ],
+            "median_signed_m": -0.060198707532925555,
+            "mae_m": 0.10860177865106778
+          }
+        }
+      ],
+      "rationale": "Inferred hidden foot pads meet inlay top",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "shrubs",
+      "parameter": "procedural_dimensions",
+      "before": {
+        "branches": 100,
+        "reach": [
+          0.15,
+          0.65
+        ],
+        "leaf_length": 0.14,
+        "leaf_half_width": 0.015,
+        "height": [
+          0.35,
+          1
+        ]
+      },
+      "after": {
+        "shrub_branches": 75,
+        "shrub_reach": [
+          0.1,
+          0.42
+        ],
+        "shrub_leaf_length": 0.07,
+        "shrub_leaf_half_width": 0.005,
+        "shrub_height_above_pot": [
+          0.3,
+          0.8
+        ]
+      },
+      "evidence": [
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            655,
+            710
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              317,
+              345,
+              337,
+              365
+            ],
+            "median_signed_m": -0.150978050107057,
+            "mae_m": 0.2337558643059443
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            437,
+            425
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              208,
+              202,
+              228,
+              222
+            ],
+            "median_signed_m": -0.5238213085240213,
+            "mae_m": 0.6731666528545219
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_uv_1280": [
+            240,
+            700
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              110,
+              340,
+              130,
+              360
+            ],
+            "median_signed_m": -0.5366464843833345,
+            "mae_m": 0.5298831743118104
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_uv_1280": [
+            530,
+            830
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              255,
+              405,
+              275,
+              425
+            ],
+            "median_signed_m": -1.4664282575041114,
+            "mae_m": 1.509098384069619
+          }
+        }
+      ],
+      "rationale": "Narrow leaves and reduce canopy spread; local negative signed errors and broad RGB silhouette",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "mirror_fern",
+      "parameter": "canopy",
+      "before": {
+        "spiky_radius": 0.62,
+        "top": 1.4
+      },
+      "after": {
+        "rounded_radius": 0.4,
+        "top": 1.22
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            518,
+            502
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              249,
+              241,
+              269,
+              261
+            ],
+            "median_signed_m": -0.06780031121649532,
+            "mae_m": 0.2667001497171254
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            691,
+            516
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              335,
+              248,
+              355,
+              268
+            ],
+            "median_signed_m": -0.17928243936551347,
+            "mae_m": 0.24203200888579648
+          }
+        }
+      ],
+      "rationale": "Fine rounded source silhouette, retain measured pot position",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "entries",
+      "parameter": "frame_width",
+      "before": 0.085,
+      "after": 0.13,
+      "evidence": [
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            912,
+            415
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              446,
+              197,
+              466,
+              217
+            ],
+            "median_signed_m": 0.4531463760267407,
+            "mae_m": 0.43620298299280896
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_uv_1280": [
+            778,
+            442
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              379,
+              211,
+              399,
+              231
+            ],
+            "median_signed_m": 0.2054808003641302,
+            "mae_m": 0.21581917632227893
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_uv_1280": [
+            728,
+            412
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              354,
+              196,
+              374,
+              216
+            ],
+            "median_signed_m": -0.15993231405732633,
+            "mae_m": 0.1458150673406567
+          }
+        }
+      ],
+      "rationale": "Source shows broad dark bronze members; inferred gauge",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "dark_inlay",
+      "parameter": "surface_grid",
+      "before": null,
+      "after": {
+        "pitch": 0.085,
+        "fill": [
+          0.04,
+          0.031
+        ]
+      },
+      "evidence": [
+        {
+          "sample_index": 91,
+          "pixel_uv_1280": [
+            650,
+            800
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              315,
+              390,
+              335,
+              410
+            ],
+            "median_signed_m": -0.09546639310277172,
+            "mae_m": 0.0955434522122055
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            830,
+            750
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              405,
+              365,
+              425,
+              385
+            ],
+            "median_signed_m": 0.2493982794918126,
+            "mae_m": 0.24975881893089594
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_uv_1280": [
+            815,
+            730
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              397,
+              355,
+              417,
+              375
+            ],
+            "median_signed_m": 0.012823510865072496,
+            "mae_m": 0.01282730916901048
+          }
+        }
+      ],
+      "rationale": "Persistent regular floor pattern distinct from view-dependent round fixture reflections; inferred metallic inlay texture, no depth displacement",
+      "provenance": "inferred with RGB constraints"
+    },
+    {
+      "object_id": "all_other_wall_panels",
+      "parameter": "surface_offset_m",
+      "before": 0.09,
+      "after": 0.0975,
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            650,
+            225
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              315,
+              102,
+              335,
+              122
+            ],
+            "median_signed_m": 0.1495715412796761,
+            "mae_m": 0.14941099509334638
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            510,
+            120
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              245,
+              50,
+              265,
+              70
+            ],
+            "median_signed_m": -0.08900449405683064,
+            "mae_m": 0.08891912452377891
+          }
+        }
+      ],
+      "rationale": "7.5mm clearance from backing, inferred construction; no residual-based wall relocation"
+    },
+    {
+      "object_id": "pendant_*",
+      "parameter": "visible_weave_geometry",
+      "before": {
+        "surface": "upper hidden",
+        "radial_ribs": 56,
+        "segments_per_rib": 5,
+        "tube_radius": 0.009,
+        "rings": 0
+      },
+      "after": {
+        "surface": "underside",
+        "radial_ribs": 64,
+        "segments_per_rib": 12,
+        "tube_radius": 0.008,
+        "rings": 11,
+        "ring_tube_radius": 0.006,
+        "underside_offset_m": -0.013
+      },
+      "evidence": [
+        {
+          "sample_index": 33,
+          "pixel_uv_1280": [
+            359,
+            73
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              169,
+              26,
+              189,
+              46
+            ],
+            "median_signed_m": 1.38436519175032,
+            "mae_m": 1.3579764045555687
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            659,
+            151
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              319,
+              65,
+              339,
+              85
+            ],
+            "median_signed_m": 3.699268725492983,
+            "mae_m": 3.712512110374268
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            678,
+            135
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              329,
+              57,
+              349,
+              77
+            ],
+            "median_signed_m": 3.6421804082509883,
+            "mae_m": 3.643639225931413
+          }
+        }
+      ],
+      "provenance": "inferred construction from visible weave",
+      "rationale": "Expose real geometric woven ridges on source-visible underside; aggregate segments into one owned mesh per fixture"
+    },
+    {
+      "object_id": "glazed_facade,entry_east,entry_west",
+      "parameter": "static_glazing_and_frames_vs_leaves",
+      "before": {
+        "facade_panes_bounds": [
+          [
+            8,
+            26.03,
+            0
+          ],
+          [
+            27.5,
+            26.08,
+            5
+          ]
+        ],
+        "collider": "single full semantic AABB spanning both doors"
+      },
+      "after": {
+        "facade": "separate solid spans and overdoor panels, sill/mullions omitted below aperture",
+        "door_state": "closed",
+        "frames": "two static jambs and header",
+        "leaves": "two glass/stile/rail/handle compound sets",
+        "collider": "component compound with door_leaf_closed parts; all apertures clear after disabling leaves"
+      },
+      "evidence": [
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            909,
+            424
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              444,
+              202,
+              464,
+              222
+            ],
+            "median_signed_m": 0.44993766856209216,
+            "mae_m": 0.4337183576126041
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_uv_1280": [
+            778,
+            442
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              379,
+              211,
+              399,
+              231
+            ],
+            "median_signed_m": 0.2054808003641302,
+            "mae_m": 0.21581917632227893
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_uv_1280": [
+            728,
+            412
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              354,
+              196,
+              374,
+              216
+            ],
+            "median_signed_m": -0.15993231405732633,
+            "mae_m": 0.1458150673406567
+          }
+        }
+      ],
+      "provenance": "observed closed doors; inferred construction and collider state",
+      "rationale": "Make proxy openings correspond to logical doors, while rendering the observed closed state"
+    },
+    {
+      "object_id": "mirror_feature_wall,south_recess_wall,interior_door_0..2",
+      "parameter": "wall_cutouts",
+      "before": "continuous backing and panel meshes behind overlaid doors",
+      "after": {
+        "cutouts_xz": [
+          [
+            16.6,
+            17.6,
+            0,
+            2.05
+          ],
+          [
+            19.9,
+            20.9,
+            0,
+            2.05
+          ],
+          [
+            22.6,
+            23.6,
+            0,
+            2.05
+          ]
+        ],
+        "wall_y": [
+          17.88,
+          16,
+          16
+        ],
+        "doors": "existing closed metallic leaves retained"
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            413,
+            459
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              196,
+              219,
+              216,
+              239
+            ],
+            "median_signed_m": 0.020195751991031408,
+            "mae_m": 0.019778421513948458
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            470,
+            499
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              225,
+              239,
+              245,
+              259
+            ],
+            "median_signed_m": -0.22955415390251277,
+            "mae_m": 0.2296190104388287
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_uv_1280": [
+            135,
+            531
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              57,
+              255,
+              77,
+              275
+            ],
+            "median_signed_m": -0.5985382894695808,
+            "mae_m": 0.5988537922953178
+          }
+        }
+      ],
+      "provenance": "inferred hidden construction around observed closed doors",
+      "rationale": "Remove backing obstruction within door leaf aperture; destination geometry remains unknown"
+    },
+    {
+      "object_id": "all_materials,lighting",
+      "parameter": "inferred_appearance",
+      "before": {
+        "ambient": 0.25,
+        "daylight_area_watts": 750,
+        "exposure": 0.3,
+        "oak": "bump only"
+      },
+      "after": {
+        "ambient": 0.16,
+        "daylight_area_watts": 650,
+        "exposure": 0,
+        "oak": "noise drives color ramp and bump",
+        "facade_mullions": "dark material"
+      },
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            650,
+            225
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              315,
+              102,
+              335,
+              122
+            ],
+            "median_signed_m": 0.1495715412796761,
+            "mae_m": 0.14941099509334638
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_uv_1280": [
+            510,
+            120
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              245,
+              50,
+              265,
+              70
+            ],
+            "median_signed_m": -0.08900449405683064,
+            "mae_m": 0.08891912452377891
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            940,
+            360
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              460,
+              170,
+              480,
+              190
+            ],
+            "median_signed_m": 0.423193234386007,
+            "mae_m": 0.43053423598654866
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_uv_1280": [
+            980,
+            400
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              480,
+              190,
+              500,
+              210
+            ],
+            "median_signed_m": 2.307469402863899,
+            "mae_m": 2.3098258059307706
+          }
+        }
+      ],
+      "provenance": "visual inference; residuals contextual only, do not determine material",
+      "rationale": "Increase wall grain visibility and frame contrast; render still flatter than source"
+    },
+    {
+      "object_id": "all_colliders",
+      "parameter": "proxy_scheme",
+      "before": "one AABB per complete semantic object, including foliage and aperture gaps",
+      "after": "compound boxes tied to component_names; foliage/soil/stems excluded; lamps bowl-only; closed leaves tagged independently",
+      "evidence": [
+        {
+          "sample_index": 61,
+          "pixel_uv_1280": [
+            413,
+            459
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              196,
+              219,
+              216,
+              239
+            ],
+            "median_signed_m": 0.020195751991031408,
+            "mae_m": 0.019778421513948458
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_uv_1280": [
+            909,
+            424
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              444,
+              202,
+              464,
+              222
+            ],
+            "median_signed_m": 0.44993766856209216,
+            "mae_m": 0.4337183576126041
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_uv_1280": [
+            778,
+            442
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              379,
+              211,
+              399,
+              231
+            ],
+            "median_signed_m": 0.2054808003641302,
+            "mae_m": 0.21581917632227893
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_uv_1280": [
+            728,
+            412
+          ],
+          "v1_signed_depth": {
+            "rect_640": [
+              354,
+              196,
+              374,
+              216
+            ],
+            "median_signed_m": -0.15993231405732633,
+            "mae_m": 0.1458150673406567
+          }
+        }
+      ],
+      "provenance": "physics inference, author analytic clear-aperture test only",
+      "rationale": "Logical object ownership and actual aperture support, no validated dynamics"
+    }
+  ],
+  "component_bounds_ledger": "analysis/component_changes_v2.json",
+  "measurements": "analysis/repair_measurements_v2.json",
+  "all_ten_visual_inspections": "analysis/comparison_observations_v2.json",
+  "spatial_before_after": "analysis/spatial_residuals_v2.json",
+  "preexport_attempt": {
+    "event": "v2 pre-export construction validation failure",
+    "export_occurred": false,
+    "paired_views": 0,
+    "input_passes": 0,
+    "reason": "Chair-back bevel generated collapsed triangles even with correct winding",
+    "fix": "Remove backrest bevel; preserve closed faceted arc solid",
+    "scene_blend_unchanged": "v1 remains until successful v2 export"
+  },
+  "scope": "M4 allowed inputs/output, contract, six generic tools only; normal authorized Blender/Python runtime; no subagents/web/GT scene or depth/heldout/other methods/global process access",
+  "limitations": [
+    "Curved backs have less rounded corners; visual approximation.",
+    "Source seat shapes, rotations and spacing imperfect. 129 seats_A mixed ROI MAE 0.326->0.396m worsens;155 seats_A 1.295->1.040m improves. Estimates not exact triangulation.",
+    "Some correspondences have >5px reprojection error. West identities and heights inferred; two DA3 anchors crossed room boundary and were explicitly regularized. Pendant08 unchanged uncertain. Other near/middle lamps still displaced.",
+    "Panel joint layout and material remain approximate.",
+    "Shrubs still approximate. Mirror fern is too thin/flat and lacks convincing visible connecting stems; grass and reception trees remain simplified. Botanical detail inferred. No reflected DA3 used to duplicate plants.",
+    "Doors remain CLOSED as observed; exterior/interior destinations and articulation unknown. Corridor is declared finite inferred recess ending at y16.25. No dynamic simulation, exact collision hull or comprehensive assembly intersection sweep.",
+    "Pattern is too uniform and reflection/lighting differ substantially. Source finish mechanism uncertain. Procedural Blender floor/oak shaders are not baked into GLB, which retains approximate base PBR materials.",
+    "Far-wall median signed residual remains -2.685m at33,+2.226m at129,-2.746m at155. Frames177..179 median own DA3 about0.0666m. No attempt to distort layout to fit global prediction score."
+  ],
+  "validation_output_preservation": {
+    "note": "Top-level generic artifact_inspection.json and glb_load.json were replaced by v2 validation. All paired and full180 outputs remained intact. v1 GLB JSON recovered from original retained validate_v1.log; original same-model generic scene inspection retained independently in independent_review/scene_inspection.json and copied here as an equivalent, not falsely labelled the overwritten author file.",
+    "v1_model_sha256": "94565f3ae23e82b28cba4cee23716976985294c0ad3750ea861026c71b45b033",
+    "source_paths": [
+      "checks/validate_v1.log",
+      "independent_review/scene_inspection.json"
+    ]
+  }
+}

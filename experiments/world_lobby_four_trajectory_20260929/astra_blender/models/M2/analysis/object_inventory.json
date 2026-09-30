@@ -1,0 +1,2484 @@
+{
+  "objects": [
+    {
+      "id": "floor_stone",
+      "category": "floor",
+      "description": "Continuous pale polished stone floor",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        110,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Floor thickness 0.16 m inferred.",
+        "Ground plane robust fit uses good-baseline input depths; no scale adjustment."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        10.259999752044678,
+        18.600000381469727,
+        0.15999998897314072
+      ],
+      "centroid_m": [
+        1.0699999332427979,
+        6.699999809265137,
+        -0.08499999716877937
+      ]
+    },
+    {
+      "id": "floor_inset",
+      "category": "floor_inlay",
+      "description": "Long polished charcoal inset through seating and reception axis",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        110,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        4.199999809265137,
+        16.600000381469727,
+        0.017999999225139618
+      ],
+      "centroid_m": [
+        -0.18000006675720215,
+        6.800000190734863,
+        0.006000000052154064
+      ]
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "description": "Plaster ceiling with dark parallel slats along both sides",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        10.279999732971191,
+        18.645000457763672,
+        0.25999975204467773
+      ],
+      "centroid_m": [
+        1.059999942779541,
+        6.722499847412109,
+        4.990000009536743
+      ]
+    },
+    {
+      "id": "wall_mirror",
+      "category": "wall",
+      "description": "Pale vertical wall panels divided by dark recessed joints",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        82,
+        90,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.23000025749206543,
+        9.949999809265137,
+        4.968999981880188
+      ],
+      "centroid_m": [
+        3.6200000047683716,
+        2.4749999046325684,
+        2.4955000281333923
+      ]
+    },
+    {
+      "id": "wall_right_recess",
+      "category": "wall",
+      "description": "Pale vertical wall panels divided by dark recessed joints",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        82,
+        90,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.22999954223632812,
+        8.549999713897705,
+        4.968999981880188
+      ],
+      "centroid_m": [
+        6.269999980926514,
+        11.725000143051147,
+        2.4955000281333923
+      ]
+    },
+    {
+      "id": "wall_recess_return",
+      "category": "wall",
+      "description": "Pale vertical wall panels divided by dark recessed joints",
+      "evidence_sample_ids": [
+        75,
+        82
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        2.6500003337860107,
+        0.22999954223632812,
+        4.968999981880188
+      ],
+      "centroid_m": [
+        4.905000329017639,
+        7.519999980926514,
+        2.4955000281333923
+      ]
+    },
+    {
+      "id": "wall_reception",
+      "category": "wall",
+      "description": "Pale vertical wall panels divided by dark recessed joints",
+      "evidence_sample_ids": [
+        0,
+        45,
+        110,
+        125,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        10.279999732971191,
+        0.22999858856201172,
+        4.968999981880188
+      ],
+      "centroid_m": [
+        1.0900001525878906,
+        16.05999994277954,
+        2.4955000281333923
+      ]
+    },
+    {
+      "id": "wall_near_end",
+      "category": "wall",
+      "description": "Pale vertical wall panels divided by dark recessed joints",
+      "evidence_sample_ids": [
+        82,
+        90,
+        100
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        7.630000352859497,
+        0.23000025749206543,
+        4.968999981880188
+      ],
+      "centroid_m": [
+        -0.23500001430511475,
+        -2.5600000619888306,
+        2.4955000281333923
+      ]
+    },
+    {
+      "id": "door_side_0",
+      "category": "open_passage",
+      "description": "Observed open passage at near end of mirror wall",
+      "evidence_sample_ids": [
+        66,
+        75,
+        90
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Only 0.8 m visible doorway return is inferred. Unseen connected room extent unknown.",
+        "Jamb and header component colliders leave passage free."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.8000001907348633,
+        1.0219999924302101,
+        2.210000067949295
+      ],
+      "centroid_m": [
+        3.9600000381469727,
+        -0.41999999806284904,
+        0.9400000423192978
+      ]
+    },
+    {
+      "id": "door_side_1",
+      "category": "interior_door",
+      "description": "Flush brushed-metal interior door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82,
+        90
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.10749983787536621,
+        0.9200000762939453,
+        2.0450000762939453
+      ],
+      "centroid_m": [
+        3.5837498903274536,
+        6.239999771118164,
+        1.0225000381469727
+      ]
+    },
+    {
+      "id": "door_side_2",
+      "category": "interior_door",
+      "description": "Flush brushed-metal interior door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82,
+        90
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.10750055313110352,
+        0.8899993896484375,
+        2.0450000762939453
+      ],
+      "centroid_m": [
+        6.233750104904175,
+        9.920000076293945,
+        1.0225000381469727
+      ]
+    },
+    {
+      "id": "door_side_3",
+      "category": "interior_door",
+      "description": "Flush brushed-metal interior door",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82,
+        90
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.10750055313110352,
+        0.8899993896484375,
+        2.0450000762939453
+      ],
+      "centroid_m": [
+        6.233750104904175,
+        12.920000076293945,
+        1.0225000381469727
+      ]
+    },
+    {
+      "id": "glass_facade",
+      "category": "window_wall",
+      "description": "Bright full-height glazing with slender mullions and two pairs of brass framed entrance doors",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        100,
+        110,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Exterior overexposure represented by luminous panes.",
+        "Glass optical properties and mullion cross sections inferred."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.14750003814697266,
+        18.549999237060547,
+        4.9605000372976065
+      ],
+      "centroid_m": [
+        -4.013750076293945,
+        6.75,
+        2.4797500194981694
+      ]
+    },
+    {
+      "id": "entrance_door_0",
+      "category": "glass_double_door",
+      "description": "Pair of brass framed tall glass entrance leaves",
+      "evidence_sample_ids": [
+        0,
+        90,
+        100,
+        110,
+        125
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.14500021934509277,
+        1.6950000673532486,
+        2.745000123977661
+      ],
+      "centroid_m": [
+        -3.8874999284744263,
+        -0.6500000283122063,
+        1.3725000619888306
+      ]
+    },
+    {
+      "id": "entrance_door_1",
+      "category": "glass_double_door",
+      "description": "Pair of brass framed tall glass entrance leaves",
+      "evidence_sample_ids": [
+        0,
+        90,
+        100,
+        110,
+        125
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.14500021934509277,
+        1.6950006484985352,
+        2.745000123977661
+      ],
+      "centroid_m": [
+        -3.8874999284744263,
+        12.019999980926514,
+        1.3725000619888306
+      ]
+    },
+    {
+      "id": "column_facade",
+      "category": "structural_column",
+      "description": "Round structural column beside glazing",
+      "evidence_sample_ids": [
+        0,
+        45,
+        90,
+        100,
+        110,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.8400001525878906,
+        0.8400001525878906,
+        4.960000038146973
+      ],
+      "centroid_m": [
+        -3.0999999046325684,
+        6.679999828338623,
+        2.4800000190734863
+      ]
+    },
+    {
+      "id": "mirror_cluster",
+      "category": "wall_mirror",
+      "description": "Ten circular mirrors of unequal diameters arranged as a horizontal cluster",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82,
+        135,
+        143,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Mirrors are reflective surfaces; reflected content is not additional room geometry.",
+        "Backing thickness 0.025 m inferred."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.026999950408935547,
+        3.840000092983246,
+        2.059999942779541
+      ],
+      "centroid_m": [
+        3.4760000705718994,
+        2.270000010728836,
+        1.8199999332427979
+      ]
+    },
+    {
+      "id": "seat_far_01",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.6999999284744263,
+        0.6999998092651367,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        -1.4300000071525574,
+        5.099999904632568,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_far_02",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.6939318180084229,
+        0.6939563751220703,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        -1.366965889930725,
+        5.8169779777526855,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "seat_far_03",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.6276407241821289,
+        0.6939020156860352,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        -1.035020351409912,
+        6.426950931549072,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "seat_far_04",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        1.0226791948080063,
+        1.0799999237060547,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        -0.2713396027684212,
+        6.449999809265137,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_far_05",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.6689700111746788,
+        0.6999998092651367,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        0.27433835342526436,
+        6.059999942779541,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_far_06",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        0,
+        45,
+        60,
+        90,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.6991172432899475,
+        0.7123632431030273,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        0.9607352912425995,
+        6.086181640625,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "seat_near_01",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.7999999523162842,
+        0.7922132015228271,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        1.0299999713897705,
+        2.6538933515548706,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_near_02",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.7678923010826111,
+        0.7622132301330566,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        1.0439461767673492,
+        1.8811066150665283,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "seat_near_03",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.7864510416984558,
+        0.7800000309944153,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        1.0732255280017853,
+        1.0999999940395355,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "seat_near_04",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.7599999904632568,
+        0.760000005364418,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        1.1399999856948853,
+        0.30000000447034836,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_end_01",
+      "category": "ottoman",
+      "description": "Circular sage upholstered seat with recessed feet",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.7400000095367432,
+        0.7400000095367432,
+        0.45499999821186066
+      ],
+      "centroid_m": [
+        -0.550000011920929,
+        -0.09999999403953552,
+        0.24249999970197678
+      ]
+    },
+    {
+      "id": "seat_end_02",
+      "category": "lounge_chair",
+      "description": "Circular sage upholstered seat with recessed feet and curved backrest",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.739999994635582,
+        0.7494999840855598,
+        0.739999994635582
+      ],
+      "centroid_m": [
+        0.19999999552965164,
+        -0.3047499917447567,
+        0.38499999791383743
+      ]
+    },
+    {
+      "id": "table_far",
+      "category": "coffee_table",
+      "description": "Low oval black table with radial sculpted base",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        1.1008000373840332,
+        0.8959999084472656,
+        0.40250001940876245
+      ],
+      "centroid_m": [
+        -0.5199999809265137,
+        5.269999980926514,
+        0.2162500093691051
+      ]
+    },
+    {
+      "id": "table_far_bowl",
+      "category": "decorative_bowl",
+      "description": "Small open bronze bowl on coffee table",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "on",
+          "target": "table_far"
+        }
+      ],
+      "dimensions_m": [
+        0.35999998450279236,
+        0.3599996566772461,
+        0.12999996542930603
+      ],
+      "centroid_m": [
+        -0.5199999958276749,
+        5.269999980926514,
+        0.4879999905824661
+      ]
+    },
+    {
+      "id": "table_near",
+      "category": "coffee_table",
+      "description": "Low oval black table with radial sculpted base",
+      "evidence_sample_ids": [
+        45,
+        60,
+        90,
+        135,
+        150
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        1.3055999279022217,
+        0.9727998971939087,
+        0.40250001940876245
+      ],
+      "centroid_m": [
+        0.12000000476837158,
+        2.449999988079071,
+        0.2162500093691051
+      ]
+    },
+    {
+      "id": "table_end",
+      "category": "coffee_table",
+      "description": "Low oval black table with radial sculpted base",
+      "evidence_sample_ids": [
+        90,
+        100
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        0.9599999487400055,
+        0.8959999978542328,
+        0.40250001940876245
+      ],
+      "centroid_m": [
+        -0.44999997317790985,
+        -0.8000000268220901,
+        0.2162500093691051
+      ]
+    },
+    {
+      "id": "planter_yellow_left",
+      "category": "flower_planter",
+      "description": "Rectangular gray concrete planter with fine yellow flowering stems",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "behind",
+          "target": "seating_group_far"
+        },
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        2.207188531756401,
+        0.9162893295288086,
+        1.56447172164917
+      ],
+      "centroid_m": [
+        -1.2427342310547829,
+        7.7410502433776855,
+        0.782235860824585
+      ]
+    },
+    {
+      "id": "planter_yellow_right",
+      "category": "flower_planter",
+      "description": "Rectangular gray concrete planter with fine yellow flowering stems",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "behind",
+          "target": "seating_group_far"
+        },
+        {
+          "relation": "supported_by",
+          "target": "floor_inset"
+        }
+      ],
+      "dimensions_m": [
+        2.1499931812286377,
+        0.8238139152526855,
+        1.5868771076202393
+      ],
+      "centroid_m": [
+        0.8856526613235474,
+        7.746074914932251,
+        0.7934385538101196
+      ]
+    },
+    {
+      "id": "grass_window_mid",
+      "category": "potted_grass",
+      "description": "Rounded ceramic planter with dense arching grass",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_stone"
+        }
+      ],
+      "dimensions_m": [
+        2.3064427375793457,
+        2.278446674346924,
+        0.8782678889110684
+      ],
+      "centroid_m": [
+        -3.1182096004486084,
+        5.427090406417847,
+        0.43413394456729293
+      ]
+    },
+    {
+      "id": "grass_wall_mid",
+      "category": "potted_grass",
+      "description": "Rounded ceramic planter with dense arching grass",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_stone"
+        }
+      ],
+      "dimensions_m": [
+        1.7410022020339966,
+        1.748298168182373,
+        1.0599952982738614
+      ],
+      "centroid_m": [
+        2.863047778606415,
+        4.888844728469849,
+        0.5249976492486894
+      ]
+    },
+    {
+      "id": "grass_window_near",
+      "category": "potted_grass",
+      "description": "Rounded ceramic planter with dense arching grass",
+      "evidence_sample_ids": [
+        90,
+        100
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_stone"
+        }
+      ],
+      "dimensions_m": [
+        2.014737367630005,
+        2.026619076728821,
+        0.7723563360050321
+      ],
+      "centroid_m": [
+        -3.136358141899109,
+        -1.2069615721702576,
+        0.38117816811427474
+      ]
+    },
+    {
+      "id": "grass_reception_corner",
+      "category": "potted_grass",
+      "description": "Rounded ceramic planter with dense arching grass",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "supported_by",
+          "target": "floor_stone"
+        }
+      ],
+      "dimensions_m": [
+        1.7649524211883545,
+        1.7362394332885742,
+        0.6598675297573209
+      ],
+      "centroid_m": [
+        4.531877160072327,
+        14.70127820968628,
+        0.32493376499041915
+      ]
+    },
+    {
+      "id": "tree_reception_left",
+      "category": "potted_tree",
+      "description": "Small round canopy topiary in ceramic vase",
+      "evidence_sample_ids": [
+        0,
+        45,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "beside",
+          "target": "reception_desk"
+        }
+      ],
+      "dimensions_m": [
+        1.1208950281143188,
+        1.1460447311401367,
+        2.108736620284617
+      ],
+      "centroid_m": [
+        -2.120614469051361,
+        14.851088047027588,
+        1.0693683098070323
+      ]
+    },
+    {
+      "id": "tree_reception_right",
+      "category": "potted_tree",
+      "description": "Small round canopy topiary in ceramic vase",
+      "evidence_sample_ids": [
+        0,
+        45,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [
+        {
+          "relation": "beside",
+          "target": "reception_desk"
+        }
+      ],
+      "dimensions_m": [
+        1.139251947402954,
+        1.1348199844360352,
+        2.11563812289387
+      ],
+      "centroid_m": [
+        1.8349725008010864,
+        14.856878757476807,
+        1.0728190611116588
+      ]
+    },
+    {
+      "id": "plant_tall_left",
+      "category": "tall_flowering_plant",
+      "description": "Bird of paradise foliage in tall square concrete planter",
+      "evidence_sample_ids": [
+        60,
+        90,
+        100,
+        143
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.076301395893097,
+        1.0935603380203247,
+        2.545651435852051
+      ],
+      "centroid_m": [
+        -1.3578331172466278,
+        -1.1984948515892029,
+        1.2728257179260254
+      ]
+    },
+    {
+      "id": "plant_tall_right",
+      "category": "tall_flowering_plant",
+      "description": "Bird of paradise foliage in tall square concrete planter",
+      "evidence_sample_ids": [
+        60,
+        90,
+        100,
+        143
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.9950994253158569,
+        1.0967099964618683,
+        2.5
+      ],
+      "centroid_m": [
+        2.4511335492134094,
+        -0.34925447404384613,
+        1.25
+      ]
+    },
+    {
+      "id": "lamp_reception",
+      "category": "floor_lamp",
+      "description": "Tripod floor lamp with cylindrical white fabric shade",
+      "evidence_sample_ids": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.440000057220459,
+        0.4400005340576172,
+        1.8309520278126001
+      ],
+      "centroid_m": [
+        3.309999942779541,
+        14.5,
+        0.9345240099355578
+      ]
+    },
+    {
+      "id": "lamp_recess",
+      "category": "floor_lamp",
+      "description": "Tripod floor lamp with cylindrical white fabric shade",
+      "evidence_sample_ids": [
+        45,
+        60,
+        75,
+        82
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.4399995803833008,
+        0.4399995803833008,
+        1.8309520743787289
+      ],
+      "centroid_m": [
+        5.519999980926514,
+        8.559999942779541,
+        0.9345239866524935
+      ]
+    },
+    {
+      "id": "lamp_near",
+      "category": "floor_lamp",
+      "description": "Tripod floor lamp with cylindrical white fabric shade",
+      "evidence_sample_ids": [
+        90,
+        100
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.440000057220459,
+        0.43999993801116943,
+        1.8309520278126001
+      ],
+      "centroid_m": [
+        2.75,
+        -1.5400000214576721,
+        0.9345240099355578
+      ]
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_counter",
+      "description": "Faceted angular dark reception desk with inset working surface",
+      "evidence_sample_ids": [
+        0,
+        45,
+        100,
+        110,
+        125,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Depth observations of desk vary by 1.5 m between views; placement uses the consistent far-loop views.",
+        "Hidden working side and support inferred."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        3.7899999618530273,
+        0.9549999237060547,
+        0.7249999940395355
+      ],
+      "centroid_m": [
+        -0.02499997615814209,
+        13.867500305175781,
+        0.5125000029802322
+      ]
+    },
+    {
+      "id": "desk_small_plant",
+      "category": "decorative_plant",
+      "description": "Small plant on reception counter",
+      "evidence_sample_ids": [
+        0,
+        45,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "low",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        0.16887325048446655,
+        0.12999916076660156,
+        0.4312838315963745
+      ],
+      "centroid_m": [
+        0.7964553534984589,
+        13.899999618530273,
+        1.0806419253349304
+      ]
+    },
+    {
+      "id": "wall_emblem",
+      "category": "wall_art",
+      "description": "Abstract shield and curved metal line emblem above reception",
+      "evidence_sample_ids": [
+        0,
+        45,
+        125,
+        135,
+        179
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Unseen backs, thickness and internal construction inferred.",
+        "Material response and physical coefficients are visual approximations."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        2.791064500808716,
+        0.09271717071533203,
+        1.3425002098083496
+      ],
+      "centroid_m": [
+        -0.026623010635375977,
+        15.871141910552979,
+        2.778749942779541
+      ]
+    },
+    {
+      "id": "pendant_00",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.4494106769561768,
+        1.449410855770111,
+        0.7358498573303223
+      ],
+      "centroid_m": [
+        -2.2499998807907104,
+        -0.3500000536441803,
+        4.572075128555298
+      ]
+    },
+    {
+      "id": "pendant_01",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.6894108057022095,
+        1.6894108057022095,
+        0.6284918785095215
+      ],
+      "centroid_m": [
+        0.10000002384185791,
+        -0.30000001192092896,
+        4.625754117965698
+      ]
+    },
+    {
+      "id": "pendant_02",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.4294105768203735,
+        1.4294107258319855,
+        0.7356300354003906
+      ],
+      "centroid_m": [
+        2.0999998450279236,
+        -0.2499999850988388,
+        4.572185039520264
+      ]
+    },
+    {
+      "id": "pendant_03",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.489410638809204,
+        1.4894108772277832,
+        0.736290454864502
+      ],
+      "centroid_m": [
+        -2.100000023841858,
+        3.0,
+        4.571854829788208
+      ]
+    },
+    {
+      "id": "pendant_04",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.7494106888771057,
+        1.7494105696678162,
+        0.6291522979736328
+      ],
+      "centroid_m": [
+        0.1000000536441803,
+        1.649999886751175,
+        4.625423908233643
+      ]
+    },
+    {
+      "id": "pendant_05",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.6894104480743408,
+        1.6894108057022095,
+        0.7384915351867676
+      ],
+      "centroid_m": [
+        2.2499998807907104,
+        2.5500001311302185,
+        4.570754289627075
+      ]
+    },
+    {
+      "id": "pendant_06",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.5894107818603516,
+        1.5894107818603516,
+        0.7373909950256348
+      ],
+      "centroid_m": [
+        -2.0,
+        4.400000095367432,
+        4.571304559707642
+      ]
+    },
+    {
+      "id": "pendant_07",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.5294106602668762,
+        1.5294108390808105,
+        0.6267304420471191
+      ],
+      "centroid_m": [
+        0.2499999701976776,
+        4.700000047683716,
+        4.626634836196899
+      ]
+    },
+    {
+      "id": "pendant_08",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.6094107627868652,
+        1.6094107627868652,
+        0.7376112937927246
+      ],
+      "centroid_m": [
+        2.1500000953674316,
+        4.8999998569488525,
+        4.571194410324097
+      ]
+    },
+    {
+      "id": "pendant_09",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.3694109916687012,
+        1.369410514831543,
+        0.7349696159362793
+      ],
+      "centroid_m": [
+        -2.200000047683716,
+        7.0,
+        4.572515249252319
+      ]
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.5294106602668762,
+        1.5294113159179688,
+        0.6267304420471191
+      ],
+      "centroid_m": [
+        -0.2999999225139618,
+        7.300000190734863,
+        4.626634836196899
+      ]
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.409410834312439,
+        1.409409523010254,
+        0.7354097366333008
+      ],
+      "centroid_m": [
+        1.550000011920929,
+        7.599999904632568,
+        4.572295188903809
+      ]
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.4894108772277832,
+        1.489410400390625,
+        0.736290454864502
+      ],
+      "centroid_m": [
+        -2.200000047683716,
+        9.699999809265137,
+        4.571854829788208
+      ]
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.5294106602668762,
+        1.5294113159179688,
+        0.6267304420471191
+      ],
+      "centroid_m": [
+        -0.2499999701976776,
+        10.0,
+        4.626634836196899
+      ]
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.3494106531143188,
+        1.3494110107421875,
+        0.7347493171691895
+      ],
+      "centroid_m": [
+        1.9000000357627869,
+        10.100000381469727,
+        4.572625398635864
+      ]
+    },
+    {
+      "id": "pendant_15",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.2694108486175537,
+        1.2694110870361328,
+        0.7338685989379883
+      ],
+      "centroid_m": [
+        -2.100000023841858,
+        12.0,
+        4.573065757751465
+      ]
+    },
+    {
+      "id": "pendant_16",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.2894107103347778,
+        1.2894105911254883,
+        0.6240887641906738
+      ],
+      "centroid_m": [
+        -0.19999998807907104,
+        12.650000095367432,
+        4.627955675125122
+      ]
+    },
+    {
+      "id": "pendant_17",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.3894108533859253,
+        1.3894100189208984,
+        0.7351894378662109
+      ],
+      "centroid_m": [
+        1.8499999642372131,
+        12.549999237060547,
+        4.5724053382873535
+      ]
+    },
+    {
+      "id": "pendant_18",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.1094108819961548,
+        1.1094093322753906,
+        0.7321076393127441
+      ],
+      "centroid_m": [
+        -1.6500000357627869,
+        14.449999809265137,
+        4.573946237564087
+      ]
+    },
+    {
+      "id": "pendant_19",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.2094107270240784,
+        1.2094106674194336,
+        0.6232085227966309
+      ],
+      "centroid_m": [
+        0.29999998211860657,
+        14.549999713897705,
+        4.6283957958221436
+      ]
+    },
+    {
+      "id": "pendant_20",
+      "category": "pendant_light",
+      "description": "Suspended shallow woven bowl pendant with central warm diffuser",
+      "evidence_sample_ids": [
+        0,
+        45,
+        82,
+        90,
+        125,
+        135
+      ],
+      "provenance": {
+        "visible_form": "observed in supplied RGB",
+        "placement": "measured from M2 depth with robust cross-view interpretation",
+        "hidden_geometry": "inferred"
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Woven relief uses explicit staggered cells; exact interlacing inferred.",
+        "Suspension height and hidden electrics inferred; emitted intensity chosen for rendering."
+      ],
+      "spatial_relations": [],
+      "dimensions_m": [
+        1.1694108247756958,
+        1.1694087982177734,
+        0.7327680587768555
+      ],
+      "centroid_m": [
+        2.2499999403953552,
+        14.350000381469727,
+        4.573616027832031
+      ]
+    }
+  ],
+  "all_contact_sheets_inspected": [
+    "000_029",
+    "030_059",
+    "060_089",
+    "090_119",
+    "120_149",
+    "150_179"
+  ],
+  "full_rgb_inspected": [
+    0,
+    45,
+    60,
+    75,
+    82,
+    90,
+    100,
+    110,
+    125,
+    135,
+    179
+  ]
+}

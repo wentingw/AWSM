@@ -1,0 +1,34 @@
+{
+  "method_id": "M1",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "model_from_input": null,
+  "geometry_scale": "assumed metric scale anchored to2.6m door; not measured",
+  "revisions": 2,
+  "checking_render_count": 20,
+  "input_bvh_pass_count": 0,
+  "input_packet_sha256": "a32595feae018a721ba1bb7b8a9f42ffc351146a51d036455a904ab77a106b51",
+  "unresolved_issues": [
+    "M1-I05: All cameras byte-identical.108 remains91.43percent opticalZ below1m. Moving/removing the common wall solely to clear this incompatible pose is unsupported by61/74/82; no such change made.",
+    "M1-I06: Consolidated planters and moved north/side furniture using conditional measurements;33/91/100/155 improve obstruction.61/74 excessive seating and129 horizontal placement conflict remain.",
+    "M1-I08: Darker walls/slats and finer floor motif; weave/vegetation/reflections approximate. Scale2.6±.35m door assumption, all180 poses unvalidated.",
+    "Assumed metric scale, hidden surfaces/thickness/materials/lighting/physics inferred.",
+    "South portal leads into an inferred finite recess; onward connectivity unobserved."
+  ],
+  "quality_status": "LIMITED",
+  "final_candidate_version": 2,
+  "author_repair_notes": "author_repair_notes.json",
+  "independent_final_review": "pending; author does not certify or freeze",
+  "input_bvh_requirement": "N/A for RGB-only M1; exactly-three-pass rule applies to M2–M4 only",
+  "artifact_sha256": {
+    "scene.blend": "747b24362a5c0a2d71d24499a0e82cdc8a1f4595fc9e724a7da5c0d192708f63",
+    "scene.glb": "d9add3bc69f3a87dd980e6252d8aac8cd5426665511b00bfe4fd1a06c3e22b50",
+    "build_scene.py": "c4862f365d9813e1609280543f3650178f7c0d35db8500919ee395f3c2c8505b",
+    "layout.json": "253bd78efeb7f0036ceb45e9d16f5d393fad43f62ce8b60558579979ab7e38f1",
+    "objects.json": "aa071353aa124d004ca05c7dbe16c10f66305baf1139021063f823b5cdc29b4c",
+    "colliders.json": "89b77abef219aca75c37232a4f04d9b83f909b2095c4794521fdcbdc308873a3",
+    "cameras.json": "ff42bb139e729aa7bd795107c6a0fe2d62c2c422496f91ebb526b61ed4c81b26"
+  },
+  "frozen_utc": "2026-09-30T06:59:51Z",
+  "final_review_status": "LIMITED"
+}

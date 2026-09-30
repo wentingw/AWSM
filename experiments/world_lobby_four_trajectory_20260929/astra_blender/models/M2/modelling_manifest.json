@@ -1,0 +1,64 @@
+{
+  "method_id": "M2",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "quality_status": "limited",
+  "model_from_input": [
+    [
+      0.9999885054327616,
+      -0.004723130514087124,
+      -0.0008252517788155218,
+      0.0
+    ],
+    [
+      0.0,
+      -0.1721180458938969,
+      0.9850763311935103,
+      0.0
+    ],
+    [
+      -0.0047946848021052525,
+      -0.9850650081673866,
+      -0.17211606747144545,
+      2.237459615971823
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1.0,
+  "revisions": 2,
+  "checking_render_count": 10,
+  "input_packet_sha256": "fb05e8f7bb3a63f4f129ca0199552414893ad581157b57b0c240a4ba7d2e332e",
+  "unresolved_issues": [
+    "Forward views still show shifted furniture and imperfect backrest contours. No camera or global scale changes made.",
+    "Observed repeated structured floor reflection texture remains unmatched; walls still appear flatter/paler than input.",
+    "Yellow sprigs now sparser than source in places; grass/planter silhouette and exact plant species remain approximate.",
+    "Pendant constellation, apparent diameters and suspension heights remain visibly mismatched. Full joint projection fit deferred; weave remains inferred.",
+    "DA3 near-static windows have gross metric scale inconsistencies; native poses and scale preserved.",
+    "Unseen geometry, thickness, joints, materials, illumination and physical coefficients inferred."
+  ],
+  "scope_declaration": "Only generic contract/tools, assigned M2 packet and own output read. No GT, held-out RGB, other methods or prior scenes.",
+  "constructed_from_empty_scene": true,
+  "whole_scan_used_as_scene": false,
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 12,
+    "resolution": [
+      640,
+      480
+    ],
+    "threads": 4
+  },
+  "input_consistency_passes": 2,
+  "current_scene_sha256": "c19f33ec434bbcf89137e67d81c283b9adfd48f42e993d8b29d63e08318f79a6",
+  "independent_review_complete": true,
+  "final_review_pending": false,
+  "repair_response": "repair_response.json",
+  "final_review_status": "LIMITED",
+  "frozen_utc": "2026-09-29T23:55:39Z"
+}

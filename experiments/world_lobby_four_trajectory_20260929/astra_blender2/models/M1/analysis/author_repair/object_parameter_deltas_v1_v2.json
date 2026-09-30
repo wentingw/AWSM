@@ -1,0 +1,2726 @@
+{
+  "version_before": 1,
+  "version_after": 2,
+  "depth_reference": "N/A for M1",
+  "changes": [
+    {
+      "object_id": "bird_of_paradise_0",
+      "before": {
+        "dimensions": [
+          0.9526500701904297,
+          0.9416747093200684,
+          1.3637818098068237
+        ],
+        "bbox_min": [
+          5.527349948883057,
+          1.521841049194336,
+          0.8362182378768921
+        ],
+        "bbox_max": [
+          6.480000019073486,
+          2.4635157585144043,
+          2.200000047683716
+        ],
+        "component_names": [
+          "bird_of_paradise_0__stem_0",
+          "bird_of_paradise_0__stem_1",
+          "bird_of_paradise_0__stem_2",
+          "bird_of_paradise_0__stem_3",
+          "bird_of_paradise_0__stem_4",
+          "bird_of_paradise_0__stem_5",
+          "bird_of_paradise_0__stem_6",
+          "bird_of_paradise_0__stem_7",
+          "bird_of_paradise_0__stem_8",
+          "bird_of_paradise_0__stem_9",
+          "bird_of_paradise_0__stem_10",
+          "bird_of_paradise_0__stem_11",
+          "bird_of_paradise_0__stem_12",
+          "bird_of_paradise_0__broad_leaves",
+          "bird_of_paradise_0__orange_flowers"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9526500701904297,
+          0.9416747093200684,
+          1.3639392852783203
+        ],
+        "bbox_min": [
+          5.527349948883057,
+          1.521841049194336,
+          0.8360607624053955
+        ],
+        "bbox_max": [
+          6.480000019073486,
+          2.4635157585144043,
+          2.200000047683716
+        ],
+        "component_names": [
+          "bird_of_paradise_0__stem_0",
+          "bird_of_paradise_0__stem_1",
+          "bird_of_paradise_0__stem_2",
+          "bird_of_paradise_0__stem_3",
+          "bird_of_paradise_0__stem_4",
+          "bird_of_paradise_0__stem_5",
+          "bird_of_paradise_0__stem_6",
+          "bird_of_paradise_0__stem_7",
+          "bird_of_paradise_0__stem_8",
+          "bird_of_paradise_0__stem_9",
+          "bird_of_paradise_0__stem_10",
+          "bird_of_paradise_0__stem_11",
+          "bird_of_paradise_0__stem_12",
+          "bird_of_paradise_0__broad_leaves",
+          "bird_of_paradise_0__orange_flowers"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "bird_of_paradise_1",
+      "before": {
+        "dimensions": [
+          0.9526500701904297,
+          0.941674679517746,
+          1.364007830619812
+        ],
+        "bbox_min": [
+          1.627349853515625,
+          0.4718410074710846,
+          0.8359922170639038
+        ],
+        "bbox_max": [
+          2.5799999237060547,
+          1.4135156869888306,
+          2.200000047683716
+        ],
+        "component_names": [
+          "bird_of_paradise_1__stem_0",
+          "bird_of_paradise_1__stem_1",
+          "bird_of_paradise_1__stem_2",
+          "bird_of_paradise_1__stem_3",
+          "bird_of_paradise_1__stem_4",
+          "bird_of_paradise_1__stem_5",
+          "bird_of_paradise_1__stem_6",
+          "bird_of_paradise_1__stem_7",
+          "bird_of_paradise_1__stem_8",
+          "bird_of_paradise_1__stem_9",
+          "bird_of_paradise_1__stem_10",
+          "bird_of_paradise_1__stem_11",
+          "bird_of_paradise_1__stem_12",
+          "bird_of_paradise_1__broad_leaves",
+          "bird_of_paradise_1__orange_flowers"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9526500701904297,
+          0.941674679517746,
+          1.364007592201233
+        ],
+        "bbox_min": [
+          1.627349853515625,
+          0.4718410074710846,
+          0.8359924554824829
+        ],
+        "bbox_max": [
+          2.5799999237060547,
+          1.4135156869888306,
+          2.200000047683716
+        ],
+        "component_names": [
+          "bird_of_paradise_1__stem_0",
+          "bird_of_paradise_1__stem_1",
+          "bird_of_paradise_1__stem_2",
+          "bird_of_paradise_1__stem_3",
+          "bird_of_paradise_1__stem_4",
+          "bird_of_paradise_1__stem_5",
+          "bird_of_paradise_1__stem_6",
+          "bird_of_paradise_1__stem_7",
+          "bird_of_paradise_1__stem_8",
+          "bird_of_paradise_1__stem_9",
+          "bird_of_paradise_1__stem_10",
+          "bird_of_paradise_1__stem_11",
+          "bird_of_paradise_1__stem_12",
+          "bird_of_paradise_1__broad_leaves",
+          "bird_of_paradise_1__orange_flowers"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_0_0",
+      "before": {
+        "dimensions": [
+          1.9500001668930054,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          1.225000023841858,
+          12.109999656677246,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          3.1750001907348633,
+          12.6899995803833,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_0_0__container",
+          "gold_planter_0_0__soil",
+          "gold_planter_0_0__foot"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.9500001668930054,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          1.225000023841858,
+          9.510000228881836,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          3.1750001907348633,
+          10.09000015258789,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_0_0__container",
+          "gold_planter_0_0__soil",
+          "gold_planter_0_0__foot"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_0_0_plant",
+      "before": {
+        "dimensions": [
+          2.6111815571784973,
+          0.9264593124389648,
+          1.0340474247932434
+        ],
+        "bbox_min": [
+          0.7953259348869324,
+          11.977901458740234,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          3.4065074920654297,
+          12.9043607711792,
+          1.7340474128723145
+        ],
+        "component_names": [
+          "gold_planter_0_0_plant__branches",
+          "gold_planter_0_0_plant__yellow_foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          2.6111815571784973,
+          0.9264602661132812,
+          1.0340474247932434
+        ],
+        "bbox_min": [
+          0.7953259348869324,
+          9.377901077270508,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          3.4065074920654297,
+          10.304361343383789,
+          1.7340474128723145
+        ],
+        "component_names": [
+          "gold_planter_0_0_plant__branches",
+          "gold_planter_0_0_plant__yellow_foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_0_1",
+      "before": {
+        "dimensions": [
+          1.9499998092651367,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          3.6750001907348633,
+          12.109999656677246,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          5.625,
+          12.6899995803833,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_0_1__container",
+          "gold_planter_0_1__soil",
+          "gold_planter_0_1__foot"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.9499998092651367,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          3.6750001907348633,
+          9.510000228881836,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          5.625,
+          10.09000015258789,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_0_1__container",
+          "gold_planter_0_1__soil",
+          "gold_planter_0_1__foot"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_0_1_plant",
+      "before": {
+        "dimensions": [
+          2.2956695556640625,
+          1.278925895690918,
+          1.0684821009635925
+        ],
+        "bbox_min": [
+          3.4825849533081055,
+          11.816609382629395,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          5.778254508972168,
+          13.095535278320312,
+          1.7684820890426636
+        ],
+        "component_names": [
+          "gold_planter_0_1_plant__branches",
+          "gold_planter_0_1_plant__yellow_foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          2.2956695556640625,
+          1.2789249420166016,
+          1.0684821009635925
+        ],
+        "bbox_min": [
+          3.4825849533081055,
+          9.216609954833984,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          5.778254508972168,
+          10.495534896850586,
+          1.7684820890426636
+        ],
+        "component_names": [
+          "gold_planter_0_1_plant__branches",
+          "gold_planter_0_1_plant__yellow_foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_1_0",
+      "before": {
+        "dimensions": [
+          1.9500001668930054,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          1.225000023841858,
+          5.409999847412109,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          3.1750001907348633,
+          5.989999771118164,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_1_0__container",
+          "gold_planter_1_0__soil",
+          "gold_planter_1_0__foot"
+        ]
+      },
+      "after": null,
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_1_0_plant",
+      "before": {
+        "dimensions": [
+          2.385944962501526,
+          1.0959420204162598,
+          1.0542003512382507
+        ],
+        "bbox_min": [
+          1.0598350763320923,
+          5.16514253616333,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          3.445780038833618,
+          6.26108455657959,
+          1.7542003393173218
+        ],
+        "component_names": [
+          "gold_planter_1_0_plant__branches",
+          "gold_planter_1_0_plant__yellow_foliage"
+        ]
+      },
+      "after": null,
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_1_1",
+      "before": {
+        "dimensions": [
+          1.9499998092651367,
+          0.5799999237060547,
+          0.7120000086724758
+        ],
+        "bbox_min": [
+          3.6750001907348633,
+          5.409999847412109,
+          0.0025000013411045074
+        ],
+        "bbox_max": [
+          5.625,
+          5.989999771118164,
+          0.7145000100135803
+        ],
+        "component_names": [
+          "gold_planter_1_1__container",
+          "gold_planter_1_1__soil",
+          "gold_planter_1_1__foot"
+        ]
+      },
+      "after": null,
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "gold_planter_1_1_plant",
+      "before": {
+        "dimensions": [
+          2.144160747528076,
+          1.1895055770874023,
+          0.9943177103996277
+        ],
+        "bbox_min": [
+          3.6952762603759766,
+          5.183436870574951,
+          0.699999988079071
+        ],
+        "bbox_max": [
+          5.839437007904053,
+          6.3729424476623535,
+          1.6943176984786987
+        ],
+        "component_names": [
+          "gold_planter_1_1_plant__branches",
+          "gold_planter_1_1_plant__yellow_foliage"
+        ]
+      },
+      "after": null,
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        100,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "100": [
+          400,
+          550,
+          1180,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "low_bowl_plant_0",
+      "before": {
+        "dimensions": [
+          1.592372864484787,
+          1.5897111892700195,
+          0.7095603048801422
+        ],
+        "bbox_min": [
+          0.0546356737613678,
+          6.4636383056640625,
+          0.42446407675743103
+        ],
+        "bbox_max": [
+          1.6470085382461548,
+          8.053349494934082,
+          1.1340243816375732
+        ],
+        "component_names": [
+          "low_bowl_plant_0__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.593590795993805,
+          1.5728778839111328,
+          0.6982848346233368
+        ],
+        "bbox_min": [
+          0.044450223445892334,
+          6.469548225402832,
+          0.4206245243549347
+        ],
+        "bbox_max": [
+          1.6380410194396973,
+          8.042426109313965,
+          1.1189093589782715
+        ],
+        "component_names": [
+          "low_bowl_plant_0__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        91,
+        108,
+        118,
+        129
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "low_bowl_plant_1",
+      "before": {
+        "dimensions": [
+          1.5631608068943024,
+          1.5859893560409546,
+          0.7257965207099915
+        ],
+        "bbox_min": [
+          0.08915147185325623,
+          0.2121192216873169,
+          0.42168372869491577
+        ],
+        "bbox_max": [
+          1.6523122787475586,
+          1.7981085777282715,
+          1.1474802494049072
+        ],
+        "component_names": [
+          "low_bowl_plant_1__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.6042227745056152,
+          1.5303455293178558,
+          0.7102024555206299
+        ],
+        "bbox_min": [
+          0.047405123710632324,
+          0.19880452752113342,
+          0.425331711769104
+        ],
+        "bbox_max": [
+          1.6516278982162476,
+          1.7291500568389893,
+          1.1355341672897339
+        ],
+        "component_names": [
+          "low_bowl_plant_1__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        91,
+        108,
+        118,
+        129
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "low_bowl_plant_2",
+      "before": {
+        "dimensions": [
+          1.5909314155578613,
+          1.5928945541381836,
+          0.725268691778183
+        ],
+        "bbox_min": [
+          6.209195137023926,
+          14.094147682189941,
+          0.4202543795108795
+        ],
+        "bbox_max": [
+          7.800126552581787,
+          15.687042236328125,
+          1.1455230712890625
+        ],
+        "component_names": [
+          "low_bowl_plant_2__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.5779848098754883,
+          1.5867013931274414,
+          0.7181861996650696
+        ],
+        "bbox_min": [
+          6.1957550048828125,
+          14.09555435180664,
+          0.4205555319786072
+        ],
+        "bbox_max": [
+          7.773739814758301,
+          15.682255744934082,
+          1.1387417316436768
+        ],
+        "component_names": [
+          "low_bowl_plant_2__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        91,
+        108,
+        118,
+        129
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "mirror_side_coffee_table",
+      "before": null,
+      "after": {
+        "dimensions": [
+          1.1999998092651367,
+          1.1999998092651367,
+          0.4389999955892563
+        ],
+        "bbox_min": [
+          3.5999999046325684,
+          5.200000286102295,
+          0.015000000596046448
+        ],
+        "bbox_max": [
+          4.799999713897705,
+          6.400000095367432,
+          0.45399999618530273
+        ],
+        "component_names": [
+          "mirror_side_coffee_table__tabletop",
+          "mirror_side_coffee_table__support"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_coffee_table",
+      "before": {
+        "dimensions": [
+          1.3600001335144043,
+          1.3600006103515625,
+          0.43400000035762787
+        ],
+        "bbox_min": [
+          2.319999933242798,
+          9.219999313354492,
+          0.019999995827674866
+        ],
+        "bbox_max": [
+          3.680000066757202,
+          10.579999923706055,
+          0.45399999618530273
+        ],
+        "component_names": [
+          "north_coffee_table__tabletop",
+          "north_coffee_table__base_core",
+          "north_coffee_table__radial_base_0",
+          "north_coffee_table__radial_base_1",
+          "north_coffee_table__radial_base_2",
+          "north_coffee_table__radial_base_3",
+          "north_coffee_table__radial_base_4",
+          "north_coffee_table__radial_base_5",
+          "north_coffee_table__radial_base_6",
+          "north_coffee_table__radial_base_7",
+          "north_coffee_table__radial_base_8",
+          "north_coffee_table__radial_base_9",
+          "north_coffee_table__radial_base_10",
+          "north_coffee_table__radial_base_11",
+          "north_coffee_table__radial_base_12",
+          "north_coffee_table__radial_base_13",
+          "north_coffee_table__radial_base_14",
+          "north_coffee_table__radial_base_15",
+          "north_coffee_table__radial_base_16",
+          "north_coffee_table__radial_base_17",
+          "north_coffee_table__radial_base_18",
+          "north_coffee_table__radial_base_19",
+          "north_coffee_table__radial_base_20",
+          "north_coffee_table__radial_base_21",
+          "north_coffee_table__radial_base_22",
+          "north_coffee_table__radial_base_23"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.3600001335144043,
+          1.359999656677246,
+          0.43400000035762787
+        ],
+        "bbox_min": [
+          2.419999837875366,
+          6.62000036239624,
+          0.019999995827674866
+        ],
+        "bbox_max": [
+          3.7799999713897705,
+          7.980000019073486,
+          0.45399999618530273
+        ],
+        "component_names": [
+          "north_coffee_table__tabletop",
+          "north_coffee_table__base_core",
+          "north_coffee_table__radial_base_0",
+          "north_coffee_table__radial_base_1",
+          "north_coffee_table__radial_base_2",
+          "north_coffee_table__radial_base_3",
+          "north_coffee_table__radial_base_4",
+          "north_coffee_table__radial_base_5",
+          "north_coffee_table__radial_base_6",
+          "north_coffee_table__radial_base_7",
+          "north_coffee_table__radial_base_8",
+          "north_coffee_table__radial_base_9",
+          "north_coffee_table__radial_base_10",
+          "north_coffee_table__radial_base_11",
+          "north_coffee_table__radial_base_12",
+          "north_coffee_table__radial_base_13",
+          "north_coffee_table__radial_base_14",
+          "north_coffee_table__radial_base_15",
+          "north_coffee_table__radial_base_16",
+          "north_coffee_table__radial_base_17",
+          "north_coffee_table__radial_base_18",
+          "north_coffee_table__radial_base_19",
+          "north_coffee_table__radial_base_20",
+          "north_coffee_table__radial_base_21",
+          "north_coffee_table__radial_base_22",
+          "north_coffee_table__radial_base_23"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_seat_1",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.9399995803833008,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          1.4800000190734863,
+          9.880000114440918,
+          0.0
+        ],
+        "bbox_max": [
+          2.4200000762939453,
+          10.819999694824219,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "north_seat_1__upholstered_seat",
+          "north_seat_1__leg_-0.25_-0.25",
+          "north_seat_1__leg_-0.25_0.25",
+          "north_seat_1__leg_0.25_-0.25",
+          "north_seat_1__leg_0.25_0.25"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          1.5299999713897705,
+          7.179999828338623,
+          0.0
+        ],
+        "bbox_max": [
+          2.4700000286102295,
+          8.119999885559082,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "north_seat_1__upholstered_seat",
+          "north_seat_1__leg_-0.25_-0.25",
+          "north_seat_1__leg_-0.25_0.25",
+          "north_seat_1__leg_0.25_-0.25",
+          "north_seat_1__leg_0.25_0.25"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_seat_2",
+      "before": {
+        "dimensions": [
+          0.9399999380111694,
+          0.9399995803833008,
+          0.9512179493904114
+        ],
+        "bbox_min": [
+          1.6799999475479126,
+          10.75,
+          0.0
+        ],
+        "bbox_max": [
+          2.619999885559082,
+          11.6899995803833,
+          0.9512179493904114
+        ],
+        "component_names": [
+          "north_seat_2__upholstered_seat",
+          "north_seat_2__leg_-0.25_-0.25",
+          "north_seat_2__leg_-0.25_0.25",
+          "north_seat_2__leg_0.25_-0.25",
+          "north_seat_2__leg_0.25_0.25",
+          "north_seat_2__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9399999380111694,
+          0.9400005340576172,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          1.6799999475479126,
+          8.15999984741211,
+          0.0
+        ],
+        "bbox_max": [
+          2.619999885559082,
+          9.100000381469727,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "north_seat_2__upholstered_seat",
+          "north_seat_2__leg_-0.25_-0.25",
+          "north_seat_2__leg_-0.25_0.25",
+          "north_seat_2__leg_0.25_-0.25",
+          "north_seat_2__leg_0.25_0.25",
+          "north_seat_2__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_seat_3",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.9399995803833008,
+          0.9512180685997009
+        ],
+        "bbox_min": [
+          2.5299999713897705,
+          11.050000190734863,
+          0.0
+        ],
+        "bbox_max": [
+          3.4700000286102295,
+          11.989999771118164,
+          0.9512180685997009
+        ],
+        "component_names": [
+          "north_seat_3__upholstered_seat",
+          "north_seat_3__leg_-0.25_-0.25",
+          "north_seat_3__leg_-0.25_0.25",
+          "north_seat_3__leg_0.25_-0.25",
+          "north_seat_3__leg_0.25_0.25",
+          "north_seat_3__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9399998188018799,
+          0.9400005340576172,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          2.630000114440918,
+          8.529999732971191,
+          0.0
+        ],
+        "bbox_max": [
+          3.569999933242798,
+          9.470000267028809,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "north_seat_3__upholstered_seat",
+          "north_seat_3__leg_-0.25_-0.25",
+          "north_seat_3__leg_-0.25_0.25",
+          "north_seat_3__leg_0.25_-0.25",
+          "north_seat_3__leg_0.25_0.25",
+          "north_seat_3__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_seat_4",
+      "before": {
+        "dimensions": [
+          0.9399998188018799,
+          0.9400005340576172,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          3.430000066757202,
+          10.779999732971191,
+          0.0
+        ],
+        "bbox_max": [
+          4.369999885559082,
+          11.720000267028809,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "north_seat_4__upholstered_seat",
+          "north_seat_4__leg_-0.25_-0.25",
+          "north_seat_4__leg_-0.25_0.25",
+          "north_seat_4__leg_0.25_-0.25",
+          "north_seat_4__leg_0.25_0.25"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.9399995803833008,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          3.630000114440918,
+          8.130000114440918,
+          0.0
+        ],
+        "bbox_max": [
+          4.570000171661377,
+          9.069999694824219,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "north_seat_4__upholstered_seat",
+          "north_seat_4__leg_-0.25_-0.25",
+          "north_seat_4__leg_-0.25_0.25",
+          "north_seat_4__leg_0.25_-0.25",
+          "north_seat_4__leg_0.25_0.25"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_seat_5",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.9399995803833008,
+          0.95121830701828
+        ],
+        "bbox_min": [
+          3.7100000381469727,
+          9.930000305175781,
+          0.0
+        ],
+        "bbox_max": [
+          4.650000095367432,
+          10.869999885559082,
+          0.95121830701828
+        ],
+        "component_names": [
+          "north_seat_5__upholstered_seat",
+          "north_seat_5__leg_-0.25_-0.25",
+          "north_seat_5__leg_-0.25_0.25",
+          "north_seat_5__leg_0.25_-0.25",
+          "north_seat_5__leg_0.25_0.25",
+          "north_seat_5__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9399998188018799,
+          0.9399995803833008,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          3.930000066757202,
+          7.130000114440918,
+          0.0
+        ],
+        "bbox_max": [
+          4.869999885559082,
+          8.069999694824219,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "north_seat_5__upholstered_seat",
+          "north_seat_5__leg_-0.25_-0.25",
+          "north_seat_5__leg_-0.25_0.25",
+          "north_seat_5__leg_0.25_-0.25",
+          "north_seat_5__leg_0.25_0.25",
+          "north_seat_5__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "north_table_bowl",
+      "before": {
+        "dimensions": [
+          0.3600001335144043,
+          0.3599996566772461,
+          0.12999996542930603
+        ],
+        "bbox_min": [
+          2.819999933242798,
+          9.720000267028809,
+          0.46000000834465027
+        ],
+        "bbox_max": [
+          3.180000066757202,
+          10.079999923706055,
+          0.5899999737739563
+        ],
+        "component_names": [
+          "north_table_bowl__bowl"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.3599998950958252,
+          0.3600001335144043,
+          0.12999996542930603
+        ],
+        "bbox_min": [
+          2.9200000762939453,
+          7.119999885559082,
+          0.46000000834465027
+        ],
+        "bbox_max": [
+          3.2799999713897705,
+          7.480000019073486,
+          0.5899999737739563
+        ],
+        "component_names": [
+          "north_table_bowl__bowl"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "reception_desk",
+      "before": {
+        "dimensions": [
+          3.4000000953674316,
+          0.9400005340576172,
+          0.9800000414252281
+        ],
+        "bbox_min": [
+          2.4000000953674316,
+          14.609999656677246,
+          0.10000000149011612
+        ],
+        "bbox_max": [
+          5.800000190734863,
+          15.550000190734863,
+          1.0800000429153442
+        ],
+        "component_names": [
+          "reception_desk__faceted_body",
+          "reception_desk__worktop"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          3.4000000953674316,
+          0.9400005340576172,
+          1.0800000429153442
+        ],
+        "bbox_min": [
+          2.4000000953674316,
+          14.609999656677246,
+          0.0
+        ],
+        "bbox_max": [
+          5.800000190734863,
+          15.550000190734863,
+          1.0800000429153442
+        ],
+        "component_names": [
+          "reception_desk__faceted_body",
+          "reception_desk__worktop",
+          "reception_desk__inferred_plinth"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "108": [
+          0,
+          0,
+          1280,
+          960
+        ],
+        "118": [
+          200,
+          600,
+          1200,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_seat_1",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          2.2799999713897705,
+          2.9800000190734863,
+          0.0
+        ],
+        "bbox_max": [
+          3.2200000286102295,
+          3.9200000762939453,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_seat_1__upholstered_seat",
+          "south_seat_1__leg_-0.25_-0.25",
+          "south_seat_1__leg_-0.25_0.25",
+          "south_seat_1__leg_0.25_-0.25",
+          "south_seat_1__leg_0.25_0.25"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          2.2300000190734863,
+          3.0799999237060547,
+          0.0
+        ],
+        "bbox_max": [
+          3.1700000762939453,
+          4.019999980926514,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_seat_1__upholstered_seat",
+          "south_seat_1__leg_-0.25_-0.25",
+          "south_seat_1__leg_-0.25_0.25",
+          "south_seat_1__leg_0.25_-0.25",
+          "south_seat_1__leg_0.25_0.25"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_seat_2",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.9494144916534424,
+          0.9512181282043457
+        ],
+        "bbox_min": [
+          2.4800000190734863,
+          2.100585460662842,
+          0.0
+        ],
+        "bbox_max": [
+          3.4200000762939453,
+          3.049999952316284,
+          0.9512181282043457
+        ],
+        "component_names": [
+          "south_seat_2__upholstered_seat",
+          "south_seat_2__leg_-0.25_-0.25",
+          "south_seat_2__leg_-0.25_0.25",
+          "south_seat_2__leg_0.25_-0.25",
+          "south_seat_2__leg_0.25_0.25",
+          "south_seat_2__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9399998188018799,
+          0.940000057220459,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          2.380000114440918,
+          2.0999999046325684,
+          0.0
+        ],
+        "bbox_max": [
+          3.319999933242798,
+          3.0399999618530273,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "south_seat_2__upholstered_seat",
+          "south_seat_2__leg_-0.25_-0.25",
+          "south_seat_2__leg_-0.25_0.25",
+          "south_seat_2__leg_0.25_-0.25",
+          "south_seat_2__leg_0.25_0.25",
+          "south_seat_2__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_seat_3",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.9512180089950562
+        ],
+        "bbox_min": [
+          3.3299999237060547,
+          1.809999942779541,
+          0.0
+        ],
+        "bbox_max": [
+          4.269999980926514,
+          2.75,
+          0.9512180089950562
+        ],
+        "component_names": [
+          "south_seat_3__upholstered_seat",
+          "south_seat_3__leg_-0.25_-0.25",
+          "south_seat_3__leg_-0.25_0.25",
+          "south_seat_3__leg_0.25_-0.25",
+          "south_seat_3__leg_0.25_0.25",
+          "south_seat_3__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          3.3299999237060547,
+          1.7300000190734863,
+          0.0
+        ],
+        "bbox_max": [
+          4.269999980926514,
+          2.6700000762939453,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "south_seat_3__upholstered_seat",
+          "south_seat_3__leg_-0.25_-0.25",
+          "south_seat_3__leg_-0.25_0.25",
+          "south_seat_3__leg_0.25_-0.25",
+          "south_seat_3__leg_0.25_0.25",
+          "south_seat_3__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_seat_4",
+      "before": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          4.230000019073486,
+          2.0799999237060547,
+          0.0
+        ],
+        "bbox_max": [
+          5.170000076293945,
+          3.0199999809265137,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_seat_4__upholstered_seat",
+          "south_seat_4__leg_-0.25_-0.25",
+          "south_seat_4__leg_-0.25_0.25",
+          "south_seat_4__leg_0.25_-0.25",
+          "south_seat_4__leg_0.25_0.25"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.9399998188018799,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          4.329999923706055,
+          2.130000114440918,
+          0.0
+        ],
+        "bbox_max": [
+          5.269999980926514,
+          3.069999933242798,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_seat_4__upholstered_seat",
+          "south_seat_4__leg_-0.25_-0.25",
+          "south_seat_4__leg_-0.25_0.25",
+          "south_seat_4__leg_0.25_-0.25",
+          "south_seat_4__leg_0.25_0.25"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_seat_5",
+      "before": {
+        "dimensions": [
+          0.9399995803833008,
+          0.9399998188018799,
+          0.9512180685997009
+        ],
+        "bbox_min": [
+          4.510000228881836,
+          2.930000066757202,
+          0.0
+        ],
+        "bbox_max": [
+          5.449999809265137,
+          3.869999885559082,
+          0.9512180685997009
+        ],
+        "component_names": [
+          "south_seat_5__upholstered_seat",
+          "south_seat_5__leg_-0.25_-0.25",
+          "south_seat_5__leg_-0.25_0.25",
+          "south_seat_5__leg_0.25_-0.25",
+          "south_seat_5__leg_0.25_0.25",
+          "south_seat_5__curved_back"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.940000057220459,
+          0.940000057220459,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          4.630000114440918,
+          3.130000114440918,
+          0.0
+        ],
+        "bbox_max": [
+          5.570000171661377,
+          4.070000171661377,
+          0.8999999761581421
+        ],
+        "component_names": [
+          "south_seat_5__upholstered_seat",
+          "south_seat_5__leg_-0.25_-0.25",
+          "south_seat_5__leg_-0.25_0.25",
+          "south_seat_5__leg_0.25_-0.25",
+          "south_seat_5__leg_0.25_0.25",
+          "south_seat_5__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_side_seat_0",
+      "before": {
+        "dimensions": [
+          0.9000000953674316,
+          0.9000000953674316,
+          0.440000019967556
+        ],
+        "bbox_min": [
+          4.449999809265137,
+          3.049999952316284,
+          0.10000000149011612
+        ],
+        "bbox_max": [
+          5.349999904632568,
+          3.950000047683716,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_side_seat_0__seat"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.8999996185302734,
+          0.9000000953674316,
+          0.5400000214576721
+        ],
+        "bbox_min": [
+          5.050000190734863,
+          6.650000095367432,
+          0.0
+        ],
+        "bbox_max": [
+          5.949999809265137,
+          7.550000190734863,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_side_seat_0__seat",
+          "south_side_seat_0__leg_-0.24_-0.24",
+          "south_side_seat_0__leg_-0.24_0.24",
+          "south_side_seat_0__leg_0.24_-0.24",
+          "south_side_seat_0__leg_0.24_0.24"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_side_seat_1",
+      "before": {
+        "dimensions": [
+          0.8999996185302734,
+          0.9000000953674316,
+          0.440000019967556
+        ],
+        "bbox_min": [
+          5.050000190734863,
+          3.3499999046325684,
+          0.10000000149011612
+        ],
+        "bbox_max": [
+          5.949999809265137,
+          4.25,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_side_seat_1__seat"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.8999996185302734,
+          0.9000000953674316,
+          0.8500000238418579
+        ],
+        "bbox_min": [
+          5.050000190734863,
+          5.690000057220459,
+          0.0
+        ],
+        "bbox_max": [
+          5.949999809265137,
+          6.590000152587891,
+          0.8500000238418579
+        ],
+        "component_names": [
+          "south_side_seat_1__seat",
+          "south_side_seat_1__leg_-0.24_-0.24",
+          "south_side_seat_1__leg_-0.24_0.24",
+          "south_side_seat_1__leg_0.24_-0.24",
+          "south_side_seat_1__leg_0.24_0.24",
+          "south_side_seat_1__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "south_side_seat_2",
+      "before": {
+        "dimensions": [
+          0.9000000953674316,
+          0.8999998569488525,
+          0.440000019967556
+        ],
+        "bbox_min": [
+          4.949999809265137,
+          2.1500000953674316,
+          0.10000000149011612
+        ],
+        "bbox_max": [
+          5.849999904632568,
+          3.049999952316284,
+          0.5400000214576721
+        ],
+        "component_names": [
+          "south_side_seat_2__seat"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9000000953674316,
+          0.8999996185302734,
+          0.8500000238418579
+        ],
+        "bbox_min": [
+          4.75,
+          4.78000020980835,
+          0.0
+        ],
+        "bbox_max": [
+          5.650000095367432,
+          5.679999828338623,
+          0.8500000238418579
+        ],
+        "component_names": [
+          "south_side_seat_2__seat",
+          "south_side_seat_2__leg_-0.24_-0.24",
+          "south_side_seat_2__leg_-0.24_0.24",
+          "south_side_seat_2__leg_0.24_-0.24",
+          "south_side_seat_2__leg_0.24_0.24",
+          "south_side_seat_2__curved_back"
+        ]
+      },
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "pixel_regions": {
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "82": [
+          500,
+          620,
+          1278,
+          950
+        ],
+        "91": [
+          250,
+          400,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "vase_plant_0",
+      "before": {
+        "dimensions": [
+          1.3363876342773438,
+          1.3470840454101562,
+          0.7716498970985413
+        ],
+        "bbox_min": [
+          5.514674663543701,
+          8.710009574890137,
+          0.6520701050758362
+        ],
+        "bbox_max": [
+          6.851062297821045,
+          10.057093620300293,
+          1.4237200021743774
+        ],
+        "component_names": [
+          "vase_plant_0__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          1.3777737617492676,
+          1.3761110305786133,
+          0.7853021621704102
+        ],
+        "bbox_min": [
+          5.491722106933594,
+          8.71882152557373,
+          0.6557867527008057
+        ],
+        "bbox_max": [
+          6.869495868682861,
+          10.094932556152344,
+          1.4410889148712158
+        ],
+        "component_names": [
+          "vase_plant_0__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "vase_plant_1",
+      "before": {
+        "dimensions": [
+          0.9822725057601929,
+          0.9850931167602539,
+          1.3894538283348083
+        ],
+        "bbox_min": [
+          1.5573056936264038,
+          14.60597038269043,
+          0.6199999451637268
+        ],
+        "bbox_max": [
+          2.5395781993865967,
+          15.591063499450684,
+          2.009453773498535
+        ],
+        "component_names": [
+          "vase_plant_1__trunk",
+          "vase_plant_1__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9912420511245728,
+          0.9814119338989258,
+          1.3864333033561707
+        ],
+        "bbox_min": [
+          1.5540088415145874,
+          14.607903480529785,
+          0.6199999451637268
+        ],
+        "bbox_max": [
+          2.54525089263916,
+          15.589315414428711,
+          2.0064332485198975
+        ],
+        "component_names": [
+          "vase_plant_1__trunk",
+          "vase_plant_1__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    },
+    {
+      "object_id": "vase_plant_2",
+      "before": {
+        "dimensions": [
+          0.9760494232177734,
+          0.9848546981811523,
+          1.3890425562858582
+        ],
+        "bbox_min": [
+          5.509514331817627,
+          14.611759185791016,
+          0.6199999451637268
+        ],
+        "bbox_max": [
+          6.4855637550354,
+          15.596613883972168,
+          2.009042501449585
+        ],
+        "component_names": [
+          "vase_plant_2__trunk",
+          "vase_plant_2__foliage"
+        ]
+      },
+      "after": {
+        "dimensions": [
+          0.9615540504455566,
+          0.9931402206420898,
+          1.3889097571372986
+        ],
+        "bbox_min": [
+          5.515413761138916,
+          14.602828979492188,
+          0.6199999451637268
+        ],
+        "bbox_max": [
+          6.476967811584473,
+          15.595969200134277,
+          2.0089097023010254
+        ],
+        "component_names": [
+          "vase_plant_2__trunk",
+          "vase_plant_2__foliage"
+        ]
+      },
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "pixel_regions": {
+        "33": [
+          180,
+          540,
+          1100,
+          950
+        ],
+        "61": [
+          630,
+          620,
+          1230,
+          950
+        ],
+        "74": [
+          420,
+          540,
+          1278,
+          950
+        ],
+        "129": [
+          200,
+          690,
+          1080,
+          950
+        ],
+        "155": [
+          180,
+          520,
+          1100,
+          950
+        ]
+      },
+      "provenance": "inferred shape/placement; see named parameter adjustments. Seeded downstream foliage changes after redundant planter removal are incidental inferred plant detail. Tiny differences may be numerical mesh cleanup.",
+      "signed_input_depth_residual_m": null
+    }
+  ]
+}

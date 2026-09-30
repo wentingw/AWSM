@@ -1,0 +1,3715 @@
+{
+  "objects": [
+    {
+      "id": "floor",
+      "category": "floor",
+      "component_names": [
+        "floor__slab"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        82,
+        91,
+        100,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        10.800000190734863,
+        17.6299991607666,
+        0.15999998152256012
+      ],
+      "bounds": [
+        [
+          -4.220000267028809,
+          -2.2799997329711914,
+          -0.3399999737739563
+        ],
+        [
+          6.579999923706055,
+          15.34999942779541,
+          -0.17999999225139618
+        ]
+      ]
+    },
+    {
+      "id": "floor_inset",
+      "category": "floor_finish",
+      "component_names": [
+        "floor_inset__inset"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        4.900000095367432,
+        16.299999237060547,
+        0.014999985694885254
+      ],
+      "bounds": [
+        [
+          -2.3500001430511475,
+          -1.9499998092651367,
+          -0.17749999463558197
+        ],
+        [
+          2.549999952316284,
+          14.34999942779541,
+          -0.16250000894069672
+        ]
+      ]
+    },
+    {
+      "id": "ceiling",
+      "category": "ceiling",
+      "component_names": [
+        "ceiling__slab"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "walls"
+      },
+      "dimensions": [
+        10.399999618530273,
+        17.229999542236328,
+        0.15999984741210938
+      ],
+      "bounds": [
+        [
+          -4.019999980926514,
+          -2.0799999237060547,
+          4.800000190734863
+        ],
+        [
+          6.37999963760376,
+          15.149999618530273,
+          4.960000038146973
+        ]
+      ]
+    },
+    {
+      "id": "end_wall",
+      "category": "wall",
+      "component_names": [
+        "end_wall__backing_0",
+        "end_wall__panel_0_0_0",
+        "end_wall__panel_0_1_0",
+        "end_wall__panel_0_2_0",
+        "end_wall__panel_1_0_0",
+        "end_wall__panel_1_1_0",
+        "end_wall__panel_1_2_0",
+        "end_wall__panel_2_0_0",
+        "end_wall__panel_2_1_0",
+        "end_wall__panel_2_2_0",
+        "end_wall__panel_3_0_0",
+        "end_wall__panel_3_1_0",
+        "end_wall__panel_3_2_0",
+        "end_wall__panel_4_0_0",
+        "end_wall__panel_4_1_0",
+        "end_wall__panel_4_2_0",
+        "end_wall__panel_5_0_0",
+        "end_wall__panel_5_1_0",
+        "end_wall__panel_5_2_0",
+        "end_wall__panel_6_0_0",
+        "end_wall__panel_6_1_0",
+        "end_wall__panel_6_2_0",
+        "end_wall__panel_7_0_0",
+        "end_wall__panel_7_1_0",
+        "end_wall__panel_7_2_0",
+        "end_wall__panel_8_0_0",
+        "end_wall__panel_8_1_0",
+        "end_wall__panel_8_2_0",
+        "end_wall__panel_9_0_0",
+        "end_wall__panel_9_1_0",
+        "end_wall__panel_9_2_0",
+        "end_wall__panel_10_0_0",
+        "end_wall__panel_10_1_0",
+        "end_wall__panel_10_2_0",
+        "end_wall__panel_11_0_0",
+        "end_wall__panel_11_1_0",
+        "end_wall__panel_11_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        10.399999618530273,
+        0.2200002670288086,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          -4.019999980926514,
+          15.079999923706055,
+          -0.18000006675720215
+        ],
+        [
+          6.37999963760376,
+          15.300000190734863,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "near_wall",
+      "category": "wall",
+      "component_names": [
+        "near_wall__backing_0",
+        "near_wall__panel_0_0_0",
+        "near_wall__panel_0_1_0",
+        "near_wall__panel_0_2_0",
+        "near_wall__panel_1_0_0",
+        "near_wall__panel_1_1_0",
+        "near_wall__panel_1_2_0",
+        "near_wall__panel_2_0_0",
+        "near_wall__panel_2_1_0",
+        "near_wall__panel_2_2_0",
+        "near_wall__panel_3_0_0",
+        "near_wall__panel_3_1_0",
+        "near_wall__panel_3_2_0",
+        "near_wall__panel_4_0_0",
+        "near_wall__panel_4_1_0",
+        "near_wall__panel_4_2_0",
+        "near_wall__panel_5_0_0",
+        "near_wall__panel_5_1_0",
+        "near_wall__panel_5_2_0",
+        "near_wall__panel_6_0_0",
+        "near_wall__panel_6_1_0",
+        "near_wall__panel_6_2_0",
+        "near_wall__panel_7_0_0",
+        "near_wall__panel_7_1_0",
+        "near_wall__panel_7_2_0",
+        "near_wall__panel_8_0_0",
+        "near_wall__panel_8_1_0",
+        "near_wall__panel_8_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        7.800000190734863,
+        0.2200000286102295,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          -4.019999980926514,
+          -2.2300000190734863,
+          -0.18000006675720215
+        ],
+        [
+          3.7800002098083496,
+          -2.009999990463257,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "mirror_wall",
+      "category": "wall",
+      "component_names": [
+        "mirror_wall__backing_0",
+        "mirror_wall__backing_1",
+        "mirror_wall__backing_2",
+        "mirror_wall__backing_3",
+        "mirror_wall__backing_4",
+        "mirror_wall__panel_0_0_0",
+        "mirror_wall__panel_0_1_0",
+        "mirror_wall__panel_0_2_0",
+        "mirror_wall__panel_1_0_0",
+        "mirror_wall__panel_1_1_0",
+        "mirror_wall__panel_1_2_0",
+        "mirror_wall__panel_2_0_0",
+        "mirror_wall__panel_2_1_0",
+        "mirror_wall__panel_2_2_0",
+        "mirror_wall__panel_3_0_0",
+        "mirror_wall__panel_3_1_0",
+        "mirror_wall__panel_3_2_0",
+        "mirror_wall__panel_4_0_0",
+        "mirror_wall__panel_4_1_0",
+        "mirror_wall__panel_4_2_0",
+        "mirror_wall__panel_5_0_0",
+        "mirror_wall__panel_5_1_0",
+        "mirror_wall__panel_5_2_0",
+        "mirror_wall__panel_6_0_0",
+        "mirror_wall__panel_6_1_0",
+        "mirror_wall__panel_6_2_0",
+        "mirror_wall__panel_7_0_0",
+        "mirror_wall__panel_7_1_0",
+        "mirror_wall__panel_7_2_0",
+        "mirror_wall__panel_8_0_0",
+        "mirror_wall__panel_8_1_0",
+        "mirror_wall__panel_8_2_0",
+        "mirror_wall__panel_9_1_0",
+        "mirror_wall__panel_9_2_0",
+        "mirror_wall__panel_10_0_0",
+        "mirror_wall__panel_10_1_0",
+        "mirror_wall__panel_10_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.2200000286102295,
+        9.301244735717773,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          3.7100000381469727,
+          -2.0799999237060547,
+          -0.18000006675720215
+        ],
+        [
+          3.930000066757202,
+          7.221245288848877,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "recess_wall",
+      "category": "wall",
+      "component_names": [
+        "recess_wall__backing_0",
+        "recess_wall__panel_0_0_0",
+        "recess_wall__panel_0_1_0",
+        "recess_wall__panel_0_2_0",
+        "recess_wall__panel_1_0_0",
+        "recess_wall__panel_1_1_0",
+        "recess_wall__panel_1_2_0",
+        "recess_wall__panel_2_0_0",
+        "recess_wall__panel_2_1_0",
+        "recess_wall__panel_2_2_0",
+        "recess_wall__panel_3_0_0",
+        "recess_wall__panel_3_1_0",
+        "recess_wall__panel_3_2_0",
+        "recess_wall__panel_4_0_0",
+        "recess_wall__panel_4_1_0",
+        "recess_wall__panel_4_2_0",
+        "recess_wall__panel_5_0_0",
+        "recess_wall__panel_5_1_0",
+        "recess_wall__panel_5_2_0",
+        "recess_wall__panel_6_0_0",
+        "recess_wall__panel_6_1_0",
+        "recess_wall__panel_6_2_0",
+        "recess_wall__panel_7_0_0",
+        "recess_wall__panel_7_1_0",
+        "recess_wall__panel_7_2_0",
+        "recess_wall__panel_8_0_0",
+        "recess_wall__panel_8_1_0",
+        "recess_wall__panel_8_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.2200002670288086,
+        7.928754806518555,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          6.309999942779541,
+          7.221244812011719,
+          -0.18000006675720215
+        ],
+        [
+          6.53000020980835,
+          15.149999618530273,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "recess_return",
+      "category": "wall",
+      "component_names": [
+        "recess_return__backing_0",
+        "recess_return__panel_0_0_0",
+        "recess_return__panel_0_1_0",
+        "recess_return__panel_0_2_0",
+        "recess_return__panel_1_0_0",
+        "recess_return__panel_1_1_0",
+        "recess_return__panel_1_2_0",
+        "recess_return__panel_2_0_0",
+        "recess_return__panel_2_1_0",
+        "recess_return__panel_2_2_0"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        2.6000001430511475,
+        0.2200007438659668,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          3.7799999713897705,
+          7.071244716644287,
+          -0.18000006675720215
+        ],
+        [
+          6.380000114440918,
+          7.291245460510254,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "service_door_0",
+      "category": "door",
+      "component_names": [
+        "service_door_0__door",
+        "service_door_0__head"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "state": "closed",
+      "dimensions": [
+        0.0924997329711914,
+        0.9399995803833008,
+        2.262500047683716
+      ],
+      "bounds": [
+        [
+          3.620000123977661,
+          5.480000019073486,
+          -0.1899999976158142
+        ],
+        [
+          3.7124998569488525,
+          6.419999599456787,
+          2.072499990463257
+        ]
+      ]
+    },
+    {
+      "id": "service_door_1",
+      "category": "open_passage",
+      "component_names": [
+        "service_door_1__return_0",
+        "service_door_1__return_1",
+        "service_door_1__ceiling_return",
+        "service_door_1__floor_return",
+        "service_door_1__bounded_end"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "Observed open RGB passage; exact clearance and bounded hidden returns inferred",
+      "relations": {
+        "supported_by": "floor",
+        "connects": [
+          "lobby",
+          "inferred_service_vestibule"
+        ]
+      },
+      "state": "open",
+      "dimensions": [
+        1.619999885559082,
+        1.2899999618530273,
+        2.4799997806549072
+      ],
+      "bounds": [
+        [
+          3.7800002098083496,
+          -0.9449999928474426,
+          -0.29999998211860657
+        ],
+        [
+          5.400000095367432,
+          0.3449999988079071,
+          2.179999828338623
+        ]
+      ]
+    },
+    {
+      "id": "service_door_2",
+      "category": "door",
+      "component_names": [
+        "service_door_2__door",
+        "service_door_2__head"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "state": "closed",
+      "dimensions": [
+        0.0924997329711914,
+        0.9400005340576172,
+        2.262500047683716
+      ],
+      "bounds": [
+        [
+          6.220000267028809,
+          9.329999923706055,
+          -0.1899999976158142
+        ],
+        [
+          6.3125,
+          10.270000457763672,
+          2.072499990463257
+        ]
+      ]
+    },
+    {
+      "id": "service_door_3",
+      "category": "door",
+      "component_names": [
+        "service_door_3__door",
+        "service_door_3__head"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "state": "closed",
+      "dimensions": [
+        0.0924997329711914,
+        0.9400005340576172,
+        2.262500047683716
+      ],
+      "bounds": [
+        [
+          6.220000267028809,
+          11.729999542236328,
+          -0.1899999976158142
+        ],
+        [
+          6.3125,
+          12.670000076293945,
+          2.072499990463257
+        ]
+      ]
+    },
+    {
+      "id": "glazed_facade",
+      "category": "window_wall",
+      "component_names": [
+        "glazed_facade__panes",
+        "glazed_facade__mullion_00",
+        "glazed_facade__mullion_01",
+        "glazed_facade__mullion_02",
+        "glazed_facade__mullion_03",
+        "glazed_facade__mullion_04",
+        "glazed_facade__mullion_05",
+        "glazed_facade__mullion_06",
+        "glazed_facade__mullion_07",
+        "glazed_facade__mullion_08",
+        "glazed_facade__mullion_09",
+        "glazed_facade__mullion_10",
+        "glazed_facade__mullion_11",
+        "glazed_facade__mullion_12",
+        "glazed_facade__mullion_13",
+        "glazed_facade__mullion_14",
+        "glazed_facade__mullion_15",
+        "glazed_facade__mullion_16",
+        "glazed_facade__mullion_17",
+        "glazed_facade__mullion_18",
+        "glazed_facade__mullion_19",
+        "glazed_facade__mullion_20",
+        "glazed_facade__transom_00",
+        "glazed_facade__transom_01",
+        "glazed_facade__transom_02"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        108,
+        118,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.14500021934509277,
+        17.25749969482422,
+        4.990000247955322
+      ],
+      "bounds": [
+        [
+          -4.095000267028809,
+          -2.107499837875366,
+          -0.1899999976158142
+        ],
+        [
+          -3.950000047683716,
+          15.149999618530273,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "entrance_doors_0",
+      "category": "double_door",
+      "component_names": [
+        "entrance_doors_0__jamb_0_0",
+        "entrance_doors_0__jamb_0_1",
+        "entrance_doors_0__rail_0_0",
+        "entrance_doors_0__rail_0_1",
+        "entrance_doors_0__handle_0",
+        "entrance_doors_0__jamb_1_0",
+        "entrance_doors_0__jamb_1_1",
+        "entrance_doors_0__rail_1_0",
+        "entrance_doors_0__rail_1_1",
+        "entrance_doors_0__handle_1"
+      ],
+      "evidence_frames": [
+        100,
+        108,
+        118
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "state": "closed",
+      "dimensions": [
+        0.16000032424926758,
+        1.9900000095367432,
+        2.7699999809265137
+      ],
+      "bounds": [
+        [
+          -3.9850001335144043,
+          0.004999995231628418,
+          -0.20000000298023224
+        ],
+        [
+          -3.8249998092651367,
+          1.9950000047683716,
+          2.569999933242798
+        ]
+      ]
+    },
+    {
+      "id": "entrance_doors_1",
+      "category": "double_door",
+      "component_names": [
+        "entrance_doors_1__jamb_0_0",
+        "entrance_doors_1__jamb_0_1",
+        "entrance_doors_1__rail_0_0",
+        "entrance_doors_1__rail_0_1",
+        "entrance_doors_1__handle_0",
+        "entrance_doors_1__jamb_1_0",
+        "entrance_doors_1__jamb_1_1",
+        "entrance_doors_1__rail_1_0",
+        "entrance_doors_1__rail_1_1",
+        "entrance_doors_1__handle_1"
+      ],
+      "evidence_frames": [
+        100,
+        108,
+        118
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "state": "closed",
+      "dimensions": [
+        0.16000032424926758,
+        1.989999771118164,
+        2.7699999809265137
+      ],
+      "bounds": [
+        [
+          -3.9850001335144043,
+          10.755000114440918,
+          -0.20000000298023224
+        ],
+        [
+          -3.8249998092651367,
+          12.744999885559082,
+          2.569999933242798
+        ]
+      ]
+    },
+    {
+      "id": "round_column",
+      "category": "column",
+      "component_names": [
+        "round_column__shaft"
+      ],
+      "evidence_frames": [
+        33,
+        91,
+        100,
+        118,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.7200002670288086,
+        0.7200002670288086,
+        4.9800004959106445
+      ],
+      "bounds": [
+        [
+          -2.9800000190734863,
+          6.839999675750732,
+          -0.18000006675720215
+        ],
+        [
+          -2.2599997520446777,
+          7.559999942779541,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "ceiling_slats_0",
+      "category": "ceiling_trim",
+      "component_names": [
+        "ceiling_slats_0__slat_000",
+        "ceiling_slats_0__slat_001",
+        "ceiling_slats_0__slat_002",
+        "ceiling_slats_0__slat_003",
+        "ceiling_slats_0__slat_004",
+        "ceiling_slats_0__slat_005",
+        "ceiling_slats_0__slat_006",
+        "ceiling_slats_0__slat_007",
+        "ceiling_slats_0__slat_008",
+        "ceiling_slats_0__slat_009",
+        "ceiling_slats_0__slat_010",
+        "ceiling_slats_0__slat_011",
+        "ceiling_slats_0__slat_012",
+        "ceiling_slats_0__slat_013",
+        "ceiling_slats_0__slat_014",
+        "ceiling_slats_0__slat_015",
+        "ceiling_slats_0__slat_016",
+        "ceiling_slats_0__slat_017",
+        "ceiling_slats_0__slat_018",
+        "ceiling_slats_0__slat_019",
+        "ceiling_slats_0__slat_020",
+        "ceiling_slats_0__slat_021",
+        "ceiling_slats_0__slat_022",
+        "ceiling_slats_0__slat_023",
+        "ceiling_slats_0__slat_024",
+        "ceiling_slats_0__slat_025",
+        "ceiling_slats_0__slat_026",
+        "ceiling_slats_0__slat_027",
+        "ceiling_slats_0__slat_028",
+        "ceiling_slats_0__slat_029",
+        "ceiling_slats_0__slat_030",
+        "ceiling_slats_0__slat_031",
+        "ceiling_slats_0__slat_032",
+        "ceiling_slats_0__slat_033",
+        "ceiling_slats_0__slat_034",
+        "ceiling_slats_0__slat_035",
+        "ceiling_slats_0__slat_036",
+        "ceiling_slats_0__slat_037",
+        "ceiling_slats_0__slat_038",
+        "ceiling_slats_0__slat_039",
+        "ceiling_slats_0__slat_040",
+        "ceiling_slats_0__slat_041",
+        "ceiling_slats_0__slat_042",
+        "ceiling_slats_0__slat_043",
+        "ceiling_slats_0__slat_044",
+        "ceiling_slats_0__slat_045",
+        "ceiling_slats_0__slat_046",
+        "ceiling_slats_0__slat_047",
+        "ceiling_slats_0__slat_048",
+        "ceiling_slats_0__slat_049",
+        "ceiling_slats_0__slat_050",
+        "ceiling_slats_0__slat_051",
+        "ceiling_slats_0__slat_052",
+        "ceiling_slats_0__slat_053",
+        "ceiling_slats_0__slat_054",
+        "ceiling_slats_0__slat_055",
+        "ceiling_slats_0__slat_056",
+        "ceiling_slats_0__slat_057",
+        "ceiling_slats_0__slat_058",
+        "ceiling_slats_0__slat_059",
+        "ceiling_slats_0__slat_060",
+        "ceiling_slats_0__slat_061",
+        "ceiling_slats_0__slat_062",
+        "ceiling_slats_0__slat_063",
+        "ceiling_slats_0__slat_064",
+        "ceiling_slats_0__slat_065",
+        "ceiling_slats_0__slat_066",
+        "ceiling_slats_0__slat_067",
+        "ceiling_slats_0__slat_068",
+        "ceiling_slats_0__slat_069",
+        "ceiling_slats_0__slat_070",
+        "ceiling_slats_0__slat_071",
+        "ceiling_slats_0__slat_072",
+        "ceiling_slats_0__slat_073",
+        "ceiling_slats_0__slat_074",
+        "ceiling_slats_0__slat_075",
+        "ceiling_slats_0__slat_076",
+        "ceiling_slats_0__slat_077",
+        "ceiling_slats_0__slat_078",
+        "ceiling_slats_0__slat_079",
+        "ceiling_slats_0__slat_080",
+        "ceiling_slats_0__slat_081",
+        "ceiling_slats_0__slat_082",
+        "ceiling_slats_0__slat_083",
+        "ceiling_slats_0__slat_084",
+        "ceiling_slats_0__slat_085",
+        "ceiling_slats_0__slat_086",
+        "ceiling_slats_0__slat_087",
+        "ceiling_slats_0__slat_088",
+        "ceiling_slats_0__slat_089",
+        "ceiling_slats_0__slat_090"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.4200000762939453,
+        17.15999984741211,
+        0.18000030517578125
+      ],
+      "bounds": [
+        [
+          -4.019999980926514,
+          -2.109999895095825,
+          4.619999885559082
+        ],
+        [
+          -2.5999999046325684,
+          15.050000190734863,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "ceiling_slats_1",
+      "category": "ceiling_trim",
+      "component_names": [
+        "ceiling_slats_1__slat_000",
+        "ceiling_slats_1__slat_001",
+        "ceiling_slats_1__slat_002",
+        "ceiling_slats_1__slat_003",
+        "ceiling_slats_1__slat_004",
+        "ceiling_slats_1__slat_005",
+        "ceiling_slats_1__slat_006",
+        "ceiling_slats_1__slat_007",
+        "ceiling_slats_1__slat_008",
+        "ceiling_slats_1__slat_009",
+        "ceiling_slats_1__slat_010",
+        "ceiling_slats_1__slat_011",
+        "ceiling_slats_1__slat_012",
+        "ceiling_slats_1__slat_013",
+        "ceiling_slats_1__slat_014",
+        "ceiling_slats_1__slat_015",
+        "ceiling_slats_1__slat_016",
+        "ceiling_slats_1__slat_017",
+        "ceiling_slats_1__slat_018",
+        "ceiling_slats_1__slat_019",
+        "ceiling_slats_1__slat_020",
+        "ceiling_slats_1__slat_021",
+        "ceiling_slats_1__slat_022",
+        "ceiling_slats_1__slat_023",
+        "ceiling_slats_1__slat_024",
+        "ceiling_slats_1__slat_025",
+        "ceiling_slats_1__slat_026",
+        "ceiling_slats_1__slat_027",
+        "ceiling_slats_1__slat_028",
+        "ceiling_slats_1__slat_029",
+        "ceiling_slats_1__slat_030",
+        "ceiling_slats_1__slat_031",
+        "ceiling_slats_1__slat_032",
+        "ceiling_slats_1__slat_033",
+        "ceiling_slats_1__slat_034",
+        "ceiling_slats_1__slat_035",
+        "ceiling_slats_1__slat_036",
+        "ceiling_slats_1__slat_037",
+        "ceiling_slats_1__slat_038",
+        "ceiling_slats_1__slat_039",
+        "ceiling_slats_1__slat_040",
+        "ceiling_slats_1__slat_041",
+        "ceiling_slats_1__slat_042",
+        "ceiling_slats_1__slat_043",
+        "ceiling_slats_1__slat_044",
+        "ceiling_slats_1__slat_045",
+        "ceiling_slats_1__slat_046",
+        "ceiling_slats_1__slat_047",
+        "ceiling_slats_1__slat_048",
+        "ceiling_slats_1__slat_049",
+        "ceiling_slats_1__slat_050",
+        "ceiling_slats_1__slat_051",
+        "ceiling_slats_1__slat_052",
+        "ceiling_slats_1__slat_053",
+        "ceiling_slats_1__slat_054",
+        "ceiling_slats_1__slat_055",
+        "ceiling_slats_1__slat_056",
+        "ceiling_slats_1__slat_057",
+        "ceiling_slats_1__slat_058",
+        "ceiling_slats_1__slat_059",
+        "ceiling_slats_1__slat_060",
+        "ceiling_slats_1__slat_061",
+        "ceiling_slats_1__slat_062",
+        "ceiling_slats_1__slat_063",
+        "ceiling_slats_1__slat_064",
+        "ceiling_slats_1__slat_065",
+        "ceiling_slats_1__slat_066",
+        "ceiling_slats_1__slat_067",
+        "ceiling_slats_1__slat_068",
+        "ceiling_slats_1__slat_069",
+        "ceiling_slats_1__slat_070",
+        "ceiling_slats_1__slat_071",
+        "ceiling_slats_1__slat_072",
+        "ceiling_slats_1__slat_073",
+        "ceiling_slats_1__slat_074",
+        "ceiling_slats_1__slat_075",
+        "ceiling_slats_1__slat_076",
+        "ceiling_slats_1__slat_077",
+        "ceiling_slats_1__slat_078",
+        "ceiling_slats_1__slat_079",
+        "ceiling_slats_1__slat_080",
+        "ceiling_slats_1__slat_081",
+        "ceiling_slats_1__slat_082",
+        "ceiling_slats_1__slat_083",
+        "ceiling_slats_1__slat_084",
+        "ceiling_slats_1__slat_085",
+        "ceiling_slats_1__slat_086",
+        "ceiling_slats_1__slat_087",
+        "ceiling_slats_1__slat_088",
+        "ceiling_slats_1__slat_089",
+        "ceiling_slats_1__slat_090"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        100,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        4.0,
+        17.15999984741211,
+        0.18000030517578125
+      ],
+      "bounds": [
+        [
+          2.380000114440918,
+          -2.109999895095825,
+          4.619999885559082
+        ],
+        [
+          6.380000114440918,
+          15.050000190734863,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_00",
+      "category": "ottoman",
+      "component_names": [
+        "lounge_seat_00__upholstered_base",
+        "lounge_seat_00__foot_0",
+        "lounge_seat_00__foot_1",
+        "lounge_seat_00__foot_2",
+        "lounge_seat_00__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.7999999523162842,
+        0.7999997138977051,
+        0.550000011920929
+      ],
+      "bounds": [
+        [
+          -1.5199999809265137,
+          5.320000171661377,
+          -0.18000000715255737
+        ],
+        [
+          -0.7200000286102295,
+          6.119999885559082,
+          0.3700000047683716
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_01",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_01__upholstered_base",
+        "lounge_seat_01__foot_0",
+        "lounge_seat_01__foot_1",
+        "lounge_seat_01__foot_2",
+        "lounge_seat_01__foot_3",
+        "lounge_seat_01__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.7606016993522644,
+        0.8000001907348633,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          -1.4600000381469727,
+          6.179999828338623,
+          -0.18000000715255737
+        ],
+        [
+          -0.6993983387947083,
+          6.980000019073486,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_02",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_02__upholstered_base",
+        "lounge_seat_02__foot_0",
+        "lounge_seat_02__foot_1",
+        "lounge_seat_02__foot_2",
+        "lounge_seat_02__foot_3",
+        "lounge_seat_02__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.7536965608596802,
+        0.7999997138977051,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          -0.7606016397476196,
+          6.28000020980835,
+          -0.18000000715255737
+        ],
+        [
+          -0.006905078422278166,
+          7.079999923706055,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_03",
+      "category": "ottoman",
+      "component_names": [
+        "lounge_seat_03__upholstered_base",
+        "lounge_seat_03__foot_0",
+        "lounge_seat_03__foot_1",
+        "lounge_seat_03__foot_2",
+        "lounge_seat_03__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.7930949330329895,
+        0.8000001907348633,
+        0.550000011920929
+      ],
+      "bounds": [
+        [
+          -0.24309492111206055,
+          6.579999923706055,
+          -0.18000000715255737
+        ],
+        [
+          0.550000011920929,
+          7.380000114440918,
+          0.3700000047683716
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_04",
+      "category": "ottoman",
+      "component_names": [
+        "lounge_seat_04__upholstered_base",
+        "lounge_seat_04__foot_0",
+        "lounge_seat_04__foot_1",
+        "lounge_seat_04__foot_2",
+        "lounge_seat_04__foot_3"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.6966205835342407,
+        0.7999997138977051,
+        0.550000011920929
+      ],
+      "bounds": [
+        [
+          0.10999999940395355,
+          5.900000095367432,
+          -0.18000000715255737
+        ],
+        [
+          0.8066205978393555,
+          6.699999809265137,
+          0.3700000047683716
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_05",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_05__upholstered_base",
+        "lounge_seat_05__foot_0",
+        "lounge_seat_05__foot_1",
+        "lounge_seat_05__foot_2",
+        "lounge_seat_05__foot_3",
+        "lounge_seat_05__curved_back"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "far_modular_cluster"
+      },
+      "dimensions": [
+        0.6966205835342407,
+        0.8000001907348633,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          0.8033794164657593,
+          5.889999866485596,
+          -0.18000000715255737
+        ],
+        [
+          1.5,
+          6.690000057220459,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_06",
+      "category": "ottoman",
+      "component_names": [
+        "lounge_seat_06__upholstered_base",
+        "lounge_seat_06__foot_0",
+        "lounge_seat_06__foot_1",
+        "lounge_seat_06__foot_2",
+        "lounge_seat_06__foot_3"
+      ],
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "near_modular_cluster"
+      },
+      "dimensions": [
+        0.85999995470047,
+        0.8019998073577881,
+        0.550000011920929
+      ],
+      "bounds": [
+        [
+          0.8199999928474426,
+          2.5280001163482666,
+          -0.18000000715255737
+        ],
+        [
+          1.6799999475479126,
+          3.3299999237060547,
+          0.3700000047683716
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_07",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_07__upholstered_base",
+        "lounge_seat_07__foot_0",
+        "lounge_seat_07__foot_1",
+        "lounge_seat_07__foot_2",
+        "lounge_seat_07__foot_3",
+        "lounge_seat_07__curved_back"
+      ],
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "near_modular_cluster"
+      },
+      "dimensions": [
+        0.85999995470047,
+        0.7637090682983398,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          0.8199999928474426,
+          1.7582910060882568,
+          -0.18000000715255737
+        ],
+        [
+          1.6799999475479126,
+          2.5220000743865967,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_08",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_08__upholstered_base",
+        "lounge_seat_08__foot_0",
+        "lounge_seat_08__foot_1",
+        "lounge_seat_08__foot_2",
+        "lounge_seat_08__foot_3",
+        "lounge_seat_08__curved_back"
+      ],
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "near_modular_cluster"
+      },
+      "dimensions": [
+        0.8600000143051147,
+        0.8217090368270874,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          0.75,
+          0.9700000286102295,
+          -0.18000000715255737
+        ],
+        [
+          1.6100000143051147,
+          1.791709065437317,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_09",
+      "category": "ottoman",
+      "component_names": [
+        "lounge_seat_09__upholstered_base",
+        "lounge_seat_09__foot_0",
+        "lounge_seat_09__foot_1",
+        "lounge_seat_09__foot_2",
+        "lounge_seat_09__foot_3"
+      ],
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "near_modular_cluster"
+      },
+      "dimensions": [
+        0.8354834318161011,
+        0.8600000143051147,
+        0.550000011920929
+      ],
+      "bounds": [
+        [
+          0.19451656937599182,
+          0.3400000035762787,
+          -0.18000000715255737
+        ],
+        [
+          1.0299999713897705,
+          1.2000000476837158,
+          0.3700000047683716
+        ]
+      ]
+    },
+    {
+      "id": "lounge_seat_10",
+      "category": "lounge_chair",
+      "component_names": [
+        "lounge_seat_10__upholstered_base",
+        "lounge_seat_10__foot_0",
+        "lounge_seat_10__foot_1",
+        "lounge_seat_10__foot_2",
+        "lounge_seat_10__foot_3",
+        "lounge_seat_10__curved_back"
+      ],
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor",
+        "assembly": "near_modular_cluster"
+      },
+      "dimensions": [
+        0.8354834318161011,
+        0.85999995470047,
+        0.8400000333786011
+      ],
+      "bounds": [
+        [
+          -0.46000000834465027,
+          0.5699999928474426,
+          -0.18000000715255737
+        ],
+        [
+          0.3754834234714508,
+          1.4299999475479126,
+          0.6600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "coffee_table_far",
+      "category": "coffee_table",
+      "component_names": [
+        "coffee_table_far__top",
+        "coffee_table_far__pedestal",
+        "coffee_table_far__rib_00",
+        "coffee_table_far__rib_01",
+        "coffee_table_far__rib_02",
+        "coffee_table_far__rib_03",
+        "coffee_table_far__rib_04",
+        "coffee_table_far__rib_05",
+        "coffee_table_far__rib_06",
+        "coffee_table_far__rib_07",
+        "coffee_table_far__rib_08",
+        "coffee_table_far__rib_09",
+        "coffee_table_far__rib_10",
+        "coffee_table_far__rib_11",
+        "coffee_table_far__rib_12",
+        "coffee_table_far__rib_13",
+        "coffee_table_far__rib_14",
+        "coffee_table_far__rib_15",
+        "coffee_table_far__rib_16",
+        "coffee_table_far__rib_17",
+        "coffee_table_far__rib_18",
+        "coffee_table_far__rib_19",
+        "coffee_table_far__rib_20",
+        "coffee_table_far__rib_21",
+        "coffee_table_far__decor_bowl"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.1399999856948853,
+        0.8892002105712891,
+        0.574999988079071
+      ],
+      "bounds": [
+        [
+          -0.5699999928474426,
+          5.13539981842041,
+          -0.17999999225139618
+        ],
+        [
+          0.5699999928474426,
+          6.024600028991699,
+          0.39500001072883606
+        ]
+      ]
+    },
+    {
+      "id": "coffee_table_near",
+      "category": "coffee_table",
+      "component_names": [
+        "coffee_table_near__top",
+        "coffee_table_near__pedestal",
+        "coffee_table_near__rib_00",
+        "coffee_table_near__rib_01",
+        "coffee_table_near__rib_02",
+        "coffee_table_near__rib_03",
+        "coffee_table_near__rib_04",
+        "coffee_table_near__rib_05",
+        "coffee_table_near__rib_06",
+        "coffee_table_near__rib_07",
+        "coffee_table_near__rib_08",
+        "coffee_table_near__rib_09",
+        "coffee_table_near__rib_10",
+        "coffee_table_near__rib_11",
+        "coffee_table_near__rib_12",
+        "coffee_table_near__rib_13",
+        "coffee_table_near__rib_14",
+        "coffee_table_near__rib_15",
+        "coffee_table_near__rib_16",
+        "coffee_table_near__rib_17",
+        "coffee_table_near__rib_18",
+        "coffee_table_near__rib_19",
+        "coffee_table_near__rib_20",
+        "coffee_table_near__rib_21"
+      ],
+      "evidence_frames": [
+        61,
+        155
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.3200000524520874,
+        1.0296001434326172,
+        0.4074999988079071
+      ],
+      "bounds": [
+        [
+          -0.2600000202655792,
+          1.7351999282836914,
+          -0.17999999225139618
+        ],
+        [
+          1.0600000619888306,
+          2.7648000717163086,
+          0.22750000655651093
+        ]
+      ]
+    },
+    {
+      "id": "side_table_near",
+      "category": "coffee_table",
+      "component_names": [
+        "side_table_near__top",
+        "side_table_near__pedestal",
+        "side_table_near__rib_00",
+        "side_table_near__rib_01",
+        "side_table_near__rib_02",
+        "side_table_near__rib_03",
+        "side_table_near__rib_04",
+        "side_table_near__rib_05",
+        "side_table_near__rib_06",
+        "side_table_near__rib_07",
+        "side_table_near__rib_08",
+        "side_table_near__rib_09",
+        "side_table_near__rib_10",
+        "side_table_near__rib_11",
+        "side_table_near__rib_12",
+        "side_table_near__rib_13",
+        "side_table_near__rib_14",
+        "side_table_near__rib_15",
+        "side_table_near__rib_16",
+        "side_table_near__rib_17",
+        "side_table_near__rib_18",
+        "side_table_near__rib_19",
+        "side_table_near__rib_20",
+        "side_table_near__rib_21"
+      ],
+      "evidence_frames": [
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.6200000047683716,
+        0.48360002040863037,
+        0.5275000333786011
+      ],
+      "bounds": [
+        [
+          -0.6100000143051147,
+          0.5081999897956848,
+          -0.18000000715255737
+        ],
+        [
+          0.009999990463256836,
+          0.9918000102043152,
+          0.3474999964237213
+        ]
+      ]
+    },
+    {
+      "id": "planter_west",
+      "category": "flowering_planter",
+      "component_names": [
+        "planter_west__vessel",
+        "planter_west__soil",
+        "planter_west_foliage__stem_00",
+        "planter_west_foliage__stem_01",
+        "planter_west_foliage__stem_02",
+        "planter_west_foliage__stem_03",
+        "planter_west_foliage__stem_04",
+        "planter_west_foliage__stem_05",
+        "planter_west_foliage__stem_06",
+        "planter_west_foliage__stem_07",
+        "planter_west_foliage__stem_08",
+        "planter_west_foliage__stem_09",
+        "planter_west_foliage__stem_10",
+        "planter_west_foliage__stem_11",
+        "planter_west_foliage__stem_12",
+        "planter_west_foliage__stem_13",
+        "planter_west_foliage__stem_14",
+        "planter_west_foliage__stem_15",
+        "planter_west_foliage__stem_16",
+        "planter_west_foliage__stem_17",
+        "planter_west_foliage__stem_18",
+        "planter_west_foliage__stem_19",
+        "planter_west_foliage__stem_20",
+        "planter_west_foliage__stem_21",
+        "planter_west_foliage__stem_22",
+        "planter_west_foliage__stem_23",
+        "planter_west_foliage__stem_24",
+        "planter_west_foliage__stem_25",
+        "planter_west_foliage__stem_26",
+        "planter_west_foliage__stem_27",
+        "planter_west_foliage__stem_28",
+        "planter_west_foliage__stem_29",
+        "planter_west_foliage__stem_30",
+        "planter_west_foliage__stem_31",
+        "planter_west_foliage__stem_32",
+        "planter_west_foliage__stem_33",
+        "planter_west_foliage__stem_34",
+        "planter_west_foliage__stem_35",
+        "planter_west_foliage__stem_36",
+        "planter_west_foliage__stem_37",
+        "planter_west_foliage__stem_38",
+        "planter_west_foliage__stem_39",
+        "planter_west_foliage__stem_40",
+        "planter_west_foliage__stem_41",
+        "planter_west_foliage__stem_42",
+        "planter_west_foliage__stem_43",
+        "planter_west_foliage__stem_44",
+        "planter_west_foliage__stem_45",
+        "planter_west_foliage__stem_46",
+        "planter_west_foliage__stem_47",
+        "planter_west_foliage__stem_48",
+        "planter_west_foliage__stem_49",
+        "planter_west_foliage__stem_50",
+        "planter_west_foliage__stem_51",
+        "planter_west_foliage__stem_52",
+        "planter_west_foliage__stem_53",
+        "planter_west_foliage__stem_54",
+        "planter_west_foliage__stem_55",
+        "planter_west_foliage__stem_56",
+        "planter_west_foliage__stem_57",
+        "planter_west_foliage__stem_58",
+        "planter_west_foliage__stem_59",
+        "planter_west_foliage__stem_60",
+        "planter_west_foliage__stem_61",
+        "planter_west_foliage__stem_62",
+        "planter_west_foliage__stem_63",
+        "planter_west_foliage__stem_64",
+        "planter_west_foliage__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        108,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.653062343597412,
+        1.7480931282043457,
+        1.4429939985275269
+      ],
+      "bounds": [
+        [
+          -1.5780622959136963,
+          7.184173107147217,
+          -0.17999999225139618
+        ],
+        [
+          0.07499998807907104,
+          8.932266235351562,
+          1.2629940509796143
+        ]
+      ]
+    },
+    {
+      "id": "planter_east",
+      "category": "flowering_planter",
+      "component_names": [
+        "planter_east__vessel",
+        "planter_east__soil",
+        "planter_east_foliage__stem_00",
+        "planter_east_foliage__stem_01",
+        "planter_east_foliage__stem_02",
+        "planter_east_foliage__stem_03",
+        "planter_east_foliage__stem_04",
+        "planter_east_foliage__stem_05",
+        "planter_east_foliage__stem_06",
+        "planter_east_foliage__stem_07",
+        "planter_east_foliage__stem_08",
+        "planter_east_foliage__stem_09",
+        "planter_east_foliage__stem_10",
+        "planter_east_foliage__stem_11",
+        "planter_east_foliage__stem_12",
+        "planter_east_foliage__stem_13",
+        "planter_east_foliage__stem_14",
+        "planter_east_foliage__stem_15",
+        "planter_east_foliage__stem_16",
+        "planter_east_foliage__stem_17",
+        "planter_east_foliage__stem_18",
+        "planter_east_foliage__stem_19",
+        "planter_east_foliage__stem_20",
+        "planter_east_foliage__stem_21",
+        "planter_east_foliage__stem_22",
+        "planter_east_foliage__stem_23",
+        "planter_east_foliage__stem_24",
+        "planter_east_foliage__stem_25",
+        "planter_east_foliage__stem_26",
+        "planter_east_foliage__stem_27",
+        "planter_east_foliage__stem_28",
+        "planter_east_foliage__stem_29",
+        "planter_east_foliage__stem_30",
+        "planter_east_foliage__stem_31",
+        "planter_east_foliage__stem_32",
+        "planter_east_foliage__stem_33",
+        "planter_east_foliage__stem_34",
+        "planter_east_foliage__stem_35",
+        "planter_east_foliage__stem_36",
+        "planter_east_foliage__stem_37",
+        "planter_east_foliage__stem_38",
+        "planter_east_foliage__stem_39",
+        "planter_east_foliage__stem_40",
+        "planter_east_foliage__stem_41",
+        "planter_east_foliage__stem_42",
+        "planter_east_foliage__stem_43",
+        "planter_east_foliage__stem_44",
+        "planter_east_foliage__stem_45",
+        "planter_east_foliage__stem_46",
+        "planter_east_foliage__stem_47",
+        "planter_east_foliage__stem_48",
+        "planter_east_foliage__stem_49",
+        "planter_east_foliage__stem_50",
+        "planter_east_foliage__stem_51",
+        "planter_east_foliage__stem_52",
+        "planter_east_foliage__stem_53",
+        "planter_east_foliage__stem_54",
+        "planter_east_foliage__stem_55",
+        "planter_east_foliage__stem_56",
+        "planter_east_foliage__stem_57",
+        "planter_east_foliage__stem_58",
+        "planter_east_foliage__stem_59",
+        "planter_east_foliage__stem_60",
+        "planter_east_foliage__stem_61",
+        "planter_east_foliage__stem_62",
+        "planter_east_foliage__stem_63",
+        "planter_east_foliage__stem_64",
+        "planter_east_foliage__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        82,
+        91,
+        108,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        2.0100409984588623,
+        1.8624401092529297,
+        1.4585763216018677
+      ],
+      "bounds": [
+        [
+          0.3767499625682831,
+          7.172234535217285,
+          -0.17999999225139618
+        ],
+        [
+          2.3867909908294678,
+          9.034674644470215,
+          1.278576374053955
+        ]
+      ]
+    },
+    {
+      "id": "grass_by_column",
+      "category": "plant_and_planter",
+      "component_names": [
+        "grass_by_column__vessel",
+        "grass_by_column__stem_00",
+        "grass_by_column__stem_01",
+        "grass_by_column__stem_02",
+        "grass_by_column__stem_03",
+        "grass_by_column__stem_04",
+        "grass_by_column__stem_05",
+        "grass_by_column__stem_06",
+        "grass_by_column__stem_07",
+        "grass_by_column__stem_08",
+        "grass_by_column__stem_09",
+        "grass_by_column__stem_10",
+        "grass_by_column__stem_11",
+        "grass_by_column__stem_12",
+        "grass_by_column__stem_13",
+        "grass_by_column__stem_14",
+        "grass_by_column__stem_15",
+        "grass_by_column__stem_16",
+        "grass_by_column__stem_17",
+        "grass_by_column__stem_18",
+        "grass_by_column__stem_19",
+        "grass_by_column__stem_20",
+        "grass_by_column__stem_21",
+        "grass_by_column__stem_22",
+        "grass_by_column__stem_23",
+        "grass_by_column__stem_24",
+        "grass_by_column__stem_25",
+        "grass_by_column__stem_26",
+        "grass_by_column__stem_27",
+        "grass_by_column__stem_28",
+        "grass_by_column__stem_29",
+        "grass_by_column__stem_30",
+        "grass_by_column__stem_31",
+        "grass_by_column__stem_32",
+        "grass_by_column__stem_33",
+        "grass_by_column__stem_34",
+        "grass_by_column__stem_35",
+        "grass_by_column__stem_36",
+        "grass_by_column__stem_37",
+        "grass_by_column__stem_38",
+        "grass_by_column__stem_39",
+        "grass_by_column__stem_40",
+        "grass_by_column__stem_41",
+        "grass_by_column__stem_42",
+        "grass_by_column__stem_43",
+        "grass_by_column__stem_44",
+        "grass_by_column__stem_45",
+        "grass_by_column__stem_46",
+        "grass_by_column__stem_47",
+        "grass_by_column__stem_48",
+        "grass_by_column__stem_49",
+        "grass_by_column__stem_50",
+        "grass_by_column__stem_51",
+        "grass_by_column__stem_52",
+        "grass_by_column__stem_53",
+        "grass_by_column__stem_54",
+        "grass_by_column__stem_55",
+        "grass_by_column__stem_56",
+        "grass_by_column__stem_57",
+        "grass_by_column__stem_58",
+        "grass_by_column__stem_59",
+        "grass_by_column__stem_60",
+        "grass_by_column__stem_61",
+        "grass_by_column__stem_62",
+        "grass_by_column__stem_63",
+        "grass_by_column__stem_64",
+        "grass_by_column__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.711895227432251,
+        1.500448226928711,
+        1.0619982481002808
+      ],
+      "bounds": [
+        [
+          -3.581139326095581,
+          5.057975769042969,
+          -0.20999999344348907
+        ],
+        [
+          -1.86924409866333,
+          6.55842399597168,
+          0.8519982695579529
+        ]
+      ]
+    },
+    {
+      "id": "grass_near_corner",
+      "category": "plant_and_planter",
+      "component_names": [
+        "grass_near_corner__vessel",
+        "grass_near_corner__stem_00",
+        "grass_near_corner__stem_01",
+        "grass_near_corner__stem_02",
+        "grass_near_corner__stem_03",
+        "grass_near_corner__stem_04",
+        "grass_near_corner__stem_05",
+        "grass_near_corner__stem_06",
+        "grass_near_corner__stem_07",
+        "grass_near_corner__stem_08",
+        "grass_near_corner__stem_09",
+        "grass_near_corner__stem_10",
+        "grass_near_corner__stem_11",
+        "grass_near_corner__stem_12",
+        "grass_near_corner__stem_13",
+        "grass_near_corner__stem_14",
+        "grass_near_corner__stem_15",
+        "grass_near_corner__stem_16",
+        "grass_near_corner__stem_17",
+        "grass_near_corner__stem_18",
+        "grass_near_corner__stem_19",
+        "grass_near_corner__stem_20",
+        "grass_near_corner__stem_21",
+        "grass_near_corner__stem_22",
+        "grass_near_corner__stem_23",
+        "grass_near_corner__stem_24",
+        "grass_near_corner__stem_25",
+        "grass_near_corner__stem_26",
+        "grass_near_corner__stem_27",
+        "grass_near_corner__stem_28",
+        "grass_near_corner__stem_29",
+        "grass_near_corner__stem_30",
+        "grass_near_corner__stem_31",
+        "grass_near_corner__stem_32",
+        "grass_near_corner__stem_33",
+        "grass_near_corner__stem_34",
+        "grass_near_corner__stem_35",
+        "grass_near_corner__stem_36",
+        "grass_near_corner__stem_37",
+        "grass_near_corner__stem_38",
+        "grass_near_corner__stem_39",
+        "grass_near_corner__stem_40",
+        "grass_near_corner__stem_41",
+        "grass_near_corner__stem_42",
+        "grass_near_corner__stem_43",
+        "grass_near_corner__stem_44",
+        "grass_near_corner__stem_45",
+        "grass_near_corner__stem_46",
+        "grass_near_corner__stem_47",
+        "grass_near_corner__stem_48",
+        "grass_near_corner__stem_49",
+        "grass_near_corner__stem_50",
+        "grass_near_corner__stem_51",
+        "grass_near_corner__stem_52",
+        "grass_near_corner__stem_53",
+        "grass_near_corner__stem_54",
+        "grass_near_corner__stem_55",
+        "grass_near_corner__stem_56",
+        "grass_near_corner__stem_57",
+        "grass_near_corner__stem_58",
+        "grass_near_corner__stem_59",
+        "grass_near_corner__stem_60",
+        "grass_near_corner__stem_61",
+        "grass_near_corner__stem_62",
+        "grass_near_corner__stem_63",
+        "grass_near_corner__stem_64",
+        "grass_near_corner__foliage"
+      ],
+      "evidence_frames": [
+        91,
+        100
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.2934327125549316,
+        1.473814845085144,
+        1.051835298538208
+      ],
+      "bounds": [
+        [
+          -3.389063835144043,
+          -1.7119731903076172,
+          -0.20999999344348907
+        ],
+        [
+          -2.0956311225891113,
+          -0.23815838992595673,
+          0.8418353199958801
+        ]
+      ]
+    },
+    {
+      "id": "grass_reception_corner",
+      "category": "plant_and_planter",
+      "component_names": [
+        "grass_reception_corner__vessel",
+        "grass_reception_corner__stem_00",
+        "grass_reception_corner__stem_01",
+        "grass_reception_corner__stem_02",
+        "grass_reception_corner__stem_03",
+        "grass_reception_corner__stem_04",
+        "grass_reception_corner__stem_05",
+        "grass_reception_corner__stem_06",
+        "grass_reception_corner__stem_07",
+        "grass_reception_corner__stem_08",
+        "grass_reception_corner__stem_09",
+        "grass_reception_corner__stem_10",
+        "grass_reception_corner__stem_11",
+        "grass_reception_corner__stem_12",
+        "grass_reception_corner__stem_13",
+        "grass_reception_corner__stem_14",
+        "grass_reception_corner__stem_15",
+        "grass_reception_corner__stem_16",
+        "grass_reception_corner__stem_17",
+        "grass_reception_corner__stem_18",
+        "grass_reception_corner__stem_19",
+        "grass_reception_corner__stem_20",
+        "grass_reception_corner__stem_21",
+        "grass_reception_corner__stem_22",
+        "grass_reception_corner__stem_23",
+        "grass_reception_corner__stem_24",
+        "grass_reception_corner__stem_25",
+        "grass_reception_corner__stem_26",
+        "grass_reception_corner__stem_27",
+        "grass_reception_corner__stem_28",
+        "grass_reception_corner__stem_29",
+        "grass_reception_corner__stem_30",
+        "grass_reception_corner__stem_31",
+        "grass_reception_corner__stem_32",
+        "grass_reception_corner__stem_33",
+        "grass_reception_corner__stem_34",
+        "grass_reception_corner__stem_35",
+        "grass_reception_corner__stem_36",
+        "grass_reception_corner__stem_37",
+        "grass_reception_corner__stem_38",
+        "grass_reception_corner__stem_39",
+        "grass_reception_corner__stem_40",
+        "grass_reception_corner__stem_41",
+        "grass_reception_corner__stem_42",
+        "grass_reception_corner__stem_43",
+        "grass_reception_corner__stem_44",
+        "grass_reception_corner__stem_45",
+        "grass_reception_corner__stem_46",
+        "grass_reception_corner__stem_47",
+        "grass_reception_corner__stem_48",
+        "grass_reception_corner__stem_49",
+        "grass_reception_corner__stem_50",
+        "grass_reception_corner__stem_51",
+        "grass_reception_corner__stem_52",
+        "grass_reception_corner__stem_53",
+        "grass_reception_corner__stem_54",
+        "grass_reception_corner__stem_55",
+        "grass_reception_corner__stem_56",
+        "grass_reception_corner__stem_57",
+        "grass_reception_corner__stem_58",
+        "grass_reception_corner__stem_59",
+        "grass_reception_corner__stem_60",
+        "grass_reception_corner__stem_61",
+        "grass_reception_corner__stem_62",
+        "grass_reception_corner__stem_63",
+        "grass_reception_corner__stem_64",
+        "grass_reception_corner__foliage"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.4043498039245605,
+        1.294454574584961,
+        0.9515073299407959
+      ],
+      "bounds": [
+        [
+          4.1041579246521,
+          13.441049575805664,
+          -0.20999999344348907
+        ],
+        [
+          5.50850772857666,
+          14.735504150390625,
+          0.741507351398468
+        ]
+      ]
+    },
+    {
+      "id": "plant_below_mirrors",
+      "category": "plant_and_planter",
+      "component_names": [
+        "plant_below_mirrors__vessel",
+        "plant_below_mirrors__rim",
+        "plant_below_mirrors__stem_00",
+        "plant_below_mirrors__stem_01",
+        "plant_below_mirrors__stem_02",
+        "plant_below_mirrors__stem_03",
+        "plant_below_mirrors__stem_04",
+        "plant_below_mirrors__stem_05",
+        "plant_below_mirrors__stem_06",
+        "plant_below_mirrors__stem_07",
+        "plant_below_mirrors__stem_08",
+        "plant_below_mirrors__stem_09",
+        "plant_below_mirrors__stem_10",
+        "plant_below_mirrors__stem_11",
+        "plant_below_mirrors__stem_12",
+        "plant_below_mirrors__stem_13",
+        "plant_below_mirrors__stem_14",
+        "plant_below_mirrors__stem_15",
+        "plant_below_mirrors__stem_16",
+        "plant_below_mirrors__stem_17",
+        "plant_below_mirrors__stem_18",
+        "plant_below_mirrors__stem_19",
+        "plant_below_mirrors__stem_20",
+        "plant_below_mirrors__stem_21",
+        "plant_below_mirrors__stem_22",
+        "plant_below_mirrors__stem_23",
+        "plant_below_mirrors__stem_24",
+        "plant_below_mirrors__stem_25",
+        "plant_below_mirrors__stem_26",
+        "plant_below_mirrors__stem_27",
+        "plant_below_mirrors__stem_28",
+        "plant_below_mirrors__stem_29",
+        "plant_below_mirrors__stem_30",
+        "plant_below_mirrors__stem_31",
+        "plant_below_mirrors__stem_32",
+        "plant_below_mirrors__stem_33",
+        "plant_below_mirrors__stem_34",
+        "plant_below_mirrors__stem_35",
+        "plant_below_mirrors__stem_36",
+        "plant_below_mirrors__stem_37",
+        "plant_below_mirrors__stem_38",
+        "plant_below_mirrors__stem_39",
+        "plant_below_mirrors__stem_40",
+        "plant_below_mirrors__stem_41",
+        "plant_below_mirrors__stem_42",
+        "plant_below_mirrors__stem_43",
+        "plant_below_mirrors__stem_44",
+        "plant_below_mirrors__stem_45",
+        "plant_below_mirrors__stem_46",
+        "plant_below_mirrors__stem_47",
+        "plant_below_mirrors__stem_48",
+        "plant_below_mirrors__stem_49",
+        "plant_below_mirrors__stem_50",
+        "plant_below_mirrors__stem_51",
+        "plant_below_mirrors__stem_52",
+        "plant_below_mirrors__stem_53",
+        "plant_below_mirrors__stem_54",
+        "plant_below_mirrors__stem_55",
+        "plant_below_mirrors__stem_56",
+        "plant_below_mirrors__stem_57",
+        "plant_below_mirrors__stem_58",
+        "plant_below_mirrors__stem_59",
+        "plant_below_mirrors__stem_60",
+        "plant_below_mirrors__stem_61",
+        "plant_below_mirrors__stem_62",
+        "plant_below_mirrors__stem_63",
+        "plant_below_mirrors__stem_64",
+        "plant_below_mirrors__foliage"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.022463321685791,
+        0.8402862548828125,
+        1.1750327348709106
+      ],
+      "bounds": [
+        [
+          2.6314921379089355,
+          4.509336948394775,
+          -0.20999999344348907
+        ],
+        [
+          3.6539554595947266,
+          5.349623203277588,
+          0.9650327563285828
+        ]
+      ]
+    },
+    {
+      "id": "reception_tree_0",
+      "category": "potted_tree",
+      "component_names": [
+        "reception_tree_0__urn",
+        "reception_tree_0__trunk",
+        "reception_tree_0__tree_crown"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.0245317220687866,
+        0.8636255264282227,
+        1.8958661556243896
+      ],
+      "bounds": [
+        [
+          -2.1258652210235596,
+          13.9130220413208,
+          -0.19999998807907104
+        ],
+        [
+          -1.101333498954773,
+          14.776647567749023,
+          1.6958662271499634
+        ]
+      ]
+    },
+    {
+      "id": "reception_tree_1",
+      "category": "potted_tree",
+      "component_names": [
+        "reception_tree_1__urn",
+        "reception_tree_1__trunk",
+        "reception_tree_1__tree_crown"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        1.032153844833374,
+        0.8522357940673828,
+        1.8890008926391602
+      ],
+      "bounds": [
+        [
+          2.1396734714508057,
+          13.939671516418457,
+          -0.19999998807907104
+        ],
+        [
+          3.1718273162841797,
+          14.79190731048584,
+          1.6890009641647339
+        ]
+      ]
+    },
+    {
+      "id": "tall_flower_0",
+      "category": "plant_and_planter",
+      "component_names": [
+        "tall_flower_0__vessel",
+        "tall_flower_0__stem_00",
+        "tall_flower_0__stem_01",
+        "tall_flower_0__stem_02",
+        "tall_flower_0__stem_03",
+        "tall_flower_0__stem_04",
+        "tall_flower_0__stem_05",
+        "tall_flower_0__stem_06",
+        "tall_flower_0__stem_07",
+        "tall_flower_0__stem_08",
+        "tall_flower_0__stem_09",
+        "tall_flower_0__stem_10",
+        "tall_flower_0__stem_11",
+        "tall_flower_0__stem_12",
+        "tall_flower_0__stem_13",
+        "tall_flower_0__stem_14",
+        "tall_flower_0__stem_15",
+        "tall_flower_0__stem_16",
+        "tall_flower_0__stem_17",
+        "tall_flower_0__stem_18",
+        "tall_flower_0__stem_19",
+        "tall_flower_0__stem_20",
+        "tall_flower_0__stem_21",
+        "tall_flower_0__stem_22",
+        "tall_flower_0__stem_23",
+        "tall_flower_0__stem_24",
+        "tall_flower_0__stem_25",
+        "tall_flower_0__stem_26",
+        "tall_flower_0__stem_27",
+        "tall_flower_0__stem_28",
+        "tall_flower_0__stem_29",
+        "tall_flower_0__stem_30",
+        "tall_flower_0__stem_31",
+        "tall_flower_0__stem_32",
+        "tall_flower_0__stem_33",
+        "tall_flower_0__stem_34",
+        "tall_flower_0__stem_35",
+        "tall_flower_0__stem_36",
+        "tall_flower_0__stem_37",
+        "tall_flower_0__stem_38",
+        "tall_flower_0__stem_39",
+        "tall_flower_0__stem_40",
+        "tall_flower_0__stem_41",
+        "tall_flower_0__stem_42",
+        "tall_flower_0__stem_43",
+        "tall_flower_0__stem_44",
+        "tall_flower_0__stem_45",
+        "tall_flower_0__stem_46",
+        "tall_flower_0__stem_47",
+        "tall_flower_0__stem_48",
+        "tall_flower_0__stem_49",
+        "tall_flower_0__stem_50",
+        "tall_flower_0__stem_51",
+        "tall_flower_0__stem_52",
+        "tall_flower_0__stem_53",
+        "tall_flower_0__stem_54",
+        "tall_flower_0__stem_55",
+        "tall_flower_0__stem_56",
+        "tall_flower_0__stem_57",
+        "tall_flower_0__stem_58",
+        "tall_flower_0__stem_59",
+        "tall_flower_0__stem_60",
+        "tall_flower_0__stem_61",
+        "tall_flower_0__stem_62",
+        "tall_flower_0__stem_63",
+        "tall_flower_0__stem_64",
+        "tall_flower_0__foliage"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.8301964998245239,
+        0.9486256837844849,
+        1.843374252319336
+      ],
+      "bounds": [
+        [
+          1.9414986371994019,
+          -1.2770005464553833,
+          -0.18000000715255737
+        ],
+        [
+          2.771695137023926,
+          -0.32837486267089844,
+          1.6633743047714233
+        ]
+      ]
+    },
+    {
+      "id": "orange_flower_0",
+      "category": "flower",
+      "component_names": [
+        "orange_flower_0__stem",
+        "orange_flower_0__bloom"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "tall_flower_0"
+      },
+      "dimensions": [
+        0.2199997901916504,
+        0.07999998331069946,
+        1.119999885559082
+      ],
+      "bounds": [
+        [
+          2.3400001525878906,
+          -0.8399999737739563,
+          0.6000000238418579
+        ],
+        [
+          2.559999942779541,
+          -0.7599999904632568,
+          1.71999990940094
+        ]
+      ]
+    },
+    {
+      "id": "tall_flower_1",
+      "category": "plant_and_planter",
+      "component_names": [
+        "tall_flower_1__vessel",
+        "tall_flower_1__stem_00",
+        "tall_flower_1__stem_01",
+        "tall_flower_1__stem_02",
+        "tall_flower_1__stem_03",
+        "tall_flower_1__stem_04",
+        "tall_flower_1__stem_05",
+        "tall_flower_1__stem_06",
+        "tall_flower_1__stem_07",
+        "tall_flower_1__stem_08",
+        "tall_flower_1__stem_09",
+        "tall_flower_1__stem_10",
+        "tall_flower_1__stem_11",
+        "tall_flower_1__stem_12",
+        "tall_flower_1__stem_13",
+        "tall_flower_1__stem_14",
+        "tall_flower_1__stem_15",
+        "tall_flower_1__stem_16",
+        "tall_flower_1__stem_17",
+        "tall_flower_1__stem_18",
+        "tall_flower_1__stem_19",
+        "tall_flower_1__stem_20",
+        "tall_flower_1__stem_21",
+        "tall_flower_1__stem_22",
+        "tall_flower_1__stem_23",
+        "tall_flower_1__stem_24",
+        "tall_flower_1__stem_25",
+        "tall_flower_1__stem_26",
+        "tall_flower_1__stem_27",
+        "tall_flower_1__stem_28",
+        "tall_flower_1__stem_29",
+        "tall_flower_1__stem_30",
+        "tall_flower_1__stem_31",
+        "tall_flower_1__stem_32",
+        "tall_flower_1__stem_33",
+        "tall_flower_1__stem_34",
+        "tall_flower_1__stem_35",
+        "tall_flower_1__stem_36",
+        "tall_flower_1__stem_37",
+        "tall_flower_1__stem_38",
+        "tall_flower_1__stem_39",
+        "tall_flower_1__stem_40",
+        "tall_flower_1__stem_41",
+        "tall_flower_1__stem_42",
+        "tall_flower_1__stem_43",
+        "tall_flower_1__stem_44",
+        "tall_flower_1__stem_45",
+        "tall_flower_1__stem_46",
+        "tall_flower_1__stem_47",
+        "tall_flower_1__stem_48",
+        "tall_flower_1__stem_49",
+        "tall_flower_1__stem_50",
+        "tall_flower_1__stem_51",
+        "tall_flower_1__stem_52",
+        "tall_flower_1__stem_53",
+        "tall_flower_1__stem_54",
+        "tall_flower_1__stem_55",
+        "tall_flower_1__stem_56",
+        "tall_flower_1__stem_57",
+        "tall_flower_1__stem_58",
+        "tall_flower_1__stem_59",
+        "tall_flower_1__stem_60",
+        "tall_flower_1__stem_61",
+        "tall_flower_1__stem_62",
+        "tall_flower_1__stem_63",
+        "tall_flower_1__stem_64",
+        "tall_flower_1__foliage"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.9587315320968628,
+        0.8342698812484741,
+        1.8512988090515137
+      ],
+      "bounds": [
+        [
+          -1.7150622606277466,
+          -1.3391659259796143,
+          -0.18000000715255737
+        ],
+        [
+          -0.7563307285308838,
+          -0.5048960447311401,
+          1.6712987422943115
+        ]
+      ]
+    },
+    {
+      "id": "orange_flower_1",
+      "category": "flower",
+      "component_names": [
+        "orange_flower_1__stem",
+        "orange_flower_1__bloom"
+      ],
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "tall_flower_1"
+      },
+      "dimensions": [
+        0.21999990940093994,
+        0.07999998331069946,
+        1.119999885559082
+      ],
+      "bounds": [
+        [
+          -1.2599998712539673,
+          -0.9399999380111694,
+          0.6000000238418579
+        ],
+        [
+          -1.0399999618530273,
+          -0.85999995470047,
+          1.71999990940094
+        ]
+      ]
+    },
+    {
+      "id": "mirror_installation",
+      "category": "wall_mirrors",
+      "component_names": [
+        "mirror_installation__disc_00",
+        "mirror_installation__disc_01",
+        "mirror_installation__disc_02",
+        "mirror_installation__disc_03",
+        "mirror_installation__disc_04",
+        "mirror_installation__disc_05",
+        "mirror_installation__disc_06",
+        "mirror_installation__disc_07",
+        "mirror_installation__disc_08",
+        "mirror_installation__disc_09"
+      ],
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "mirror_wall"
+      },
+      "dimensions": [
+        0.032000064849853516,
+        3.796973705291748,
+        2.043229341506958
+      ],
+      "bounds": [
+        [
+          3.5939998626708984,
+          0.8810572028160095,
+          0.27651843428611755
+        ],
+        [
+          3.625999927520752,
+          4.678030967712402,
+          2.3197476863861084
+        ]
+      ]
+    },
+    {
+      "id": "reception_desk",
+      "category": "reception_desk",
+      "component_names": [
+        "reception_desk__faceted_body",
+        "reception_desk__counter"
+      ],
+      "evidence_frames": [
+        33,
+        108,
+        118,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        2.880037307739258,
+        1.143000602722168,
+        0.9478842616081238
+      ],
+      "bounds": [
+        [
+          -1.2057743072509766,
+          13.665316581726074,
+          -0.18000000715255737
+        ],
+        [
+          1.6742630004882812,
+          14.808317184448242,
+          0.7678842544555664
+        ]
+      ]
+    },
+    {
+      "id": "wall_emblem",
+      "category": "wall_decoration",
+      "component_names": [
+        "wall_emblem__shield",
+        "wall_emblem__crest",
+        "wall_emblem__horn_vertical_-1",
+        "wall_emblem__horn_horizontal_-1",
+        "wall_emblem__horn_vertical_1",
+        "wall_emblem__horn_horizontal_1"
+      ],
+      "evidence_frames": [
+        33,
+        118,
+        129
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "end_wall"
+      },
+      "dimensions": [
+        2.248000144958496,
+        0.0839996337890625,
+        1.5699999332427979
+      ],
+      "bounds": [
+        [
+          -0.5740000009536743,
+          14.996000289916992,
+          1.7599999904632568
+        ],
+        [
+          1.6740000247955322,
+          15.079999923706055,
+          3.3299999237060547
+        ]
+      ]
+    },
+    {
+      "id": "floor_lamp_0",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_0__shade",
+        "floor_lamp_0__leg_-1",
+        "floor_lamp_0__leg_1"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.46000003814697266,
+        0.45999908447265625,
+        1.8608973026275635
+      ],
+      "bounds": [
+        [
+          4.46999979019165,
+          13.370000839233398,
+          -0.18089726567268372
+        ],
+        [
+          4.929999828338623,
+          13.829999923706055,
+          1.6800000667572021
+        ]
+      ]
+    },
+    {
+      "id": "floor_lamp_1",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_1__shade",
+        "floor_lamp_1__leg_-1",
+        "floor_lamp_1__leg_1"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.46000003814697266,
+        0.45999908447265625,
+        1.8608973026275635
+      ],
+      "bounds": [
+        [
+          4.170000076293945,
+          8.570000648498535,
+          -0.1808972805738449
+        ],
+        [
+          4.630000114440918,
+          9.029999732971191,
+          1.6800000667572021
+        ]
+      ]
+    },
+    {
+      "id": "floor_lamp_2",
+      "category": "floor_lamp",
+      "component_names": [
+        "floor_lamp_2__shade",
+        "floor_lamp_2__leg_-1",
+        "floor_lamp_2__leg_1"
+      ],
+      "evidence_frames": [
+        33,
+        74,
+        82,
+        91
+      ],
+      "provenance": "observed silhouette and measured DA3 region; hidden form, thickness and material inferred",
+      "relations": {
+        "supported_by": "floor"
+      },
+      "dimensions": [
+        0.46000003814697266,
+        0.46000003814697266,
+        1.8608973026275635
+      ],
+      "bounds": [
+        [
+          2.6700000762939453,
+          -1.3300000429153442,
+          -0.18089726567268372
+        ],
+        [
+          3.130000114440918,
+          -0.8700000047683716,
+          1.6800000667572021
+        ]
+      ]
+    },
+    {
+      "id": "pendant_00",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_00__bowl",
+        "pendant_00__diffuser",
+        "pendant_00__suspension",
+        "pendant_00__weave_ring_1",
+        "pendant_00__weave_ring_2",
+        "pendant_00__weave_ring_3",
+        "pendant_00__weave_ring_4",
+        "pendant_00__weave_ring_5",
+        "pendant_00__weave_ring_6",
+        "pendant_00__weave_ring_7",
+        "pendant_00__radial_0",
+        "pendant_00__radial_1",
+        "pendant_00__radial_2",
+        "pendant_00__radial_3",
+        "pendant_00__radial_4",
+        "pendant_00__radial_5",
+        "pendant_00__radial_6",
+        "pendant_00__radial_7",
+        "pendant_00__radial_8",
+        "pendant_00__radial_9",
+        "pendant_00__radial_10",
+        "pendant_00__radial_11",
+        "pendant_00__radial_12",
+        "pendant_00__radial_13",
+        "pendant_00__radial_14",
+        "pendant_00__radial_15",
+        "pendant_00__radial_16",
+        "pendant_00__radial_17",
+        "pendant_00__radial_18",
+        "pendant_00__radial_19",
+        "pendant_00__radial_20",
+        "pendant_00__radial_21",
+        "pendant_00__radial_22",
+        "pendant_00__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.3536207675933838,
+        1.353621482849121,
+        0.9065260887145996
+      ],
+      "bounds": [
+        [
+          -2.2204458713531494,
+          4.609433174133301,
+          3.8934741020202637
+        ],
+        [
+          -0.8668251037597656,
+          5.963054656982422,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_01",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_01__bowl",
+        "pendant_01__diffuser",
+        "pendant_01__suspension",
+        "pendant_01__weave_ring_1",
+        "pendant_01__weave_ring_2",
+        "pendant_01__weave_ring_3",
+        "pendant_01__weave_ring_4",
+        "pendant_01__weave_ring_5",
+        "pendant_01__weave_ring_6",
+        "pendant_01__weave_ring_7",
+        "pendant_01__radial_0",
+        "pendant_01__radial_1",
+        "pendant_01__radial_2",
+        "pendant_01__radial_3",
+        "pendant_01__radial_4",
+        "pendant_01__radial_5",
+        "pendant_01__radial_6",
+        "pendant_01__radial_7",
+        "pendant_01__radial_8",
+        "pendant_01__radial_9",
+        "pendant_01__radial_10",
+        "pendant_01__radial_11",
+        "pendant_01__radial_12",
+        "pendant_01__radial_13",
+        "pendant_01__radial_14",
+        "pendant_01__radial_15",
+        "pendant_01__radial_16",
+        "pendant_01__radial_17",
+        "pendant_01__radial_18",
+        "pendant_01__radial_19",
+        "pendant_01__radial_20",
+        "pendant_01__radial_21",
+        "pendant_01__radial_22",
+        "pendant_01__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.2735717296600342,
+        1.2735719680786133,
+        0.8935623168945312
+      ],
+      "bounds": [
+        [
+          -1.8982499837875366,
+          6.694090366363525,
+          3.906437873840332
+        ],
+        [
+          -0.6246781945228577,
+          7.967662334442139,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_02",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_02__bowl",
+        "pendant_02__diffuser",
+        "pendant_02__suspension",
+        "pendant_02__weave_ring_1",
+        "pendant_02__weave_ring_2",
+        "pendant_02__weave_ring_3",
+        "pendant_02__weave_ring_4",
+        "pendant_02__weave_ring_5",
+        "pendant_02__weave_ring_6",
+        "pendant_02__weave_ring_7",
+        "pendant_02__radial_0",
+        "pendant_02__radial_1",
+        "pendant_02__radial_2",
+        "pendant_02__radial_3",
+        "pendant_02__radial_4",
+        "pendant_02__radial_5",
+        "pendant_02__radial_6",
+        "pendant_02__radial_7",
+        "pendant_02__radial_8",
+        "pendant_02__radial_9",
+        "pendant_02__radial_10",
+        "pendant_02__radial_11",
+        "pendant_02__radial_12",
+        "pendant_02__radial_13",
+        "pendant_02__radial_14",
+        "pendant_02__radial_15",
+        "pendant_02__radial_16",
+        "pendant_02__radial_17",
+        "pendant_02__radial_18",
+        "pendant_02__radial_19",
+        "pendant_02__radial_20",
+        "pendant_02__radial_21",
+        "pendant_02__radial_22",
+        "pendant_02__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.2377650737762451,
+        1.237764835357666,
+        1.1646559238433838
+      ],
+      "bounds": [
+        [
+          -2.286853551864624,
+          7.893758296966553,
+          3.6353442668914795
+        ],
+        [
+          -1.049088478088379,
+          9.131523132324219,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_03",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_03__bowl",
+        "pendant_03__diffuser",
+        "pendant_03__suspension",
+        "pendant_03__weave_ring_1",
+        "pendant_03__weave_ring_2",
+        "pendant_03__weave_ring_3",
+        "pendant_03__weave_ring_4",
+        "pendant_03__weave_ring_5",
+        "pendant_03__weave_ring_6",
+        "pendant_03__weave_ring_7",
+        "pendant_03__radial_0",
+        "pendant_03__radial_1",
+        "pendant_03__radial_2",
+        "pendant_03__radial_3",
+        "pendant_03__radial_4",
+        "pendant_03__radial_5",
+        "pendant_03__radial_6",
+        "pendant_03__radial_7",
+        "pendant_03__radial_8",
+        "pendant_03__radial_9",
+        "pendant_03__radial_10",
+        "pendant_03__radial_11",
+        "pendant_03__radial_12",
+        "pendant_03__radial_13",
+        "pendant_03__radial_14",
+        "pendant_03__radial_15",
+        "pendant_03__radial_16",
+        "pendant_03__radial_17",
+        "pendant_03__radial_18",
+        "pendant_03__radial_19",
+        "pendant_03__radial_20",
+        "pendant_03__radial_21",
+        "pendant_03__radial_22",
+        "pendant_03__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.0643951892852783,
+        1.0643949508666992,
+        0.6706743240356445
+      ],
+      "bounds": [
+        [
+          -2.035895824432373,
+          11.50620174407959,
+          4.129325866699219
+        ],
+        [
+          -0.97150057554245,
+          12.570596694946289,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_04",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_04__bowl",
+        "pendant_04__diffuser",
+        "pendant_04__suspension",
+        "pendant_04__weave_ring_1",
+        "pendant_04__weave_ring_2",
+        "pendant_04__weave_ring_3",
+        "pendant_04__weave_ring_4",
+        "pendant_04__weave_ring_5",
+        "pendant_04__weave_ring_6",
+        "pendant_04__weave_ring_7",
+        "pendant_04__radial_0",
+        "pendant_04__radial_1",
+        "pendant_04__radial_2",
+        "pendant_04__radial_3",
+        "pendant_04__radial_4",
+        "pendant_04__radial_5",
+        "pendant_04__radial_6",
+        "pendant_04__radial_7",
+        "pendant_04__radial_8",
+        "pendant_04__radial_9",
+        "pendant_04__radial_10",
+        "pendant_04__radial_11",
+        "pendant_04__radial_12",
+        "pendant_04__radial_13",
+        "pendant_04__radial_14",
+        "pendant_04__radial_15",
+        "pendant_04__radial_16",
+        "pendant_04__radial_17",
+        "pendant_04__radial_18",
+        "pendant_04__radial_19",
+        "pendant_04__radial_20",
+        "pendant_04__radial_21",
+        "pendant_04__radial_22",
+        "pendant_04__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.1957800388336182,
+        1.195779800415039,
+        0.8079838752746582
+      ],
+      "bounds": [
+        [
+          -1.1722197532653809,
+          10.523000717163086,
+          3.992016315460205
+        ],
+        [
+          0.023560233414173126,
+          11.718780517578125,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_05",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_05__bowl",
+        "pendant_05__diffuser",
+        "pendant_05__suspension",
+        "pendant_05__weave_ring_1",
+        "pendant_05__weave_ring_2",
+        "pendant_05__weave_ring_3",
+        "pendant_05__weave_ring_4",
+        "pendant_05__weave_ring_5",
+        "pendant_05__weave_ring_6",
+        "pendant_05__weave_ring_7",
+        "pendant_05__radial_0",
+        "pendant_05__radial_1",
+        "pendant_05__radial_2",
+        "pendant_05__radial_3",
+        "pendant_05__radial_4",
+        "pendant_05__radial_5",
+        "pendant_05__radial_6",
+        "pendant_05__radial_7",
+        "pendant_05__radial_8",
+        "pendant_05__radial_9",
+        "pendant_05__radial_10",
+        "pendant_05__radial_11",
+        "pendant_05__radial_12",
+        "pendant_05__radial_13",
+        "pendant_05__radial_14",
+        "pendant_05__radial_15",
+        "pendant_05__radial_16",
+        "pendant_05__radial_17",
+        "pendant_05__radial_18",
+        "pendant_05__radial_19",
+        "pendant_05__radial_20",
+        "pendant_05__radial_21",
+        "pendant_05__radial_22",
+        "pendant_05__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.5101470947265625,
+        1.5101470947265625,
+        1.1804592609405518
+      ],
+      "bounds": [
+        [
+          -0.7516565918922424,
+          11.587316513061523,
+          3.6195409297943115
+        ],
+        [
+          0.7584905624389648,
+          13.097463607788086,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_06",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_06__bowl",
+        "pendant_06__diffuser",
+        "pendant_06__suspension",
+        "pendant_06__weave_ring_1",
+        "pendant_06__weave_ring_2",
+        "pendant_06__weave_ring_3",
+        "pendant_06__weave_ring_4",
+        "pendant_06__weave_ring_5",
+        "pendant_06__weave_ring_6",
+        "pendant_06__weave_ring_7",
+        "pendant_06__radial_0",
+        "pendant_06__radial_1",
+        "pendant_06__radial_2",
+        "pendant_06__radial_3",
+        "pendant_06__radial_4",
+        "pendant_06__radial_5",
+        "pendant_06__radial_6",
+        "pendant_06__radial_7",
+        "pendant_06__radial_8",
+        "pendant_06__radial_9",
+        "pendant_06__radial_10",
+        "pendant_06__radial_11",
+        "pendant_06__radial_12",
+        "pendant_06__radial_13",
+        "pendant_06__radial_14",
+        "pendant_06__radial_15",
+        "pendant_06__radial_16",
+        "pendant_06__radial_17",
+        "pendant_06__radial_18",
+        "pendant_06__radial_19",
+        "pendant_06__radial_20",
+        "pendant_06__radial_21",
+        "pendant_06__radial_22",
+        "pendant_06__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.227022647857666,
+        1.2270221710205078,
+        1.5067481994628906
+      ],
+      "bounds": [
+        [
+          -0.40713903307914734,
+          12.832951545715332,
+          3.2932519912719727
+        ],
+        [
+          0.8198836445808411,
+          14.05997371673584,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_07",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_07__bowl",
+        "pendant_07__diffuser",
+        "pendant_07__suspension",
+        "pendant_07__weave_ring_1",
+        "pendant_07__weave_ring_2",
+        "pendant_07__weave_ring_3",
+        "pendant_07__weave_ring_4",
+        "pendant_07__weave_ring_5",
+        "pendant_07__weave_ring_6",
+        "pendant_07__weave_ring_7",
+        "pendant_07__radial_0",
+        "pendant_07__radial_1",
+        "pendant_07__radial_2",
+        "pendant_07__radial_3",
+        "pendant_07__radial_4",
+        "pendant_07__radial_5",
+        "pendant_07__radial_6",
+        "pendant_07__radial_7",
+        "pendant_07__radial_8",
+        "pendant_07__radial_9",
+        "pendant_07__radial_10",
+        "pendant_07__radial_11",
+        "pendant_07__radial_12",
+        "pendant_07__radial_13",
+        "pendant_07__radial_14",
+        "pendant_07__radial_15",
+        "pendant_07__radial_16",
+        "pendant_07__radial_17",
+        "pendant_07__radial_18",
+        "pendant_07__radial_19",
+        "pendant_07__radial_20",
+        "pendant_07__radial_21",
+        "pendant_07__radial_22",
+        "pendant_07__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.2957890033721924,
+        1.2957887649536133,
+        1.3469290733337402
+      ],
+      "bounds": [
+        [
+          -1.8975534439086914,
+          12.89515495300293,
+          3.453071117401123
+        ],
+        [
+          -0.6017645001411438,
+          14.190943717956543,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_08",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_08__bowl",
+        "pendant_08__diffuser",
+        "pendant_08__suspension",
+        "pendant_08__weave_ring_1",
+        "pendant_08__weave_ring_2",
+        "pendant_08__weave_ring_3",
+        "pendant_08__weave_ring_4",
+        "pendant_08__weave_ring_5",
+        "pendant_08__weave_ring_6",
+        "pendant_08__weave_ring_7",
+        "pendant_08__radial_0",
+        "pendant_08__radial_1",
+        "pendant_08__radial_2",
+        "pendant_08__radial_3",
+        "pendant_08__radial_4",
+        "pendant_08__radial_5",
+        "pendant_08__radial_6",
+        "pendant_08__radial_7",
+        "pendant_08__radial_8",
+        "pendant_08__radial_9",
+        "pendant_08__radial_10",
+        "pendant_08__radial_11",
+        "pendant_08__radial_12",
+        "pendant_08__radial_13",
+        "pendant_08__radial_14",
+        "pendant_08__radial_15",
+        "pendant_08__radial_16",
+        "pendant_08__radial_17",
+        "pendant_08__radial_18",
+        "pendant_08__radial_19",
+        "pendant_08__radial_20",
+        "pendant_08__radial_21",
+        "pendant_08__radial_22",
+        "pendant_08__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.3147013187408447,
+        1.3147010803222656,
+        1.240431308746338
+      ],
+      "bounds": [
+        [
+          0.37923663854599,
+          11.843822479248047,
+          3.5595688819885254
+        ],
+        [
+          1.69393789768219,
+          13.158523559570312,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_09",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_09__bowl",
+        "pendant_09__diffuser",
+        "pendant_09__suspension",
+        "pendant_09__weave_ring_1",
+        "pendant_09__weave_ring_2",
+        "pendant_09__weave_ring_3",
+        "pendant_09__weave_ring_4",
+        "pendant_09__weave_ring_5",
+        "pendant_09__weave_ring_6",
+        "pendant_09__weave_ring_7",
+        "pendant_09__radial_0",
+        "pendant_09__radial_1",
+        "pendant_09__radial_2",
+        "pendant_09__radial_3",
+        "pendant_09__radial_4",
+        "pendant_09__radial_5",
+        "pendant_09__radial_6",
+        "pendant_09__radial_7",
+        "pendant_09__radial_8",
+        "pendant_09__radial_9",
+        "pendant_09__radial_10",
+        "pendant_09__radial_11",
+        "pendant_09__radial_12",
+        "pendant_09__radial_13",
+        "pendant_09__radial_14",
+        "pendant_09__radial_15",
+        "pendant_09__radial_16",
+        "pendant_09__radial_17",
+        "pendant_09__radial_18",
+        "pendant_09__radial_19",
+        "pendant_09__radial_20",
+        "pendant_09__radial_21",
+        "pendant_09__radial_22",
+        "pendant_09__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.557482123374939,
+        1.5574817657470703,
+        1.330519676208496
+      ],
+      "bounds": [
+        [
+          1.6196051836013794,
+          13.595906257629395,
+          3.469480514526367
+        ],
+        [
+          3.1770873069763184,
+          15.153388023376465,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_10",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_10__bowl",
+        "pendant_10__diffuser",
+        "pendant_10__suspension",
+        "pendant_10__weave_ring_1",
+        "pendant_10__weave_ring_2",
+        "pendant_10__weave_ring_3",
+        "pendant_10__weave_ring_4",
+        "pendant_10__weave_ring_5",
+        "pendant_10__weave_ring_6",
+        "pendant_10__weave_ring_7",
+        "pendant_10__radial_0",
+        "pendant_10__radial_1",
+        "pendant_10__radial_2",
+        "pendant_10__radial_3",
+        "pendant_10__radial_4",
+        "pendant_10__radial_5",
+        "pendant_10__radial_6",
+        "pendant_10__radial_7",
+        "pendant_10__radial_8",
+        "pendant_10__radial_9",
+        "pendant_10__radial_10",
+        "pendant_10__radial_11",
+        "pendant_10__radial_12",
+        "pendant_10__radial_13",
+        "pendant_10__radial_14",
+        "pendant_10__radial_15",
+        "pendant_10__radial_16",
+        "pendant_10__radial_17",
+        "pendant_10__radial_18",
+        "pendant_10__radial_19",
+        "pendant_10__radial_20",
+        "pendant_10__radial_21",
+        "pendant_10__radial_22",
+        "pendant_10__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.452069878578186,
+        1.4520702362060547,
+        1.1888635158538818
+      ],
+      "bounds": [
+        [
+          1.980279803276062,
+          10.024754524230957,
+          3.6111366748809814
+        ],
+        [
+          3.432349681854248,
+          11.476824760437012,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_11",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_11__bowl",
+        "pendant_11__diffuser",
+        "pendant_11__suspension",
+        "pendant_11__weave_ring_1",
+        "pendant_11__weave_ring_2",
+        "pendant_11__weave_ring_3",
+        "pendant_11__weave_ring_4",
+        "pendant_11__weave_ring_5",
+        "pendant_11__weave_ring_6",
+        "pendant_11__weave_ring_7",
+        "pendant_11__radial_0",
+        "pendant_11__radial_1",
+        "pendant_11__radial_2",
+        "pendant_11__radial_3",
+        "pendant_11__radial_4",
+        "pendant_11__radial_5",
+        "pendant_11__radial_6",
+        "pendant_11__radial_7",
+        "pendant_11__radial_8",
+        "pendant_11__radial_9",
+        "pendant_11__radial_10",
+        "pendant_11__radial_11",
+        "pendant_11__radial_12",
+        "pendant_11__radial_13",
+        "pendant_11__radial_14",
+        "pendant_11__radial_15",
+        "pendant_11__radial_16",
+        "pendant_11__radial_17",
+        "pendant_11__radial_18",
+        "pendant_11__radial_19",
+        "pendant_11__radial_20",
+        "pendant_11__radial_21",
+        "pendant_11__radial_22",
+        "pendant_11__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.8096243143081665,
+        1.8096237182617188,
+        0.9875733852386475
+      ],
+      "bounds": [
+        [
+          0.922470211982727,
+          10.173480987548828,
+          3.812426805496216
+        ],
+        [
+          2.7320945262908936,
+          11.983104705810547,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_12",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_12__bowl",
+        "pendant_12__diffuser",
+        "pendant_12__suspension",
+        "pendant_12__weave_ring_1",
+        "pendant_12__weave_ring_2",
+        "pendant_12__weave_ring_3",
+        "pendant_12__weave_ring_4",
+        "pendant_12__weave_ring_5",
+        "pendant_12__weave_ring_6",
+        "pendant_12__weave_ring_7",
+        "pendant_12__radial_0",
+        "pendant_12__radial_1",
+        "pendant_12__radial_2",
+        "pendant_12__radial_3",
+        "pendant_12__radial_4",
+        "pendant_12__radial_5",
+        "pendant_12__radial_6",
+        "pendant_12__radial_7",
+        "pendant_12__radial_8",
+        "pendant_12__radial_9",
+        "pendant_12__radial_10",
+        "pendant_12__radial_11",
+        "pendant_12__radial_12",
+        "pendant_12__radial_13",
+        "pendant_12__radial_14",
+        "pendant_12__radial_15",
+        "pendant_12__radial_16",
+        "pendant_12__radial_17",
+        "pendant_12__radial_18",
+        "pendant_12__radial_19",
+        "pendant_12__radial_20",
+        "pendant_12__radial_21",
+        "pendant_12__radial_22",
+        "pendant_12__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.2881696224212646,
+        1.2881698608398438,
+        0.9243178367614746
+      ],
+      "bounds": [
+        [
+          0.4432205855846405,
+          7.832733154296875,
+          3.8756823539733887
+        ],
+        [
+          1.7313902378082275,
+          9.120903015136719,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_13",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_13__bowl",
+        "pendant_13__diffuser",
+        "pendant_13__suspension",
+        "pendant_13__weave_ring_1",
+        "pendant_13__weave_ring_2",
+        "pendant_13__weave_ring_3",
+        "pendant_13__weave_ring_4",
+        "pendant_13__weave_ring_5",
+        "pendant_13__weave_ring_6",
+        "pendant_13__weave_ring_7",
+        "pendant_13__radial_0",
+        "pendant_13__radial_1",
+        "pendant_13__radial_2",
+        "pendant_13__radial_3",
+        "pendant_13__radial_4",
+        "pendant_13__radial_5",
+        "pendant_13__radial_6",
+        "pendant_13__radial_7",
+        "pendant_13__radial_8",
+        "pendant_13__radial_9",
+        "pendant_13__radial_10",
+        "pendant_13__radial_11",
+        "pendant_13__radial_12",
+        "pendant_13__radial_13",
+        "pendant_13__radial_14",
+        "pendant_13__radial_15",
+        "pendant_13__radial_16",
+        "pendant_13__radial_17",
+        "pendant_13__radial_18",
+        "pendant_13__radial_19",
+        "pendant_13__radial_20",
+        "pendant_13__radial_21",
+        "pendant_13__radial_22",
+        "pendant_13__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.199094295501709,
+        1.1990947723388672,
+        1.6001198291778564
+      ],
+      "bounds": [
+        [
+          0.5883259177207947,
+          4.392124652862549,
+          3.199880361557007
+        ],
+        [
+          1.7874202728271484,
+          5.591219425201416,
+          4.800000190734863
+        ]
+      ]
+    },
+    {
+      "id": "pendant_14",
+      "category": "pendant_light",
+      "component_names": [
+        "pendant_14__bowl",
+        "pendant_14__diffuser",
+        "pendant_14__suspension",
+        "pendant_14__weave_ring_1",
+        "pendant_14__weave_ring_2",
+        "pendant_14__weave_ring_3",
+        "pendant_14__weave_ring_4",
+        "pendant_14__weave_ring_5",
+        "pendant_14__weave_ring_6",
+        "pendant_14__weave_ring_7",
+        "pendant_14__radial_0",
+        "pendant_14__radial_1",
+        "pendant_14__radial_2",
+        "pendant_14__radial_3",
+        "pendant_14__radial_4",
+        "pendant_14__radial_5",
+        "pendant_14__radial_6",
+        "pendant_14__radial_7",
+        "pendant_14__radial_8",
+        "pendant_14__radial_9",
+        "pendant_14__radial_10",
+        "pendant_14__radial_11",
+        "pendant_14__radial_12",
+        "pendant_14__radial_13",
+        "pendant_14__radial_14",
+        "pendant_14__radial_15",
+        "pendant_14__radial_16",
+        "pendant_14__radial_17",
+        "pendant_14__radial_18",
+        "pendant_14__radial_19",
+        "pendant_14__radial_20",
+        "pendant_14__radial_21",
+        "pendant_14__radial_22",
+        "pendant_14__radial_23"
+      ],
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82
+      ],
+      "provenance": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred",
+      "relations": {
+        "supported_by": "ceiling"
+      },
+      "dimensions": [
+        1.5249207019805908,
+        1.5249207019805908,
+        1.6917273998260498
+      ],
+      "bounds": [
+        [
+          1.9399638175964355,
+          3.3506381511688232,
+          3.1082727909088135
+        ],
+        [
+          3.4648845195770264,
+          4.875558853149414,
+          4.800000190734863
+        ]
+      ]
+    }
+  ]
+}

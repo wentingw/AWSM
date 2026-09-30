@@ -1,0 +1,96 @@
+{
+  "status": "FROZEN_BEFORE_MODELLING",
+  "model": "gpt-6-astra",
+  "blender": "5.2.0 LTS fbe6228777e7",
+  "methods": {
+    "M1": "RGB-only; known common calibration",
+    "M2": "ViPE native pose + pose-conditioned DA3",
+    "M3": "ORB-SLAM3 native pose + pose-conditioned DA3",
+    "M4": "GT pose + pose-conditioned DA3, no GT depth"
+  },
+  "revision_limit": 5,
+  "paired_checks_per_version": 10,
+  "paired_check_limit": 50,
+  "supplemental_view_limit": 10,
+  "mandatory_full_input_passes": 3,
+  "checking_render_limit": 60,
+  "fixed_check_indices": [
+    33,
+    61,
+    74,
+    82,
+    91,
+    100,
+    108,
+    118,
+    129,
+    155
+  ],
+  "input_bvh_pass_limit": 3,
+  "evaluation": {
+    "grid": [
+      160,
+      120
+    ],
+    "depth_z_range_m": [
+      0.1,
+      30
+    ],
+    "missing_penalty_m": 30,
+    "M2_M3_alignment": "one SE3 fit on 180 modelling timestamps, scale=1",
+    "M1_alignment": "one Sim3 from frozen estimated modelling cameras; diagnostic only; unavailable if degenerate",
+    "bootstrap_repeats": 2000,
+    "seed": 20260930
+  },
+  "input_check": {
+    "grid": [
+      160,
+      120
+    ],
+    "domain": "finite input DA3 optical Z in [0.1,30] m and input valid mask",
+    "missing_penalty_m": 30,
+    "pixel_roundtrip_tolerance": 0.001,
+    "quality_policy": "no GT tuned acceptance threshold; report residuals and unresolved geometric issues"
+  },
+  "publication_authorized_by_user": true,
+  "input_isolation": "physical copies and method-specific fresh context; no OS enforced read sandbox",
+  "publication": {
+    "scope": "metrics only: Table9/10/11 plus associated JSON/CSV/provenance",
+    "model_upload_authorized": false
+  },
+  "blog_metric_protocol": {
+    "table9": {
+      "model_surface_samples": 100000,
+      "model_seed": 20260923,
+      "observed_gt_samples": 100000,
+      "observed_seed": 20260925,
+      "observed_gt_domain": "all180 GT camera-ray hits, observation-frequency weighted"
+    },
+    "table10": {
+      "sample_indices": [
+        0,
+        36,
+        72,
+        108,
+        144
+      ],
+      "width": 640,
+      "height": 480,
+      "engine": "CPU Cycles",
+      "samples": 16,
+      "metrics": [
+        "PSNR",
+        "SSIM",
+        "LPIPS AlexNet v0.1"
+      ],
+      "role": "postfreeze five-view evaluation; distinct from10 author checks"
+    },
+    "table11": {
+      "views": 20,
+      "rays_per_view": 5000,
+      "seed": 23,
+      "camera_perturbation": "existing blog protocol, frozen before modelling; same scene"
+    }
+  },
+  "gt_depth_source": "../astra_blender/gt_fresh_20260930T021632Z (fresh680-view GT from prior authorized regeneration; no old legacy cache)"
+}

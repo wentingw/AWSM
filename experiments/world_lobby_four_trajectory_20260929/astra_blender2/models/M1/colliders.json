@@ -1,0 +1,1667 @@
+{
+  "colliders": [
+    {
+      "id": "floor",
+      "object_id": "floor",
+      "type": "AABB",
+      "bounds_min": [
+        0.0,
+        0.0,
+        -0.20000000298023224
+      ],
+      "bounds_max": [
+        8.0,
+        16.0,
+        0.0
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "black_floor_insert",
+      "object_id": "black_floor_insert",
+      "type": "AABB",
+      "bounds_min": [
+        0.9500000476837158,
+        1.0,
+        0.0
+      ],
+      "bounds_max": [
+        6.050000190734863,
+        15.0,
+        0.017999999225139618
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "ceiling",
+      "object_id": "ceiling",
+      "type": "AABB",
+      "bounds_min": [
+        0.0,
+        0.0,
+        4.599999904632568
+      ],
+      "bounds_max": [
+        8.0,
+        16.0,
+        4.799999713897705
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_wall",
+      "object_id": "north_wall",
+      "type": "AABB",
+      "bounds_min": [
+        0.0,
+        15.977499961853027,
+        0.0
+      ],
+      "bounds_max": [
+        8.0,
+        16.15999984741211,
+        4.599999904632568
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_wall",
+      "object_id": "south_wall",
+      "type": "AABB",
+      "bounds_min": [
+        0.0,
+        -0.1599999964237213,
+        0.0
+      ],
+      "bounds_max": [
+        8.0,
+        0.02250000089406967,
+        4.599999904632568
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "east_recess_wall",
+      "object_id": "east_recess_wall",
+      "type": "AABB",
+      "bounds_min": [
+        7.9735002517700195,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        8.15999984741211,
+        16.0,
+        4.599999904632568
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_partition",
+      "object_id": "mirror_partition",
+      "type": "COMPOUND",
+      "parts": [
+        {
+          "component_name": "mirror_partition__upper",
+          "type": "AABB",
+          "bounds_min": [
+            6.799999713897705,
+            3.5,
+            2.5999999046325684
+          ],
+          "bounds_max": [
+            6.940000057220459,
+            11.0,
+            4.599999904632568
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_0",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            3.509999990463257,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            4.739999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_1",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            4.760000228881836,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            5.989999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_2",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            6.010000228881836,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            7.239999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_3",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            7.260000228881836,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            8.489999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_4",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            8.510000228881836,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            9.739999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__upper_panel_5",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            9.760000228881836,
+            2.609999895095825
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            10.989999771118164,
+            4.590000152587891
+          ]
+        },
+        {
+          "component_name": "mirror_partition__lower_core",
+          "type": "AABB",
+          "bounds_min": [
+            6.799999713897705,
+            4.350000381469727,
+            0.0
+          ],
+          "bounds_max": [
+            6.940000057220459,
+            9.449999809265137,
+            2.5999999046325684
+          ]
+        },
+        {
+          "component_name": "mirror_partition__lower_panel_0",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            4.369999885559082,
+            0.009999990463256836
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            5.619999885559082,
+            2.5899999141693115
+          ]
+        },
+        {
+          "component_name": "mirror_partition__lower_panel_1",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            5.639999866485596,
+            0.009999990463256836
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            6.889999866485596,
+            2.5899999141693115
+          ]
+        },
+        {
+          "component_name": "mirror_partition__lower_panel_2",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            6.909999847412109,
+            0.009999990463256836
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            8.15999984741211,
+            2.5899999141693115
+          ]
+        },
+        {
+          "component_name": "mirror_partition__lower_panel_3",
+          "type": "AABB",
+          "bounds_min": [
+            6.772500038146973,
+            8.180000305175781,
+            0.009999990463256836
+          ],
+          "bounds_max": [
+            6.797499656677246,
+            9.430000305175781,
+            2.5899999141693115
+          ]
+        },
+        {
+          "component_name": "mirror_partition__north_end",
+          "type": "AABB",
+          "bounds_min": [
+            6.800000190734863,
+            10.9350004196167,
+            0.0
+          ],
+          "bounds_max": [
+            8.0,
+            11.0649995803833,
+            4.599999904632568
+          ]
+        },
+        {
+          "component_name": "mirror_partition__south_end",
+          "type": "AABB",
+          "bounds_min": [
+            6.800000190734863,
+            3.434999942779541,
+            2.5999999046325684
+          ],
+          "bounds_max": [
+            8.0,
+            3.565000057220459,
+            4.599999904632568
+          ]
+        }
+      ],
+      "provenance": "component boxes preserve open south doorway; finite rear recess wall inferred",
+      "enabled": true
+    },
+    {
+      "id": "north_metal_door",
+      "object_id": "north_metal_door",
+      "type": "AABB",
+      "bounds_min": [
+        6.845000267028809,
+        9.467499732971191,
+        0.004999995231628418
+      ],
+      "bounds_max": [
+        6.914999961853027,
+        10.682499885559082,
+        2.5949997901916504
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_opening",
+      "object_id": "south_opening",
+      "type": "COMPOUND",
+      "parts": [
+        {
+          "component_name": "south_opening__dark_recess",
+          "type": "AABB",
+          "bounds_min": [
+            7.949999809265137,
+            3.5,
+            0.0
+          ],
+          "bounds_max": [
+            7.970000267028809,
+            4.349999904632568,
+            2.5999999046325684
+          ]
+        }
+      ],
+      "provenance": "component boxes preserve open south doorway; finite rear recess wall inferred",
+      "enabled": true
+    },
+    {
+      "id": "glazed_facade",
+      "object_id": "glazed_facade",
+      "type": "AABB",
+      "bounds_min": [
+        -0.07500000298023224,
+        -0.017000000923871994,
+        0.0
+      ],
+      "bounds_max": [
+        0.057499997317790985,
+        16.017000198364258,
+        4.599999904632568
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_glazed_double_door",
+      "object_id": "south_glazed_double_door",
+      "type": "AABB",
+      "bounds_min": [
+        0.007500000298023224,
+        2.1625001430511475,
+        0.0
+      ],
+      "bounds_max": [
+        0.15299999713897705,
+        4.037499904632568,
+        2.5999999046325684
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_glazed_double_door",
+      "object_id": "north_glazed_double_door",
+      "type": "AABB",
+      "bounds_min": [
+        0.007500000298023224,
+        11.962499618530273,
+        0.0
+      ],
+      "bounds_max": [
+        0.15299999713897705,
+        13.83750057220459,
+        2.5999999046325684
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "central_round_column",
+      "object_id": "central_round_column",
+      "type": "AABB",
+      "bounds_min": [
+        0.27000001072883606,
+        7.650000095367432,
+        0.0
+      ],
+      "bounds_max": [
+        0.9700000286102295,
+        8.350000381469727,
+        4.599999904632568
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "ceiling_slats",
+      "object_id": "ceiling_slats",
+      "type": "AABB",
+      "bounds_min": [
+        0.0,
+        0.08749999850988388,
+        4.400000095367432
+      ],
+      "bounds_max": [
+        7.549999713897705,
+        15.947500228881836,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "north_seat_1",
+      "object_id": "north_seat_1",
+      "type": "AABB",
+      "bounds_min": [
+        1.5299999713897705,
+        7.179999828338623,
+        0.0
+      ],
+      "bounds_max": [
+        2.4700000286102295,
+        8.119999885559082,
+        0.5400000214576721
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_seat_2",
+      "object_id": "north_seat_2",
+      "type": "AABB",
+      "bounds_min": [
+        1.6799999475479126,
+        8.15999984741211,
+        0.0
+      ],
+      "bounds_max": [
+        2.619999885559082,
+        9.100000381469727,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_seat_3",
+      "object_id": "north_seat_3",
+      "type": "AABB",
+      "bounds_min": [
+        2.630000114440918,
+        8.529999732971191,
+        0.0
+      ],
+      "bounds_max": [
+        3.569999933242798,
+        9.470000267028809,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_seat_4",
+      "object_id": "north_seat_4",
+      "type": "AABB",
+      "bounds_min": [
+        3.630000114440918,
+        8.130000114440918,
+        0.0
+      ],
+      "bounds_max": [
+        4.570000171661377,
+        9.069999694824219,
+        0.5400000214576721
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_seat_5",
+      "object_id": "north_seat_5",
+      "type": "AABB",
+      "bounds_min": [
+        3.930000066757202,
+        7.130000114440918,
+        0.0
+      ],
+      "bounds_max": [
+        4.869999885559082,
+        8.069999694824219,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_coffee_table",
+      "object_id": "north_coffee_table",
+      "type": "AABB",
+      "bounds_min": [
+        2.419999837875366,
+        6.62000036239624,
+        0.019999995827674866
+      ],
+      "bounds_max": [
+        3.7799999713897705,
+        7.980000019073486,
+        0.45399999618530273
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "north_table_bowl",
+      "object_id": "north_table_bowl",
+      "type": "AABB",
+      "bounds_min": [
+        2.9200000762939453,
+        7.119999885559082,
+        0.46000000834465027
+      ],
+      "bounds_max": [
+        3.2799999713897705,
+        7.480000019073486,
+        0.5899999737739563
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_seat_1",
+      "object_id": "south_seat_1",
+      "type": "AABB",
+      "bounds_min": [
+        2.2300000190734863,
+        3.0799999237060547,
+        0.0
+      ],
+      "bounds_max": [
+        3.1700000762939453,
+        4.019999980926514,
+        0.5400000214576721
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_seat_2",
+      "object_id": "south_seat_2",
+      "type": "AABB",
+      "bounds_min": [
+        2.380000114440918,
+        2.0999999046325684,
+        0.0
+      ],
+      "bounds_max": [
+        3.319999933242798,
+        3.0399999618530273,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_seat_3",
+      "object_id": "south_seat_3",
+      "type": "AABB",
+      "bounds_min": [
+        3.3299999237060547,
+        1.7300000190734863,
+        0.0
+      ],
+      "bounds_max": [
+        4.269999980926514,
+        2.6700000762939453,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_seat_4",
+      "object_id": "south_seat_4",
+      "type": "AABB",
+      "bounds_min": [
+        4.329999923706055,
+        2.130000114440918,
+        0.0
+      ],
+      "bounds_max": [
+        5.269999980926514,
+        3.069999933242798,
+        0.5400000214576721
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_seat_5",
+      "object_id": "south_seat_5",
+      "type": "AABB",
+      "bounds_min": [
+        4.630000114440918,
+        3.130000114440918,
+        0.0
+      ],
+      "bounds_max": [
+        5.570000171661377,
+        4.070000171661377,
+        0.8999999761581421
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_coffee_table",
+      "object_id": "south_coffee_table",
+      "type": "AABB",
+      "bounds_min": [
+        3.119999885559082,
+        3.2200000286102295,
+        0.019999995827674866
+      ],
+      "bounds_max": [
+        4.480000019073486,
+        4.579999923706055,
+        0.45399999618530273
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_table_bowl",
+      "object_id": "south_table_bowl",
+      "type": "AABB",
+      "bounds_min": [
+        3.619999885559082,
+        3.7200000286102295,
+        0.46000000834465027
+      ],
+      "bounds_max": [
+        3.9800000190734863,
+        4.079999923706055,
+        0.5899999737739563
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_side_seat_0",
+      "object_id": "south_side_seat_0",
+      "type": "AABB",
+      "bounds_min": [
+        5.050000190734863,
+        6.650000095367432,
+        0.0
+      ],
+      "bounds_max": [
+        5.949999809265137,
+        7.550000190734863,
+        0.5400000214576721
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_side_seat_1",
+      "object_id": "south_side_seat_1",
+      "type": "AABB",
+      "bounds_min": [
+        5.050000190734863,
+        5.690000057220459,
+        0.0
+      ],
+      "bounds_max": [
+        5.949999809265137,
+        6.590000152587891,
+        0.8500000238418579
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "south_side_seat_2",
+      "object_id": "south_side_seat_2",
+      "type": "AABB",
+      "bounds_min": [
+        4.75,
+        4.78000020980835,
+        0.0
+      ],
+      "bounds_max": [
+        5.650000095367432,
+        5.679999828338623,
+        0.8500000238418579
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_side_coffee_table",
+      "object_id": "mirror_side_coffee_table",
+      "type": "AABB",
+      "bounds_min": [
+        3.5999999046325684,
+        5.200000286102295,
+        0.015000000596046448
+      ],
+      "bounds_max": [
+        4.799999713897705,
+        6.400000095367432,
+        0.45399999618530273
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "reception_desk",
+      "object_id": "reception_desk",
+      "type": "AABB",
+      "bounds_min": [
+        2.4000000953674316,
+        14.609999656677246,
+        0.0
+      ],
+      "bounds_max": [
+        5.800000190734863,
+        15.550000190734863,
+        1.0800000429153442
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "reception_wall_emblem",
+      "object_id": "reception_wall_emblem",
+      "type": "AABB",
+      "bounds_min": [
+        3.0879998207092285,
+        15.877999305725098,
+        1.5800000429153442
+      ],
+      "bounds_max": [
+        5.111999988555908,
+        15.937000274658203,
+        2.9000000953674316
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_1",
+      "object_id": "mirror_disk_1",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        6.880000114440918,
+        1.380000114440918
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        8.420000076293945,
+        2.9200000762939453
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_2",
+      "object_id": "mirror_disk_2",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        5.599999904632568,
+        0.9299999475479126
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        6.839999675750732,
+        2.1700000762939453
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_3",
+      "object_id": "mirror_disk_3",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        8.619999885559082,
+        2.4200000762939453
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        9.279999732971191,
+        3.0799999237060547
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_4",
+      "object_id": "mirror_disk_4",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        8.790000915527344,
+        1.8199999332427979
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        9.25,
+        2.2799999713897705
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_5",
+      "object_id": "mirror_disk_5",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        8.420000076293945,
+        1.0399999618530273
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        9.180000305175781,
+        1.7999999523162842
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_6",
+      "object_id": "mirror_disk_6",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        6.580000400543213,
+        0.809999942779541
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        7.019999980926514,
+        1.25
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_7",
+      "object_id": "mirror_disk_7",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        6.139999866485596,
+        2.7899999618530273
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        6.900000095367432,
+        3.5500001907348633
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_8",
+      "object_id": "mirror_disk_8",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        5.079999923706055,
+        2.120000123977661
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        6.119999885559082,
+        3.1600000858306885
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_9",
+      "object_id": "mirror_disk_9",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        5.28000020980835,
+        1.4700000286102295
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        5.759999752044678,
+        1.9500000476837158
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "mirror_disk_10",
+      "object_id": "mirror_disk_10",
+      "type": "AABB",
+      "bounds_min": [
+        6.73199987411499,
+        6.949999809265137,
+        2.5
+      ],
+      "bounds_max": [
+        6.757999897003174,
+        7.550000190734863,
+        3.0999999046325684
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "gold_planter_0_0",
+      "object_id": "gold_planter_0_0",
+      "type": "AABB",
+      "bounds_min": [
+        1.225000023841858,
+        9.510000228881836,
+        0.0025000013411045074
+      ],
+      "bounds_max": [
+        3.1750001907348633,
+        10.09000015258789,
+        0.7145000100135803
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "gold_planter_0_0_plant",
+      "object_id": "gold_planter_0_0_plant",
+      "type": "AABB",
+      "bounds_min": [
+        0.7953259348869324,
+        9.377901077270508,
+        0.699999988079071
+      ],
+      "bounds_max": [
+        3.4065074920654297,
+        10.304361343383789,
+        1.7340474128723145
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "gold_planter_0_1",
+      "object_id": "gold_planter_0_1",
+      "type": "AABB",
+      "bounds_min": [
+        3.6750001907348633,
+        9.510000228881836,
+        0.0025000013411045074
+      ],
+      "bounds_max": [
+        5.625,
+        10.09000015258789,
+        0.7145000100135803
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "gold_planter_0_1_plant",
+      "object_id": "gold_planter_0_1_plant",
+      "type": "AABB",
+      "bounds_min": [
+        3.4825849533081055,
+        9.216609954833984,
+        0.699999988079071
+      ],
+      "bounds_max": [
+        5.778254508972168,
+        10.495534896850586,
+        1.7684820890426636
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "low_bowl_planter_0",
+      "object_id": "low_bowl_planter_0",
+      "type": "AABB",
+      "bounds_min": [
+        0.23000000417232513,
+        6.630000114440918,
+        0.019999999552965164
+      ],
+      "bounds_max": [
+        1.4700000286102295,
+        7.869999885559082,
+        0.4699999988079071
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "low_bowl_plant_0",
+      "object_id": "low_bowl_plant_0",
+      "type": "AABB",
+      "bounds_min": [
+        0.044450223445892334,
+        6.469548225402832,
+        0.4206245243549347
+      ],
+      "bounds_max": [
+        1.6380410194396973,
+        8.042426109313965,
+        1.1189093589782715
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "low_bowl_planter_1",
+      "object_id": "low_bowl_planter_1",
+      "type": "AABB",
+      "bounds_min": [
+        0.23000000417232513,
+        0.3799999952316284,
+        0.019999999552965164
+      ],
+      "bounds_max": [
+        1.4700000286102295,
+        1.6200000047683716,
+        0.4699999988079071
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "low_bowl_plant_1",
+      "object_id": "low_bowl_plant_1",
+      "type": "AABB",
+      "bounds_min": [
+        0.047405123710632324,
+        0.19880452752113342,
+        0.425331711769104
+      ],
+      "bounds_max": [
+        1.6516278982162476,
+        1.7291500568389893,
+        1.1355341672897339
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "low_bowl_planter_2",
+      "object_id": "low_bowl_planter_2",
+      "type": "AABB",
+      "bounds_min": [
+        6.380000114440918,
+        14.279999732971191,
+        0.019999999552965164
+      ],
+      "bounds_max": [
+        7.619999885559082,
+        15.520000457763672,
+        0.4699999988079071
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "low_bowl_plant_2",
+      "object_id": "low_bowl_plant_2",
+      "type": "AABB",
+      "bounds_min": [
+        6.1957550048828125,
+        14.09555435180664,
+        0.4205555319786072
+      ],
+      "bounds_max": [
+        7.773739814758301,
+        15.682255744934082,
+        1.1387417316436768
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "ceramic_vase_0",
+      "object_id": "ceramic_vase_0",
+      "type": "AABB",
+      "bounds_min": [
+        5.820000171661377,
+        9.039999961853027,
+        0.0
+      ],
+      "bounds_max": [
+        6.539999961853027,
+        9.760000228881836,
+        0.6700000166893005
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "vase_plant_0",
+      "object_id": "vase_plant_0",
+      "type": "AABB",
+      "bounds_min": [
+        5.491722106933594,
+        8.71882152557373,
+        0.6557867527008057
+      ],
+      "bounds_max": [
+        6.869495868682861,
+        10.094932556152344,
+        1.4410889148712158
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "ceramic_vase_1",
+      "object_id": "ceramic_vase_1",
+      "type": "AABB",
+      "bounds_min": [
+        1.690000057220459,
+        14.739999771118164,
+        0.0
+      ],
+      "bounds_max": [
+        2.4100000858306885,
+        15.460000038146973,
+        0.6700000166893005
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "vase_plant_1",
+      "object_id": "vase_plant_1",
+      "type": "AABB",
+      "bounds_min": [
+        1.5540088415145874,
+        14.607903480529785,
+        0.6199999451637268
+      ],
+      "bounds_max": [
+        2.54525089263916,
+        15.589315414428711,
+        2.0064332485198975
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "ceramic_vase_2",
+      "object_id": "ceramic_vase_2",
+      "type": "AABB",
+      "bounds_min": [
+        5.639999866485596,
+        14.739999771118164,
+        0.0
+      ],
+      "bounds_max": [
+        6.360000133514404,
+        15.460000038146973,
+        0.6700000166893005
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "vase_plant_2",
+      "object_id": "vase_plant_2",
+      "type": "AABB",
+      "bounds_min": [
+        5.515413761138916,
+        14.602828979492188,
+        0.6199999451637268
+      ],
+      "bounds_max": [
+        6.476967811584473,
+        15.595969200134277,
+        2.0089097023010254
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "tall_square_planter_0",
+      "object_id": "tall_square_planter_0",
+      "type": "AABB",
+      "bounds_min": [
+        5.710000038146973,
+        1.7100000381469727,
+        0.0
+      ],
+      "bounds_max": [
+        6.289999961853027,
+        2.2899999618530273,
+        0.8399999737739563
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "bird_of_paradise_0",
+      "object_id": "bird_of_paradise_0",
+      "type": "AABB",
+      "bounds_min": [
+        5.527349948883057,
+        1.521841049194336,
+        0.8360607624053955
+      ],
+      "bounds_max": [
+        6.480000019073486,
+        2.4635157585144043,
+        2.200000047683716
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "tall_square_planter_1",
+      "object_id": "tall_square_planter_1",
+      "type": "AABB",
+      "bounds_min": [
+        1.809999942779541,
+        0.6599999666213989,
+        0.0
+      ],
+      "bounds_max": [
+        2.3899998664855957,
+        1.2400000095367432,
+        0.8399999737739563
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "bird_of_paradise_1",
+      "object_id": "bird_of_paradise_1",
+      "type": "AABB",
+      "bounds_min": [
+        1.627349853515625,
+        0.4718410074710846,
+        0.8359924554824829
+      ],
+      "bounds_max": [
+        2.5799999237060547,
+        1.4135156869888306,
+        2.200000047683716
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "floor_lamp_0",
+      "object_id": "floor_lamp_0",
+      "type": "AABB",
+      "bounds_min": [
+        6.739999771118164,
+        12.539999961853027,
+        0.002499999478459358
+      ],
+      "bounds_max": [
+        7.260000228881836,
+        13.0600004196167,
+        1.8200000524520874
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "floor_lamp_1",
+      "object_id": "floor_lamp_1",
+      "type": "AABB",
+      "bounds_min": [
+        7.190000057220459,
+        9.140000343322754,
+        0.002499999478459358
+      ],
+      "bounds_max": [
+        7.710000038146973,
+        9.65999984741211,
+        1.8200000524520874
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "floor_lamp_2",
+      "object_id": "floor_lamp_2",
+      "type": "AABB",
+      "bounds_min": [
+        6.539999961853027,
+        0.49000000953674316,
+        0.002499999478459358
+      ],
+      "bounds_max": [
+        7.059999942779541,
+        1.0099999904632568,
+        1.8200000524520874
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": true
+    },
+    {
+      "id": "pendant_1",
+      "object_id": "pendant_1",
+      "type": "AABB",
+      "bounds_min": [
+        0.9200000166893005,
+        1.1200000047683716,
+        3.7301087379455566
+      ],
+      "bounds_max": [
+        2.2799999713897705,
+        2.4800000190734863,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_2",
+      "object_id": "pendant_2",
+      "type": "AABB",
+      "bounds_min": [
+        3.0999999046325684,
+        0.699999988079071,
+        3.75534725189209
+      ],
+      "bounds_max": [
+        4.5,
+        2.0999999046325684,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_3",
+      "object_id": "pendant_3",
+      "type": "AABB",
+      "bounds_min": [
+        5.21999979019165,
+        1.2200000286102295,
+        3.6263012886047363
+      ],
+      "bounds_max": [
+        6.78000020980835,
+        2.7799999713897705,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_4",
+      "object_id": "pendant_4",
+      "type": "AABB",
+      "bounds_min": [
+        1.350000023841858,
+        3.3499999046325684,
+        3.737251043319702
+      ],
+      "bounds_max": [
+        2.6500000953674316,
+        4.650000095367432,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_5",
+      "object_id": "pendant_5",
+      "type": "AABB",
+      "bounds_min": [
+        4.0,
+        3.0,
+        3.7015397548675537
+      ],
+      "bounds_max": [
+        5.599999904632568,
+        4.599999904632568,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_6",
+      "object_id": "pendant_6",
+      "type": "AABB",
+      "bounds_min": [
+        5.400000095367432,
+        4.800000190734863,
+        3.689154863357544
+      ],
+      "bounds_max": [
+        6.599999904632568,
+        6.0,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_7",
+      "object_id": "pendant_7",
+      "type": "AABB",
+      "bounds_min": [
+        0.8199999928474426,
+        5.71999979019165,
+        3.8063013553619385
+      ],
+      "bounds_max": [
+        2.380000114440918,
+        7.28000020980835,
+        4.559999465942383
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_8",
+      "object_id": "pendant_8",
+      "type": "AABB",
+      "bounds_min": [
+        3.1500000953674316,
+        5.550000190734863,
+        3.61725115776062
+      ],
+      "bounds_max": [
+        4.449999809265137,
+        6.849999904632568,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_9",
+      "object_id": "pendant_9",
+      "type": "AABB",
+      "bounds_min": [
+        5.03000020980835,
+        6.829999923706055,
+        3.728682041168213
+      ],
+      "bounds_max": [
+        6.570000171661377,
+        8.369999885559082,
+        4.559999465942383
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_10",
+      "object_id": "pendant_10",
+      "type": "AABB",
+      "bounds_min": [
+        1.7000000476837158,
+        8.199999809265137,
+        3.7291548252105713
+      ],
+      "bounds_max": [
+        2.9000000953674316,
+        9.399999618530273,
+        4.560000419616699
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_11",
+      "object_id": "pendant_11",
+      "type": "AABB",
+      "bounds_min": [
+        3.319999933242798,
+        8.319999694824219,
+        3.7563014030456543
+      ],
+      "bounds_max": [
+        4.880000114440918,
+        9.880000114440918,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_12",
+      "object_id": "pendant_12",
+      "type": "AABB",
+      "bounds_min": [
+        5.369999885559082,
+        9.369999885559082,
+        3.642012596130371
+      ],
+      "bounds_max": [
+        6.630000114440918,
+        10.630000114440918,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_13",
+      "object_id": "pendant_13",
+      "type": "AABB",
+      "bounds_min": [
+        1.0499999523162842,
+        10.649999618530273,
+        3.797250986099243
+      ],
+      "bounds_max": [
+        2.3499999046325684,
+        11.949999809265137,
+        4.560000419616699
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_14",
+      "object_id": "pendant_14",
+      "type": "AABB",
+      "bounds_min": [
+        2.9200000762939453,
+        11.020000457763672,
+        3.6639163494110107
+      ],
+      "bounds_max": [
+        4.079999923706055,
+        12.180000305175781,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_15",
+      "object_id": "pendant_15",
+      "type": "AABB",
+      "bounds_min": [
+        4.800000190734863,
+        11.399999618530273,
+        3.805347204208374
+      ],
+      "bounds_max": [
+        6.199999809265137,
+        12.800000190734863,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_16",
+      "object_id": "pendant_16",
+      "type": "AABB",
+      "bounds_min": [
+        1.5700000524520874,
+        12.970000267028809,
+        3.7858200073242188
+      ],
+      "bounds_max": [
+        2.630000114440918,
+        14.029999732971191,
+        4.559999465942383
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_17",
+      "object_id": "pendant_17",
+      "type": "AABB",
+      "bounds_min": [
+        3.700000047683716,
+        13.199999809265137,
+        3.679154872894287
+      ],
+      "bounds_max": [
+        4.900000095367432,
+        14.399999618530273,
+        4.559999465942383
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    },
+    {
+      "id": "pendant_18",
+      "object_id": "pendant_18",
+      "type": "AABB",
+      "bounds_min": [
+        5.800000190734863,
+        13.5,
+        3.799154758453369
+      ],
+      "bounds_max": [
+        7.0,
+        14.699999809265137,
+        4.559999942779541
+      ],
+      "provenance": "inferred simple physics approximation of this logical object",
+      "enabled": false
+    }
+  ],
+  "portals": [
+    {
+      "id": "south_opening",
+      "clear_bounds_min": [
+        6.7,
+        3.55,
+        0.02
+      ],
+      "clear_bounds_max": [
+        7.85,
+        4.3,
+        2.55
+      ],
+      "width_m": 0.75,
+      "height_m": 2.53,
+      "state": "enterable_finite_recess",
+      "onward_connectivity": "unobserved; inferred back wall atx7.95; not a validated through-route"
+    },
+    {
+      "id": "north_metal_door",
+      "state": "closed",
+      "collider_id": "north_metal_door"
+    }
+  ]
+}

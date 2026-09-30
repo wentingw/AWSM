@@ -1,0 +1,5750 @@
+{
+  "method_id": "M3",
+  "author_role": "revision author, not independent reviewer",
+  "version": 3,
+  "changes": [
+    {
+      "parameter": "lounge_a_chair0.position_angle",
+      "before": [
+        6.5,
+        1.23,
+        0
+      ],
+      "after": [
+        6.398296177256748,
+        1.261682106061355,
+        0
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            181,
+            266,
+            259,
+            343
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 6006,
+            "median_signed_m": -1.1952204022107704,
+            "p10_p90": [
+              -3.8200750397303374,
+              -0.4843888104229386
+            ]
+          },
+          "v2": {
+            "valid_pixels": 6006,
+            "median_signed_m": -1.5446421864219944,
+            "p10_p90": [
+              -3.7390158797965007,
+              -1.0886751124683545
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            558,
+            341,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 10960,
+            "median_signed_m": -0.05642048841494618,
+            "p10_p90": [
+              -1.3637375202984738,
+              0.770471208324158
+            ]
+          },
+          "v2": {
+            "valid_pixels": 10960,
+            "median_signed_m": -1.3531914717927431,
+            "p10_p90": [
+              -3.398331454921096,
+              -0.08302725520423922
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            325,
+            181,
+            380,
+            234
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2915,
+            "median_signed_m": -0.5666885936711319,
+            "p10_p90": [
+              -2.311710137193487,
+              0.8742736198571196
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2915,
+            "median_signed_m": -0.6855860489789691,
+            "p10_p90": [
+              -4.533918993306681,
+              -0.505716962752729
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            139,
+            224,
+            200,
+            271
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2867,
+            "median_signed_m": -0.4126162488870193,
+            "p10_p90": [
+              -3.201272699077952,
+              1.4421644059817067
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2867,
+            "median_signed_m": -0.74045096777055,
+            "p10_p90": [
+              -5.071119117422374,
+              0.5683144513783465
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            0,
+            274,
+            104,
+            354
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 8300,
+            "median_signed_m": -0.05141512844029972,
+            "p10_p90": [
+              -1.1956200424843042,
+              1.0750440796120615
+            ]
+          },
+          "v2": {
+            "valid_pixels": 8301,
+            "median_signed_m": 0.017136182729601046,
+            "p10_p90": [
+              -0.6288188767057097,
+              1.05720571430472
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            137,
+            336,
+            258,
+            457
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 14614,
+            "median_signed_m": 0.4567137171646882,
+            "p10_p90": [
+              -0.40326155267689606,
+              1.4188197295646565
+            ]
+          },
+          "v2": {
+            "valid_pixels": 14607,
+            "median_signed_m": 0.26904767782204875,
+            "p10_p90": [
+              -0.3680975660843201,
+              1.1828273460720111
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            173,
+            248,
+            254,
+            321
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 5908,
+            "median_signed_m": -0.8964595932038057,
+            "p10_p90": [
+              -4.064661554944072,
+              -0.1172302215687794
+            ]
+          },
+          "v2": {
+            "valid_pixels": 5908,
+            "median_signed_m": -1.178731552990953,
+            "p10_p90": [
+              -3.8848669851338533,
+              -0.7342838657929681
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_a_chair1.position_angle",
+      "before": [
+        7.2,
+        0.7,
+        0
+      ],
+      "after": [
+        7.294385941815859,
+        0.9462092326580902,
+        0
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            216,
+            257,
+            289,
+            322
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4745,
+            "median_signed_m": -1.4351599348764275,
+            "p10_p90": [
+              -3.2537058461182125,
+              -0.8159532921838046
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4745,
+            "median_signed_m": -1.4063466125328974,
+            "p10_p90": [
+              -3.3459870359921347,
+              -0.930949488317952
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            480,
+            342,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 21488,
+            "median_signed_m": -0.14053858405832265,
+            "p10_p90": [
+              -1.8629285618421114,
+              0.6920956530846677
+            ]
+          },
+          "v2": {
+            "valid_pixels": 21488,
+            "median_signed_m": -0.5909888163137709,
+            "p10_p90": [
+              -3.1647938010487073,
+              -0.06754788856096926
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            306,
+            187,
+            375,
+            247
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4140,
+            "median_signed_m": -0.5089473813618595,
+            "p10_p90": [
+              -0.7821672159207963,
+              0.9327257301161277
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4140,
+            "median_signed_m": -0.515731974605615,
+            "p10_p90": [
+              -0.9689645540345256,
+              1.5819795101896035
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            139,
+            228,
+            214,
+            281
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 3975,
+            "median_signed_m": -0.19854988888261538,
+            "p10_p90": [
+              -2.0529173204345295,
+              1.7600556775559926
+            ]
+          },
+          "v2": {
+            "valid_pixels": 3975,
+            "median_signed_m": -0.5020587206398872,
+            "p10_p90": [
+              -2.59906514330195,
+              0.3222738258699794
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            32,
+            278,
+            146,
+            368
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 10259,
+            "median_signed_m": -0.09901471337495416,
+            "p10_p90": [
+              -1.3687821849176802,
+              1.2282001520598844
+            ]
+          },
+          "v2": {
+            "valid_pixels": 10260,
+            "median_signed_m": -0.1169318363799472,
+            "p10_p90": [
+              -1.632348713267553,
+              1.7405463260945255
+            ]
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_region_640x480": [
+            0,
+            363,
+            117,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 13446,
+            "median_signed_m": -0.06899570335194971,
+            "p10_p90": [
+              -1.4315126530384696,
+              0.2716731434517672
+            ]
+          },
+          "v2": {
+            "valid_pixels": 13415,
+            "median_signed_m": -0.13915822603681782,
+            "p10_p90": [
+              -1.4174479818905068,
+              0.23873980812460086
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            212,
+            328,
+            320,
+            439
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 11963,
+            "median_signed_m": 0.20777571147930196,
+            "p10_p90": [
+              -0.38000607667896,
+              0.9534580660489386
+            ]
+          },
+          "v2": {
+            "valid_pixels": 11964,
+            "median_signed_m": 0.3363885041440935,
+            "p10_p90": [
+              -0.3149784834414587,
+              1.155438446239527
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            212,
+            240,
+            288,
+            303
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4788,
+            "median_signed_m": -1.216326974953466,
+            "p10_p90": [
+              -3.359020952100497,
+              -0.5264778114008034
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4788,
+            "median_signed_m": -1.127444418179611,
+            "p10_p90": [
+              -2.7854803989492107,
+              -0.6709453884334706
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_a_chair2.position_angle",
+      "before": [
+        7.25,
+        -0.8,
+        180
+      ],
+      "after": [
+        6.811703471446726,
+        -1.2462979759372579,
+        180
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            312,
+            256,
+            401,
+            329
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 6497,
+            "median_signed_m": -1.439434891557691,
+            "p10_p90": [
+              -2.4357439480971133,
+              -1.0657230373347037
+            ]
+          },
+          "v2": {
+            "valid_pixels": 6497,
+            "median_signed_m": -1.5775078938260485,
+            "p10_p90": [
+              -3.5933019893808456,
+              -1.0781250151469852
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            0,
+            274,
+            141,
+            412
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 19458,
+            "median_signed_m": 0.09412841229079616,
+            "p10_p90": [
+              -0.6360557130067093,
+              0.2642204697849654
+            ]
+          },
+          "v2": {
+            "valid_pixels": 19458,
+            "median_signed_m": -0.10901298439631235,
+            "p10_p90": [
+              -1.0224758945672316,
+              0.2874572901973229
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            186,
+            323,
+            400,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 33170,
+            "median_signed_m": -0.014175252912825176,
+            "p10_p90": [
+              -0.6989867863876799,
+              0.021718947464341467
+            ]
+          },
+          "v2": {
+            "valid_pixels": 33170,
+            "median_signed_m": -0.015173315332471349,
+            "p10_p90": [
+              -1.0023403151989163,
+              0.1016376411646415
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            375,
+            310,
+            481,
+            426
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 12296,
+            "median_signed_m": 0.08050723728881226,
+            "p10_p90": [
+              -2.1024513041199846,
+              1.1922020915691707
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12296,
+            "median_signed_m": -0.21231693782612449,
+            "p10_p90": [
+              -3.7416934009833396,
+              0.806421258224419
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            210,
+            187,
+            287,
+            250
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4851,
+            "median_signed_m": -0.5386774721464249,
+            "p10_p90": [
+              -1.834328419411964,
+              1.1175859468842813
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4851,
+            "median_signed_m": -0.6221188845335295,
+            "p10_p90": [
+              -2.0238234612930626,
+              -0.04170170289532571
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            35,
+            239,
+            154,
+            306
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 7973,
+            "median_signed_m": 0.45561627169053764,
+            "p10_p90": [
+              -0.3647269779817517,
+              1.4257761354635836
+            ]
+          },
+          "v2": {
+            "valid_pixels": 7973,
+            "median_signed_m": -0.11778654896488838,
+            "p10_p90": [
+              -1.8532169309103834,
+              0.6547144185919332
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            0,
+            309,
+            101,
+            474
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 16665,
+            "median_signed_m": 0.03420883936148034,
+            "p10_p90": [
+              -0.4584074568395941,
+              0.6094238993996579
+            ]
+          },
+          "v2": {
+            "valid_pixels": 16665,
+            "median_signed_m": 0.03782834749348707,
+            "p10_p90": [
+              -0.16532760497011026,
+              0.6727911058957592
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            312,
+            345,
+            453,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 18753,
+            "median_signed_m": 0.5475010384466232,
+            "p10_p90": [
+              -0.03511319763777221,
+              0.7357943593008599
+            ]
+          },
+          "v2": {
+            "valid_pixels": 18753,
+            "median_signed_m": 0.3498616009962485,
+            "p10_p90": [
+              -0.3589340728094175,
+              1.0673380474712453
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            307,
+            240,
+            393,
+            313
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 6278,
+            "median_signed_m": -0.8314561635540043,
+            "p10_p90": [
+              -1.8598158155552862,
+              -0.32498625698269956
+            ]
+          },
+          "v2": {
+            "valid_pixels": 6278,
+            "median_signed_m": -1.0555086504154856,
+            "p10_p90": [
+              -2.6041800787490788,
+              -0.315461037355789
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_a_ottoman0.position",
+      "before": [
+        7.7,
+        -0.05
+      ],
+      "after": [
+        5.474834347471635,
+        1.0387062129022746
+      ],
+      "rationale": "As above. No DA3 score minimisation.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            178,
+            269,
+            325,
+            372
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15141,
+            "median_signed_m": -1.0238061080653509,
+            "p10_p90": [
+              -2.084223805639475,
+              -0.7350104364785928
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15141,
+            "median_signed_m": -1.2504087633209444,
+            "p10_p90": [
+              -2.2871233001768694,
+              -0.7577438350827661
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            0,
+            329,
+            55,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 8195,
+            "median_signed_m": -0.1908419722110697,
+            "p10_p90": [
+              -0.5509371452579752,
+              0.01341818995775842
+            ]
+          },
+          "v2": {
+            "valid_pixels": 8195,
+            "median_signed_m": -0.1840891447665447,
+            "p10_p90": [
+              -0.5516293485354264,
+              -0.0013771248547456243
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            401,
+            348,
+            640,
+            473
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 29625,
+            "median_signed_m": -0.14346558172647628,
+            "p10_p90": [
+              -1.2084680347013406,
+              0.8324888552697667
+            ]
+          },
+          "v2": {
+            "valid_pixels": 29625,
+            "median_signed_m": -0.26273332476196876,
+            "p10_p90": [
+              -1.8695446529376343,
+              -0.02668287279430984
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            273,
+            188,
+            358,
+            256
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 5780,
+            "median_signed_m": -0.483658007263859,
+            "p10_p90": [
+              -1.3567026343573447,
+              0.7275179828084827
+            ]
+          },
+          "v2": {
+            "valid_pixels": 5780,
+            "median_signed_m": -0.510668841981714,
+            "p10_p90": [
+              -1.4660758351978722,
+              1.2337687857228044
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            108,
+            235,
+            195,
+            294
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 5133,
+            "median_signed_m": -0.18986771344687536,
+            "p10_p90": [
+              -1.1808404512946526,
+              0.9738232075174277
+            ]
+          },
+          "v2": {
+            "valid_pixels": 5133,
+            "median_signed_m": -0.33343672389996293,
+            "p10_p90": [
+              -1.4713377178985527,
+              -0.07987588463430909
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            0,
+            301,
+            154,
+            392
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 14014,
+            "median_signed_m": -0.16303626759203116,
+            "p10_p90": [
+              -0.7874985892265302,
+              1.2231022645381415
+            ]
+          },
+          "v2": {
+            "valid_pixels": 14014,
+            "median_signed_m": -0.03855699838077031,
+            "p10_p90": [
+              -0.6691012088176292,
+              1.469072917742033
+            ]
+          }
+        },
+        {
+          "sample_index": 118,
+          "pixel_region_640x480": [
+            0,
+            444,
+            216,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 7344,
+            "median_signed_m": -0.06283965349166509,
+            "p10_p90": [
+              -1.1101865323432563,
+              0.2951247760905188
+            ]
+          },
+          "v2": {
+            "valid_pixels": 7344,
+            "median_signed_m": -0.05783923296075333,
+            "p10_p90": [
+              -0.9380008931119977,
+              0.3296039458670648
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            64,
+            352,
+            381,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 39917,
+            "median_signed_m": 0.4475877504603716,
+            "p10_p90": [
+              -0.12957285630222587,
+              0.8668177833558361
+            ]
+          },
+          "v2": {
+            "valid_pixels": 39902,
+            "median_signed_m": 0.2875720738471699,
+            "p10_p90": [
+              -0.2576936477184559,
+              0.9005570334822033
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            163,
+            252,
+            323,
+            349
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15516,
+            "median_signed_m": -0.42058522459724124,
+            "p10_p90": [
+              -1.7370362083620852,
+              -0.17338456469200425
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15520,
+            "median_signed_m": -0.8529213129497761,
+            "p10_p90": [
+              -1.6508330600908183,
+              -0.1947827530662465
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_a_ottoman1.position",
+      "before": [
+        6.85,
+        -0.28
+      ],
+      "after": [
+        6.947906384709356,
+        -0.3061124801871933
+      ],
+      "rationale": "As above. No DA3 score minimisation.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            286,
+            278,
+            343,
+            329
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2907,
+            "median_signed_m": -1.386969565936857,
+            "p10_p90": [
+              -1.8481248801104644,
+              -1.0640888632778174
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2907,
+            "median_signed_m": -1.3640162457347866,
+            "p10_p90": [
+              -1.76786220978409,
+              -0.9441600495544733
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            0,
+            328,
+            71,
+            457
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 9159,
+            "median_signed_m": -0.19483284881570695,
+            "p10_p90": [
+              -0.6962200728388209,
+              0.06938871119387498
+            ]
+          },
+          "v2": {
+            "valid_pixels": 9159,
+            "median_signed_m": -0.1945281809772017,
+            "p10_p90": [
+              -0.7076667891712018,
+              -0.012783848295008922
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            245,
+            432,
+            491,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 11316,
+            "median_signed_m": -0.08779770643490648,
+            "p10_p90": [
+              -0.6639688630941418,
+              -0.014866708833324749
+            ]
+          },
+          "v2": {
+            "valid_pixels": 11316,
+            "median_signed_m": -0.01736489657196527,
+            "p10_p90": [
+              -0.6572305767998168,
+              0.16363870149251603
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            421,
+            345,
+            529,
+            433
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 9504,
+            "median_signed_m": -0.158925417362356,
+            "p10_p90": [
+              -2.151792130467335,
+              1.070646104566627
+            ]
+          },
+          "v2": {
+            "valid_pixels": 9504,
+            "median_signed_m": -0.2534703271724372,
+            "p10_p90": [
+              -2.34930179373893,
+              0.004419866300455552
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            260,
+            201,
+            309,
+            243
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2058,
+            "median_signed_m": -0.26547955207041163,
+            "p10_p90": [
+              -1.90574286140716,
+              0.40480441362615727
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2058,
+            "median_signed_m": 0.04024265695641338,
+            "p10_p90": [
+              -1.9391883290895577,
+              0.9889608707486855
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            90,
+            249,
+            161,
+            292
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 3053,
+            "median_signed_m": -0.11394075936366832,
+            "p10_p90": [
+              -0.351571976185846,
+              1.4849003110124281
+            ]
+          },
+          "v2": {
+            "valid_pixels": 3053,
+            "median_signed_m": -0.1608302653041358,
+            "p10_p90": [
+              -0.46653959853211424,
+              -0.014322876513186391
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            0,
+            325,
+            91,
+            410
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 7735,
+            "median_signed_m": -0.1859171329491538,
+            "p10_p90": [
+              -0.5583233128433122,
+              0.34336919841614916
+            ]
+          },
+          "v2": {
+            "valid_pixels": 7735,
+            "median_signed_m": 0.08608309139995374,
+            "p10_p90": [
+              -0.22812572420883406,
+              0.6487044918266435
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            258,
+            373,
+            375,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 12285,
+            "median_signed_m": 0.31944675823865776,
+            "p10_p90": [
+              -0.10592874140937801,
+              0.5779008245236243
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12285,
+            "median_signed_m": 0.3095187520610594,
+            "p10_p90": [
+              -0.10973213186926127,
+              0.6665154460062934
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            277,
+            261,
+            335,
+            311
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2900,
+            "median_signed_m": -1.0844764582145858,
+            "p10_p90": [
+              -1.4793678013432336,
+              -0.335755134835233
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2900,
+            "median_signed_m": -1.009056290359891,
+            "p10_p90": [
+              -1.3084531003687632,
+              -0.31096198756332466
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_b_chair0.position_angle",
+      "before": [
+        2.62,
+        -1.7,
+        0
+      ],
+      "after": [
+        2.6439215521911907,
+        -1.4499674629952644,
+        0
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            410,
+            370,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 24624,
+            "median_signed_m": -0.6951410474125521,
+            "p10_p90": [
+              -2.00547350207541,
+              -0.41624083368028003
+            ]
+          },
+          "v2": {
+            "valid_pixels": 24624,
+            "median_signed_m": -0.6702428253444994,
+            "p10_p90": [
+              -1.8206803405996648,
+              -0.1546738903212217
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            382,
+            292,
+            509,
+            463
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 21717,
+            "median_signed_m": -0.18479851877299724,
+            "p10_p90": [
+              -0.9949371363504028,
+              0.2538527262417317
+            ]
+          },
+          "v2": {
+            "valid_pixels": 21717,
+            "median_signed_m": -0.1837481021200702,
+            "p10_p90": [
+              -0.45811620330984,
+              0.3138395845296181
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            554,
+            256,
+            640,
+            384
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 10752,
+            "median_signed_m": -0.16210053906282473,
+            "p10_p90": [
+              -1.3141170363372665,
+              0.11352047344493163
+            ]
+          },
+          "v2": {
+            "valid_pixels": 10752,
+            "median_signed_m": -0.22937709582578503,
+            "p10_p90": [
+              -0.6444180562133247,
+              0.11894027108722467
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            478,
+            279,
+            552,
+            336
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4218,
+            "median_signed_m": 0.3497814011208167,
+            "p10_p90": [
+              -4.469368708698184,
+              1.088772912744286
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4218,
+            "median_signed_m": 0.1579547669628809,
+            "p10_p90": [
+              -4.409272122267481,
+              1.1143375001714186
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            211,
+            161,
+            257,
+            198
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1702,
+            "median_signed_m": -2.499507755050672,
+            "p10_p90": [
+              -7.430956872611028,
+              0.4773139642123993
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1702,
+            "median_signed_m": -3.513635806956713,
+            "p10_p90": [
+              -7.6386308358768185,
+              -0.7779080924488251
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            359,
+            360,
+            600,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 28438,
+            "median_signed_m": -0.5537505787864334,
+            "p10_p90": [
+              -1.5951547301075422,
+              -0.11369799222335676
+            ]
+          },
+          "v2": {
+            "valid_pixels": 28438,
+            "median_signed_m": -0.5377981020813172,
+            "p10_p90": [
+              -1.1928972273694305,
+              -0.07411176445760315
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_b_chair1.position_angle",
+      "before": [
+        1.96,
+        -1.42,
+        30
+      ],
+      "after": [
+        1.7045660005456384,
+        -1.308153685129055,
+        30
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            428,
+            424,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 11340,
+            "median_signed_m": -0.5747964666586611,
+            "p10_p90": [
+              -1.4678911514620556,
+              -0.38242449537207773
+            ]
+          },
+          "v2": {
+            "valid_pixels": 11340,
+            "median_signed_m": -0.5394708635307113,
+            "p10_p90": [
+              -1.1356401875039686,
+              -0.11187838163201279
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            458,
+            311,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 30060,
+            "median_signed_m": -0.06001880700210527,
+            "p10_p90": [
+              -0.7025268698295315,
+              0.61165757646643
+            ]
+          },
+          "v2": {
+            "valid_pixels": 30060,
+            "median_signed_m": -0.04312119782929957,
+            "p10_p90": [
+              -0.7139662829980107,
+              0.5554612398929528
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            614,
+            258,
+            640,
+            375
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2808,
+            "median_signed_m": -0.0941842804969455,
+            "p10_p90": [
+              -1.2555776076843577,
+              0.1199206064935753
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2808,
+            "median_signed_m": -0.3241675602168379,
+            "p10_p90": [
+              -1.1791959435749368,
+              0.11532861423795285
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            505,
+            278,
+            575,
+            331
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 3710,
+            "median_signed_m": 0.21931592185395488,
+            "p10_p90": [
+              -2.679212266721418,
+              1.0891726665848576
+            ]
+          },
+          "v2": {
+            "valid_pixels": 3710,
+            "median_signed_m": 0.11856469605202147,
+            "p10_p90": [
+              -2.4358105207965686,
+              1.1234777954498176
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            225,
+            158,
+            262,
+            193
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1295,
+            "median_signed_m": -2.565241660203636,
+            "p10_p90": [
+              -7.558131943499124,
+              0.6497227121135621
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1295,
+            "median_signed_m": -4.198141349302405,
+            "p10_p90": [
+              -7.518940304823792,
+              -0.8700872307109655
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            342,
+            414,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 18944,
+            "median_signed_m": -0.449783052121709,
+            "p10_p90": [
+              -1.116416616320554,
+              -0.04161781362499398
+            ]
+          },
+          "v2": {
+            "valid_pixels": 18944,
+            "median_signed_m": -0.42745389100721254,
+            "p10_p90": [
+              -0.7395623742790458,
+              0.07451245047807475
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_b_ottoman0.position",
+      "before": [
+        3.34,
+        -1.8
+      ],
+      "after": [
+        3.5854727302012743,
+        -1.5763849427511245
+      ],
+      "rationale": "As above. No DA3 score minimisation.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            398,
+            358,
+            584,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 22320,
+            "median_signed_m": -0.7407033472819649,
+            "p10_p90": [
+              -2.0378027952290245,
+              -0.36811812110892617
+            ]
+          },
+          "v2": {
+            "valid_pixels": 22320,
+            "median_signed_m": -0.7320565973634312,
+            "p10_p90": [
+              -1.9023017628599166,
+              -0.13819375246203425
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            289,
+            312,
+            420,
+            429
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15327,
+            "median_signed_m": -0.018593792359136163,
+            "p10_p90": [
+              -0.9206637586315496,
+              0.18473771305302045
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15327,
+            "median_signed_m": -0.2008979768634349,
+            "p10_p90": [
+              -0.9276988628176074,
+              0.23538753873986484
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            508,
+            285,
+            640,
+            395
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 14300,
+            "median_signed_m": -0.010505851909797137,
+            "p10_p90": [
+              -0.8646339703859972,
+              0.017022633858241855
+            ]
+          },
+          "v2": {
+            "valid_pixels": 14300,
+            "median_signed_m": -0.1853962865417187,
+            "p10_p90": [
+              -0.6851945134538965,
+              0.06928386583910086
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            461,
+            297,
+            528,
+            344
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 3149,
+            "median_signed_m": 0.16157204918596868,
+            "p10_p90": [
+              -4.733518974788257,
+              0.7795479101162442
+            ]
+          },
+          "v2": {
+            "valid_pixels": 3149,
+            "median_signed_m": -0.016583434672196695,
+            "p10_p90": [
+              -4.745982182209534,
+              0.8061915402118647
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            207,
+            176,
+            252,
+            205
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1305,
+            "median_signed_m": -0.9239282295815991,
+            "p10_p90": [
+              -5.698335650981181,
+              0.9280007547838094
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1305,
+            "median_signed_m": -1.379757595407213,
+            "p10_p90": [
+              -6.239120282731791,
+              -0.6540183778700325
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            0,
+            246,
+            16,
+            287
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 656,
+            "median_signed_m": 0.5825702921303524,
+            "p10_p90": [
+              0.5015792863935484,
+              1.5938820385557682
+            ]
+          },
+          "v2": {
+            "valid_pixels": 656,
+            "median_signed_m": 0.5256096266993389,
+            "p10_p90": [
+              -0.500096791197663,
+              0.6757257754893669
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            366,
+            345,
+            535,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 22477,
+            "median_signed_m": -0.6778671297875922,
+            "p10_p90": [
+              -1.7986951931424986,
+              -0.12421968349957944
+            ]
+          },
+          "v2": {
+            "valid_pixels": 22477,
+            "median_signed_m": -0.6372888506065539,
+            "p10_p90": [
+              -1.355167361395562,
+              -0.061533363803094036
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_b_ottoman1.position",
+      "before": [
+        1.34,
+        -1.12
+      ],
+      "after": [
+        1.7672603376651228,
+        -0.3602246687501115
+      ],
+      "rationale": "As above. No DA3 score minimisation.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            493,
+            370,
+            640,
+            480
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15660,
+            "median_signed_m": -0.38854667319600056,
+            "p10_p90": [
+              -0.7216522252472671,
+              0.4582758182279645
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15660,
+            "median_signed_m": -0.3654587331736603,
+            "p10_p90": [
+              -0.9387711889301796,
+              0.1971367417192691
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            530,
+            291,
+            622,
+            341
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4600,
+            "median_signed_m": 0.2920501401004447,
+            "p10_p90": [
+              -2.8540807733947298,
+              1.3474185924363813
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4600,
+            "median_signed_m": 0.12049659801937196,
+            "p10_p90": [
+              -1.911546297717572,
+              0.9238436957135305
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            237,
+            167,
+            290,
+            191
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1272,
+            "median_signed_m": -0.7679634788360667,
+            "p10_p90": [
+              -6.289078282387491,
+              1.750898912088006
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1272,
+            "median_signed_m": -5.289772650468843,
+            "p10_p90": [
+              -7.2224237415937695,
+              -0.1658327076578406
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            0,
+            232,
+            33,
+            268
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1188,
+            "median_signed_m": 0.6118063326698371,
+            "p10_p90": [
+              -0.40784695724340275,
+              2.150540690393622
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1188,
+            "median_signed_m": 0.4651846083020237,
+            "p10_p90": [
+              -0.5479254654235094,
+              1.1713494687066384
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_c_chair0.position_angle",
+      "before": [
+        -0.9,
+        -0.6,
+        180
+      ],
+      "after": [
+        -1.1197087542909026,
+        -0.5749635933598385,
+        180
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            583,
+            272,
+            640,
+            317
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2475,
+            "median_signed_m": 0.14423796472094175,
+            "p10_p90": [
+              -0.759309831540125,
+              1.408224716724821
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2475,
+            "median_signed_m": 0.15665848158547924,
+            "p10_p90": [
+              -1.0383609752888237,
+              0.9448012116166132
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            253,
+            150,
+            281,
+            178
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 784,
+            "median_signed_m": -1.130211048813866,
+            "p10_p90": [
+              -3.2925544890316485,
+              -0.050817243143947255
+            ]
+          },
+          "v2": {
+            "valid_pixels": 784,
+            "median_signed_m": -1.4349137018746205,
+            "p10_p90": [
+              -7.52873490716138,
+              -0.5246909495790393
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_c_chair1.position_angle",
+      "before": [
+        -0.85,
+        -1.5,
+        130
+      ],
+      "after": [
+        -0.9273934735874304,
+        -1.5052940899082172,
+        130
+      ],
+      "rationale": "RGB ray-plane anchor and minimum displacement separation; retain orientation. .95m seat centres and >=1.07m table-centre distance.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            547,
+            269,
+            598,
+            311
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 2142,
+            "median_signed_m": -0.22460581037074068,
+            "p10_p90": [
+              -1.7913853977975656,
+              1.0415736766954922
+            ]
+          },
+          "v2": {
+            "valid_pixels": 2142,
+            "median_signed_m": -0.2026064743129279,
+            "p10_p90": [
+              -2.2769094921419057,
+              1.030770186045245
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            230,
+            150,
+            258,
+            178
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 784,
+            "median_signed_m": -1.515090258380285,
+            "p10_p90": [
+              -8.44766076666529,
+              -0.08671668385159274
+            ]
+          },
+          "v2": {
+            "valid_pixels": 784,
+            "median_signed_m": -1.5535853403290947,
+            "p10_p90": [
+              -7.600549187638766,
+              -0.06843524280456809
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "lounge_c_ottoman0.position",
+      "before": [
+        -0.1,
+        -1.75
+      ],
+      "after": [
+        -0.0164011019136661,
+        -1.7747247836908684
+      ],
+      "rationale": "As above. No DA3 score minimisation.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            525,
+            282,
+            577,
+            313
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 1612,
+            "median_signed_m": -0.15152565976376486,
+            "p10_p90": [
+              -2.2797612608735425,
+              0.6234199041056293
+            ]
+          },
+          "v2": {
+            "valid_pixels": 1612,
+            "median_signed_m": -0.1657383830667296,
+            "p10_p90": [
+              -2.498195180924543,
+              0.46890038795074257
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            221,
+            162,
+            250,
+            182
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 580,
+            "median_signed_m": -2.65548633929122,
+            "p10_p90": [
+              -7.794318418481656,
+              -0.09707329999094352
+            ]
+          },
+          "v2": {
+            "valid_pixels": 580,
+            "median_signed_m": -5.538925122264837,
+            "p10_p90": [
+              -7.96063284607777,
+              -0.034862893650864854
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "column",
+      "before": {
+        "location": [
+          6.75,
+          3.1,
+          2.625
+        ],
+        "radius": 0.36
+      },
+      "after": {
+        "location": [
+          7.774570952941778,
+          2.9121683961337244,
+          2.625
+        ],
+        "radius": 0.2983414482395525
+      },
+      "rationale": "Joint fit to ten silhouette tangent planes from RGB33/100/108/118/129; RMS .042m; see fits.json.",
+      "provenance": "measured silhouette fit; upright axis inferred",
+      "evidence": [
+        {
+          "sample_index": 100,
+          "label": "glazing",
+          "pixel_region_640x480": [
+            250,
+            110,
+            570,
+            260
+          ],
+          "valid_pixels": 47962,
+          "median_signed_m": 0.3442207837368674,
+          "mae_m": 0.3836672499401422,
+          "signed_p10_p90": [
+            0.2707435761101743,
+            0.417281074171512
+          ]
+        },
+        {
+          "sample_index": 108,
+          "label": "glass",
+          "pixel_region_640x480": [
+            195,
+            175,
+            520,
+            270
+          ],
+          "valid_pixels": 30875,
+          "median_signed_m": 0.04248946996654901,
+          "mae_m": 0.11608196990270658,
+          "signed_p10_p90": [
+            -0.021194380293578518,
+            0.12010586860874398
+          ]
+        },
+        {
+          "sample_index": 118,
+          "label": "glass",
+          "pixel_region_640x480": [
+            150,
+            100,
+            425,
+            315
+          ],
+          "valid_pixels": 59039,
+          "median_signed_m": -0.28796784908099227,
+          "mae_m": 0.45500288260902183,
+          "signed_p10_p90": [
+            -0.49428860050433676,
+            -0.19494680839984163
+          ]
+        },
+        {
+          "sample_index": 118,
+          "label": "column",
+          "pixel_region_640x480": [
+            15,
+            50,
+            135,
+            430
+          ],
+          "valid_pixels": 45455,
+          "median_signed_m": 0.2038710320556003,
+          "mae_m": 0.5699772154250222,
+          "signed_p10_p90": [
+            -0.22768135305118734,
+            0.9435920425094695
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "desk.top_z_and_support",
+      "before": {
+        "top": 1.15,
+        "shell_bottom": 0.15,
+        "support": null
+      },
+      "after": {
+        "top": 0.89,
+        "shell_bottom": 0.15,
+        "plinth": [
+          0.018,
+          0.2
+        ]
+      },
+      "rationale": "Top accepted triangulation .861/.907m (33/129/155); concealed plinth and back closure inferred.",
+      "provenance": "measured top; inferred hidden support",
+      "evidence": [
+        {
+          "sample_index": 129,
+          "label": "desk",
+          "pixel_region_640x480": [
+            420,
+            260,
+            545,
+            320
+          ],
+          "valid_pixels": 7500,
+          "median_signed_m": 0.9039112282822224,
+          "mae_m": 1.977064222147277,
+          "signed_p10_p90": [
+            -3.6093587590619833,
+            2.6655426360908976
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "pendant_7.xy_bottom_z_radius",
+      "before": [
+        6.5,
+        -4.0,
+        4.7,
+        0.82
+      ],
+      "after": [
+        4.655132546949051,
+        -2.970655196502806,
+        3.5482419361894926,
+        0.6902400249999864
+      ],
+      "rationale": "Individual diffuser identity pendant_wall; triangulated RGB observations in fits.json; source frame61 rim width 112px. Radius uses horizontal rim profile +.23m, inferred shape.",
+      "provenance": "multi-view triangulated position; one-view rim size constrained by identity",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "ceiling",
+          "pixel_region_640x480": [
+            190,
+            20,
+            490,
+            115
+          ],
+          "valid_pixels": 28500,
+          "median_signed_m": -1.4331402256009085,
+          "mae_m": 2.194473787975772,
+          "signed_p10_p90": [
+            -3.138202176833551,
+            2.7699637843821274
+          ]
+        },
+        {
+          "sample_index": 82,
+          "label": "pendants",
+          "pixel_region_640x480": [
+            20,
+            0,
+            620,
+            170
+          ],
+          "valid_pixels": 102000,
+          "median_signed_m": 0.5539257749910389,
+          "mae_m": 1.1495679391165101,
+          "signed_p10_p90": [
+            -0.5005494516027723,
+            3.145608744597956
+          ]
+        },
+        {
+          "sample_index": 100,
+          "label": "lights",
+          "pixel_region_640x480": [
+            10,
+            0,
+            600,
+            110
+          ],
+          "valid_pixels": 64828,
+          "median_signed_m": 0.42753046810600814,
+          "mae_m": 1.4171831384425544,
+          "signed_p10_p90": [
+            -1.0009058227620924,
+            3.667886676300273
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            468,
+            0,
+            640,
+            94
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15980,
+            "median_signed_m": -1.2173645326515583,
+            "p10_p90": [
+              -2.154237607052934,
+              1.281847488294201
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15980,
+            "median_signed_m": -1.227167809004078,
+            "p10_p90": [
+              -1.8734004536509086,
+              -0.90042620664814
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            114,
+            0,
+            361,
+            77
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 19019,
+            "median_signed_m": 0.03706628452258087,
+            "p10_p90": [
+              -0.001270887251686037,
+              2.3407986750748866
+            ]
+          },
+          "v2": {
+            "valid_pixels": 19019,
+            "median_signed_m": 0.02050786089856249,
+            "p10_p90": [
+              -0.31946684840561346,
+              0.048311216127545915
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            184,
+            0,
+            579,
+            56
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 22120,
+            "median_signed_m": -0.2209353386063584,
+            "p10_p90": [
+              -0.26819477904935934,
+              1.5156151176887336
+            ]
+          },
+          "v2": {
+            "valid_pixels": 22120,
+            "median_signed_m": -0.2214831803367341,
+            "p10_p90": [
+              -0.26973348893864973,
+              0.01562782977803918
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            263,
+            58,
+            464,
+            174
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 23316,
+            "median_signed_m": 0.6469584211504826,
+            "p10_p90": [
+              0.1563069409088258,
+              4.032900106592244
+            ]
+          },
+          "v2": {
+            "valid_pixels": 23316,
+            "median_signed_m": 0.3282944888320385,
+            "p10_p90": [
+              0.15629611633302964,
+              3.9693232754760293
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            0,
+            0,
+            196,
+            66
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 12936,
+            "median_signed_m": -0.5546649525270815,
+            "p10_p90": [
+              -0.7741134956189821,
+              1.569460365318716
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12936,
+            "median_signed_m": -0.5623335113742538,
+            "p10_p90": [
+              -0.7858028682864147,
+              -0.10758801543857288
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            457,
+            0,
+            640,
+            70
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 12670,
+            "median_signed_m": 0.04310667306385918,
+            "p10_p90": [
+              -1.6011833286298287,
+              2.462504524948645
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12670,
+            "median_signed_m": -0.9281618548002157,
+            "p10_p90": [
+              -1.6232400968235638,
+              -0.6662957070509326
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "pendant_6.xy_bottom_z_radius",
+      "before": [
+        8.0,
+        -1.8,
+        4.6,
+        0.8
+      ],
+      "after": [
+        5.549893044661595,
+        -1.3334310898165807,
+        3.6097468946561424,
+        0.5889200436334336
+      ],
+      "rationale": "Individual diffuser identity pendant_centre; triangulated RGB observations in fits.json; source frame129 rim width 183px. Radius uses horizontal rim profile +.23m, inferred shape.",
+      "provenance": "multi-view triangulated position; one-view rim size constrained by identity",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "ceiling",
+          "pixel_region_640x480": [
+            190,
+            20,
+            490,
+            115
+          ],
+          "valid_pixels": 28500,
+          "median_signed_m": -1.4331402256009085,
+          "mae_m": 2.194473787975772,
+          "signed_p10_p90": [
+            -3.138202176833551,
+            2.7699637843821274
+          ]
+        },
+        {
+          "sample_index": 82,
+          "label": "pendants",
+          "pixel_region_640x480": [
+            20,
+            0,
+            620,
+            170
+          ],
+          "valid_pixels": 102000,
+          "median_signed_m": 0.5539257749910389,
+          "mae_m": 1.1495679391165101,
+          "signed_p10_p90": [
+            -0.5005494516027723,
+            3.145608744597956
+          ]
+        },
+        {
+          "sample_index": 100,
+          "label": "lights",
+          "pixel_region_640x480": [
+            10,
+            0,
+            600,
+            110
+          ],
+          "valid_pixels": 64828,
+          "median_signed_m": 0.42753046810600814,
+          "mae_m": 1.4171831384425544,
+          "signed_p10_p90": [
+            -1.0009058227620924,
+            3.667886676300273
+          ]
+        }
+      ],
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 33,
+          "pixel_region_640x480": [
+            342,
+            0,
+            464,
+            102
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 12444,
+            "median_signed_m": -1.2456860442287185,
+            "p10_p90": [
+              -2.821465451642591,
+              3.6729885520062053
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12444,
+            "median_signed_m": -1.4048681601216177,
+            "p10_p90": [
+              -2.4195779160897524,
+              -1.0970609521799009
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "pixel_region_640x480": [
+            0,
+            0,
+            230,
+            49
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 11270,
+            "median_signed_m": 0.763112451136486,
+            "p10_p90": [
+              0.015629861492387234,
+              3.5875707149209064
+            ]
+          },
+          "v2": {
+            "valid_pixels": 11270,
+            "median_signed_m": 0.036793627275604646,
+            "p10_p90": [
+              -0.18162261892438697,
+              0.867728063019931
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "pixel_region_640x480": [
+            0,
+            0,
+            640,
+            7
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 4466,
+            "median_signed_m": -0.22734981002877275,
+            "p10_p90": [
+              -0.8872178733199587,
+              1.7712560538738513
+            ]
+          },
+          "v2": {
+            "valid_pixels": 4466,
+            "median_signed_m": -0.2277901860536895,
+            "p10_p90": [
+              -0.8889345098396646,
+              0.049484727341731594
+            ]
+          }
+        },
+        {
+          "sample_index": 82,
+          "pixel_region_640x480": [
+            256,
+            0,
+            518,
+            160
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 41920,
+            "median_signed_m": 0.6949071150532982,
+            "p10_p90": [
+              0.15780550911478378,
+              3.692130417583969
+            ]
+          },
+          "v2": {
+            "valid_pixels": 41920,
+            "median_signed_m": 0.6614945041546241,
+            "p10_p90": [
+              0.15703773358199485,
+              3.645035646365181
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "pixel_region_640x480": [
+            75,
+            0,
+            257,
+            60
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 10920,
+            "median_signed_m": -0.16636369115032146,
+            "p10_p90": [
+              -0.7785473557198914,
+              5.3037175443367826
+            ]
+          },
+          "v2": {
+            "valid_pixels": 10920,
+            "median_signed_m": -0.5832184967992733,
+            "p10_p90": [
+              -0.9710488812243029,
+              4.151513326524295
+            ]
+          }
+        },
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            0,
+            0,
+            139,
+            112
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 15568,
+            "median_signed_m": 1.154309841685289,
+            "p10_p90": [
+              -0.3681090677330105,
+              4.958340090281797
+            ]
+          },
+          "v2": {
+            "valid_pixels": 15568,
+            "median_signed_m": 1.0830800698837022,
+            "p10_p90": [
+              -0.2308916555039211,
+              4.576645174381802
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "pixel_region_640x480": [
+            0,
+            0,
+            151,
+            70
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 10565,
+            "median_signed_m": 2.426539491384069,
+            "p10_p90": [
+              0.02628027409901056,
+              3.748896802041183
+            ]
+          },
+          "v2": {
+            "valid_pixels": 10567,
+            "median_signed_m": 2.4005660022312494,
+            "p10_p90": [
+              0.03451208405331202,
+              4.103547109248841
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            195,
+            0,
+            569,
+            108
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 40392,
+            "median_signed_m": 1.0355657856068872,
+            "p10_p90": [
+              -0.4845786928337909,
+              3.3074289211662395
+            ]
+          },
+          "v2": {
+            "valid_pixels": 40392,
+            "median_signed_m": 0.7111325754105566,
+            "p10_p90": [
+              -0.20666151301412078,
+              1.5706569695985986
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "pixel_region_640x480": [
+            330,
+            0,
+            452,
+            81
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 9882,
+            "median_signed_m": -0.909378929160046,
+            "p10_p90": [
+              -2.441350566704818,
+              4.423826387151024
+            ]
+          },
+          "v2": {
+            "valid_pixels": 9882,
+            "median_signed_m": -1.084341202124401,
+            "p10_p90": [
+              -1.8564663696289323,
+              -0.8283570052721103
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "entry_door.upright_width_rail_height",
+      "before": [
+        0.065,
+        0.14
+      ],
+      "after": [
+        0.14,
+        0.22
+      ],
+      "rationale": "Source100/108/118 brass door members visibly broad; centres/extents retained. Inferred widths.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 100,
+          "label": "glazing",
+          "pixel_region_640x480": [
+            250,
+            110,
+            570,
+            260
+          ],
+          "valid_pixels": 47962,
+          "median_signed_m": 0.3442207837368674,
+          "mae_m": 0.3836672499401422,
+          "signed_p10_p90": [
+            0.2707435761101743,
+            0.417281074171512
+          ]
+        },
+        {
+          "sample_index": 108,
+          "label": "glass",
+          "pixel_region_640x480": [
+            195,
+            175,
+            520,
+            270
+          ],
+          "valid_pixels": 30875,
+          "median_signed_m": 0.04248946996654901,
+          "mae_m": 0.11608196990270658,
+          "signed_p10_p90": [
+            -0.021194380293578518,
+            0.12010586860874398
+          ]
+        },
+        {
+          "sample_index": 118,
+          "label": "glass",
+          "pixel_region_640x480": [
+            150,
+            100,
+            425,
+            315
+          ],
+          "valid_pixels": 59039,
+          "median_signed_m": -0.28796784908099227,
+          "mae_m": 0.45500288260902183,
+          "signed_p10_p90": [
+            -0.49428860050433676,
+            -0.19494680839984163
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "divider.foliage_distribution",
+      "before": {
+        "root_cluster": "single centre",
+        "height": 0.95
+      },
+      "after": {
+        "root_clusters": 4,
+        "along_y_fraction": [
+          -0.35,
+          -0.1167,
+          0.1167,
+          0.35
+        ],
+        "height": 0.83
+      },
+      "rationale": "Keep uncertain trough dimensions/corners; distribute inferred branches along visible trough length in RGB33/82/91/108/129.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 82,
+          "label": "shrubs",
+          "pixel_region_640x480": [
+            265,
+            300,
+            610,
+            470
+          ],
+          "valid_pixels": 58650,
+          "median_signed_m": -0.12504899342947473,
+          "mae_m": 0.7864818362912656,
+          "signed_p10_p90": [
+            -1.599545209287779,
+            0.8544106188228225
+          ]
+        },
+        {
+          "sample_index": 91,
+          "label": "plants",
+          "pixel_region_640x480": [
+            175,
+            160,
+            390,
+            270
+          ],
+          "valid_pixels": 23646,
+          "median_signed_m": -0.517415657345067,
+          "mae_m": 1.578231494420019,
+          "signed_p10_p90": [
+            -3.014753625465884,
+            1.3348232658349364
+          ]
+        },
+        {
+          "sample_index": 108,
+          "label": "divider",
+          "pixel_region_640x480": [
+            75,
+            255,
+            210,
+            460
+          ],
+          "valid_pixels": 27675,
+          "median_signed_m": -0.24851036599872067,
+          "mae_m": 0.7759248732366497,
+          "signed_p10_p90": [
+            -1.5435397403754123,
+            0.9703907702864837
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "chair.back_topology",
+      "before": "mixed winding and degenerate bevel",
+      "after": "closed outward winding, bounded bevel, flat cap normals",
+      "rationale": "M3-I01; preserve dimensions. Technical change does not purport to infer new geometry from DA3.",
+      "provenance": "topological repair",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "valid_pixels": 12075,
+          "median_signed_m": -0.09692852750631209,
+          "mae_m": 0.39724143857413935,
+          "signed_p10_p90": [
+            -1.2821788764662896,
+            0.0027692575369492123
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "cylinder.cap_normals",
+      "before": "smooth",
+      "after": "flat",
+      "rationale": "M3-I09 flat mirrors and table surfaces visible in61/74/129; no size change.",
+      "provenance": "normal repair",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "valid_pixels": 17100,
+          "median_signed_m": -1.2966571131070466,
+          "mae_m": 1.5313338745857252,
+          "signed_p10_p90": [
+            -2.7507041162604886,
+            -0.8162963422391531
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "mirror wall",
+          "pixel_region_640x480": [
+            180,
+            80,
+            580,
+            290
+          ],
+          "valid_pixels": 84000,
+          "median_signed_m": 0.038728012245413446,
+          "mae_m": 0.2304293164159441,
+          "signed_p10_p90": [
+            -0.0050698946989642885,
+            0.6614327738773209
+          ]
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "valid_pixels": 30375,
+          "median_signed_m": -0.18920496161633116,
+          "mae_m": 0.32633735005493486,
+          "signed_p10_p90": [
+            -0.6788984085566074,
+            0.25086434417019354
+          ]
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "valid_pixels": 41145,
+          "median_signed_m": 0.41522109260144013,
+          "mae_m": 0.5461007724955775,
+          "signed_p10_p90": [
+            -0.24505172780921783,
+            0.9722042008991317
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "valid_pixels": 20500,
+          "median_signed_m": -0.33261237356474416,
+          "mae_m": 0.7088943894027346,
+          "signed_p10_p90": [
+            -1.4527024259129144,
+            -0.16332616894002455
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "crest.shield_normal_material",
+      "before": {
+        "normal": "+X",
+        "material": "limestone"
+      },
+      "after": {
+        "normal": "-X",
+        "material": "white_linen"
+      },
+      "rationale": "RGB33/129/155 shield is white facing room; preserve vertices.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "far wall",
+          "pixel_region_640x480": [
+            210,
+            160,
+            460,
+            245
+          ],
+          "valid_pixels": 21242,
+          "median_signed_m": -2.4276026061305327,
+          "mae_m": 3.2353738180482665,
+          "signed_p10_p90": [
+            -4.920049513874576,
+            -1.27647785624471
+          ]
+        },
+        {
+          "sample_index": 155,
+          "label": "back wall",
+          "pixel_region_640x480": [
+            230,
+            165,
+            490,
+            225
+          ],
+          "valid_pixels": 15596,
+          "median_signed_m": -1.7575636161873813,
+          "mae_m": 3.0509390090110378,
+          "signed_p10_p90": [
+            -5.0712667728698175,
+            -1.0529882792570717
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "appearance",
+      "before": {
+        "floor_bump_strength": 0.15,
+        "floor_bump_distance": 0.025,
+        "oak": [
+          0.48,
+          0.445,
+          0.36
+        ],
+        "concrete": [
+          0.3,
+          0.31,
+          0.29
+        ]
+      },
+      "after": {
+        "floor_bump_strength": 0,
+        "oak": [
+          0.3,
+          0.28,
+          0.235
+        ],
+        "concrete": [
+          0.16,
+          0.17,
+          0.16
+        ]
+      },
+      "rationale": "Source61/74/100/129 surfaces flatter/darker; appearance inference.",
+      "provenance": "inferred refinement constrained by RGB and physical clearance",
+      "evidence": [
+        {
+          "sample_index": 61,
+          "label": "mirror wall",
+          "pixel_region_640x480": [
+            180,
+            80,
+            580,
+            290
+          ],
+          "valid_pixels": 84000,
+          "median_signed_m": 0.038728012245413446,
+          "mae_m": 0.2304293164159441,
+          "signed_p10_p90": [
+            -0.0050698946989642885,
+            0.6614327738773209
+          ]
+        },
+        {
+          "sample_index": 91,
+          "label": "floor",
+          "pixel_region_640x480": [
+            100,
+            320,
+            520,
+            465
+          ],
+          "valid_pixels": 60900,
+          "median_signed_m": -0.016044298302684723,
+          "mae_m": 0.018620412879317122,
+          "signed_p10_p90": [
+            -0.032080985115883906,
+            -0.009360154052784743
+          ]
+        },
+        {
+          "sample_index": 108,
+          "label": "glass",
+          "pixel_region_640x480": [
+            195,
+            175,
+            520,
+            270
+          ],
+          "valid_pixels": 30875,
+          "median_signed_m": 0.04248946996654901,
+          "mae_m": 0.11608196990270658,
+          "signed_p10_p90": [
+            -0.021194380293578518,
+            0.12010586860874398
+          ]
+        },
+        {
+          "sample_index": 118,
+          "label": "glass",
+          "pixel_region_640x480": [
+            150,
+            100,
+            425,
+            315
+          ],
+          "valid_pixels": 59039,
+          "median_signed_m": -0.28796784908099227,
+          "mae_m": 0.45500288260902183,
+          "signed_p10_p90": [
+            -0.49428860050433676,
+            -0.19494680839984163
+          ]
+        }
+      ]
+    },
+    {
+      "parameter": "desk_vase.z",
+      "before": {
+        "vase_centre": 1.24,
+        "stem": [
+          1.3,
+          1.5
+        ]
+      },
+      "after": {
+        "vase_centre": 0.98,
+        "stem": [
+          1.04,
+          1.24
+        ]
+      },
+      "rationale": "Support relation follows measured desk top lowering by .26m. Vase detail inferred.",
+      "frames": [
+        33,
+        129,
+        155
+      ],
+      "pixel_regions_640x480": [
+        [
+          265,
+          200,
+          355,
+          240
+        ],
+        [
+          420,
+          260,
+          545,
+          320
+        ],
+        [
+          280,
+          180,
+          375,
+          220
+        ]
+      ],
+      "signed_residual_evidence": "Same desk rectangle in main desk change; tiny vase lacks reliable own depth evidence; inference.",
+      "per_object_projected_region_evidence": [
+        {
+          "sample_index": 100,
+          "pixel_region_640x480": [
+            622,
+            258,
+            640,
+            320
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 992,
+            "median_signed_m": -1.3617481133652496,
+            "p10_p90": [
+              -2.6735074538469914,
+              -0.877701973044484
+            ]
+          },
+          "v2": {
+            "valid_pixels": 992,
+            "median_signed_m": -0.315346307732967,
+            "p10_p90": [
+              -1.3926815027429809,
+              0.4674925707550003
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "pixel_region_640x480": [
+            476,
+            255,
+            482,
+            276
+          ],
+          "region_provenance": "Projected union of before/after semantic bounds, may include foreground occluders and background; NOT an input mask change",
+          "v1": {
+            "valid_pixels": 126,
+            "median_signed_m": 0.3550366381821064,
+            "p10_p90": [
+              0.03206160809352454,
+              2.9936102005400045
+            ]
+          },
+          "v2": {
+            "valid_pixels": 126,
+            "median_signed_m": 2.975167488891546,
+            "p10_p90": [
+              0.3660205986309393,
+              3.0005914372902227
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parameter": "desk.front_facet_vertex_z",
+      "before": 0.63,
+      "after": 0.5,
+      "rationale": "Inferred facet follows lower desk top while retaining faceted silhouette. Same desk evidence."
+    },
+    {
+      "parameter": "glazed_facade_and_doors.glass_partition",
+      "before": "continuous full facade glass across doors",
+      "after": "facade panes clipped to door apertures, independent closed door panes",
+      "rationale": "M3-I04 separate physical door state; all closed panes retained in geometric checks. Opening proxies consist of leaf components; no parent AABB fills portals.",
+      "frames": [
+        100,
+        108,
+        118
+      ],
+      "pixel_regions_640x480": [
+        [
+          400,
+          130,
+          510,
+          280
+        ],
+        [
+          350,
+          155,
+          430,
+          280
+        ],
+        [
+          320,
+          140,
+          400,
+          290
+        ]
+      ],
+      "signed_residual_evidence": "See glass/glazing rectangles in entry width change; semantic partition is inferred hidden construction."
+    },
+    {
+      "version": 3,
+      "parameter": "chair.curved_back.edge_treatment",
+      "before": {
+        "bevel_width": 0.04,
+        "bevel_segments": 3,
+        "evaluated_zero_area_faces_per_back": 2
+      },
+      "after": {
+        "bevel": null,
+        "cap_normals": "flat"
+      },
+      "rationale": "V2 evaluated audit still found two degenerate faces per back, exported GLB eight degenerate triangles per back. Remove bevel; preserve closed outward-wound raw annular sector. No position/dimension change.",
+      "provenance": "technical topology repair; rounding remains approximate",
+      "evidence": [
+        {
+          "sample_index": 33,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            195,
+            260,
+            385,
+            350
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 17100,
+            "median_signed_m": -1.2966571131070466,
+            "mae_m": 1.5313338745857252,
+            "p10_p90": [
+              -2.7507041162604886,
+              -0.8162963422391531
+            ]
+          },
+          "v2": {
+            "valid_pixels": 17100,
+            "median_signed_m": -1.3948587712599938,
+            "mae_m": 1.6258616609874499,
+            "p10_p90": [
+              -2.9213589074254123,
+              -0.902235648986835
+            ]
+          }
+        },
+        {
+          "sample_index": 61,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            335,
+            325,
+            560,
+            460
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 30375,
+            "median_signed_m": -0.18920496161633116,
+            "mae_m": 0.32633735005493486,
+            "p10_p90": [
+              -0.6788984085566074,
+              0.25086434417019354
+            ]
+          },
+          "v2": {
+            "valid_pixels": 30375,
+            "median_signed_m": -0.19411299007748672,
+            "mae_m": 0.35477183854078503,
+            "p10_p90": [
+              -0.6524184898537854,
+              0.259667555657418
+            ]
+          }
+        },
+        {
+          "sample_index": 74,
+          "label": "chair",
+          "pixel_region_640x480": [
+            225,
+            370,
+            340,
+            475
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 12075,
+            "median_signed_m": -0.09692852750631209,
+            "mae_m": 0.39724143857413935,
+            "p10_p90": [
+              -1.2821788764662896,
+              0.0027692575369492123
+            ]
+          },
+          "v2": {
+            "valid_pixels": 12075,
+            "median_signed_m": -0.019134307211839285,
+            "mae_m": 0.2973512562193033,
+            "p10_p90": [
+              -0.8547763757498146,
+              0.5437662082558102
+            ]
+          }
+        },
+        {
+          "sample_index": 129,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            90,
+            335,
+            395,
+            470
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 41145,
+            "median_signed_m": 0.41522109260144013,
+            "mae_m": 0.5461007724955775,
+            "p10_p90": [
+              -0.24505172780921783,
+              0.9722042008991317
+            ]
+          },
+          "v2": {
+            "valid_pixels": 41138,
+            "median_signed_m": 0.27906509978188,
+            "mae_m": 0.5168417377268942,
+            "p10_p90": [
+              -0.3013395781216646,
+              1.0612182751417585
+            ]
+          }
+        },
+        {
+          "sample_index": 155,
+          "label": "chairs",
+          "pixel_region_640x480": [
+            190,
+            255,
+            395,
+            355
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 20500,
+            "median_signed_m": -0.33261237356474416,
+            "mae_m": 0.7088943894027346,
+            "p10_p90": [
+              -1.4527024259129144,
+              -0.16332616894002455
+            ]
+          },
+          "v2": {
+            "valid_pixels": 20500,
+            "median_signed_m": -0.6319644279721128,
+            "mae_m": 0.8680697700573595,
+            "p10_p90": [
+              -1.7375967139894315,
+              -0.16951111735857394
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "parameter": "botanical.procedural_realisation_after_divider_calls",
+      "before": "single trough bush; later plants generated from subsequent shared random state",
+      "after": "four trough bushes; later plant branch/leaf realization regenerated from advanced deterministic random state",
+      "rationale": "Incidental stochastic detail change, inferred. Fixed pot/profile/placement parameters for all non-divider plants retained. Semantic bounds may change with branch tips. No data-derived precision claimed.",
+      "evidence": [
+        {
+          "sample_index": 82,
+          "label": "shrubs",
+          "pixel_region_640x480": [
+            265,
+            300,
+            610,
+            470
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 58650,
+            "median_signed_m": -0.12504899342947473,
+            "mae_m": 0.7864818362912656,
+            "p10_p90": [
+              -1.599545209287779,
+              0.8544106188228225
+            ]
+          },
+          "v2": {
+            "valid_pixels": 58650,
+            "median_signed_m": -0.18251333210504694,
+            "mae_m": 0.8454101415725631,
+            "p10_p90": [
+              -2.6018457988496353,
+              0.3726988406856944
+            ]
+          }
+        },
+        {
+          "sample_index": 91,
+          "label": "plants",
+          "pixel_region_640x480": [
+            175,
+            160,
+            390,
+            270
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 23646,
+            "median_signed_m": -0.517415657345067,
+            "mae_m": 1.578231494420019,
+            "p10_p90": [
+              -3.014753625465884,
+              1.3348232658349364
+            ]
+          },
+          "v2": {
+            "valid_pixels": 23648,
+            "median_signed_m": -0.5343355819735542,
+            "mae_m": 1.745345453909963,
+            "p10_p90": [
+              -5.734444346830893,
+              0.5661953239646668
+            ]
+          }
+        },
+        {
+          "sample_index": 108,
+          "label": "divider",
+          "pixel_region_640x480": [
+            75,
+            255,
+            210,
+            460
+          ],
+          "sign": "model minus own DA3",
+          "region_type": "fixed rectangular observation, not object mask",
+          "v1": {
+            "valid_pixels": 27675,
+            "median_signed_m": -0.24851036599872067,
+            "mae_m": 0.7759248732366497,
+            "p10_p90": [
+              -1.5435397403754123,
+              0.9703907702864837
+            ]
+          },
+          "v2": {
+            "valid_pixels": 27675,
+            "median_signed_m": -0.3552299187469532,
+            "mae_m": 0.8261856660050004,
+            "p10_p90": [
+              -1.5876921818521095,
+              0.6872046736486911
+            ]
+          }
+        }
+      ],
+      "provenance": "inferred hidden/botanical detail"
+    },
+    {
+      "version": 2,
+      "parameter": "pendant_6_and_7.support_cable_light_transform",
+      "before": "cable from old bottom+.20 to ceiling5.23; local area light old bottom-.025",
+      "after": "same local offsets at new measured pendant centre and bottom",
+      "rationale": "Suspension and light follow moved pendant object. Relative support dimensions/power remain inferred.",
+      "evidence_reference": "pendant_6/7 xy_bottom_z_radius records"
+    }
+  ],
+  "measurement_fits": "analysis/repair/fits.json",
+  "residual_convention": "model minus own predicted DA3, metres; rectangles may mix surfaces; not GT",
+  "uncertainties": [
+    "Single upright column fit leaves .042m tangent RMS due native pose/manual silhouette conflict.",
+    "Some pendant identities remain inferred; two selected identities measured.",
+    "Seat ray-plane elevation .565m inferred; separation correction does not establish exact furniture placement.",
+    "Trough corners inconsistent across views; keep dimensions and position unchanged.",
+    "Room and late DA3 conflicts retained; no scale/camera/mask changes."
+  ],
+  "provenance_reconciliation": {
+    "issue": "M3-I05",
+    "source": "checks/input_v1/coordinator_invocation.json",
+    "status": "originating coordinator attribution supplied locally after review; author can verify record/hashes but did not witness creating command",
+    "original_author_uncertainty_preserved": true
+  },
+  "review_status": "author repair evidence only; requires independent review",
+  "v2_actual_comparison_inspection": {
+    "33": "Column now aligns better; two corrected lamps occupy source silhouettes; seating arrangement and pot species remain approximate; pale materials; missing floor reflection pattern.",
+    "61": "Mirrors flat; wall pendant now present at source pixels. Seats separated but back direction/height and table proportions remain mismatched.",
+    "74": "Wall pendant silhouette largely aligns; selected chair shifted too far upward/right; mirrors flat. Surface color and doors remain approximate.",
+    "82": "Foliage fills trough lengths but too dense/coarse. Prominent foreground lamps absent after identity repair; unresolved pendant layout.",
+    "91": "Column changed without fitting this frame: source/model offset persists. Trough boxes unchanged; foliage too dense and floor pattern absent.",
+    "100": "Entry brass members thicker, glass now independent closed leaves. Column and remaining pendants imperfect; reflections too smooth/simple.",
+    "108": "Column signed patch close to own DA3; foliage fills planter; furniture and lamp placement still differs.",
+    "118": "Left column restored; planter foliage now too bulky; lowered desk and support physically valid but predicted-depth conflict remains.",
+    "129": "Large top-centre pendant restored and close to own DA3. Column improved. Crest now visible. Furniture silhouettes and plant architecture remain LIMITED.",
+    "155": "Crest visible and mirrors flat. Chairs separated; their RGB positions and floor appearance still differ; far-wall DA3 conflict retained."
+  },
+  "v2_input_pass": "checks/input_v2/report.json",
+  "final_input_pass_plan": "checks/input_final; third and last full180 pass, after v3 paired inspection.",
+  "final_candidate": {
+    "version": 3,
+    "model_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+    "glb_sha256": "d6ca8430042bd4c7e3a0d9a0a243e118e4856d3f8d2c69779b985b28ec51c153",
+    "quality_status": "LIMITED",
+    "status": "ready_for_independent_review",
+    "independent_review_performed_by_author": false,
+    "frozen": false
+  },
+  "budget": {
+    "versions": 3,
+    "paired_checks": 30,
+    "full_input_passes": 3,
+    "supplemental_paired_checks": 0
+  },
+  "full_input_passes": [
+    {
+      "directory": "checks/input_v1",
+      "model_sha256": "a8bde3bf06d3db06e591bd40c0fb8e2f976f6317869cb371f2a8f4158eea9f85",
+      "report_sha256": "2095bfb30206ad3afa49e0f632c5771c5df817cb2e02baa1594cf9acce605edc",
+      "depth_sha256": "f2cc2e9c463d65daca2508022dd50ecc6b728690ed8972e37c75eedc13552141",
+      "frames": 180
+    },
+    {
+      "directory": "checks/input_v2",
+      "model_sha256": "78fa53683655f88444c0b64a3c23719c3332e868bddb96d4c10e297850590864",
+      "report_sha256": "e2691649af1ccc840a2b8f283198ea209a91b8ae9d0ff1a1644a40a45d8999b3",
+      "depth_sha256": "b3df3226a38508f393ccea3dd272a3dac8a61b504686cf0c92e4916fbd89d59d",
+      "frames": 180
+    },
+    {
+      "directory": "checks/input_final",
+      "model_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+      "report_sha256": "b11a45140dfd6608d03364e615e87e3c41424c2e100b9c291db6f17ba97e9a5e",
+      "depth_sha256": "c96616c2115a8b4fd0b68c891ad96847f4bc776f5ed8246d6aacc5351a995383",
+      "frames": 180
+    }
+  ],
+  "version_integrity": [
+    {
+      "version": 1,
+      "model_sha256": "a8bde3bf06d3db06e591bd40c0fb8e2f976f6317869cb371f2a8f4158eea9f85",
+      "glb_sha256": "002e3d461bae9653c53ea87e74322d52ec132e2a3a96ff7621e363556216992e",
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_rgb_depth_hashes_verified": true,
+      "input_masks_identical_to_v1": true
+    },
+    {
+      "version": 2,
+      "model_sha256": "78fa53683655f88444c0b64a3c23719c3332e868bddb96d4c10e297850590864",
+      "glb_sha256": "ef9d6e980fda173250b9404e04e0b2b856437fbd77a06e36442be51719a82d85",
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_rgb_depth_hashes_verified": true,
+      "input_masks_identical_to_v1": true
+    },
+    {
+      "version": 3,
+      "model_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+      "glb_sha256": "d6ca8430042bd4c7e3a0d9a0a243e118e4856d3f8d2c69779b985b28ec51c153",
+      "indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "all_rgb_depth_hashes_verified": true,
+      "input_masks_identical_to_v1": true
+    }
+  ],
+  "final_fixed_region_residuals": [
+    {
+      "sample_index": 33,
+      "label": "far wall",
+      "pixel_region_640x480": [
+        210,
+        160,
+        460,
+        245
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 21242,
+        "median_signed_m": -2.4276026061305327,
+        "mae_m": 3.2353738180482665,
+        "p10_p90": [
+          -4.920049513874576,
+          -1.27647785624471
+        ]
+      },
+      "v3": {
+        "valid_pixels": 21244,
+        "median_signed_m": -2.4305976992646396,
+        "mae_m": 3.4777305483939522,
+        "p10_p90": [
+          -7.528003104946269,
+          -1.8353307351477461
+        ]
+      }
+    },
+    {
+      "sample_index": 33,
+      "label": "ceiling",
+      "pixel_region_640x480": [
+        190,
+        20,
+        490,
+        115
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 28500,
+        "median_signed_m": -1.4331402256009085,
+        "mae_m": 2.194473787975772,
+        "p10_p90": [
+          -3.138202176833551,
+          2.7699637843821274
+        ]
+      },
+      "v3": {
+        "valid_pixels": 28500,
+        "median_signed_m": -1.5154686206834977,
+        "mae_m": 2.050835967905722,
+        "p10_p90": [
+          -3.0625929147438082,
+          0.34103739009830064
+        ]
+      }
+    },
+    {
+      "sample_index": 33,
+      "label": "chairs",
+      "pixel_region_640x480": [
+        195,
+        260,
+        385,
+        350
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 17100,
+        "median_signed_m": -1.2966571131070466,
+        "mae_m": 1.5313338745857252,
+        "p10_p90": [
+          -2.7507041162604886,
+          -0.8162963422391531
+        ]
+      },
+      "v3": {
+        "valid_pixels": 17100,
+        "median_signed_m": -1.3965433435539145,
+        "mae_m": 1.6345453610749245,
+        "p10_p90": [
+          -2.9721209093255405,
+          -0.9033926670975693
+        ]
+      }
+    },
+    {
+      "sample_index": 61,
+      "label": "mirror wall",
+      "pixel_region_640x480": [
+        180,
+        80,
+        580,
+        290
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 84000,
+        "median_signed_m": 0.038728012245413446,
+        "mae_m": 0.2304293164159441,
+        "p10_p90": [
+          -0.0050698946989642885,
+          0.6614327738773209
+        ]
+      },
+      "v3": {
+        "valid_pixels": 84000,
+        "median_signed_m": 0.03879748609711875,
+        "mae_m": 0.23010831914189955,
+        "p10_p90": [
+          -0.004548918780780924,
+          0.6613063030504838
+        ]
+      }
+    },
+    {
+      "sample_index": 61,
+      "label": "chairs",
+      "pixel_region_640x480": [
+        335,
+        325,
+        560,
+        460
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 30375,
+        "median_signed_m": -0.18920496161633116,
+        "mae_m": 0.32633735005493486,
+        "p10_p90": [
+          -0.6788984085566074,
+          0.25086434417019354
+        ]
+      },
+      "v3": {
+        "valid_pixels": 30375,
+        "median_signed_m": -0.19466642149325253,
+        "mae_m": 0.3569908173371042,
+        "p10_p90": [
+          -0.6558871490280372,
+          0.2578926891710852
+        ]
+      }
+    },
+    {
+      "sample_index": 74,
+      "label": "wall",
+      "pixel_region_640x480": [
+        165,
+        55,
+        530,
+        175
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 43800,
+        "median_signed_m": -0.22948710907069536,
+        "mae_m": 0.2449866658111541,
+        "p10_p90": [
+          -0.2827127535231634,
+          -0.19971414499103893
+        ]
+      },
+      "v3": {
+        "valid_pixels": 43800,
+        "median_signed_m": -0.22948710907069536,
+        "mae_m": 0.2449866658111541,
+        "p10_p90": [
+          -0.2827127535231634,
+          -0.19971414499103893
+        ]
+      }
+    },
+    {
+      "sample_index": 74,
+      "label": "chair",
+      "pixel_region_640x480": [
+        225,
+        370,
+        340,
+        475
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 12075,
+        "median_signed_m": -0.09692852750631209,
+        "mae_m": 0.39724143857413935,
+        "p10_p90": [
+          -1.2821788764662896,
+          0.0027692575369492123
+        ]
+      },
+      "v3": {
+        "valid_pixels": 12075,
+        "median_signed_m": -0.019134307211839285,
+        "mae_m": 0.2981730472896451,
+        "p10_p90": [
+          -0.8573683775462639,
+          0.5437662082558102
+        ]
+      }
+    },
+    {
+      "sample_index": 82,
+      "label": "pendants",
+      "pixel_region_640x480": [
+        20,
+        0,
+        620,
+        170
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 102000,
+        "median_signed_m": 0.5539257749910389,
+        "mae_m": 1.1495679391165101,
+        "p10_p90": [
+          -0.5005494516027723,
+          3.145608744597956
+        ]
+      },
+      "v3": {
+        "valid_pixels": 102000,
+        "median_signed_m": 0.5318222630928653,
+        "mae_m": 1.1572895731861081,
+        "p10_p90": [
+          -0.5055630622727344,
+          3.24518903833096
+        ]
+      }
+    },
+    {
+      "sample_index": 82,
+      "label": "shrubs",
+      "pixel_region_640x480": [
+        265,
+        300,
+        610,
+        470
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 58650,
+        "median_signed_m": -0.12504899342947473,
+        "mae_m": 0.7864818362912656,
+        "p10_p90": [
+          -1.599545209287779,
+          0.8544106188228225
+        ]
+      },
+      "v3": {
+        "valid_pixels": 58650,
+        "median_signed_m": -0.18280095779173178,
+        "mae_m": 0.8462592375690369,
+        "p10_p90": [
+          -2.6141582044838536,
+          0.3653346116065468
+        ]
+      }
+    },
+    {
+      "sample_index": 91,
+      "label": "floor",
+      "pixel_region_640x480": [
+        100,
+        320,
+        520,
+        465
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 60900,
+        "median_signed_m": -0.016044298302684723,
+        "mae_m": 0.018620412879317122,
+        "p10_p90": [
+          -0.032080985115883906,
+          -0.009360154052784743
+        ]
+      },
+      "v3": {
+        "valid_pixels": 60900,
+        "median_signed_m": -0.016044298302684723,
+        "mae_m": 0.018620412879317122,
+        "p10_p90": [
+          -0.032080985115883906,
+          -0.009360154052784743
+        ]
+      }
+    },
+    {
+      "sample_index": 91,
+      "label": "plants",
+      "pixel_region_640x480": [
+        175,
+        160,
+        390,
+        270
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 23646,
+        "median_signed_m": -0.517415657345067,
+        "mae_m": 1.578231494420019,
+        "p10_p90": [
+          -3.014753625465884,
+          1.3348232658349364
+        ]
+      },
+      "v3": {
+        "valid_pixels": 23648,
+        "median_signed_m": -0.5344005861666212,
+        "mae_m": 1.746814467390178,
+        "p10_p90": [
+          -5.734444346830893,
+          0.5661953239646668
+        ]
+      }
+    },
+    {
+      "sample_index": 100,
+      "label": "glazing",
+      "pixel_region_640x480": [
+        250,
+        110,
+        570,
+        260
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 47962,
+        "median_signed_m": 0.3442207837368674,
+        "mae_m": 0.3836672499401422,
+        "p10_p90": [
+          0.2707435761101743,
+          0.417281074171512
+        ]
+      },
+      "v3": {
+        "valid_pixels": 47962,
+        "median_signed_m": 0.3334153253456136,
+        "mae_m": 0.3354801064641252,
+        "p10_p90": [
+          0.20710642862518452,
+          0.39966594779319103
+        ]
+      }
+    },
+    {
+      "sample_index": 100,
+      "label": "lights",
+      "pixel_region_640x480": [
+        10,
+        0,
+        600,
+        110
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 64828,
+        "median_signed_m": 0.42753046810600814,
+        "mae_m": 1.4171831384425544,
+        "p10_p90": [
+          -1.0009058227620924,
+          3.667886676300273
+        ]
+      },
+      "v3": {
+        "valid_pixels": 64828,
+        "median_signed_m": 0.43379501947410226,
+        "mae_m": 1.409069496939305,
+        "p10_p90": [
+          -1.1139799745889196,
+          3.6373704481763056
+        ]
+      }
+    },
+    {
+      "sample_index": 108,
+      "label": "glass",
+      "pixel_region_640x480": [
+        195,
+        175,
+        520,
+        270
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 30875,
+        "median_signed_m": 0.04248946996654901,
+        "mae_m": 0.11608196990270658,
+        "p10_p90": [
+          -0.021194380293578518,
+          0.12010586860874398
+        ]
+      },
+      "v3": {
+        "valid_pixels": 30875,
+        "median_signed_m": 0.03312502462269329,
+        "mae_m": 0.1306878849334854,
+        "p10_p90": [
+          -0.11630835964552695,
+          0.1044877261265115
+        ]
+      }
+    },
+    {
+      "sample_index": 108,
+      "label": "divider",
+      "pixel_region_640x480": [
+        75,
+        255,
+        210,
+        460
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 27675,
+        "median_signed_m": -0.24851036599872067,
+        "mae_m": 0.7759248732366497,
+        "p10_p90": [
+          -1.5435397403754123,
+          0.9703907702864837
+        ]
+      },
+      "v3": {
+        "valid_pixels": 27675,
+        "median_signed_m": -0.35796338559780727,
+        "mae_m": 0.827006984838374,
+        "p10_p90": [
+          -1.5887392349186937,
+          0.6787276356082099
+        ]
+      }
+    },
+    {
+      "sample_index": 118,
+      "label": "glass",
+      "pixel_region_640x480": [
+        150,
+        100,
+        425,
+        315
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 59039,
+        "median_signed_m": -0.28796784908099227,
+        "mae_m": 0.45500288260902183,
+        "p10_p90": [
+          -0.49428860050433676,
+          -0.19494680839984163
+        ]
+      },
+      "v3": {
+        "valid_pixels": 58862,
+        "median_signed_m": -0.30326834606519926,
+        "mae_m": 0.5233395523883757,
+        "p10_p90": [
+          -0.573396688742824,
+          -0.20051813116988276
+        ]
+      }
+    },
+    {
+      "sample_index": 118,
+      "label": "column",
+      "pixel_region_640x480": [
+        15,
+        50,
+        135,
+        430
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 45455,
+        "median_signed_m": 0.2038710320556003,
+        "mae_m": 0.5699772154250222,
+        "p10_p90": [
+          -0.22768135305118734,
+          0.9435920425094695
+        ]
+      },
+      "v3": {
+        "valid_pixels": 45517,
+        "median_signed_m": -0.13105658207089288,
+        "mae_m": 0.2646987797943739,
+        "p10_p90": [
+          -0.2374809061052831,
+          -0.042348477564729176
+        ]
+      }
+    },
+    {
+      "sample_index": 129,
+      "label": "desk",
+      "pixel_region_640x480": [
+        420,
+        260,
+        545,
+        320
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 7500,
+        "median_signed_m": 0.9039112282822224,
+        "mae_m": 1.977064222147277,
+        "p10_p90": [
+          -3.6093587590619833,
+          2.6655426360908976
+        ]
+      },
+      "v3": {
+        "valid_pixels": 7500,
+        "median_signed_m": 1.1783229924979963,
+        "mae_m": 2.4146391698627685,
+        "p10_p90": [
+          -3.749002979136223,
+          2.9324136696239704
+        ]
+      }
+    },
+    {
+      "sample_index": 129,
+      "label": "chairs",
+      "pixel_region_640x480": [
+        90,
+        335,
+        395,
+        470
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 41145,
+        "median_signed_m": 0.41522109260144013,
+        "mae_m": 0.5461007724955775,
+        "p10_p90": [
+          -0.24505172780921783,
+          0.9722042008991317
+        ]
+      },
+      "v3": {
+        "valid_pixels": 41138,
+        "median_signed_m": 0.27268167688635025,
+        "mae_m": 0.5150608497361983,
+        "p10_p90": [
+          -0.30478336634897774,
+          1.0452792067892673
+        ]
+      }
+    },
+    {
+      "sample_index": 155,
+      "label": "back wall",
+      "pixel_region_640x480": [
+        230,
+        165,
+        490,
+        225
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 15596,
+        "median_signed_m": -1.7575636161873813,
+        "mae_m": 3.0509390090110378,
+        "p10_p90": [
+          -5.0712667728698175,
+          -1.0529882792570717
+        ]
+      },
+      "v3": {
+        "valid_pixels": 15598,
+        "median_signed_m": -1.7669035709625405,
+        "mae_m": 3.435215308823022,
+        "p10_p90": [
+          -9.663447127671992,
+          -1.6055825169019795
+        ]
+      }
+    },
+    {
+      "sample_index": 155,
+      "label": "chairs",
+      "pixel_region_640x480": [
+        190,
+        255,
+        395,
+        355
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 20500,
+        "median_signed_m": -0.33261237356474416,
+        "mae_m": 0.7088943894027346,
+        "p10_p90": [
+          -1.4527024259129144,
+          -0.16332616894002455
+        ]
+      },
+      "v3": {
+        "valid_pixels": 20500,
+        "median_signed_m": -0.6352652816355739,
+        "mae_m": 0.8713695909446417,
+        "p10_p90": [
+          -1.7596473017406906,
+          -0.16972843434253243
+        ]
+      }
+    },
+    {
+      "sample_index": 118,
+      "label": "column core",
+      "pixel_region_640x480": [
+        30,
+        80,
+        65,
+        340
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 9100,
+        "median_signed_m": 0.8616604192278725,
+        "mae_m": 0.7439335876011343,
+        "p10_p90": [
+          -0.19642981158151543,
+          0.9234313618534409
+        ]
+      },
+      "v3": {
+        "valid_pixels": 9100,
+        "median_signed_m": -0.12524519161747305,
+        "mae_m": 0.1645186103087361,
+        "p10_p90": [
+          -0.19642947779550468,
+          -0.09207178851877058
+        ]
+      }
+    },
+    {
+      "sample_index": 33,
+      "label": "column core",
+      "pixel_region_640x480": [
+        125,
+        60,
+        145,
+        250
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 3800,
+        "median_signed_m": 0.95426590095059,
+        "mae_m": 1.4660766520120074,
+        "p10_p90": [
+          -3.8614445768065804,
+          1.3749546229095793
+        ]
+      },
+      "v3": {
+        "valid_pixels": 3800,
+        "median_signed_m": -1.2937566033387977,
+        "mae_m": 1.4620758091244197,
+        "p10_p90": [
+          -1.7323046113378051,
+          -1.2654806780178953
+        ]
+      }
+    },
+    {
+      "sample_index": 108,
+      "label": "column core",
+      "pixel_region_640x480": [
+        146,
+        90,
+        166,
+        235
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 2900,
+        "median_signed_m": 1.1635968114217525,
+        "mae_m": 1.1548722863508165,
+        "p10_p90": [
+          1.117847237147728,
+          1.1831978891576231
+        ]
+      },
+      "v3": {
+        "valid_pixels": 2900,
+        "median_signed_m": -0.016864608047038487,
+        "mae_m": 0.022852802006330063,
+        "p10_p90": [
+          -0.031691757624553854,
+          0.008818312921753346
+        ]
+      }
+    },
+    {
+      "sample_index": 129,
+      "label": "column core",
+      "pixel_region_640x480": [
+        182,
+        80,
+        204,
+        300
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 4840,
+        "median_signed_m": 2.2476157640603085,
+        "mae_m": 2.209169676719826,
+        "p10_p90": [
+          2.0372809236450347,
+          2.3783990419550447
+        ]
+      },
+      "v3": {
+        "valid_pixels": 4840,
+        "median_signed_m": 0.7775141174335753,
+        "mae_m": 0.7833292268940351,
+        "p10_p90": [
+          0.7505920085209541,
+          0.8232359338003521
+        ]
+      }
+    },
+    {
+      "sample_index": 61,
+      "label": "wall pendant",
+      "pixel_region_640x480": [
+        238,
+        24,
+        340,
+        68
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 4488,
+        "median_signed_m": 1.3197066627553746,
+        "mae_m": 1.090112218568857,
+        "p10_p90": [
+          0.03461705272418563,
+          1.7397182186432127
+        ]
+      },
+      "v3": {
+        "valid_pixels": 4488,
+        "median_signed_m": 0.020809365146496006,
+        "mae_m": 0.08781446925614649,
+        "p10_p90": [
+          -0.09606234721244328,
+          0.08816516384627225
+        ]
+      }
+    },
+    {
+      "sample_index": 74,
+      "label": "wall pendant",
+      "pixel_region_640x480": [
+        390,
+        5,
+        485,
+        38
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 3135,
+        "median_signed_m": 1.4335255139964422,
+        "mae_m": 1.357114379459514,
+        "p10_p90": [
+          0.9352176134832928,
+          1.7692830466632332
+        ]
+      },
+      "v3": {
+        "valid_pixels": 3135,
+        "median_signed_m": 0.01575041300070179,
+        "mae_m": 0.0770188160748874,
+        "p10_p90": [
+          -0.13434254795507294,
+          0.07018592599177528
+        ]
+      }
+    },
+    {
+      "sample_index": 129,
+      "label": "centre pendant",
+      "pixel_region_640x480": [
+        255,
+        8,
+        425,
+        68
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 10200,
+        "median_signed_m": 3.05979848633896,
+        "mae_m": 2.9487186957379623,
+        "p10_p90": [
+          2.018057138716574,
+          3.6349899200358826
+        ]
+      },
+      "v3": {
+        "valid_pixels": 10200,
+        "median_signed_m": -0.13219102927840187,
+        "mae_m": 0.28316487759012265,
+        "p10_p90": [
+          -0.21906686419885943,
+          -0.04674557278336423
+        ]
+      }
+    },
+    {
+      "sample_index": 82,
+      "label": "divider box",
+      "pixel_region_640x480": [
+        282,
+        353,
+        370,
+        425
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 6336,
+        "median_signed_m": -0.26918931157367343,
+        "mae_m": 0.2566954612993164,
+        "p10_p90": [
+          -0.31109735601062694,
+          -0.0029708018056018304
+        ]
+      },
+      "v3": {
+        "valid_pixels": 6336,
+        "median_signed_m": -0.27020770253596993,
+        "mae_m": 0.2470429540847062,
+        "p10_p90": [
+          -0.31193289839571126,
+          -0.048156224534626535
+        ]
+      }
+    },
+    {
+      "sample_index": 91,
+      "label": "divider box",
+      "pixel_region_640x480": [
+        175,
+        218,
+        265,
+        264
+      ],
+      "sign": "model minus own DA3",
+      "region_type": "fixed rectangular observation, not object mask",
+      "v1": {
+        "valid_pixels": 4140,
+        "median_signed_m": -0.5299703689410258,
+        "mae_m": 0.5581262334562854,
+        "p10_p90": [
+          -0.6421787603962936,
+          -0.5144749135271471
+        ]
+      },
+      "v3": {
+        "valid_pixels": 4140,
+        "median_signed_m": -0.5300811976003552,
+        "mae_m": 0.5605517085077231,
+        "p10_p90": [
+          -0.6435893969857533,
+          -0.5148209864692838
+        ]
+      }
+    }
+  ],
+  "remaining_limitations": [
+    "M3-I06 LIMITED: one upright cylinder fitted to five views; residual/manual pose conflicts remain, especially sample33 and91. Entry frame proportions approximate.",
+    "M3-I07 LIMITED: pendants6/7 measured from multi-view identities; remaining lamps and weave approximate. Prominent source82 lamps still absent at expected pixels.",
+    "M3-I08 LIMITED: trough dimensions retained due conflicting corners; foliage now fills length but is too dense/coarse and not source botanical topology.",
+    "M3-I09 LIMITED: flat mirrors/tables, outward crest and floor bump corrected; lighting, colors, wooden grain and patterned floor reflections remain materially different.",
+    "M3-I10 LIMITED: own predicted DA3 temporal depth changes and cross-view wall conflicts retained; cameras/scale/masks not altered.",
+    "Furniture placement/orientation and round upholstery silhouettes remain approximate despite removing measured solid penetrations. Concealed construction and physics inferred; no dynamic navigation certification."
+  ],
+  "v3_actual_comparison_inspection": {
+    "frames": [
+      33,
+      61,
+      74,
+      82,
+      91,
+      100,
+      108,
+      118,
+      129,
+      155
+    ],
+    "all_full_sheets_viewed": true,
+    "observation": "Revisited RGB, optical-Z, own DA3, signed-array numeric patches, absolute/relative errors, original masks and edges for all ten. Geometry placement same as v2; bevel removal changes chair edge shading slightly and resolves degeneracy. All v2 visual limitations still apply. Selected lamps61/74/129 and column118 remain improved; no unsupported claim of overall visual match."
+  },
+  "review_issue_responses": [
+    {
+      "id": "M3-I01",
+      "author_disposition": "repaired",
+      "evidence": [
+        "checks/author_scene_audit_v3.json",
+        "checks/author_glb_audit_v3.json"
+      ],
+      "detail": "All7 chair backs now outward closed sectors with0 winding/boundary/degenerate counts in evaluated Blender and GLB; v2 bevel defect recorded and fixed in v3."
+    },
+    {
+      "id": "M3-I02",
+      "author_disposition": "repaired targeted penetrations",
+      "detail": "No circular seat penetration in final audit; column-pot0 penetrating vertices. XY changes and inference recorded per object; table centre exclusion also applied."
+    },
+    {
+      "id": "M3-I03",
+      "author_disposition": "repaired technical support; shape LIMITED",
+      "detail": "Desk top1.15\u2192.89 from accepted endpoint triangulation; shell closed; inferred plinth .018\u2192.20 contacts floor. Source/DA3 desk rectangular residual worsened and is retained rather than hidden."
+    },
+    {
+      "id": "M3-I04",
+      "author_disposition": "repaired static proxies",
+      "detail": "Per-component compound wall colliders retain visible portal opening;16-point centreline clear against all proxies. Entry facade glass split and closed leaves independent; closed state explicit. Dynamic opening not simulated."
+    },
+    {
+      "id": "M3-I05",
+      "author_disposition": "provenance reconciled with supplied originating record",
+      "detail": "checks/input_v1/coordinator_invocation.json identifies root coordinator/session57961, exact command, completion/record UTC, scopes and hashes; all4 hashes verified. Author did not witness original command and preserves that uncertainty. No replacement pass."
+    },
+    {
+      "id": "M3-I06",
+      "author_disposition": "partial repair; LIMITED",
+      "detail": "Column measured via five-view tangency fit (.042m RMS), separate from pot. Door frame width inferred from100/108/118. Residual evidence in final_fixed_region_residuals."
+    },
+    {
+      "id": "M3-I07",
+      "author_disposition": "partial repair; LIMITED",
+      "detail": "Individual two-/three-view diffuser correspondences fit pendants7/6; manual rejected82 identity hypotheses not used. Other lamps/weave remain inferred."
+    },
+    {
+      "id": "M3-I08",
+      "author_disposition": "partial repair; LIMITED",
+      "detail": "Planter geometry unchanged; mixed-surface residuals and inconsistent triangulated corners do not support uniform translation. Four branch origins fill length, foliage remains too coarse/dense."
+    },
+    {
+      "id": "M3-I09",
+      "author_disposition": "partial repair; LIMITED",
+      "detail": "Cylinder end normals flat, crest reversed toward room and made pale, floor bump off. Colors/reflection pattern still differ."
+    },
+    {
+      "id": "M3-I10",
+      "author_disposition": "uncertainty retained",
+      "detail": "No global DA3 score fit, no native scale/camera or mask edits; late depth collapse persists in final pass observations."
+    }
+  ]
+}

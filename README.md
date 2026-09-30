@@ -1,5 +1,7 @@
 # SceneWeft
 
+**New source snapshot:** the [September 29 World Lobby experiment](experiments/world_lobby_four_trajectory_20260929/README.md) adds ORB-SLAM3/ViPE + DA3 pipelines, both saved Astra/Blender modelling runs, fixed ten-view checks and evaluation/publication tools. Its method definitions are separate from the earlier experiment described below.
+
 **Geometry-grounded agentic reconstruction of editable, executable 3D scenes.**
 
 SceneWeft is the private research repository for a controlled World Lobby experiment. GPT-6 Astra uses RGB and optional geometric evidence to author Blender scene programs with named parts, spatial relations, renderable cameras, and collision proxies. This studies an agentic reconstruction workflow; it is not a learned predictive world model.

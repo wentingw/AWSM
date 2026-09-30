@@ -1,0 +1,77 @@
+{
+  "method": "Project semantic AABB corners with untouched input camera; this is visibility screening, not exact silhouette testing",
+  "cases": [
+    {
+      "frame_id": 60,
+      "object_id": "tropical_front_0",
+      "aabb_projected_bounds_px": [
+        [
+          452.0610985053258,
+          168.076804255741
+        ],
+        [
+          597.788532612638,
+          398.0805249337065
+        ]
+      ],
+      "image_size": [
+        518,
+        392
+      ]
+    },
+    {
+      "frame_id": 60,
+      "object_id": "lounge_seat_8",
+      "aabb_projected_bounds_px": [
+        [
+          316.53723750012784,
+          342.12804803529514
+        ],
+        [
+          438.95322841206877,
+          496.22736108930957
+        ]
+      ],
+      "image_size": [
+        518,
+        392
+      ]
+    },
+    {
+      "frame_id": 108,
+      "object_id": "glazed_double_door_0",
+      "aabb_projected_bounds_px": [
+        [
+          -111.5556517942166,
+          137.38978831173318
+        ],
+        [
+          -2.0739509986768945,
+          250.60191565288457
+        ]
+      ],
+      "image_size": [
+        518,
+        392
+      ]
+    },
+    {
+      "frame_id": 108,
+      "object_id": "glazed_double_door_1",
+      "aabb_projected_bounds_px": [
+        [
+          284.75220059912874,
+          139.68221756452147
+        ],
+        [
+          355.2150664867634,
+          240.12260610031746
+        ]
+      ],
+      "image_size": [
+        518,
+        392
+      ]
+    }
+  ]
+}

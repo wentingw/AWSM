@@ -1,0 +1,9368 @@
+{
+  "frames": [
+    {
+      "sample_index": 0,
+      "source_index": 245,
+      "timestamp_ns": 249080011831,
+      "camera_to_world": [
+        [
+          0.9679529180545161,
+          0.07306462358942924,
+          -0.24026799455916337,
+          3.548293033733409
+        ],
+        [
+          0.2508231683545443,
+          -0.23385832221462594,
+          0.9393604331392441,
+          3.458597300412272
+        ],
+        [
+          0.01244534637264326,
+          -0.9695214520116072,
+          -0.24469014578231313,
+          2.8563806016276283
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": true,
+      "confidence": "low",
+      "pose_provenance": "manual RGB landmarks conditional on approximate geometry"
+    },
+    {
+      "sample_index": 1,
+      "source_index": 269,
+      "timestamp_ns": 250040011876,
+      "camera_to_world": [
+        [
+          0.975107312397115,
+          0.06446383429478096,
+          -0.212155941179338,
+          3.560935280922292
+        ],
+        [
+          0.2213574433527874,
+          -0.22731023210442497,
+          0.9483306072530562,
+          3.5453808587112494
+        ],
+        [
+          0.012907810890821964,
+          -0.971686406434014,
+          -0.23592141905592073,
+          2.835015551491993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 2,
+      "source_index": 293,
+      "timestamp_ns": 251000011922,
+      "camera_to_world": [
+        [
+          0.9813688943601699,
+          0.05606146716991424,
+          -0.18377215534746913,
+          3.573577528111174
+        ],
+        [
+          0.19168615623552887,
+          -0.22048636964223495,
+          0.9563692688023996,
+          3.6321644170102267
+        ],
+        [
+          0.013096208991388303,
+          -0.9737776300063298,
+          -0.22712467195201297,
+          2.813650501356357
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 3,
+      "source_index": 316,
+      "timestamp_ns": 251920011966,
+      "camera_to_world": [
+        [
+          0.9867314374002566,
+          0.04786587756401823,
+          -0.1551448620195025,
+          3.586219775300057
+        ],
+        [
+          0.16183881225540475,
+          -0.21339352050557203,
+          0.9634684241084387,
+          3.718947975309204
+        ],
+        [
+          0.013010353330479271,
+          -0.9757930432070444,
+          -0.21830865199288751,
+          2.7922854512207214
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 4,
+      "source_index": 340,
+      "timestamp_ns": 252880012011,
+      "camera_to_world": [
+        [
+          0.9911896089820329,
+          0.03988521520584814,
+          -0.12630252829626118,
+          3.5988620224889396
+        ],
+        [
+          0.13184509173673523,
+          -0.2060387378534339,
+          0.9696210137412946,
+          3.8057315336081814
+        ],
+        [
+          0.01265032928332488,
+          -0.9777306419007983,
+          -0.2094821258658513,
+          2.7709204010850854
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 5,
+      "source_index": 364,
+      "timestamp_ns": 253840012057,
+      "camera_to_world": [
+        [
+          0.9947389758809386,
+          0.032127416099600466,
+          -0.09727383511564157,
+          3.611504269677822
+        ],
+        [
+          0.1017348205612861,
+          -0.1984293353126066,
+          0.974820919539974,
+          3.8925150919071587
+        ],
+        [
+          0.012016494859351037,
+          -0.9795884993313062,
+          -0.20065387070558832,
+          2.74955535094945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 6,
+      "source_index": 388,
+      "timestamp_ns": 254800012102,
+      "camera_to_world": [
+        [
+          0.9973760085916085,
+          0.024600194633317224,
+          -0.06808764873216766,
+          3.6241465168667046
+        ],
+        [
+          0.07153794050928591,
+          -0.1905728797049634,
+          0.9790629706962916,
+          3.979298650206136
+        ],
+        [
+          0.011109480346173352,
+          -0.9813647680373291,
+          -0.19183266536614008,
+          2.7281903008138144
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 7,
+      "source_index": 411,
+      "timestamp_ns": 255720012146,
+      "camera_to_world": [
+        [
+          0.9990980848376301,
+          0.017311035907665952,
+          -0.03877299201226652,
+          3.6367887640555874
+        ],
+        [
+          0.04128447948519428,
+          -0.1824771835229857,
+          0.9823429488967462,
+          4.066082208505113
+        ],
+        [
+          0.00993018768283641,
+          -0.983057681689799,
+          -0.18302728169117732,
+          2.7068252506781785
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 8,
+      "source_index": 435,
+      "timestamp_ns": 256680012192,
+      "camera_to_world": [
+        [
+          0.9999034921791459,
+          0.010267188292724298,
+          -0.009359015573807727,
+          3.6494310112444697
+        ],
+        [
+          0.011004521657827252,
+          -0.17415029716098868,
+          0.9846575925172275,
+          4.152865766804091
+        ],
+        [
+          0.008479789562922032,
+          -0.984665556848264,
+          -0.1742464757912407,
+          2.685460200542543
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 9,
+      "source_index": 459,
+      "timestamp_ns": 257640012237,
+      "camera_to_world": [
+        [
+          0.9997914297157096,
+          0.003475656220170067,
+          0.020125031201393487,
+          3.6620732584333524
+        ],
+        [
+          -0.019271822455466575,
+          -0.16560050090977319,
+          0.9860045998663889,
+          4.239649325103068
+        ],
+        [
+          0.0067597282684174875,
+          -0.9861867946349068,
+          -0.1654989793366286,
+          2.664095150406907
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 10,
+      "source_index": 483,
+      "timestamp_ns": 258600012283,
+      "camera_to_world": [
+        [
+          0.9987620088827057,
+          -0.0030568067819548815,
+          0.04964982925328436,
+          3.674715505622235
+        ],
+        [
+          -0.049514445930830944,
+          -0.15683629672267163,
+          0.9863826314744605,
+          4.326432883402045
+        ],
+        [
+          0.0047717142355044526,
+          -0.9876198823244783,
+          -0.15679349087458572,
+          2.6427301002712715
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 11,
+      "source_index": 506,
+      "timestamp_ns": 259520012327,
+      "camera_to_world": [
+        [
+          0.996816253340538,
+          -0.009323704804981237,
+          0.07918601899857146,
+          3.6873577528111174
+        ],
+        [
+          -0.07969327537635384,
+          -0.1478663997611689,
+          0.9857913114252219,
+          4.413216441701023
+        ],
+        [
+          0.002517724353694184,
+          -0.9889633948485554,
+          -0.1481386671794338,
+          2.6213650501356356
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 12,
+      "source_index": 530,
+      "timestamp_ns": 260480012372,
+      "camera_to_world": [
+        [
+          0.9939560979566969,
+          -0.01531880601917137,
+          0.10870422952601372,
+          3.7
+        ],
+        [
+          -0.10977830083717488,
+          -0.1386997297285094,
+          0.9842312277298163,
+          4.5
+        ],
+        [
+          0.0,
+          -0.9902159962126372,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 13,
+      "source_index": 554,
+      "timestamp_ns": 261440012418,
+      "camera_to_world": [
+        [
+          0.9938602627899139,
+          -0.01543940867299659,
+          0.10956004156165505,
+          3.7
+        ],
+        [
+          -0.11064256887456739,
+          -0.13868635659084394,
+          0.9841363302146681,
+          4.508695652173913
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.9902159962126372,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 14,
+      "source_index": 578,
+      "timestamp_ns": 262400012463,
+      "camera_to_world": [
+        [
+          0.9937636761220343,
+          -0.015559999652411442,
+          0.11041577075417006,
+          3.7
+        ],
+        [
+          -0.11150675325028739,
+          -0.13867287858637506,
+          0.9840406885511127,
+          4.517391304347826
+        ],
+        [
+          1.3877787807814457e-17,
+          -0.9902159962126372,
+          -0.1395431146442367,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 15,
+      "source_index": 601,
+      "timestamp_ns": 263320012507,
+      "camera_to_world": [
+        [
+          0.9936663380260918,
+          -0.01568057886623185,
+          0.11127141645650448,
+          3.7
+        ],
+        [
+          -0.1123708533108874,
+          -0.138659295725294,
+          0.9839443028114695,
+          4.526086956521739
+        ],
+        [
+          3.469446951953614e-17,
+          -0.9902159962126372,
+          -0.13954311464423685,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 16,
+      "source_index": 625,
+      "timestamp_ns": 264280012553,
+      "camera_to_world": [
+        [
+          0.9935682485756877,
+          -0.015801146223282575,
+          0.11212697802166735,
+          3.7
+        ],
+        [
+          -0.11323486840298366,
+          -0.13864560801787051,
+          0.9838471730686196,
+          4.534782608695652
+        ],
+        [
+          1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.13954311464423663,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 17,
+      "source_index": 649,
+      "timestamp_ns": 265240012598,
+      "camera_to_world": [
+        [
+          0.9934694078449913,
+          -0.015921701632397423,
+          0.11298245480273111,
+          3.7
+        ],
+        [
+          -0.11409879787325661,
+          -0.1386318154744553,
+          0.9837492993960067,
+          4.543478260869565
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.990215996212637,
+          -0.13954311464423658,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 18,
+      "source_index": 673,
+      "timestamp_ns": 266200012644,
+      "camera_to_world": [
+        [
+          0.9933698159087414,
+          -0.016042245002419145,
+          0.11383784615283263,
+          3.7
+        ],
+        [
+          -0.1149626410684516,
+          -0.1386179181054777,
+          0.9836506818676383,
+          4.552173913043478
+        ],
+        [
+          1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.13954311464423658,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 19,
+      "source_index": 696,
+      "timestamp_ns": 267120012688,
+      "camera_to_world": [
+        [
+          0.993269472842243,
+          -0.01616277624219968,
+          0.11469315142517307,
+          3.7
+        ],
+        [
+          -0.11582639733537901,
+          -0.1386039159214455,
+          0.9835513205580826,
+          4.560869565217391
+        ],
+        [
+          1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 20,
+      "source_index": 720,
+      "timestamp_ns": 268080012733,
+      "camera_to_world": [
+        [
+          0.9931683787213699,
+          -0.016283295260600066,
+          0.11554836997301882,
+          3.7
+        ],
+        [
+          -0.11669006602091506,
+          -0.13858980893294648,
+          0.9834512155424711,
+          4.569565217391305
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.9902159962126371,
+          -0.1395431146442363,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 21,
+      "source_index": 744,
+      "timestamp_ns": 269040012779,
+      "camera_to_world": [
+        [
+          0.9930665336225641,
+          -0.01640380196649064,
+          0.11640350114970188,
+          3.7
+        ],
+        [
+          -0.11755364647200225,
+          -0.13857559715064777,
+          0.9833503668964977,
+          4.578260869565217
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.990215996212637,
+          -0.13954311464423635,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 22,
+      "source_index": 768,
+      "timestamp_ns": 270000012824,
+      "camera_to_world": [
+        [
+          0.9929639376228352,
+          -0.016524296268751036,
+          0.11725854430862023,
+          3.7
+        ],
+        [
+          -0.11841713803564968,
+          -0.13856128058529582,
+          0.9832487746964187,
+          4.586956521739131
+        ],
+        [
+          6.938893903907228e-18,
+          -0.9902159962126371,
+          -0.13954311464423652,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 23,
+      "source_index": 791,
+      "timestamp_ns": 270920012868,
+      "camera_to_world": [
+        [
+          0.9928605907997604,
+          -0.016644778076270232,
+          0.11811349880323849,
+          3.7
+        ],
+        [
+          -0.11928054005893376,
+          -0.13854685924771515,
+          0.9831464390190522,
+          4.595652173913043
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.9902159962126372,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 24,
+      "source_index": 815,
+      "timestamp_ns": 271880012914,
+      "camera_to_world": [
+        [
+          0.9927564932314846,
+          -0.016765247297946664,
+          0.11896836398708818,
+          3.7
+        ],
+        [
+          -0.1201438518889985,
+          -0.1385323331488112,
+          0.9830433599417787,
+          4.604347826086957
+        ],
+        [
+          0.0,
+          -0.9902159962126373,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 25,
+      "source_index": 839,
+      "timestamp_ns": 272840012959,
+      "camera_to_world": [
+        [
+          0.9926516449967202,
+          -0.016885703842688372,
+          0.11982313921376853,
+          3.7
+        ],
+        [
+          -0.1210070728730562,
+          -0.13851770229956734,
+          0.9829395375425406,
+          4.613043478260869
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.9902159962126372,
+          -0.13954311464423647,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 26,
+      "source_index": 863,
+      "timestamp_ns": 273800013005,
+      "camera_to_world": [
+        [
+          0.9925460461747484,
+          -0.01700614761941282,
+          0.12067782383694667,
+          3.7
+        ],
+        [
+          -0.1218702023583878,
+          -0.13850296671104667,
+          0.9828349718998427,
+          4.621739130434783
+        ],
+        [
+          0.0,
+          -0.9902159962126372,
+          -0.13954311464423652,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 27,
+      "source_index": 887,
+      "timestamp_ns": 274760013050,
+      "camera_to_world": [
+        [
+          0.9924396968454164,
+          -0.017126578537047236,
+          0.12153241721035829,
+          3.7
+        ],
+        [
+          -0.12273323969234348,
+          -0.13848812639439123,
+          0.9827296630927518,
+          4.630434782608695
+        ],
+        [
+          0.0,
+          -0.9902159962126373,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 28,
+      "source_index": 910,
+      "timestamp_ns": 275680013094,
+      "camera_to_world": [
+        [
+          0.9923325970891397,
+          -0.0172469965045286,
+          0.12238691868780803,
+          3.7
+        ],
+        [
+          -0.12359618422234303,
+          -0.13847318136082265,
+          0.9826236112008959,
+          4.639130434782609
+        ],
+        [
+          0.0,
+          -0.9902159962126373,
+          -0.13954311464423652,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 29,
+      "source_index": 934,
+      "timestamp_ns": 276640013140,
+      "camera_to_world": [
+        [
+          0.992224746986901,
+          -0.01736740143080357,
+          0.12324132762317007,
+          3.7
+        ],
+        [
+          -0.12445903529587646,
+          -0.1384581316216415,
+          0.9825168163044662,
+          4.647826086956522
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.13954311464423647,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 30,
+      "source_index": 958,
+      "timestamp_ns": 277600013185,
+      "camera_to_world": [
+        [
+          0.9921161466202506,
+          -0.017487793224828775,
+          0.12409564337038856,
+          3.7
+        ],
+        [
+          -0.12532179226050444,
+          -0.1384429771882279,
+          0.9824092784842143,
+          4.656521739130435
+        ],
+        [
+          -6.938893903907228e-18,
+          -0.990215996212637,
+          -0.13954311464423658,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 31,
+      "source_index": 982,
+      "timestamp_ns": 278560013231,
+      "camera_to_world": [
+        [
+          0.9920067960713064,
+          -0.017608171795570712,
+          0.12494986528347815,
+          3.7
+        ],
+        [
+          -0.12618445446385884,
+          -0.13842771807204007,
+          0.9823009978214551,
+          4.665217391304348
+        ],
+        [
+          6.938893903907228e-18,
+          -0.9902159962126372,
+          -0.1395431146442367,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 32,
+      "source_index": 1005,
+      "timestamp_ns": 279480013275,
+      "camera_to_world": [
+        [
+          0.9918966954227524,
+          -0.01772853705200588,
+          0.12580399271652426,
+          3.7
+        ],
+        [
+          -0.12704702125364306,
+          -0.13841235428461657,
+          0.9821919743980634,
+          4.673913043478261
+        ],
+        [
+          0.0,
+          -0.9902159962126371,
+          -0.13954311464423658,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 33,
+      "source_index": 1029,
+      "timestamp_ns": 280440013320,
+      "camera_to_world": [
+        [
+          0.9917858447578412,
+          -0.017848888903120842,
+          0.126658025023684,
+          3.7
+        ],
+        [
+          -0.12790949197763282,
+          -0.1383968858375742,
+          0.9820822082964775,
+          4.682608695652174
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.13954311464423635,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 34,
+      "source_index": 1053,
+      "timestamp_ns": 281400013366,
+      "camera_to_world": [
+        [
+          0.9916742441603908,
+          -0.017969227257912376,
+          0.1275119615591862,
+          3.7
+        ],
+        [
+          -0.1287718659836763,
+          -0.13838131274260979,
+          0.9819716995996954,
+          4.691304347826087
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.9902159962126373,
+          -0.1395431146442364,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 35,
+      "source_index": 1077,
+      "timestamp_ns": 282360013411,
+      "camera_to_world": [
+        [
+          0.9915618937147881,
+          -0.018089552025387395,
+          0.12836580167733225,
+          3.7
+        ],
+        [
+          -0.1296341426196949,
+          -0.13836563501149896,
+          0.981860448391278,
+          4.7
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.9902159962126372,
+          -0.13954311464423647,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 36,
+      "source_index": 1100,
+      "timestamp_ns": 283280013455,
+      "camera_to_world": [
+        [
+          0.9891192218516761,
+          -0.011542918873443192,
+          0.14666262641660116,
+          3.549013005872384
+        ],
+        [
+          -0.14687210661057895,
+          -0.13487819952857782,
+          0.9799165554228072,
+          4.616841755589525
+        ],
+        [
+          0.00847049368721424,
+          -0.9907949496822287,
+          -0.13510595257383973,
+          2.585436194464766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 37,
+      "source_index": 1124,
+      "timestamp_ns": 284240013501,
+      "camera_to_world": [
+        [
+          0.9863009583941187,
+          -0.0049317132495259874,
+          0.16488207202503224,
+          3.398026011744768
+        ],
+        [
+          -0.16409181069090217,
+          -0.13150341268020066,
+          0.9776403889557972,
+          4.53368351117905
+        ],
+        [
+          0.016861113101589317,
+          -0.9913034503409568,
+          -0.13051119571550213,
+          2.570872388929532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 38,
+      "source_index": 1148,
+      "timestamp_ns": 285200013546,
+      "camera_to_world": [
+        [
+          0.9831082143861642,
+          0.0017414585106609454,
+          0.18301695585027947,
+          3.2470390176171517
+        ],
+        [
+          -0.18128646633643786,
+          -0.12824260490864176,
+          0.9750328463233912,
+          4.450525266768575
+        ],
+        [
+          0.02516855040909355,
+          -0.9917412977225976,
+          -0.12576065546029586,
+          2.556308583394298
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 39,
+      "source_index": 1172,
+      "timestamp_ns": 286160013592,
+      "camera_to_world": [
+        [
+          0.9795422485033378,
+          0.008473965642503384,
+          0.2010601285767903,
+          3.096052023489536
+        ],
+        [
+          -0.19844929489780433,
+          -0.12509706172220408,
+          0.9720949554971653,
+          4.3673670223581
+        ],
+        [
+          0.033389530568578865,
+          -0.9921083192145711,
+          -0.1208562046137856,
+          2.541744777859064
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 40,
+      "source_index": 1195,
+      "timestamp_ns": 287080013636,
+      "camera_to_world": [
+        [
+          0.9756044665564275,
+          0.015263153989602499,
+          0.21900447704427994,
+          2.9450650293619196
+        ],
+        [
+          -0.2155735302728118,
+          -0.12206802318843046,
+          0.9688278746818684,
+          4.284208777947625
+        ],
+        [
+          0.041520812622899916,
+          -0.9924043701259879,
+          -0.11579977665771024,
+          2.52718097232383
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 41,
+      "source_index": 1219,
+      "timestamp_ns": 288040013681,
+      "camera_to_world": [
+        [
+          0.9712964209372763,
+          0.02210634705012307,
+          0.23684292705195306,
+          2.7940780352343033
+        ],
+        [
+          -0.23265242157386293,
+          -0.11915668344523223,
+          0.965232891858825,
+          4.20105053353715
+        ],
+        [
+          0.04955919097659692,
+          -0.9926293337446924,
+          -0.11059336498774686,
+          2.512617166788596
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 42,
+      "source_index": 1243,
+      "timestamp_ns": 289000013727,
+      "camera_to_world": [
+        [
+          0.966619810006781,
+          0.029000847031950855,
+          0.2545684461473659,
+          2.643091041106687
+        ],
+        [
+          -0.2496792357893556,
+          -0.11636419023012479,
+          0.9613114242781737,
+          4.117892289126675
+        ],
+        [
+          0.05750149665963751,
+          -0.9927831213832743,
+          -0.10523902212765479,
+          2.498053361253362
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 43,
+      "source_index": 1267,
+      "timestamp_ns": 289960013772,
+      "camera_to_world": [
+        [
+          0.9615764774253458,
+          0.03594393591624301,
+          0.27217404639882997,
+          2.492104046979071
+        ],
+        [
+          -0.2666472604380378,
+          -0.11369164442775548,
+          0.9570650179001436,
+          4.0347340447162
+        ],
+        [
+          0.06534459857671993,
+          -0.992865672414029,
+          -0.09973885892010947,
+          2.4834895557181276
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 44,
+      "source_index": 1290,
+      "timestamp_ns": 290880013816,
+      "camera_to_world": [
+        [
+          0.9561684114260589,
+          0.042932876528953084,
+          0.28965278715026466,
+          2.3411170528514553
+        ],
+        [
+          -0.2835498062152695,
+          -0.11114009963589977,
+          0.9524953467855921,
+          3.9515758003057244
+        ],
+        [
+          0.07308540474164464,
+          -0.992876954292863,
+          -0.09409504369454336,
+          2.4689257501828936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 45,
+      "source_index": 1314,
+      "timestamp_ns": 291840013862,
+      "camera_to_world": [
+        [
+          0.9503977440308693,
+          0.049964913619906764,
+          0.30699777775741244,
+          2.190130058723839
+        ],
+        [
+          -0.3003802096301471,
+          -0.1087105617501039,
+          0.9476042124360389,
+          3.8684175558952494
+        ],
+        [
+          0.08072086349626834,
+          -0.9928169625721208,
+          -0.08830980141232742,
+          2.4543619446476597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": true,
+      "confidence": "low",
+      "pose_provenance": "manual RGB landmarks conditional on approximate geometry"
+    },
+    {
+      "sample_index": 46,
+      "source_index": 1338,
+      "timestamp_ns": 292800013907,
+      "camera_to_world": [
+        [
+          0.9294509470183843,
+          0.02908108124652295,
+          0.36779780831342873,
+          2.2495341729165546
+        ],
+        [
+          -0.36228795681795456,
+          -0.11658886097255605,
+          0.9247456265599714,
+          3.999687111430823
+        ],
+        [
+          0.06977373023782246,
+          -0.9927544148532683,
+          -0.09782790173587719,
+          2.474693594962503
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 47,
+      "source_index": 1362,
+      "timestamp_ns": 293760013953,
+      "camera_to_world": [
+        [
+          0.904305493340892,
+          0.0077244802987552486,
+          0.4268160108496399,
+          2.3089382871092696
+        ],
+        [
+          -0.42272430741099276,
+          -0.12306594204558596,
+          0.8978635385359677,
+          4.130956666966396
+        ],
+        [
+          0.059462043669741727,
+          -0.992368432746904,
+          -0.10802388185059408,
+          2.495025245277347
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 48,
+      "source_index": 1385,
+      "timestamp_ns": 294680013997,
+      "camera_to_world": [
+        [
+          0.8750770412231849,
+          -0.014006658084483453,
+          0.48378092712857224,
+          2.368342401301985
+        ],
+        [
+          -0.48141128030332647,
+          -0.12811201319417276,
+          0.8670815943566373,
+          4.26222622250197
+        ],
+        [
+          0.049833233095882584,
+          -0.9916607916039842,
+          -0.11885084465232454,
+          2.5153568955921903
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 49,
+      "source_index": 1409,
+      "timestamp_ns": 295640014042,
+      "camera_to_world": [
+        [
+          0.8419000289191403,
+          -0.03601238005386692,
+          0.5384305431425738,
+          2.4277465154947007
+        ],
+        [
+          -0.5380789407707618,
+          -0.1317038646707933,
+          0.832541377668277,
+          4.393495778037543
+        ],
+        [
+          0.04093158688551132,
+          -0.9906347462680852,
+          -0.1302589907891223,
+          2.5356885459070337
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 50,
+      "source_index": 1433,
+      "timestamp_ns": 296600014088,
+      "camera_to_world": [
+        [
+          0.8049270563538267,
+          -0.05819146879418474,
+          0.5905134942650672,
+          2.4871506296874157
+        ],
+        [
+          -0.5924666420539737,
+          -0.13382497551023254,
+          0.7944017585472573,
+          4.524765333573117
+        ],
+        [
+          0.03279804876593628,
+          -0.9892950161045296,
+          -0.14219584771675375,
+          2.556020196221877
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 51,
+      "source_index": 1457,
+      "timestamp_ns": 297560014133,
+      "camera_to_world": [
+        [
+          0.7643281832297669,
+          -0.08044191007797008,
+          0.6397902214192488,
+          2.5465547438801313
+        ],
+        [
+          -0.644324224221006,
+          -0.1344655895188896,
+          0.7528381627662987,
+          4.656034889108691
+        ],
+        [
+          0.025470029499049474,
+          -0.9876477632933439,
+          -0.1546065110497366,
+          2.576351846536721
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 52,
+      "source_index": 1481,
+      "timestamp_ns": 298520014179,
+      "camera_to_world": [
+        [
+          0.7202901468257683,
+          -0.10266136148687821,
+          0.6860340729463613,
+          2.6059588580728468
+        ],
+        [
+          -0.6934131647948986,
+          -0.13362276014905167,
+          0.7080417649116978,
+          4.787304444644264
+        ],
+        [
+          0.01898123480798164,
+          -0.9857005644858937,
+          -0.16743389709779422,
+          2.5966834968515644
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 53,
+      "source_index": 1504,
+      "timestamp_ns": 299440014223,
+      "camera_to_world": [
+        [
+          0.6730155030861042,
+          -0.12474762314260207,
+          0.7290323471054145,
+          2.665362972265562
+        ],
+        [
+          -0.739507675854044,
+          -0.13130036405174156,
+          0.6602186090628093,
+          4.918574000179838
+        ],
+        [
+          0.013361510345336225,
+          -0.9834623759555583,
+          -0.18061900542617332,
+          2.617015147166408
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 54,
+      "source_index": 1528,
+      "timestamp_ns": 300400014268,
+      "camera_to_world": [
+        [
+          0.6227216949506693,
+          -0.1465991077821649,
+          0.7685872704093134,
+          2.7247670864582774
+        ],
+        [
+          -0.7823957425590934,
+          -0.12750908324579685,
+          0.6095886610782894,
+          5.0498435557154115
+        ],
+        [
+          0.00863670441607911,
+          -0.9809434924027428,
+          -0.194101190232156,
+          2.6373467974812517
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 55,
+      "source_index": 1552,
+      "timestamp_ns": 301360014314,
+      "camera_to_world": [
+        [
+          0.5696400522113847,
+          -0.16811530801544783,
+          0.8045169072974674,
+          2.7841712006509924
+        ],
+        [
+          -0.8218800983296347,
+          -0.12226635598519997,
+          0.5563847968481618,
+          5.181113111250985
+        ],
+        [
+          0.004828549086503264,
+          -0.9781554996037037,
+          -0.20781843928955823,
+          2.657678447796095
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 56,
+      "source_index": 1576,
+      "timestamp_ns": 302320014359,
+      "camera_to_world": [
+        [
+          0.5140147274950853,
+          -0.18919725861576703,
+          0.8366559969607772,
+          2.843575314843708
+        ],
+        [
+          -0.8577791321852473,
+          -0.11559629655063913,
+          0.500851731165323,
+          5.312382666786558
+        ],
+        [
+          0.001954560226108404,
+          -0.9751112211209835,
+          -0.2217076591781783,
+          2.6780100981109385
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 57,
+      "source_index": 1599,
+      "timestamp_ns": 303240014403,
+      "camera_to_world": [
+        [
+          0.4561015732668993,
+          -0.20974799171716668,
+          0.8648567134699682,
+          2.9029794290364235
+        ],
+        [
+          -0.8899277240775616,
+          -0.10752958433423693,
+          0.4432448921432006,
+          5.443652222322132
+        ],
+        [
+          2.7956942171392107e-05,
+          -0.9718246593205595,
+          -0.23570496548627867,
+          2.6983417484257823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 58,
+      "source_index": 1623,
+      "timestamp_ns": 304200014449,
+      "camera_to_world": [
+        [
+          0.39616696501943427,
+          -0.22967298282471554,
+          0.8889893457110092,
+          2.9623835432291385
+        ],
+        [
+          -0.9181780043711545,
+          -0.09810332272759731,
+          0.3838292463567739,
+          5.574921777857705
+        ],
+        [
+          -0.0009423992224401601,
+          -0.9683109309670126,
+          -0.249745976651282,
+          2.7186733987406257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 59,
+      "source_index": 1647,
+      "timestamp_ns": 305160014494,
+      "camera_to_world": [
+        [
+          0.3344865760605742,
+          -0.24888058558635068,
+          0.9089428940002057,
+          3.021787657421854
+        ],
+        [
+          -0.9424000339799969,
+          -0.08736086846223279,
+          0.32287808011078295,
+          5.706191333393279
+        ],
+        [
+          -0.0009520450485350773,
+          -0.9645861976929382,
+          -0.2637661100871489,
+          2.739005049055469
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 60,
+      "source_index": 1671,
+      "timestamp_ns": 306120014540,
+      "camera_to_world": [
+        [
+          0.27134410953534777,
+          -0.26728245332650913,
+          0.9246255806347948,
+          3.081191771614569
+        ],
+        [
+          -0.962482402031119,
+          -0.07535163218732749,
+          0.2606717424407811,
+          5.837460888928852
+        ],
+        [
+          -9.361694807141774e-07,
+          -0.9606675916624168,
+          -0.2777008792363745,
+          2.759336699370313
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 61,
+      "source_index": 1694,
+      "timestamp_ns": 307040014584,
+      "camera_to_world": [
+        [
+          0.20702999351401322,
+          -0.2847939454026727,
+          0.935965272030735,
+          3.1405958858072847
+        ],
+        [
+          -0.9783327383065008,
+          -0.06213085120209633,
+          0.19749635562867351,
+          5.968730444464426
+        ],
+        [
+          0.001906552724731947,
+          -0.9565731367704631,
+          -0.2914861901802989,
+          2.7796683496851564
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 62,
+      "source_index": 1718,
+      "timestamp_ns": 308000014629,
+      "camera_to_world": [
+        [
+          0.14184004514839144,
+          -0.30133451651575915,
+          0.9429098105060294,
+          3.2
+        ],
+        [
+          -0.9898781381061709,
+          -0.047759335388068314,
+          0.13364249916381749,
+          6.1
+        ],
+        [
+          0.004761648009170727,
+          -0.9523216657408904,
+          -0.30505863644344355,
+          2.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 63,
+      "source_index": 1742,
+      "timestamp_ns": 308960014675,
+      "camera_to_world": [
+        [
+          0.12531788672244037,
+          -0.28504163748186956,
+          0.9502876891600125,
+          3.1611111111111114
+        ],
+        [
+          -0.992091704244902,
+          -0.042794754212913455,
+          0.11799431927132104,
+          6.46111111111111
+        ],
+        [
+          0.00703403411050435,
+          -0.9575593317980411,
+          -0.2881503920709141,
+          2.7888888888888888
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 64,
+      "source_index": 1766,
+      "timestamp_ns": 309920014720,
+      "camera_to_world": [
+        [
+          0.10872341156168955,
+          -0.2685778926110146,
+          0.9571024685889246,
+          3.1222222222222222
+        ],
+        [
+          -0.9940312005380786,
+          -0.0381009267337766,
+          0.10222666843271966,
+          6.822222222222222
+        ],
+        [
+          0.009010667856118593,
+          -0.9625041480339985,
+          -0.2711172677682723,
+          2.7777777777777777
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 65,
+      "source_index": 1789,
+      "timestamp_ns": 310840014764,
+      "camera_to_world": [
+        [
+          0.09206645828824192,
+          -0.25195304301721516,
+          0.9633501084095154,
+          3.0833333333333335
+        ],
+        [
+          -0.9956954770866588,
+          -0.03368063585245781,
+          0.08634889505804394,
+          7.183333333333333
+        ],
+        [
+          0.010690377328718248,
+          -0.967153182739394,
+          -0.25396936222629335,
+          2.7666666666666666
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 66,
+      "source_index": 1813,
+      "timestamp_ns": 311800014810,
+      "camera_to_world": [
+        [
+          0.07535690256655994,
+          -0.23517694533113104,
+          0.9690269044873278,
+          3.0444444444444447
+        ],
+        [
+          -0.9970835471653692,
+          -0.02953650229489932,
+          0.070370412847368,
+          7.544444444444444
+        ],
+        [
+          0.012072166653074534,
+          -0.9715036795694095,
+          -0.23671684218787384,
+          2.7555555555555555
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 67,
+      "source_index": 1837,
+      "timestamp_ns": 312760014855,
+      "camera_to_world": [
+        [
+          0.058604651248329837,
+          -0.21825954585620855,
+          0.9741294911328287,
+          3.0055555555555555
+        ],
+        [
+          -0.9981945878077206,
+          -0.02567098305739743,
+          0.05430069520956449,
+          7.905555555555555
+        ],
+        [
+          0.013155216586466123,
+          -0.9755530591779767,
+          -0.2193699364203188,
+          2.7444444444444445
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 68,
+      "source_index": 1861,
+      "timestamp_ns": 313720014901,
+      "camera_to_world": [
+        [
+          0.041819636498834634,
+          -0.20121087467166093,
+          0.9786548430968758,
+          2.966666666666667
+        ],
+        [
+          -0.9990279402939337,
+          -0.02208636994988561,
+          0.03814926964565968,
+          8.266666666666666
+        ],
+        [
+          0.013938885004396606,
+          -0.9792989207470323,
+          -0.2019389296508533,
+          2.7333333333333334
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 69,
+      "source_index": 1884,
+      "timestamp_ns": 314640014945,
+      "camera_to_world": [
+        [
+          0.025011809908316668,
+          -0.18404103968578356,
+          0.9826002773643443,
+          2.927777777777778
+        ],
+        [
+          -0.999583110541484,
+          -0.018784788237151878,
+          0.021925712100116013,
+          8.627777777777776
+        ],
+        [
+          0.014422707281299352,
+          -0.9827390434099286,
+          -0.18443415646895983,
+          2.7222222222222223
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 70,
+      "source_index": 1908,
+      "timestamp_ns": 315600014990,
+      "camera_to_world": [
+        [
+          0.00819113659182652,
+          -0.16676022064311974,
+          0.9859634547448461,
+          2.888888888888889
+        ],
+        [
+          -0.9998597693980344,
+          -0.015768195378802974,
+          0.005639641283395669,
+          8.988888888888889
+        ],
+        [
+          0.014606396566009205,
+          -0.9858713875681524,
+          -0.16686599519914944,
+          2.7111111111111112
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 71,
+      "source_index": 1932,
+      "timestamp_ns": 316560015036,
+      "camera_to_world": [
+        [
+          -0.008632410718949768,
+          -0.1493786630890409,
+          0.9887423812596031,
+          2.85
+        ],
+        [
+          -0.9998577528365878,
+          -0.013038379868712202,
+          -0.010699287030834115,
+          9.35
+        ],
+        [
+          0.014489843951829617,
+          -0.9886940961005736,
+          -0.1492448617478058,
+          2.7
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 72,
+      "source_index": 1956,
+      "timestamp_ns": 317520015081,
+      "camera_to_world": [
+        [
+          -0.02544885758837573,
+          -0.13190667229531078,
+          0.9909354093236471,
+          2.8111111111111113
+        ],
+        [
+          -0.9995770620527336,
+          -0.010596960174650227,
+          -0.02708138573046609,
+          9.71111111111111
+        ],
+        [
+          0.01407311854110499,
+          -0.9912054954645046,
+          -0.1315812034277451,
+          2.6888888888888887
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 73,
+      "source_index": 1979,
+      "timestamp_ns": 318440015125,
+      "camera_to_world": [
+        [
+          -0.04224823379056397,
+          -0.11435460715024187,
+          0.9925412387226497,
+          2.772222222222222
+        ],
+        [
+          -0.9990178634639408,
+          -0.00844538377871748,
+          -0.04349694210830313,
+          10.072222222222223
+        ],
+        [
+          0.013356467404248229,
+          -0.993404096687921,
+          -0.1138854927641586,
+          2.6777777777777776
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 74,
+      "source_index": 2003,
+      "timestamp_ns": 319400015171,
+      "camera_to_world": [
+        [
+          -0.05902057922057605,
+          -0.09673287401705966,
+          0.9935589173837996,
+          2.7333333333333334
+        ],
+        [
+          -0.9981804886108905,
+          -0.006584926319153445,
+          -0.05993622362057788,
+          10.433333333333334
+        ],
+        [
+          0.012340315433257865,
+          -0.9952885962522486,
+          -0.09616822128560296,
+          2.6666666666666665
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 75,
+      "source_index": 2027,
+      "timestamp_ns": 320360015216,
+      "camera_to_world": [
+        [
+          -0.07575594979962363,
+          -0.07905192056412336,
+          0.9939878419402727,
+          2.6944444444444446
+        ],
+        [
+          -0.9970654339609093,
+          -0.005016690834030224,
+          -0.07638948365723741,
+          10.794444444444444
+        ],
+        [
+          0.011025265089805614,
+          -0.9968578768652026,
+          -0.07843989330372786,
+          2.6555555555555554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 76,
+      "source_index": 2051,
+      "timestamp_ns": 321320015262,
+      "camera_to_world": [
+        [
+          -0.09244442337076836,
+          -0.06132222957065575,
+          0.9938277580889612,
+          2.655555555555556
+        ],
+        [
+          -0.9956733606136248,
+          -0.0037416071072754187,
+          -0.09284696732056602,
+          11.155555555555555
+        ],
+        [
+          0.009412096048044216,
+          -0.9981110081232143,
+          -0.06071101968542292,
+          2.6444444444444444
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 77,
+      "source_index": 2075,
+      "timestamp_ns": 322280015307,
+      "camera_to_world": [
+        [
+          -0.10907610558162287,
+          -0.04355431271165516,
+          0.9930787607412428,
+          2.6166666666666667
+        ],
+        [
+          -0.9940050939090039,
+          -0.002760431117419443,
+          -0.1092989172087212,
+          11.516666666666666
+        ],
+        [
+          0.007501764732352367,
+          -0.9990472470630515,
+          -0.042992111621076495,
+          2.6333333333333333
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 78,
+      "source_index": 2098,
+      "timestamp_ns": 323200015351,
+      "camera_to_world": [
+        [
+          -0.1256411357505686,
+          -0.025758704325678228,
+          0.9917412939667127,
+          2.577777777777778
+        ],
+        [
+          -0.9920616229380255,
+          -0.002073744589384391,
+          -0.12573557920075495,
+          11.877777777777776
+        ],
+        [
+          0.005295403750282701,
+          -0.9996660386023127,
+          -0.025293674392646154,
+          2.6222222222222222
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 79,
+      "source_index": 2122,
+      "timestamp_ns": 324160015397,
+      "camera_to_world": [
+        [
+          -0.14212969271300946,
+          -0.00794595516918395,
+          0.9898161507298995,
+          2.5388888888888888
+        ],
+        [
+          -0.9898440999562605,
+          -0.0016819546495906446,
+          -0.14214720823968957,
+          12.238888888888887
+        ],
+        [
+          0.0027943212210573276,
+          -0.9999670158685268,
+          -0.00762620114523016,
+          2.611111111111111
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 80,
+      "source_index": 2146,
+      "timestamp_ns": 325120015442,
+      "camera_to_world": [
+        [
+          -0.1585320006441975,
+          0.00987337383885678,
+          0.9873044724201275,
+          2.5
+        ],
+        [
+          -0.9873538397007166,
+          -0.0015852935845739324,
+          -0.15852407411022007,
+          12.6
+        ],
+        [
+          -1.1102230246251565e-16,
+          -0.9999500004166653,
+          0.009999833334166736,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 81,
+      "source_index": 2170,
+      "timestamp_ns": 326080015488,
+      "camera_to_world": [
+        [
+          -0.2952060691522289,
+          -0.0027342843340083522,
+          0.9554296941297515,
+          2.553487012864491
+        ],
+        [
+          -0.9551882178658697,
+          0.023507352474041593,
+          -0.2950641842546892,
+          13.104999999999999
+        ],
+        [
+          -0.021652833207539246,
+          -0.9997199248133659,
+          -0.009551269300177717,
+          2.5928426583523305
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 82,
+      "source_index": 2193,
+      "timestamp_ns": 327000015532,
+      "camera_to_world": [
+        [
+          -0.4262856142782263,
+          -0.011700517795724896,
+          0.9045129479132663,
+          2.6069740257289817
+        ],
+        [
+          -0.9036886798055489,
+          0.05009989015427577,
+          -0.42524906936739304,
+          13.61
+        ],
+        [
+          -0.04034036502982613,
+          -0.998675672523288,
+          -0.03193048792954711,
+          2.585685316704661
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 83,
+      "source_index": 2217,
+      "timestamp_ns": 327960015577,
+      "camera_to_world": [
+        [
+          -0.549082629141587,
+          -0.016841458825246125,
+          0.8355983674227712,
+          2.660461038593473
+        ],
+        [
+          -0.8339113103003428,
+          0.077646994674992,
+          -0.5464090690783854,
+          14.114999999999998
+        ],
+        [
+          -0.05567937614708324,
+          -0.9968386576987172,
+          -0.05667889897741771,
+          2.5785279750569914
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 84,
+      "source_index": 2241,
+      "timestamp_ns": 328920015623,
+      "camera_to_world": [
+        [
+          -0.6610789540969366,
+          -0.018051683766677984,
+          0.7500991622200952,
+          2.713948051457964
+        ],
+        [
+          -0.7472870118542239,
+          0.10558376625399295,
+          -0.6560595934955968,
+          14.619999999999997
+        ],
+        [
+          -0.06735531429728459,
+          -0.994246551423142,
+          -0.0832889945857433,
+          2.571370633409322
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 85,
+      "source_index": 2265,
+      "timestamp_ns": 329880015668,
+      "camera_to_world": [
+        [
+          -0.7599779158395812,
+          -0.015306374918932553,
+          0.6497686375341364,
+          2.767435064322455
+        ],
+        [
+          -0.6455921616283034,
+          0.1333373143296414,
+          -0.7519520739059461,
+          15.124999999999996
+        ],
+        [
+          -0.07512874470015873,
+          -0.9909525092022321,
+          -0.11121508991849482,
+          2.5642132917616527
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 86,
+      "source_index": 2288,
+      "timestamp_ns": 330800015712,
+      "camera_to_world": [
+        [
+          -0.8437514245604414,
+          -0.00866182946449584,
+          0.5366642397836414,
+          2.8209220771869457
+        ],
+        [
+          -0.5309121838347757,
+          0.1603385056468849,
+          -0.832120073464589,
+          15.629999999999997
+        ],
+        [
+          -0.07884026007069656,
+          -0.987024080920649,
+          -0.1398845133484513,
+          2.557055950113983
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 87,
+      "source_index": 2312,
+      "timestamp_ns": 331760015758,
+      "camera_to_world": [
+        [
+          -0.9106815633439723,
+          0.001745694999134323,
+          0.4131053651725531,
+          2.8744090900514365
+        ],
+        [
+          -0.4055987846004828,
+          0.18603363529336991,
+          -0.8949196122949505,
+          16.134999999999998
+        ],
+        [
+          -0.07841374953405567,
+          -0.9825418256178733,
+          -0.16870935005359655,
+          2.5498986084663136
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 88,
+      "source_index": 2336,
+      "timestamp_ns": 332720015803,
+      "camera_to_world": [
+        [
+          -0.9593958169484026,
+          0.015702774651014245,
+          0.28162579656375053,
+          2.927896102915928
+        ],
+        [
+          -0.27222172627125674,
+          0.20989578135140657,
+          -0.9390628800654298,
+          16.639999999999997
+        ],
+        [
+          -0.07385795940726056,
+          -0.9775976594893946,
+          -0.19709849820090836,
+          2.542741266818644
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 89,
+      "source_index": 2360,
+      "timestamp_ns": 333680015849,
+      "camera_to_world": [
+        [
+          -0.9888952175428138,
+          0.0329231960617241,
+          0.14492174399320545,
+          2.9813831157804187
+        ],
+        [
+          -0.13351613010616997,
+          0.23143561031950677,
+          -0.9636446447096095,
+          17.144999999999996
+        ],
+        [
+          -0.06526631384123976,
+          -0.9722929709902867,
+          -0.22446979048517435,
+          2.5355839251709744
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 90,
+      "source_index": 2383,
+      "timestamp_ns": 334600015893,
+      "camera_to_world": [
+        [
+          -0.9985748302253105,
+          0.05305382548187179,
+          0.005796554341338762,
+          3.0348701286449096
+        ],
+        [
+          0.007673611991284367,
+          0.2502114117201307,
+          -0.9681608157346728,
+          17.649999999999995
+        ],
+        [
+          -0.05281499900123278,
+          -0.9667365416941469,
+          -0.25026193245026584,
+          2.528426583523305
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": true,
+      "confidence": "low",
+      "pose_provenance": "manual RGB landmarks conditional on approximate geometry"
+    },
+    {
+      "sample_index": 91,
+      "source_index": 2407,
+      "timestamp_ns": 335560015938,
+      "camera_to_world": [
+        [
+          -0.9918669533637757,
+          0.0731683472251771,
+          -0.104145762223903,
+          3.2395222623131303
+        ],
+        [
+          0.11893990628602052,
+          0.2415271071079964,
+          -0.9630773360559968,
+          17.324999999999996
+        ],
+        [
+          -0.04531275226174718,
+          -0.9676316703665597,
+          -0.2482653922440402,
+          2.5478246847002115
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 92,
+      "source_index": 2431,
+      "timestamp_ns": 336520015984,
+      "camera_to_world": [
+        [
+          -0.9727341403162427,
+          0.09218134897027758,
+          -0.2128165669426139,
+          3.444174395981351
+        ],
+        [
+          0.228772981665762,
+          0.2306523294434134,
+          -0.9457602369427909,
+          16.999999999999996
+        ],
+        [
+          -0.0380948175343718,
+          -0.9686599515951648,
+          -0.24545199745098012,
+          2.5672227858771186
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 93,
+      "source_index": 2455,
+      "timestamp_ns": 337480016029,
+      "camera_to_world": [
+        [
+          -0.9414163110180512,
+          0.10985441318087237,
+          -0.31885315939135667,
+          3.648826529649572
+        ],
+        [
+          0.3357955631695401,
+          0.21772344528929244,
+          -0.9164266698034339,
+          16.674999999999997
+        ],
+        [
+          -0.031251705630495175,
+          -0.9698084910311143,
+          -0.24185702722711666,
+          2.5866208870540253
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 94,
+      "source_index": 2478,
+      "timestamp_ns": 338400016073,
+      "camera_to_world": [
+        [
+          -0.8983061819799169,
+          0.12596592474933857,
+          -0.42092587140577226,
+          3.8534786633177927
+        ],
+        [
+          0.4386656186157579,
+          0.20290257910911824,
+          -0.8754444690757506,
+          16.349999999999998
+        ],
+        [
+          -0.024869227191836374,
+          -0.9710628863224628,
+          -0.23752556145806458,
+          2.606018988230932
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 95,
+      "source_index": 2502,
+      "timestamp_ns": 339360016119,
+      "camera_to_world": [
+        [
+          -0.843944341736605,
+          0.14031384998600763,
+          -0.5177547407343297,
+          4.058130796986013
+        ],
+        [
+          0.5360931872971358,
+          0.18637558027312123,
+          -0.8233275396896765,
+          16.024999999999995
+        ],
+        [
+          -0.01902741664984589,
+          -0.9724074077154915,
+          -0.23251191547030797,
+          2.6254170894078386
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 96,
+      "source_index": 2526,
+      "timestamp_ns": 340320016164,
+      "camera_to_world": [
+        [
+          -0.7790124720232439,
+          0.15271827006313113,
+          -0.6081255613943224,
+          4.262782930654234
+        ],
+        [
+          0.6268565557144479,
+          0.16834969256099175,
+          -0.7607294128482474,
+          15.699999999999998
+        ],
+        [
+          -0.013799528617111145,
+          -0.9738251953012638,
+          -0.22687895893273446,
+          2.6448151905847457
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 97,
+      "source_index": 2550,
+      "timestamp_ns": 341280016210,
+      "camera_to_world": [
+        [
+          -0.7043247996837587,
+          0.16302363714488216,
+          -0.6909051094632949,
+          4.467435064322455
+        ],
+        [
+          0.7098175775100317,
+          0.14905095538489574,
+          -0.6884350509355551,
+          15.374999999999996
+        ],
+        [
+          -0.009251119295726418,
+          -0.9752984704340021,
+          -0.22069732748919416,
+          2.6642132917616523
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 98,
+      "source_index": 2573,
+      "timestamp_ns": 342200016254,
+      "camera_to_world": [
+        [
+          -0.6208178865020254,
+          0.17110072491217393,
+          -0.7650553533788826,
+          4.672087197990676
+        ],
+        [
+          0.7839359454935404,
+          0.1287213693206985,
+          -0.6073510043157528,
+          15.049999999999997
+        ],
+        [
+          -0.005439224421501521,
+          -0.976808758670157,
+          -0.21404453700797788,
+          2.683611392938559
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 99,
+      "source_index": 2597,
+      "timestamp_ns": 343160016299,
+      "camera_to_world": [
+        [
+          -0.5295388849882999,
+          0.17684824902328172,
+          -0.8296464705540234,
+          4.8767393316588965
+        ],
+        [
+          0.8482822367928693,
+          0.10761586149081934,
+          -0.5184940434539975,
+          14.724999999999998
+        ],
+        [
+          -0.002411644052351891,
+          -0.9783371214325809,
+          -0.2070040115552755,
+          2.703009494115466
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 100,
+      "source_index": 2621,
+      "timestamp_ns": 344120016345,
+      "camera_to_world": [
+        [
+          -0.43163240738996145,
+          0.18019413719015925,
+          -0.8838685070829485,
+          5.081391465327117
+        ],
+        [
+          0.9020495675478386,
+          0.08599908885193727,
+          -0.4229784089092419,
+          14.399999999999999
+        ],
+        [
+          -0.00020634316941159359,
+          -0.979864393494799,
+          -0.199664037281544,
+          2.7224075952923728
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 101,
+      "source_index": 2645,
+      "timestamp_ns": 345080016390,
+      "camera_to_world": [
+        [
+          -0.32832617258537844,
+          0.18109643294406036,
+          -0.9270415343286262,
+          5.286043598995338
+        ],
+        [
+          0.9445637110001532,
+          0.0641421194733883,
+          -0.3220018390802771,
+          14.075
+        ],
+        [
+          0.0011490243928344301,
+          -0.9813714233074036,
+          -0.1921166553387437,
+          2.7418056964692794
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 102,
+      "source_index": 2668,
+      "timestamp_ns": 346000016434,
+      "camera_to_world": [
+        [
+          -0.22091561084467917,
+          0.17954382175750883,
+          -0.9586241750309816,
+          5.490695732663559
+        ],
+        [
+          0.9752915521017141,
+          0.04231903342207102,
+          -0.2168305509130366,
+          13.75
+        ],
+        [
+          0.0016374627176287126,
+          -0.9828393131529332,
+          -0.1844565077109475,
+          2.7612037976461865
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 103,
+      "source_index": 2692,
+      "timestamp_ns": 346960016480,
+      "camera_to_world": [
+        [
+          -0.11074761950928491,
+          0.17555577292519486,
+          -0.9782203920209722,
+          5.69534786633178
+        ],
+        [
+          0.9938477726229493,
+          0.020803485877772032,
+          -0.10878336190675597,
+          13.424999999999999
+        ],
+        [
+          0.001252846929815199,
+          -0.9842496561177816,
+          -0.17677965043126348,
+          2.780601898823093
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 104,
+      "source_index": 2716,
+      "timestamp_ns": 347920016525,
+      "camera_to_world": [
+        [
+          0.0007963267107334859,
+          0.169182295424659,
+          -0.9855844544120068,
+          5.9
+        ],
+        [
+          0.9999996829318346,
+          -0.0001347244235466727,
+          0.0007848474755821067,
+          13.1
+        ],
+        [
+          0.0,
+          -0.9855847669095608,
+          -0.16918234906699595,
+          2.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 105,
+      "source_index": 2740,
+      "timestamp_ns": 348880016571,
+      "camera_to_world": [
+        [
+          0.058263416960502634,
+          0.16914002672872958,
+          -0.9838683985179582,
+          5.75
+        ],
+        [
+          0.998298619215181,
+          -0.007611329189547544,
+          0.05780946757263772,
+          12.95
+        ],
+        [
+          0.0022893486300964994,
+          -0.985562640843378,
+          -0.1692957171835037,
+          2.7928571428571427
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 106,
+      "source_index": 2764,
+      "timestamp_ns": 349840016617,
+      "camera_to_world": [
+        [
+          0.11553720423661235,
+          0.1686681536915276,
+          -0.9788780354913877,
+          5.6000000000000005
+        ],
+        [
+          0.9932925872807694,
+          -0.015073179216001875,
+          0.11464133338982668,
+          12.799999999999999
+        ],
+        [
+          0.004581537980027417,
+          -0.9855576356553752,
+          -0.16927833975770226,
+          2.7857142857142856
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 107,
+      "source_index": 2787,
+      "timestamp_ns": 350760016660,
+      "camera_to_world": [
+        [
+          0.17242807598904636,
+          0.16776823851199424,
+          -0.970629886598027,
+          5.45
+        ],
+        [
+          0.9849981602683506,
+          -0.022495571048177482,
+          0.1710922954173596,
+          12.65
+        ],
+        [
+          0.006868979449693724,
+          -0.9855697679158991,
+          -0.1691302743198884,
+          2.7785714285714285
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 108,
+      "source_index": 2811,
+      "timestamp_ns": 351720016706,
+      "camera_to_world": [
+        [
+          0.22874768736095658,
+          0.16644326047996022,
+          -0.959151258440406,
+          5.3
+        ],
+        [
+          0.9734427979903721,
+          -0.029853931862982297,
+          0.22697546517850026,
+          12.5
+        ],
+        [
+          0.009144100157491675,
+          -0.9855989974594743,
+          -0.16885201106054154,
+          2.7714285714285714
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 109,
+      "source_index": 2835,
+      "timestamp_ns": 352680016751,
+      "camera_to_world": [
+        [
+          0.28430958472955903,
+          0.1646976061128066,
+          -0.9444801525556885,
+          5.15
+        ],
+        [
+          0.9586647560225877,
+          -0.037123900820590805,
+          0.28210583394891964,
+          12.35
+        ],
+        [
+          0.011399368011350108,
+          -0.9856452275177788,
+          -0.16844447120748146,
+          2.7642857142857142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 110,
+      "source_index": 2859,
+      "timestamp_ns": 353640016797,
+      "camera_to_world": [
+        [
+          0.33892982298584595,
+          0.1625370546333113,
+          -0.9266651396064876,
+          5.0
+        ],
+        [
+          0.9407129590538483,
+          -0.04428140971426925,
+          0.3363008852528783,
+          12.2
+        ],
+        [
+          0.013627316644732657,
+          -0.9857083050400077,
+          -0.1679090039760202,
+          2.757142857142857
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 111,
+      "source_index": 2882,
+      "timestamp_ns": 354560016841,
+      "camera_to_world": [
+        [
+          0.3924275745095244,
+          0.15996875883675726,
+          -0.9057651985811773,
+          4.85
+        ],
+        [
+          0.9196468389143597,
+          -0.05130276265139999,
+          0.3893811991084833,
+          12.05
+        ],
+        [
+          0.01582057013504401,
+          -0.9857880211995691,
+          -0.16724738210220402,
+          2.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 112,
+      "source_index": 2906,
+      "timestamp_ns": 355520016886,
+      "camera_to_world": [
+        [
+          0.4446257278230932,
+          0.15700122141064538,
+          -0.8818495215360445,
+          4.7
+        ],
+        [
+          0.8955361378186417,
+          -0.058164714501910464,
+          0.44117104602158846,
+          11.9
+        ],
+        [
+          0.017971867422610976,
+          -0.9858841120854303,
+          -0.16646179597393312,
+          2.742857142857143
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 113,
+      "source_index": 2930,
+      "timestamp_ns": 356480016932,
+      "camera_to_world": [
+        [
+          0.4953514739431297,
+          0.15364426678540666,
+          -0.8549972845257134,
+          4.55
+        ],
+        [
+          0.8684606774745799,
+          -0.06484454785439242,
+          0.4914989687618413,
+          11.75
+        ],
+        [
+          0.020074086349393283,
+          -0.9859962595758335,
+          -0.16555484637938844,
+          2.7357142857142858
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 114,
+      "source_index": 2954,
+      "timestamp_ns": 357440016977,
+      "camera_to_world": [
+        [
+          0.5444368784875936,
+          0.1499090086093095,
+          -0.8252973854802035,
+          4.4
+        ],
+        [
+          0.8385100948229616,
+          -0.0713201482251371,
+          0.5401983499948264,
+          11.6
+        ],
+        [
+          0.02212026723784294,
+          -0.9861240923914794,
+          -0.16452953589677427,
+          2.7285714285714286
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 115,
+      "source_index": 2977,
+      "timestamp_ns": 358360017021,
+      "camera_to_world": [
+        [
+          0.5917194376451096,
+          0.14580781295523715,
+          -0.7928481498964137,
+          4.25
+        ],
+        [
+          0.8057835452823671,
+          -0.07757007727109833,
+          0.5871079638910851,
+          11.45
+        ],
+        [
+          0.02410363593184922,
+          -0.9862671873246959,
+          -0.16338925895388123,
+          2.7214285714285715
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 116,
+      "source_index": 3001,
+      "timestamp_ns": 359320017067,
+      "camera_to_world": [
+        [
+          0.6370426161656175,
+          0.14135425738114488,
+          -0.7577570053183876,
+          4.1
+        ],
+        [
+          0.770389374481866,
+          -0.08357364376440063,
+          0.6320725098858364,
+          11.3
+        ],
+        [
+          0.026017626223490797,
+          -0.9864250706405258,
+          -0.16213779059037592,
+          2.7142857142857144
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 117,
+      "source_index": 3025,
+      "timestamp_ns": 360280017112,
+      "camera_to_world": [
+        [
+          0.6802563655913001,
+          0.13656308597973593,
+          -0.7201401256840272,
+          3.9499999999999997
+        ],
+        [
+          0.7324447595682888,
+          -0.08931097209342254,
+          0.6749431268223118,
+          11.15
+        ],
+        [
+          0.027855901591347265,
+          -0.9865972196450885,
+          -0.16077927396002895,
+          2.7071428571428573
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 118,
+      "source_index": 3049,
+      "timestamp_ns": 361240017158,
+      "camera_to_world": [
+        [
+          0.7212176210121162,
+          0.13145016056616488,
+          -0.6801220467157006,
+          3.8
+        ],
+        [
+          0.6920753212755769,
+          -0.09476306806367257,
+          0.715577885776571,
+          11.0
+        ],
+        [
+          0.029612376178402844,
+          -0.9867830644160295,
+          -0.15931820661424584,
+          2.7
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 119,
+      "source_index": 3072,
+      "timestamp_ns": 362160017202,
+      "camera_to_world": [
+        [
+          0.7395784965891434,
+          0.13487052830108326,
+          -0.6594191292180789,
+          3.9191397338811456
+        ],
+        [
+          0.672310839991809,
+          -0.1015017099171851,
+          0.7332772581455094,
+          10.660808305458994
+        ],
+        [
+          0.03196532202951846,
+          -0.9856507208335388,
+          -0.1657434001940194,
+          2.7034823512031183
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 120,
+      "source_index": 3096,
+      "timestamp_ns": 363120017247,
+      "camera_to_world": [
+        [
+          0.7573802667525678,
+          0.13809935099897058,
+          -0.638203494809824,
+          4.038279467762291
+        ],
+        [
+          0.6520623853911867,
+          -0.10832711206799889,
+          0.7503864886503243,
+          10.321616610917989
+        ],
+        [
+          0.03449314557655381,
+          -0.9844764121321906,
+          -0.17209420926795976,
+          2.706964702406237
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 121,
+      "source_index": 3120,
+      "timestamp_ns": 364080017293,
+      "camera_to_world": [
+        [
+          0.7746089139886829,
+          0.14113408621230614,
+          -0.6164918491580329,
+          4.157419201643437
+        ],
+        [
+          0.6313459015617008,
+          -0.1152339000411427,
+          0.766892105098593,
+          9.982424916376983
+        ],
+        [
+          0.037193856354465815,
+          -0.9832610629890343,
+          -0.17836563306634523,
+          2.710447053609355
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 122,
+      "source_index": 3144,
+      "timestamp_ns": 365040017338,
+      "camera_to_world": [
+        [
+          0.7912508720736513,
+          0.14397234432241396,
+          -0.5943012885001976,
+          4.276558935524583
+        ],
+        [
+          0.61017770112807,
+          -0.12221663527661969,
+          0.7827811105971615,
+          9.643233221835978
+        ],
+        [
+          0.040065327762922376,
+          -0.9820056303972856,
+          -0.18455273332920213,
+          2.713929404812473
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 123,
+      "source_index": 3167,
+      "timestamp_ns": 365960017382,
+      "camera_to_world": [
+        [
+          0.8072930367558502,
+          0.14661189042110273,
+          -0.5716492861822433,
+          4.3956986694057285
+        ],
+        [
+          0.5885744524068142,
+          -0.12926981941185323,
+          0.7980409937861875,
+          9.304041527294974
+        ],
+        [
+          0.04310529874083502,
+          -0.9807111029127679,
+          -0.19065063819480377,
+          2.7174117560155917
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 124,
+      "source_index": 3191,
+      "timestamp_ns": 366920017428,
+      "camera_to_world": [
+        [
+          0.8227227760744564,
+          0.1490506460704827,
+          -0.5485536788996239,
+          4.514838403286874
+        ],
+        [
+          0.5665531662812469,
+          -0.1363878986112213,
+          0.8126597386908677,
+          8.964849832753966
+        ],
+        [
+          0.04631137554676912,
+          -0.9793784998755012,
+          -0.1966545460358829,
+          2.72089410721871
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 125,
+      "source_index": 3215,
+      "timestamp_ns": 367880017473,
+      "camera_to_world": [
+        [
+          0.8375279403061342,
+          0.15128669093957411,
+          -0.5250326526523073,
+          4.63397813716802
+        ],
+        [
+          0.5441311828067246,
+          -0.14356526793926905,
+          0.8266258341830848,
+          8.625658138212962
+        ],
+        [
+          0.04968103364383028,
+          -0.9780088706070511,
+          -0.2025597292405401,
+          2.724376458421828
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 126,
+      "source_index": 3239,
+      "timestamp_ns": 368840017519,
+      "camera_to_world": [
+        [
+          0.8516968715320015,
+          0.15331826431641907,
+          -0.50110472842471,
+          4.753117871049167
+        ],
+        [
+          0.5213261575566972,
+          -0.150796275774164,
+          0.8399282830455302,
+          8.286466443671957
+        ],
+        [
+          0.05321161968754051,
+          -0.9766032935842698,
+          -0.20836153793487322,
+          2.7278588096249465
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 127,
+      "source_index": 3262,
+      "timestamp_ns": 369760017563,
+      "camera_to_world": [
+        [
+          0.8652184128173359,
+          0.15514376649450587,
+          -0.4767887476018582,
+          4.8722576049303115
+        ],
+        [
+          0.4981560477203122,
+          -0.15807522825790776,
+          0.8525566106311584,
+          7.947274749130951
+        ],
+        [
+          0.056900353615142035,
+          -0.9751628755900774,
+          -0.21405540364439124,
+          2.7313411608280647
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 128,
+      "source_index": 3286,
+      "timestamp_ns": 370720017608,
+      "camera_to_world": [
+        [
+          0.8780819169967974,
+          0.15676176003241316,
+          -0.4521038571332583,
+          4.991397338811458
+        ],
+        [
+          0.4746390979625218,
+          -0.1653963937798083,
+          0.8645008731111603,
+          7.608083054589946
+        ],
+        [
+          0.06074433083468081,
+          -0.9736887508419592,
+          -0.219636842891333,
+          2.7348235120311832
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 129,
+      "source_index": 3310,
+      "timestamp_ns": 371680017654,
+      "camera_to_world": [
+        [
+          0.8902772550582434,
+          0.15817097088568471,
+          -0.4270694944561586,
+          5.110537072692604
+        ],
+        [
+          0.4507938260578233,
+          -0.17275400748967945,
+          0.8757516653049564,
+          7.26889136004894
+        ],
+        [
+          0.06474052451214735,
+          -0.9721820800988543,
+          -0.2251014607250615,
+          2.7383058632343014
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 130,
+      "source_index": 3334,
+      "timestamp_ns": 372640017699,
+      "camera_to_world": [
+        [
+          0.9017948241185431,
+          0.15937028941003967,
+          -0.4017053721900743,
+          5.22967680657375
+        ],
+        [
+          0.42663900830894735,
+          -0.1801422758372132,
+          0.8863001280860493,
+          6.929699665507934
+        ],
+        [
+          0.06888578795487418,
+          -0.970644049747151,
+          -0.23044495418274302,
+          2.7417882144374195
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 131,
+      "source_index": 3358,
+      "timestamp_ns": 373600017745,
+      "camera_to_world": [
+        [
+          0.9126255549851002,
+          0.1603587712351317,
+          -0.3760314626146285,
+          5.348816540454895
+        ],
+        [
+          0.40219366476197566,
+          -0.18755538113395065,
+          0.8961379553578959,
+          6.590507970966929
+        ],
+        [
+          0.07317685708931196,
+          -0.9690758708664959,
+          -0.23566311567759846,
+          2.745270565640538
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 132,
+      "source_index": 3381,
+      "timestamp_ns": 374520017789,
+      "camera_to_world": [
+        [
+          0.9227609192971413,
+          0.16113563800816783,
+          -0.35006798194293,
+          5.467956274336041
+        ],
+        [
+          0.37747704422952927,
+          -0.1949874861342622,
+          0.9052574005943168,
+          6.251316276425924
+        ],
+        [
+          0.07761035303123456,
+          -0.9674787782761656,
+          -0.24075183631205288,
+          2.748752916843656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 133,
+      "source_index": 3405,
+      "timestamp_ns": 375480017834,
+      "camera_to_world": [
+        [
+          0.932192936241138,
+          0.16170027800680023,
+          -0.32383537440287385,
+          5.587096008217187
+        ],
+        [
+          0.35250860913382154,
+          -0.20243273863172384,
+          0.9136512829392838,
+          5.912124581884918
+        ],
+        [
+          0.08218278474634848,
+          -0.9658540295627409,
+          -0.24570710911317073,
+          2.7522352680467743
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 134,
+      "source_index": 3429,
+      "timestamp_ns": 376440017880,
+      "camera_to_world": [
+        [
+          0.9409141788350781,
+          0.16205224662081041,
+          -0.2973542961388966,
+          5.7062357420983325
+        ],
+        [
+          0.32730802018150906,
+          -0.2098852760672773,
+          0.921312992861288,
+          5.572932887343913
+        ],
+        [
+          0.08689055179921112,
+          -0.9642029040898554,
+          -0.2505250321878391,
+          2.755717619249893
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 135,
+      "source_index": 3453,
+      "timestamp_ns": 377400017926,
+      "camera_to_world": [
+        [
+          0.9489177797766397,
+          0.16219126670220563,
+          -0.2706455989468637,
+          5.825375475979478
+        ],
+        [
+          0.30189512088241033,
+          -0.21733923014554118,
+          0.9282364973578331,
+          5.233741192802907
+        ],
+        [
+          0.09172994718829526,
+          -0.9625267019907954,
+          -0.25520181179520457,
+          2.759199970453011
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": true,
+      "confidence": "low",
+      "pose_provenance": "manual RGB landmarks conditional on approximate geometry"
+    },
+    {
+      "sample_index": 136,
+      "source_index": 3476,
+      "timestamp_ns": 378320017969,
+      "camera_to_world": [
+        [
+          0.9556381260139706,
+          0.1511997716869845,
+          -0.25277341859916813,
+          5.677017110914179
+        ],
+        [
+          0.2816301900164,
+          -0.21773765465141742,
+          0.9344917066610203,
+          5.158158446616047
+        ],
+        [
+          0.08625664136652293,
+          -0.9642245292403133,
+          -0.2506608246843994,
+          2.748586639089477
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 137,
+      "source_index": 3500,
+      "timestamp_ns": 379280018015,
+      "camera_to_world": [
+        [
+          0.9618948134385135,
+          0.14019130924958395,
+          -0.23474404079970718,
+          5.528658745848881
+        ],
+        [
+          0.26124558885500454,
+          -0.21790009221156742,
+          0.9403564707694589,
+          5.082575700429186
+        ],
+        [
+          0.08067905666211646,
+          -0.9658498571854106,
+          -0.24622132968334215,
+          2.7379733077259427
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 138,
+      "source_index": 3524,
+      "timestamp_ns": 380240018060,
+      "camera_to_world": [
+        [
+          0.9676847487286364,
+          0.12917132200087572,
+          -0.21656637931715433,
+          5.3803003807835825
+        ],
+        [
+          0.24075139559511344,
+          -0.21782646251646304,
+          0.9458278901293665,
+          5.0069929542423255
+        ],
+        [
+          0.07499995064665504,
+          -0.967401882259958,
+          -0.24188552168926797,
+          2.727359976362409
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 139,
+      "source_index": 3548,
+      "timestamp_ns": 381200018106,
+      "camera_to_world": [
+        [
+          0.9730050693261091,
+          0.11814525824962621,
+          -0.19824942123200046,
+          5.231942015718284
+        ],
+        [
+          0.2201577426162187,
+          -0.21751680196880618,
+          0.9509032596575712,
+          4.931410208055465
+        ],
+        [
+          0.06922213108410363,
+          -0.968879837138947,
+          -0.23765554433629965,
+          2.716746644998875
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 140,
+      "source_index": 3571,
+      "timestamp_ns": 382120018150,
+      "camera_to_world": [
+        [
+          0.9778531448513578,
+          0.10711856930884,
+          -0.17980222249331887,
+          5.083583650652986
+        ],
+        [
+          0.19947481147094198,
+          -0.2169712636655322,
+          0.95558007007891,
+          4.855827461868604
+        ],
+        [
+          0.06334845454264731,
+          -0.970282991117854,
+          -0.23353348893563164,
+          2.7061333136353407
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 141,
+      "source_index": 3595,
+      "timestamp_ns": 383080018195,
+      "camera_to_world": [
+        [
+          0.9822265784039339,
+          0.09609670680061663,
+          -0.16123390344148192,
+          4.935225285587687
+        ],
+        [
+          0.17871282785124956,
+          -0.21619011732211874,
+          0.959856009166822,
+          4.780244715681744
+        ],
+        [
+          0.05738182498239696,
+          -0.971610650473905,
+          -0.22952139344158023,
+          2.6955199822718066
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 142,
+      "source_index": 3619,
+      "timestamp_ns": 384040018241,
+      "camera_to_world": [
+        [
+          0.9861232077475458,
+          0.08508511996085563,
+          -0.1425536442990424,
+          4.786866920522389
+        ],
+        [
+          0.15788205653284532,
+          -0.21517374913923593,
+          0.9637289628865188,
+          4.704661969494884
+        ],
+        [
+          0.0513251923196644,
+          -0.9728621588090537,
+          -0.22562124144401274,
+          2.6849066509082724
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 143,
+      "source_index": 3643,
+      "timestamp_ns": 385000018287,
+      "camera_to_world": [
+        [
+          0.9895411063790734,
+          0.07408925294514085,
+          -0.12377068063200869,
+          4.63850855545709
+        ],
+        [
+          0.13699279630024025,
+          -0.2139226616118114,
+          0.9671970164401665,
+          4.629079223308024
+        ],
+        [
+          0.045181550968516275,
+          -0.9740368973745038,
+          -0.22183496118765855,
+          2.6742933195447387
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 144,
+      "source_index": 3666,
+      "timestamp_ns": 385920018330,
+      "camera_to_world": [
+        [
+          0.9924785844810371,
+          0.06311454213713634,
+          -0.10489429878375865,
+          4.490150190391791
+        ],
+        [
+          0.1160553748550084,
+          -0.2124374732805911,
+          0.9702584552135692,
+          4.553496477121163
+        ],
+        [
+          0.03895393836032855,
+          -0.9751342853766233,
+          -0.21816442461877678,
+          2.6636799881812045
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 145,
+      "source_index": 3690,
+      "timestamp_ns": 386880018376,
+      "camera_to_world": [
+        [
+          0.9949341897570481,
+          0.05216641346082535,
+          -0.08593383128384839,
+          4.341791825326493
+        ],
+        [
+          0.0950801437097456,
+          -0.21071891842633478,
+          0.9729117656238772,
+          4.4779137309343024
+        ],
+        [
+          0.03264543344207313,
+          -0.9761537802640884,
+          -0.21461144645966407,
+          2.6530666568176704
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 146,
+      "source_index": 3714,
+      "timestamp_ns": 387840018421,
+      "camera_to_world": [
+        [
+          0.9969067081498246,
+          0.04125027969791971,
+          -0.0668986522339866,
+          4.193433460261194
+        ],
+        [
+          0.07407747307025611,
+          -0.20876784670678344,
+          0.9751556358679053,
+          4.402330984747442
+        ],
+        [
+          0.02625915515407851,
+          -0.977094877996122,
+          -0.21117778331144982,
+          2.6424533254541362
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 147,
+      "source_index": 3738,
+      "timestamp_ns": 388800018467,
+      "camera_to_world": [
+        [
+          0.9983951644414286,
+          0.0303715378117675,
+          -0.04779817267345583,
+          4.045075095195896
+        ],
+        [
+          0.05305774670849761,
+          -0.20658522273658936,
+          0.9769889565706928,
+          4.326748238560581
+        ],
+        [
+          0.019798260888018244,
+          -0.9779571132916938,
+          -0.20786513278563062,
+          2.631839994090602
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 148,
+      "source_index": 3761,
+      "timestamp_ns": 389720018511,
+      "camera_to_world": [
+        [
+          0.9993988227354123,
+          0.019535566279081103,
+          -0.028641835926271585,
+          3.8967167301305974
+        ],
+        [
+          0.03203135682881879,
+          -0.2041721256104037,
+          0.9784108213339804,
+          4.251165492373721
+        ],
+        [
+          0.013265944925888859,
+          -0.9787400598595548,
+          -0.2046751326647625,
+          2.6212266627270684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 149,
+      "source_index": 3785,
+      "timestamp_ns": 390680018556,
+      "camera_to_world": [
+        [
+          0.9999171868206504,
+          0.008747722430805231,
+          -0.009439112932379793,
+          3.7483583650652985
+        ],
+        [
+          0.011008698930028118,
+          -0.20152974836937448,
+          0.9794205271843371,
+          4.17558274618686
+        ],
+        [
+          0.006665436860748902,
+          -0.9794433306089999,
+          -0.2016093600927426,
+          2.6106133313635342
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 150,
+      "source_index": 3809,
+      "timestamp_ns": 391640018602,
+      "camera_to_world": [
+        [
+          0.9999500004166655,
+          -0.0019866601965610516,
+          0.009800502434799513,
+          3.6
+        ],
+        [
+          -0.009999833334166684,
+          -0.19865939741129984,
+          0.9800175749207095,
+          4.1
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.980066577841242,
+          -0.19866933079506094,
+          2.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 151,
+      "source_index": 3833,
+      "timestamp_ns": 392600018647,
+      "camera_to_world": [
+        [
+          0.9999595673679325,
+          0.0015010534480311777,
+          0.008866254445010453,
+          3.6100163998546813
+        ],
+        [
+          -0.008389744294941055,
+          -0.19914890269961466,
+          0.9799333277035764,
+          4.0937589639521414
+        ],
+        [
+          0.0032366371441695323,
+          -0.9799680920275342,
+          -0.1991282571307031,
+          2.606071343964691
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 152,
+      "source_index": 3856,
+      "timestamp_ns": 393520018691,
+      "camera_to_world": [
+        [
+          0.99995608165548,
+          0.004989213384000288,
+          0.007933631578807396,
+          3.6200327997093624
+        ],
+        [
+          -0.006778035194887555,
+          -0.19963274263552405,
+          0.9798473484715441,
+          4.087517927904282
+        ],
+        [
+          0.006472480136408544,
+          -0.9798580896321812,
+          -0.19959015803204389,
+          2.612142687929382
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 153,
+      "source_index": 3880,
+      "timestamp_ns": 394480018737,
+      "camera_to_world": [
+        [
+          0.9999395433256197,
+          0.008477773267147822,
+          0.007002646227152901,
+          3.6300491995640436
+        ],
+        [
+          -0.005164727447406859,
+          -0.20011091079066107,
+          0.979759638366945,
+          4.081276891856424
+        ],
+        [
+          0.009707485984838055,
+          -0.9797365721166907,
+          -0.20005502736220165,
+          2.6182140318940723
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 154,
+      "source_index": 3904,
+      "timestamp_ns": 395440018782,
+      "camera_to_world": [
+        [
+          0.9999099525980817,
+          0.011966686747961544,
+          0.00607331075925328,
+          3.6400655994187248
+        ],
+        [
+          -0.003549842487139532,
+          -0.20058340081201392,
+          0.9796701985551075,
+          4.075035855808565
+        ],
+        [
+          0.012941611708701475,
+          -0.9796035410955615,
+          -0.2005228589448546,
+          2.624285375858763
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 155,
+      "source_index": 3928,
+      "timestamp_ns": 396400018828,
+      "camera_to_world": [
+        [
+          0.9998673098660134,
+          0.015455907472231273,
+          0.005145637522394259,
+          3.6500819992734055
+        ],
+        [
+          -0.0019334017696812167,
+          -0.20105020642201166,
+          0.9795790302243428,
+          4.068794819760707
+        ],
+        [
+          0.016174814338935695,
+          -0.9794589983362636,
+          -0.20099364656432472,
+          2.630356719823454
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 156,
+      "source_index": 3952,
+      "timestamp_ns": 397360018874,
+      "camera_to_world": [
+        [
+          0.9998116156959718,
+          0.01894538908166475,
+          0.004219638841776917,
+          3.6600983991280867
+        ],
+        [
+          -0.0003154267712975594,
+          -0.20151132141860778,
+          0.9794861345859259,
+          4.062553783712849
+        ],
+        [
+          0.01940705091874196,
+          -0.9793029457592125,
+          -0.2014673839656596,
+          2.636428063788145
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 157,
+      "source_index": 3975,
+      "timestamp_ns": 398280018917,
+      "camera_to_world": [
+        [
+          0.9997428708279179,
+          0.02243508521450356,
+          0.0032953270203539345,
+          3.670114798982768
+        ],
+        [
+          0.001304061011361093,
+          -0.201966739675361,
+          0.9793915128740823,
+          4.05631274766499
+        ],
+        [
+          0.0226382785041566,
+          -0.9791353854377459,
+          -0.20194406485471478,
+          2.6424994077528354
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 158,
+      "source_index": 3999,
+      "timestamp_ns": 399240018963,
+      "camera_to_world": [
+        [
+          0.999661076175206,
+          0.025924949506139085,
+          0.002372714338666133,
+          3.680131198837449
+        ],
+        [
+          0.0029250400615453455,
+          -0.20241645514151818,
+          0.9792951663459695,
+          4.050071711617131
+        ],
+        [
+          0.025868454164621586,
+          -0.9789563195980941,
+          -0.20242368289823953,
+          2.6485707517175263
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 159,
+      "source_index": 4023,
+      "timestamp_ns": 400200019008,
+      "camera_to_world": [
+        [
+          0.999566232824572,
+          0.029414935589728547,
+          0.0014518130546793372,
+          3.69014759869213
+        ],
+        [
+          0.0045474888426925986,
+          -0.20286046184209572,
+          0.9791970962816614,
+          4.043830675569272
+        ],
+        [
+          0.029097534983554926,
+          -0.9787657506193521,
+          -0.20290623172395916,
+          2.654642095682217
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 160,
+      "source_index": 4047,
+      "timestamp_ns": 401160019054,
+      "camera_to_world": [
+        [
+          0.999458342036118,
+          0.032904997096811,
+          0.00053263540362148,
+          3.7001639985468113
+        ],
+        [
+          0.006171385798713186,
+          -0.20329875387795537,
+          0.9790973039841313,
+          4.037589639521414
+        ],
+        [
+          0.032325478058920845,
+          -0.978563681033447,
+          -0.20339170492065994,
+          2.660713439646908
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 161,
+      "source_index": 4070,
+      "timestamp_ns": 402080019098,
+      "camera_to_world": [
+        [
+          0.9993374052432968,
+          0.03639508765792342,
+          -0.0003848064021799713,
+          3.7101803984014925
+        ],
+        [
+          0.007796709354276782,
+          -0.20373132542588507,
+          0.9789957907792336,
+          4.031348603473556
+        ],
+        [
+          0.03555224050379977,
+          -0.9783501135251041,
+          -0.2038800960382739,
+          2.6667847836115985
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 162,
+      "source_index": 4094,
+      "timestamp_ns": 403040019143,
+      "camera_to_world": [
+        [
+          0.9992034240528922,
+          0.03988516090321678,
+          -0.0013005001734601868,
+          3.7201967982561737
+        ],
+        [
+          0.009423437915099078,
+          -0.20415817073867754,
+          0.9788925580156884,
+          4.025107567425697
+        ],
+        [
+          0.038777779446958226,
+          -0.9781250509318131,
+          -0.20437139858796677,
+          2.6728561275762894
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 163,
+      "source_index": 4118,
+      "timestamp_ns": 404000019189,
+      "camera_to_world": [
+        [
+          0.9990564002449973,
+          0.043375170463072085,
+          -0.0022144337441790084,
+          3.730213198110855
+        ],
+        [
+          0.011051549868228618,
+          -0.20457928414520365,
+          0.97878760706506,
+          4.018866531377839
+        ],
+        [
+          0.042002052033418266,
+          -0.9778884962437874,
+          -0.20486560604222115,
+          2.6789274715409803
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 164,
+      "source_index": 4142,
+      "timestamp_ns": 404960019235,
+      "camera_to_world": [
+        [
+          0.9988963357729925,
+          0.046865069968716505,
+          -0.0031265949716825503,
+          3.740229597965536
+        ],
+        [
+          0.012681023582334035,
+          -0.20499466005048977,
+          0.9786809393217428,
+          4.01262549532998
+        ],
+        [
+          0.04522501542502703,
+          -0.9776404526039273,
+          -0.20536271183492555,
+          2.684998815505671
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 165,
+      "source_index": 4165,
+      "timestamp_ns": 405880019278,
+      "camera_to_world": [
+        [
+          0.9987232327635167,
+          0.05035481305283937,
+          -0.004036971736864549,
+          3.750245997820217
+        ],
+        [
+          0.014311837407991385,
+          -0.20540429293579127,
+          0.9785725562029396,
+          4.006384459282121
+        ],
+        [
+          0.04844662680102572,
+          -0.9773809233077765,
+          -0.20586270936145995,
+          2.6910701594703617
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 166,
+      "source_index": 4189,
+      "timestamp_ns": 406840019324,
+      "camera_to_world": [
+        [
+          0.9985370935164424,
+          0.053844353350208284,
+          -0.0049455519443273345,
+          3.760262397674898
+        ],
+        [
+          0.015943969677971813,
+          -0.20580817735866647,
+          0.978462459148644,
+          4.000143423234263
+        ],
+        [
+          0.05166684335861871,
+          -0.9771099118034786,
+          -0.20636559197878507,
+          2.6971415034350525
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 167,
+      "source_index": 4213,
+      "timestamp_ns": 407800019369,
+      "camera_to_world": [
+        [
+          0.9983379205048418,
+          0.05733364449828508,
+          -0.005852323522542613,
+          3.770278797529579
+        ],
+        [
+          0.017577398707529408,
+          -0.20620630795304773,
+          0.9783506496216218,
+          3.9939023871864046
+        ],
+        [
+          0.05488562231354204,
+          -0.9768274216917322,
+          -0.20687135300552895,
+          2.7032128473997434
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 168,
+      "source_index": 4237,
+      "timestamp_ns": 408760019415,
+      "camera_to_world": [
+        [
+          0.9981257163749571,
+          0.06082264013784186,
+          -0.0067572744240117465,
+          3.7802951973842602
+        ],
+        [
+          0.019212102794689365,
+          -0.20659867942931526,
+          0.9782371291073906,
+          3.987661351138546
+        ],
+        [
+          0.058102920900632044,
+          -0.9765334567257415,
+          -0.2073799857220779,
+          2.7092841913644343
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 169,
+      "source_index": 4260,
+      "timestamp_ns": 409680019459,
+      "camera_to_world": [
+        [
+          0.9979004839461628,
+          0.06431129391357686,
+          -0.007660392625425894,
+          3.7903115972389414
+        ],
+        [
+          0.02084806022053623,
+          -0.2069852865743641,
+          0.9781218991142002,
+          3.9814203150906873
+        ],
+        [
+          0.06131869637439337,
+          -0.976228020811168,
+          -0.20789148337066388,
+          2.7153555353291248
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 170,
+      "source_index": 4284,
+      "timestamp_ns": 410640019504,
+      "camera_to_world": [
+        [
+          0.9976622262109299,
+          0.06779955947473038,
+          -0.008561666127825756,
+          3.8003279970936226
+        ],
+        [
+          0.022485249249502584,
+          -0.20736612425167633,
+          0.9780049611730129,
+          3.9751792790428286
+        ],
+        [
+          0.06453290600956696,
+          -0.975911118006077,
+          -0.2084058391554554,
+          2.7214268792938157
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 171,
+      "source_index": 4308,
+      "timestamp_ns": 411600019550,
+      "camera_to_world": [
+        [
+          0.9974109463347847,
+          0.07128739047570057,
+          -0.009461082956760947,
+          3.8103443969483037
+        ],
+        [
+          0.02412364812965761,
+          -0.2077411874013862,
+          0.9778863168374834,
+          3.96893824299497
+        ],
+        [
+          0.06774550710169777,
+          -0.9755827525208856,
+          -0.20892304624264574,
+          2.7274982232585065
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 172,
+      "source_index": 4332,
+      "timestamp_ns": 412560019596,
+      "camera_to_world": [
+        [
+          0.997146647656268,
+          0.07477474057665925,
+          -0.0103586311624491,
+          3.820360796802985
+        ],
+        [
+          0.025763235092996387,
+          -0.20811047104035135,
+          0.9777659676839373,
+          3.962697206947112
+        ],
+        [
+          0.07095645696770204,
+          -0.9752429287183048,
+          -0.20944309776054765,
+          2.7335695672231974
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 173,
+      "source_index": 4355,
+      "timestamp_ns": 413480019639,
+      "camera_to_world": [
+        [
+          0.9968693336868912,
+          0.07826156344416754,
+          -0.011254298819934713,
+          3.830377196657666
+        ],
+        [
+          0.02740398835572885,
+          -0.2084739702622153,
+          0.9776439153113512,
+          3.956456170899253
+        ],
+        [
+          0.07416571294643451,
+          -0.9748916511132835,
+          -0.20996598679968054,
+          2.739640911187888
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 174,
+      "source_index": 4379,
+      "timestamp_ns": 414440019685,
+      "camera_to_world": [
+        [
+          0.9965790081110872,
+          0.08174781275179147,
+          -0.012148074029247391,
+          3.8403935965123472
+        ],
+        [
+          0.029045886118569383,
+          -0.2088316802374755,
+          0.9775201613413302,
+          3.9502151348513945
+        ],
+        [
+          0.07737323239925506,
+          -0.974528924372946,
+          -0.21049170641286558,
+          2.7457122551525788
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 175,
+      "source_index": 4403,
+      "timestamp_ns": 415400019730,
+      "camera_to_world": [
+        [
+          0.9962756747861635,
+          0.0852334421807174,
+          -0.013039944915560243,
+          3.850409996367028
+        ],
+        [
+          0.0306889065670263,
+          -0.20918359621354432,
+          0.9773947074180876,
+          3.943974098803536
+        ],
+        [
+          0.08057897271059536,
+          -0.974154753316533,
+          -0.2110202496153154,
+          2.7517835991172697
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 176,
+      "source_index": 4427,
+      "timestamp_ns": 416360019776,
+      "camera_to_world": [
+        [
+          0.9959593377422513,
+          0.08871840542036757,
+          -0.013929899629347355,
+          3.860426396221709
+        ],
+        [
+          0.03233302787169179,
+          -0.20952971351481575,
+          0.9772675552084229,
+          3.9377330627556772
+        ],
+        [
+          0.08378289128852501,
+          -0.9737691429153355,
+          -0.21155160938472828,
+          2.7578549430819606
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 177,
+      "source_index": 4450,
+      "timestamp_ns": 417280019820,
+      "camera_to_world": [
+        [
+          0.9956300011822499,
+          0.09220265616901527,
+          -0.01481792634654143,
+          3.8704427960763903
+        ],
+        [
+          0.03397822818853193,
+          -0.20987002754272538,
+          0.9771387064016981,
+          3.931492026707819
+        ],
+        [
+          0.0869849455653174,
+          -0.9733720982926284,
+          -0.21208577866138184,
+          2.763926287046651
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 178,
+      "source_index": 4474,
+      "timestamp_ns": 418240019865,
+      "camera_to_world": [
+        [
+          0.9952876694817727,
+          0.09568614813440006,
+          -0.015704013268690815,
+          3.8804591959310715
+        ],
+        [
+          0.03562448565917682,
+          -0.2102045337758105,
+          0.9770081627098175,
+          3.9252509906599604
+        ],
+        [
+          0.09018509299801533,
+          -0.9729636247236049,
+          -0.21262275034822498,
+          2.769997631011342
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": false,
+      "confidence": "very_low",
+      "pose_provenance": "manual sweep anchor or interpolated illustrative pose; not measured"
+    },
+    {
+      "sample_index": 179,
+      "source_index": 4498,
+      "timestamp_ns": 419200019911,
+      "camera_to_world": [
+        [
+          0.9949323471890885,
+          0.09916883503434282,
+          -0.016588148623116222,
+          3.8904755957857526
+        ],
+        [
+          0.037271778411211154,
+          -0.21053322776977423,
+          0.9768759258672035,
+          3.9190099546121018
+        ],
+        [
+          0.0933832910689962,
+          -0.9725437276353037,
+          -0.21316251731097435,
+          2.7760689749760328
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        [
+          762.8,
+          0,
+          640
+        ],
+        [
+          0,
+          762.8,
+          480
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "valid": false,
+      "check_render_usable": true,
+      "confidence": "low",
+      "pose_provenance": "manual RGB landmarks conditional on approximate geometry"
+    }
+  ],
+  "coordinate_frame": "model",
+  "pose_convention": "OpenCV RDF camera-to-world",
+  "metric_scale_observable": false,
+  "validity_note": "All poses are invalid for metric evaluation. Five fixed samples have manually fitted illustrative poses for image checks; fitting is conditional on assumed geometry."
+}

@@ -1,0 +1,739 @@
+{
+  "version": 3,
+  "coordinate_frame": "rigid model frame with median per-view floor normals +Z, long lobby +Y",
+  "model_from_input": [
+    [
+      0.9999907721308798,
+      -0.0003693707673746153,
+      0.00428009559742884,
+      0.27657707381822766
+    ],
+    [
+      -0.004280826128969189,
+      -0.169350834625214,
+      0.9855465333201661,
+      0.011417470595419865
+    ],
+    [
+      0.0003608056824044154,
+      -0.9855557611708126,
+      -0.1693508530899089,
+      2.053855068615482
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "floor_z": -0.18,
+  "ceiling_z": 4.8,
+  "bounds": {
+    "window_x": -4.02,
+    "near_y": -2.08,
+    "far_y": 15.15,
+    "side_x": 3.78,
+    "recess_x": 6.38,
+    "recess_start_y": 7.221245137936657
+  },
+  "carpet": {
+    "center": [
+      0.1,
+      6.2,
+      -0.17
+    ],
+    "dimensions": [
+      4.9,
+      16.3,
+      0.015
+    ]
+  },
+  "column": {
+    "center": [
+      -2.62,
+      7.2,
+      2.31
+    ],
+    "radius": 0.36,
+    "height": 4.98
+  },
+  "planters": [
+    {
+      "id": "planter_west",
+      "center": [
+        -0.75,
+        8.05,
+        0.17
+      ],
+      "dimensions": [
+        1.65,
+        0.59,
+        0.7
+      ]
+    },
+    {
+      "id": "planter_east",
+      "center": [
+        1.28,
+        8.05,
+        0.17
+      ],
+      "dimensions": [
+        1.65,
+        0.59,
+        0.7
+      ]
+    }
+  ],
+  "seats": [
+    {
+      "id": "lounge_seat_00",
+      "center": [
+        -1.12,
+        5.72,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": -0.45,
+      "back": false,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_01",
+      "center": [
+        -1.06,
+        6.58,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": 2.2,
+      "back": true,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_02",
+      "center": [
+        -0.4,
+        6.68,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": 1.7,
+      "back": true,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_03",
+      "center": [
+        0.15,
+        6.98,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": 1.4,
+      "back": false,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_04",
+      "center": [
+        0.51,
+        6.3,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": 1.0,
+      "back": false,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_05",
+      "center": [
+        1.1,
+        6.29,
+        0.13
+      ],
+      "radius": 0.4,
+      "height": 0.48,
+      "yaw": 0.35,
+      "back": true,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "lounge_seat_06",
+      "center": [
+        1.25,
+        2.9,
+        0.13
+      ],
+      "radius": 0.43,
+      "height": 0.48,
+      "yaw": 0.0,
+      "back": false,
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ]
+    },
+    {
+      "id": "lounge_seat_07",
+      "center": [
+        1.25,
+        2.15,
+        0.13
+      ],
+      "radius": 0.43,
+      "height": 0.48,
+      "yaw": 0.0,
+      "back": true,
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ]
+    },
+    {
+      "id": "lounge_seat_08",
+      "center": [
+        1.18,
+        1.4,
+        0.13
+      ],
+      "radius": 0.43,
+      "height": 0.48,
+      "yaw": 0.1,
+      "back": true,
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ]
+    },
+    {
+      "id": "lounge_seat_09",
+      "center": [
+        0.6,
+        0.77,
+        0.13
+      ],
+      "radius": 0.43,
+      "height": 0.48,
+      "yaw": -1.0,
+      "back": false,
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ]
+    },
+    {
+      "id": "lounge_seat_10",
+      "center": [
+        -0.03,
+        1.0,
+        0.13
+      ],
+      "radius": 0.43,
+      "height": 0.48,
+      "yaw": -2.0,
+      "back": true,
+      "evidence_frames": [
+        61,
+        91,
+        155
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "coffee_table_far",
+      "center": [
+        0.0,
+        5.58,
+        0.2
+      ],
+      "radius": 0.57,
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "coffee_table_near",
+      "center": [
+        0.4,
+        2.25,
+        0.2
+      ],
+      "radius": 0.66,
+      "evidence_frames": [
+        61,
+        155
+      ]
+    },
+    {
+      "id": "side_table_near",
+      "center": [
+        -0.3,
+        0.75,
+        0.32
+      ],
+      "radius": 0.31,
+      "evidence_frames": [
+        91
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "id": "pendant_00",
+      "center": [
+        -1.5436354797023575,
+        5.286243685913403,
+        3.914474200022344
+      ],
+      "diameter": 1.3457986828139767,
+      "pixel_center": [
+        350,
+        33
+      ],
+      "pixel_width": 211,
+      "depth_z": 4.513879299163818,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_01",
+      "center": [
+        -1.2614640724232566,
+        7.330876732041578,
+        3.927437781678527
+      ],
+      "diameter": 1.2653536051168417,
+      "pixel_center": [
+        460,
+        138
+      ],
+      "pixel_width": 140,
+      "depth_z": 6.515707492828369,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_02",
+      "center": [
+        -1.6679709355683077,
+        8.512640786793396,
+        3.6563442800855093
+      ],
+      "diameter": 1.2293579520784754,
+      "pixel_center": [
+        443,
+        200
+      ],
+      "pixel_width": 116,
+      "depth_z": 8.111855506896973,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_03",
+      "center": [
+        -1.5036982262528913,
+        12.038398570729047,
+        4.150326105453732
+      ],
+      "diameter": 1.0549599904422986,
+      "pixel_center": [
+        501,
+        217
+      ],
+      "pixel_width": 70,
+      "depth_z": 9.117409706115723,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_04",
+      "center": [
+        -0.5743297401202839,
+        11.120890712265776,
+        4.013016277973592
+      ],
+      "diameter": 1.1871419356374484,
+      "pixel_center": [
+        565,
+        210
+      ],
+      "pixel_width": 85,
+      "depth_z": 9.143220901489258,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_05",
+      "center": [
+        0.0034169944882014008,
+        12.34238947110256,
+        3.640540842571152
+      ],
+      "diameter": 1.5030082803109728,
+      "pixel_center": [
+        609,
+        252
+      ],
+      "pixel_width": 96,
+      "depth_z": 11.40567684173584,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_06",
+      "center": [
+        0.20637232459549945,
+        13.446462579758142,
+        3.314252108731032
+      ],
+      "diameter": 1.2185575854592412,
+      "pixel_center": [
+        624,
+        282
+      ],
+      "pixel_width": 71,
+      "depth_z": 13.457025527954102,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_07",
+      "center": [
+        -1.2496589703366998,
+        13.54304963802334,
+        3.4740710786643363
+      ],
+      "diameter": 1.2876841325298567,
+      "pixel_center": [
+        530,
+        275
+      ],
+      "pixel_width": 75,
+      "depth_z": 13.174139976501465,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_08",
+      "center": [
+        1.0365872258485909,
+        12.50117223018599,
+        3.5805689013802806
+      ],
+      "diameter": 1.3066908650456808,
+      "pixel_center": [
+        665,
+        262
+      ],
+      "pixel_width": 82,
+      "depth_z": 10.997566223144531,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_09",
+      "center": [
+        2.3983462143870318,
+        14.374647220481659,
+        3.490480548618616
+      ],
+      "diameter": 1.550529029550423,
+      "pixel_center": [
+        735,
+        278
+      ],
+      "pixel_width": 84,
+      "depth_z": 12.314054489135742,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_10",
+      "center": [
+        2.70631477904154,
+        10.750789592744118,
+        3.6321367981765738
+      ],
+      "diameter": 1.4446907698889033,
+      "pixel_center": [
+        800,
+        238
+      ],
+      "pixel_width": 105,
+      "depth_z": 9.626208305358887,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_11",
+      "center": [
+        1.8272823634732576,
+        11.078292210230293,
+        3.8334269127549048
+      ],
+      "diameter": 1.8035267703789217,
+      "pixel_center": [
+        734,
+        224
+      ],
+      "pixel_width": 128,
+      "depth_z": 8.312162399291992,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_12",
+      "center": [
+        1.0873053260232448,
+        8.47681752561237,
+        3.8966822857067247
+      ],
+      "diameter": 1.2800261135879107,
+      "pixel_center": [
+        707,
+        179
+      ],
+      "pixel_width": 120,
+      "depth_z": 8.276299476623535,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_13",
+      "center": [
+        1.1878730294203566,
+        4.991671964127786,
+        3.220880343818274
+      ],
+      "diameter": 1.1904748382703023,
+      "pixel_center": [
+        793,
+        147
+      ],
+      "pixel_width": 189,
+      "depth_z": 5.689314842224121,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    },
+    {
+      "id": "pendant_14",
+      "center": [
+        2.702424170549106,
+        4.113098443671236,
+        3.129272830293758
+      ],
+      "diameter": 1.5178406402439772,
+      "pixel_center": [
+        1140,
+        118
+      ],
+      "pixel_width": 288,
+      "depth_z": 4.150571346282959,
+      "evidence_frames": [
+        33,
+        61,
+        74,
+        82
+      ],
+      "uncertainty": "RGB diffuser correspondence triangulation; far overlapping lamp identity tentative; native-pose consistency limits; profile and hidden weave inferred"
+    }
+  ],
+  "mirrors": {
+    "x": 3.715,
+    "center_y": 2.55,
+    "center_z": 1.72,
+    "evidence_frames": [
+      61,
+      74,
+      82
+    ],
+    "discs": [
+      {
+        "center": [
+          3.61,
+          3.306929369012252,
+          1.2497339631599313
+        ],
+        "radius": 0.6408973834510708
+      },
+      {
+        "center": [
+          3.61,
+          4.251370730611017,
+          1.6676127409037318
+        ],
+        "radius": 0.2898666406311543
+      },
+      {
+        "center": [
+          3.61,
+          4.479141902154248,
+          1.1269776772010267
+        ],
+        "radius": 0.1988893342281403
+      },
+      {
+        "center": [
+          3.61,
+          4.1930171361899164,
+          0.6113887290685542
+        ],
+        "radius": 0.32301755533587784
+      },
+      {
+        "center": [
+          3.61,
+          2.788055503788052,
+          0.46657880680771224
+        ],
+        "radius": 0.19006035773834473
+      },
+      {
+        "center": [
+          3.61,
+          2.0715086978223614,
+          0.8509064863051267
+        ],
+        "radius": 0.5265730565485657
+      },
+      {
+        "center": [
+          3.61,
+          2.4137575010030305,
+          1.6332219272267356
+        ],
+        "radius": 0.25859538744488786
+      },
+      {
+        "center": [
+          3.61,
+          1.9155016946169277,
+          2.018776582242317
+        ],
+        "radius": 0.30097098575775294
+      },
+      {
+        "center": [
+          3.61,
+          1.2899288397084836,
+          1.5442744625873088
+        ],
+        "radius": 0.4088715868225956
+      },
+      {
+        "center": [
+          3.61,
+          1.2629137626990676,
+          0.8583890503877772
+        ],
+        "radius": 0.19699241411174448
+      }
+    ]
+  },
+  "reception": {
+    "center": [
+      0.23424434654125262,
+      14.358316954150656,
+      0.27519214296343053
+    ],
+    "dimensions": [
+      2.61821583808892,
+      1.05,
+      0.9103842859268612
+    ]
+  },
+  "notes": [
+    "Joint unconstrained floor fit tilted due spatially varying prediction offsets; orientation chosen median of five single-view floor normals.",
+    "End wall sample33 y17.8 conflicts with sample129 y14.05. Chosen15.15 is explicitly compromise inference; no scale fit.",
+    "Two floor planters observed from opposite directions are the same pair, not four.",
+    "Mirror images and polished floor reflections are not duplicate furniture.",
+    "Full floor and ceiling extents beyond observations, thicknesses, supporting feet and material parameters are inferred.",
+    "V3 geometry only removes desk counter bevel and moves near-wall/recess-return backing behind visible panel faces. Lamp triangulations unchanged from v2: distant correspondences remain LIMITED. Floor texture now packed for GLB."
+  ],
+  "seat_boundary_mode": "Voronoi clipped modular shared boundaries, 6mm gap",
+  "passage": {
+    "id": "service_door_1",
+    "center_y": -0.3,
+    "width": 1.05,
+    "height": 2.24,
+    "return_depth": 1.5,
+    "state": "open",
+    "provenance": "opening observed RGB61/74/82; bounded return depth inferred"
+  }
+}

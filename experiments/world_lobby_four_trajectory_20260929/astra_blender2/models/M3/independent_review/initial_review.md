@@ -1,0 +1,34 @@
+M3 initial independent review: **BLOCKED**. Visual fidelity: **LIMITED**. Reviewer: gpt-6-astra; independent fresh context: true; review complete: true. This is an initial review, not a final-candidate approval.
+
+Current Blender SHA256: `a8bde3bf06d3db06e591bd40c0fb8e2f976f6317869cb371f2a8f4158eea9f85`.
+Current GLB SHA256: `002e3d461bae9653c53ea87e74322d52ec132e2a3a96ff7621e363556216992e`.
+
+I inspected all six contact sheets, all ten actual paired sheets (33,61,74,82,91,100,108,118,129,155), original RGB61/118/129, all ten stored depth/error arrays against the corresponding own DA3 NPZ, the existing180-frame pass, author measurements and observations, and both actual artifact formats. No new render, input BVH pass, GT access or author-file modification occurred.
+
+The technical checks that pass are meaningful: v1 and every paired record match the current Blender hash; all ten RGB/depth hashes agree; one version/ten paired views are within the 5/50 budget. All180 camera JSON matrices equal the rigid transform times the packet exactly, with unchanged intrinsics and scale1. Saved Blender projection error is below 0.0002 pixel. Blender and GLB each have 788 mapped components,79 semantic objects and496,053 triangles; their component bounds agree within0.000001m after axis conversion. No external image dependency, unmapped mesh, nonfinite GLB position/normal, or index corruption was found. Optional GLB semantic extras are absent, but component names map completely through objects.json.
+
+One complete 180-frame input pass is present, matches the current model and native inverse transform, and has180×19,200 depth values with correct timestamps. The three-pass requirement applies to the final stage; the remaining two passes are not missing initial-stage work.
+
+Actionable blocking findings:
+
+- **M3-I01 — chair-back corruption (33/61/74/129/155).** All seven curved backs have 54 inconsistent winding edges,24 boundary edges and one near-zero-area face each after bevel evaluation. GLB independently retains 54 same-direction shared edges per back. Correct winding/caps and degeneracy before beveling; verify the exported meshes.
+- **M3-I02 — solid penetrations (33/61/91/129/155).** Lounge A chair2/ottoman1 overlaps 0.254m radially; three Lounge B pairs overlap 0.183–0.221m across the 0.43m seat body. Lounge C chair1/ottoman0 overlaps 0.119m. The actual middle-window ceramic pot has 80 vertices inside the column, up to0.347m radially. Reconcile silhouettes and separate solid bodies; repair pot/column placement together.
+- **M3-I03 — unsupported desk (100/108/118/129).** The desk floats 0.132m above the inset, has no support component, and has an open rear shell. Its 1.15m top also conflicts with accepted 0.86–0.91m endpoint measurements. Add documented inferred support or correct the base, then reconcile the top from source views.
+- **M3-I04 — portal collision proxy (61/74/82).** The mirror partition has a 1.05×2.25m open passage at x=[−0.60,0.45], but its static AABB fills it. Split wall proxies around that opening. The façade also spans both entry doors: preserve a declared closed state or implement separate door/frame collision semantics before claiming traversal.
+- **M3-I05 — missing input-pass command provenance (all 180).** The first pass is real and hash-valid, but the updated author log explicitly says its creating invocation was unobserved. The coordinator note attributes only paired checks/visualization. Add the originating session’s actual command, actor, time and method scope locally; do not fabricate attribution or consume a replacement pass.
+
+Visual limitations and focused repairs:
+
+- **M3-I06 — column/entry silhouettes (33/100/108/118/129).** Source118 has a prominent left-edge column absent from the paired model. Its source-silhouette rectangle [30,80,65,340] has median model-minus-DA3 residual +0.862m. Fit one cylinder to multiple view tangencies with cameras fixed; do not triangulate different silhouette edges as one point. Entry members are too thin.
+- **M3-I07 — pendants (33/61/74/82/100/108/129/155).** Missing source bowl regions at61 [238,24,340,68] and74 [390,5,485,38] have median signed residuals +1.320m/+1.434m. The large top-centre source bowl at129 is absent at its expected location. Establish individual multi-view identities and rim measurements before repairing heights/radii and weave.
+- **M3-I08 — dividers (33/82/91/108/118/129).** The source shrubs fill trough lengths; model bushes sit centrally. Box rectangles have median residuals −0.258m at82 and−0.520m at91. Reconcile trough corners before distributing foliage; these mixed-surface rectangles do not justify a uniform translation.
+- **M3-I09 — shading (61/74/100/129 and others).** Smooth cylinder caps make mirrors convex and tables domed. Floor reflections are rippled, walls too pale, and the crest nearly vanishes; its face points away from the room. Split/flatten cap normals, orient the crest, and reduce floor bump before adjusting inferred lighting/materials.
+- **M3-I10 — conflicting input depth.** Wall patches change from−2.444m at33 to+2.748m at129 and−1.715m at155. Stored median DA3 depth changes 7.689→1.578→0.500m at160/170/179 while the RGB contact sheet is similar and model depth stays about 5.97m. Preserve this uncertainty and native scale/cameras; do not optimize globally toward predicted depth.
+
+All patch coordinates above are 640×480 image pixels, excluding comparison titles; residual sign is model minus predicted DA3. They are rectangular observations, not newly computed object visibility masks. DA3 is not truth. Hidden geometry, botanical details and physics remain inferred; static review does not certify dynamic navigation.
+
+The author’s newly supplied V1-01 through V1-09 observations were all revisited: they agree with the visual limitations; this review adds measured topology, penetration, support and passage-proxy failures. Author counters were corrected during review to 1 version/10 views/1 pass, so the earlier stale-counter/missing-log observation is superseded. Model hashes did not change. No protocol leak was observed; the unrecorded creating invocation remains unresolved.
+
+A final review must explicitly revisit **M3-I01–M3-I10** against author repairs and the final candidate, verify unchanged input camera/scale, all version hashes and fixed ten-view sets, exactly three full 180 passes, and the 5-version/50-view budget. This initial review cannot certify that future work.
+
+Detailed object/frame/evidence records and complete paths read are in [initial_review.json](initial_review.json). Numeric checks are in [evidence_audit.json](evidence_audit.json), [static_inspection.json](static_inspection.json), [glb_geometry_audit.json](glb_geometry_audit.json) and [input_pass_audit.json](input_pass_audit.json). Reviewer accesses are recorded in [input_access_log.json](input_access_log.json).

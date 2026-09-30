@@ -1,0 +1,531 @@
+{
+  "reviewer_model_id": "gpt-6-astra",
+  "method_id": "M3",
+  "candidate_revision": 3,
+  "review_kind": "independent_final",
+  "reviewed_at_utc": "2026-09-30T00:31:42.053096+00:00",
+  "status": "LIMITED",
+  "review_complete": true,
+  "technical_protocol_blockers": [],
+  "model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+  "scene_glb_sha256": "22699f8225a5f90166cdea2e6e2bdad7977fda4a1fe1086da209f0c9afe97a6c",
+  "decision": "Technically reviewable for honest limited-quality evaluation. Significant observed appearance and alignment defects remain; this is not a visual-quality pass.",
+  "issue_resolution": [
+    {
+      "id": "M3-I01",
+      "original_severity": "high",
+      "object_ids": [
+        "far_seat_0",
+        "far_seat_1",
+        "far_seat_2",
+        "far_seat_3",
+        "far_seat_4",
+        "far_seat_5",
+        "near_seat_0",
+        "near_seat_1",
+        "near_seat_2"
+      ],
+      "evidence_frames": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "resolution": "addressed_with_residuals",
+      "finding": "Actual candidate rerun passes 42 evaluated seat/back partition checks; minimum clearance to pair midplanes is 0.005999545971287018 m. Black crescent artifacts are no longer apparent in the five comparisons. Clipped silhouettes are inferred, and size/placement mismatches remain. This is not an exhaustive collision test."
+    },
+    {
+      "id": "M3-I02",
+      "original_severity": "high",
+      "object_ids": [
+        "mirror_bay_wall",
+        "recess_wall",
+        "interior_door_00",
+        "interior_door_01",
+        "interior_door_02",
+        "interior_door_03",
+        "interior_door_04"
+      ],
+      "evidence_frames": [
+        60,
+        90
+      ],
+      "resolution": "addressed_with_residuals",
+      "finding": "Actual candidate rerun finds all 15 sampled passage rays unobstructed across x=1.65\u20132.45 m and z=0.2/0.9/1.7 m through the wall thickness. Tested wall/door colliders do not block that aperture. A separate closed-door ray hits interior_door_01__leaf. RGB 60/90 and the contact sheets support distinguishing the open dark recess from closed metal doors. Exact aperture appearance and unseen space remain approximate; all door states were not independently fitted."
+    },
+    {
+      "id": "M3-I03",
+      "original_severity": "medium",
+      "object_ids": [
+        "pendant_00",
+        "pendant_01",
+        "pendant_02",
+        "pendant_03",
+        "pendant_04",
+        "pendant_05",
+        "pendant_06",
+        "pendant_07",
+        "pendant_08",
+        "pendant_09",
+        "pendant_10",
+        "pendant_11",
+        "pendant_12",
+        "pendant_13",
+        "pendant_14",
+        "pendant_15",
+        "pendant_16",
+        "pendant_17",
+        "pendant_18",
+        "pendant_19",
+        "ceiling"
+      ],
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "resolution": "unresolved_deferred",
+      "finding": "All five comparisons retain smooth opaque pendant undersides instead of visible weave and pale ceiling slats instead of dark bands; particularly evident at frames 45/135."
+    },
+    {
+      "id": "M3-I04",
+      "original_severity": "medium",
+      "object_ids": [
+        "floor",
+        "ceiling",
+        "far_end_wall",
+        "mirror_bay_wall"
+      ],
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "resolution": "unresolved_deferred",
+      "finding": "The source repeated floor reflection/highlight grid and pendant discs remain poorly matched. The model has broad blurred reflections, pale washed-out floor/walls, and weak wood grain/panel contrast; frame 90 is especially clear."
+    },
+    {
+      "id": "M3-I05",
+      "original_severity": "medium",
+      "object_ids": [
+        "flower_trough_0",
+        "flower_trough_1",
+        "mirror_vase",
+        "window_bush",
+        "reception_tree_0",
+        "reception_tree_1"
+      ],
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "resolution": "unresolved_deferred",
+      "finding": "Flower troughs remain sparse branches versus dense yellow source masses, mirror_vase remains broad and spiky versus fine drooping foliage, and reception tree crowns remain too faint; frames 45/90/135/179."
+    },
+    {
+      "id": "M3-I06",
+      "original_severity": "medium",
+      "object_ids": [
+        "far_coffee_table",
+        "far_seat_0",
+        "far_seat_1",
+        "far_seat_2",
+        "far_seat_3",
+        "far_seat_4",
+        "far_seat_5",
+        "flower_trough_0",
+        "flower_trough_1",
+        "round_column"
+      ],
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135
+      ],
+      "resolution": "partially_addressed",
+      "finding": "Seat intersections addressed under I01, but furniture grouping size/placement, trough span/separation and column width still disagree visually in frames 0/45/90/135. No independent landmark fit was performed."
+    },
+    {
+      "id": "M3-I07",
+      "original_severity": "low",
+      "object_ids": [
+        "modelling_manifest",
+        "semantic_records",
+        "iteration_log"
+      ],
+      "evidence_frames": [],
+      "resolution": "addressed_with_accounting_limits",
+      "finding": "Final manifest is ready_for_independent_review; repair response and access log are present and distinguish geometry author from records author. All 95 records have evidence and nonempty relations with existing target IDs; 4035 component names match actual mesh objects exactly. Final cumulative accounting is 3 revisions, 15 renders and 3 input passes. Preserved iteration_log still says checking_render_count=10 and building_from_clean_v1_materials, although it records five completed v3 renders plus ten prior renders. Final manifest/repair response explicitly supersede this stale accounting; historical timings were not reconstructed."
+    }
+  ],
+  "unresolved_issues": [
+    {
+      "id": "M3-I03",
+      "description": "All five comparisons retain smooth opaque pendant undersides instead of visible weave and pale ceiling slats instead of dark bands; particularly evident at frames 45/135."
+    },
+    {
+      "id": "M3-I04",
+      "description": "The source repeated floor reflection/highlight grid and pendant discs remain poorly matched. The model has broad blurred reflections, pale washed-out floor/walls, and weak wood grain/panel contrast; frame 90 is especially clear."
+    },
+    {
+      "id": "M3-I05",
+      "description": "Flower troughs remain sparse branches versus dense yellow source masses, mirror_vase remains broad and spiky versus fine drooping foliage, and reception tree crowns remain too faint; frames 45/90/135/179."
+    },
+    {
+      "id": "M3-I06",
+      "description": "Seat intersections addressed under I01, but furniture grouping size/placement, trough span/separation and column width still disagree visually in frames 0/45/90/135. No independent landmark fit was performed."
+    },
+    {
+      "id": "M3-I07",
+      "description": "Final manifest is ready_for_independent_review; repair response and access log are present and distinguish geometry author from records author. All 95 records have evidence and nonempty relations with existing target IDs; 4035 component names match actual mesh objects exactly. Final cumulative accounting is 3 revisions, 15 renders and 3 input passes. Preserved iteration_log still says checking_render_count=10 and building_from_clean_v1_materials, although it records five completed v3 renders plus ten prior renders. Final manifest/repair response explicitly supersede this stale accounting; historical timings were not reconstructed."
+    },
+    {
+      "id": "M3-I01-residual",
+      "description": "Inferred clipped seat silhouettes and original placement/size mismatch remain."
+    },
+    {
+      "id": "M3-I02-residual",
+      "description": "Door appearance and unseen space beyond tested wall aperture remain approximate."
+    },
+    {
+      "id": "input-depth-conflict",
+      "description": "Final manifest preserves native metric scale and documents unstable input depth; frame 179 model/input MAE is 6.471849437565499 m while frames 0/45/90/135 are approximately 0.49\u20130.54 m. No GT conclusion follows."
+    }
+  ],
+  "checked_frame_object_evidence": {
+    "comparison_frames": [
+      0,
+      45,
+      90,
+      135,
+      179
+    ],
+    "source_contact_sheet_frames": "0\u2013179 across six sheets",
+    "original_rgb_frames": [
+      60,
+      90
+    ],
+    "objects": [
+      {
+        "issue_id": "M3-I01",
+        "object_ids": [
+          "far_seat_0",
+          "far_seat_1",
+          "far_seat_2",
+          "far_seat_3",
+          "far_seat_4",
+          "far_seat_5",
+          "near_seat_0",
+          "near_seat_1",
+          "near_seat_2"
+        ],
+        "frames": [
+          0,
+          45,
+          135,
+          179
+        ]
+      },
+      {
+        "issue_id": "M3-I02",
+        "object_ids": [
+          "mirror_bay_wall",
+          "recess_wall",
+          "interior_door_00",
+          "interior_door_01",
+          "interior_door_02",
+          "interior_door_03",
+          "interior_door_04"
+        ],
+        "frames": [
+          60,
+          90
+        ]
+      },
+      {
+        "issue_id": "M3-I03",
+        "object_ids": [
+          "pendant_00",
+          "pendant_01",
+          "pendant_02",
+          "pendant_03",
+          "pendant_04",
+          "pendant_05",
+          "pendant_06",
+          "pendant_07",
+          "pendant_08",
+          "pendant_09",
+          "pendant_10",
+          "pendant_11",
+          "pendant_12",
+          "pendant_13",
+          "pendant_14",
+          "pendant_15",
+          "pendant_16",
+          "pendant_17",
+          "pendant_18",
+          "pendant_19",
+          "ceiling"
+        ],
+        "frames": [
+          0,
+          45,
+          90,
+          135,
+          179
+        ]
+      },
+      {
+        "issue_id": "M3-I04",
+        "object_ids": [
+          "floor",
+          "ceiling",
+          "far_end_wall",
+          "mirror_bay_wall"
+        ],
+        "frames": [
+          0,
+          45,
+          90,
+          135,
+          179
+        ]
+      },
+      {
+        "issue_id": "M3-I05",
+        "object_ids": [
+          "flower_trough_0",
+          "flower_trough_1",
+          "mirror_vase",
+          "window_bush",
+          "reception_tree_0",
+          "reception_tree_1"
+        ],
+        "frames": [
+          0,
+          45,
+          90,
+          135,
+          179
+        ]
+      },
+      {
+        "issue_id": "M3-I06",
+        "object_ids": [
+          "far_coffee_table",
+          "far_seat_0",
+          "far_seat_1",
+          "far_seat_2",
+          "far_seat_3",
+          "far_seat_4",
+          "far_seat_5",
+          "flower_trough_0",
+          "flower_trough_1",
+          "round_column"
+        ],
+        "frames": [
+          0,
+          45,
+          90,
+          135
+        ]
+      },
+      {
+        "issue_id": "M3-I07",
+        "object_ids": [
+          "modelling_manifest",
+          "semantic_records",
+          "iteration_log"
+        ],
+        "frames": []
+      }
+    ],
+    "mirror_treatment": "Ten semantic mirror objects; reflections visible in comparisons. No additional reflected room claimed; no exhaustive mirror geometry audit."
+  },
+  "checks_performed": {
+    "actual_blend_read": "Blender 5.2.0 successfully loaded scene.blend and executed independent_review/verify_final.py; exit code 0; no geometry saved.",
+    "scene_integrity": {
+      "inspection_status": "PASS",
+      "mesh_objects": 4035,
+      "triangles": 153529,
+      "missing_image_dependencies": [],
+      "bounds_finite": true,
+      "semantic_objects": 95,
+      "semantic_component_mapping_exact": true
+    },
+    "geometry": {
+      "partition_checks": 42,
+      "minimum_midplane_clearance_m": 0.005999545971287018,
+      "passage_rays": 15,
+      "blocked_passage_rays": 0,
+      "aperture_collider_blockers": [],
+      "closed_door_hit": "interior_door_01__leaf"
+    },
+    "cameras": {
+      "frames": 180,
+      "max_model_from_input_pose_error": 0.0,
+      "intrinsics_match": true,
+      "sample_source_timestamp_ids_match": true,
+      "transform_determinant": 0.9999999999999997,
+      "transform_orthogonality_max_error": 4.440892098500626e-16,
+      "geometry_scale": 1.0,
+      "pose_convention": "OpenCV RDF camera-to-world in model coordinates",
+      "blender_axis_conversion": "Build script right-multiplies diag(1,-1,-1,1).",
+      "baseline_hashes_match": {
+        "cameras.json": true,
+        "analysis/model_from_input.npy": true,
+        "analysis/anchor_measurements.json": true,
+        "analysis/plane_measurements.json": true,
+        "build_scene_v1_reference.py": true
+      }
+    },
+    "glb_load": {
+      "status": "PASS",
+      "report_hashes_match_actual_artifacts": true,
+      "geometry_count": 4035,
+      "semantic_component_mapping": "PASS"
+    },
+    "input_v3": {
+      "model_hash_matches": true,
+      "frames": 180,
+      "aggregate": {
+        "pixels_domain": 3447177,
+        "pixels_valid": 3444029,
+        "valid_coverage": 0.9990867889870465,
+        "invalid_rate": 0.0009132110129534965,
+        "mae_m": 1.557366391621151,
+        "rmse_m": 2.944889831651944,
+        "absrel": 0.828629683383882,
+        "delta1": 0.716953312530179,
+        "delta2": 0.8370629283319043,
+        "delta3": 0.8747246321096599,
+        "missing_penalty_mae_m": 1.583340517869724
+      },
+      "scope": "model versus own predicted input depth; no ground truth"
+    },
+    "provenance": {
+      "remediation_checked": true,
+      "original_v1_script_hash_matches": true,
+      "recorded_geometry_commands_count": 18,
+      "completion_commands_count": 4,
+      "current_unauthorized_content_access_found": false,
+      "finding": "Inspected recorded geometry commands refer to own M3 inputs/output, permitted contracts and generic rendering tools. v2/GT token matches in the recorded repair command are declaration text, not reads of rejected code or GT. The final access log attributes completion separately and discloses metadata-only contract existence probes and generic-tools directory enumeration; these are not evidence of forbidden scene content access. No observed current technical/input blocker. Historical rejected-v2 scope events outside this candidate do not establish access by this independent v3 author. No rejected model/code or external event source was opened by this reviewer."
+    },
+    "budgets": {
+      "revisions": 3,
+      "scene_version_limit": 5,
+      "checking_render_count": 15,
+      "render_limit": 60,
+      "input_bvh_passes": 3,
+      "input_pass_limit": 3,
+      "render_settings": {
+        "engine": "CPU Cycles",
+        "samples": 12,
+        "resolution": [
+          640,
+          480
+        ],
+        "threads": 4
+      },
+      "historical_accounting_limit": "Final manifest and response provide cumulative totals; preserved iteration log is stale."
+    }
+  },
+  "paths_read": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/independent_review/initial_review.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/remediation.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/repair_response.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/modelling_manifest.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/recorded_author_commands.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/input_access_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/artifact_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/glb_load.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/input_v3/report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3_author_geometry_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/independent_review/final_geometry_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/independent_review/verify_final.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/verify_v3.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/independent_review/final_reviewer_verify.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/cameras.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/iteration_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/camera_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/v3_baseline_hashes.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/model_from_input.npy",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/anchor_measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/plane_measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/build_scene_v1_reference.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/build_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/objects.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/colliders.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/layout.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/object_inventory.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/analysis/seat_repair_measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/scene.blend",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/scene.glb",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3/comparison_0000.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3/comparison_0045.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3/comparison_0090.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3/comparison_0135.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3/checks/v3/comparison_0179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/configs/review_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/configs/modelling_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/packet.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/000_029.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/030_059.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/060_089.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/090_119.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/120_149.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/150_179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/rgb/0060.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/rgb/0090.png"
+  ],
+  "input_files_read": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/packet.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/000_029.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/030_059.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/060_089.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/090_119.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/120_149.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/contact_sheets/150_179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/rgb/0060.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3/rgb/0090.png"
+  ],
+  "metadata_only_enumeration": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/clean_revisions/M3 (scoped file names/sizes, depth <=3)",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M3 (scoped file names/sizes, depth <=2)"
+  ],
+  "rendering_views_added": 0,
+  "full_input_depth_passes_added": 0,
+  "geometry_edits": false,
+  "limitations": [
+    "Bounded final review of fixed candidate using five existing comparison renders, all six source contact sheets, original RGB 60/90, supplied camera metadata and targeted actual-scene checks; no new renders or full-depth passes.",
+    "No exhaustive topology, duplicate-geometry, unsupported-object, collision, all-door or all-collider certification. Targeted seat and aperture checks reuse the inspected author algorithm, independently rerun on the actual blend.",
+    "Visual furniture alignment and column width findings are judgments from comparisons, not independent landmark optimization.",
+    "GLB loading is established by an existing hash-matched loader report, not a fresh GLB import in this review; both blend and GLB hashes were independently recomputed.",
+    "Input-consistency numbers compare against supplied predicted optical-Z depth, not GT. The documented stationary-frame depth collapse and variable plane estimates limit their interpretation. This review did not independently reconstruct the depth failure mechanism.",
+    "Provenance is a bounded record/code/hash audit, not OS isolation or an exhaustive historical trace. The referenced external provenance event source was not opened.",
+    "Historical render/pass accounting is accepted from final manifest and attributed completion response; stale iteration counters/status and missing historical timing detail remain disclosed.",
+    "Root must verify final scene hash before freezing; this review does not freeze or publish the candidate."
+  ],
+  "evidence_hashes": {
+    "modelling_manifest.json": "6eb21b52d443f2591a187a4f9711bd7300e7ed3655b003f4035700770c30a985",
+    "repair_response.json": "2278356e85f90ac4e6dddc54191dd58e477cb1a5e9ca1c0aa88b40c9c1d11244",
+    "input_access_log.json": "96e81360800bef18ba56e88ad1fab6b4a75a73fa7ad22e560ac520b9ec0071cc",
+    "recorded_author_commands.json": "26fd19449ef95422c34031d494d6b2c1aba0e090e3c956828ee08b082c4fda9e",
+    "objects.json": "fc45cbd6746f331dac8061ec570c373dbd7628518494a41a9454e23a22f72ae7",
+    "colliders.json": "045b86d7a1a017aa54497f2173fe5aa4cb047948a011ba7397e3f63d95cd9836",
+    "cameras.json": "ddb2fa713a87201f7bd81945b425abd3671e027a8fe5f401ee1882a628cdf3ad",
+    "checks/artifact_inspection.json": "d2b2a40fb2391ad7387812968fa5bac385a283195d04e2e951b1463f1adc0e0f",
+    "checks/glb_load.json": "f85eec29c3f0f7f8287a58cca527cb92dc74599c441961d8333996b3c0abf53b",
+    "checks/input_v3/report.json": "f4853bb06dad9b4251d882b91cf481b0e1ece00aede7a3d33a7d04e3e48559a0",
+    "independent_review/final_geometry_checks.json": "bab9648afea480a82a62a1cf5acf5de27ec21877a56f050b715da2817772fcfe"
+  }
+}

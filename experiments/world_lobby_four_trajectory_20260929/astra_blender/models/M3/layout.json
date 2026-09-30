@@ -1,0 +1,77 @@
+{
+  "units": "metres",
+  "geometry_scale": 1,
+  "model_from_input": [
+    [
+      0.9422015411352354,
+      -0.2654805704368217,
+      0.20439256983297338,
+      2.3
+    ],
+    [
+      0.2594461123746232,
+      0.9641162101741363,
+      0.05628186255939516,
+      4.14
+    ],
+    [
+      -0.21199993079263385,
+      0.0,
+      0.9772696809703646,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "floor_z": 0,
+  "ceiling_z": 5,
+  "room_extent": {
+    "x": [
+      0.75,
+      19.25
+    ],
+    "glazed_wall_y": 7.85,
+    "near_solid_wall_y": -0.12,
+    "recessed_solid_wall_y": -3.25,
+    "wall_step_x": 10.25
+  },
+  "main_features": {
+    "mirror_wall_x": [
+      0.75,
+      10.25
+    ],
+    "round_column": [
+      9.78,
+      7.02
+    ],
+    "reception": [
+      17.44,
+      3.97
+    ],
+    "seating_groups": [
+      [
+        8.85,
+        4.3
+      ],
+      [
+        4.8,
+        3.4
+      ]
+    ],
+    "troughs": [
+      [
+        10.73,
+        2.77
+      ],
+      [
+        10.73,
+        4.98
+      ]
+    ]
+  },
+  "derivation": "Supplied own-method v1 script and original M3 measurements; bounded v3 cushion and doorway repair based on permitted RGB and initial review. No v2 geometry or other-method data used."
+}

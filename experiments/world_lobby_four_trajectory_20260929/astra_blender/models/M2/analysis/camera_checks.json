@@ -1,0 +1,68 @@
+{
+  "frames": 180,
+  "pose_source": "Original packet camera_to_world, no replacement",
+  "coordinate_frame": "model",
+  "pose_convention": "OpenCV RDF camera-to-world",
+  "model_from_input": [
+    [
+      0.9999885054327616,
+      -0.004723130514087124,
+      -0.0008252517788155218,
+      0.0
+    ],
+    [
+      0.0,
+      -0.1721180458938969,
+      0.9850763311935103,
+      0.0
+    ],
+    [
+      -0.0047946848021052525,
+      -0.9850650081673866,
+      -0.17211606747144545,
+      2.237459615971823
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1.0,
+  "transform_det": 1.0000000000000002,
+  "transform_rotation_orthogonality_max_error": 2.220446049250313e-16,
+  "max_camera_transform_entry_error": 1.1475301917585057e-06,
+  "max_landmark_backprojection_reprojection_error_pixels": 5.6395234341025945e-05,
+  "blender_camera_conversion": "right multiply OpenCV camera-to-world by diag(1,-1,-1,1)",
+  "render_intrinsics": {
+    "resolution": [
+      640,
+      480
+    ],
+    "fx": 381.4,
+    "fy": 381.4,
+    "cx": 320,
+    "cy": 240,
+    "sensor_width_mm": 36,
+    "lens_mm": 21.45375
+  },
+  "fixed_checks": [
+    0,
+    45,
+    90,
+    135,
+    179
+  ],
+  "visual_assessment": {
+    "0000": "Room envelope, glazing, column and first seating cluster recognizable. Furniture/lighting spacing differs and polished floor texture is under-detailed.",
+    "0045": "Mirror wall, left facade and far furnishings present; dimensions require independent projection review.",
+    "0090": "Reverse room view present; visible dark upper near-end wall is an identified construction backing defect.",
+    "0135": "View toward reception and seating present; exact silhouette fit remains approximate.",
+    "0179": "Uses native camera unchanged despite anomalous input depth at this nearly static endpoint."
+  },
+  "metric_scope": "Numerical checker measures only agreement with supplied predicted depth, no GT.",
+  "camera_drift": "Native trajectory and its inconsistency are preserved; no per-frame corrective scale/pose.",
+  "v2_native_camera_change": "none",
+  "v2_visual_assessment": "All five comparisons inspected. Wall backing, cap shading and frame135 furniture crop repaired. Residual projection/appearance limitations are in repair_response.json."
+}

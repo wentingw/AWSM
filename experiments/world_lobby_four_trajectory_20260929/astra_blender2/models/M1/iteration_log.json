@@ -1,0 +1,67 @@
+{
+  "versions": [
+    {
+      "version": 1,
+      "stage": "initial independent-review candidate",
+      "model_sha256": "1ff3643fb89f6c209f14b14152a54598b8ecfe862296c77f8d6a074a960973fb",
+      "basis": "fresh RGB contact-sheet inventory and manual landmark fits; assumed door scale",
+      "build_failure": "Initial material registry KeyError limestone caused by overwritten variable in mat(); fixed before any successful build/render. Original build_v1.log retained.",
+      "parameter_snapshot": "versions/v1/layout.json",
+      "scene_saved": true,
+      "paired_check_indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "paired_check_count": 10,
+      "supplemental_check_count": 0,
+      "input_bvh_pass_count": 0,
+      "self_inspection": "analysis/paired_visual_inspection_v1.json",
+      "independent_review": "independent_review/initial_review.json; initial BLOCKED",
+      "changes": "Initial scene from empty Blender. No geometry revisions after paired checks."
+    },
+    {
+      "version": 2,
+      "stage": "repaired candidate for separate independent review",
+      "model_sha256": "747b24362a5c0a2d71d24499a0e82cdc8a1f4595fc9e724a7da5c0d192708f63",
+      "glb_sha256": "d9add3bc69f3a87dd980e6252d8aac8cd5426665511b00bfe4fd1a06c3e22b50",
+      "build_from_scratch": true,
+      "build_log": "build_v2.log",
+      "parameter_snapshot": "versions/v2/layout.json",
+      "parameter_changes": "analysis/author_repair/parameter_changes_v2.json",
+      "paired_check_indices": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "paired_check_count": 10,
+      "supplemental_check_count": 0,
+      "input_bvh_pass_count": 0,
+      "self_inspection": "analysis/paired_visual_inspection_v2.json",
+      "technical_validation": "checks/author/technical_verification.json",
+      "independent_review": "pending",
+      "geometry_changes_after_checks": false
+    }
+  ],
+  "max_versions": 5,
+  "depth_reference": "N/A for M1",
+  "tool_events": [
+    "Initial Python cv2 import availability probe failed; no external SfM/SLAM or cv2 pipeline used.",
+    "Coordinator completed generic10checks and visualization on saved scene; author attempted same command concurrently and completed-report guard reused existing output without additional renders. See coordinator_tool_note.json."
+  ],
+  "historical_note": "v1 records inherited; current author did not witness initial failed build or coordinator rendering. Existing local logs/notes preserved. No additional hidden builds/renders in this repair session."
+}

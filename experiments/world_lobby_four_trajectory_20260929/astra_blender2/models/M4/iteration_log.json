@@ -1,0 +1,134 @@
+{
+  "phase": "revision author complete; final independent review pending",
+  "iterations": [
+    {
+      "version": 1,
+      "action": "Fresh measurement-derived semantic construction from empty scene",
+      "parameter_snapshot": "versions/v1/layout.json",
+      "construction_source": "versions/v1/build_scene.py",
+      "input_measurements": [
+        "analysis/measurements.json",
+        "analysis/triangulation.json",
+        "analysis/measurement_decisions.json"
+      ],
+      "prebuild_drafts": [
+        "Initial inferred common pendant bottom4.5m produced out-of-room centers for distant five. Before any scene save/render, changed those five to3.8m; inference recorded in layout."
+      ],
+      "prior_built_version": null,
+      "changes_after_paired_checks": [],
+      "paired_samples": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "paired_views": 10,
+      "engine": "CPU Cycles",
+      "samples": 12,
+      "resolution": [
+        640,
+        480
+      ],
+      "threads": 2,
+      "input_bvh_passes": 1,
+      "paired_input_metrics": {
+        "pixels_domain": 3049640,
+        "pixels_valid": 3049579,
+        "valid_coverage": 0.9999799976390656,
+        "invalid_rate": 2.0002360934356922e-05,
+        "mae_m": 0.8310919530429046,
+        "rmse_m": 1.3826491878001153,
+        "absrel": 0.12834874884118608,
+        "delta1": 0.8537535836913882,
+        "delta2": 0.9458184228052462,
+        "delta3": 0.9772043944426427,
+        "missing_penalty_mae_m": 0.8316754000697223
+      },
+      "full180_input_metrics": {
+        "pixels_domain": 3390631,
+        "pixels_valid": 3390603,
+        "valid_coverage": 0.9999917419500972,
+        "invalid_rate": 8.258049902787334e-06,
+        "mae_m": 1.470016098470569,
+        "rmse_m": 2.9780598705652297,
+        "absrel": 0.8237081869635078,
+        "delta1": 0.753342989432853,
+        "delta2": 0.86380652644972,
+        "delta3": 0.9033626172099771,
+        "missing_penalty_mae_m": 1.470251700501354
+      },
+      "comparison_inspection": "All10 saved actual comparison sheets visually inspected; details analysis/comparison_observations_v1.json",
+      "build_process_exit_code": 1,
+      "build_anomaly": "Build process exit1 after delayed Ctrl-C/internal-break event; log confirms BUILD_COMPLETE and complete blend/GLB exports before exit. All five generic checking/validation commands exit0; no rebuild or extra renders.",
+      "generic_helper_exit_codes": {
+        "paired": 0,
+        "visualize": 0,
+        "full180": 0,
+        "inspect": 0,
+        "validate": 0
+      },
+      "independent_review": "not performed by author"
+    },
+    {
+      "version": 2,
+      "action": "M4 review-driven repair from empty scene",
+      "prior_built_version": 1,
+      "parameter_snapshot": "versions/v2/layout.json",
+      "construction_source": "versions/v2/build_scene.py",
+      "required_modules": [
+        "repair_colliders.py",
+        "repair_mesh_audit.py"
+      ],
+      "changes": "analysis/repair_changes_v2.json",
+      "component_changes": "analysis/component_changes_v2.json",
+      "measurements": "analysis/repair_measurements_v2.json",
+      "paired_samples": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "paired_views": 10,
+      "threads": 2,
+      "samples": 12,
+      "engine": "CPU Cycles",
+      "all_comparison_images_inspected": true,
+      "input_bvh_passes": 2,
+      "input_pass_directories": [
+        "checks/input_v2",
+        "checks/input_final"
+      ],
+      "final_pass_same_geometry_explanation": "Main repairs produced v2; after all ten comparisons and technical validation, v2 was retained as final. input_final is a separate actual180-frame BVH execution, not a copied directory. Geometry/material/scene hashes unchanged; exact depth arrays reproduce.",
+      "model_sha256": "a86c6656bfd7f3ff1435c037a48aecb1d503047b799d75c9fc5524baba5c5ec5",
+      "glb_sha256": "a98c5f5a83776c2fb2a4d3a0635db5c6b8794994b49d15fa4fb6b3600823a31b",
+      "technical_validations": [
+        "checks/saved_mesh_validation.json",
+        "checks/author_candidate_audit.json",
+        "checks/artifact_inspection.json",
+        "checks/glb_load.json"
+      ],
+      "quality_status": "LIMITED",
+      "preexport_failed_attempt": {
+        "event": "v2 pre-export construction validation failure",
+        "export_occurred": false,
+        "paired_views": 0,
+        "input_passes": 0,
+        "reason": "Chair-back bevel generated collapsed triangles even with correct winding",
+        "fix": "Remove backrest bevel; preserve closed faceted arc solid",
+        "scene_blend_unchanged": "v1 remains until successful v2 export"
+      }
+    }
+  ]
+}

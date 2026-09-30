@@ -52,3 +52,14 @@ flowchart LR
 ```
 
 M1 uses RGB alone. M2 uses ViPE. M3 uses OpenVINS and MapAnything. M4 replaces estimated pose with GT pose, without giving GT mesh/depth to the modeller. B1 shares M2's frontend; B2 uses calibrated RGB MapAnything; B2p shares M3's frontend. Evaluation GT is separate from modelling inputs except for M4's declared GT-pose condition.
+
+## September 29 World Lobby source snapshot
+
+See [the experiment README](experiments/world_lobby_four_trajectory_20260929/README.md) for the new methods and complete file map. `experiments/world_lobby_four_trajectory_20260929/code/` holds the trajectory/DA3 pipeline; `astra_blender2/tools/` holds the fixed ten-view checks, freezing, evaluation and HF publication tools. Both `astra_blender/models/` and `astra_blender2/models/` preserve scene construction code and small companions.
+
+- `scripts/rebuild_world_lobby_scene.py`: rebuild one new scene in a fresh directory outside the repository.
+- `scripts/check_world_lobby_depth_math.py`: five existing asset-free depth pipeline tests.
+- `scripts/export_world_lobby_source.py`: reproduce the curated source copy from the original workspace into a checkout where that snapshot directory does not yet exist.
+- The root source verifier also checks the supplemental experiment manifest; old snapshot entries are preserved.
+
+This experiment uses RGB-only M1, ViPE+DA3 M2, ORB-SLAM3+DA3 M3 and GT-pose+DA3 M4. OpenVINS remains a trajectory diagnostic. No binary models, raw capture, dense depths, private session logs or credentials are added by this update. Historical scripts preserve their workspace paths; see the experiment README before executing them.

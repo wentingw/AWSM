@@ -1,0 +1,576 @@
+{
+  "method_id": "M4",
+  "reviewer_model": "gpt-6-astra",
+  "independent_fresh_context": true,
+  "review_phase": "initial",
+  "model_sha256": "94565f3ae23e82b28cba4cee23716976985294c0ad3750ea861026c71b45b033",
+  "glb_sha256": "516808458615c7334040fd53a82b122cb4dfa87e1f51977260f43d0a7b235dae",
+  "status": "BLOCKED",
+  "visual_quality_status": "LIMITED",
+  "review_complete": true,
+  "reviewed_utc": "2026-09-30T05:17:07.911904+00:00",
+  "technical_protocol_blockers": [
+    {
+      "issue_id": "M4-I02",
+      "reason": "Inverted reception desk shell plus five inconsistently wound chair backs with degenerate triangles",
+      "recommendation": "Reverse the desk shell winding. Correct the chair end-cap orientation before beveling and remove resulting degenerate faces; verify closed solids have consistent outward normals. Rebuild/export a matching version and run its ten prescribed views."
+    }
+  ],
+  "issues": [
+    {
+      "id": "M4-I01",
+      "title": "Initial handoff record gap resolved before review completion",
+      "object": [
+        "iteration_log.json",
+        "modelling_manifest.json",
+        "analysis/camera_checks.json"
+      ],
+      "frame": [],
+      "severity": "info",
+      "technical_protocol_blocker": false,
+      "disposition": "RESOLVED_DURING_REVIEW",
+      "evidence": [
+        "At first inspection iteration_log.json was absent, manifest status was initial_build_in_progress and camera checks were pending.",
+        "At final read-back the author had supplied iteration_log.json, ten comparison observations, spatial residuals, full-input diagnostics and initial issues, set ready_for_independent_review, and updated completed projection evidence. Both model hashes stayed unchanged.",
+        "The author records the build exit1/internal-break anomaly. The build log confirms successful export and BUILD_COMPLETE before the break; both artifacts independently load. This is not evidence of an additional built version."
+      ],
+      "recommendation": "Preserve the completed records and hash linkage for later revisions; no missing-record blocker remains.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/iteration_log.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/modelling_manifest.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/camera_checks.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/comparison_observations_v1.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/spatial_residuals_v1.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/initial_issues.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/build_v1.log"
+      ]
+    },
+    {
+      "id": "M4-I02",
+      "title": "Inside-out desk and inconsistent/degenerate chair-back meshes",
+      "object": [
+        "reception_desk__faceted_body",
+        "seat_A_1__curved_back",
+        "seat_A_2__curved_back",
+        "seat_A_4__curved_back",
+        "seat_B_1__curved_back",
+        "seat_B_2__curved_back"
+      ],
+      "frame": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "severity": "blocker",
+      "technical_protocol_blocker": true,
+      "disposition": "OPEN",
+      "evidence": [
+        "Independent BMesh audit: desk is closed with consistent winding but signed volume -2.073760054 m3 and positive object determinant; its shell normals are inward.",
+        "Each named chair back has four manifold edges with inconsistent winding. Their degenerate triangle counts (area <1e-12 m2) are 8,4,8,8,8, respectively.",
+        "build_scene.py gives the two curved-back end caps the same winding; the final cap requires reversal before beveling. Black slivers appear around chairs/table in paired 74/129, though solid intersections also contribute."
+      ],
+      "recommendation": "Reverse the desk shell winding. Correct the chair end-cap orientation before beveling and remove resulting degenerate faces; verify closed solids have consistent outward normals. Rebuild/export a matching version and run its ten prescribed views.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/geometry_camera_audit.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_comparison.jpg"
+      ]
+    },
+    {
+      "id": "M4-I03",
+      "title": "Solid furniture intersections and incorrect seat silhouettes",
+      "object": [
+        "seat_A_2",
+        "seat_A_3",
+        "seat_A_4",
+        "seat_A_5",
+        "seat_B_1",
+        "seat_B_2",
+        "coffee_table_A"
+      ],
+      "frame": [
+        33,
+        61,
+        74,
+        129,
+        155
+      ],
+      "severity": "high",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Analytical circle tests using build parameters checked against current mesh bounds: A_3/A_4 penetrate 0.252 m, A_2/A_3 0.204 m, A_3/A_5 0.140 m, B_1/B_2 0.110 m over the shared unbeveled body height.",
+        "coffee_table_A top occupies z=0.4075..0.4525 m and seat_A_5 occupies z=0.12..0.52 m. Table centre (15.8,22.05,0.43) lies 0.4031 m from the chair axis, inside its 0.43 m radius: actual solid overlap, not only an AABB warning.",
+        "Actual source/paired 129 shows merged oversized seats and a table intruding through upholstery; 61/74 show incorrect backrest orientation and extent."
+      ],
+      "recommendation": "Refit radii, centres, backrest rotations and table clearance jointly across 33/61/74/129/155, then eliminate solid overlaps. Record multiple-view evidence and every changed parameter without moving cameras.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/layout.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/scene_inspection.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_comparison.jpg"
+      ]
+    },
+    {
+      "id": "M4-I04",
+      "title": "Pendant placement from frame33 fails other viewpoints",
+      "object": [
+        "pendant_00..pendant_14",
+        "ceiling_slats_north",
+        "ceiling_slats_south"
+      ],
+      "frame": [
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        129
+      ],
+      "severity": "high",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Source-visible lamp above mirror wall is absent in paired61/74; source westward cluster is missing in91. In82/100/129 silhouettes are displaced or differently sized.",
+        "All15 lamp centres derive from frame33 rays at inferred z=4.5 or3.8 m; listed other evidence frames did not constrain the fit.",
+        "640x480 mixed ROI74 [390,0,505,60]: median model-minus-DA3 +1.212 m. ROI91 [160,0,395,65]: MAE1.889 m. ROI129 [0,0,630,180]: MAE1.410 m."
+      ],
+      "recommendation": "Match identifiable lamp rims/centres across opposite-facing fixed views and solve placement/size with consistent correspondences, including the western room. Keep uncertain heights/counts marked inferred; inspect all ten outputs after changes.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/layout.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/measurement_decisions.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json"
+      ]
+    },
+    {
+      "id": "M4-I05",
+      "title": "Panels hidden behind backing on positive-X-facing walls",
+      "object": [
+        "west_end_wall",
+        "feature_return_east"
+      ],
+      "frame": [
+        82,
+        91,
+        100
+      ],
+      "severity": "high",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Actual source91 has west-wall panels; paired model has a plain dark backing. The feature return is similarly dark in82.",
+        "West backing room-facing surface is x=8.08; panel_0_0 spans x=7.8925..7.9275. East feature-return exposed surface is x=18.28; its panel_0_0 spans x=18.0925..18.1275.",
+        "paneled_wall always offsets X-wall panels toward -X; these two exposed faces require +X."
+      ],
+      "recommendation": "Make panel placement follow the visible wall normal. Move these panels onto positive-X faces and verify seams/corner continuity against82/91/100.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/scene_inspection.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_comparison.jpg"
+      ]
+    },
+    {
+      "id": "M4-I06",
+      "title": "Plant silhouettes are overly dense/broad or use the wrong form",
+      "object": [
+        "shrub_trough_A",
+        "shrub_trough_B",
+        "mirror_fern",
+        "window_grass",
+        "bird_paradise_A"
+      ],
+      "frame": [
+        61,
+        74,
+        82,
+        91,
+        108,
+        118,
+        129
+      ],
+      "severity": "medium",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Paired82/118/129 replace sparse fine source branches with broad dense leaves that expand over pot boundaries and seating. Source61/74 mirror plant is rounded and fine, whereas model is spiky.",
+        "640x480 mixed trough ROI median signed residuals:91 [170,215,390,275] -0.473 m;108 [85,265,220,470] -0.394 m;118 [150,320,415,470] -0.636 m. Background and occlusion are included."
+      ],
+      "recommendation": "Fit pot/body and canopy separately; reduce shrub leaf width/density/spread and correct mirror-plant silhouette. Botanical detail remains inference; do not fit reflected DA3 as physical plant geometry.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json"
+      ]
+    },
+    {
+      "id": "M4-I07",
+      "title": "Support gaps and collision proxies do not establish usable portals",
+      "object": [
+        "reception_desk",
+        "seat_A_5",
+        "coffee_table_A",
+        "glazed_facade",
+        "entry_east",
+        "entry_west",
+        "interior_door_0",
+        "side_corridor"
+      ],
+      "frame": [
+        61,
+        74,
+        82,
+        100,
+        108,
+        118,
+        129
+      ],
+      "severity": "medium",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Desk is supported_by:floor but lowest mesh point z=0.09 m has no support component. seat_A_5 bottom is z=0.02672 m and coffee_table_A bottom0.03813 m, above the inlay top0.011 m.",
+        "glazed_facade AABB covers x=7.9775..27.5225,y=25.94..26.08,z=0..5, including both entries; each entry is also one full-frame AABB. These cannot represent open passage.",
+        "interior_door_0 is in front of uncut mirror_feature_wall. side_corridor is a shallow inferred recess ending at a solid plane. Closed source doors need not be open; inferred static proxies are not a validated passage or articulated-door model."
+      ],
+      "recommendation": "Add/justify inferred hidden supports and remove unintended hover gaps. Declare door state and corridor extent; separate static wall/frame from door leaves and use compound colliders if passage is intended. Retain unavailable exterior/corridor geometry as uncertain.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/colliders.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/objects.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json"
+      ]
+    },
+    {
+      "id": "M4-I08",
+      "title": "Dominant floor, facade and fixture appearance differs",
+      "object": [
+        "dark_inlay",
+        "glazed_facade",
+        "entry_east",
+        "entry_west",
+        "pendant_00..pendant_14",
+        "east_end_wall",
+        "mirror_feature_wall"
+      ],
+      "frame": [
+        33,
+        61,
+        74,
+        82,
+        91,
+        100,
+        108,
+        118,
+        129,
+        155
+      ],
+      "severity": "medium",
+      "technical_protocol_blocker": false,
+      "disposition": "OPEN",
+      "evidence": [
+        "Paired sheets show smooth reflective dark flooring instead of the prominent source grid-like gold appearance, lighter/thinner door and window frames, smooth lamp undersides, and weak wood grain/contrast.",
+        "Ten physical mirrors have unique stable IDs; no duplicated reflected furnishings were found. Surrounding geometry/lighting limits their reflection fidelity."
+      ],
+      "recommendation": "After geometry repairs, use cross-view source crops to distinguish floor material from reflections and improve pattern scale, frame widths/contrast, lamp underside detail and grain. Keep lighting/material choices inferred. These may remain LIMITED visual fidelity.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_comparison.jpg",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py"
+      ]
+    },
+    {
+      "id": "M4-I09",
+      "title": "Conflicting predicted depths limit conclusions; preserve scale/cameras",
+      "object": [
+        "east_end_wall",
+        "floor",
+        "DA3_input_reference"
+      ],
+      "frame": [
+        21,
+        22,
+        33,
+        129,
+        155,
+        177,
+        178,
+        179
+      ],
+      "severity": "medium",
+      "technical_protocol_blocker": false,
+      "disposition": "DOCUMENTED_LIMITATION",
+      "evidence": [
+        "End-wall mixed-ROI median signed residual is -2.675 m at33, +2.027 m at129 and -2.728 m at155. Opposite signs do not support a simple wall translation; triangulated corner/desk evidence is stronger than treating predictions as truth.",
+        "Existing180 output reference median is about25.40 m at21/22 and0.0666 m at177..179, versus model medians about5.98 m. Contact sheets show similar lobby views; only20.45% of179 reference pixels fall in the generic0.1..30 m domain.",
+        "The completed author handoff now documents depth conflicts and shallow extremes. Reviewer numbers were independently recomputed from existing outputs; native DA3 outside the ten fixed samples was not reopened, and the cause of extreme reference variation was not diagnosed."
+      ],
+      "recommendation": "Retain/document these frame-specific conflicts and measurement selection rationale through repairs. Keep metric input scale, exact cameras and prescribed masks; do not deform/rescale the scene to optimize the aggregate prediction disagreement.",
+      "evidence_paths": [
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/measurement_decisions.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/triangulation.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/initial_issues.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/input_v1/report.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json",
+        "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/input_depth_conflicts.json"
+      ]
+    }
+  ],
+  "evidence_inspected": {
+    "contact_sheets": [
+      "000_029",
+      "030_059",
+      "060_089",
+      "090_119",
+      "120_149",
+      "150_179"
+    ],
+    "actual_paired_comparison_samples": [
+      33,
+      61,
+      74,
+      82,
+      91,
+      100,
+      108,
+      118,
+      129,
+      155
+    ],
+    "original_full_resolution_RGB": [
+      61,
+      82,
+      129
+    ],
+    "all_ten_source_RGB_visible_in_paired_sheets": true,
+    "native_DA3_and_saved_error_bundles_checked_for_all_ten": true,
+    "current_blend_opened": true,
+    "current_glb_loaded": true,
+    "existing_full180_arrays_inspected": true,
+    "normals_semantics_penetration_support_portal_collision_proxies_inspected": true,
+    "author_initial_issues_and_completed_handoff_read": true
+  },
+  "protocol_checks": {
+    "versions_observed": 1,
+    "version_budget": 5,
+    "paired_views_observed": 10,
+    "paired_view_budget": 50,
+    "supplemental_views_observed": 0,
+    "all_versions_have_exact_ten_fixed_samples": true,
+    "current_model_and_snapshot_and_paired_reports_SHA256_match": true,
+    "paired_RGB_depth_file_hashes_match": true,
+    "packet_hash_matches": true,
+    "full_input_passes_observed": 1,
+    "full_input_frame_counts": [
+      180
+    ],
+    "phase_requirement": "One initial180 pass is complete; exactly three required at final review. Two later passes are not an initial-review blocker.",
+    "all_180_camera_matrices_exact": true,
+    "max_camera_matrix_error": 0.0,
+    "camera_intrinsics_sample_metadata_exact": true,
+    "geometry_scale": 1,
+    "model_from_input": "identity",
+    "Blender_units": "METRIC, scale_length=1",
+    "max_independent_projection_error_px": 0.00054168701171875,
+    "native_reference_sampling_reproduced": true,
+    "signed_absolute_relative_error_arrays_reproduced": true,
+    "generic_input_domains_untrimmed": true,
+    "semantic_objects": 73,
+    "mesh_components": 5119,
+    "triangles": 158018,
+    "exact_unique_blend_glb_component_mapping": true,
+    "finite_geometry_and_valid_GLB_load": true,
+    "missing_image_dependencies": [],
+    "final_handoff_records_present": true
+  },
+  "residual_context": {
+    "reference": "Own predicted DA3 only; never GT, heldout data or evaluation",
+    "sign": "model optical Z minus input prediction optical Z",
+    "ROI_coordinates": "640x480 half-open [x0,y0,x1,y1]; mixed patches, not semantic masks",
+    "paired_input_MAE_m": 0.8310919530429046,
+    "paired_input_AbsRel": 0.12834874884118608,
+    "full_input_MAE_m": 1.4700161218643188,
+    "full_input_AbsRel": 0.823708176612854,
+    "interpretation": "Descriptive input consistency only, strongly affected by prediction variation/reflections/foliage; no fidelity certification."
+  },
+  "scope": {
+    "reads": "M4 inputs/models, exact contract and six listed generic tools only",
+    "writes": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review",
+    "new_renders": 0,
+    "new_input_BVH_passes": 0,
+    "agents_spawned": 0,
+    "GT_geometry_depth_heldout_evaluation_web_global_process_access": false,
+    "root_provenance_logs_read": false,
+    "scope_leak_found_in_inspected_records": false,
+    "scope_audit_limit": "Method-local records/scripts inspected; not an exhaustive OS-enforced process audit."
+  },
+  "limitations": [
+    "21 open meshes are intentional leaf/foliage surfaces; distinguished from corrupt closed chair backs.",
+    "Penetration/support/portal inspection used current mesh bounds, analytical primitive tests and build logic; no full mesh self-intersection sweep or physics simulation.",
+    "No additional render, input BVH pass, camera/scale change, or author-file edit.",
+    "Hidden surfaces, materials, lighting, plant details and physics remain inferred."
+  ],
+  "initial_issue_revisit": {
+    "applicable": false,
+    "reason": "This establishes the independent initial issue set. Author initial issues were read; no geometry repair/final candidate exists. Record-only completion during this review resolves M4-I01."
+  },
+  "final_review_requirements": [
+    "Read initial_review.json and author repair records; explicitly revisit every M4-I01..M4-I09 as resolved, retained with evidence, or unresolved.",
+    "Independently inspect final blend/GLB, fixed paired comparisons, normals, seating intersections, supports and portal/collision representations.",
+    "Verify exactly three full180 input passes for initial/major-repair/final with recorded model hashes; require a reason for any unchanged-geometry pass.",
+    "Verify every built version has ten fixed views, at most five versions/50 paired views, retained snapshots, unchanged input scale/cameras/masks and honest access/iteration logs."
+  ],
+  "paths_read": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/configs/modelling_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/000_029.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/030_059.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/060_089.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/090_119.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/120_149.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/contact_sheets/150_179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0033.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0061.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0074.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0082.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0091.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0100.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0108.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0118.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0129.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/geometry/0155.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/packet.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0033.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0061.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0074.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0082.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0091.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0100.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0108.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0118.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0129.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/inputs/M4/rgb/0155.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/camera_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/comparison_observations_v1.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/full_input_diagnostics_v1.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/initial_issues.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/measurement_decisions.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/object_inventory.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/spatial_residuals_v1.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/analysis/triangulation.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/build_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/cameras.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/artifact_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/build_v1.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/commands.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/glb_load.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/input_v1/depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/input_v1/report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/paired_ledger.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0033_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0061_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0074_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0082_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0091_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0100_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0100_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0100_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0100_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0100_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0108_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0118_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0129_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0155_comparison.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0155_depth.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0155_errors.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0155_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/0155_rgb.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/checks/v1/paired_report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/colliders.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/coordinator_tool_note.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/geometry_camera_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/geometry_camera_audit.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/glb_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/initial_review.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/initial_review.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/input_access_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/input_depth_conflicts.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/scene_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/scene_inspection.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/input_access_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/iteration_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/layout.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/measure_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/modelling_manifest.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/objects.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/prepare_layout.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/scene.blend",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/scene.glb",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/triangulate.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/build_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/cameras.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/layout.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/objects.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/scene.blend",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/versions/v1/scene.glb",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/depth_math.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/inspect_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/paired_check_blender.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/raycast_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/validate_artifacts.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/tools/visualize_checks.py"
+  ],
+  "access_log": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/input_access_log.json",
+  "supporting_reports": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/scene_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/geometry_camera_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/evidence_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/glb_audit.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender2/models/M4/independent_review/input_depth_conflicts.json"
+  ]
+}

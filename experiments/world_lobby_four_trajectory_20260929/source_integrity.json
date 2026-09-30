@@ -1,0 +1,57 @@
+{
+  "validated_at": "2026-09-30T08:55:35.941367+00:00",
+  "snapshot": {
+    "copied_files": 383,
+    "copied_bytes": 10310524,
+    "copied_python_files": 166,
+    "source_hash_mismatches": [],
+    "ignored_snapshot_files": []
+  },
+  "repository_verification": {
+    "command": "python3 scripts/verify_source_snapshot.py",
+    "status": "pass",
+    "snapshots": 2,
+    "copied_files": 1505,
+    "copied_bytes": 239120474,
+    "python_files_parsed": 307
+  },
+  "depth_math_tests": {
+    "command": "python3 scripts/check_world_lobby_depth_math.py",
+    "status": "pass",
+    "tests_run": 5
+  },
+  "blender_rebuild": {
+    "method": "M4",
+    "blender_version": "5.2.0",
+    "status": "pass",
+    "output_directory": "/home/hchen/Documents/astraBlenderTest/sceneweft_validation_20260930/M4",
+    "artifacts": [
+      {
+        "path": "scene.blend",
+        "bytes": 6275807,
+        "sha256": "777337b7e7721aebfc56c2a746d8c65023f5ca220110fa0f5573a257447f6a8f"
+      },
+      {
+        "path": "scene.glb",
+        "bytes": 36661864,
+        "sha256": "a98c5f5a83776c2fb2a4d3a0635db5c6b8794994b49d15fa4fb6b3600823a31b"
+      },
+      {
+        "path": "objects.json",
+        "bytes": 139514,
+        "sha256": "66bc78a8ab7064e9175eb143548c97000ad08c8b3eb0d479003f2d7df9fcd720"
+      },
+      {
+        "path": "colliders.json",
+        "bytes": 367379,
+        "sha256": "b44db0d632d43a4563a3ce10c66ee829bbdb1dd4f5b49ff097cc859833e45e1b"
+      }
+    ]
+  },
+  "limits": [
+    "No new Astra modelling session, inference, rendering or GT evaluation was run for this upload.",
+    "Only M4 was smoke-rebuilt for this upload; this is not validation of all four reconstructed scenes.",
+    "Generated Blender artifacts are local verification outputs and are not included in Git."
+  ],
+  "original_experiment_files_modified": false
+}

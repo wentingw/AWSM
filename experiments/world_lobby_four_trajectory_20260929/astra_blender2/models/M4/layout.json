@@ -1,0 +1,1250 @@
+{
+  "version": 2,
+  "units": "metres",
+  "model_from_input": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "room": {
+    "x_min": 8,
+    "x_max": 27.5,
+    "y_min": 16,
+    "y_max": 26,
+    "floor_z": 0,
+    "ceiling_z": 5,
+    "mirror_wall_y": 18,
+    "mirror_wall_x": [
+      11.1,
+      18.2
+    ],
+    "carpet_bounds": [
+      8.2,
+      25.7,
+      19.6,
+      24.0
+    ]
+  },
+  "mirrors": [
+    {
+      "id": "mirror_00",
+      "center": [
+        14.911603849910176,
+        18.045,
+        1.889659773090231
+      ],
+      "radius": 0.33536161409956605,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        620,
+        360,
+        40
+      ]
+    },
+    {
+      "id": "mirror_01",
+      "center": [
+        15.143898508025647,
+        18.045,
+        1.295393687281777
+      ],
+      "radius": 0.22881330322707252,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        594,
+        431,
+        26
+      ]
+    },
+    {
+      "id": "mirror_02",
+      "center": [
+        14.839373762430395,
+        18.045,
+        0.7291757438817501
+      ],
+      "radius": 0.3399659370930106,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        629,
+        499,
+        39
+      ]
+    },
+    {
+      "id": "mirror_03",
+      "center": [
+        13.904715220432127,
+        18.045,
+        1.435590857086631
+      ],
+      "radius": 0.6741351941151746,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        742,
+        421,
+        88
+      ]
+    },
+    {
+      "id": "mirror_04",
+      "center": [
+        13.367878418404992,
+        18.045,
+        0.6008467636934505
+      ],
+      "radius": 0.20835710288671483,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        806,
+        528,
+        27
+      ]
+    },
+    {
+      "id": "mirror_05",
+      "center": [
+        12.964830474330961,
+        18.045,
+        1.8598826937725352
+      ],
+      "radius": 0.25276091049681565,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        870,
+        370,
+        36
+      ]
+    },
+    {
+      "id": "mirror_06",
+      "center": [
+        12.44801273150212,
+        18.045,
+        2.2829982823729034
+      ],
+      "radius": 0.3069024837630467,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        950,
+        312,
+        47
+      ]
+    },
+    {
+      "id": "mirror_07",
+      "center": [
+        12.638903761901402,
+        18.045,
+        1.0113552240027954
+      ],
+      "radius": 0.5287009978303343,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        907,
+        484,
+        76
+      ]
+    },
+    {
+      "id": "mirror_08",
+      "center": [
+        11.782787021994713,
+        18.045,
+        1.7439325663488907
+      ],
+      "radius": 0.4160405033457589,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        1044,
+        391,
+        67
+      ]
+    },
+    {
+      "id": "mirror_09",
+      "center": [
+        11.732091940364464,
+        18.045,
+        0.9993563252020159
+      ],
+      "radius": 0.19401615647291023,
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ],
+      "pixel_circle": [
+        1039,
+        494,
+        30
+      ]
+    }
+  ],
+  "pendants": [
+    {
+      "id": "pendant_00",
+      "center": [
+        15.902653834826086,
+        23.583765550657034,
+        4.185370331661467
+      ],
+      "radius": 0.715,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          359,
+          73
+        ],
+        [
+          129,
+          256,
+          126
+        ]
+      ],
+      "reprojection_errors_px": [
+        2.3432247776702466,
+        2.7837741286996764
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_01",
+      "center": [
+        17.942740610293214,
+        23.302493399778957,
+        4.19814970681969
+      ],
+      "radius": 0.65,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          462,
+          153
+        ],
+        [
+          129,
+          538,
+          211
+        ]
+      ],
+      "reprojection_errors_px": [
+        0.268322867520397,
+        0.321310583678687
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_02",
+      "center": [
+        19.200684431025714,
+        23.77440046520626,
+        3.9091135220770936
+      ],
+      "radius": 0.616,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          441,
+          210
+        ],
+        [
+          129,
+          588,
+          287
+        ]
+      ],
+      "reprojection_errors_px": [
+        1.4578578769543227,
+        1.6617485378460104
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_03",
+      "center": [
+        21.61673877242374,
+        22.722888752801584,
+        4.2066431508717415
+      ],
+      "radius": 0.808,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          554,
+          217
+        ],
+        [
+          129,
+          793,
+          292
+        ]
+      ],
+      "reprojection_errors_px": [
+        5.847010535338573,
+        7.115803387063233
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_04",
+      "center": [
+        20.802355750742926,
+        21.60235463772893,
+        3.9558478126350334
+      ],
+      "radius": 0.702,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          635,
+          239
+        ],
+        [
+          129,
+          874,
+          275
+        ]
+      ],
+      "reprojection_errors_px": [
+        6.585837856235885,
+        8.990783082390532
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_05",
+      "center": [
+        21.73626929876937,
+        20.106374639914403,
+        4.048897187272854
+      ],
+      "radius": 0.941,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          738,
+          240
+        ],
+        [
+          129,
+          1061,
+          269
+        ]
+      ],
+      "reprojection_errors_px": [
+        2.907249030666083,
+        4.401628355778776
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_06",
+      "center": [
+        19.552740671876734,
+        20.961339913968743,
+        4.233692530014535
+      ],
+      "radius": 0.602,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          697,
+          188
+        ],
+        [
+          129,
+          910,
+          212
+        ]
+      ],
+      "reprojection_errors_px": [
+        1.5566262614836526,
+        2.3053213396347645
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_07",
+      "center": [
+        15.713183311371086,
+        20.788015494947285,
+        3.5128552926127043
+      ],
+      "radius": 0.582,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          790,
+          174
+        ],
+        [
+          129,
+          678,
+          135
+        ]
+      ],
+      "reprojection_errors_px": [
+        2.7747865624512893,
+        5.429379153116358
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_08",
+      "center": [
+        17.422480729602135,
+        17.329283328149224,
+        4.5
+      ],
+      "radius": 1.05,
+      "evidence_frames": [
+        33,
+        82,
+        129,
+        155
+      ],
+      "pixel_circle": [
+        1139,
+        108,
+        156
+      ],
+      "provenance": "RGB ray to inferred 4.5m near / 3.8m far bottom plane; size from projected radius; suspension height uncertain"
+    },
+    {
+      "id": "pendant_09",
+      "center": [
+        21.066214421853495,
+        19.264464091185726,
+        3.836950508239649
+      ],
+      "radius": 0.553,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          809,
+          245
+        ],
+        [
+          129,
+          1170,
+          274
+        ]
+      ],
+      "reprojection_errors_px": [
+        1.0842399976959796,
+        1.7968784634504995
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_10",
+      "center": [
+        24.930064847431655,
+        23.430872931135973,
+        3.7386230039391424
+      ],
+      "radius": 0.64,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          528,
+          280
+        ],
+        [
+          129,
+          830,
+          359
+        ]
+      ],
+      "reprojection_errors_px": [
+        1.082254118691002,
+        1.2631129998962598
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_11",
+      "center": [
+        23.11466086641096,
+        22.194223305629897,
+        3.8712737670899804
+      ],
+      "radius": 0.543,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          594,
+          259
+        ],
+        [
+          129,
+          878,
+          331
+        ]
+      ],
+      "reprojection_errors_px": [
+        2.434173712564506,
+        3.0557685572685678
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_12",
+      "center": [
+        24.439056455017905,
+        21.775287914068194,
+        3.5018904047029005
+      ],
+      "radius": 0.551,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          619,
+          293
+        ],
+        [
+          129,
+          936,
+          364
+        ]
+      ],
+      "reprojection_errors_px": [
+        0.6130160621247169,
+        0.7858227543422014
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_13",
+      "center": [
+        23.665265056666307,
+        21.082200074185586,
+        3.83763137174519
+      ],
+      "radius": 0.553,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          661,
+          268
+        ],
+        [
+          129,
+          982,
+          329
+        ]
+      ],
+      "reprojection_errors_px": [
+        0.005285839715442324,
+        0.0071047524058560204
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_14",
+      "center": [
+        25.208790735523326,
+        19.59605215418614,
+        3.668839042110331
+      ],
+      "radius": 0.66,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "observations": [
+        [
+          33,
+          734,
+          287
+        ],
+        [
+          129,
+          1126,
+          348
+        ]
+      ],
+      "reprojection_errors_px": [
+        0.2249725699968768,
+        0.3235962564204037
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_15",
+      "center": [
+        14.798321573044422,
+        19.20523780917285,
+        3.426124650553678
+      ],
+      "radius": 0.698,
+      "evidence_frames": [
+        61,
+        74,
+        82,
+        91
+      ],
+      "observations": [
+        [
+          61,
+          579,
+          125
+        ],
+        [
+          74,
+          891,
+          79
+        ],
+        [
+          82,
+          823,
+          334
+        ],
+        [
+          91,
+          316,
+          119
+        ]
+      ],
+      "reprojection_errors_px": [
+        1.118565783384177,
+        1.9279929035710985,
+        2.12975154407015,
+        1.1860583100276536
+      ],
+      "provenance": "Multi-view RGB diffuser-center triangulation; hand picks and correspondence uncertain; rim radius from projected width, thickness/weave inferred"
+    },
+    {
+      "id": "pendant_16",
+      "center": [
+        17.704651978176898,
+        20.946778718144255,
+        3.5688856967451006
+      ],
+      "radius": 0.7390930100017401,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_17",
+      "center": [
+        13.34144443952884,
+        20.752990380585366,
+        4.000706973380273
+      ],
+      "radius": 0.82,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_18",
+      "center": [
+        11.28055772028228,
+        21.277124957216415,
+        3.892055635731982
+      ],
+      "radius": 0.794273192931297,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    },
+    {
+      "id": "pendant_19",
+      "center": [
+        9.25,
+        22.550242705532707,
+        4.3394223556538805
+      ],
+      "radius": 0.82,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+    },
+    {
+      "id": "pendant_20",
+      "center": [
+        10.5,
+        23.571050402440807,
+        4.45
+      ],
+      "radius": 0.82,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence; x clipped into room with radius clearance because predicted anchor crossed west wall; lateral placement therefore inference"
+    },
+    {
+      "id": "pendant_21",
+      "center": [
+        9.850310866963564,
+        24.269202421046437,
+        4.45
+      ],
+      "radius": 0.82,
+      "evidence_frames": [
+        91,
+        82,
+        100
+      ],
+      "provenance": "Inferred west fixture identity; DA3 anchor from91 (NPZ K), plausible height bounds;82 projection is diagnostic, NOT an independent point correspondence"
+    }
+  ],
+  "planters": [
+    {
+      "id": "shrub_trough_A",
+      "center": [
+        18.65,
+        22.85,
+        0.37
+      ],
+      "dimensions": [
+        0.62,
+        1.8,
+        0.74
+      ]
+    },
+    {
+      "id": "shrub_trough_B",
+      "center": [
+        18.65,
+        20.8,
+        0.37
+      ],
+      "dimensions": [
+        0.62,
+        1.8,
+        0.74
+      ]
+    }
+  ],
+  "chairs": [
+    {
+      "id": "seat_A_0",
+      "center": [
+        15.9,
+        23.23,
+        0.32
+      ],
+      "radius": 0.4,
+      "back": false,
+      "rotation": 0,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_A_1",
+      "center": [
+        16.69,
+        23.24,
+        0.32
+      ],
+      "radius": 0.37,
+      "back": true,
+      "rotation": -1.57,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_A_2",
+      "center": [
+        17.16,
+        22.57,
+        0.32
+      ],
+      "radius": 0.37,
+      "back": true,
+      "rotation": 0,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_A_3",
+      "center": [
+        17.82,
+        21.96,
+        0.32
+      ],
+      "radius": 0.44,
+      "back": false,
+      "rotation": 0,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_A_4",
+      "center": [
+        17.05,
+        20.99,
+        0.32
+      ],
+      "radius": 0.39,
+      "back": true,
+      "rotation": -1.0,
+      "evidence_frames": [
+        33,
+        74,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_A_5",
+      "center": [
+        17.02,
+        21.79,
+        0.32
+      ],
+      "radius": 0.36,
+      "back": false,
+      "rotation": 0,
+      "evidence_frames": [
+        33,
+        129
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_B_0",
+      "center": [
+        13.46,
+        20.61,
+        0.32
+      ],
+      "radius": 0.38,
+      "back": false,
+      "rotation": 0,
+      "evidence_frames": [
+        61,
+        155
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_B_1",
+      "center": [
+        12.7,
+        20.7,
+        0.32
+      ],
+      "radius": 0.38,
+      "back": true,
+      "rotation": 1.57,
+      "evidence_frames": [
+        61,
+        155
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_B_2",
+      "center": [
+        12.05,
+        21.14,
+        0.32
+      ],
+      "radius": 0.38,
+      "back": true,
+      "rotation": -1.57,
+      "evidence_frames": [
+        61,
+        155
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    },
+    {
+      "id": "seat_B_3",
+      "center": [
+        11.8,
+        22.02,
+        0.32
+      ],
+      "radius": 0.43,
+      "back": false,
+      "rotation": 0,
+      "evidence_frames": [
+        61,
+        91
+      ],
+      "provenance": "Plane-constrained RGB tops, own DA3 diagnostic; centres/radii jointly regularized for solid clearance. Ambiguous top correspondences and rotations inferred."
+    }
+  ],
+  "tables": [
+    {
+      "id": "coffee_table_A",
+      "center": [
+        16.02,
+        21.95,
+        0.4
+      ],
+      "radii": [
+        0.53,
+        0.43
+      ]
+    },
+    {
+      "id": "coffee_table_B",
+      "center": [
+        12.97,
+        21.9,
+        0.4
+      ],
+      "radii": [
+        0.6,
+        0.48
+      ]
+    },
+    {
+      "id": "side_table_B",
+      "center": [
+        10.8,
+        22.25,
+        0.57
+      ],
+      "radii": [
+        0.35,
+        0.35
+      ]
+    }
+  ],
+  "plants": [
+    {
+      "id": "mirror_fern",
+      "center": [
+        15.65,
+        18.65,
+        0
+      ],
+      "kind": "vase",
+      "evidence_frames": [
+        61,
+        74,
+        82
+      ]
+    },
+    {
+      "id": "window_grass",
+      "center": [
+        17.05,
+        25.05,
+        0
+      ],
+      "kind": "bowl",
+      "evidence_frames": [
+        33,
+        91,
+        118,
+        129
+      ]
+    },
+    {
+      "id": "far_window_grass",
+      "center": [
+        9.1,
+        25.05,
+        0
+      ],
+      "kind": "bowl",
+      "evidence_frames": [
+        91,
+        100
+      ]
+    },
+    {
+      "id": "reception_tree_L",
+      "center": [
+        26.4,
+        24.1,
+        0
+      ],
+      "kind": "tree",
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "reception_tree_R",
+      "center": [
+        26.4,
+        19.35,
+        0
+      ],
+      "kind": "tree",
+      "evidence_frames": [
+        33,
+        129
+      ]
+    },
+    {
+      "id": "reception_corner_bowl",
+      "center": [
+        26.5,
+        16.9,
+        0
+      ],
+      "kind": "bowl",
+      "evidence_frames": [
+        33,
+        155
+      ]
+    },
+    {
+      "id": "bird_paradise_A",
+      "center": [
+        11.5,
+        19.1,
+        0
+      ],
+      "kind": "tall",
+      "evidence_frames": [
+        61,
+        82,
+        91
+      ]
+    },
+    {
+      "id": "bird_paradise_B",
+      "center": [
+        9.0,
+        23.25,
+        0
+      ],
+      "kind": "tall",
+      "evidence_frames": [
+        91,
+        100
+      ]
+    }
+  ],
+  "desk": {
+    "center": [
+      25.55,
+      21.8,
+      0.45
+    ],
+    "dimensions": [
+      1.05,
+      3.0,
+      0.9
+    ]
+  },
+  "column": {
+    "center": [
+      18.0,
+      25.15,
+      2.5
+    ],
+    "radius": 0.43
+  },
+  "doors": [
+    {
+      "id": "entry_east",
+      "x": 22.9,
+      "width": 1.85,
+      "height": 2.95
+    },
+    {
+      "id": "entry_west",
+      "x": 11.5,
+      "width": 1.65,
+      "height": 2.95
+    }
+  ],
+  "floor_lamps": [
+    [
+      19.1,
+      17.0
+    ],
+    [
+      26.0,
+      17.4
+    ],
+    [
+      9.0,
+      22.9
+    ]
+  ],
+  "inference_notes": [
+    "Floor z=0 supported by close-view local depth planes and door triangulation; frame33 far floor predicts -0.39m.",
+    "Rectilinear envelope regularized from DA3 normals and two-view end corner; east x27.5 and ceiling5m; west x8 from91 local fit.",
+    "Desk front x25.06 from two-view correspondence; hidden back inferred.",
+    "Foliage, backs of objects, thickness, wall panels, lighting and physics are inferred.",
+    "Plant trough corners have inconsistent correspondences; placement uses across-view consensus x18.65.",
+    "No scene transforms beyond identity; all cameras copied exactly.",
+    "Revision construction parameters and every changed layout field documented in analysis/repair_changes_v2.json. Native cameras/scale unchanged."
+  ],
+  "repair_construction": {
+    "wall_panel_x_sign": {
+      "west_end_wall": 1,
+      "feature_return_east": 1
+    },
+    "chair_back_bevel": 0,
+    "chair_foot_bottom": 0.011,
+    "table_foot_bottom": 0.011,
+    "desk_support_bottom": 0.011,
+    "door_frame_width": 0.13,
+    "floor_grid_pitch": 0.085,
+    "floor_grid_fill": [
+      0.04,
+      0.031
+    ],
+    "shrub_branches": 75,
+    "shrub_reach": [
+      0.1,
+      0.42
+    ],
+    "shrub_leaf_length": 0.07,
+    "shrub_leaf_half_width": 0.005,
+    "shrub_height_above_pot": [
+      0.3,
+      0.8
+    ],
+    "mirror_fern_radius": 0.4,
+    "mirror_fern_top": 1.22,
+    "ambient_strength": 0.16,
+    "daylight_energy": 650,
+    "exposure": 0,
+    "pendant_weave_surface": "underside",
+    "door_state": "closed, leaf colliders separated from static frame; clear aperture when leaves disabled",
+    "corridor_extent": "inferred recess only, terminates at y16.25; not claimed as known connected route"
+  }
+}

@@ -1,5 +1,7 @@
 # SceneWeft
 
+**新增代码快照：**[2026-09-29 World Lobby 实验](experiments/world_lobby_four_trajectory_20260929/README.md)包含 ORB-SLAM3/ViPE + DA3 流水线、两轮 Astra/Blender 建模、固定十视角检查和评测发布工具。本实验方法定义独立于下文较早的 OpenVINS/MapAnything 实验。
+
 **以几何为依据的智能体式重建：生成可编辑、可执行的三维场景。**
 
 SceneWeft 是这组研究的私有代码仓库。项目研究 GPT-6 Astra 如何在 RGB 和可选几何证据约束下，生成包含命名部件、空间关系、可渲染相机和碰撞代理的 Blender 场景程序。这里的 agentic 指工具调用、检查和修订流程，不等于已经训练出具有时间预测能力的通用世界模型。

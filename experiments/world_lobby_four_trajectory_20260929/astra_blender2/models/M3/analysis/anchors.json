@@ -1,0 +1,690 @@
+[
+  {
+    "label": "chair_left",
+    "frame": 33,
+    "pixel": [
+      448,
+      671
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      6.040845356377083,
+      1.149156415649073,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair_left_back",
+    "frame": 33,
+    "pixel": [
+      480,
+      602
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      7.74105326269608,
+      1.1752610557084209,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair_mid",
+    "frame": 33,
+    "pixel": [
+      533,
+      612
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      7.401837466505049,
+      0.6131431502587492,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair_right",
+    "frame": 33,
+    "pixel": [
+      692,
+      620
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      7.07991893813186,
+      -0.8902362101843696,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "ottoman_rear",
+    "frame": 33,
+    "pixel": [
+      587,
+      564
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.48,
+    "point_model": [
+      7.536279038602531,
+      0.08876080288626517,
+      0.48
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "table",
+    "frame": 33,
+    "pixel": [
+      577,
+      617
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.53,
+    "point_model": [
+      5.869598736800507,
+      0.12195561952356551,
+      0.53
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "divider_left",
+    "frame": 33,
+    "pixel": [
+      533,
+      573
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      8.74605133330685,
+      0.7399661715503538,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "divider_right",
+    "frame": 33,
+    "pixel": [
+      724,
+      574
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      8.557421446542174,
+      -1.4157351417068045,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "grass_window",
+    "frame": 33,
+    "pixel": [
+      263,
+      635
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      6.937011363400327,
+      2.964344337976253,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "grass_mirror",
+    "frame": 33,
+    "pixel": [
+      1076,
+      681
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      5.567854738942738,
+      -3.6148064838223544,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair2_a",
+    "frame": 61,
+    "pixel": [
+      756,
+      763
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      3.2678121507739673,
+      -1.7646883893399115,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair2_b",
+    "frame": 61,
+    "pixel": [
+      884,
+      804
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      2.603899822243388,
+      -1.6038422901532097,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "chair2_c",
+    "frame": 61,
+    "pixel": [
+      1028,
+      869
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      1.9956796250841813,
+      -1.3211521616835786,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "table2",
+    "frame": 61,
+    "pixel": [
+      827,
+      871
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.52,
+    "point_model": [
+      2.852791144409214,
+      -0.4939487914911762,
+      0.52
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "plant_tall",
+    "frame": 61,
+    "pixel": [
+      1242,
+      783
+    ],
+    "plane_axis": 2,
+    "plane_value": 0.05,
+    "point_model": [
+      0.8021500772330019,
+      -2.310829324378599,
+      0.04999999999999982
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror0",
+    "frame": 61,
+    "pixel": [
+      742,
+      421
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      3.7771313048273503,
+      -4.200000000000001,
+      1.5187645103335878
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror1",
+    "frame": 61,
+    "pixel": [
+      901,
+      481
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      2.514715689779157,
+      -4.200000000000001,
+      1.1054162961149578
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror2",
+    "frame": 61,
+    "pixel": [
+      620,
+      361
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      4.817657957987134,
+      -4.200000000000001,
+      1.9761148756210867
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror3",
+    "frame": 61,
+    "pixel": [
+      593,
+      434
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      5.0664994037464215,
+      -4.200000000000001,
+      1.3425723873128945
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror4",
+    "frame": 61,
+    "pixel": [
+      627,
+      498
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      4.759851487327225,
+      -4.200000000000001,
+      0.7921561491012592
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror5",
+    "frame": 61,
+    "pixel": [
+      807,
+      527
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      3.212741367994694,
+      -4.200000000000001,
+      0.6662925425840238
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror6",
+    "frame": 61,
+    "pixel": [
+      1040,
+      492
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      1.527079049157028,
+      -4.200000000000001,
+      1.0912548463641205
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror7",
+    "frame": 61,
+    "pixel": [
+      1043,
+      394
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      1.5919808118612624,
+      -4.199999999999999,
+      1.8228034845601355
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror8",
+    "frame": 61,
+    "pixel": [
+      951,
+      318
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      2.265697030601621,
+      -4.200000000000001,
+      2.3559362144337213
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "mirror9",
+    "frame": 61,
+    "pixel": [
+      870,
+      373
+    ],
+    "plane_axis": 1,
+    "plane_value": -4.2,
+    "point_model": [
+      2.806479521555221,
+      -4.200000000000001,
+      1.9375855547770278
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant0",
+    "frame": 33,
+    "pixel": [
+      350,
+      31
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      6.1927081882043185,
+      1.6379349364636968,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant1",
+    "frame": 33,
+    "pixel": [
+      461,
+      131
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      8.613225869136311,
+      1.3155225047044343,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant2",
+    "frame": 33,
+    "pixel": [
+      463,
+      203
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      12.341362584471193,
+      1.9801512710493896,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant3",
+    "frame": 33,
+    "pixel": [
+      525,
+      215
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      13.331603163382184,
+      1.1613865504250802,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant4",
+    "frame": 33,
+    "pixel": [
+      562,
+      202
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      12.259304291083179,
+      0.49973024039792646,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant5",
+    "frame": 33,
+    "pixel": [
+      620,
+      223
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      14.096863223518183,
+      -0.3985400418695786,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant6",
+    "frame": 33,
+    "pixel": [
+      701,
+      221
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      13.89801019142031,
+      -1.7859140768752264,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant7",
+    "frame": 33,
+    "pixel": [
+      786,
+      148
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      9.209638452531259,
+      -2.160381101390274,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant8",
+    "frame": 33,
+    "pixel": [
+      708,
+      172
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      10.34631499771469,
+      -1.4378659116381722,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant9",
+    "frame": 33,
+    "pixel": [
+      1170,
+      114
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      7.932081032471626,
+      -5.608475807926385,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant10",
+    "frame": 33,
+    "pixel": [
+      784,
+      230
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      14.860577347335495,
+      -3.4470282010638638,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant11",
+    "frame": 33,
+    "pixel": [
+      591,
+      253
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      18.032951384827808,
+      0.18185195637876775,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant12",
+    "frame": 33,
+    "pixel": [
+      528,
+      276
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      23.014039575178238,
+      2.08831276304616,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant13",
+    "frame": 33,
+    "pixel": [
+      614,
+      287
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      26.71295299709603,
+      -0.4191241561224567,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant14",
+    "frame": 33,
+    "pixel": [
+      657,
+      260
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      19.338321380428788,
+      -1.3856646717442613,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "pendant15",
+    "frame": 33,
+    "pixel": [
+      734,
+      277
+    ],
+    "plane_axis": 2,
+    "plane_value": 4.75,
+    "point_model": [
+      23.492117501249535,
+      -3.9487698618890303,
+      4.75
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "door_right_centre",
+    "frame": 108,
+    "pixel": [
+      716,
+      440
+    ],
+    "plane_axis": 1,
+    "plane_value": 3.85,
+    "point_model": [
+      12.105038494944104,
+      3.8499999999999996,
+      1.5867385008697255
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  },
+  {
+    "label": "door_left_centre",
+    "frame": 100,
+    "pixel": [
+      305,
+      393
+    ],
+    "plane_axis": 1,
+    "plane_value": 3.85,
+    "point_model": [
+      2.6903156847851886,
+      3.8500000000000005,
+      1.4042825097656657
+    ],
+    "provenance": "RGB ray intersect assumed common semantic plane; not independent depth measurement"
+  }
+]

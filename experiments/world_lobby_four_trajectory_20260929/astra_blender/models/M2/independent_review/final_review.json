@@ -1,0 +1,381 @@
+{
+  "review_type": "independent_final",
+  "method_id": "M2",
+  "reviewer_model_id": "gpt-6-astra",
+  "model_sha256": "c19f33ec434bbcf89137e67d81c283b9adfd48f42e993d8b29d63e08318f79a6",
+  "status": "LIMITED",
+  "review_completion": "complete",
+  "summary": "Major construction repairs verified, but prominent multi-view appearance and projection defects remain. Technically reviewable for honest limited-quality evaluation.",
+  "technical_protocol_blockers": {
+    "technical_corruption_detected": false,
+    "unauthorized_input_detected": false,
+    "missing_required_artifact_detected": false,
+    "review_completion_blocked": false,
+    "freezable_for_limited_evaluation": true,
+    "freeze_condition": "Coordinator must recheck scene.blend hash against this review; retain LIMITED quality and unresolved issues."
+  },
+  "issue_resolution": [
+    {
+      "id": "M2-I01",
+      "resolution": "FIXED",
+      "object_id": "wall_near_end",
+      "evidence_frames": [
+        90
+      ],
+      "verification": "Backing moved behind the near-end panels. Frame 90 now shows pale jointed panels. Repeated ray hits wall_near_end__panel_016 at y=-2.444999933 rather than backing.",
+      "evidence": [
+        "final_targeted_checks.json",
+        "final_record_checks.json"
+      ]
+    },
+    {
+      "id": "M2-I02",
+      "resolution": "FIXED_WITH_LIMITATION",
+      "object_id": "door_side_0",
+      "evidence_frames": [
+        66,
+        75,
+        90
+      ],
+      "verification": "Unsupported door leaf removed; door_side_0 is an open_passage with jamb/header/threshold component colliders. Repeated centre ray is unobstructed over 1.2 m; other closed door remains present. Original frame 75 confirms an aperture. Final frame 90 opening has weak visual contrast. No full passage-connectivity or clearance certification.",
+      "evidence": [
+        "final_targeted_checks.json",
+        "final_record_checks.json"
+      ]
+    },
+    {
+      "id": "M2-I03",
+      "resolution": "FIXED",
+      "object_id": "seat_far_03, seat_far_04, seat_far_05, seat_far_06",
+      "evidence_frames": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "verification": "Clipped modular cushion boundaries replace overlapping disks. Repeated evaluated-mesh surface intersection checks find no padded-seat intersections; black overlap seams are absent in the fixed final comparisons. Remaining silhouette fit is tracked in I04.",
+      "evidence": [
+        "final_targeted_checks.json",
+        "final_record_checks.json"
+      ]
+    },
+    {
+      "id": "M2-I04",
+      "resolution": "PARTIALLY_FIXED",
+      "object_id": "table_far, seat_far_01, seat_near_01, seat_near_02, seat_near_03, table_near",
+      "evidence_frames": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "verification": "Frame 135 now includes the foreground table at lower left and a seat at the bottom edge. Far seating/table remain too broad and displaced, particularly frames 0,45,135; table_far remains too far left relative to source in frame 135. Backrests and spacing still differ. Cameras remain supplied native poses under the declared rigid transform.",
+      "evidence": [
+        "../checks/comparison_v2_0000.jpg",
+        "../checks/comparison_v2_0045.jpg",
+        "../checks/comparison_v2_0090.jpg",
+        "../checks/comparison_v2_0135.jpg",
+        "../checks/comparison_v2_0179.jpg"
+      ]
+    },
+    {
+      "id": "M2-I05",
+      "resolution": "FIXED_WITH_LIMITATION",
+      "object_id": "mirror_cluster",
+      "evidence_frames": [
+        45,
+        66,
+        75,
+        90,
+        135
+      ],
+      "verification": "Mirror cap normals are planar within 0.028 degrees in repeated check. Final frames 45/135 no longer show the original severe segmented cap warping. Cluster projection and reflected content still differ from source; planar shading repair does not verify exact placement or reflection fidelity.",
+      "evidence": [
+        "final_targeted_checks.json",
+        "final_record_checks.json"
+      ]
+    },
+    {
+      "id": "M2-I06",
+      "resolution": "UNRESOLVED",
+      "object_id": "floor_inset, floor_stone, wall_mirror, wall_reception, glass_facade",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "verification": "Material/exposure changes are present, but every fixed final view still loses the source structured warm floor reflections. Broad smooth pale rings dominate the inset, particularly frame 90. Walls/glazing retain weak contrast and different grain/light response. Individual physical causes have not been isolated.",
+      "evidence": [
+        "../checks/comparison_v2_0000.jpg",
+        "../checks/comparison_v2_0045.jpg",
+        "../checks/comparison_v2_0090.jpg",
+        "../checks/comparison_v2_0135.jpg",
+        "../checks/comparison_v2_0179.jpg"
+      ]
+    },
+    {
+      "id": "M2-I07",
+      "resolution": "PARTIALLY_FIXED",
+      "object_id": "planter_yellow_left, planter_yellow_right, tree_reception_left, tree_reception_right, grass_window_mid, grass_wall_mid",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "verification": "Topiary crowns are now dense; yellow stems are narrower and grass geometry arches. Final yellow planting is still sparse, tall and twig-like compared with dense branching flowers, especially frames 45/90/135; grass envelopes and pot proportions remain mismatched, especially grass_wall_mid at frame 135.",
+      "evidence": [
+        "../checks/comparison_v2_0000.jpg",
+        "../checks/comparison_v2_0045.jpg",
+        "../checks/comparison_v2_0090.jpg",
+        "../checks/comparison_v2_0135.jpg",
+        "../checks/comparison_v2_0179.jpg"
+      ]
+    },
+    {
+      "id": "M2-I08",
+      "resolution": "PARTIALLY_FIXED",
+      "object_id": "pendant_00 through pendant_20",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "verification": "Explicit relief cells were added and several pendant positions changed, but the source constellation is not recovered. Frame 45 still has a clipped upper-left model pendant versus a fully visible source pendant; frames 0/135/179 show different size, spacing and overlap. Relief reads much flatter than source.",
+      "evidence": [
+        "../checks/comparison_v2_0000.jpg",
+        "../checks/comparison_v2_0045.jpg",
+        "../checks/comparison_v2_0090.jpg",
+        "../checks/comparison_v2_0135.jpg",
+        "../checks/comparison_v2_0179.jpg"
+      ]
+    },
+    {
+      "id": "M2-I09",
+      "resolution": "FIXED",
+      "object_id": "seat_far_01 through seat_far_06, seat_near_01 through seat_near_04, seat_end_01, seat_end_02, table_far, table_near, table_end, grass_window_mid, grass_wall_mid, grass_window_near, grass_reception_corner",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "verification": "Seat, coffee-table and specified grass-pot support gaps are below 3e-9 m in current bounds, which independently match evaluated geometry within 4e-9 m. Yellow planter bottoms penetrate inset by about 0.015 m; this is a minor residual overlap, not a remaining floating-support gap.",
+      "evidence": [
+        "final_targeted_checks.json",
+        "final_record_checks.json"
+      ]
+    }
+  ],
+  "unresolved_issues": [
+    {
+      "id": "M2-I04",
+      "severity": "medium",
+      "object_id": "table_far, seat_far_01, seat_near_01, seat_near_02, seat_near_03, table_near",
+      "evidence_frames": [
+        0,
+        45,
+        135,
+        179
+      ],
+      "evidence_type": "observed_final_visual_defect",
+      "description": "Frame 135 now includes the foreground table at lower left and a seat at the bottom edge. Far seating/table remain too broad and displaced, particularly frames 0,45,135; table_far remains too far left relative to source in frame 135. Backrests and spacing still differ. Cameras remain supplied native poses under the declared rigid transform.",
+      "recommended_action": "Fit table dimensions and seating centres/backrest orientations to several source views jointly, especially 45 and 135, retaining native metric scale and supplied cameras. Use the existing measured landmarks with their uncertainty; do not globally rescale the scene or tune only the stationary endpoint. Check these silhouettes again after the intersection repair."
+    },
+    {
+      "id": "M2-I06",
+      "severity": "high",
+      "object_id": "floor_inset, floor_stone, wall_mirror, wall_reception, glass_facade",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "evidence_type": "observed_final_visual_defect",
+      "description": "Material/exposure changes are present, but every fixed final view still loses the source structured warm floor reflections. Broad smooth pale rings dominate the inset, particularly frame 90. Walls/glazing retain weak contrast and different grain/light response. Individual physical causes have not been isolated.",
+      "recommended_action": "Tune reflection roughness/normal relief and lighting/exposure against the existing fixed comparisons. Restore the observed floor reflection structure through material and lighting behavior, retaining honest uncertainty about its exact cause. Preserve wall grain and dark architectural accents. Do not bake source-view imagery into the geometry or use camera-dependent fixes."
+    },
+    {
+      "id": "M2-I07",
+      "severity": "medium",
+      "object_id": "planter_yellow_left, planter_yellow_right, tree_reception_left, tree_reception_right, grass_window_mid, grass_wall_mid",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "evidence_type": "observed_final_visual_defect",
+      "description": "Topiary crowns are now dense; yellow stems are narrower and grass geometry arches. Final yellow planting is still sparse, tall and twig-like compared with dense branching flowers, especially frames 45/90/135; grass envelopes and pot proportions remain mismatched, especially grass_wall_mid at frame 135.",
+      "recommended_action": "Prioritize overall canopy height, width, density and occlusion before species-level detail: reduce yellow leaf width and tune branching envelopes, densify rounded topiary crowns, and add arch/variation to grass blades. Keep foliage colliders conservative but document their approximation."
+    },
+    {
+      "id": "M2-I08",
+      "severity": "medium",
+      "object_id": "pendant_00 through pendant_20",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "evidence_type": "observed_final_visual_defect",
+      "description": "Explicit relief cells were added and several pendant positions changed, but the source constellation is not recovered. Frame 45 still has a clipped upper-left model pendant versus a fully visible source pendant; frames 0/135/179 show different size, spacing and overlap. Relief reads much flatter than source.",
+      "recommended_action": "First reconcile pendant centre projections, diameter and suspension heights across fixed views; then improve woven relief within budget. Preserve stable pendant IDs and distinguish measured placement constraints from inferred details. If fine weave is deferred, retain it explicitly in final limitations."
+    },
+    {
+      "id": "M2-F01",
+      "severity": "low",
+      "object_id": "iteration_log.json, input_access_log.json, analysis/camera_checks.json",
+      "evidence_frames": [],
+      "evidence_type": "observed_record_inconsistency",
+      "description": "iteration_log declares one input-consistency pass, but current checks/input_v2/report.json is a second 180-frame pass tied to final hash. Access log script hash for build_scene.py is stale after repair and does not list all v2 review/repair activity. camera_checks visual assessment still describes the repaired dark-wall defect. Manifest status ready_for_final_review is appropriate to the stage but differs from the generic literal ready_for_independent_review convention.",
+      "recommended_action": "Reconcile final provenance/budget records with both completed passes and current script hash; mark old visual assessment as initial-only. This review records two observed passes; no budget violation found."
+    },
+    {
+      "id": "M2-F02",
+      "severity": "low",
+      "object_id": "planter_yellow_left, planter_yellow_right",
+      "evidence_frames": [
+        0,
+        45,
+        90,
+        135,
+        179
+      ],
+      "evidence_type": "measured_bound_overlap",
+      "description": "Yellow planter bases extend approximately 0.015 m into floor_inset. Not assessed as a severe visible defect.",
+      "recommended_action": "Retain as an explicit minor intersection limitation or align base/floor if further author work is undertaken."
+    }
+  ],
+  "checks_performed": [
+    "Directly inspected six original contact sheets, six original RGBs including all fixed views, and five actual final author comparisons.",
+    "Generic Blender inspection PASS: 1664 mesh objects, 301090 triangles, finite mesh coordinates, no missing image dependencies.",
+    "70 semantic objects cover all 1664 meshes exactly once; evaluated bounds agree within 3.73e-9 m. Read associated colliders and provenance/evidence records.",
+    "180 camera transforms agree with supplied packet under rigid unit-scale model transform within 1.15e-6; intrinsics, indices and timestamps match.",
+    "Repeated actual artifact wall/door rays, evaluated padded-seat intersection tests and mirror cap normal measurements; support record bounds independently agree with evaluated meshes.",
+    "Actual scene uses CPU Cycles, 12 samples, 640x480, four threads, unit scale 1. GLB import PASS and component names match semantic records.",
+    "Packet and all five fixed RGB/NPZ hashes match. Checked depth metadata and current existing input-only consistency report tied to exact candidate hash; no additional full-input pass.",
+    "Read final repair code/notes and build log; observed two versions, ten checking renders and two input-only passes (iteration log pass count stale).",
+    "Recomputed actual scene hash after checks and before writing review; no geometry/build changes."
+  ],
+  "rendering_views_added": 0,
+  "extra_render_attempts": [],
+  "additional_full_input_bvh_passes": 0,
+  "budget_observed": {
+    "complete_scene_versions": 2,
+    "checking_render_attempts": 10,
+    "completed_checking_renders": 10,
+    "input_consistency_passes": 2,
+    "declared_input_consistency_passes": 1,
+    "max_versions": 5,
+    "max_checking_renders": 60,
+    "max_input_consistency_passes": 3
+  },
+  "input_depth_conflicts": {
+    "scope": "Current candidate versus own supplied predicted input depth only; no GT",
+    "fixed_frame_mae_m": {
+      "0": 0.6456129115022281,
+      "45": 0.5610517004932407,
+      "90": 0.4280470551512499,
+      "135": 0.5210731032860392,
+      "179": 5.917371631950932
+    },
+    "report": "../checks/input_v2/report.json",
+    "independently_read_fixed_depth_medians_m": {
+      "0": 5.657224655151367,
+      "45": 5.710750579833984,
+      "90": 5.800194263458252,
+      "135": 5.607436180114746,
+      "179": 0.7776257395744324
+    }
+  },
+  "input_files_read": [
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/configs/modelling_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/configs/review_contract.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/000_029.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/030_059.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/060_089.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/090_119.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/120_149.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/contact_sheets/150_179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/geometry/0000.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/geometry/0045.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/geometry/0090.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/geometry/0135.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/geometry/0179.npz",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/packet.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0000.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0045.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0075.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0090.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0135.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/inputs/M2/rgb/0179.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/camera_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/measurements.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/object_inventory.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/patch_v2.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/transform.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/analysis/verify_repairs_v2.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/build_scene.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/cameras.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/artifact_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/build_v2_coordinator.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/comparison_v2_0000.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/comparison_v2_0045.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/comparison_v2_0090.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/comparison_v2_0135.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/comparison_v2_0179.jpg",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/input_v2/report.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/inspection_v2.log",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/repair_verification_v2.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/v2_0000.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/v2_0045.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/v2_0090.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/v2_0135.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/checks/v2_0179.png",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/colliders.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/final_artifact_inspection.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/final_record_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/final_record_checks.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/final_targeted_checks.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/final_targeted_checks.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/initial_review.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/initial_review.md",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/independent_review/write_final_review.py",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/input_access_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/iteration_log.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/layout.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/modelling_manifest.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/objects.json",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/scene.blend",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/models/M2/scene.glb",
+    "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/astra_blender/tools/inspect_scene.py"
+  ],
+  "access_log": "final_input_access_log.json",
+  "evidence_artifacts": [
+    "final_artifact_inspection.json",
+    "final_targeted_checks.json",
+    "final_record_checks.json"
+  ],
+  "limitations": [
+    "Final review of this exact M2 hash only; no GT, held-out, other-method, parent-plan or historical scene access. No subagents.",
+    "No extra renders. Existing author comparisons were inspected and matched numerically to source RGB and final render PNGs within ordinary JPEG differences (mean absolute byte differences 1.15\u20131.76). Build logs and matching candidate checks support association; renders were not independently reproduced.",
+    "Targeted checks reuse inspected author verification logic executed by the reviewer on the actual current artifact. They test padded-seat surface intersections, selected rays and cap normals; they do not establish exhaustive collisions, duplicates, topology, watertightness or passage connectivity.",
+    "GLB imported successfully with all expected mesh names; material/render parity with Blender was not independently rendered.",
+    "No evidence of unauthorized input found in scoped declarations/current code. This is not an OS-level forensic proof of author access.",
+    "Supplied depth is predicted input and conflicts with stable RGB: independently read frame 179 median 0.778 m versus roughly 5.6\u20135.8 m in the other fixed frames. Current input-only MAEs are recorded without treating them as GT accuracy or using them to excuse visual defects.",
+    "Hidden backs, thickness, materials, lighting, fine plant/pendant structure and physical coefficients are inferred. Furniture/foliage AABB colliders remain approximations.",
+    "Author repair intent is documented in analysis/patch_v2.py, build_scene.py and checks/repair_verification_v2.json; no separate comprehensive issue-by-issue repair narrative was present in the discovered files. Final resolution above is the reviewer assessment."
+  ]
+}

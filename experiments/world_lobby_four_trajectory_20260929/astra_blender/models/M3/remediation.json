@@ -1,0 +1,8 @@
+{
+  "method": "M3",
+  "strategy": "discard entire v2; clean new author starts ONLY from v1 script/initial review/unchanged original measurements and source inputs",
+  "v2_scene_or_patch_copied": false,
+  "initial_script_sha256": "dc59de10086aee312b0dbf865b742c9bcc9c55e3cc516649089303c069c93459",
+  "input_scope": "own-method source input and current clean directory only",
+  "prohibited_process_metadata": "No global process args, /proc, other session/logs. Only own tool IDs and own logs."
+}

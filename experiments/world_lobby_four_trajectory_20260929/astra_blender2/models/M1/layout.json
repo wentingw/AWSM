@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "coordinate_system": "Z up; X glass-to-solid wall; Y south-to-reception",
+  "units": "metres, assumed RGB-only scale",
+  "room": {
+    "width": 8,
+    "length": 16,
+    "height": 4.6
+  },
+  "mirror_wall": {
+    "x": 6.8,
+    "y_min": 3.5,
+    "y_max": 11.0,
+    "recess_wall_x": 8
+  },
+  "seating_groups": [
+    {
+      "id": "north",
+      "center": [
+        3.1,
+        7.9
+      ],
+      "facing_y": -1
+    },
+    {
+      "id": "south",
+      "center": [
+        3.8,
+        3.3
+      ],
+      "facing_y": 1
+    }
+  ],
+  "planter_dividers_y": [
+    9.8
+  ],
+  "reception": {
+    "center": [
+      4.1,
+      15.15,
+      0.55
+    ],
+    "dimensions": [
+      3.2,
+      0.85,
+      1.1
+    ]
+  },
+  "provenance": "fresh visual interpretation of all180 RGB; no external geometry or cameras",
+  "seat_offsets": [
+    [
+      -1.1,
+      -0.25
+    ],
+    [
+      -0.95,
+      0.73
+    ],
+    [
+      0,
+      1.1
+    ],
+    [
+      1.0,
+      0.7
+    ],
+    [
+      1.3,
+      -0.3
+    ]
+  ],
+  "side_seats_xy": [
+    [
+      5.5,
+      7.1
+    ],
+    [
+      5.5,
+      6.14
+    ],
+    [
+      5.2,
+      5.23
+    ]
+  ],
+  "side_table_xy": [
+    4.2,
+    5.8
+  ],
+  "parameter_provenance": "RGB-only inference conditional on unchanged v1 estimated cameras. Cross-view disagreements in analysis/author_repair/rgb_ray_plane_measurements.json; no input depth.",
+  "uncertainties": {
+    "north_group_xy_m": 1.2,
+    "divider_y_m": 0.8,
+    "side_seats_xy_m": 1.2,
+    "scale_anchor_height_m": [
+      2.6,
+      0.35
+    ],
+    "south_group": "retained original estimate; sample82 implies more southern table than other views",
+    "partition": "retained because moving a common wall to clear camera108 conflicts with61/74/82"
+  }
+}

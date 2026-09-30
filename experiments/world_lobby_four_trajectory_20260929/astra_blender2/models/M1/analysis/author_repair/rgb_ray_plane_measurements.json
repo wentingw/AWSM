@@ -1,0 +1,363 @@
+{
+  "method_id": "M1",
+  "camera_sha256": "ff42bb139e729aa7bd795107c6a0fe2d62c2c422496f91ebb526b61ed4c81b26",
+  "source_resolution": [
+    1280,
+    960
+  ],
+  "observations": [
+    {
+      "sample_index": 33,
+      "landmark": "north_table",
+      "pixel_uv": [
+        574,
+        630
+      ],
+      "pixel_region": [
+        559,
+        615,
+        589,
+        645
+      ],
+      "assumed_plane_z_m": 0.454,
+      "conditional_world_xyz_m": [
+        3.7182407148879033,
+        7.4577459629758645,
+        0.45399999999999996
+      ],
+      "conditional_optical_z_m": 5.300132653605619,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15,
+      "fit_signed_pixel_residual": [
+        -53.65799650292979,
+        -8.202305974408773
+      ]
+    },
+    {
+      "sample_index": 155,
+      "landmark": "north_table",
+      "pixel_uv": [
+        542,
+        574
+      ],
+      "pixel_region": [
+        527,
+        559,
+        557,
+        589
+      ],
+      "assumed_plane_z_m": 0.454,
+      "conditional_world_xyz_m": [
+        3.3758641663504854,
+        7.898536736491129,
+        0.45399999999999996
+      ],
+      "conditional_optical_z_m": 5.71168301048987,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15,
+      "fit_signed_pixel_residual": [
+        -19.447062104525003,
+        15.779185797086484
+      ]
+    },
+    {
+      "sample_index": 129,
+      "landmark": "north_table",
+      "pixel_uv": [
+        475,
+        862
+      ],
+      "pixel_region": [
+        460,
+        847,
+        490,
+        877
+      ],
+      "assumed_plane_z_m": 0.454,
+      "conditional_world_xyz_m": [
+        1.6395132943719537,
+        6.798710637231078,
+        0.4540000000000002
+      ],
+      "conditional_optical_z_m": 3.623629282200369,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15,
+      "fit_signed_pixel_residual": [
+        379.12860597605027,
+        -13.007405260795508
+      ]
+    },
+    {
+      "sample_index": 129,
+      "landmark": "left_planter_front_top",
+      "pixel_uv": [
+        640,
+        672
+      ],
+      "pixel_region": [
+        625,
+        657,
+        655,
+        687
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        1.6328573089136957,
+        9.099815816428785,
+        0.7
+      ],
+      "conditional_optical_z_m": 5.770748779955109,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 129,
+      "landmark": "right_planter_front_top",
+      "pixel_uv": [
+        900,
+        722
+      ],
+      "pixel_region": [
+        885,
+        707,
+        915,
+        737
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        3.5037368038524885,
+        8.725676552811704,
+        0.7
+      ],
+      "conditional_optical_z_m": 4.7799901587660605,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 33,
+      "landmark": "left_planter_front_top",
+      "pixel_uv": [
+        530,
+        520
+      ],
+      "pixel_region": [
+        515,
+        505,
+        545,
+        535
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        2.966149080911312,
+        9.637219732225253,
+        0.7
+      ],
+      "conditional_optical_z_m": 7.438776185740419,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 33,
+      "landmark": "right_planter_front_top",
+      "pixel_uv": [
+        725,
+        529
+      ],
+      "pixel_region": [
+        710,
+        514,
+        740,
+        544
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        4.864463888697113,
+        9.68771020418123,
+        0.7
+      ],
+      "conditional_optical_z_m": 7.393130761403075,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 91,
+      "landmark": "right_planter_front_top",
+      "pixel_uv": [
+        446,
+        448
+      ],
+      "pixel_region": [
+        431,
+        433,
+        461,
+        463
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        4.804290933687348,
+        9.222031358422706,
+        0.7
+      ],
+      "conditional_optical_z_m": 6.111701338288097,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 91,
+      "landmark": "left_planter_front_top",
+      "pixel_uv": [
+        698,
+        445
+      ],
+      "pixel_region": [
+        683,
+        430,
+        713,
+        460
+      ],
+      "assumed_plane_z_m": 0.7,
+      "conditional_world_xyz_m": [
+        2.7418644891788437,
+        9.109416090905988,
+        0.7
+      ],
+      "conditional_optical_z_m": 6.417752796730367,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 61,
+      "landmark": "south_seat_A",
+      "pixel_uv": [
+        759,
+        695
+      ],
+      "pixel_region": [
+        744,
+        680,
+        774,
+        710
+      ],
+      "assumed_plane_z_m": 0.54,
+      "conditional_world_xyz_m": [
+        5.340521356958055,
+        6.984702081724879,
+        0.54
+      ],
+      "conditional_optical_z_m": 4.536536388712223,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 61,
+      "landmark": "south_seat_B",
+      "pixel_uv": [
+        883,
+        717
+      ],
+      "pixel_region": [
+        868,
+        702,
+        898,
+        732
+      ],
+      "assumed_plane_z_m": 0.54,
+      "conditional_world_xyz_m": [
+        5.343729645703997,
+        6.277296582559379,
+        0.54
+      ],
+      "conditional_optical_z_m": 4.355410739281619,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 61,
+      "landmark": "south_seat_C",
+      "pixel_uv": [
+        1014,
+        772
+      ],
+      "pixel_region": [
+        999,
+        757,
+        1029,
+        787
+      ],
+      "assumed_plane_z_m": 0.54,
+      "conditional_world_xyz_m": [
+        4.997197343007954,
+        5.649370375320836,
+        0.54
+      ],
+      "conditional_optical_z_m": 3.8641456998843284,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 74,
+      "landmark": "south_seat_edge",
+      "pixel_uv": [
+        1188,
+        625
+      ],
+      "pixel_region": [
+        1173,
+        610,
+        1203,
+        640
+      ],
+      "assumed_plane_z_m": 0.54,
+      "conditional_world_xyz_m": [
+        6.034129869123119,
+        5.056679507205554,
+        0.54
+      ],
+      "conditional_optical_z_m": 5.118602353498809,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    },
+    {
+      "sample_index": 82,
+      "landmark": "south_table",
+      "pixel_uv": [
+        1130,
+        621
+      ],
+      "pixel_region": [
+        1115,
+        606,
+        1145,
+        636
+      ],
+      "assumed_plane_z_m": 0.454,
+      "conditional_world_xyz_m": [
+        4.947017208560995,
+        1.7340527598678257,
+        0.4540000000000002
+      ],
+      "conditional_optical_z_m": 11.422275353000416,
+      "input_depth_residual_m": null,
+      "depth_reference": "N/A; RGB-only; ray-plane distance depends on assumed camera/height",
+      "pixel_uncertainty": 15
+    }
+  ],
+  "north_table_joint_fit_xy_m": [
+    3.3210789018902402,
+    7.553022574364486
+  ],
+  "warning": "Large cross-view disagreement retained; positions are inferred compromises, cameras are unchanged."
+}

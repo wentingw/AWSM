@@ -1,0 +1,97 @@
+{
+  "method_id": "M3",
+  "model_id": "gpt-6-astra",
+  "status": "frozen_for_independent_GT_evaluation",
+  "quality_status": "limited",
+  "model_from_input": [
+    [
+      0.9422015411352354,
+      -0.2654805704368217,
+      0.20439256983297338,
+      2.3
+    ],
+    [
+      0.2594461123746232,
+      0.9641162101741363,
+      0.05628186255939516,
+      4.14
+    ],
+    [
+      -0.21199993079263385,
+      0.0,
+      0.9772696809703646,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1.0,
+  "revisions": 3,
+  "input_bvh_passes": 3,
+  "final_input_pass_owner": "coordinator",
+  "checking_render_count": 15,
+  "unresolved_issues": [
+    "M3 DA3 metric scale collapses on stationary samples; sample 179 median depth ~0.5m conflicts with stable same-view ~6m. No scale correction was applied.",
+    "Far wall and glass positions vary by roughly 0.3–1.2m across stable depth frames.",
+    "Desk far-end dimensions, hidden backs, joinery, material parameters, and exact light placement inferred.",
+    "Plants reconstructed as semantic procedural foliage; leaf topology is assumed.",
+    "Two near seating modules and lamp placements are occluded across many views.",
+    "M3-I01: Clipped contact silhouettes are inferred. Original center/size projection discrepancies remain; no exhaustive collision check or independent resolution claimed.",
+    "M3-I02: Door-state evidence is the geometry author’s recorded RGB interpretation. This completion author did not independently fit leaf angles or inspect unseen space beyond the wall; the doorway remains visually approximate.",
+    "M3-I03: All five comparisons retain smooth opaque pendant undersides and pale ceiling slats instead of prominent weave and dark bands.",
+    "M3-I04: Repeated floor highlight structure and pendant reflections remain poorly matched; floor/wall appearance is washed out and panel/grain contrast weak.",
+    "M3-I05: Troughs remain sparse, mirror-vase foliage broad and spiky, and reception crowns too faint compared with the source RGB panels.",
+    "M3-I06: Furniture size/placement, trough separation and column width still disagree visually, particularly in views 0/45/90/135.",
+    "M3-I07: Relation semantics were not independently rechecked here. Historical commands are copied literally from the supplied record, not independently recovered from its provenance source. Historical timing gaps are not invented; iteration_log.json is preserved, with final budget accounting supplied here."
+  ],
+  "input_packet_sha256": "76552b8511ebc6433922bb552e5870a92757707f3378b487c80f795986e964e2",
+  "independent_author": true,
+  "input_scope": "M3 only",
+  "no_gt_used": true,
+  "render_settings": {
+    "engine": "CPU Cycles",
+    "samples": 12,
+    "resolution": [
+      640,
+      480
+    ],
+    "threads": 4
+  },
+  "record_completion": {
+    "geometry_author": "Independent new repair author started from supplied own-method v1 only; rejected source v2 was not used.",
+    "geometry_session_end": "Geometry session stalled during notes and was stopped, as stated in the completion assignment.",
+    "records_author": "Fresh GPT-6 Astra M3-only scoped record completion author.",
+    "attribution": "This repair response and completion prose were written by the fresh records author, not claimed or endorsed by the earlier geometry author.",
+    "source_v2": "Rejected; not read by this completion author.",
+    "evidence_basis": "Literal recorded author commands, own-method initial issue descriptions, remediation, existing check summaries and five existing v3 RGB/render comparisons.",
+    "new_geometry_changes": false,
+    "new_renders": 0,
+    "new_checks": 0,
+    "new_input_passes": 0,
+    "independent_review": "Final reviewer already independently inspecting, per assignment; final review files were not read or edited."
+  },
+  "repair_response": "repair_response.json",
+  "recorded_model_sha256": "00cd43eef3b4a6b2b2b169e8a7eda787dc57222dc501a3a9be09f39af5f46a9b",
+  "independent_review_complete": true,
+  "final_review_pending": false,
+  "final_review_status": "LIMITED",
+  "input_bvh_pass_count": 3,
+  "prior_input_pass_records": [
+    {
+      "version": 1,
+      "report": "checks/prior_input_passes/v1_report.json",
+      "candidate_status": "original_initial"
+    },
+    {
+      "version": 2,
+      "report": "checks/prior_input_passes/v2_report.json",
+      "candidate_status": "rejected_scope_incident"
+    }
+  ],
+  "clean_replacement": true,
+  "frozen_utc": "2026-09-30T00:33:00Z"
+}

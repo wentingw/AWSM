@@ -1,0 +1,145 @@
+{
+  "role": "author actual comparison inspection",
+  "records": [
+    {
+      "version": 2,
+      "sample_index": 33,
+      "comparison_sheet": "checks/v2/0033_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Rod spikes removed; wall seams backed. Pendant foreground closer to source silhouette; far hanging-lamp arrangement and end-wall depth remain inconsistent. Far seat group too boxy; patterned floor subdued."
+    },
+    {
+      "version": 2,
+      "sample_index": 61,
+      "comparison_sheet": "checks/v2/0061_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Flat mirror discs now lower/wider with ten measured circles; source silhouette broadly reproduced. No seam or portal misses. Seat shared solids no longer intersect but backs remain too high/blocky."
+    },
+    {
+      "version": 2,
+      "sample_index": 74,
+      "comparison_sheet": "checks/v2/0074_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Mirror fit and open service aperture visible; bounded returns give real depth. Recess corner closer to source. Foreground chair shape and lamp rim/profile remain approximate."
+    },
+    {
+      "version": 2,
+      "sample_index": 82,
+      "comparison_sheet": "checks/v2/0082_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: V3 restores visible recess return panels after v2 backing-side bug. Major pendant correspondence/order errors remain: some source lamps absent at matching locations. Plant shapes coarse despite fixed branching. Backing incorrectly covered near/return panels; repaired in v3."
+    },
+    {
+      "version": 2,
+      "sample_index": 91,
+      "comparison_sheet": "checks/v2/0091_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: V3 restores near-wall panels; no thin depth leaks. Planters same two assemblies; foliage and near-end lamps incomplete. Floor/lighting weaker than source. Backing incorrectly covered near/return panels; repaired in v3."
+    },
+    {
+      "version": 2,
+      "sample_index": 100,
+      "comparison_sheet": "checks/v2/0100_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Desk intrusion largely removed while keeping source-camera projection. Window door frames thicker, still too stylized. Lamp ordering remains imperfect."
+    },
+    {
+      "version": 2,
+      "sample_index": 108,
+      "comparison_sheet": "checks/v2/0108_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Desk front-left silhouette aligns better; source planters/seat positions still differ. Floor reflections overly smooth and lamp shape/order unresolved."
+    },
+    {
+      "version": 2,
+      "sample_index": 118,
+      "comparison_sheet": "checks/v2/0118_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Desk improved but own DA3 discrepancy persists; column and plants remain approximate. No shell-gap misses."
+    },
+    {
+      "version": 2,
+      "sample_index": 129,
+      "comparison_sheet": "checks/v2/0129_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Dominant foreground pendant moved into correct source location. Far lamps remain partly mismatched; seated forms and planters simplified. Desk DA3 residual worsens despite RGB corner agreement."
+    },
+    {
+      "version": 2,
+      "sample_index": 155,
+      "comparison_sheet": "checks/v2/0155_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V2: Forward view confirms corrected rods and supported shell; source pattern, seating backs and vegetation still approximate. End-wall prediction conflict remains pronounced."
+    },
+    {
+      "version": 3,
+      "sample_index": 33,
+      "comparison_sheet": "checks/v3/0033_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Rod spikes removed; wall seams backed. Pendant foreground closer to source silhouette; far hanging-lamp arrangement and end-wall depth remain inconsistent. Far seat group too boxy; patterned floor subdued."
+    },
+    {
+      "version": 3,
+      "sample_index": 61,
+      "comparison_sheet": "checks/v3/0061_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Flat mirror discs now lower/wider with ten measured circles; source silhouette broadly reproduced. No seam or portal misses. Seat shared solids no longer intersect but backs remain too high/blocky."
+    },
+    {
+      "version": 3,
+      "sample_index": 74,
+      "comparison_sheet": "checks/v3/0074_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Mirror fit and open service aperture visible; bounded returns give real depth. Recess corner closer to source. Foreground chair shape and lamp rim/profile remain approximate."
+    },
+    {
+      "version": 3,
+      "sample_index": 82,
+      "comparison_sheet": "checks/v3/0082_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V3 restores visible recess return panels after v2 backing-side bug. Major pendant correspondence/order errors remain: some source lamps absent at matching locations. Plant shapes coarse despite fixed branching."
+    },
+    {
+      "version": 3,
+      "sample_index": 91,
+      "comparison_sheet": "checks/v3/0091_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "V3 restores near-wall panels; no thin depth leaks. Planters same two assemblies; foliage and near-end lamps incomplete. Floor/lighting weaker than source."
+    },
+    {
+      "version": 3,
+      "sample_index": 100,
+      "comparison_sheet": "checks/v3/0100_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk intrusion largely removed while keeping source-camera projection. Window door frames thicker, still too stylized. Lamp ordering remains imperfect."
+    },
+    {
+      "version": 3,
+      "sample_index": 108,
+      "comparison_sheet": "checks/v3/0108_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk front-left silhouette aligns better; source planters/seat positions still differ. Floor reflections overly smooth and lamp shape/order unresolved."
+    },
+    {
+      "version": 3,
+      "sample_index": 118,
+      "comparison_sheet": "checks/v3/0118_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Desk improved but own DA3 discrepancy persists; column and plants remain approximate. No shell-gap misses."
+    },
+    {
+      "version": 3,
+      "sample_index": 129,
+      "comparison_sheet": "checks/v3/0129_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Dominant foreground pendant moved into correct source location. Far lamps remain partly mismatched; seated forms and planters simplified. Desk DA3 residual worsens despite RGB corner agreement."
+    },
+    {
+      "version": 3,
+      "sample_index": 155,
+      "comparison_sheet": "checks/v3/0155_comparison.jpg",
+      "actually_inspected": true,
+      "notes": "Forward view confirms corrected rods and supported shell; source pattern, seating backs and vegetation still approximate. End-wall prediction conflict remains pronounced."
+    }
+  ]
+}

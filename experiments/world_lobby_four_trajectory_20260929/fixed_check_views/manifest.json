@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "purpose": "future visual check renders; not used by the already frozen run",
+  "selection": "select exactly ten position-uniform closed-loop views; among all deterministic equal-arclength phases, maximize union coverage of the scene surface observed by all 180 GT depth views, then minimize gap error",
+  "selection_scope": "coordinator-only GT pose used to choose frame identities; pose matrices are not copied into this view package",
+  "sample_manifest": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/data/depth_samples/modeling_180.json",
+  "sample_manifest_sha256": "4b86ed69522426cf3a6138a76bc43b5f95ae5d6b48beac7613a2e8c964fb6dc0",
+  "pose_source": "/home/hchen/Documents/astraBlenderTest/vio-reconstruction/sessions/lobby_orb_success_20260929T123153/ground_truth/camera.csv",
+  "pose_source_sha256": "5fe8cf6725bd2a755be665e5f5eca21555bdd373586ede7988a393747e83b14f",
+  "gt_depth_cache": "/home/hchen/Documents/astraBlenderTest/world_lobby_four_trajectory_20260929/evaluation/depth/gt/modeling_180/gt_depth_modeling_180.npz",
+  "gt_depth_cache_sha256": "a95c52b1052ec2de533d129a4a0112df956d23ace6ebb6375b47d9d634ea1a44",
+  "anchor_count": 10,
+  "anchor_sample_indices": [
+    33,
+    61,
+    74,
+    82,
+    91,
+    100,
+    108,
+    118,
+    129,
+    155
+  ],
+  "view_count": 10,
+  "loop_length_m": 44.52660578541851,
+  "target_gap_m": 4.452660578541851,
+  "selection_phase_m": 3.613340167049385,
+  "actual_circular_gaps_m": [
+    4.309021806923221,
+    4.76413576372544,
+    4.0985305756063735,
+    4.40411405474023,
+    4.717140720038444,
+    4.463270872649861,
+    4.611270364473686,
+    4.303902514184358,
+    4.373474040888297,
+    4.481745072188602
+  ],
+  "max_gap_error_m": 0.35413000293547725,
+  "coverage_definition": "union of 0.25 m world-space surface voxels hit by the selected GT depth views divided by the union hit by all 180 modeling views",
+  "coverage_limit": "covers the scene surface observable in the 180-view input, not hidden or fully occluded GT surfaces",
+  "surface_voxel_size_m": 0.25,
+  "observed_surface_voxels_all_180": 14719,
+  "observed_surface_voxels_selected_views": 11812,
+  "observed_surface_coverage": 0.8025001698484951,
+  "views": [
+    {
+      "view_order": 0,
+      "sample_index": 33,
+      "source_index": 1029,
+      "timestamp_ns": 280440013320,
+      "image": "view_00_sample_0033_source_1029.png",
+      "image_sha256": "c618f6e99ed8dca544dd13f90f8659cc4eb7c066e1e143b5525b043656a3506c",
+      "closed_loop_arclength_fraction": 0.08115013716658984
+    },
+    {
+      "view_order": 1,
+      "sample_index": 61,
+      "source_index": 1694,
+      "timestamp_ns": 307040014584,
+      "image": "view_01_sample_0061_source_1694.png",
+      "image_sha256": "e3edd018dfaf4353cad09e900375c63c9a36e75158b3be7ca45c35e39bbdbed9",
+      "closed_loop_arclength_fraction": 0.17792422831760077
+    },
+    {
+      "view_order": 2,
+      "sample_index": 74,
+      "source_index": 2003,
+      "timestamp_ns": 319400015171,
+      "image": "view_02_sample_0074_source_2003.png",
+      "image_sha256": "d539abdb5f344c9d67f54137124ce1490d661fb201d14aa061816062a1365bb6",
+      "closed_loop_arclength_fraction": 0.284919488335502
+    },
+    {
+      "view_order": 3,
+      "sample_index": 82,
+      "source_index": 2193,
+      "timestamp_ns": 327000015532,
+      "image": "view_03_sample_0082_source_2193.png",
+      "image_sha256": "d3680fca3eda06984780632443b1a1eec10afb304c224b8bcf30e8a33d463ec6",
+      "closed_loop_arclength_fraction": 0.3769662658365293
+    },
+    {
+      "view_order": 4,
+      "sample_index": 91,
+      "source_index": 2407,
+      "timestamp_ns": 335560015938,
+      "image": "view_04_sample_0091_source_2407.png",
+      "image_sha256": "8134f48aa308e837b7dd52c8669b698032ae3dd04d09189128673c7d36f87ddf",
+      "closed_loop_arclength_fraction": 0.4758759845778236
+    },
+    {
+      "view_order": 5,
+      "sample_index": 100,
+      "source_index": 2621,
+      "timestamp_ns": 344120016345,
+      "image": "view_05_sample_0100_source_2621.png",
+      "image_sha256": "4c12172ec8d053abcf6233d7424c63a55bf57df8d27838b883f2e9a96caf0921",
+      "closed_loop_arclength_fraction": 0.5818158072261335
+    },
+    {
+      "view_order": 6,
+      "sample_index": 108,
+      "source_index": 2811,
+      "timestamp_ns": 351720016706,
+      "image": "view_06_sample_0108_source_2811.png",
+      "image_sha256": "5e5d07ef9ee0c166c24160b228dfc802ab244ac6002e8cfa76e450ee4a385565",
+      "closed_loop_arclength_fraction": 0.6820540983314367
+    },
+    {
+      "view_order": 7,
+      "sample_index": 118,
+      "source_index": 3049,
+      "timestamp_ns": 361240017158,
+      "image": "view_07_sample_0118_source_3049.png",
+      "image_sha256": "a6e86ec6239209240720ef98a36441be0e37ba8482364170beaf27246da997b4",
+      "closed_loop_arclength_fraction": 0.7856162334444566
+    },
+    {
+      "view_order": 8,
+      "sample_index": 129,
+      "source_index": 3310,
+      "timestamp_ns": 371680017654,
+      "image": "view_08_sample_0129_source_3310.png",
+      "image_sha256": "a29c42eb876c91cde2fc982d66873276d8c9ebd3bc29bd2390a7a7b7791ede72",
+      "closed_loop_arclength_fraction": 0.8822753530487133
+    },
+    {
+      "view_order": 9,
+      "sample_index": 155,
+      "source_index": 3928,
+      "timestamp_ns": 396400018828,
+      "image": "view_09_sample_0155_source_3928.png",
+      "image_sha256": "5e28a655cef6f903a5c88b8c6f124acd6a91e8bfa3a98a504dc0abe77d9c5e63",
+      "closed_loop_arclength_fraction": 0.9804969435729234
+    }
+  ]
+}
