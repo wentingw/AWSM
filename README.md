@@ -1,49 +1,55 @@
 # SceneWeft
 
-**New source snapshot:** the [September 29 World Lobby experiment](experiments/world_lobby_four_trajectory_20260929/README.md) adds ORB-SLAM3/ViPE + DA3 pipelines, both saved Astra/Blender modelling runs, fixed ten-view checks and evaluation/publication tools. Its method definitions are separate from the earlier experiment described below.
+**Geometry-grounded reconstruction of editable 3D worlds.**
 
-**Geometry-grounded agentic reconstruction of editable, executable 3D scenes.**
+Reconstruction code accompanying [**AWSM: Agentic World Simulation and Mapping**](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/). SceneWeft turns RGB observations and geometric evidence into structured Blender scene programs: explicit objects, spatial relationships, and editable geometry—not just a point cloud or a rendered view. It builds on pose estimation and depth reconstruction, using an agent to construct, inspect, and refine the scene.
 
-SceneWeft is the private research repository for a controlled World Lobby experiment. GPT-6 Astra uses RGB and optional geometric evidence to author Blender scene programs with named parts, spatial relations, renderable cameras, and collision proxies. This studies an agentic reconstruction workflow; it is not a learned predictive world model.
+[中文](README.zh-CN.md) · [Experiment & reproduction](experiments/world_lobby_four_trajectory_20260929/README.md) · [Third-party notices](THIRD_PARTY.md)
 
-[中文说明](README.zh-CN.md) · [Code map](CODEMAP.md) · [Research positioning](PROJECT_POSITIONING.md)
+## Four reconstruction routes
 
-Article and assets:
+The World Lobby study compares four routes with a shared RGB observation set and scene-authoring objective. All use an Astra–Blender workflow; their geometric inputs differ.
 
-- Blog: https://wentingw.github.io/astra-world-model-blog/
-- English: https://wentingw.github.io/astra-world-model-blog/en.html
-- Assets (currently private; HF access required): https://huggingface.co/datasets/Ooliva/astra-world-model-blog
+| Method | Camera poses | Depth evidence |
+| --- | --- | --- |
+| **M1 · RGB-only** | No estimated trajectory | None |
+| **M2 · ViPE** | ViPE, from RGB | Pose-conditioned Depth Anything 3 |
+| **M3 · ORB-SLAM3** | ORB-SLAM3, from RGB + IMU | Pose-conditioned Depth Anything 3 |
+| **M4 · GT-pose reference** | Ground-truth camera poses | Pose-conditioned Depth Anything 3 |
 
-## Methods
+M4 supplies reference poses, **not GT geometry or GT depth**, to the modeler. Evaluation separates pose accuracy, scene geometry, depth, and appearance. This is a single-scene system comparison, not a claim that one metric captures reconstruction quality or that the routes isolate a single variable.
 
-- **M1 RGB-only:** sampled RGB → Astra → Blender. No native metric camera estimate; supplementary Sim(3) registration is not metric recovery.
-- **M2 ViPE:** video → ViPE near-metric pose/depth → Astra → Blender.
-- **M3 OpenVINS + MapAnything:** RGB+IMU+calibration → OpenVINS metric pose → pose-conditioned MapAnything depth → Astra → Blender.
-- **M4 GT-pose ablation:** RGB + simulator GT pose → MapAnything → Astra → Blender. GT pose is an oracle input, not an estimated-pose result.
-- **B1:** direct ViPE fusion, sharing M2's frontend.
-- **B2:** calibrated RGB-only / known-intrinsics MapAnything baseline.
-- **B2p:** direct fusion sharing M3's OpenVINS+MapAnything inputs, without Astra.
+## Implementation
 
-## Evidence and limits
+The [September 29 experiment](experiments/world_lobby_four_trajectory_20260929/) contains the implementations described above:
 
-This is one static synthetic World Lobby capture and one engineering run per primary method. M2 reports 0.118 m pose translation RMSE, 0.0738 native-depth AbsRel, and 0.182 m model-to-GT mean surface distance. M3 reports 2.595 m, 0.2612, and 0.459 m. M4 receives GT pose and is not an estimator result.
+- [`code/`](experiments/world_lobby_four_trajectory_20260929/code/) — trajectory preparation, DA3 inference, and geometric input packets.
+- [`astra_blender2/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/models/) — M1–M4 scene builders and construction parameters.
+- [`astra_blender2/tools/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/) — view checks, model freezing, and reconstruction evaluation.
 
-The current downstream tasks both use the frozen **M4** scene. The drone records **17/20** collision-free candidate arrivals, three collisions and **0/20** strict or relaxed precise rephotography successes. G1 executes five constrained Chinese target descriptions from four starts each: **20/20** correct target identities, collision-free navigation outcomes and evaluator-verified target visibility. Both controllers use simulator-state localization; the G1 parser uses a known semantic map, and its visibility check is geometry-based, not learned visual recognition. The earlier M3 trials remain historical evidence and are not a controlled M3–M4 comparison.
+Earlier OpenVINS/MapAnything experiments remain separate historical records; their method labels and assets must not be substituted for this run.
 
-The five-view appearance evaluation includes PSNR, SSIM and **LPIPS (AlexNet, v0.1)** for M1–M4. Geometry also includes B2p, the matched OpenVINS + MapAnything direct-fusion baseline. All eight current article tables and their bilingual captions are preserved.
+## Reproduce
 
-## Current blog snapshot · 25 September 2026
+Verify the source snapshot and run the portable depth checks:
 
-This update corresponds to public blog commit [`cd63134103e1f14660d00fd4d20988f25cbf50ea`](https://github.com/wentingw/astra-world-model-blog/commit/cd63134103e1f14660d00fd4d20988f25cbf50ea). See [the evidence index](evidence/blog_20260925/README.md) for each table's source, M4 episode records, image inputs, audit commands and asset manifests. Original code/results are preserved byte for byte; historical absolute paths require relocation before re-running a pipeline.
+```bash
+python -m venv .venv
+.venv/bin/python -m pip install -r requirements-core.txt
+.venv/bin/python scripts/verify_source_snapshot.py
+.venv/bin/python scripts/check_world_lobby_depth_math.py
+```
 
-- Reconstruction: M1–M4 builders, frontend adapters, direct fusion and evaluations.
-- M4 tasks: all 40 episode requests, summaries and trajectories, candidate/reference images, endpoint renders, G1 visibility masks and two display replay videos.
-- Presentation: bilingual article/templates, comparison figures and viewer source, with fixed-version links for display GLBs and full Blender scenes.
+Rebuild a saved scene with Blender 5.2.0; use a new output directory outside the repository:
 
-Historical M3 results and earlier commits remain available. Source files, hashes and immutable asset references make this an auditable experiment snapshot; it is not a one-command simulator distribution.
+```bash
+.venv/bin/python scripts/rebuild_world_lobby_scene.py \
+  --method M4 --blender /path/to/blender \
+  --output /tmp/sceneweft-M4
+```
 
-SceneWeft complements SLAM/VIO: those systems provide registration and geometric constraints; SceneWeft turns evidence into an editable scene program. There is no evidence here of surpassing, replacing, or being first in SLAM or agentic reconstruction.
+Choose `M1`–`M4`. This executes the saved construction program; it does not rerun inference, agent reasoning, or evaluation. Full pipeline reproduction additionally requires the recorded capture, frontend dependencies, weights, evaluation assets, and path relocation. See the [experiment guide](experiments/world_lobby_four_trajectory_20260929/README.md) for requirements and boundaries.
 
-## Reproduction
+## Scope
 
-See [REPRODUCING.md](REPRODUCING.md) and [artifact-lock.json](artifact-lock.json). Upstream attribution and terms remain in force; this repository adds no open-source license.
+This release focuses on **reconstruction methods and reproducibility**. Embodied demos, robot control, and task execution are outside its scope and deferred to a future release. Code and external assets remain subject to the terms documented in [THIRD_PARTY.md](THIRD_PARTY.md).

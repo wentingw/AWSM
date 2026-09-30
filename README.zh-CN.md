@@ -1,25 +1,55 @@
 # SceneWeft
 
-**新增代码快照：**[2026-09-29 World Lobby 实验](experiments/world_lobby_four_trajectory_20260929/README.md)包含 ORB-SLAM3/ViPE + DA3 流水线、两轮 Astra/Blender 建模、固定十视角检查和评测发布工具。本实验方法定义独立于下文较早的 OpenVINS/MapAnything 实验。
+**以几何证据为基础，重建可编辑的三维世界。**
 
-**以几何为依据的智能体式重建：生成可编辑、可执行的三维场景。**
+[**AWSM：智能体世界仿真与建图**](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html)的重建实现代码。SceneWeft 将 RGB 观测与几何证据转化为结构化的 Blender 场景程序：保留显式对象、空间关系和可编辑几何，而不止于点云或渲染图像。它以位姿估计和深度重建为基础，由智能体完成场景构建、检查与修订。
 
-SceneWeft 是这组研究的私有代码仓库。项目研究 GPT-6 Astra 如何在 RGB 和可选几何证据约束下，生成包含命名部件、空间关系、可渲染相机和碰撞代理的 Blender 场景程序。这里的 agentic 指工具调用、检查和修订流程，不等于已经训练出具有时间预测能力的通用世界模型。
+[English](README.md) · [实验与复现](experiments/world_lobby_four_trajectory_20260929/README.md) · [第三方声明](THIRD_PARTY.md)
 
-文章与研究资产：
+## 四条重建路线
 
-- 中文博客：https://wentingw.github.io/astra-world-model-blog/
-- English：https://wentingw.github.io/astra-world-model-blog/en.html
-- 科研资产（当前为 private，需 HF 权限）：https://huggingface.co/datasets/Ooliva/astra-world-model-blog
+World Lobby 实验使用共同的 RGB 观测集和场景构建目标，对比四条路线。各方法均采用 Astra–Blender 工作流，区别在于提供的几何证据。
 
-四种方法为 M1 RGB-only、M2 ViPE、M3 OpenVINS+MapAnything、M4 GT-pose oracle；B1 共享 M2 frontend，B2 是已知内参 RGB-only 基线，B2p 共享 M3 frontend 但跳过 Astra。当前证据是单个静态合成 World Lobby 场景。M2 pose translation RMSE 为 0.118 m，M3 为 2.595 m；M4 的 GT pose 是输入条件，不是算法精度。
+| 方法 | 相机位姿 | 深度证据 |
+| --- | --- | --- |
+| **M1 · 纯 RGB** | 无估计轨迹 | 无 |
+| **M2 · ViPE** | ViPE，由 RGB 估计 | 位姿条件化的 Depth Anything 3 |
+| **M3 · ORB-SLAM3** | ORB-SLAM3，由 RGB + IMU 估计 | 位姿条件化的 Depth Anything 3 |
+| **M4 · GT 位姿参照** | 真值相机位姿 | 位姿条件化的 Depth Anything 3 |
 
-当前两个下游实验固定使用 **M4 场景**：无人机 20 次中有 **17 次无碰撞候选到达、3 次碰撞**，精确复拍严格和宽松成功率均为 **0/20**。G1 的 5 条受约束中文目标描述分别从 4 个起点执行，共 20 次；**目标身份、无碰撞导航、评估器可见性核验均为 20/20**。控制器使用仿真器状态定位；G1 使用已知语义地图和受约束语言解析，可见性是基于几何的评估，不是在线视觉识别。原 M3 记录保留为历史证据，不能视为受控的 M3/M4 对比。
+M4 向建模器提供参照位姿，**不提供 GT 几何或 GT 深度**。评测分别考察位姿、场景几何、深度与外观。这是单场景的系统级比较，不将单一指标等同于重建质量，也不将不同路线视为严格的单变量消融。
 
-本次同步对应当前博客提交 [`cd63134103e1f14660d00fd4d20988f25cbf50ea`](https://github.com/wentingw/astra-world-model-blog/commit/cd63134103e1f14660d00fd4d20988f25cbf50ea)，覆盖全部 8 张表格、几何表的 B2p、M1–M4 五视角 PSNR/SSIM/LPIPS、对比图、两项 M4 任务的 40 次执行记录、轨迹、终点图和回放视频。详细入口见 [当前网页证据索引](evidence/blog_20260925/README.md)。
+## 代码入口
 
-建模、前端、融合、指标计算及任务相关代码与原始结果按字节保存，附 SHA256 清单。大型完整模型仍通过固定版本的 Hugging Face 资产读取；展示 GLB 对应固定的公开博客提交。历史脚本含原工作区绝对路径，重新运行前需按复现说明重定位，并使用新的输出目录。
+上述方法实现在 [9 月 29 日实验目录](experiments/world_lobby_four_trajectory_20260929/)中：
 
-SceneWeft 与 SLAM 互补：SLAM/VIO 提供注册和几何约束，SceneWeft 将证据转成可编辑、可查询、可渲染并能进入声明仿真的场景程序。当前没有证据表明它超越、替代或首创 SLAM/agentic reconstruction。
+- [`code/`](experiments/world_lobby_four_trajectory_20260929/code/)：轨迹准备、DA3 推理与几何输入包。
+- [`astra_blender2/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/models/)：M1–M4 场景构建程序与参数。
+- [`astra_blender2/tools/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/)：视角检查、模型冻结与重建评测。
 
-复现说明见 [REPRODUCING.md](REPRODUCING.md)，冻结资产见 [artifact-lock.json](artifact-lock.json)。上游代码和资产保留原始 attribution 与许可条件；本仓库不新增开源许可证。
+早期 OpenVINS/MapAnything 实验作为独立历史记录保留，其方法标签和资产不能替代本轮实现。
+
+## 复现
+
+校验源码快照并运行便携深度测试：
+
+```bash
+python -m venv .venv
+.venv/bin/python -m pip install -r requirements-core.txt
+.venv/bin/python scripts/verify_source_snapshot.py
+.venv/bin/python scripts/check_world_lobby_depth_math.py
+```
+
+使用 Blender 5.2.0 重建已保存的场景，输出目录需位于仓库之外且尚不存在：
+
+```bash
+.venv/bin/python scripts/rebuild_world_lobby_scene.py \
+  --method M4 --blender /path/to/blender \
+  --output /tmp/sceneweft-M4
+```
+
+方法可选 `M1`–`M4`。此命令执行已保存的构建程序，不重新运行推理、智能体建模或评测。完整流程还需原始采集、前端依赖、模型权重、评测资产及路径重定位；具体要求与复现边界见[实验指南](experiments/world_lobby_four_trajectory_20260929/README.md)。
+
+## 发布范围
+
+本次聚焦**重建方法实现与复现方案**。具身演示、机器人控制和任务执行不属于本次发布范围，留待后续版本完善。代码及外部资产的使用条件见 [THIRD_PARTY.md](THIRD_PARTY.md)。
