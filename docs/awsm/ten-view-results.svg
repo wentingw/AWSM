@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490" role="img" aria-labelledby="title desc">
+<title id="title">AWSM: saved ten-view-run results</title>
+<desc id="desc">M2, M3 and M4 surface distance and perturbed-view depth AbsRel from the saved astra_blender2 report tables 3 and 5. M1 is not evaluable.</desc>
+<rect width="1000" height="490" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#0f172a">
+<text x="32" y="42" font-size="23" font-weight="bold">AWSM · September 29 fixed ten-view modelling run</text>
+<text x="32" y="73" font-size="15">Saved astra_blender2 results — not the public article’s earlier frozen models</text>
+<text x="32" y="118" font-size="18" font-weight="bold">Surface distance (m) ↓</text>
+<text x="548" y="118" font-size="18" font-weight="bold">Perturbed-view depth AbsRel (%) ↓</text>
+<text x="32" y="144" font-size="13">Solid: model → GT · pale: observed GT → model</text>
+<text x="32" y="193" font-size="16">M2</text>
+<rect x="73" y="175" width="216.58" height="22" fill="#2563eb"/>
+<text x="296.58" y="192" font-size="13">0.1547</text>
+<rect x="73" y="201" width="208.60" height="18" fill="#2563eb" opacity="0.35"/>
+<text x="288.60" y="215" font-size="13">0.1490</text>
+<text x="548" y="199" font-size="16">M2</text>
+<rect x="590" y="180" width="268.12" height="30" fill="#2563eb"/>
+<text x="866.12" y="201" font-size="14">8.25%</text>
+<text x="32" y="269" font-size="16">M3</text>
+<rect x="73" y="251" width="322.56" height="22" fill="#ea580c"/>
+<text x="402.56" y="268" font-size="13">0.2304</text>
+<rect x="73" y="277" width="257.74" height="18" fill="#ea580c" opacity="0.35"/>
+<text x="337.74" y="291" font-size="13">0.1841</text>
+<text x="548" y="275" font-size="16">M3</text>
+<rect x="590" y="256" width="292.18" height="30" fill="#ea580c"/>
+<text x="890.17" y="277" font-size="14">8.99%</text>
+<text x="32" y="345" font-size="16">M4</text>
+<rect x="73" y="327" width="279.72" height="22" fill="#059669"/>
+<text x="359.72" y="344" font-size="13">0.1998</text>
+<rect x="73" y="353" width="176.68" height="18" fill="#059669" opacity="0.35"/>
+<text x="256.68" y="367" font-size="13">0.1262</text>
+<text x="548" y="351" font-size="16">M4</text>
+<rect x="590" y="332" width="199.22" height="30" fill="#059669"/>
+<text x="797.23" y="353" font-size="14">6.13%</text>
+<text x="32" y="433" font-size="14">M1: N/A — no reliable frozen RGB-only camera registration. All four final reviews: LIMITED.</text>
+<text x="32" y="460" font-size="13">Source: saved report Tables 3 / 5 (original Tables 9 / 11). Lower is better. No new evaluation.</text>
+</g></svg>

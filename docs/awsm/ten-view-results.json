@@ -1,0 +1,134 @@
+{
+  "scope": "September 29 astra_blender2 fixed ten-view run ONLY; not public article astra_blender results",
+  "source": "experiments/world_lobby_four_trajectory_20260929/astra_blender2/report/space/index.html",
+  "source_sha256": "ac31c2be1a27ef38893b946d82846c16564d76558dd8851d05e30c862a8406dc",
+  "precision": "Values transcribed at the precision of the tracked saved HTML; underlying metric JSON/CSV and rendered images are not in this source snapshot. Not a fresh evaluation.",
+  "tables": {
+    "3": [
+      [
+        "方法",
+        "Model → GT mean (m) ↓",
+        "Observed GT → model mean (m) ↓"
+      ],
+      [
+        "M1",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "M2",
+        "0.1547",
+        "0.1490"
+      ],
+      [
+        "M3",
+        "0.2304",
+        "0.1841"
+      ],
+      [
+        "M4",
+        "0.1998",
+        "0.1262"
+      ]
+    ],
+    "4": [
+      [
+        "方法",
+        "PSNR (dB) ↑",
+        "SSIM ↑",
+        "LPIPS ↓"
+      ],
+      [
+        "M1",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "M2",
+        "12.7912",
+        "0.3703",
+        "0.5409"
+      ],
+      [
+        "M3",
+        "11.7982",
+        "0.3833",
+        "0.5511"
+      ],
+      [
+        "M4",
+        "12.9371",
+        "0.3611",
+        "0.4849"
+      ]
+    ],
+    "5": [
+      [
+        "方法",
+        "AbsRel ↓",
+        "RMSE (m) ↓",
+        "Coverage ↑",
+        "Penalized MAE (m) ↓"
+      ],
+      [
+        "M1",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "M2",
+        "8.25%",
+        "1.1009",
+        "100.00%",
+        "0.5482"
+      ],
+      [
+        "M3",
+        "8.99%",
+        "1.2060",
+        "99.92%",
+        "0.6255"
+      ],
+      [
+        "M4",
+        "6.13%",
+        "0.9538",
+        "99.98%",
+        "0.4194"
+      ]
+    ]
+  },
+  "models": {
+    "M1": {
+      "blend_sha256": "747b24362a5c0a2d71d24499a0e82cdc8a1f4595fc9e724a7da5c0d192708f63",
+      "review_status": "LIMITED",
+      "revisions": 2,
+      "paired_checks": 20,
+      "full_input_passes": 0
+    },
+    "M2": {
+      "blend_sha256": "8f80d6299b98743be2151788827528ed8c4fa714ca8490f9797b52cc2c24177a",
+      "review_status": "LIMITED",
+      "revisions": 3,
+      "paired_checks": 30,
+      "full_input_passes": 3
+    },
+    "M3": {
+      "blend_sha256": "5e6e6e373472762e0f96efecf4fa5a8912a3b4657cb1061842e0c34288bad15e",
+      "review_status": "LIMITED",
+      "revisions": 3,
+      "paired_checks": 30,
+      "full_input_passes": 3
+    },
+    "M4": {
+      "blend_sha256": "a86c6656bfd7f3ff1435c037a48aecb1d503047b799d75c9fc5524baba5c5ec5",
+      "review_status": "LIMITED",
+      "revisions": 2,
+      "paired_checks": 20,
+      "full_input_passes": 3
+    }
+  }
+}
