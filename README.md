@@ -6,7 +6,9 @@ AWSM uses large-model agents to turn visual observations into structured Blender
 
 [中文](README.zh-CN.md) · [Research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) · [Code](https://github.com/wentingw/AWSM) · [Interactive comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3) · [Reproduction guide](docs/AWSM_REPRODUCTION.md)
 
-![AWSM: input video, reconstructed scene, and mesh](docs/awsm/awsm_teaser.png)
+https://github.com/user-attachments/assets/dcb03b9b-ecd2-48df-abe2-ee246e5d5e25
+
+[Watch the introduction on the blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#overview-video)
 
 ## Updates
 
@@ -86,4 +88,10 @@ Full-pipeline reproduction additionally requires the recorded capture, calibrati
 }
 ```
 
-For reproducible comparisons, record the code revision, modelling run, model hashes, and evaluation protocol. See [THIRD_PARTY.md](THIRD_PARTY.md) for component and asset terms; this repository grants no new license.
+For reproducible comparisons, record the code revision, modelling run, model hashes, and evaluation protocol.
+
+## License
+
+Original AWSM project code is licensed under the [Apache License 2.0](LICENSE).
+Copyright 2026 Wenting Wang and Yaofang Liu.
+Third-party code, dependencies, datasets, model weights, and scene assets retain their respective licenses; see [THIRD_PARTY.md](THIRD_PARTY.md).

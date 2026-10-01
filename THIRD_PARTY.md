@@ -1,6 +1,6 @@
 # Upstream components and attribution
 
-This private research repository does not grant a new open-source license for its own code or for third-party components. Preserve upstream copyright notices and consult each upstream license before redistribution or downstream use. Publicly accessible artifacts do not by themselves imply unrestricted licensing.
+Original AWSM project code is licensed under the [Apache License, Version 2.0](LICENSE), copyright 2026 Wenting Wang and Yaofang Liu. This grant does not relicense third-party code, dependencies, datasets, model weights, or scene assets. Those components retain their respective upstream terms and copyright notices. Consult each applicable license before redistribution or downstream use; public accessibility alone does not imply unrestricted licensing.
 
 | Component | Role | Upstream |
 | --- | --- | --- |

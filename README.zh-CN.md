@@ -6,7 +6,9 @@ AWSM 让大模型智能体将视觉观测转化为结构化的 Blender 场景，
 
 [English](README.md) · [研究博客](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html) · [代码仓库](https://github.com/wentingw/AWSM) · [交互式对比](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html#figure-3) · [复现指南](docs/AWSM_REPRODUCTION.md)
 
-![AWSM：输入视频、重建场景与网格](docs/awsm/awsm_teaser.png)
+https://github.com/user-attachments/assets/dcb03b9b-ecd2-48df-abe2-ee246e5d5e25
+
+[在博客中观看介绍视频](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html#overview-video)
 
 ## 更新
 
@@ -86,4 +88,10 @@ python -m venv .venv-core
 }
 ```
 
-用于可复现比较时，请同时记录代码版本、建模轮次、模型哈希与评测协议。组件及资产使用条件见 [THIRD_PARTY.md](THIRD_PARTY.md)；本仓库不授予新的许可证。
+用于可复现比较时，请同时记录代码版本、建模轮次、模型哈希与评测协议。
+
+## 许可证
+
+AWSM 原创项目代码采用 [Apache License 2.0](LICENSE)。
+Copyright 2026 Wenting Wang and Yaofang Liu.
+第三方代码、依赖、数据集、模型权重和场景资产仍遵循各自的许可，详见 [THIRD_PARTY.md](THIRD_PARTY.md)。
