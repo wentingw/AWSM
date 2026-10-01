@@ -8,6 +8,10 @@ AWSM 探索如何让智能体将 RGB 观测与几何测量转化为**结构化�
 
 > **名称与证据范围。** 项目对外名称为 **AWSM**；仓库 slug、检出目录与现有代码标识仍保留 `sceneweft`。本页数值结果专指 9 月 29 日 **`astra_blender2` 固定十视角建模轮次**。在线文章展示的是另一组冻结模型（`astra_blender`），且已声明历史前端命名存在差异。两者的图片、指标与模型哈希不能混用，详见[证据对应关系](docs/AWSM_REPRODUCTION.md#which-results-belong-to-which-models)。
 
+## 更新
+
+- **2026-10-01 · v0.1** — 发布 AWSM 研究博客与首版重建代码，包含 M1–M4 方法实现、评测工具和复现说明。具身 demo 代码留待后续版本发布。[更新日志](CHANGELOG.md)
+
 ## 在线体验与图示
 
 - **[中文文章](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html) / [English article](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/)：** 项目动机、方法、交互对比与限制。
