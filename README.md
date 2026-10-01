@@ -1,6 +1,6 @@
 # AWSM — Agentic World Simulation and Mapping
 
-**From visual observations to geometry-grounded, editable 3D worlds.**
+**Turning visual observations into geometry-grounded, editable 3D worlds simulation-ready for robots.**
 
 AWSM investigates how an agent can turn RGB observations and geometric measurements into a **structured Blender scene program**: named objects, materials, cameras, spatial relationships, and collision proxies—not only a point cloud or a novel-view renderer. The longer-term goal is a shared spatial representation for mapping, simulation, and interaction. This repository releases the **reconstruction implementation and its audit trail**, not a validated end-to-end robotics system.
 
