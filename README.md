@@ -6,7 +6,7 @@ AWSM investigates how an agent can turn RGB observations and geometric measureme
 
 [中文](README.zh-CN.md) · [Official article](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) · [Interactive 3D comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3) · [Reproduction guide](docs/AWSM_REPRODUCTION.md) · [Experiment source](experiments/world_lobby_four_trajectory_20260929/README.md)
 
-> **Naming and evidence scope.** The public project is **AWSM**; the repository slug, checkout directory, and existing code identifiers remain `sceneweft`. This README's numerical results refer specifically to the September 29 **`astra_blender2` fixed ten-view modelling run**. The live article displays a different frozen model set (`astra_blender`), with a documented upstream naming discrepancy. Do not interchange their figures, metrics, or model hashes. See [the evidence map](docs/AWSM_REPRODUCTION.md#which-results-belong-to-which-models).
+> **Evidence scope.** This README's numerical results refer specifically to the September 29 **`astra_blender2` fixed ten-view modelling run**. The live article displays a different frozen model set (`astra_blender`), with a documented upstream naming discrepancy. Do not interchange their figures, metrics, or model hashes. See [the evidence map](docs/AWSM_REPRODUCTION.md#which-results-belong-to-which-models).
 
 ## Updates
 
