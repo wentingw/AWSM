@@ -10,7 +10,7 @@ AWSM investigates how an agent can turn RGB observations and geometric measureme
 
 ## Updates
 
-- **2026-10-01 · v0.1** — Published the AWSM research blog and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance. Embodied demo code is deferred to a future release.
+- **2026-10-01 · v0.1** — Published the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance. Embodied demo code is deferred to a future release.
 
 ## Explore the project
 
