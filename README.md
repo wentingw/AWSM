@@ -8,6 +8,8 @@ AWSM investigates how an agent can turn RGB observations and geometric measureme
 
 > **Evidence scope.** This README's numerical results refer specifically to the September 29 **`astra_blender2` fixed ten-view modelling run**. The live article displays a different frozen model set (`astra_blender`), with a documented upstream naming discrepancy. Do not interchange their figures, metrics, or model hashes. See [the evidence map](docs/AWSM_REPRODUCTION.md#which-results-belong-to-which-models).
 
+![AWSM teaser: input video, reconstructed scene, and mesh](docs/awsm/awsm_teaser.png)
+
 ## Updates
 
 - **2026-10-01 · v0.1** — Published the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance.
