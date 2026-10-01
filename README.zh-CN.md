@@ -10,7 +10,7 @@ AWSM 探索如何让智能体将 RGB 观测与几何测量转化为**结构化�
 
 ## 更新
 
-- **2026-10-01 · v0.1** — 发布 [AWSM 研究博客](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html)与首版重建代码，包含 M1–M4 方法实现、评测工具和复现说明。具身 demo 代码留待后续版本发布。
+- **2026-10-01 · v0.1** — 发布 [AWSM 研究博客](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html)与首版重建代码，包含 M1–M4 方法实现、评测工具和复现说明。
 
 ## 在线体验与图示
 
@@ -27,8 +27,6 @@ AWSM 探索如何让智能体将 RGB 观测与几何测量转化为**结构化�
 官方托管图片使用 0/36/72/108/144 五个视角和文章的 `astra_blender` 模型。[制图源码](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/build_reference_style_figures.py) 虽位于 `astra_blender2/tools/`，但明确读取较早的模型目录。因此这张图**不是**下方快速复现命令所重建场景的效果图。文章的[来源说明](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/evidence/provenance-note.md) 还记录了尚待核对的历史前端命名；本页不以此图证明后续轮次的数值结论。
 
 </details>
-
-网站另有具身视频，但存在未解决的验收失败，**不作为本次重建发布的机器人成功结果**。本次不引入机器人控制代码，也不声称已完成机器人任务验证。
 
 ## AWSM 构建什么
 
@@ -135,7 +133,6 @@ python3.10 -m venv .venv-core  # 也可使用其他 Python >= 3.10
 - 输入隔离依靠独立输入包与方法专属上下文，**没有操作系统级读取沙箱**。独立 GT 分数不得反馈给建模作者。
 - 精简源码快照不包含原始采集、稠密预测、权重、原始 GT 场景、冻结模型二进制、渲染图及完整评测输出。
 - 在线文章与历史记录存在版本/来源差异；方法标签相同，甚至输出哈希相同，都不能独立证明上游前端身份。
-- 具身执行、机器人控制、多模态记忆检索与 sim-to-real 表现不属于本次已验证结论。
 
 **计划研究与工程工作——不是已完成功能或承诺的指标收益**
 
@@ -144,7 +141,6 @@ python3.10 -m venv .venv-core  # 也可使用其他 Python >= 3.10
 - [ ] 扩展真实采集与多场景，增加智能体重复运行、匹配预算和真正留出的评测。
 - [ ] 显式追踪对象/几何不确定性，改善细节、材质、光照和局部形状，而不只校正全局尺度。
 - [ ] 以明确任务指标研究持续场景更新与多模态空间记忆。
-- [ ] 具身集成在定位、碰撞、动力学、任务与真实迁移分别可复现验证后，再独立发布。
 
 ## 文档、使用条件与引用
 

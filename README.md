@@ -10,7 +10,7 @@ AWSM investigates how an agent can turn RGB observations and geometric measureme
 
 ## Updates
 
-- **2026-10-01 · v0.1** — Published the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance. Embodied demo code is deferred to a future release.
+- **2026-10-01 · v0.1** — Published the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance.
 
 ## Explore the project
 
@@ -27,8 +27,6 @@ AWSM investigates how an agent can turn RGB observations and geometric measureme
 The official hosted figure uses views 0/36/72/108/144 and the article's `astra_blender` models. Its [figure-generation source](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/build_reference_style_figures.py) explicitly targets that earlier model directory, despite living under `astra_blender2/tools/`. This image is **not** a rendering of the scenes rebuilt by the quick-start below. The article's [provenance note](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/evidence/provenance-note.md) records unresolved historical frontend naming; the preview is not used to establish the later run's numerical claims.
 
 </details>
-
-The website also contains a separate embodied video. It has unresolved audit failures and is **not a successful robotics result of this reconstruction release**. No robot-control code or task-success claim is introduced here.
 
 ## What AWSM builds
 
@@ -135,7 +133,6 @@ This is **not a one-command, self-contained reproduction**. The [practical guide
 - Input isolation is physical packet separation and method-scoped contexts, **not an OS-enforced read sandbox**. Independent GT scores must never be fed back into candidate authoring.
 - Raw capture, dense predictions, weights, original GT scene, frozen model binaries, render images, and full evaluation outputs are not included in this compact source snapshot.
 - The live article and preserved historical records have version/provenance differences. A shared method label or even an identical output hash does not establish which frontend produced an asset.
-- Embodied execution, robot controllers, memory retrieval, and sim-to-real performance are outside this release's verified claims.
 
 **Planned work — not completed features or promised benchmark gains**
 
@@ -144,7 +141,6 @@ This is **not a one-command, self-contained reproduction**. The [practical guide
 - [ ] Extend to real captures and multiple scenes, with repeated agent runs, matched budgets, and genuinely held-out evaluation.
 - [ ] Track object/geometry uncertainty and improve fine structure, materials, lighting, and local shape rather than relying on global scale alone.
 - [ ] Study persistent scene updates and multimodal spatial memory with explicit task metrics.
-- [ ] Release embodied integration only with separate reproducible localization, collision, dynamics, task, and sim-to-real validation.
 
 ## Documentation, attribution, and citation
 
