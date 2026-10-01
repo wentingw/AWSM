@@ -1,120 +1,80 @@
 # AWSM — Agentic World Simulation and Mapping
 
-**Turning visual observations into geometry-grounded, editable 3D worlds simulation-ready for robots.**
+**Geometry-grounded agentic reconstruction of editable 3D worlds.**
 
-AWSM investigates how an agent can turn RGB observations and geometric measurements into a **structured Blender scene program**: named objects, materials, cameras, spatial relationships, and collision proxies—not only a point cloud or a novel-view renderer. The longer-term goal is a shared spatial representation for mapping, simulation, and interaction. This repository releases the **reconstruction implementation and its audit trail**, not a validated end-to-end robotics system.
+AWSM uses large-model agents to turn visual observations into structured Blender scenes, grounded in camera-pose and depth estimates—including IMU-informed visual–inertial constraints. The goal is to move beyond visually plausible rooms toward faithful scale, shape, and spatial relationships: an editable spatial reference for mapping, simulation, and interaction.
 
-[中文](README.zh-CN.md) · [Official article](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) · [Interactive 3D comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3) · [Reproduction guide](docs/AWSM_REPRODUCTION.md) · [Experiment source](experiments/world_lobby_four_trajectory_20260929/README.md)
+[中文](README.zh-CN.md) · [Research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) · [Code](https://github.com/wentingw/AWSM) · [Interactive comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3) · [Reproduction guide](docs/AWSM_REPRODUCTION.md)
 
-![AWSM teaser: input video, reconstructed scene, and mesh](docs/awsm/awsm_teaser.png)
+![AWSM: input video, reconstructed scene, and mesh](docs/awsm/awsm_teaser.png)
 
 ## Updates
 
-- **2026-10-01 · v0.1** — Published the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and the initial reconstruction code release: M1–M4 implementations, evaluation tools, and reproduction guidance.
+- **2026-10-01 · v0.1** — Released the [AWSM research blog](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) and initial reconstruction code: M1–M4 implementations, evaluation tools, and reproduction guidance.
 
-## Explore the project
+## Approach
 
-- **[English article](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/) / [中文文章](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/zh.html):** motivation, methods, interactive comparisons, and limitations.
-- **[Shared-camera 3D viewer](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3):** rotate and zoom the selected reconstruction against GT; cutaway display changes do not modify the frozen assets.
-- **[Matched-view image comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-4):** inspect model/GT image differences rather than relying on an aggregate score.
-- **[September 29 source report](experiments/world_lobby_four_trajectory_20260929/astra_blender2/report/space/index.html):** included HTML preserves the later run's Tables 3–5. Its images, models, and linked raw metric files are not bundled. The [original HF Space](https://huggingface.co/spaces/Ooliva/world-lobby-exps-new) returned **401 without authentication** when checked on October 1, 2026; it is not an anonymous public demo.
+The reconstruction agent follows an **observe → build → verify** loop: inspect permitted observations, write Blender Python, render review views, and revise before freezing the scene for evaluation. Outputs retain explicit objects, materials, cameras, spatial relationships, and collision proxies—not just a point cloud or a rendered view.
 
-<details>
-<summary>Official article visual preview — a separate published model set, not the ten-view results below</summary>
-
-![Official article: M1–M4 and input GT over five fixed views](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/assets/fixed_five_view_comparison_m1_m4.jpg)
-
-The official hosted figure uses views 0/36/72/108/144 and the article's `astra_blender` models. Its [figure-generation source](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/build_reference_style_figures.py) explicitly targets that earlier model directory, despite living under `astra_blender2/tools/`. This image is **not** a rendering of the scenes rebuilt by the quick-start below. The article's [provenance note](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/evidence/provenance-note.md) records unresolved historical frontend naming; the preview is not used to establish the later run's numerical claims.
-
-</details>
-
-## What AWSM builds
-
-1. **Observe:** inspect the shared set of 180 modelling RGB frames, camera calibration, and only the geometric inputs allowed for that method.
-2. **Measure and construct:** derive dimensions and placements, identify uncertain/inferred structure, and write object-level Blender Python.
-3. **Check and revise:** compare RGB and optical-Z depth at fixed review cameras; preserve parameter changes, residuals, and independent review findings.
-4. **Freeze:** save the scene, GLB, semantic/object records, collision proxies, and hashes before independent GT scoring.
-5. **Evaluate separately:** measure trajectory, predicted depth, scene surface geometry, rendered appearance, and frozen-model depth. These answer different questions.
-
-The resulting representation is editable: a wall, chair, planter, or light remains an explicit scene component rather than an anonymous surface sample. Explicit geometry and collision proxies are useful interfaces for later simulation, but do not by themselves certify physical accuracy, navigation safety, or real-world transfer.
+Pose and depth constrain scene construction; they do not replace it. AWSM builds on SLAM and visual–inertial estimation, asking how geometric evidence survives the conversion into editable objects. Evaluation separates trajectory, native depth, final-scene depth, surface geometry, and appearance.
 
 ### Four reconstruction routes
 
-| Route | Pose input | Depth input | Interpretation |
+The World Lobby study compares four complete pipelines in one controlled NVIDIA Isaac Sim scene, with the same 180 modelling RGB frames and a shared Astra–Blender objective.
+
+| Method | Camera poses | Depth evidence |
+| --- | --- | --- |
+| **M1 · RGB-only** | No measured trajectory; common intrinsics known | None |
+| **M2 · ViPE** | Estimated from RGB | Pose-conditioned Depth Anything 3 (DA3) |
+| **M3 · ORB-SLAM3** | Monocular-inertial estimation from RGB + IMU + calibration | Pose-conditioned DA3 |
+| **M4 · GT-pose reference** | Ground-truth camera poses | Pose-conditioned DA3 |
+
+M4 provides reference poses, **not GT mesh or GT depth**, to the modeller. These are system comparisons, not an isolated IMU ablation; M4 is a diagnostic reference, not a deployable pose estimator.
+
+## Results in the article
+
+The blog's aligned M1 → M4 comparison reports:
+
+| Metric | RGB-only M1 | GT-pose M4 | Relative reduction |
 | --- | --- | --- | --- |
-| **M1 · RGB-only** | No measured trajectory; common intrinsics known | None | Visual/layout prior baseline; scale is assumed, not measured |
-| **M2 · ViPE** | RGB-only ViPE native poses | Pose-conditioned Depth Anything 3 (DA3) | Image-based geometric evidence |
-| **M3 · ORB-SLAM3** | Monocular-inertial ORB-SLAM3; RGB + IMU + calibration | Pose-conditioned DA3 | Visual–inertial geometric evidence |
-| **M4 · GT-pose reference** | Permitted sampled GT camera poses | Pose-conditioned DA3 | Diagnostic reference; **no GT mesh or GT depth given to the modeller** |
+| Bidirectional mean surface error | 0.376 m | 0.072 m | ≈81% |
+| Model-depth AbsRel · 180 evaluation views | 16.44% | 7.60% | ≈54% |
 
-All routes use the Astra–Blender objective and the same 180 RGB identities. Frontends may process the full 4,499-frame capture. M2 versus M3 is a **system comparison**, not an isolated IMU ablation. GT poses do not make M4 a deployable estimator or a theoretical upper bound. OpenVINS is a trajectory diagnostic in this experiment—not its M3 modelling frontend. Earlier OpenVINS/MapAnything records elsewhere in the repository retain their historical meanings.
+Values follow [the article's frozen Tables 2–3](https://github.com/Phygital-AI/agentic-world-simulation-and-mapping/blob/77b04cc6043b29b43b9e1ff91402343708665ada/data/tables_1_7.json); reductions use unrounded values. M1 uses GT-assisted Sim(3) alignment and M4 uses GT poses. These single-scene, system-level differences are **not native metric recovery by M1 or an IMU-only gain**. Better pose, geometry, and RGB similarity are distinct objectives; none alone establishes overall scene fidelity.
 
-### Implementation map
+Inspect the [shared-camera 3D comparison](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-3) and [matched-view images](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/#figure-4) alongside the numbers. Real-capture examples in the blog are qualitative, not additional matched-GT benchmarks.
 
-All relative paths in this table start at [`experiments/world_lobby_four_trajectory_20260929/`](experiments/world_lobby_four_trajectory_20260929/).
+## Code and reproduction
 
-| Stage | Implementation / evidence |
-| --- | --- |
-| Capture identity, calibration, input hashes | [`contract.json`](experiments/world_lobby_four_trajectory_20260929/contract.json), [`COMMANDS.md`](experiments/world_lobby_four_trajectory_20260929/COMMANDS.md) |
-| Pose preparation and diagnostics | [`code/freeze_vipe.py`](experiments/world_lobby_four_trajectory_20260929/code/freeze_vipe.py), [`code/evaluate_and_plot.py`](experiments/world_lobby_four_trajectory_20260929/code/evaluate_and_plot.py); ORB-SLAM3 native solution is an external input |
-| Sampling, DA3, geometric packets | [`code/`](experiments/world_lobby_four_trajectory_20260929/code/): `prepare_depth_samples.py`, `run_da3_depth.py`, `build_depth_packets.py`, `depth_pipeline.py` |
-| Input isolation and review budget | [`astra_blender2/configs/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/configs/), `tools/prepare_inputs.py`, `tools/paired_check_blender.py` |
-| Saved M1–M4 scene construction | [`astra_blender2/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/models/): builders, layouts, cameras, objects, colliders, revisions, and independent reviews |
-| Freeze and independent evaluation | [`astra_blender2/tools/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/): `freeze_models.py`, `evaluate_models.py`, `render_frozen_views.py`, `evaluate_blog_tables_46_blender.py` |
-| Earlier model set / publication tooling | [`astra_blender/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender/models/); some `astra_blender2/tools/build_blog_*` scripts deliberately report this **other** set |
+The [September 29 experiment](experiments/world_lobby_four_trajectory_20260929/README.md) contains the reconstruction source:
 
-## Reproduce: choose the level you need
+- [`code/`](experiments/world_lobby_four_trajectory_20260929/code/) — trajectory preparation, DA3 inference, and geometric input packets. Native estimator solutions and upstream runtimes are external inputs.
+- [`astra_blender/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender/models/) and [`astra_blender2/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/models/) — saved M1–M4 scene programs from two modelling runs.
+- [`astra_blender2/tools/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/) — input checks, model freezing, rendering, and reconstruction evaluation.
 
-### 1. Verify the source and portable math — no scene assets, GPU, or credentials
-
-Use **Python 3.10+** from the repository root (the pinned NumPy/SciPy versions do not support Python 3.8):
+**Check the source and portable mathematics** with Python 3.10–3.12:
 
 ```bash
-python3.10 -m venv .venv-core  # or another Python >= 3.10
+python -m venv .venv-core
 .venv-core/bin/python -m pip install -r requirements-core.txt
 .venv-core/bin/python scripts/verify_source_snapshot.py
 .venv-core/bin/python scripts/check_world_lobby_depth_math.py
 .venv-core/bin/python tests/test_pose_metrics.py
 ```
 
-The verifier checks snapshot hashes, Python syntax, and the artifact lock. The five depth tests check window scheduling, deterministic deduplication, bilinear valid support, missing-depth penalties, and optical-Z ray conventions. Passing is **not** a reconstruction or GT-score reproduction.
-
-### 2. Rebuild a saved scene — Blender 5.2.0, no inference or agent access
+**Rebuild a saved scene** with Blender 5.2.0, choosing `M1`–`M4` and a new output directory outside the repository:
 
 ```bash
-/path/to/blender --version  # expected: Blender 5.2.0
 .venv-core/bin/python scripts/rebuild_world_lobby_scene.py \
   --method M4 --blender /path/to/blender \
   --output /tmp/awsm-M4-rebuild
 ```
 
-Choose `M1`–`M4`; use an **absent directory outside the repository**. The helper copies the saved `astra_blender2` builder and small companions, runs Blender headlessly, and checks for `scene.blend`, `scene.glb`, `objects.json`, and `colliders.json`; diagnostics go to `rebuild.log`. It creates no visual renders and does not replay agent reasoning, inference, or evaluation. Resaved binary hashes need not equal the frozen original. Do not download the root legacy HF bundle expecting these models.
+This runs the later `astra_blender2` construction program, **not** fresh inference, agent reasoning, rendering, or evaluation. The article's published model set and this later ten-view run are distinct; see the [model/evidence mapping](docs/AWSM_REPRODUCTION.md#which-results-belong-to-which-models) before comparing outputs. Historical frontend naming differences remain documented in the [article provenance](https://phygital-ai.github.io/agentic-world-simulation-and-mapping/evidence/provenance-note.md).
 
-### 3. Re-run inference → modelling → independent evaluation — external setup required
+Full-pipeline reproduction additionally requires the recorded capture, calibration, estimator solutions, weights, GT assets, authorized agent access, and path relocation. Requirements and limitations are in the [reproduction guide](docs/AWSM_REPRODUCTION.md). Future work targets efficiency, accuracy, reusable simulation assets, and persistent spatial memory; these are research directions, not results established here.
 
-This is **not a one-command, self-contained reproduction**. The [practical guide](docs/AWSM_REPRODUCTION.md) gives the stage order, checked CLI examples, input inventory, isolation/freeze requirements, and known path traps. You need the exact capture and native trajectories, CUDA/upstream runtimes and model weights, original GT assets plus validated fresh GT depth, and authorized Astra access for a new agent run. Historical scripts contain absolute paths and assume sibling workspaces. Agent runs are nondeterministic; saved-builder replay and new modelling are different experiments.
-
-## Limitations and roadmap
-
-**Current boundaries**
-
-- One synthetic lobby and one engineering run per route do not establish broad superiority or statistical significance.
-- Geometry, appearance, uncertain/hidden structure, materials, and physical proxies have separate failure modes. All four later-run reviews retain concrete limitations.
-- Input isolation is physical packet separation and method-scoped contexts, **not an OS-enforced read sandbox**. Independent GT scores must never be fed back into candidate authoring.
-- Raw capture, dense predictions, weights, original GT scene, frozen model binaries, render images, and full evaluation outputs are not included in this compact source snapshot.
-- The live article and preserved historical records have version/provenance differences. A shared method label or even an identical output hash does not establish which frontend produced an asset.
-
-**Planned work — not completed features or promised benchmark gains**
-
-- [ ] Reconcile public article/input-packet/model lineage; release run-specific asset locks and a clean data-availability index.
-- [ ] Replace hard-coded workspace paths with portable configuration and publish tested, versioned frontend environments.
-- [ ] Extend to real captures and multiple scenes, with repeated agent runs, matched budgets, and genuinely held-out evaluation.
-- [ ] Track object/geometry uncertainty and improve fine structure, materials, lighting, and local shape rather than relying on global scale alone.
-- [ ] Study persistent scene updates and multimodal spatial memory with explicit task metrics.
-
-## Documentation, attribution, and citation
-
-Start with [the current reproduction guide](docs/AWSM_REPRODUCTION.md) and [experiment README](experiments/world_lobby_four_trajectory_20260929/README.md). Root [REPRODUCING.md](REPRODUCING.md) and [CODEMAP.md](CODEMAP.md) also describe **older experiments**; their OpenVINS/MapAnything labels and asset lock are not the later run's recipe. Dependencies and external assets retain their respective terms in [THIRD_PARTY.md](THIRD_PARTY.md); this documentation update introduces no new license.
+## Citation and attribution
 
 ```bibtex
 @misc{awsm_2026,
@@ -126,4 +86,4 @@ Start with [the current reproduction guide](docs/AWSM_REPRODUCTION.md) and [expe
 }
 ```
 
-For reproducible comparisons, additionally record the repository commit, experiment subdirectory, model hashes, and evaluation protocol—not only the project name.
+For reproducible comparisons, record the code revision, modelling run, model hashes, and evaluation protocol. See [THIRD_PARTY.md](THIRD_PARTY.md) for component and asset terms; this repository grants no new license.
