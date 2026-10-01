@@ -63,36 +63,6 @@ All relative paths in this table start at [`experiments/world_lobby_four_traject
 | Freeze and independent evaluation | [`astra_blender2/tools/`](experiments/world_lobby_four_trajectory_20260929/astra_blender2/tools/): `freeze_models.py`, `evaluate_models.py`, `render_frozen_views.py`, `evaluate_blog_tables_46_blender.py` |
 | Earlier model set / publication tooling | [`astra_blender/models/`](experiments/world_lobby_four_trajectory_20260929/astra_blender/models/); some `astra_blender2/tools/build_blog_*` scripts deliberately report this **other** set |
 
-## Results: September 29 fixed ten-view run
-
-**Source:** the tracked report's **Tables 3/4/5 (original Tables 9/10/11)**, under its “新版 Astra/Blender” section—not the same file's earlier Table 2 or the live article's seven-table dataset. The [compact transcription](docs/awsm/ten-view-results.json) records the report SHA256 and the four final-review model hashes. Values below retain the saved report's precision; this is evidence transcription, **not a fresh evaluation**.
-
-![Saved astra_blender2 surface-distance and perturbed-view-depth results](docs/awsm/ten-view-results.svg)
-
-### Geometry and depth
-
-| Method | Model → GT mean (m) ↓ | Observed GT → model mean (m) ↓ | Perturbed-view depth AbsRel ↓ | RMSE (m) ↓ | Coverage ↑ | Penalized MAE (m) ↓ |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| M1 | N/A | N/A | N/A | N/A | N/A | N/A |
-| M2 | 0.1547 | 0.1490 | 8.25% | 1.1009 | 100.00% | 0.5482 |
-| M3 | 0.2304 | 0.1841 | 8.99% | 1.2060 | 99.92% | 0.6255 |
-| M4 | 0.1998 | 0.1262 | 6.13% | 0.9538 | 99.98% | 0.4194 |
-
-Surface distances use 100,000 area-sampled model points and 100,000 observed-GT samples from 180-view ray hits (observation-frequency weighted), with nearest-triangle distances. M2/M3 use one global SE(3), scale fixed to one, without mesh ICP. Depth uses 20 deterministic same-trajectory perturbed cameras × 5,000 pixels, optical-Z in metres, GT-valid range 0.1–30 m, and a 30 m absolute-error penalty for missing predictions. This is not cross-scene generalization.
-
-### Appearance at five fixed modelling views
-
-| Method | PSNR (dB) ↑ | SSIM ↑ | LPIPS ↓ |
-| --- | ---: | ---: | ---: |
-| M1 | N/A | N/A | N/A |
-| M2 | 12.7912 | 0.3703 | 0.5409 |
-| M3 | 11.7982 | 0.3833 | 0.5511 |
-| M4 | 12.9371 | 0.3611 | 0.4849 |
-
-Views **0/36/72/108/144**, 640×480, CPU Cycles with 16 samples; GT resized with Lanczos. Full-image PSNR, SSIM, and LPIPS AlexNet v0.1; no crop, mask, color, or exposure fit. These five evaluation views differ from the ten author-review cameras, but their RGB belongs to the modelling inputs—not a held-out RGB benchmark.
-
-**What the evidence says:** M4 has the lowest perturbed-view depth AbsRel and LPIPS here; M2 has the lowest model→GT surface distance; M3 has the highest SSIM. There is no universal winner, and the earlier public article's ranking must not be substituted for this run. **M1 is N/A because reliable frozen RGB-only camera registration is unavailable**, not because its error is zero. Versions M1/M2/M3/M4 = **2/3/3/2**, paired checks = **20/30/30/20**; M2–M4 each have three full 180-frame input passes. All four independent final reviews are **LIMITED**, with no unresolved technical/protocol blockers at freezing—not unrestricted quality or physics acceptance.
-
 ## Reproduce: choose the level you need
 
 ### 1. Verify the source and portable math — no scene assets, GPU, or credentials
