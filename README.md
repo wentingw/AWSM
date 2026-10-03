@@ -89,9 +89,3 @@ Full-pipeline reproduction additionally requires the recorded capture, calibrati
 ```
 
 For reproducible comparisons, record the code revision, modelling run, model hashes, and evaluation protocol.
-
-## License
-
-Original AWSM project code is licensed under the [Apache License 2.0](LICENSE).
-Copyright 2026 Wenting Wang and Yaofang Liu.
-Third-party code, dependencies, datasets, model weights, and scene assets retain their respective licenses; see [THIRD_PARTY.md](THIRD_PARTY.md).
